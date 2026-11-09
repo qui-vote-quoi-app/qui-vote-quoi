@@ -7,6 +7,7 @@ chaque citation à son orateur à partir du compte rendu officiel."""
 import json
 import os
 import re
+import time
 
 import requests
 
@@ -49,13 +50,22 @@ def construire_prompt(scrutin, passages_, erreurs_precedentes=None):
     return "\n".join(lignes)
 
 
+class IAIndisponible(Exception):
+    """Service saturé, quota atteint ou réseau : rien à voir avec le contenu."""
+
+
+TEMPORAIRES = {408, 429, 500, 502, 503, 504}
+# En cas de saturation persistante du modèle principal, on essaie un modèle de secours.
+SECOURS = {"gemini": ["gemini-flash-lite-latest"], "mistral": [], "anthropic": []}
+ATTENTES = [10, 30, 90]  # secondes entre deux essais sur le même modèle
+
+
 def _modele():
     return config.IA_MODELE or config.MODELES_PAR_DEFAUT[config.IA_FOURNISSEUR]
 
 
-def appeler_ia(prompt: str) -> str:
+def _requete(modele, prompt):
     fournisseur = config.IA_FOURNISSEUR
-    modele = _modele()
     if fournisseur == "gemini":
         r = requests.post(
             f"https://generativelanguage.googleapis.com/v1beta/models/{modele}:generateContent",
@@ -93,12 +103,32 @@ def appeler_ia(prompt: str) -> str:
     raise ValueError(f"Fournisseur d'IA inconnu : {fournisseur}")
 
 
+def appeler_ia(prompt: str):
+    """Renvoie (texte, "fournisseur:modèle"). Réessaie sur les erreurs temporaires,
+    puis bascule sur le modèle de secours ; lève IAIndisponible si tout échoue."""
+    derniere = None
+    for modele in [_modele()] + SECOURS.get(config.IA_FOURNISSEUR, []):
+        for attente in ATTENTES + [None]:
+            try:
+                return _requete(modele, prompt), f"{config.IA_FOURNISSEUR}:{modele}"
+            except requests.HTTPError as e:
+                code = e.response.status_code if e.response is not None else 0
+                derniere = f"{modele} : erreur {code}"
+                if code not in TEMPORAIRES:
+                    if code == 404:
+                        break  # modèle inconnu : on passe au secours
+                    raise IAIndisponible(derniere)
+            except (requests.ConnectionError, requests.Timeout) as e:
+                derniere = f"{modele} : {type(e).__name__}"
+            except (KeyError, IndexError):
+                derniere = f"{modele} : réponse vide"
+            if attente:
+                time.sleep(attente)
+    raise IAIndisponible(derniere or "aucune réponse")
+
+
 def lire_reponse(texte: str):
     texte = texte.strip()
     texte = re.sub(r"^```(?:json)?\s*|\s*```$", "", texte)
     debut, fin = texte.find("{"), texte.rfind("}")
     return json.loads(texte[debut:fin + 1])
-
-
-def description_modele():
-    return f"{config.IA_FOURNISSEUR}:{_modele()}"

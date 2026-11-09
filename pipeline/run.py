@@ -62,6 +62,7 @@ class Rapport:
     def __init__(self):
         self.nouveaux, self.publiees, self.refusees, self.abandonnees = [], [], [], []
         self.en_attente, self.erreurs, self.infos = [], [], []
+        self.ia_indisponible = []
 
 
 # ------------------------------------------------------------------ étapes
@@ -164,25 +165,35 @@ def traiter_syntheses(scrutins, syntheses, etat, args, rapport):
             rapport.en_attente.append(s)
             continue
 
-        erreurs = None
-        for _ in range(2):  # une tentative + une relance avec les erreurs
+        erreurs, publiable, panne = None, None, None
+        for _ in range(2):  # une tentative + une relance avec les erreurs de vérification
             syn["tentatives"] = syn.get("tentatives", 0) + 1
             try:
-                brut = synthese.appeler_ia(synthese.construire_prompt(s, passages, erreurs))
+                brut, modele = synthese.appeler_ia(synthese.construire_prompt(s, passages, erreurs))
+            except synthese.IAIndisponible as e:
+                panne = str(e)  # service saturé ou quota : on réessaiera au prochain passage
+                break
+            try:
                 publiable, erreurs = verification.verifier(synthese.lire_reponse(brut), passages)
-            except Exception as e:  # réseau, quota, JSON invalide…
-                publiable, erreurs = None, [f"Erreur technique : {e}"]
+            except ValueError as e:
+                publiable, erreurs = None, [f"Réponse illisible : {e}"]
             if publiable:
                 syn.update(publiable)
-                syn.update({"statut": "publiee", "genere_le": maintenant(),
-                            "modele": synthese.description_modele(), "erreurs": []})
+                syn.update({"statut": "publiee", "genere_le": maintenant(), "modele": modele, "erreurs": []})
                 rapport.publiees.append(s)
                 break
-        else:
+        syn["derniere_tentative"] = maintenant()
+        if panne and not publiable:
+            syn["erreurs"] = [f"IA indisponible : {panne}"]
+            if age > config.CR_DELAI_MAX_JOURS:
+                syn["statut"] = "abandonnee"
+                rapport.abandonnees.append(s)
+            else:
+                rapport.ia_indisponible.append(s)
+        elif not publiable:
             syn["statut"] = "refusee"
             syn["erreurs"] = erreurs
             rapport.refusees.append((s, erreurs))
-        syn["derniere_tentative"] = maintenant()
         sauver_synthese(syn)
 
 
@@ -222,6 +233,9 @@ def notifier(rapport, scrutins, mode):
         lignes += [f"• <a href=\"{lien(s)}\">n° {s['num']}</a>" for s in rapport.publiees]
     if rapport.en_attente:
         lignes.append(f"\n⏳ {len(rapport.en_attente)} synthèse(s) en attente du compte rendu")
+    if rapport.ia_indisponible:
+        lignes.append(f"\n🔁 IA momentanément indisponible pour {len(rapport.ia_indisponible)} synthèse(s) : "
+                      "nouvel essai automatique au prochain passage")
     if rapport.refusees:
         lignes.append(f"\n⚠️ <b>{len(rapport.refusees)} synthèse(s) bloquée(s) par la vérification</b> (non publiées)")
         for s, err in rapport.refusees:

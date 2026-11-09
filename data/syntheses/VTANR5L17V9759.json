@@ -1,12 +1,10 @@
 {
  "uid": "VTANR5L17V9759",
  "num": 9759,
- "statut": "refusee",
+ "statut": "en_attente",
  "cree_le": "2026-11-09T21:55:42+00:00",
- "tentatives": 2,
- "erreurs": [
-  "Erreur technique : 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent"
- ],
+ "tentatives": 0,
+ "erreurs": [],
  "cr": "CRSANR5L17S2027O1N056",
  "seance_jour": "mercredi 04 novembre 2026",
  "derniere_tentative": "2026-11-09T21:59:27+00:00"
