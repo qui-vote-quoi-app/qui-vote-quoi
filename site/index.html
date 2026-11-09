@@ -9,16 +9,18 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
 <link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem("qvq-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
 <body>
 <div class="app" id="app">
   <aside class="side" id="side" aria-label="Liste des scrutins">
     <div class="side-head">
       <h2>Scrutins</h2>
-      <button class="iconbtn" id="toggle" aria-label="Replier la liste des scrutins" aria-expanded="true">
+      <button class="iconbtn" id="toggle" aria-label="Replier la liste des scrutins" aria-expanded="true" aria-controls="side-corps">
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3L5 8l5 5"/></svg>
       </button>
     </div>
+    <div class="side-corps" id="side-corps">
     <div class="side-tools">
       <label for="sq" class="sr">Rechercher un scrutin</label>
       <input id="sq" type="search" placeholder="Rechercher un texte, un n°…" autocomplete="off">
@@ -29,20 +31,25 @@
       </div>
     </div>
     <nav class="slist" id="slist"><p class="sempty">Chargement…</p></nav>
+    <div class="side-foot">
+      <span class="eyebrow">Affichage</span>
+      <div class="seg" role="group" aria-label="Thème d'affichage" id="themes">
+        <button data-theme-choix="auto" aria-pressed="true">Auto</button>
+        <button data-theme-choix="light" aria-pressed="false">Clair</button>
+        <button data-theme-choix="dark" aria-pressed="false">Sombre</button>
+      </div>
+    </div>
+    </div>
   </aside>
-  <div class="scrim" id="scrim" hidden></div>
 
   <div class="content">
     <header class="top">
       <div class="brand">
         <div class="eyebrow">XVII<sup>e</sup> législature · Scrutins publics</div>
         <h1>Qui vote quoi ?</h1>
-        <p>Un point par député. Survolez un siège pour l'identifier, cliquez pour ouvrir sa fiche.</p>
+        <p>Un point par député. Sélectionnez un siège pour afficher la fiche du député et son vote.</p>
       </div>
-      <div class="top-r">
-        <button class="btn openside" id="openside">☰ Scrutins</button>
-        <span class="tag">Site indépendant · non officiel</span>
-      </div>
+      <span class="tag">Site indépendant · non officiel</span>
     </header>
 
     <section class="panel summary" id="summary" aria-live="polite"><p class="loading">Chargement des données…</p></section>
@@ -65,6 +72,7 @@
           <svg id="svg" viewBox="0 0 1000 570" role="img" aria-label="Hémicycle : position de vote de chaque député"></svg>
           <div class="tip" id="tip" role="tooltip" hidden></div>
         </div>
+        <p class="hemi-aide">Faites glisser l'hémicycle sur le côté pour le parcourir en entier.</p>
         <div class="legend">
           <span><i class="sq" style="background:var(--pour)"></i>Pour</span>
           <span><i class="sq" style="background:var(--contre)"></i>Contre</span>

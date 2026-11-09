@@ -29,6 +29,7 @@
       c.setAttribute("class", "seat vide"); c.dataset.place = num; g.appendChild(c); circles[num] = c;
     });
     svg.appendChild(g);
+    requestAnimationFrame(function () { hemi.scrollLeft = (hemi.scrollWidth - hemi.clientWidth) / 2; });
     [["cbig", CY - 112, "center-big"], ["csub", CY - 72, "center-sub"]].forEach(function (t) {
       var e = document.createElementNS(NS, "text"); e.id = t[0]; e.setAttribute("x", CX); e.setAttribute("y", t[1]);
       e.setAttribute("text-anchor", "middle"); e.setAttribute("class", t[2]); svg.appendChild(e);
@@ -152,11 +153,10 @@
       return '<div class="arg"><p>' + esc(a.resume) + "</p><blockquote>« " + esc(a.citation) + " »</blockquote>" +
         '<div class="by">— ' + (d ? '<button data-dep="' + a.dep + '">' + esc(a.nom) + "</button>" + (gi.sigle ? " (" + esc(gi.sigle) + ")" : "") : esc(a.nom) + (a.qualite ? ", " + esc(a.qualite) : "")) + "</div></div>";
     };
-    el.innerHTML = h +
-      '<div class="ia"><b>Généré par IA</b><span>Cette synthèse est produite automatiquement par une intelligence artificielle à partir du compte rendu officiel, <strong>sans relecture humaine</strong>. Les citations sont vérifiées mot pour mot ; les résumés en gras ne sont attribués à personne. En cas d\'erreur, <a href="' + REPO + "/issues/new?template=erreur.yml&title=" + encodeURIComponent("Synthèse du scrutin n° " + s.num) + '" target="_blank" rel="noopener">signalez-la</a>.</span></div>' +
-      '<p class="context">' + esc(syn.contexte) + "</p>" +
-      '<div class="cols"><div class="col pour"><h3>Arguments pour ' + objet + "</h3>" + (syn.pour.length ? syn.pour.map(arg).join("") : '<p class="note">Aucun argument en ce sens dans le passage analysé.</p>') + "</div>" +
-      '<div class="col contre"><h3>Arguments contre ' + objet + "</h3>" + (syn.contre.length ? syn.contre.map(arg).join("") : '<p class="note">Aucun argument en ce sens dans le passage analysé.</p>') + "</div></div>" +
+    el.innerHTML = h + '<div class="deb-intro"><p class="context">' + esc(syn.contexte) + "</p>" +
+      '<div class="ia"><b>Généré par IA</b><span>Cette synthèse est produite automatiquement par une intelligence artificielle à partir du compte rendu officiel, <strong>sans relecture humaine</strong>. Les citations sont vérifiées mot pour mot ; les résumés en gras ne sont attribués à personne. En cas d\'erreur, <a href="' + REPO + "/issues/new?template=erreur.yml&title=" + encodeURIComponent("Synthèse du scrutin n° " + s.num) + '" target="_blank" rel="noopener">signalez-la</a>.</span></div></div>' +
+      '<div class="cols"><div class="col pour"><h3>Arguments pour ' + objet + "</h3>" + (syn.pour.length ? syn.pour.map(arg).join("") : '<p class="vide">Aucun orateur n\'a défendu cette position lors des explications de vote.</p>') + "</div>" +
+      '<div class="col contre"><h3>Arguments contre ' + objet + "</h3>" + (syn.contre.length ? syn.contre.map(arg).join("") : '<p class="vide">Aucun orateur n\'a défendu cette position lors des explications de vote.</p>') + "</div></div>" +
       '<p class="note" style="margin:0">Modèle : ' + esc(syn.modele) + " · généré le " + esc((syn.genere_le || "").slice(0, 10)) + "</p>";
   }
   function rendreFiche() {
@@ -211,16 +211,33 @@
     b.onclick = function () { st.lv = +b.dataset.lv; [].forEach.call(b.parentNode.children, function (x) { x.setAttribute("aria-pressed", x === b); }); rendreListe(); };
   });
   var app = $("app"), mq = window.matchMedia("(max-width:900px)");
+  function majBouton() {
+    var ouvert = mq.matches ? app.classList.contains("mopen") : !app.classList.contains("collapsed");
+    $("toggle").setAttribute("aria-expanded", ouvert);
+    $("toggle").setAttribute("aria-label", ouvert ? "Replier la liste des scrutins" : "Déplier la liste des scrutins");
+  }
   $("toggle").onclick = function () {
-    if (mq.matches) { fermerMobile(); return; }
-    var c = app.classList.toggle("collapsed");
-    this.setAttribute("aria-expanded", !c); this.setAttribute("aria-label", c ? "Déplier la liste des scrutins" : "Replier la liste des scrutins");
-    try { localStorage.setItem("qvq-side", c ? "1" : "0"); } catch (e) {}
+    if (mq.matches) { app.classList.toggle("mopen"); }
+    else {
+      var c = app.classList.toggle("collapsed");
+      try { localStorage.setItem("qvq-side", c ? "1" : "0"); } catch (e) {}
+    }
+    majBouton();
   };
-  try { if (localStorage.getItem("qvq-side") === "1" && !mq.matches) app.classList.add("collapsed"); } catch (e) {}
-  $("openside").onclick = function () { app.classList.add("mopen"); $("scrim").hidden = false; $("sq").focus(); };
-  function fermerMobile() { app.classList.remove("mopen"); $("scrim").hidden = true; }
-  $("scrim").onclick = fermerMobile;
+  try { if (localStorage.getItem("qvq-side") === "1") app.classList.add("collapsed"); } catch (e) {}
+  if (mq.addEventListener) mq.addEventListener("change", majBouton);
+  majBouton();
+  function fermerMobile() { if (app.classList.contains("mopen")) { app.classList.remove("mopen"); majBouton(); } }
+
+  /* Thème clair / sombre */
+  function appliquerTheme(t) {
+    if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    else { document.documentElement.removeAttribute("data-theme"); t = "auto"; }
+    [].forEach.call(document.querySelectorAll("#themes button"), function (b) { b.setAttribute("aria-pressed", b.dataset.themeChoix === t); });
+    try { if (t === "auto") localStorage.removeItem("qvq-theme"); else localStorage.setItem("qvq-theme", t); } catch (e) {}
+  }
+  $("themes").addEventListener("click", function (e) { var b = e.target.closest("button[data-theme-choix]"); if (b) appliquerTheme(b.dataset.themeChoix); });
+  appliquerTheme(document.documentElement.getAttribute("data-theme") || "auto");
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") { if (app.classList.contains("mopen")) fermerMobile(); else if (st.sel != null) choisir(null); } });
   $("q").addEventListener("change", function () {
     var v = this.value.toLowerCase(), i = st.deps.findIndex(function (d) { return (d.prenom + " " + d.nom).toLowerCase() === v.replace(/\s*\(.*\)$/, ""); });
