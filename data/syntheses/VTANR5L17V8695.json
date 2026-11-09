@@ -1,0 +1,86 @@
+{
+ "uid": "VTANR5L17V8695",
+ "num": 8695,
+ "statut": "publiee",
+ "cree_le": "2026-11-09T22:41:10+00:00",
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2027O1N019",
+ "seance_jour": "lundi 12 octobre 2026",
+ "contexte": "Ce vote porte sur l'ensemble de la proposition de loi visant à expérimenter une gouvernance territoriale unifiée pour le centre de ressources, d'expertise et de performance sportive (CREPS) de Vichy. Le texte instaure une organisation tripartite entre l'État, la région et l'agglomération pour mutualiser les équipements et optimiser la gestion du site.",
+ "pour": [
+  {
+   "resume": "Le texte apporte une solution concrète à la gestion séparée et sous-utilisée des infrastructures sportives sur un même site à Vichy.",
+   "citation": "Pour autant, il existe un problème ancien et connu de tous : deux acteurs publics, le Creps et l'agglomération, partagent le même site, mais gèrent leurs équipements chacun de son côté.",
+   "acteur": "PA794154",
+   "nom": "M. Jean-Claude Raux",
+   "qualite": "",
+   "syceron": [
+    "4183119"
+   ]
+  },
+  {
+   "resume": "L'expérimentation respecte le statut public du CREPS, préserve ses missions nationales et garantit le contrôle de l'État.",
+   "citation": "Il ne s'agit pas de défaire l'organisation issue de la loi Notre, mais de lui permettre de s'adapter là où le terrain est prêt.",
+   "acteur": "PA795258",
+   "nom": "M. Frantz Gumbs",
+   "qualite": "",
+   "syceron": [
+    "4183131"
+   ]
+  },
+  {
+   "resume": "La méthode expérimentale et ciblée permet de tester localement une organisation avant d'éventuelles généralisations.",
+   "citation": "On essaie à Vichy, on mesure, et c'est nous qui déciderons ensuite d'aller plus loin ou d'en rester là.",
+   "acteur": "PA842183",
+   "nom": "M. Benoît Blanchard",
+   "qualite": "",
+   "syceron": [
+    "4183003"
+   ]
+  },
+  {
+   "resume": "La mutualisation des ressources permet de développer l'écosystème sportif local, notamment en matière de médecine du sport et d'enseignement supérieur.",
+   "citation": "Grâce à ce texte, il pourra développer une offre de services en médecine du sport et rééducation, ainsi qu'une antenne universitaire autour de la thématique sportive.",
+   "acteur": "PA840817",
+   "nom": "M. Joël Bruneau",
+   "qualite": "",
+   "syceron": [
+    "4183008"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le changement de gouvernance ne résout pas la question des coupes budgétaires subies par le sport ces dernières années.",
+   "citation": "Si nous n'y sommes pas opposés par principe, nous disons, madame la ministre, que le vrai enjeu n'est pas le changement de gouvernance, mais l'arrêt des coupes budgétaires régulières",
+   "acteur": "PA793756",
+   "nom": "M. François Piquemal",
+   "qualite": "",
+   "syceron": [
+    "4182790",
+    "4183093",
+    "4183098",
+    "4183101",
+    "4183103"
+   ]
+  },
+  {
+   "resume": "Le transfert de compétences vers les collectivités locales risque de créer des inégalités territoriales et un manque de cohésion globale.",
+   "citation": "Il y a ici le risque de faire encore peser des compétences sur les collectivités territoriales sans que les moyens suivent et,, de créer des inégalités entre les différents Creps selon les moyens et les volontés locales.",
+   "acteur": "PA793756",
+   "nom": "M. François Piquemal",
+   "qualite": "",
+   "syceron": [
+    "4182790",
+    "4183093",
+    "4183098",
+    "4183101",
+    "4183103"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-09T23:02:40+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-09T23:02:40+00:00"
+}

@@ -1,0 +1,114 @@
+{
+ "uid": "VTANR5L17V8705",
+ "num": 8705,
+ "statut": "publiee",
+ "cree_le": "2026-11-09T22:41:10+00:00",
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2027O1N020",
+ "seance_jour": "mardi 13 octobre 2026",
+ "contexte": "Cette proposition de loi vise à apporter une réponse globale au phénomène des violences sexuelles et sexistes envers les femmes et les enfants. Issue d'initiatives associatives et de travaux parlementaires transpartisans, elle aborde la prévention, le dépistage, le renforcement des enquêtes judiciaires et l'accompagnement des victimes. Elle prévoit également des mesures contre les violences économiques, la cybercriminalité et l'inceste.",
+ "pour": [
+  {
+   "resume": "La proposition de loi renforce l'efficacité des poursuites judiciaires grâce à un socle minimal d'investigations obligatoires pour chaque plainte et à une spécialisation accrue des magistrats.",
+   "citation": "Elle impose un socle minimal d'investigations, afin que les plaintes donnent lieu aux vérifications indispensables : auditions rapides, recherche de preuves, examen des antécédents et identification d'éventuelles autres victimes.",
+   "acteur": "PA719968",
+   "nom": "Mme Sylvie Bonnet",
+   "qualite": "",
+   "syceron": [
+    "4183866"
+   ]
+  },
+  {
+   "resume": "Le texte améliore la détection des violences sur les mineurs par la mise en place d'un entretien individuel obligatoire en milieu scolaire, mené hors de la présence des parents par du personnel formé.",
+   "citation": "Nous avons rétabli à son initiative un entretien individuel obligatoire pour chaque élève, de la maternelle à la majorité ; il sera mené hors de la présence des parents, par des professionnels formés à l'écoute de l'enfant.",
+   "acteur": "PA720038",
+   "nom": "Mme Sandrine Josso",
+   "qualite": "",
+   "syceron": [
+    "4184157"
+   ]
+  },
+  {
+   "resume": "Le dispositif renforce la protection matérielle des victimes face aux violences économiques en mettant fin à la solidarité des dettes ménagères et en assurant un soutien financier rapide.",
+   "citation": "dès l'ordonnance de protection, le juge aux affaires familiales pourra protéger financièrement la victime ; la solidarité des dettes ménagères contractées après le départ du domicile prendra fin ; pour la décharge de solidarité fiscale, la charge de la preuve sera inversée.",
+   "acteur": "PA720038",
+   "nom": "Mme Sandrine Josso",
+   "qualite": "",
+   "syceron": [
+    "4184157"
+   ]
+  },
+  {
+   "resume": "Le texte prévoit une prise en charge intégrale par l'assurance maladie d'un parcours de soins pour accompagner et soutenir la reconstruction des personnes victimes de violences.",
+   "citation": "Grâce à la création d'un parcours de soins intégralement pris en charge par l'assurance maladie, nous offrirons à toutes celles et ceux dont la vie a été brisée une perspective de reconstruction.",
+   "acteur": "PA841813",
+   "nom": "Mme Florence Herouin-Léautey",
+   "qualite": "",
+   "syceron": [
+    "4184383"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le projet de loi privilégie la réponse pénale au détriment de la prévention primaire des violences et du suivi des auteurs pour lutter contre la récidive.",
+   "citation": "Aucun des articles de ce texte ne concerne la prévention des violences ; tous commencent au repérage, une fois qu'elles ont été commises.",
+   "acteur": "PA795108",
+   "nom": "Mme Élise Leboucher",
+   "qualite": "",
+   "syceron": [
+    "4184243",
+    "4184249",
+    "4184258"
+   ]
+  },
+  {
+   "resume": "Le texte n'assure pas la prise en charge financière des soins essentiels nécessaires à la reconstruction des victimes majeures, leur laissant des coûts élevés.",
+   "citation": "Pour les victimes de violences sexuelles dans l'enfance, le reste à charge est en moyenne de 21 000 euros. Pourtant, et contrairement à ce que vous prétendez, le parcours de soins proposé ne concernera que les victimes mineures.",
+   "acteur": "PA795108",
+   "nom": "Mme Élise Leboucher",
+   "qualite": "",
+   "syceron": [
+    "4184243",
+    "4184249",
+    "4184258"
+   ]
+  },
+  {
+   "resume": "L'interdiction absolue de produire des éléments sur les antécédents sexuels de la victime restreint le pouvoir d'appréciation du juge et compromet l'équilibre des droits de la défense.",
+   "citation": "Proscrire les questions humiliantes, oui ; mais interdire par principe, c'est retirer au juge le pouvoir d'apprécier la preuve. La ministre elle-même a évoqué un risque d'inconstitutionnalité, car une telle disposition risque de favoriser des erreurs judiciaires.",
+   "acteur": "PA840657",
+   "nom": "Mme Sophie Ricourt Vaginay",
+   "qualite": "",
+   "syceron": [
+    "4184180",
+    "4184183",
+    "4184187",
+    "4184189",
+    "4184192",
+    "4184194",
+    "4184215",
+    "4184196",
+    "4184198",
+    "4184201",
+    "4184203"
+   ]
+  },
+  {
+   "resume": "La suppression des protections contre les mesures d'éloignement pour les femmes étrangères victimes portant plainte affaiblit la portée universelle du texte.",
+   "citation": "Une \" loi intégrale \" - mais pas pour les personnes les plus vulnérables, avec la suppression de l'interdiction de prononcer une OQTF à l'encontre des femmes étrangères victimes de VSS et la suppression de la délivrance d'une carte de séjour temporaire après une plainte pour violences sexuelles.",
+   "acteur": "PA795108",
+   "nom": "Mme Élise Leboucher",
+   "qualite": "",
+   "syceron": [
+    "4184243",
+    "4184249",
+    "4184258"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-09T22:55:49+00:00",
+ "modele": "gemini:gemini-flash-latest",
+ "derniere_tentative": "2026-11-09T22:55:49+00:00"
+}

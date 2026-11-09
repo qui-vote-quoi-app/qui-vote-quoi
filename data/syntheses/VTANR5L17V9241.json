@@ -1,0 +1,69 @@
+{
+ "uid": "VTANR5L17V9241",
+ "num": 9241,
+ "statut": "publiee",
+ "cree_le": "2026-11-09T22:41:10+00:00",
+ "tentatives": 2,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2027O1N045",
+ "seance_jour": "jeudi 29 octobre 2026",
+ "contexte": "Ce vote porte sur l'ensemble d'une proposition de loi visant à instaurer un parcours de soins intégralement pris en charge par la sécurité sociale pour toutes les victimes de violences sexuelles. Le texte prévoit notamment la prise en charge sans avance de frais de l'accompagnement médical et psychologique.",
+ "pour": [
+  {
+   "resume": "Ce texte constitue une étape concrète et nécessaire pour apporter aux victimes de violences sexuelles l'accompagnement et la réparation que la société leur doit.",
+   "citation": "Nous voterons pour le maillon de la loi intégrale qui nous est proposé aujourd'hui à travers cette proposition de loi.",
+   "acteur": "PA840939",
+   "nom": "Mme Océane Godard",
+   "qualite": "",
+   "syceron": [
+    "4210049",
+    "4210053"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "L'examen d'un texte partiel fait doublon avec une proposition de loi plus large déjà votée et risque de disperser inutilement les efforts parlementaires.",
+   "citation": "ce serait disperser le travail parlementaire au moment précis où il faut le concentrer pour que la proposition de loi intégrale soit adoptée définitivement, dans son entièreté, au plus vite.",
+   "acteur": "PA841563",
+   "nom": "Mme Claire Marais-Beuil",
+   "qualite": "",
+   "syceron": [
+    "4209774",
+    "4209778",
+    "4209780",
+    "4209935"
+   ]
+  },
+  {
+   "resume": "Les mesures proposées manquent d'un véritable financement budgétaire pour être concrètement mises en œuvre.",
+   "citation": "Quant à l'addition, elle se borne à un gage d'usage que personne ici ne prend pour un financement.",
+   "acteur": "PA795326",
+   "nom": "M. Christopher Weissberg",
+   "qualite": "",
+   "syceron": [
+    "4209787",
+    "4209789",
+    "4209793"
+   ]
+  },
+  {
+   "resume": "Proclamer la gratuité ne garantit pas l'accès réel aux soins face au manque de soignants disponibles et aux déserts médicaux.",
+   "citation": "Vous proposez le remboursement intégral des soins et la dispense d'avance de frais. Très bien, mais encore faut-il que les soins soient disponibles !",
+   "acteur": "PA878242",
+   "nom": "M. Antoine Valentin",
+   "qualite": "",
+   "syceron": [
+    "4210056",
+    "4210142",
+    "4210058",
+    "4210151",
+    "4210063",
+    "4210069"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-09T22:47:59+00:00",
+ "modele": "gemini:gemini-flash-latest",
+ "derniere_tentative": "2026-11-09T22:47:59+00:00"
+}

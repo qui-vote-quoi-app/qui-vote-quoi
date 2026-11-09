@@ -1,0 +1,115 @@
+{
+ "uid": "VTANR5L17V8706",
+ "num": 8706,
+ "statut": "publiee",
+ "cree_le": "2026-11-09T22:41:10+00:00",
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2027O1N020",
+ "seance_jour": "mardi 13 octobre 2026",
+ "contexte": "L'Assemblée nationale examine en première lecture une proposition de loi organique visant à adapter l'autorité judiciaire et à apporter une réponse globale à la lutte contre les violences sexuelles et intrafamiliales. Le texte aborde notamment la prévention, l'accompagnement des victimes, la spécialisation de la justice et le renforcement des sanctions.",
+ "pour": [
+  {
+   "resume": "La proposition de loi instaure des mesures concrètes et globales, allant de la prévention et des enquêtes obligatoires jusqu'à la prise en charge et l'accompagnement des victimes.",
+   "citation": "Nous prenons les avancées, des actes d'enquête obligatoires aux unités spécialisées dans la police judiciaire, de l'information de la victime tous les six mois durant la procédure au principe de non-confrontation entre la victime et l'auteur, de l'extension des droits pour les frais de justice ou de soins à l'accompagnement juridique pour les personnes handicapées.",
+   "acteur": "PA588884",
+   "nom": "Mme Clémentine Autain",
+   "qualite": "",
+   "syceron": [
+    "4184149",
+    "4184154"
+   ]
+  },
+  {
+   "resume": "Le texte prévoit une meilleure protection financière des victimes et renforce la prise en compte de la soumission chimique et de la protection des enfants.",
+   "citation": "En matière de violences économiques, par exemple, trois amendements issus de notre proposition de loi de 2023 sur la justice patrimoniale au sein de la famille ont été adoptés : dès l'ordonnance de protection, le juge aux affaires familiales pourra protéger financièrement la victime",
+   "acteur": "PA720038",
+   "nom": "Mme Sandrine Josso",
+   "qualite": "",
+   "syceron": [
+    "4184157"
+   ]
+  },
+  {
+   "resume": "Ce texte constitue une réponse globale et transpartisane, issue du terrain et des associations, permettant de lutter contre l'impunité et d'améliorer la chaîne de traitement judiciaire.",
+   "citation": "Concrètement, la proposition de loi prévoit de renforcer la spécialisation de la justice, avec des magistrats dédiés et un parquet spécialisé. Elle impose un socle minimal d'investigations, afin que les plaintes donnent lieu aux vérifications indispensables",
+   "acteur": "PA719968",
+   "nom": "Mme Sylvie Bonnet",
+   "qualite": "",
+   "syceron": [
+    "4183866"
+   ]
+  },
+  {
+   "resume": "Le texte modernise le droit en créant de nouvelles infractions adaptées aux violences en ligne et en renforçant les outils de prévention et de repérage, notamment pour les mineurs.",
+   "citation": "Grâce à l'instauration d'un socle minimal d'actes d'enquête et à la création d'unités spécialisées, nous réduirons ces 94 % de classements sans suite. Grâce à l'extension de la prescription glissante aux victimes majeures, nous permettrons à des milliers de femmes de faire valoir leurs droits et de demander réparation.",
+   "acteur": "PA841813",
+   "nom": "Mme Florence Herouin-Léautey",
+   "qualite": "",
+   "syceron": [
+    "4184383"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le texte souffre d'un manque crucial de financements et de moyens humains pérennes pour garantir l'application effective de ses mesures sur le terrain.",
+   "citation": "Ensuite, et surtout, ces mesures doivent être financées, faute de quoi elles resteront lettre morte. Sans recrutements massifs de magistrats, d'officiers de police judiciaire (OPJ), de médecins et d'infirmières scolaires, sans formation, sans moyens pour l'aide sociale à l'enfance (ASE) ou pour les associations d'aide aux victimes",
+   "acteur": "PA588884",
+   "nom": "Mme Clémentine Autain",
+   "qualite": "",
+   "syceron": [
+    "4184149",
+    "4184154"
+   ]
+  },
+  {
+   "resume": "La suppression de dispositions protégeant les femmes étrangères victimes de violences en lien avec le droit au séjour fragilise les personnes les plus vulnérables.",
+   "citation": "L'article 62, qui visait à empêcher qu'une obligation de quitter le territoire français soit prononcée contre des femmes victimes de violences, a été supprimé. Comme si leur protection devenait soudain une question migratoire.",
+   "acteur": "PA721896",
+   "nom": "Mme Elsa Faucillon",
+   "qualite": "",
+   "syceron": [
+    "4184163",
+    "4184165",
+    "4184170",
+    "4184178"
+   ]
+  },
+  {
+   "resume": "Le texte omet de traiter la question de la prise en charge des auteurs de violences et repose trop exclusivement sur la réponse carcérale sans agir sur la prévention de la récidive.",
+   "citation": "Un quart des articles de ce texte créent de nouvelles infractions ou aggravent les peines, quand aucune étude n'a montré que la prison diminuait la récidive. Au contraire, ce qui dissuade les auteurs de passer à l'acte n'est pas la gravité de la peine mais la certitude d'être pris.",
+   "acteur": "PA795108",
+   "nom": "Mme Élise Leboucher",
+   "qualite": "",
+   "syceron": [
+    "4184243",
+    "4184249",
+    "4184258"
+   ]
+  },
+  {
+   "resume": "Certaines interdictions strictes en matière de preuve risquent de porter atteinte aux droits de la défense et d'accroître le risque d'erreurs judiciaires.",
+   "citation": "Reste les grands oubliés de cette proposition de loi : les droits de la défense. L'article 11 interdit toujours, sans aucune exception, toute preuve établie sur les antécédents sexuels de la victime. Proscrire les questions humiliantes, oui ; mais interdire par principe, c'est retirer au juge le pouvoir d'apprécier la preuve.",
+   "acteur": "PA840657",
+   "nom": "Mme Sophie Ricourt Vaginay",
+   "qualite": "",
+   "syceron": [
+    "4184180",
+    "4184183",
+    "4184187",
+    "4184189",
+    "4184192",
+    "4184194",
+    "4184215",
+    "4184196",
+    "4184198",
+    "4184201",
+    "4184203"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-09T22:53:31+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-09T22:53:31+00:00"
+}

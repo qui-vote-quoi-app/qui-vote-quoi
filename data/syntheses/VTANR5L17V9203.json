@@ -1,0 +1,91 @@
+{
+ "uid": "VTANR5L17V9203",
+ "num": 9203,
+ "statut": "publiee",
+ "cree_le": "2026-11-09T22:41:10+00:00",
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2027O1N044",
+ "seance_jour": "jeudi 29 octobre 2026",
+ "contexte": "L'Assemblée nationale se prononce sur l'adoption en première lecture d'une proposition de loi visant à intégrer les accompagnants d'élèves en situation de handicap (AESH) dans la fonction publique, au sein d'un corps de catégorie B. Ce texte a pour objet de faire évoluer le statut de ces personnels, actuellement contractuels, afin de lutter contre la précarité et de mieux valoriser leur mission.",
+ "pour": [
+  {
+   "resume": "L'adoption de la proposition de loi permet de reconnaître le rôle essentiel de ces personnels et d'encourager la reprise des négociations sociales.",
+   "citation": "l'adoption du texte encouragera sans doute le gouvernement à reprendre les négociations avec leurs organisations représentatives, aujourd'hui à l'arrêt.",
+   "acteur": "PA720960",
+   "nom": "M. Olivier Serva",
+   "qualite": "",
+   "syceron": [
+    "4209454"
+   ]
+  },
+  {
+   "resume": "Ce texte constitue une base nécessaire pour faire évoluer le statut des accompagnants et pourra être perfectionné lors de la navette parlementaire.",
+   "citation": "Nous voterons donc majoritairement en faveur de la proposition de loi qui est un texte d'appel, ce qui permettra justement de l'améliorer au cours de la navette et, éventuellement, de poursuivre les débats en deuxième lecture.",
+   "acteur": "PA870009",
+   "nom": "M. Lionel Duparay",
+   "qualite": "",
+   "syceron": [
+    "4209490",
+    "4209492",
+    "4209495"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "La mesure engendrerait un coût budgétaire particulièrement lourd pour les finances publiques.",
+   "citation": "une mesure qui coûterait plus de 2 milliards d'euros aux finances publiques, ce qui signifie qu'elle est absolument impossible à financer.",
+   "acteur": "PA841553",
+   "nom": "M. Thierry Tesson",
+   "qualite": "",
+   "syceron": [
+    "4209458",
+    "4209460",
+    "4209462",
+    "4209464"
+   ]
+  },
+  {
+   "resume": "Le dispositif ne permettrait pas de couvrir la totalité du temps scolaire des élèves tout en représentant un coût très important.",
+   "citation": "Les 24 heures prévues ne couvrent ni les 26 heures d'un collégien ni les 28 heures d'un lycéen et elles coûteraient 4 milliards d'euros par an, financés par des hausses d'impôt, sans ajouter une minute d'accompagnement pour les élèves.",
+   "acteur": "PA720256",
+   "nom": "Mme Géraldine Bannier",
+   "qualite": "",
+   "syceron": [
+    "4209467",
+    "4209471",
+    "4209475",
+    "4209477"
+   ]
+  },
+  {
+   "resume": "La réforme créerait une inégalité de statut entre les personnels qui remplissent les critères d'accès à la fonction publique et les autres.",
+   "citation": "Le texte tend aussi à créer deux catégories d'AESH, puisque celles qui ne remplissent pas les conditions de diplôme et de nationalité pour accéder à la fonction publique resteraient en CDI.",
+   "acteur": "PA720256",
+   "nom": "Mme Géraldine Bannier",
+   "qualite": "",
+   "syceron": [
+    "4209467",
+    "4209471",
+    "4209475",
+    "4209477"
+   ]
+  },
+  {
+   "resume": "Le texte comporte des contradictions juridiques et ne résout pas la question de la formation ou du remplacement des agents.",
+   "citation": "Sur le plan juridique, vous supprimez certains alinéas de l'article L. 917-1 du code de l'éducation, mais vous conservez celui qui précise que les AESH sont des agents contractuels de l'État.",
+   "acteur": "PA795954",
+   "nom": "Mme Catherine Ibled",
+   "qualite": "",
+   "syceron": [
+    "4209479",
+    "4209483",
+    "4209485"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-09T22:48:37+00:00",
+ "modele": "gemini:gemini-flash-latest",
+ "derniere_tentative": "2026-11-09T22:48:37+00:00"
+}

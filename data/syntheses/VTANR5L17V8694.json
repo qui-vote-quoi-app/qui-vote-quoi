@@ -1,0 +1,60 @@
+{
+ "uid": "VTANR5L17V8694",
+ "num": 8694,
+ "statut": "publiee",
+ "cree_le": "2026-11-09T22:41:10+00:00",
+ "tentatives": 2,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2027O1N018",
+ "seance_jour": "lundi 12 octobre 2026",
+ "contexte": "L'Assemblée nationale examine en première lecture une proposition de loi visant à assouplir la procédure d'autorisation des établissements et services sociaux et médico-sociaux à caractère expérimental. Ce texte permet aux structures ayant fait l'objet d'une évaluation positive de poursuivre leur activité pour une durée de quinze ans dans les conditions de leur expérimentation.",
+ "pour": [
+  {
+   "resume": "Le texte apporte une solution concrète pour éviter la disparition de structures innovantes qui ne correspondent à aucune case administrative classique.",
+   "citation": "Nous sommes appelés à voter pour que cette association ne soit pas sommée de faire un choix au terme de l'expérimentation : faire rentrer le service dans une case ou le voir disparaître.",
+   "acteur": "PA840143",
+   "nom": "M. Guillaume Florquin",
+   "qualite": "",
+   "syceron": [
+    "4183437"
+   ]
+  },
+  {
+   "resume": "La mesure garantit la stabilité des professionnels, la visibilité des structures et la continuité de l'accompagnement des publics vulnérables.",
+   "citation": "Cette mesure apporte de la visibilité aux structures, de la stabilité aux professionnels et de la continuité aux personnes accompagnées.",
+   "acteur": "PA841091",
+   "nom": "M. Arnaud Simion",
+   "qualite": "",
+   "syceron": [
+    "4183445"
+   ]
+  },
+  {
+   "resume": "Le dispositif répond à un blocage juridique tout en maintenant une exigence de contrôle et d'évaluation par les autorités compétentes.",
+   "citation": "La pérennisation doit reposer sur une évaluation positive, des résultats démontrés et l'accord des autorités compétentes.",
+   "acteur": "PA722390",
+   "nom": "Mme Josiane Corneloup",
+   "qualite": "",
+   "syceron": [
+    "4183449"
+   ]
+  },
+  {
+   "resume": "La prolongation des expérimentations évaluées positivement permet de sécuriser des innovations indispensables pour répondre à des besoins complexes.",
+   "citation": "Le texte que nous examinons aujourd'hui apportera une solution à cette situation en permettant aux établissements de poursuivre l'expérimentation si elle bénéficie déjà de premières évaluations positives.",
+   "acteur": "PA841507",
+   "nom": "M. Nicolas Bonnet",
+   "qualite": "",
+   "syceron": [
+    "4183453",
+    "4183456",
+    "4183458",
+    "4183460"
+   ]
+  }
+ ],
+ "contre": [],
+ "genere_le": "2026-11-09T23:10:14+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-09T23:10:14+00:00"
+}

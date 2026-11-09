@@ -1,0 +1,124 @@
+{
+ "uid": "VTANR5L17V8611",
+ "num": 8611,
+ "statut": "publiee",
+ "cree_le": "2026-11-09T22:41:10+00:00",
+ "tentatives": 2,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2027O1N014",
+ "seance_jour": "jeudi 08 octobre 2026",
+ "contexte": "L'Assemblée nationale examine une proposition de résolution visant à refonder l'espace Schengen par l'instauration d'une double frontière nationale et européenne. Ce texte fait l'objet de vives discussions sur la gestion de l'immigration, la souveraineté nationale et l'avenir des coopérations au sein de l'Union européenne.",
+ "pour": [
+  {
+   "resume": "L'espace Schengen ne fonctionne plus correctement et l'absence de maîtrise des flux migratoires impose de réformer ce système pour redonner la parole au peuple.",
+   "citation": "Or cela suppose une grande réforme de l'espace Schengen, qui ne fonctionne plus.",
+   "acteur": "PA793218",
+   "nom": "M. Jordan Guitton",
+   "qualite": "",
+   "syceron": [
+    "4177860",
+    "4177862",
+    "4177865",
+    "4177868",
+    "4177870",
+    "4177872",
+    "4177875",
+    "4177881"
+   ]
+  },
+  {
+   "resume": "La France ne devrait pas avoir à subir les conséquences des politiques de régularisation massive menées par d'autres gouvernements européens.",
+   "citation": "La France n'a pas à subir les choix de ses voisins lorsqu'elle ne souhaite pas accueillir d'immigration.",
+   "acteur": "PA793218",
+   "nom": "M. Jordan Guitton",
+   "qualite": "",
+   "syceron": [
+    "4177860",
+    "4177862",
+    "4177865",
+    "4177868",
+    "4177870",
+    "4177872",
+    "4177875",
+    "4177881"
+   ]
+  },
+  {
+   "resume": "Les forces de sécurité sur le terrain constatent quotidiennement les difficultés liées à une immigration incontrôlée.",
+   "citation": "Les policiers, les douaniers et les gendarmes nous le disent sur le terrain et, au Rassemblement national, nous les entendons.",
+   "acteur": "PA793218",
+   "nom": "M. Jordan Guitton",
+   "qualite": "",
+   "syceron": [
+    "4177860",
+    "4177862",
+    "4177865",
+    "4177868",
+    "4177870",
+    "4177872",
+    "4177875",
+    "4177881"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Rétablir des contrôles permanents aux frontières intérieures revient à sortir de Schengen de manière détournée tout en fragilisant les outils existants.",
+   "citation": "Le Frexit claironné est devenu un Frexit par petits morceaux.",
+   "acteur": "PA794206",
+   "nom": "M. Christophe Marion",
+   "qualite": "",
+   "syceron": [
+    "4178317",
+    "4178330"
+   ]
+  },
+  {
+   "resume": "La proposition de résolution est jugée inefficace sur le plan de la sécurité et contre-productive pour l'économie et la défense européenne.",
+   "citation": "Cette proposition de résolution est non seulement idéologique, mais aussi et surtout contre-productive sur son propre terrain, celui de la sécurité.",
+   "acteur": "PA794206",
+   "nom": "M. Christophe Marion",
+   "qualite": "",
+   "syceron": [
+    "4178317",
+    "4178330"
+   ]
+  },
+  {
+   "resume": "Le ciblage des ressortissants de pays tiers aux frontières intérieures mènerait inévitablement à des contrôles au faciès et à des discriminations.",
+   "citation": "Votre double frontière n'est pas une ligne sur une carte, c'est une ligne tracée sur la peau des gens.",
+   "acteur": "PA795808",
+   "nom": "Mme Sabrina Sebaihi",
+   "qualite": "",
+   "syceron": [
+    "4177891",
+    "4177895",
+    "4177898",
+    "4177900",
+    "4177902",
+    "4177906",
+    "4177910",
+    "4177912",
+    "4177915"
+   ]
+  },
+  {
+   "resume": "Le dispositif proposé perturberait la libre circulation des travailleurs et engendrerait des coûts administratifs et économiques importants pour le pays.",
+   "citation": "Votre tri suppose donc un contrôle général. Les salariés le paieront en temps perdu. Le transporteur paiera l'attente. Les PME répercuteront les coûts.",
+   "acteur": "PA335054",
+   "nom": "Mme Marietta Karamanli",
+   "qualite": "",
+   "syceron": [
+    "4178348",
+    "4178350",
+    "4178354",
+    "4178357",
+    "4178361",
+    "4178363"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-09T23:13:22+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-09T23:13:22+00:00"
+}

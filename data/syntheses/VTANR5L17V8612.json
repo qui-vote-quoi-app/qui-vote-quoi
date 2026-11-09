@@ -1,0 +1,122 @@
+{
+ "uid": "VTANR5L17V8612",
+ "num": 8612,
+ "statut": "publiee",
+ "cree_le": "2026-11-09T22:41:10+00:00",
+ "tentatives": 2,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2027O1N014",
+ "seance_jour": "jeudi 08 octobre 2026",
+ "contexte": "La proposition de résolution invite le Gouvernement à soutenir l'entrée au Panthéon d'Olympe de Gouges, de l'abbé Charles-Michel de l'Épée et de Zéna M'Déré. Ce texte fait l'objet de débats sur la reconnaissance de ces figures historiques et sur les intentions politiques des auteurs de la proposition.",
+ "pour": [
+  {
+   "resume": "Le Panthéon est le monument où la nation rend hommage aux personnalités qui ont fait vivre les valeurs républicaines et servi la France.",
+   "citation": "Le Panthéon n'est pas seulement un monument ; c'est le lieu où la nation rend hommage à celles et ceux qui ont fait vivre les valeurs de notre République.",
+   "acteur": "PA842279",
+   "nom": "Mme Anchya Bamana",
+   "qualite": "",
+   "syceron": [
+    "4179126"
+   ]
+  },
+  {
+   "resume": "Ces trois personnalités incarnent des parcours exceptionnels et un idéal commun au service de l'intérêt collectif et de l'histoire de la France.",
+   "citation": "Cette proposition de résolution nous invite à reconnaître trois parcours exceptionnels, trois engagements différents, mais un même idéal : celui qui consiste à servir la France et ses principes.",
+   "acteur": "PA842279",
+   "nom": "Mme Anchya Bamana",
+   "qualite": "",
+   "syceron": [
+    "4179126"
+   ]
+  },
+  {
+   "resume": "Olympe de Gouges a défendu l'égalité entre les femmes et les hommes, combattu l'esclavage et lutté pour sa liberté de pensée.",
+   "citation": "Olympe de Gouges, d'abord, qui défendit courageusement l'égalité entre les hommes et les femmes, combattit l'esclavage et paya de sa vie sa liberté de pensée.",
+   "acteur": "PA842279",
+   "nom": "Mme Anchya Bamana",
+   "qualite": "",
+   "syceron": [
+    "4179126"
+   ]
+  },
+  {
+   "resume": "L'abbé de l'Épée et Zéna M'Déré ont respectivement consacré leur vie à l'instruction des sourds et défendu l'attachement de Mayotte à la République.",
+   "citation": "L'abbé Charles-Michel de l'Épée, ensuite, qui consacra son existence à l'instruction des personnes sourdes, démontrant que l'accès au savoir et à la dignité ne devait laisser personne de côté.",
+   "acteur": "PA842279",
+   "nom": "Mme Anchya Bamana",
+   "qualite": "",
+   "syceron": [
+    "4179126"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "La proposition de résolution constitue une instrumentalisation politique visant à instrumentaliser des figures historiques pour obtenir une respectabilité.",
+   "citation": "Elle cherche seulement à faire entrer le Rassemblement national dans une respectabilité qu'il n'a pas.",
+   "acteur": "PA720952",
+   "nom": "M. Aurélien Taché",
+   "qualite": "",
+   "syceron": [
+    "4179130",
+    "4179132",
+    "4179134",
+    "4179138",
+    "4179331",
+    "4179141",
+    "4179143",
+    "4179333"
+   ]
+  },
+  {
+   "resume": "Les votes et les positions politiques des auteurs de la proposition sont jugés incompatibles avec les combats menés par ces personnalités pour les droits et l'égalité.",
+   "citation": "Au fond, ce que le Rassemblement national aime à Mayotte, c'est la France sans la République, le drapeau sans l'égalité, l'uniforme sans les droits.",
+   "acteur": "PA720952",
+   "nom": "M. Aurélien Taché",
+   "qualite": "",
+   "syceron": [
+    "4179130",
+    "4179132",
+    "4179134",
+    "4179138",
+    "4179331",
+    "4179141",
+    "4179143",
+    "4179333"
+   ]
+  },
+  {
+   "resume": "Le texte présenté n'a aucune portée juridique concrète pour répondre aux difficultés quotidiennes et aux crises sociales traversées par les citoyens.",
+   "citation": "N'y a-t-il pas suffisamment de problèmes dans ce pays, de crises sociales, budgétaires, économiques,...",
+   "acteur": "PA795864",
+   "nom": "M. Pierre Cazeneuve",
+   "qualite": "",
+   "syceron": [
+    "4178603",
+    "4178657",
+    "4178609",
+    "4178611"
+   ]
+  },
+  {
+   "resume": "L'utilisation de ces figures historiques est perçue comme une tentative de détournement d'héritage politique en contradiction avec l'histoire des auteurs.",
+   "citation": "Quel est le but de l'exercice ? Cela s'appelle une captation d'héritage.",
+   "acteur": "PA721210",
+   "nom": "M. Alexis Corbière",
+   "qualite": "",
+   "syceron": [
+    "4178509",
+    "4178511",
+    "4178514",
+    "4178549",
+    "4178516",
+    "4178518",
+    "4178520",
+    "4178523"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-09T23:11:48+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-09T23:11:48+00:00"
+}
