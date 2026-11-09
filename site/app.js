@@ -16,7 +16,7 @@
   var dateFr = function (d) { var p = d.split("-"); return (+p[2]) + " " + MOIS[+p[1] - 1] + " " + p[0]; };
   var ord = function (n) { return n === 1 ? "1re" : n + "e"; };
 
-  var st = { meta: null, groupes: {}, deps: [], places: {}, mois: {}, moisCharges: 0, lv: 1, q: "", num: null,
+  var st = { paquets: {}, meta: null, groupes: {}, deps: [], places: {}, mois: {}, moisCharges: 0, lv: 1, q: "", num: null,
     s: null, mode: "vote", grp: null, sel: null, seatInfo: {} };
 
   /* ---------------- Hémicycle ---------------- */
@@ -82,7 +82,11 @@
   /* ---------------- Scrutin ---------------- */
   function ouvrir(num) {
     st.num = num; st.sel = null; st.grp = null;
-    return get("scrutins/" + num + ".json").then(function (s) {
+    var p = Math.floor(num / 100);
+    var paquet = st.paquets[p] || (st.paquets[p] = get("scrutins/" + p + ".json"));
+    return paquet.then(function (b) {
+      var s = b[String(num)];
+      if (!s) throw new Error("scrutin " + num);
       st.s = s; st.seatInfo = {};
       s.groupes.forEach(function (g) {
         Object.keys(g.votes).forEach(function (pos) {

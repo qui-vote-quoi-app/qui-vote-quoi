@@ -26,6 +26,9 @@ def exporter(scrutins, deputes, groupes, syntheses, retraits, sources_dates):
     shutil.copy(config.PLACES, out / "places.json")
 
     par_mois = defaultdict(list)
+    # Détails regroupés par paquets de 100 scrutins (scrutins/97.json = n° 9700 à 9799) :
+    # une centaine de fichiers au lieu d'un par scrutin, pour une publication rapide.
+    paquets = defaultdict(dict)
     for s in scrutins.values():
         syn = syntheses.get(s["uid"]) or {}
         statut = syn.get("statut")
@@ -64,7 +67,10 @@ def exporter(scrutins, deputes, groupes, syntheses, retraits, sources_dates):
             for camp in ("pour", "contre"):
                 for a in detail["synthese"][camp]:
                     a["dep"] = index.get(a["acteur"])
-        ecrire_json(out / "scrutins" / f"{s['num']}.json", detail, compact=True)
+        paquets[s["num"] // 100][str(s["num"])] = detail
+
+    for p, contenu in paquets.items():
+        ecrire_json(out / "scrutins" / f"{p}.json", contenu, compact=True)
 
     mois = sorted(par_mois, reverse=True)
     for m in mois:
