@@ -1,11 +1,71 @@
 {
  "uid": "VTANR5L17V9759",
  "num": 9759,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-09T21:55:42+00:00",
- "tentatives": 0,
+ "tentatives": 1,
  "erreurs": [],
  "cr": "CRSANR5L17S2027O1N056",
  "seance_jour": "mercredi 04 novembre 2026",
- "derniere_tentative": "2026-11-09T21:59:27+00:00"
+ "derniere_tentative": "2026-11-09T22:18:38+00:00",
+ "contexte": "L'Assemblée nationale se prononce en première lecture sur l'adoption de la première partie du projet de loi de finances pour 2027, consacrée aux recettes de l'État. Ce vote intervient à l'issue de l'examen des amendements en séance publique, qui ont modifié les équilibres fiscaux et financiers du texte initial. L'approbation de ce volet budgétaire conditionne la poursuite de l'examen de la seconde partie relative aux dépenses.",
+ "pour": [],
+ "contre": [
+  {
+   "resume": "Le texte issu des débats entraîne une dégradation importante du déficit public et introduit de nombreuses hausses d'impôts jugées excessives pour l'économie.",
+   "citation": "Toutefois, le texte présente désormais un déficit en grave dérapage - près de 6 %.",
+   "acteur": "PA795664",
+   "nom": "M. Paul Midy",
+   "qualite": "",
+   "syceron": [
+    "4222510",
+    "4222103"
+   ]
+  },
+  {
+   "resume": "Le budget manque de mesures fortes de justice fiscale et n'alloue pas les financements nécessaires aux services publics, à l'éducation et à la transition écologique.",
+   "citation": "Il n'y a rien pour financer les services publics, les politiques publiques, les investissements d'avenir nécessaires pour les écoles et les universités ou pour la lutte contre le réchauffement climatique.",
+   "acteur": "PA841463",
+   "nom": "Mme Estelle Mercier",
+   "qualite": "",
+   "syceron": [
+    "4222124",
+    "4222130",
+    "4222132",
+    "4222134"
+   ]
+  },
+  {
+   "resume": "Le rétablissement des comptes publics devrait prioritairement reposer sur la réduction des dépenses publiques plutôt que sur l'alourdissement de la fiscalité.",
+   "citation": "le redressement des comptes publics doit passer par la maîtrise des dépenses et non par de nouveaux impôts.",
+   "acteur": "PA793094",
+   "nom": "M. Nicolas Ray",
+   "qualite": "",
+   "syceron": [
+    "4222139",
+    "4222144",
+    "4222147",
+    "4222149",
+    "4222452",
+    "4222455"
+   ]
+  },
+  {
+   "resume": "Les mesures fiscales envisagées pénalisent le pouvoir d'achat des salariés et la viabilité des entreprises dans une période économique fragile.",
+   "citation": "Pour relancer le pays, qu'avez-vous trouvé ? Un budget qui tape sur les salariés et sur les entreprises.",
+   "acteur": "PA840809",
+   "nom": "M. Gérault Verny",
+   "qualite": "",
+   "syceron": [
+    "4222548",
+    "4222551",
+    "4222592",
+    "4222555",
+    "4222557",
+    "4222596"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-09T22:18:38+00:00",
+ "modele": "gemini:gemini-flash-latest"
 }
