@@ -18,8 +18,8 @@ https://github.com
 
 ## Contact, signalements et droit de réponse
 
-- **Signaler une erreur** (publiquement) : {{LIEN_ISSUES_GITHUB}}
-- **Demande confidentielle** (droit de réponse, rectification, opposition, retrait d'une synthèse) : {{ADRESSE_EMAIL_DEDIEE}}
+- **Signaler une erreur** (publiquement) : https://github.com/qui-vote-quoi-app/qui-vote-quoi/issues
+- **Demande confidentielle** (droit de réponse, rectification, opposition, retrait d'une synthèse) : qui-vote-quoi-app@proton.me
 
 Toute personne nommée sur ce site peut exercer son droit de réponse. Les demandes de retrait d'une synthèse sont traitées en priorité : la synthèse concernée est dépubliée dans l'attente de l'examen de la demande.
 
@@ -52,7 +52,7 @@ Une synthèse ne remplace pas la lecture du compte rendu intégral, accessible s
 
 Ce site affiche des informations relatives aux députés dans le cadre de leur mandat.
 
-- **Responsable du traitement** : l'éditeur du site (contact : {{ADRESSE_EMAIL_DEDIEE}}).
+- **Responsable du traitement** : l'éditeur du site (contact : qui-vote-quoi-app@proton.me).
 - **Données traitées** : nom, groupe politique, circonscription, place dans l'hémicycle, positions de vote lors des scrutins publics, interventions en séance. Aucune donnée de contact, de date de naissance ou de vie privée n'est publiée.
 - **Origine** : open data de l'Assemblée nationale.
 - **Finalité** : information du public sur l'activité parlementaire.
@@ -60,7 +60,7 @@ Ce site affiche des informations relatives aux députés dans le cadre de leur m
 - **Exactitude** : resynchronisation quotidienne avec la source officielle.
 - **Durée de conservation** : pendant la durée de la XVIIe législature et tant que le service est en ligne, au titre de l'information sur un mandat achevé. {{À confirmer.}}
 - **Information des personnes concernées** : {{les députés ont été informés individuellement par courriel le JJ/MM/AAAA / analyse documentée de l'effort disproportionné — à trancher}}.
-- **Vos droits** : accès, rectification, opposition et limitation, à exercer à l'adresse {{ADRESSE_EMAIL_DEDIEE}}. Vous pouvez aussi introduire une réclamation auprès de la CNIL (https://www.cnil.fr).
+- **Vos droits** : accès, rectification, opposition et limitation, à exercer à l'adresse qui-vote-quoi-app@proton.me. Vous pouvez aussi introduire une réclamation auprès de la CNIL (https://www.cnil.fr).
 
 **Visiteurs** : ce site ne dépose aucun cookie, n'utilise aucun outil de mesure d'audience et ne collecte aucune donnée sur ses visiteurs.
 
@@ -74,4 +74,4 @@ Aucune photographie de député n'est publiée à ce jour.
 
 ## Code source
 
-Code public : {{LIEN_DEPOT}} — licence {{LICENCE_CODE}}.
+Code public : https://github.com/qui-vote-quoi-app/qui-vote-quoi — licence MIT.

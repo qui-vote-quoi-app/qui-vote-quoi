@@ -37,4 +37,4 @@ MODELES_PAR_DEFAUT = {
     "anthropic": "claude-sonnet-5-5",
 }
 
-USER_AGENT = "qui-vote-quoi/1.0 (+https://github.com/qui-vote-quoi)"
+USER_AGENT = "qui-vote-quoi/1.0 (+https://github.com/qui-vote-quoi-app/qui-vote-quoi)"

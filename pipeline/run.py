@@ -15,7 +15,7 @@ from pathlib import Path
 from . import config, debats, donnees, export, image, synthese, telegram, verification
 from .sources import ZipDistant, charger_json, ecrire_json, entete, telecharger
 
-SITE_URL = os.environ.get("SITE_URL", "https://qui-vote-quoi.github.io").rstrip("/")
+SITE_URL = os.environ.get("SITE_URL", "https://qui-vote-quoi-app.github.io/qui-vote-quoi").rstrip("/")
 
 
 # ------------------------------------------------------------------ utilitaires

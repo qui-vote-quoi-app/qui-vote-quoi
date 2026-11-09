@@ -4,7 +4,7 @@
 
 | Rubrique | Contenu |
 |---|---|
-| Responsable du traitement | L'éditeur du site (particulier, identité communiquée à l'hébergeur). Contact : {{ADRESSE_EMAIL_DEDIEE}} |
+| Responsable du traitement | L'éditeur du site (particulier, identité communiquée à l'hébergeur). Contact : qui-vote-quoi-app@proton.me |
 | Finalité | Informer le public sur l'activité parlementaire : positions de vote des députés lors des scrutins publics et arguments échangés en séance lors des votes majeurs. |
 | Base légale | Intérêt légitime (art. 6.1.f). Pour les positions de vote, susceptibles de révéler des opinions politiques : données manifestement rendues publiques par les personnes dans l'exercice de leur mandat (art. 9.2.e). |
 | Personnes concernées | Députés de la XVIIe législature ; ministres et autres orateurs cités dans les comptes rendus de séance. |
@@ -16,4 +16,4 @@
 | Durée de conservation | Durée de la XVIIe législature, puis archivage tant que le service est en ligne, au titre de l'information sur un mandat achevé. Les synthèses retirées sont dépubliées immédiatement. |
 | Sécurité | Aucune donnée non publique n'est traitée. Clés d'API stockées dans les secrets chiffrés de GitHub. Aucun compte utilisateur, aucun cookie, aucune mesure d'audience. |
 | Information des personnes | Mentions légales publiques et courriel d'information aux députés (voir `courriel-deputes.md`), envoyé le {{DATE_ENVOI}}. |
-| Exercice des droits | {{ADRESSE_EMAIL_DEDIEE}}, réponse sous un mois. |
+| Exercice des droits | qui-vote-quoi-app@proton.me, réponse sous un mois. |

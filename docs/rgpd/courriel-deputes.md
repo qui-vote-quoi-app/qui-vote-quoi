@@ -1,6 +1,6 @@
 # Courriel d'information aux députés
 
-À envoyer depuis {{ADRESSE_EMAIL_DEDIEE}}, en copie cachée, par petits lots (quota d'envoi de la messagerie gratuite), dans le mois qui suit la mise en ligne. Consigner la date d'envoi dans `registre.md`.
+À envoyer depuis qui-vote-quoi-app@proton.me, en copie cachée, par petits lots (quota d'envoi de la messagerie gratuite), dans le mois qui suit la mise en ligne. Consigner la date d'envoi dans `registre.md`.
 
 ---
 
@@ -8,7 +8,7 @@
 
 Madame la Députée, Monsieur le Député,
 
-Conformément à l'article 14 du règlement général sur la protection des données (RGPD), je vous informe de la mise en ligne de « Qui vote quoi ? » ({{URL_SITE}}), un site indépendant, gratuit et non commercial, sans lien avec l'Assemblée nationale.
+Conformément à l'article 14 du règlement général sur la protection des données (RGPD), je vous informe de la mise en ligne de « Qui vote quoi ? » (https://qui-vote-quoi-app.github.io/qui-vote-quoi), un site indépendant, gratuit et non commercial, sans lien avec l'Assemblée nationale.
 
 Ce site présente les scrutins publics de l'Assemblée nationale sous forme d'hémicycle interactif, à partir de l'open data officiel (data.assemblee-nationale.fr, Licence Ouverte 2.0).
 
@@ -20,7 +20,7 @@ Ce site présente les scrutins publics de l'Assemblée nationale sous forme d'h�
 
 **Vos droits** : vous pouvez demander la rectification d'une information inexacte, vous opposer au traitement pour des motifs tenant à votre situation particulière, exercer votre droit de réponse ou demander le retrait d'une synthèse, en répondant simplement à ce courriel. Vous pouvez également introduire une réclamation auprès de la CNIL.
 
-Mentions légales et méthodologie : {{URL_MENTIONS}}
+Mentions légales et méthodologie : https://github.com/qui-vote-quoi-app/qui-vote-quoi/blob/main/MENTIONS_LEGALES.md
 
 Je vous prie d'agréer, Madame la Députée, Monsieur le Député, l'expression de ma considération distinguée.
 

@@ -1,7 +1,7 @@
 /* Qui vote quoi ? — lit les fichiers JSON produits chaque jour par le pipeline (dossier data/). */
 (function () {
   "use strict";
-  var REPO = "https://github.com/qui-vote-quoi/qui-vote-quoi";
+  var REPO = "https://github.com/qui-vote-quoi-app/qui-vote-quoi";
   var AN = "https://www.assemblee-nationale.fr";
   var INSPIRATION = "https://www.instagram.com/votes_assemblee_nationale/";
   var K = 4.22, CX = 118.3 * K, CY = 132 * K, R = 8;
