@@ -4,7 +4,7 @@
 
 ## 1. Description
 
-Le site republie, sous forme visuelle, des données que l'Assemblée nationale diffuse elle-même en open data : positions de vote des députés aux scrutins publics et comptes rendus des séances. Pour les votes majeurs, une IA produit une synthèse des arguments, vérifiée automatiquement avant publication.
+Le site republie, sous forme visuelle, des données que l'Assemblée nationale diffuse elle-même en open data : positions de vote des députés aux scrutins publics et comptes rendus des séances. Pour les votes sur l'ensemble d'un texte, une IA produit une synthèse des arguments, vérifiée automatiquement avant publication.
 
 ## 2. Nécessité et proportionnalité
 

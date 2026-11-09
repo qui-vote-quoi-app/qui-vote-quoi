@@ -34,7 +34,7 @@ def exporter(scrutins, deputes, groupes, syntheses, retraits, sources_dates):
         resume = {k: s[k] for k in ("num", "date", "titre", "sort", "pour", "contre", "abst", "votants")}
         resume["cat"] = s["categorie"]["cle"]
         resume["niv"] = s["categorie"]["niveau"]
-        resume["syn"] = statut if s["categorie"]["niveau"] == 1 else None
+        resume["syn"] = statut if s["categorie"]["cle"] in config.CATEGORIES_AVEC_SYNTHESE else None
         par_mois[s["date"][:7]].append(resume)
 
         detail = {k: s[k] for k in ("uid", "num", "date", "type", "type_libelle", "majorite", "sort",

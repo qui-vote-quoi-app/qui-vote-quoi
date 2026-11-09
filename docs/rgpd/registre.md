@@ -5,7 +5,7 @@
 | Rubrique | Contenu |
 |---|---|
 | Responsable du traitement | L'éditeur du site (particulier, identité communiquée à l'hébergeur). Contact : qui-vote-quoi-app@proton.me |
-| Finalité | Informer le public sur l'activité parlementaire : positions de vote des députés lors des scrutins publics et arguments échangés en séance lors des votes majeurs. |
+| Finalité | Informer le public sur l'activité parlementaire : positions de vote des députés lors des scrutins publics et arguments échangés en séance lors des votes sur l'ensemble d'un texte. |
 | Base légale | Intérêt légitime (art. 6.1.f). Pour les positions de vote, susceptibles de révéler des opinions politiques : données manifestement rendues publiques par les personnes dans l'exercice de leur mandat (art. 9.2.e). |
 | Personnes concernées | Députés de la XVIIe législature ; ministres et autres orateurs cités dans les comptes rendus de séance. |
 | Données | Civilité, prénom, nom, groupe politique, département et numéro de circonscription, place dans l'hémicycle, dates de mandat, positions de vote, extraits d'interventions en séance publique. |

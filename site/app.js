@@ -143,7 +143,7 @@
   function rendreDebat() {
     var s = st.s, syn = s.synthese, el = $("debate"), h = '<div class="debate-head"><h2>Le débat en bref</h2>' + (syn && syn.seance_jour ? '<span class="note">D\'après le compte rendu de la séance du ' + esc(syn.seance_jour) + "</span>" : "") + "</div>";
     var vide = function (t) { el.innerHTML = h + '<p class="empty-deb">' + t + "</p>"; };
-    if (s.categorie.niveau !== 1) return vide("La synthèse des débats est réservée aux votes majeurs : votes sur l'ensemble d'un texte, motions et déclarations du Gouvernement. Les liens ci-dessus permettent de remonter au texte et à la séance.");
+    if (s.categorie.cle !== "ensemble") return vide("La synthèse des débats est réservée aux votes sur l'ensemble d'un texte. Les liens ci-dessus permettent de remonter au texte et à la séance.");
     if (s.synthese_statut === "retiree") return vide("La synthèse de ce vote a été retirée à la suite d'un signalement.");
     if (s.synthese_statut === "en_attente") return vide("Synthèse en attente : elle sera générée dès la publication du compte rendu de la séance, en général sous un à deux jours.");
     if (!syn) return vide("Pas de synthèse disponible pour ce vote. Le compte rendu intégral est accessible depuis la page du scrutin sur le site de l'Assemblée.");

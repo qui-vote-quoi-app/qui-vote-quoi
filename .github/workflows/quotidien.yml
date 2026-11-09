@@ -11,6 +11,9 @@ on:
         type: choice
         options: [quotidien, syntheses]
         default: quotidien
+      rattrapage:
+        description: "Rattrapage : générer les synthèses des N derniers jours (0 = non)"
+        default: "0"
 
 permissions:
   contents: write
@@ -24,7 +27,7 @@ concurrency:
 jobs:
   mise-a-jour:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
     outputs:
       deployer: ${{ steps.pipeline.outputs.deployer }}
     steps:
@@ -56,7 +59,7 @@ jobs:
           if [ -z "$MODE" ]; then
             if [ "${{ github.event.schedule }}" = "0 13 * * *" ]; then MODE=syntheses; else MODE=quotidien; fi
           fi
-          python -m pipeline.run --mode "$MODE"
+          python -m pipeline.run --mode "$MODE" --rattrapage "${{ inputs.rattrapage || 0 }}"
 
       - name: Enregistrer l'état et les synthèses dans le dépôt
         if: always()

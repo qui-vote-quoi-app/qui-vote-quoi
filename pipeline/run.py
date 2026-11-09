@@ -8,6 +8,7 @@
 import argparse
 import os
 import sys
+import time
 import traceback
 from datetime import date, datetime, timezone
 from pathlib import Path
@@ -104,22 +105,43 @@ def detecter_nouveaux(scrutins, etat, syntheses, rapport):
         return
     if dernier is None:
         # Première exécution : pas d'avalanche de notifications.
-        # On ne prépare des synthèses que pour les votes majeurs des 7 derniers jours.
+        # On ne prépare des synthèses que pour les votes des 7 derniers jours.
         rapport.infos.append(f"Initialisation : {len(numeros)} scrutins chargés.")
         limite = date.today().toordinal() - 7
-        candidats = [s for s in scrutins.values() if s["categorie"]["niveau"] == 1
+        candidats = [s for s in scrutins.values() if avec_synthese(s)
                      and date.fromisoformat(s["date"]).toordinal() >= limite]
     else:
         nouveaux = [s for s in scrutins.values() if s["num"] > dernier]
         nouveaux.sort(key=lambda s: s["num"])
         rapport.nouveaux = nouveaux
-        candidats = [s for s in nouveaux if s["categorie"]["niveau"] == 1]
+        candidats = [s for s in nouveaux if avec_synthese(s)]
+    programmer(candidats, syntheses)
+    etat["dernier_num"] = numeros[-1]
+
+
+def avec_synthese(s):
+    return s["categorie"]["cle"] in config.CATEGORIES_AVEC_SYNTHESE
+
+
+def programmer(candidats, syntheses):
+    n = 0
     for s in candidats:
         if s["uid"] not in syntheses:
             syntheses[s["uid"]] = {"uid": s["uid"], "num": s["num"], "statut": "en_attente",
                                    "cree_le": maintenant(), "tentatives": 0, "erreurs": []}
             sauver_synthese(syntheses[s["uid"]])
-    etat["dernier_num"] = numeros[-1]
+            n += 1
+    return n
+
+
+def rattrapage(scrutins, syntheses, jours, rapport):
+    """Programme une synthèse pour chaque vote sur l'ensemble des N derniers jours."""
+    limite = date.today().toordinal() - jours
+    candidats = sorted((s for s in scrutins.values() if avec_synthese(s)
+                        and date.fromisoformat(s["date"]).toordinal() >= limite), key=lambda s: -s["num"])
+    n = programmer(candidats, syntheses)
+    rapport.infos.append(f"Rattrapage sur {jours} jours : {len(candidats)} vote(s) sur l'ensemble, "
+                         f"{n} synthèse(s) ajoutée(s) à la file.")
 
 
 def traiter_syntheses(scrutins, syntheses, etat, args, rapport):
@@ -132,9 +154,18 @@ def traiter_syntheses(scrutins, syntheses, etat, args, rapport):
         if nom.endswith(".xml") and nom not in index:
             index[nom] = debats.seance_du_fichier(zcr.lire_debut(nom))
 
-    for syn in sorted(attente, key=lambda x: x["num"]):
+    # Les votes les plus récents d'abord ; au-delà du plafond, le reste attend le passage suivant.
+    attente.sort(key=lambda x: -x["num"])
+    a_traiter, reportees = attente[:config.SYNTHESES_MAX_PAR_PASSAGE], attente[config.SYNTHESES_MAX_PAR_PASSAGE:]
+    if reportees:
+        rapport.infos.append(f"{len(reportees)} synthèse(s) reportée(s) au prochain passage (plafond par passage).")
+    appels = 0
+    for syn in a_traiter:
         s = scrutins[syn["uid"]]
-        age = date.today().toordinal() - date.fromisoformat(s["date"]).toordinal()
+        # Délai compté depuis la mise en file (et pas depuis le vote), pour que le rattrapage
+        # de votes anciens ne soit pas abandonné à la première difficulté.
+        cree = date.fromisoformat((syn.get("cree_le") or s["date"])[:10])
+        age = date.today().toordinal() - max(cree, date.fromisoformat(s["date"])).toordinal()
         fichiers = [n for n, seance in index.items() if seance == s["seance"]]
         meta, passages = None, None
         for f in fichiers:
@@ -165,6 +196,9 @@ def traiter_syntheses(scrutins, syntheses, etat, args, rapport):
             rapport.en_attente.append(s)
             continue
 
+        if appels and not args.fixtures:
+            time.sleep(config.PAUSE_ENTRE_SYNTHESES)
+        appels += 1
         erreurs, publiable, panne = None, None, None
         for _ in range(2):  # une tentative + une relance avec les erreurs de vérification
             syn["tentatives"] = syn.get("tentatives", 0) + 1
@@ -222,7 +256,7 @@ def notifier(rapport, scrutins, mode):
     E = telegram.esc
     lignes = []
     if rapport.nouveaux:
-        majeurs = [s for s in rapport.nouveaux if s["categorie"]["niveau"] == 1]
+        majeurs = [s for s in rapport.nouveaux if s["categorie"]["niveau"] == 1]  # ensemble, motions…
         lignes.append(f"🗳 <b>{len(rapport.nouveaux)} nouveaux scrutins</b> dont {len(majeurs)} vote(s) majeur(s)")
         for s in majeurs[:8]:
             res = "✅ adopté" if s["sort"] == "adopté" else "❌ rejeté"
@@ -277,6 +311,7 @@ def main(argv=None):
     p.add_argument("--raison", default="")
     p.add_argument("--fixtures")
     p.add_argument("--sans-ia", action="store_true")
+    p.add_argument("--rattrapage", type=int, default=0, help="programme les synthèses des N derniers jours")
     args = p.parse_args(argv)
 
     etat = charger_json(config.ETAT, {})
@@ -284,7 +319,7 @@ def main(argv=None):
     rapport = Rapport()
     deployer = False
     try:
-        if args.mode == "syntheses" and not args.retrait and \
+        if args.mode == "syntheses" and not args.retrait and not args.rattrapage and \
                 not any(s["statut"] == "en_attente" for s in syntheses.values()):
             print("Aucune synthèse en attente.")
         else:
@@ -295,6 +330,8 @@ def main(argv=None):
                 retirer(args.retrait, args.raison, syntheses, rapport)
             if args.mode == "quotidien" and not args.retrait:
                 detecter_nouveaux(scrutins, etat, syntheses, rapport)
+            if args.rattrapage:
+                rattrapage(scrutins, syntheses, args.rattrapage, rapport)
             traiter_syntheses(scrutins, syntheses, etat, args, rapport)
             export.exporter(scrutins, deputes, groupes, syntheses, charger_retraits(), dates)
             deployer = True

@@ -36,7 +36,7 @@ Tout **scrutin solennel** est classé majeur.
 
 ## Synthèse « Le débat en bref »
 
-Réservée aux votes majeurs.
+Réservée aux **votes sur l'ensemble d'un texte**. Les motions, déclarations du Gouvernement, articles et amendements n'en ont pas.
 
 1. **Script** : le compte rendu de la séance est retrouvé grâce à l'identifiant de séance du scrutin. L'annonce du résultat est localisée en comparant les chiffres annoncés à ceux du scrutin officiel.
 2. **Script** : le passage retenu est le point « Explications de vote » qui précède le vote, ou à défaut le point qui contient le vote (par exemple la discussion d'une motion). Sont retirés : la présidence de séance, les interruptions, les didascalies (applaudissements, exclamations). Les interventions consécutives d'un même orateur sont regroupées.

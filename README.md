@@ -2,7 +2,7 @@
 
 Site : https://qui-vote-quoi-app.github.io/qui-vote-quoi
 
-Les scrutins publics de l'Assemblée nationale, député par député, dans un hémicycle interactif. Mise à jour automatique chaque matin à partir de l'open data officiel, avec une synthèse des débats pour les votes majeurs.
+Les scrutins publics de l'Assemblée nationale, député par député, dans un hémicycle interactif. Mise à jour automatique chaque matin à partir de l'open data officiel, avec une synthèse des débats pour les votes sur l'ensemble d'un texte.
 
 > Site indépendant et non officiel, sans lien avec l'Assemblée nationale.
 > Projet très largement inspiré du travail du compte Instagram [@votes_assemblee_nationale](https://www.instagram.com/votes_assemblee_nationale/).
@@ -13,7 +13,7 @@ Chaque jour, un workflow GitHub Actions :
 
 1. vérifie si les dumps open data de l'Assemblée ont changé (scrutins, députés et groupes) ;
 2. détecte les nouveaux scrutins et les classe (vote sur l'ensemble, motion, article, amendement, procédure) ;
-3. pour les **votes majeurs uniquement**, cherche le compte rendu de la séance, isole par script le passage du débat (explications de vote ou discussion de la motion) et demande à une IA d'en extraire les arguments pour et contre ;
+3. pour les **votes sur l'ensemble d'un texte uniquement**, cherche le compte rendu de la séance, isole par script le passage du débat (explications de vote) et demande à une IA d'en extraire les arguments pour et contre ;
 4. **vérifie automatiquement** la synthèse (citations mot pour mot, aucun nom dans les résumés, orateurs déterminés par le script) et ne la publie que si tout est conforme ;
 5. régénère le site statique et le publie sur GitHub Pages ;
 6. envoie un récapitulatif sur Telegram avec l'image de l'hémicycle du vote majeur du jour.
@@ -35,7 +35,11 @@ GitHub peut décaler les tâches planifiées de quelques minutes. En été, ajou
    | `TELEGRAM_CHAT_ID` | votre identifiant de conversation avec le bot |
 2. **Pages** : *Settings → Pages → Build and deployment → Source : GitHub Actions*.
 3. **Actions** : *Settings → Actions → General → Workflow permissions : Read and write*.
-4. Premier lancement : *Actions → Mise à jour quotidienne → Run workflow*. Le premier passage charge toute la législature et ne prépare des synthèses que pour les votes majeurs des 7 derniers jours.
+4. Premier lancement : *Actions → Mise à jour quotidienne → Run workflow*. Le premier passage charge toute la législature et ne prépare des synthèses que pour les votes sur l'ensemble des 7 derniers jours.
+
+## Rattraper les synthèses d'une période passée
+
+*Actions → Mise à jour quotidienne → Run workflow*, puis indiquez un nombre de jours dans « Rattrapage » (par exemple 60). Les synthèses sont traitées par lots de 12 par passage pour rester dans le quota gratuit de l'IA ; le reste est traité automatiquement aux passages suivants (6 h et 14 h).
 
 ## Retirer une synthèse
 

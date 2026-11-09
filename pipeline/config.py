@@ -25,6 +25,9 @@ AN = "https://www.assemblee-nationale.fr"
 
 # Synthèses
 CR_DELAI_MAX_JOURS = 7          # au-delà, on abandonne et on alerte
+SYNTHESES_MAX_PAR_PASSAGE = 12  # le reste attend le passage suivant (quota gratuit de l'IA)
+PAUSE_ENTRE_SYNTHESES = 8       # secondes, pour ménager le quota par minute
+CATEGORIES_AVEC_SYNTHESE = {"ensemble"}  # synthèse réservée aux votes sur l'ensemble d'un texte
 SEGMENT_MAX_CARACTERES = 60000  # contexte maximal envoyé à l'IA
 ARGUMENTS_MAX_PAR_CAMP = 4
 
