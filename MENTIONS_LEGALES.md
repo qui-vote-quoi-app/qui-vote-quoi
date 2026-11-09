@@ -1,7 +1,5 @@
 # Mentions légales — Qui vote quoi ?
 
-> Brouillon à relire. Ce texte ne constitue pas un avis juridique. Les champs `{{…}}` sont à compléter avant la mise en ligne.
-
 ## Éditeur
 
 Qui vote quoi ? est un site indépendant, gratuit et sans aucune contrepartie économique (ni publicité, ni affiliation, ni vente), édité par un particulier à titre non professionnel.
@@ -58,8 +56,8 @@ Ce site affiche des informations relatives aux députés dans le cadre de leur m
 - **Finalité** : information du public sur l'activité parlementaire.
 - **Base légale** : intérêt légitime (art. 6.1.f RGPD) à informer le public sur l'activité d'élus nationaux. Les positions de vote, susceptibles de révéler des opinions politiques, sont rendues publiques par les députés eux-mêmes dans l'exercice de leur mandat (art. 9.2.e RGPD).
 - **Exactitude** : resynchronisation quotidienne avec la source officielle.
-- **Durée de conservation** : pendant la durée de la XVIIe législature et tant que le service est en ligne, au titre de l'information sur un mandat achevé. {{À confirmer.}}
-- **Information des personnes concernées** : {{les députés ont été informés individuellement par courriel le JJ/MM/AAAA / analyse documentée de l'effort disproportionné — à trancher}}.
+- **Durée de conservation** : pendant la durée de la XVIIe législature et tant que le service est en ligne, au titre de l'information sur un mandat achevé.
+- **Information des personnes concernées** : les députés reçoivent un courriel d'information individuel lors de la mise en ligne du site.
 - **Vos droits** : accès, rectification, opposition et limitation, à exercer à l'adresse qui-vote-quoi-app@proton.me. Vous pouvez aussi introduire une réclamation auprès de la CNIL (https://www.cnil.fr).
 
 **Visiteurs** : ce site ne dépose aucun cookie, n'utilise aucun outil de mesure d'audience et ne collecte aucune donnée sur ses visiteurs.

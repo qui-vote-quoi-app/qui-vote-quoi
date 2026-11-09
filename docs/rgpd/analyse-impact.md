@@ -1,6 +1,6 @@
 # Analyse d'impact simplifiée — Qui vote quoi ?
 
-> Analyse documentée à la manière d'une AIPD, à revoir en cas de changement important (ajout de photos, de comptes utilisateurs, de commentaires…). Ce document n'est pas un avis juridique. Dernière mise à jour : {{DATE}}.
+> Analyse documentée à la manière d'une AIPD, à revoir en cas de changement important (ajout de photos, de comptes utilisateurs, de commentaires…). Ce document n'est pas un avis juridique. Dernière mise à jour : 9 novembre 2026.
 
 ## 1. Description
 

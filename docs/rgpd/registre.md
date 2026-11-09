@@ -1,6 +1,6 @@
 # Registre du traitement — Qui vote quoi ?
 
-> Fiche de registre (article 30 du RGPD), tenue même si l'éditeur, particulier non professionnel, n'y est pas strictement tenu. Dernière mise à jour : {{DATE}}.
+> Fiche de registre (article 30 du RGPD), tenue même si l'éditeur, particulier non professionnel, n'y est pas strictement tenu. Dernière mise à jour : 9 novembre 2026.
 
 | Rubrique | Contenu |
 |---|---|
@@ -15,5 +15,5 @@
 | Sous-traitants et transferts | Voir `sous-traitants.md`. |
 | Durée de conservation | Durée de la XVIIe législature, puis archivage tant que le service est en ligne, au titre de l'information sur un mandat achevé. Les synthèses retirées sont dépubliées immédiatement. |
 | Sécurité | Aucune donnée non publique n'est traitée. Clés d'API stockées dans les secrets chiffrés de GitHub. Aucun compte utilisateur, aucun cookie, aucune mesure d'audience. |
-| Information des personnes | Mentions légales publiques et courriel d'information aux députés (voir `courriel-deputes.md`), envoyé le {{DATE_ENVOI}}. |
+| Information des personnes | Mentions légales publiques et courriel d'information aux députés (voir `courriel-deputes.md`), date d'envoi : à consigner ici. |
 | Exercice des droits | qui-vote-quoi-app@proton.me, réponse sous un mois. |
