@@ -58,6 +58,7 @@ TEMPORAIRES = {408, 429, 500, 502, 503, 504}
 # En cas de saturation persistante du modèle principal, on essaie un modèle de secours.
 SECOURS = {"gemini": ["gemini-flash-lite-latest"], "mistral": [], "anthropic": []}
 ATTENTES = [10, 30]  # secondes entre deux essais sur le même modèle
+_REFLEXION_NON_DESACTIVABLE = set()  # modèles qui refusent thinkingBudget=0
 
 
 def _modele():
@@ -67,18 +68,26 @@ def _modele():
 def _requete(modele, prompt):
     fournisseur = config.IA_FOURNISSEUR
     if fournisseur == "gemini":
+        # Raisonnement interne désactivé : c'est une tâche d'extraction, et c'est bien plus rapide.
+        generation = {"temperature": 0.2, "responseMimeType": "application/json"}
+        if modele not in _REFLEXION_NON_DESACTIVABLE:
+            generation["thinkingConfig"] = {"thinkingBudget": 0}
         r = requests.post(
             f"https://generativelanguage.googleapis.com/v1beta/models/{modele}:generateContent",
             headers={"x-goog-api-key": os.environ["GEMINI_API_KEY"]},
             json={
                 "systemInstruction": {"parts": [{"text": CONSIGNES}]},
                 "contents": [{"role": "user", "parts": [{"text": prompt}]}],
-                "generationConfig": {"temperature": 0.2, "responseMimeType": "application/json"},
+                "generationConfig": generation,
             },
-            timeout=120,
+            timeout=90,
         )
+        if r.status_code == 400 and "thinkingConfig" in generation:
+            _REFLEXION_NON_DESACTIVABLE.add(modele)
+            return _requete(modele, prompt)
         r.raise_for_status()
-        return r.json()["candidates"][0]["content"]["parts"][0]["text"]
+        parts = r.json()["candidates"][0]["content"]["parts"]
+        return "".join(p.get("text", "") for p in parts if not p.get("thought"))
     if fournisseur == "mistral":
         r = requests.post(
             "https://api.mistral.ai/v1/chat/completions",
@@ -86,7 +95,7 @@ def _requete(modele, prompt):
             json={"model": modele, "temperature": 0.2, "response_format": {"type": "json_object"},
                   "messages": [{"role": "system", "content": CONSIGNES},
                                {"role": "user", "content": prompt}]},
-            timeout=120,
+            timeout=90,
         )
         r.raise_for_status()
         return r.json()["choices"][0]["message"]["content"]
@@ -96,7 +105,7 @@ def _requete(modele, prompt):
             headers={"x-api-key": os.environ["ANTHROPIC_API_KEY"], "anthropic-version": "2023-06-01"},
             json={"model": modele, "max_tokens": 2000, "temperature": 0.2, "system": CONSIGNES,
                   "messages": [{"role": "user", "content": prompt}]},
-            timeout=120,
+            timeout=90,
         )
         r.raise_for_status()
         return "".join(b.get("text", "") for b in r.json()["content"])

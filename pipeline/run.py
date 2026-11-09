@@ -159,8 +159,11 @@ def traiter_syntheses(scrutins, syntheses, etat, args, rapport):
     a_traiter, reportees = attente[:config.SYNTHESES_MAX_PAR_PASSAGE], attente[config.SYNTHESES_MAX_PAR_PASSAGE:]
     if reportees:
         rapport.infos.append(f"{len(reportees)} synthèse(s) reportée(s) au prochain passage (plafond par passage).")
-    appels = 0
+    appels, debut, ia_hs = 0, time.monotonic(), False
     for syn in a_traiter:
+        if time.monotonic() - debut > config.BUDGET_SYNTHESES_MINUTES * 60:
+            rapport.infos.append("Temps alloué aux synthèses écoulé : la suite est reportée au prochain passage.")
+            break
         s = scrutins[syn["uid"]]
         # Délai compté depuis la mise en file (et pas depuis le vote), pour que le rattrapage
         # de votes anciens ne soit pas abandonné à la première difficulté.
@@ -196,6 +199,9 @@ def traiter_syntheses(scrutins, syntheses, etat, args, rapport):
             rapport.en_attente.append(s)
             continue
 
+        if ia_hs:  # IA en panne : inutile d'insister pour les synthèses suivantes de ce passage
+            rapport.ia_indisponible.append(s)
+            continue
         if appels and not args.fixtures:
             time.sleep(config.PAUSE_ENTRE_SYNTHESES)
         appels += 1
@@ -206,6 +212,7 @@ def traiter_syntheses(scrutins, syntheses, etat, args, rapport):
                 brut, modele = synthese.appeler_ia(synthese.construire_prompt(s, passages, erreurs))
             except synthese.IAIndisponible as e:
                 panne = str(e)  # service saturé ou quota : on réessaiera au prochain passage
+                ia_hs = True
                 break
             try:
                 publiable, erreurs = verification.verifier(synthese.lire_reponse(brut), passages)
