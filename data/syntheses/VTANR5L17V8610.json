@@ -1,8 +1,117 @@
 {
  "uid": "VTANR5L17V8610",
  "num": 8610,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-09T22:41:10+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2027O1N013",
+ "seance_jour": "jeudi 08 octobre 2026",
+ "contexte": "L'Assemblée nationale examine une proposition de résolution visant à mobiliser la commande publique au service de l'emploi, de la production et de l'innovation en France, en autorisant les acheteurs publics à privilégier les offres dont les moyens d'exécution sont localisés sur le territoire national. Les débats portent sur l'efficacité juridique de ce texte, sa conformité avec le droit européen, ainsi que sur la nécessité d'intégrer des critères sociaux et environnementaux plus larges.",
+ "pour": [
+  {
+   "resume": "La proposition de résolution crée une liberté pour les acheteurs publics de favoriser l'économie nationale sans imposer de contrainte excessive.",
+   "citation": "Pire encore, vous êtes habitués à multiplier les punitions et les interdictions. Or nous vous proposons de créer une liberté pour les acheteurs publics.",
+   "acteur": "PA794590",
+   "nom": "M. Alexandre Loubet",
+   "qualite": "",
+   "syceron": [
+    "4177976",
+    "4177978",
+    "4177983",
+    "4177986"
+   ]
+  },
+  {
+   "resume": "Le texte vise à soutenir la production, l'innovation et l'emploi en France face à la concurrence internationale et européenne.",
+   "citation": "Cependant, quel aveu de défaitisme de la part du gouvernement de la septième puissance mondiale, qui refuse de défendre les intérêts nationaux, l'emploi des Français, la production en France, l'innovation en France",
+   "acteur": "PA794590",
+   "nom": "M. Alexandre Loubet",
+   "qualite": "",
+   "syceron": [
+    "4177976",
+    "4177978",
+    "4177983",
+    "4177986"
+   ]
+  },
+  {
+   "resume": "Ce texte apporte de la lisibilité aux acheteurs publics qui cherchent à favoriser l'emploi local.",
+   "citation": "Actuellement, nombre d'entre eux sont obligés d'utiliser la clause environnementale pour favoriser des offres qui créent de l'emploi en France. Quelle hypocrisie de les laisser dans cette situation ! La proposition de résolution impose de la lisibilité.",
+   "acteur": "PA794590",
+   "nom": "M. Alexandre Loubet",
+   "qualite": "",
+   "syceron": [
+    "4177976",
+    "4177978",
+    "4177983",
+    "4177986"
+   ]
+  },
+  {
+   "resume": "Le groupe à l'origine du texte annonce maintenir son vote favorable malgré les critiques sur sa portée.",
+   "citation": "Nous ne changerons pas de ligne et voterons votre proposition de résolution.",
+   "acteur": "PA712015",
+   "nom": "M. Julien Dive",
+   "qualite": "",
+   "syceron": [
+    "4178293",
+    "4178295",
+    "4178298",
+    "4178303"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "La proposition de résolution est jugée purement déclarative et totalement inefficace pour changer la situation économique.",
+   "citation": "Nous examinons donc une proposition de résolution sur la commande publique purement déclarative, qui, si elle était adoptée, n'aurait aucun début de commencement d'effet dans la vie du pays.",
+   "acteur": "PA842029",
+   "nom": "Mme Claire Lejeune",
+   "qualite": "",
+   "syceron": [
+    "4177990",
+    "4177993",
+    "4177997",
+    "4178000",
+    "4178002",
+    "4178004"
+   ]
+  },
+  {
+   "resume": "Le texte est contraire au droit de l'Union européenne et risque d'entraîner des mesures de rétorsion de la part des pays voisins.",
+   "citation": "on ne peut pas prétendre favoriser nos entreprises en introduisant un critère contraire au principe d'égalité de traitement et de libre accès aux marchés publics. Surtout, votre logique risque de se retourner contre nous",
+   "acteur": "PA841359",
+   "nom": "Mme Constance de Pélichy",
+   "qualite": "",
+   "syceron": [
+    "4178162",
+    "4178164",
+    "4178288"
+   ]
+  },
+  {
+   "resume": "La proposition omet d'inclure des critères sociaux et environnementaux contraignants pour protéger réellement les salariés et l'environnement.",
+   "citation": "C'est toute la faiblesse de la proposition de résolution qui nous est soumise. Vous proposez que l'acheteur public puisse \" accorder une priorité aux offres dont tout ou partie des moyens d'exécution sont localisés en France \".",
+   "acteur": "PA335612",
+   "nom": "M. Jean-Paul Lecoq",
+   "qualite": "",
+   "syceron": [
+    "4178153"
+   ]
+  },
+  {
+   "resume": "Les collectivités locales gèrent déjà la majeure partie de l'investissement public avec le souci de l'emploi local et n'ont pas besoin de cette résolution.",
+   "citation": "Affirmer qu'il y aurait là un problème, c'est non seulement faire offense aux acheteurs publics, mais c'est surtout rendre leur travail plus complexe.",
+   "acteur": "PA687214",
+   "nom": "M. Sylvain Berrios",
+   "qualite": "",
+   "syceron": [
+    "4178305"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-09T23:20:50+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-09T23:20:50+00:00"
 }
