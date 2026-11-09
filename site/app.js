@@ -11,7 +11,13 @@
 
   var $ = function (id) { return document.getElementById(id); };
   var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
-  var get = function (p) { return fetch("data/" + p).then(function (r) { if (!r.ok) throw new Error(p); return r.json(); }); };
+  /* Les données changent chaque jour : meta.json est toujours revérifié auprès du serveur,
+     et les autres fichiers portent la date de mise à jour pour ne jamais servir une version périmée. */
+  var VERSION = "";
+  var get = function (p) {
+    var url = "data/" + p + (VERSION ? "?v=" + encodeURIComponent(VERSION) : "");
+    return fetch(url, p === "meta.json" ? { cache: "no-cache" } : undefined).then(function (r) { if (!r.ok) throw new Error(p); return r.json(); });
+  };
   var majuscule = function (t) { return t ? t.charAt(0).toUpperCase() + t.slice(1) : ""; };
   var dateFr = function (d) { var p = d.split("-"); return (+p[2]) + " " + MOIS[+p[1] - 1] + " " + p[0]; };
   var ord = function (n) { return n === 1 ? "1re" : n + "e"; };
@@ -260,8 +266,11 @@
   }
 
   /* ---------------- Démarrage ---------------- */
-  Promise.all([get("meta.json"), get("groupes.json"), get("deputes.json"), get("places.json")]).then(function (r) {
-    st.meta = r[0]; st.groupes = r[1]; st.deps = r[2]; st.places = r[3].places;
+  get("meta.json").then(function (meta) {
+    st.meta = meta; VERSION = meta.maj_site || "";
+    return Promise.all([get("groupes.json"), get("deputes.json"), get("places.json")]);
+  }).then(function (r) {
+    st.groupes = r[0]; st.deps = r[1]; st.places = r[2].places;
     dessinerSieges();
     $("dl").innerHTML = st.deps.filter(function (d) { return d.actif; }).map(function (d) { return '<option value="' + esc(d.prenom + " " + d.nom) + '">'; }).join("");
     var src = (st.meta.sources || {}).scrutins;

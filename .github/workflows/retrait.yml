@@ -47,6 +47,10 @@ jobs:
           git pull --rebase --autostash origin main
           git push
       - if: steps.pipeline.outputs.deployer == 'true'
+        run: |
+          V=$(git rev-parse --short HEAD)
+          sed -i "s#href=\"style.css\"#href=\"style.css?v=$V\"#; s#src=\"app.js\"#src=\"app.js?v=$V\"#" site/index.html
+      - if: steps.pipeline.outputs.deployer == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
