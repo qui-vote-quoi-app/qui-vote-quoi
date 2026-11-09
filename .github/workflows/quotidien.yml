@@ -1,0 +1,78 @@
+name: Mise à jour quotidienne
+
+on:
+  schedule:
+    - cron: "0 5 * * *"    # 6 h à Paris en hiver (7 h en été) : votes de la veille
+    - cron: "0 13 * * *"   # 14 h à Paris en hiver : synthèses en attente uniquement
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "quotidien (tout) ou syntheses (synthèses en attente)"
+        type: choice
+        options: [quotidien, syntheses]
+        default: quotidien
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: qui-vote-quoi
+  cancel-in-progress: false
+
+jobs:
+  mise-a-jour:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    outputs:
+      deployer: ${{ steps.pipeline.outputs.deployer }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Récupérer les données et générer les synthèses
+        id: pipeline
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+        run: |
+          MODE="${{ inputs.mode }}"
+          if [ -z "$MODE" ]; then
+            if [ "${{ github.event.schedule }}" = "0 13 * * *" ]; then MODE=syntheses; else MODE=quotidien; fi
+          fi
+          python -m pipeline.run --mode "$MODE"
+
+      - name: Enregistrer l'état et les synthèses dans le dépôt
+        if: always()
+        run: |
+          git config user.name "qui-vote-quoi[bot]"
+          git config user.email "qui-vote-quoi@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "Mise à jour des données $(date -u +%Y-%m-%d)"
+          git push
+
+      - name: Préparer le site
+        if: steps.pipeline.outputs.deployer == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  publication:
+    needs: mise-a-jour
+    if: needs.mise-a-jour.outputs.deployer == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploiement.outputs.page_url }}
+    steps:
+      - id: deploiement
+        uses: actions/deploy-pages@v4

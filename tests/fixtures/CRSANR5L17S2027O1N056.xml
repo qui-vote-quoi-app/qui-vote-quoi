@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Extrait réduit du compte rendu officiel (data.assemblee-nationale.fr, syceron), textes longs tronqués, pour les tests. -->
+<compteRendu xmlns="http://schemas.assemblee-nationale.fr/referentiel">
+  <uid>CRSANR5L17S2027O1N056</uid>
+  <seanceRef>RUANR5L17S2027IDS30980</seanceRef>
+  <sessionRef>SCR5A2027O1</sessionRef>
+  <metadonnees>
+    <dateSeance>20261104213000000</dateSeance>
+    <dateSeanceJour>mercredi 04 novembre 2026</dateSeanceJour>
+    <numSeanceJour>2</numSeanceJour>
+    <numSeance>56</numSeance>
+    <session>Session ordinaire 2026-2027</session>
+    <etat>complet</etat>
+    <version>avant_JO</version>
+  </metadonnees>
+  <contenu>
+    <point nivpoint="3" code_grammaire="DISC_ARTICLES_2_4" id_syceron="4222251">
+      <orateurs/>
+      <texte>Article liminaire<italique> (seconde délibération)</italique></texte>
+      <paragraphe id_acteur="PA719024" code_grammaire="PAROLE_GENERIQUE" id_syceron="4222507">
+        <orateurs><orateur><nom>M. le président</nom><id>719024</id><qualite/></orateur></orateurs>
+        <texte>Nous avons achevé l’examen des articles de la première partie du projet de loi de finances pour 2027. Je vous rappelle que la conférence des présidents a décidé qu’il serait procédé à un scrutin public sur cette première partie.</texte>
+      </paragraphe>
+    </point>
+    <point nivpoint="2" code_grammaire="DISC_ARTICLES_1_2" id_syceron="4222508">
+      <orateurs/>
+      <texte>Explications de vote</texte>
+      <paragraphe id_acteur="PA719024" code_grammaire="PAROLE_GENERIQUE" id_syceron="4222509">
+        <orateurs><orateur><nom>M. le président</nom><id>719024</id><qualite/></orateur></orateurs>
+        <texte>La parole est à M. Paul Midy.</texte>
+      </paragraphe>
+      <paragraphe id_acteur="PA795664" code_grammaire="PAROLE_GENERIQUE" id_syceron="4222510">
+        <orateurs><orateur><nom>M. Paul Midy (EPR)</nom><id>795664</id><qualite/></orateur></orateurs>
+        <texte>Je remercie celles et ceux qui ont présidé les séances pendant toutes ces longues journées.<br/>Si l’on considère la copie budgétaire qui ressort de ces débats, on peut y trouver des choses positives, comme la suppression de la surtaxe sur l’impôt sur les sociétés, le financement du nouveau nucléaire ou les aides à la modernisation des entreprises.</texte>
+      </paragraphe>
+      <paragraphe id_acteur="PA721270" code_grammaire="INTERRUPTION_1_10" id_syceron="4222102">
+        <orateurs><orateur><nom>M. Stéphane Peu</nom><id>721270</id><qualite/></orateur></orateurs>
+        <texte>Je la sens vachement bien pour vous, là !</texte>
+      </paragraphe>
+      <paragraphe id_acteur="PA795664" code_grammaire="PAROLE_GENERIQUE" id_syceron="4222103">
+        <orateurs><orateur><nom>M. Paul Midy</nom><id>795664</id><qualite/></orateur></orateurs>
+        <texte>Nous rejetons donc le texte dans sa rédaction actuelle mais nous appelons à poursuivre le processus budgétaire.<italique> (Applaudissements sur les bancs du groupe EPR et sur quelques bancs du groupe Dem.)</italique></texte>
+      </paragraphe>
+      <paragraphe id_acteur="PA719024" code_grammaire="PAROLE_GENERIQUE" id_syceron="4222104">
+        <orateurs><orateur><nom>M. le président</nom><id>719024</id><qualite/></orateur></orateurs>
+        <texte>La parole est à M. Carlos Martens Bilongo.</texte>
+      </paragraphe>
+      <paragraphe id_acteur="PA795616" code_grammaire="PAROLE_GENERIQUE" id_syceron="4222105">
+        <orateurs><orateur><nom>M. Carlos Martens Bilongo (LFI-NFP)</nom><id>795616</id><qualite/></orateur></orateurs>
+        <texte>Le débat budgétaire a lieu dans un contexte de forte mobilisation.<italique> (Applaudissements sur plusieurs bancs du groupe LFI-NFP.)</italique><br/>À l’ouverture des débats, le gouvernement a présenté une copie qui prévoyait 54 milliards d’euros de coupes budgétaires.</texte>
+      </paragraphe>
+      <paragraphe id_acteur="PA793736" code_grammaire="INTERRUPTION_1_10" id_syceron="4222394">
+        <orateurs><orateur><nom>M. Hadrien Clouet</nom><id>793736</id><qualite/></orateur></orateurs>
+        <texte>C’est scandaleux !</texte>
+      </paragraphe>
+      <paragraphe id_acteur="PA795616" code_grammaire="PAROLE_GENERIQUE" id_syceron="4222110">
+        <orateurs><orateur><nom>M. Carlos Martens Bilongo</nom><id>795616</id><qualite/></orateur></orateurs>
+        <texte>Vous évaluez l’effort demandé aux collectivités territoriales à 5,4 milliards d’euros, alors que, selon le Comité des finances locales, il s’élève à 7 milliards.</texte>
+      </paragraphe>
+    </point>
+    <point nivpoint="2" code_grammaire="SCR_PLF1_1_20" id_syceron="4222653">
+      <orateurs/>
+      <texte>Vote sur l’ensemble de la première partie du projet de loi de finances pour 2027</texte>
+      <paragraphe id_acteur="PA719024" code_grammaire="SCR_PLF1_2_50" id_syceron="4222654" roledebat="president">
+        <orateurs><orateur><nom>M. le président</nom><id>719024</id><qualite/></orateur></orateurs>
+        <texte>Je mets aux voix l’ensemble de la première partie du projet de loi de finances pour 2027.</texte>
+      </paragraphe>
+      <paragraphe code_grammaire="SCR_PLF1_2_60" id_syceron="4222655">
+        <orateurs/>
+        <texte><italique>(Il est procédé au scrutin.)</italique></texte>
+      </paragraphe>
+      <paragraphe id_acteur="PA719024" code_grammaire="SCR_PLF1_2_70" id_syceron="4222656" roledebat="president">
+        <orateurs><orateur><nom>M. le président</nom><id>719024</id><qualite/></orateur></orateurs>
+        <texte>Voici le résultat du scrutin :<br/>        Nombre de votants                        460<br/>        Nombre de suffrages exprimés                458<br/>        Majorité absolue                        230<br/>                Pour l’adoption                0<br/>                Contre                458</texte>
+      </paragraphe>
+      <paragraphe code_grammaire="SCR_PLF1_2_80" id_syceron="4222657">
+        <orateurs/>
+        <texte><italique>(L’ensemble de la première partie du projet de loi de finances pour 2027 n’est pas adopté.)</italique></texte>
+      </paragraphe>
+    </point>
+  </contenu>
+</compteRendu>

@@ -1,0 +1,62 @@
+name: Retirer une synthèse
+
+# À lancer depuis l'onglet « Actions » (y compris depuis l'appli GitHub sur téléphone)
+# quand une synthèse doit être dépubliée immédiatement.
+on:
+  workflow_dispatch:
+    inputs:
+      scrutin:
+        description: "Numéro du scrutin (ex. 9759)"
+        required: true
+      raison:
+        description: "Motif du retrait (gardé dans data/retraits.txt)"
+        required: true
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: qui-vote-quoi
+  cancel-in-progress: false
+
+jobs:
+  retrait:
+    runs-on: ubuntu-latest
+    outputs:
+      deployer: ${{ steps.pipeline.outputs.deployer }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - id: pipeline
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          RAISON: ${{ inputs.raison }}
+        run: python -m pipeline.run --mode syntheses --retrait "${{ inputs.scrutin }}" --raison "$RAISON"
+      - run: |
+          git config user.name "qui-vote-quoi[bot]"
+          git config user.email "qui-vote-quoi@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "Retrait de la synthèse du scrutin ${{ inputs.scrutin }}"
+          git push
+      - if: steps.pipeline.outputs.deployer == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  publication:
+    needs: retrait
+    if: needs.retrait.outputs.deployer == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploiement.outputs.page_url }}
+    steps:
+      - id: deploiement
+        uses: actions/deploy-pages@v4

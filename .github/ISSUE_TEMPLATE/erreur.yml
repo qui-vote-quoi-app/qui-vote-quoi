@@ -1,0 +1,32 @@
+name: Signaler une erreur
+description: Une donnée, une synthèse ou une citation vous semble inexacte.
+labels: [erreur]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de votre signalement. **Ce formulaire est public.**
+        Pour une demande confidentielle (droit de réponse, données personnelles), écrivez plutôt à l'adresse indiquée dans les mentions légales.
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type d'erreur
+      options:
+        - Synthèse du débat (argument, citation, attribution)
+        - Résultat ou position de vote
+        - Fiche d'un député
+        - Autre
+    validations:
+      required: true
+  - type: input
+    id: scrutin
+    attributes:
+      label: Numéro du scrutin concerné
+      placeholder: "ex. 9759"
+  - type: textarea
+    id: description
+    attributes:
+      label: Ce qui est inexact
+      description: Si possible, indiquez la source officielle qui montre l'erreur (lien vers le compte rendu, page de l'Assemblée…).
+    validations:
+      required: true

@@ -1,0 +1,11 @@
+# Fichiers téléchargés et générés
+.cache/
+site/data/
+__pycache__/
+*.pyc
+*.part
+
+# Secrets : ne jamais versionner de clé
+.env
+*.key
+*.pem

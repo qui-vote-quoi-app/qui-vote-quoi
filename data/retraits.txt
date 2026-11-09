@@ -1,0 +1,1 @@
+# Synthèses retirées : identifiant<TAB>date<TAB>motif (ajouté par le workflow « Retirer une synthèse »)
