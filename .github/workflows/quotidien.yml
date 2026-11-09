@@ -37,6 +37,13 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      - name: Réutiliser les fichiers déjà téléchargés
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: donnees-${{ github.run_id }}
+          restore-keys: donnees-
+
       - name: Récupérer les données et générer les synthèses
         id: pipeline
         env:

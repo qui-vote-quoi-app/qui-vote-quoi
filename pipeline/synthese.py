@@ -57,7 +57,7 @@ class IAIndisponible(Exception):
 TEMPORAIRES = {408, 429, 500, 502, 503, 504}
 # En cas de saturation persistante du modèle principal, on essaie un modèle de secours.
 SECOURS = {"gemini": ["gemini-flash-lite-latest"], "mistral": [], "anthropic": []}
-ATTENTES = [10, 30, 90]  # secondes entre deux essais sur le même modèle
+ATTENTES = [10, 30]  # secondes entre deux essais sur le même modèle
 
 
 def _modele():
@@ -75,7 +75,7 @@ def _requete(modele, prompt):
                 "contents": [{"role": "user", "parts": [{"text": prompt}]}],
                 "generationConfig": {"temperature": 0.2, "responseMimeType": "application/json"},
             },
-            timeout=180,
+            timeout=120,
         )
         r.raise_for_status()
         return r.json()["candidates"][0]["content"]["parts"][0]["text"]
@@ -86,7 +86,7 @@ def _requete(modele, prompt):
             json={"model": modele, "temperature": 0.2, "response_format": {"type": "json_object"},
                   "messages": [{"role": "system", "content": CONSIGNES},
                                {"role": "user", "content": prompt}]},
-            timeout=180,
+            timeout=120,
         )
         r.raise_for_status()
         return r.json()["choices"][0]["message"]["content"]
@@ -96,7 +96,7 @@ def _requete(modele, prompt):
             headers={"x-api-key": os.environ["ANTHROPIC_API_KEY"], "anthropic-version": "2023-06-01"},
             json={"model": modele, "max_tokens": 2000, "temperature": 0.2, "system": CONSIGNES,
                   "messages": [{"role": "user", "content": prompt}]},
-            timeout=180,
+            timeout=120,
         )
         r.raise_for_status()
         return "".join(b.get("text", "") for b in r.json()["content"])
