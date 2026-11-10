@@ -9,6 +9,7 @@ Fichiers produits (dans site/data/) :
 - groupes.json           groupes politiques
 - votes_groupes/<PO>.json historique de vote d'un groupe
 - places.json            carte de l'hémicycle
+- communes.json          commune -> circonscriptions (recherche « Trouver mon député »)
 - photos/<PA>.webp       vignettes des photos officielles (voir photos.py)
 Moins de fichiers = publication GitHub Pages plus rapide."""
 import copy
@@ -16,7 +17,9 @@ import shutil
 from collections import defaultdict
 from datetime import datetime, timezone
 
-from . import config
+import os
+
+from . import config, image, presentation
 from .sources import ecrire_json
 
 CATS = ["ensemble", "motion", "censure", "declaration", "article", "amendement", "procedure", "autre"]
@@ -52,6 +55,9 @@ def exporter(scrutins, deputes, groupes, syntheses, retraits, sources_dates, ave
         for uid in uids], compact=True)
     ecrire_json(out / "groupes.json", groupes, compact=True)
     shutil.copy(config.PLACES, out / "places.json")
+    communes = config.DATA / "communes.json"
+    if communes.exists():
+        shutil.copy(communes, out / "communes.json")
 
     themes = sorted({s["theme"] for s in scrutins.values() if s.get("theme")})
     i_theme = {t: i for i, t in enumerate(themes)}
@@ -76,6 +82,7 @@ def exporter(scrutins, deputes, groupes, syntheses, retraits, sources_dates, ave
                                         "sort_libelle", "titre", "dossier", "dossier_libelle", "demandeur",
                                         "votants", "exprimes", "requis", "pour", "contre", "abst", "nv", "theme")}
         detail["categorie"] = s["categorie"]
+        detail["bref"] = presentation.en_bref(s)
         detail["groupes"] = []
         for g in s["groupes"]:
             votes = {}
@@ -118,10 +125,23 @@ def exporter(scrutins, deputes, groupes, syntheses, retraits, sources_dates, ave
     for po, lignes in hist_grp.items():
         ecrire_json(out / "votes_groupes" / f"{po}.json", _delta(lignes), compact=True)
 
+    # Aperçu pour la page « Recevoir les alertes » : le dernier vote important, tel qu'il part sur Telegram.
+    apercu = None
+    majeurs = [s for s in scrutins.values() if s["categorie"]["niveau"] == 1]
+    if majeurs:
+        v = max(majeurs, key=lambda s: s["num"])
+        try:
+            image.dessiner(v, out / "apercu.png")
+            apercu = {"num": v["num"], "titre": v["titre"], "adopte": v["sort"] == "adopté", "pour": v["pour"],
+                      "contre": v["contre"], "abst": v["abst"], "bref": presentation.en_bref(v)}
+        except Exception as e:  # noqa: BLE001 — l'aperçu est accessoire
+            print(f"Aperçu non généré : {e}")
     ecrire_json(out / "meta.json", {
         "nb_scrutins": len(scrutins),
         "dernier": max((s["num"] for s in scrutins.values()), default=0),
         "deputes_par_paquet": DEPUTES_PAR_PAQUET,
         "maj_site": datetime.now(timezone.utc).isoformat(timespec="minutes"),
         "sources": sources_dates,
+        "canal": os.environ.get("TELEGRAM_CANAL", "").strip(),
+        "apercu": apercu,
     })

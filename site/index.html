@@ -31,7 +31,7 @@
       <div class="top-row">
         <div class="brand">
           <div class="eyebrow">XVII<sup>e</sup> législature · Scrutins publics</div>
-          <h1>Qui vote quoi ?</h1>
+          <h1><a href="#accueil" class="brand-lien">Qui vote quoi ?</a></h1>
         </div>
         <div class="top-actions">
           <span class="tag">Site indépendant · non officiel</span>
@@ -42,11 +42,61 @@
         </div>
       </div>
       <nav class="tabs" aria-label="Vues">
+        <a href="#accueil" data-vue="accueil">Accueil</a>
         <a href="#scrutins" data-vue="scrutins">Scrutins</a>
         <a href="#deputes" data-vue="deputes">Députés</a>
         <a href="#groupes" data-vue="groupes">Groupes</a>
       </nav>
     </header>
+
+    <!-- Accueil -->
+    <div class="vue accueil" id="vue-accueil" hidden>
+      <section class="panel hero">
+        <p class="eyebrow">Les votes de l'Assemblée nationale, député par député</p>
+        <h2>Qui a voté quoi à l'Assemblée&nbsp;?</h2>
+        <p class="hero-intro" id="hero-intro">Tous les scrutins publics de la XVII<sup>e</sup> législature, mis à jour chaque matin à partir des données officielles.</p>
+        <form class="trouver" id="trouver" role="search" autocomplete="off">
+          <label for="tq">Trouver mon député</label>
+          <div class="trouver-champ">
+            <input id="tq" type="search" placeholder="Commune, code postal ou nom" aria-describedby="tq-aide" enterkeyhint="search">
+            <button class="btn plein" type="submit">Chercher</button>
+          </div>
+          <p class="note" id="tq-aide">Par exemple : « Lyon », « 33000 » ou « Dupont ».</p>
+        </form>
+        <div id="tq-res" class="tq-res" aria-live="polite"></div>
+      </section>
+      <div class="acc-grille">
+        <section class="panel acc-votes">
+          <div class="acc-titre"><h2>Les derniers votes importants</h2><a href="#scrutins">Tous les scrutins →</a></div>
+          <ol class="acc-liste" id="acc-votes"></ol>
+        </section>
+        <div class="acc-col">
+          <section class="panel">
+            <div class="acc-titre"><h2>Explorer par thème</h2></div>
+            <p class="note" style="margin:0 0 10px">D'après la commission de l'Assemblée chargée du texte.</p>
+            <div class="acc-themes" id="acc-themes"></div>
+          </section>
+          <section class="panel">
+            <div class="acc-titre"><h2>Les groupes politiques</h2><a href="#groupes">Voir tout →</a></div>
+            <div class="acc-groupes" id="acc-groupes"></div>
+          </section>
+          <section class="panel acc-alerte">
+            <h2>Être prévenu des votes</h2>
+            <p>Recevez chaque vote important sur Telegram, avec le résultat et l'hémicycle. Aucune inscription sur ce site.</p>
+            <a class="btn plein" href="#alertes">Recevoir les alertes →</a>
+          </section>
+        </div>
+      </div>
+      <section class="panel acc-comprendre">
+        <h2>Comment lire un vote</h2>
+        <ol>
+          <li><b>Le résultat</b> : adopté ou rejeté, avec le nombre de voix pour, contre et d'abstentions.</li>
+          <li><b>L'hémicycle</b> : chaque point est un député, à sa place réelle, coloré selon son vote. Survolez ou touchez un point pour voir qui c'est.</li>
+          <li><b>Le débat en bref</b> : pour les votes sur l'ensemble d'un texte, les principaux arguments pour et contre, cités mot pour mot.</li>
+        </ol>
+        <p class="note" style="margin:0">Seuls les scrutins publics indiquent le vote de chaque député : les votes à main levée n'apparaissent pas. <a href="#faq">Questions fréquentes</a> · <a href="#methodologie">Méthodologie</a></p>
+      </section>
+    </div>
 
     <!-- Vue scrutin -->
     <div class="vue" id="vue-scrutin">
@@ -70,7 +120,7 @@
             <span><i class="sq" style="background:var(--pour)"></i>Pour</span>
             <span><i class="sq" style="background:var(--contre)"></i>Contre</span>
             <span><i class="sq" style="background:var(--abst)"></i>Abstention</span>
-            <span><i class="sq" style="background:var(--nv)"></i>Non-votant</span>
+            <span><i class="sq" style="background:var(--nv)"></i><button type="button" class="terme" data-def="nv">Non-votant</button></span>
             <span><i class="sq" style="background:var(--vide);outline:1px solid var(--hair)"></i>Pas de vote enregistré</span>
           </div>
         </section>
@@ -97,6 +147,7 @@
     <div class="vue" id="vue-page" hidden></div>
 
     <footer id="footer"></footer>
+    <div class="def-pop" id="def-pop" role="tooltip" hidden></div>
   </div>
 </div>
 <script src="app.js"></script>

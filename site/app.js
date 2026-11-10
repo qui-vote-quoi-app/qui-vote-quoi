@@ -14,7 +14,7 @@
   var NIVEAUX = [[1, "Majeurs"], [2, "+ articles"], [3, "Tous"]];
   var EXT = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M9 3h4v4M13 3L7 9M12 10v3H3V4h3"/></svg>';
   var PAGE = 150;
-  var PAGES = [["a-propos", "À propos"], ["methodologie", "Méthodologie"], ["faq", "Questions fréquentes"],
+  var PAGES = [["alertes", "Recevoir les alertes"], ["a-propos", "À propos"], ["methodologie", "Méthodologie"], ["faq", "Questions fréquentes"],
     ["donnees-personnelles", "Données personnelles"], ["mentions-legales", "Mentions légales"], ["contact", "Contact"]];
 
   var $ = function (id) { return document.getElementById(id); };
@@ -90,7 +90,7 @@
   function outilsLateraux() {
     var el = $("side-tools");
     if (st.vue === "infos") { el.innerHTML = ""; }
-    else if (st.vue === "scrutins") {
+    else if (modeLateral() === "scrutins") {
       el.innerHTML = '<label for="sq" class="sr">Rechercher un scrutin</label><input id="sq" type="search" placeholder="Rechercher un texte, un n°…" autocomplete="off" value="' + esc(st.f.q) + '">' +
         segNiveaux("slv", st.f.lv) + selectThemes("sth", st.f.theme);
       $("sq").oninput = function () { st.f.q = this.value; st.limite = PAGE; listeLaterale(); };
@@ -118,7 +118,7 @@
       }).join("");
       return;
     }
-    if (st.vue === "scrutins") {
+    if (modeLateral() === "scrutins") {
       var q = norm(st.f.q.trim()), n = 0, jour = "", total = 0;
       st.idx.s.forEach(function (r) {
         if (r[3] > st.f.lv) return;
@@ -205,11 +205,11 @@
     liens += '<a href="' + AN + "/dyn/17/scrutins/" + s.num + '" target="_blank" rel="noopener">' + EXT + "Scrutin sur le site de l'Assemblée</a>";
     liens += '<a href="' + REPO + "/issues/new?template=erreur.yml&title=" + encodeURIComponent("Scrutin n° " + s.num) + '" target="_blank" rel="noopener">' + EXT + "Signaler une erreur</a>";
     $("summary").innerHTML =
-      '<div class="sum-head"><div style="min-width:0"><div class="meta"><span class="num">Scrutin n° ' + s.num + "</span><span>" + dateFr(s.date) + "</span><span>" + esc(majuscule(s.type_libelle)) + '</span><span class="cat c-' + s.categorie.cle + '">' + esc(s.categorie.libelle) + "</span>" + (s.theme ? '<span class="theme">' + esc(s.theme) + "</span>" : "") + "</div><h2>" + esc(majuscule(s.titre)) + "</h2></div>" +
+      '<div class="sum-head"><div style="min-width:0"><div class="meta"><span class="num">Scrutin n° ' + s.num + "</span><span>" + dateFr(s.date) + "</span><span>" + terme(s.type, esc(majuscule(s.type_libelle))) + '</span><span class="cat c-' + s.categorie.cle + '">' + terme(s.categorie.cle, esc(s.categorie.libelle)) + "</span>" + (s.theme ? '<span class="theme">' + esc(s.theme) + "</span>" : "") + "</div><h2>" + esc(majuscule(s.titre)) + "</h2>" + (s.bref ? '<p class="bref"><b>En bref.</b> ' + esc(s.bref) + "</p>" : "") + "</div>" +
       '<span class="stamp ' + (ok ? "ok" : "ko") + '">' + esc(s.sort_libelle || (ok ? "Adopté" : "Rejeté")) + "</span></div>" +
       '<div class="links">' + liens + "</div>" +
-      '<div class="counts"><div><b>' + s.votants + '</b><span class="k">votants</span></div><div><b>' + s.exprimes + '</b><span class="k">suffrages exprimés</span></div><div><b>' + s.requis + '</b><span class="k">majorité requise</span></div>' +
-      '<div><b style="color:var(--pour)">' + s.pour + '</b><span class="k">pour</span></div><div><b style="color:var(--contre)">' + s.contre + '</b><span class="k">contre</span></div><div><b style="color:var(--abst)">' + s.abst + '</b><span class="k">abstentions</span></div></div>' +
+      '<div class="counts"><div><b>' + s.votants + '</b><span class="k">' + terme("votants", "votants") + '</span></div><div><b>' + s.exprimes + '</b><span class="k">' + terme("exprimes", "suffrages exprimés") + '</span></div><div><b>' + s.requis + '</b><span class="k">' + terme("requis", "majorité requise") + '</span></div>' +
+      '<div><b style="color:var(--pour)">' + s.pour + '</b><span class="k">pour</span></div><div><b style="color:var(--contre)">' + s.contre + '</b><span class="k">contre</span></div><div><b style="color:var(--abst)">' + s.abst + '</b><span class="k">' + terme("abst", "abstentions") + '</span></div></div>' +
       barre({ pour: s.pour, contre: s.contre, abst: s.abst, nv: s.nv }) + focus;
     $("cbig").textContent = ok ? "Adopté" : "Rejeté";
     $("cbig").style.fill = ok ? "var(--pour)" : "var(--contre)";
@@ -381,18 +381,134 @@
     if (mq.matches) ouvrirMobile();
   }
 
+  /* ================= Accueil ================= */
+  function effectifs() {
+    var n = {};
+    st.deps.forEach(function (d) { if (d.actif && d.groupe) n[d.groupe] = (n[d.groupe] || 0) + 1; });
+    return n;
+  }
+  function rendreAccueil() {
+    var nbMaj = 0;
+    st.idx.s.forEach(function (r) { if (r[3] === 1) nbMaj++; });
+    $("hero-intro").innerHTML = "Les " + st.idx.s.length.toLocaleString("fr-FR") + " scrutins publics de la XVII<sup>e</sup> législature, dont " + nbMaj + " votes importants, avec la position de chaque député. Mis à jour chaque matin à partir des données officielles de l'Assemblée nationale.";
+    $("acc-votes").innerHTML = st.idx.s.filter(function (r) { return r[3] === 1; }).slice(0, 6).map(function (r) {
+      var cat = st.idx.cats[r[2]];
+      return '<li><a href="#s' + r[0] + '"><span class="acc-res ' + (r[4] ? "ok" : "ko") + '">' + (r[4] ? "Adopté" : "Rejeté") + '</span>' +
+        '<span class="acc-t">' + esc(majuscule(r[7])) + '</span><span class="acc-m"><span>' + dateFr(r[1]) + '</span><span class="cat c-' + cat + '">' + CAT_LIB[cat] + "</span>" +
+        (r[5] >= 0 ? "<span>" + esc(st.idx.themes[r[5]]) + "</span>" : "") + (r[6] === "publiee" ? "<span>· débat résumé</span>" : "") + "</span></a></li>";
+    }).join("");
+    var nbt = {};
+    st.idx.s.forEach(function (r) { if (r[3] === 1 && r[5] >= 0) nbt[r[5]] = (nbt[r[5]] || 0) + 1; });
+    $("acc-themes").innerHTML = st.idx.themes.map(function (th, i) { return [th, i, nbt[i] || 0]; })
+      .filter(function (x) { return x[2] > 0; }).sort(function (a, b) { return b[2] - a[2]; })
+      .map(function (x) { return '<a class="tchip" href="#theme-' + x[1] + '">' + esc(x[0]) + ' <span class="num">' + x[2] + "</span></a>"; }).join("");
+    var eff = effectifs(), total = 0;
+    var gps = Object.keys(eff).sort(function (a, b) { return (st.groupes[a].ordre || 0) - (st.groupes[b].ordre || 0); });
+    gps.forEach(function (po) { total += eff[po]; });
+    $("acc-groupes").innerHTML = '<div class="acc-barre" aria-hidden="true">' + gps.map(function (po) { return '<span style="flex:' + eff[po] + ';background:' + esc(st.groupes[po].couleur) + '"></span>'; }).join("") + "</div>" +
+      '<ul class="acc-gl">' + gps.sort(function (a, b) { return eff[b] - eff[a]; }).map(function (po) {
+        var g = st.groupes[po];
+        return '<li><a href="#g-' + po + '"><i class="sq" style="background:' + esc(g.couleur) + '"></i><span class="num">' + esc(g.sigle) + "</span><span>" + esc(g.libelle) + '</span><span class="num n">' + eff[po] + "</span></a></li>";
+      }).join("") + "</ul>";
+  }
+
+  /* Recherche « Trouver mon député » : commune, code postal ou nom. */
+  var cleDep = function (t) { return norm(t).replace(/[^a-z0-9]+/g, " ").trim().replace(/^(la|le|les) /, ""); };
+  function chargerCommunes() {
+    return cache.communes || (cache.communes = fetch("data/communes.json").then(function (r) { if (!r.ok) throw new Error("communes"); return r.json(); }).catch(function () { delete cache.communes; return []; }));
+  }
+  function carteDepute(i) {
+    var d = st.deps[i], g = st.groupes[d.groupe] || {};
+    return '<a class="dcarte" href="#d-' + d.id + '">' + avatar(d, "", g.couleur) + '<span style="min-width:0"><b>' + esc(d.prenom + " " + d.nom) + '</b><span class="m"><i class="sq" style="background:' + esc(g.couleur) + '"></i>' + esc(g.libelle || "Sans groupe") + "</span>" +
+      '<span class="m">' + esc(d.dept || "") + (d.circo ? ", " + ord(d.circo) + " circonscription" : "") + "</span></span></a>";
+  }
+  function deputesDe(dept, circos) {
+    var k = cleDep(dept), res = [];
+    st.deps.forEach(function (d, i) { if (d.actif && cleDep(d.dept) === k && (!circos || circos.indexOf(d.circo) >= 0)) res.push(i); });
+    return res.sort(function (a, b) { return st.deps[a].circo - st.deps[b].circo; });
+  }
+  function chercher(q) {
+    var el = $("tq-res"), brut = q.trim(), nq = cleDep(brut);
+    if (nq.length < 2) { el.innerHTML = ""; return; }
+    var parNom = [];
+    st.deps.forEach(function (d, i) { if (d.actif && cleDep(d.prenom + " " + d.nom).indexOf(nq) >= 0) parNom.push(i); });
+    chargerCommunes().then(function (communes) {
+      if (cleDep($("tq").value) !== nq) return;
+      var cp = /^\d{5}$/.test(brut.replace(/\s/g, "")) ? brut.replace(/\s/g, "") : null, coms = [];
+      communes.forEach(function (c) {
+        if (cp ? c[3].indexOf(cp) >= 0 : cleDep(c[0]).indexOf(nq) === 0) coms.push(c);
+      });
+      coms.sort(function (a, b) { return (cleDep(a[0]) === nq ? 0 : 1) - (cleDep(b[0]) === nq ? 0 : 1) || a[0].length - b[0].length; });
+      var html = "";
+      coms.slice(0, 4).forEach(function (c) {
+        var ids = deputesDe(c[1], c[2]);
+        html += '<div class="tq-bloc"><h3>' + esc(c[0]) + ' <span class="note">' + esc(c[1]) + (c[3].length ? " · " + esc(c[3].slice(0, 3).join(", ")) + (c[3].length > 3 ? "…" : "") : "") + "</span></h3>" +
+          (c[2].length > 1 ? '<p class="note">Cette commune est partagée entre ' + c[2].length + " circonscriptions : votre député dépend de votre adresse.</p>" : "") +
+          (ids.length ? '<div class="dcartes">' + ids.map(carteDepute).join("") + "</div>" : '<p class="note">Aucun député en exercice trouvé pour cette circonscription.</p>') + "</div>";
+      });
+      if (coms.length > 4) html += '<p class="note">' + (coms.length - 4) + " autres communes correspondent : précisez la recherche.</p>";
+      if (parNom.length) html += '<div class="tq-bloc"><h3>Députés</h3><div class="dcartes">' + parNom.slice(0, 8).map(carteDepute).join("") + "</div></div>";
+      if (!html) html = '<p class="note">Aucun résultat. Essayez le nom de votre commune sans abréviation, votre code postal, ou parcourez <a href="#deputes">la liste des députés</a> par département. Députés des Français de l\'étranger : <a href="#deputes">liste des députés</a>.</p>';
+      el.innerHTML = html;
+    });
+  }
+  $("trouver").addEventListener("submit", function (e) { e.preventDefault(); chercher($("tq").value); });
+  var tqMinuteur;
+  $("tq").addEventListener("input", function () { clearTimeout(tqMinuteur); var v = this.value; tqMinuteur = setTimeout(function () { chercher(v); }, 220); });
+
+  /* Définitions du vocabulaire parlementaire (bulle au survol, au toucher ou au clavier). */
+  var DEFS = {
+    votants: "Députés ayant participé au vote : pour, contre ou abstention.",
+    exprimes: "Votes pour et votes contre. Les abstentions ne sont pas comptées : elles ne pèsent ni pour ni contre.",
+    requis: "Nombre de voix pour nécessaire à l'adoption. Pour la plupart des votes, c'est plus de la moitié des suffrages exprimés.",
+    abst: "Le député participe au vote sans se prononcer pour ou contre.",
+    nv: "Député enregistré comme ne prenant pas part au vote, par exemple la présidence de séance.",
+    SPS: "Vote annoncé à l'avance, à une heure fixée, pour les textes les plus importants, afin que tous les députés puissent y participer.",
+    SPO: "Vote nominatif demandé pendant la séance, par un président de groupe ou le Gouvernement. Seuls les députés présents, ou ayant délégué leur vote, y participent.",
+    motion: "Vote sur la suite de l'examen d'un texte (le rejeter d'emblée, le renvoyer en commission…), pas sur son contenu article par article.",
+    ensemble: "Vote final sur le texte entier, après l'examen de tous ses articles.",
+    article: "Vote sur un seul article du texte.",
+    amendement: "Vote sur une modification proposée au texte.",
+    censure: "Vote pour renverser le Gouvernement. Il faut la majorité absolue des députés.",
+    declaration: "Vote sur une déclaration présentée par le Gouvernement.",
+    procedure: "Vote sur l'organisation des débats."
+  };
+  function terme(cle, libelle) { return DEFS[cle] ? '<button type="button" class="terme" data-def="' + cle + '">' + libelle + "</button>" : libelle; }
+  var pop = $("def-pop"), popCible = null;
+  function montrerDef(b) {
+    popCible = b; pop.textContent = DEFS[b.dataset.def]; pop.hidden = false;
+    var r = b.getBoundingClientRect(), w = Math.min(300, window.innerWidth - 32);
+    pop.style.width = w + "px";
+    pop.style.left = Math.max(16, Math.min(r.left + window.scrollX, window.scrollX + window.innerWidth - w - 16)) + "px";
+    pop.style.top = (r.bottom + window.scrollY + 8) + "px";
+    b.setAttribute("aria-expanded", "true");
+  }
+  function cacherDef() { if (popCible) popCible.setAttribute("aria-expanded", "false"); popCible = null; pop.hidden = true; }
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest(".terme");
+    if (b) { e.preventDefault(); if (popCible === b) cacherDef(); else montrerDef(b); } else if (!e.target.closest("#def-pop")) cacherDef();
+  });
+  document.addEventListener("mouseover", function (e) { var b = e.target.closest && e.target.closest(".terme"); if (b && matchMedia("(hover:hover)").matches) montrerDef(b); });
+  document.addEventListener("mouseout", function (e) { var b = e.target.closest && e.target.closest(".terme"); if (b && matchMedia("(hover:hover)").matches) cacherDef(); });
+  document.addEventListener("focusin", function (e) { var b = e.target.closest && e.target.closest(".terme"); if (b) montrerDef(b); });
+  document.addEventListener("focusout", function (e) { if (e.target.closest && e.target.closest(".terme")) cacherDef(); });
+  window.addEventListener("scroll", function () { if (popCible && !matchMedia("(hover:hover)").matches) cacherDef(); }, { passive: true });
+
   /* ================= Navigation ================= */
   var app = $("app"), mq = window.matchMedia("(max-width:900px)");
+  function modeLateral() { return st.vue === "accueil" ? "scrutins" : st.vue; }
   function definirVue(v) {
     if (st.vue !== v) {
+      var avant = st.vue && modeLateral();
       st.vue = v;
-      $("side-titre").textContent = { scrutins: "Scrutins", deputes: "Députés", groupes: "Groupes", infos: "Le site" }[v];
-      outilsLateraux();
+      $("side-titre").textContent = { scrutins: "Scrutins", accueil: "Scrutins", deputes: "Députés", groupes: "Groupes", infos: "Le site" }[v];
+      if (avant !== modeLateral()) outilsLateraux();
     }
     [].forEach.call(document.querySelectorAll(".tabs a"), function (a) { if (a.dataset.vue === v) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
     $("vue-scrutin").hidden = v !== "scrutins";
     $("vue-histo").hidden = v !== "deputes" && v !== "groupes";
     $("vue-page").hidden = v !== "infos";
+    $("vue-accueil").hidden = v !== "accueil";
   }
   function ouvrirPage(id) {
     st.page = id;
@@ -404,6 +520,16 @@
     p.then(function (html) {
       if (st.page !== id) return;
       el.innerHTML = '<article class="panel prose">' + html + "</article>";
+      var canal = (st.meta.canal || "").replace(/^@/, "");
+      [].forEach.call(el.querySelectorAll("[data-si-canal]"), function (x) { x.hidden = !canal; });
+      [].forEach.call(el.querySelectorAll("[data-sans-canal]"), function (x) { x.hidden = !!canal; });
+      [].forEach.call(el.querySelectorAll("a[data-canal]"), function (x) { x.href = (x.dataset.canal === "web" ? "https://t.me/s/" : "https://t.me/") + canal; });
+      [].forEach.call(el.querySelectorAll("[data-canal-nom]"), function (x) { x.textContent = "@" + canal; });
+      var ap = el.querySelector("img[data-apercu]");
+      var A = st.meta.apercu;
+      if (ap) { if (A) ap.src = "data/apercu.png?v=" + encodeURIComponent(VERSION); else ap.closest("figure").hidden = true; }
+      var cap = el.querySelector("[data-apercu-texte]");
+      if (cap && A) cap.innerHTML = "<b>" + (A.adopte ? "✅ L'Assemblée a adopté" : "❌ L'Assemblée n'a pas adopté") + "</b><br>" + esc(majuscule(A.titre)) + "<br><br><i>" + esc(A.bref) + "</i><br><br>🔵 " + A.pour + " pour · 🔴 " + A.contre + " contre · ⚪ " + A.abst + " abstention(s)<br>👉 Qui a voté quoi : <a href=\"#s" + A.num + "\">voir le vote</a>";
       var b = $("copier-adresse");
       if (b) b.onclick = function () {
         var a = $("adresse").textContent;
@@ -422,7 +548,13 @@
     else if (h === "#deputes") { definirVue("deputes"); accueilHisto("d"); listeLaterale(); }
     else if (h === "#groupes") { definirVue("groupes"); accueilHisto("g"); listeLaterale(); }
     else if (PAGES.some(function (p) { return "#" + p[0] === h; })) { definirVue("infos"); ouvrirPage(h.slice(1)); }
-    else { definirVue("scrutins"); ouvrirScrutin(st.num || premierMajeur()); }
+    else if ((m = /^#theme-(\d+)$/.exec(h)) && st.idx.themes[+m[1]]) {
+      st.f.theme = m[1]; st.f.lv = 1; st.limite = PAGE; st.vue = null; definirVue("scrutins");
+      var r = st.idx.s.filter(function (x) { return String(x[5]) === m[1] && x[3] === 1; })[0] || st.idx.s.filter(function (x) { return String(x[5]) === m[1]; })[0];
+      if (r) ouvrirScrutin(r[0]); listeLaterale(); if (mq.matches) ouvrirMobile();
+    }
+    else if (h === "#scrutins") { definirVue("scrutins"); ouvrirScrutin(st.num || premierMajeur()); }
+    else { definirVue("accueil"); rendreAccueil(); listeLaterale(); document.title = "Qui vote quoi ? · Les votes de l'Assemblée nationale"; }
     if (st.vue === "scrutins") centrerHemicycle();
     window.scrollTo(0, 0);
   }

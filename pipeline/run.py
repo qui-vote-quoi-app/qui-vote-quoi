@@ -13,7 +13,7 @@ import traceback
 from datetime import date, datetime, timezone
 from pathlib import Path
 
-from . import config, debats, donnees, export, image, synthese, telegram, verification, photos
+from . import config, debats, donnees, export, image, synthese, telegram, verification, photos, communes, presentation
 from .sources import ZipDistant, charger_json, ecrire_json, entete, telecharger
 
 SITE_URL = os.environ.get("SITE_URL", "https://qui-vote-quoi-app.github.io/qui-vote-quoi").rstrip("/")
@@ -317,6 +317,36 @@ def notifier(rapport, scrutins, mode):
     telegram.message(entete_ + "\n\n" + "\n".join(lignes))
 
 
+def publier_canal(rapport, mode):
+    """Canal Telegram public : un message par vote majeur nouveau, et l'annonce des synthèses publiées.
+    Aucune donnée d'abonné ne transite par le site : Telegram gère seul la liste des membres du canal."""
+    chat = telegram.canal()
+    if not chat:
+        return
+    E = telegram.esc
+    majeurs = sorted((s for s in rapport.nouveaux if s["categorie"]["niveau"] == 1), key=lambda s: s["num"])
+    detail, reste = majeurs[:6], majeurs[6:]
+    for s in detail:
+        res = "✅ <b>L'Assemblée a adopté</b>" if s["sort"] == "adopté" else "❌ <b>L'Assemblée n'a pas adopté</b>"
+        legende = (f"{res}\n{E(maj(s['titre']))[:420]}\n\n<i>{E(presentation.en_bref(s))[:380]}</i>\n\n"
+                   f"🔵 {s['pour']} pour · 🔴 {s['contre']} contre · ⚪ {s['abst']} abstention(s)\n"
+                   f"👉 Qui a voté quoi : {lien(s)}")
+        chemin = image.dessiner(s, config.CACHE / f"canal_{s['num']}.png")
+        telegram.photo(chemin, legende, chat=chat)
+        time.sleep(1)
+    if reste:
+        lignes = [f"🗳 <b>Et aussi, {len(reste)} autre(s) vote(s) majeur(s)</b>"]
+        for s in reste:
+            r = "adopté" if s["sort"] == "adopté" else "rejeté"
+            lignes.append(f"• {E(maj(s['titre'])[:120])} — {r} : {lien(s)}")
+        telegram.message("\n".join(lignes), chat=chat)
+    if rapport.publiees:
+        lignes = ["📝 <b>Le débat en bref est disponible</b> : les principaux arguments pour et contre, "
+                  "cités mot pour mot"]
+        lignes += [f"• {E(maj(s['titre'])[:160])} : {lien(s)}" for s in rapport.publiees[:10]]
+        telegram.message("\n".join(lignes), chat=chat)
+
+
 # ------------------------------------------------------------------ main
 
 def main(argv=None):
@@ -359,6 +389,8 @@ def main(argv=None):
             if args.rattrapage:
                 rattrapage(scrutins, syntheses, args.rattrapage, rapport)
             traiter_syntheses(scrutins, syntheses, etat, args, rapport)
+            if args.mode == "quotidien" and not args.fixtures:
+                communes.assurer()
             avec_photo = photos.preparer(deputes, telecharger=args.mode == "quotidien" and not args.fixtures)
             export.exporter(scrutins, deputes, groupes, syntheses, charger_retraits(), dates, avec_photo)
             photos.ecrire(avec_photo)
@@ -373,6 +405,10 @@ def main(argv=None):
     ecrire_json(config.ETAT, etat)
     try:
         notifier(rapport, None, args.mode)
+    except Exception:
+        print(traceback.format_exc(), file=sys.stderr)
+    try:
+        publier_canal(rapport, args.mode)
     except Exception:
         print(traceback.format_exc(), file=sys.stderr)
     if os.environ.get("GITHUB_OUTPUT"):
