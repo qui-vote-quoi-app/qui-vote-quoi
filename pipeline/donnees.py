@@ -1,6 +1,7 @@
 """Lecture des dumps « Scrutins » et « Acteurs et organes » de l'Assemblée nationale."""
 import json
 import re
+import unicodedata
 import zipfile
 
 from . import config
@@ -192,3 +193,97 @@ def lire_acteurs(chemin_zip):
                 "groupe": ((gp_actuel or {}).get("organes") or {}).get("organeRef"),
             }
     return deputes, groupes
+
+
+# ---------------------------------------------------------------- Thèmes (commission saisie au fond)
+
+def lire_organes(chemin_zip):
+    """Libellé court des commissions, pour servir de « thème » aux votes."""
+    out = {}
+    with zipfile.ZipFile(chemin_zip) as z:
+        for nom in z.namelist():
+            if "/organe/" not in nom:
+                continue
+            o = json.loads(z.read(nom))["organe"]
+            libelle = o.get("libelle") or ""
+            if o.get("codeType") == "COMPER":
+                court = o.get("libelleAbrege") or libelle
+            elif "commission spéciale" in libelle.lower():
+                court = "Commission spéciale"
+            else:
+                continue
+            out[o["uid"]] = court
+    return out
+
+
+def normaliser_titre(t):
+    t = unicodedata.normalize("NFKC", t or "").lower().replace("’", "'").replace("\u00a0", " ")
+    return re.sub(r"\s+", " ", t).strip().rstrip(".")
+
+
+def _commission_fond(actes):
+    """Première commission saisie au fond à l'Assemblée, en parcourant les actes dans l'ordre."""
+    trouves = []
+
+    def parcourir(a):
+        for x in liste(a):
+            if not isinstance(x, dict):
+                continue
+            code = x.get("codeActe") or ""
+            if code.endswith("-COM-FOND") and x.get("organeRef"):
+                trouves.append((code, x["organeRef"]))
+            parcourir((x.get("actesLegislatifs") or {}).get("acteLegislatif"))
+
+    parcourir((actes or {}).get("acteLegislatif"))
+    an = [o for c, o in trouves if c.startswith("AN")]
+    return (an or [o for _c, o in trouves] or [None])[0]
+
+
+TYPES_TEXTES = ("Projet de loi", "Proposition de loi", "Proposition de résolution")
+
+
+def lire_dossiers(chemin_zip):
+    """Retourne (commission au fond par dossier, titres connus pour retrouver un dossier par intitulé)."""
+    commissions, titres = {}, {}
+    with zipfile.ZipFile(chemin_zip) as z:
+        for nom in z.namelist():
+            if "/dossierParlementaire/" in nom:
+                d = json.loads(z.read(nom))["dossierParlementaire"]
+                c = _commission_fond(d.get("actesLegislatifs"))
+                if c:
+                    commissions[d["uid"]] = c
+                t = normaliser_titre((d.get("titreDossier") or {}).get("titre"))
+                if len(t) >= 25:
+                    titres.setdefault(t, d["uid"])
+            elif "/document/" in nom:
+                doc = json.loads(z.read(nom))["document"]
+                if not str(doc.get("denominationStructurelle") or "").startswith(TYPES_TEXTES):
+                    continue
+                t = normaliser_titre((doc.get("titres") or {}).get("titrePrincipal"))
+                if doc.get("dossierRef") and len(t) >= 25:
+                    titres.setdefault(t, doc["dossierRef"])
+    # Seuls les titres de dossiers dont on connaît la commission servent à quelque chose.
+    utiles = sorted(((t, ref) for t, ref in titres.items() if ref in commissions), key=lambda x: -len(x[0]))
+    return commissions, utiles
+
+
+def attribuer_themes(scrutins, commissions, titres, organes):
+    """Ajoute s["theme"] (libellé court de la commission au fond) à chaque scrutin quand c'est possible.
+    1) via le dossier indiqué dans le scrutin ; 2) sinon en retrouvant le titre du texte dans l'intitulé."""
+    stats = {"direct": 0, "titre": 0, "aucun": 0}
+    for s in scrutins.values():
+        ref = s.get("dossier")
+        if ref in commissions:
+            stats["direct"] += 1
+        else:
+            ref = None
+            intitule = normaliser_titre(s["titre"])
+            for t, r in titres:
+                if t in intitule:
+                    ref = r
+                    break
+            stats["titre" if ref else "aucun"] += 1
+            if ref and not s.get("dossier"):
+                s["dossier"] = ref
+        s["theme"] = organes.get(commissions.get(ref)) if ref else None
+    return stats

@@ -83,11 +83,18 @@ def charger_sources(args, etat):
                 z.write(p, f"json/acteur/{p.name.replace('acteur_', '')}")
             for p in fx.glob("organe_*.json"):
                 z.write(p, f"json/organe/{p.name.replace('organe_', '')}")
-        return tmp / "scrutins.zip", tmp / "acteurs.zip", {"scrutins": "fixtures", "acteurs": "fixtures"}
+        with zipfile.ZipFile(tmp / "dossiers.zip", "w") as z:
+            for p in fx.glob("dossier_*.json"):
+                z.write(p, f"json/dossierParlementaire/{p.name.replace('dossier_', '')}")
+            for p in fx.glob("document_*.json"):
+                z.write(p, f"json/document/{p.name.replace('document_', '')}")
+        return ({"scrutins": tmp / "scrutins.zip", "acteurs": tmp / "acteurs.zip", "dossiers": tmp / "dossiers.zip"},
+                {"scrutins": "fixtures", "acteurs": "fixtures"})
 
     dates = {}
     chemins = {}
-    for cle, url in [("scrutins", config.URL_SCRUTINS), ("acteurs", config.URL_ACTEURS)]:
+    for cle, url in [("scrutins", config.URL_SCRUTINS), ("acteurs", config.URL_ACTEURS),
+                     ("dossiers", config.URL_DOSSIERS)]:
         info = entete(url)
         dates[cle] = info["modifie"]
         dest = config.CACHE / f"{cle}.zip"
@@ -95,7 +102,8 @@ def charger_sources(args, etat):
             telecharger(url, dest)
         etat.setdefault("etags", {})[url] = info["etag"]
         chemins[cle] = dest
-    return chemins["scrutins"], chemins["acteurs"], dates
+    dates.pop("dossiers", None)
+    return chemins, dates
 
 
 def detecter_nouveaux(scrutins, etat, syntheses, rapport):
@@ -330,9 +338,12 @@ def main(argv=None):
                 not any(s["statut"] == "en_attente" for s in syntheses.values()):
             print("Aucune synthèse en attente.")
         else:
-            chemin_s, chemin_a, dates = charger_sources(args, etat)
-            scrutins = donnees.lire_scrutins(chemin_s)
-            deputes, groupes = donnees.lire_acteurs(chemin_a)
+            chemins, dates = charger_sources(args, etat)
+            scrutins = donnees.lire_scrutins(chemins["scrutins"])
+            deputes, groupes = donnees.lire_acteurs(chemins["acteurs"])
+            commissions, titres = donnees.lire_dossiers(chemins["dossiers"])
+            stats = donnees.attribuer_themes(scrutins, commissions, titres, donnees.lire_organes(chemins["acteurs"]))
+            print(f"Thèmes : {stats}")
             if args.retrait:
                 retirer(args.retrait, args.raison, syntheses, rapport)
             if args.mode == "quotidien" and not args.retrait:

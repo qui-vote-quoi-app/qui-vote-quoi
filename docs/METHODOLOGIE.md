@@ -6,6 +6,7 @@
 |---|---|---|
 | Scrutins publics | `loi/scrutins/Scrutins.json.zip` | quotidienne |
 | Députés, groupes, places | `amo/…/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip` | quotidienne |
+| Dossiers législatifs (commission saisie au fond) | `loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip` | quotidienne |
 | Comptes rendus de séance | `vp/syceronbrut/syseron.xml.zip` | quotidienne, quelques jours après la séance |
 | Carte des places de l'hémicycle | page « Situez votre député dans l'hémicycle » du site de l'Assemblée | relevé ponctuel (`data/places_hemicycle.json`) |
 
@@ -33,6 +34,21 @@ Le classement se fait sur l'intitulé officiel du scrutin, jamais sur son sujet 
 | Procédure | « la proposition du Gouvernement de prolonger la séance… » | mineur |
 
 Tout **scrutin solennel** est classé majeur.
+
+## Thèmes (commissions)
+
+L'open data ne contient **aucun classement thématique** des textes. Le site utilise à la place la **commission saisie au fond** du dossier législatif (Finances, Affaires sociales, Lois…), qui est le regroupement officiel le plus proche d'un thème.
+
+1. **Script** : si le scrutin référence son dossier législatif, la commission est lue dans les actes de ce dossier.
+2. **Script** : sinon (plus de la moitié des scrutins), le titre du texte cité dans l'intitulé du scrutin est comparé aux titres des dossiers et des documents ; la correspondance la plus longue l'emporte.
+3. Sans correspondance, le scrutin n'a pas de thème et n'apparaît que dans « Tous les thèmes ».
+
+Les textes examinés en séance sans passage en commission (certaines résolutions, par exemple) n'ont donc pas de thème.
+
+## Historiques par député et par groupe
+
+- **Député** : sa position (pour, contre, abstention, non-votant) sur chaque scrutin public, telle qu'elle figure dans le scrutin officiel. Aucun taux de participation ni d'alignement n'est calculé.
+- **Groupe** : la position majoritaire du groupe telle que publiée dans le scrutin, avec le décompte de ses membres.
 
 ## Synthèse « Le débat en bref »
 

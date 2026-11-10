@@ -13,87 +13,85 @@
 </head>
 <body>
 <div class="app" id="app">
-  <aside class="side" id="side" aria-label="Liste des scrutins">
+  <aside class="side" id="side" aria-label="Navigation">
     <div class="side-head">
-      <h2>Scrutins</h2>
-      <button class="iconbtn" id="toggle" aria-label="Replier la liste des scrutins" aria-expanded="true" aria-controls="side-corps">
+      <h2 id="side-titre">Scrutins</h2>
+      <button class="iconbtn" id="toggle" aria-label="Replier la liste" aria-expanded="true" aria-controls="side-corps">
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3L5 8l5 5"/></svg>
       </button>
     </div>
     <div class="side-corps" id="side-corps">
-    <div class="side-tools">
-      <label for="sq" class="sr">Rechercher un scrutin</label>
-      <input id="sq" type="search" placeholder="Rechercher un texte, un n°…" autocomplete="off">
-      <div class="seg" role="group" aria-label="Niveau de détail">
-        <button data-lv="1" aria-pressed="true">Majeurs</button>
-        <button data-lv="2" aria-pressed="false">+ articles</button>
-        <button data-lv="3" aria-pressed="false">Tous</button>
-      </div>
-    </div>
-    <nav class="slist" id="slist"><p class="sempty">Chargement…</p></nav>
-    <div class="side-foot">
-      <span class="eyebrow">Affichage</span>
-      <div class="seg" role="group" aria-label="Thème d'affichage" id="themes">
-        <button data-theme-choix="auto" aria-pressed="true">Auto</button>
-        <button data-theme-choix="light" aria-pressed="false">Clair</button>
-        <button data-theme-choix="dark" aria-pressed="false">Sombre</button>
-      </div>
-    </div>
+      <div class="side-tools" id="side-tools"></div>
+      <nav class="slist" id="slist"><p class="sempty">Chargement…</p></nav>
     </div>
   </aside>
 
   <div class="content">
     <header class="top">
-      <div class="brand">
-        <div class="eyebrow">XVII<sup>e</sup> législature · Scrutins publics</div>
-        <h1>Qui vote quoi ?</h1>
-        <p>Un point par député. Sélectionnez un siège pour afficher la fiche du député et son vote.</p>
+      <div class="top-row">
+        <div class="brand">
+          <div class="eyebrow">XVII<sup>e</sup> législature · Scrutins publics</div>
+          <h1>Qui vote quoi ?</h1>
+        </div>
+        <div class="top-actions">
+          <span class="tag">Site indépendant · non officiel</span>
+          <button class="theme-btn" id="theme" type="button" aria-label="Changer de thème d'affichage">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 2.8a7.2 7.2 0 0 1 0 14.4z" fill="currentColor"/></svg>
+            <span id="theme-libelle">Auto</span>
+          </button>
+        </div>
       </div>
-      <span class="tag">Site indépendant · non officiel</span>
+      <nav class="tabs" aria-label="Vues">
+        <a href="#scrutins" data-vue="scrutins">Scrutins</a>
+        <a href="#deputes" data-vue="deputes">Députés</a>
+        <a href="#groupes" data-vue="groupes">Groupes</a>
+      </nav>
     </header>
 
-    <section class="panel summary" id="summary" aria-live="polite"><p class="loading">Chargement des données…</p></section>
-
-    <div class="main">
-      <section class="panel stage">
-        <div class="controls">
-          <div class="seg" role="group" aria-label="Couleur des sièges">
-            <button id="m-vote" aria-pressed="true">Par vote</button>
-            <button id="m-grp" aria-pressed="false">Par groupe</button>
+    <!-- Vue scrutin -->
+    <div class="vue" id="vue-scrutin">
+      <section class="panel summary" id="summary" aria-live="polite"><p class="loading">Chargement des données…</p></section>
+      <div class="main">
+        <section class="panel stage">
+          <div class="controls">
+            <div class="chips" id="chips" aria-label="Mettre en avant un groupe"></div>
+            <div class="search">
+              <label for="q" class="sr">Rechercher un député dans l'hémicycle</label>
+              <input id="q" type="text" list="dl" placeholder="Trouver un député…" autocomplete="off">
+              <datalist id="dl"></datalist>
+            </div>
           </div>
-          <div class="search">
-            <label for="q" class="sr">Rechercher un député</label>
-            <input id="q" type="text" list="dl" placeholder="Rechercher un député…" autocomplete="off">
-            <datalist id="dl"></datalist>
+          <div class="hemi" id="hemi">
+            <svg id="svg" viewBox="0 0 1000 570" role="img" aria-label="Hémicycle : position de vote de chaque député"></svg>
+            <div class="tip" id="tip" role="tooltip" hidden></div>
           </div>
-        </div>
-        <div class="chips" id="chips" aria-label="Filtrer par groupe"></div>
-        <div class="hemi" id="hemi">
-          <svg id="svg" viewBox="0 0 1000 570" role="img" aria-label="Hémicycle : position de vote de chaque député"></svg>
-          <div class="tip" id="tip" role="tooltip" hidden></div>
-        </div>
-        <p class="hemi-aide">Faites glisser l'hémicycle sur le côté pour le parcourir en entier.</p>
-        <div class="legend">
-          <span><i class="sq" style="background:var(--pour)"></i>Pour</span>
-          <span><i class="sq" style="background:var(--contre)"></i>Contre</span>
-          <span><i class="sq" style="background:var(--abst)"></i>Abstention</span>
-          <span><i class="sq" style="background:var(--nv)"></i>Non-votant</span>
-          <span><i class="sq" style="background:var(--vide);outline:1px solid var(--hair)"></i>Pas de vote enregistré</span>
-        </div>
+          <p class="hemi-aide">Faites glisser l'hémicycle sur le côté pour le parcourir en entier.</p>
+          <div class="legend">
+            <span><i class="sq" style="background:var(--pour)"></i>Pour</span>
+            <span><i class="sq" style="background:var(--contre)"></i>Contre</span>
+            <span><i class="sq" style="background:var(--abst)"></i>Abstention</span>
+            <span><i class="sq" style="background:var(--nv)"></i>Non-votant</span>
+            <span><i class="sq" style="background:var(--vide);outline:1px solid var(--hair)"></i>Pas de vote enregistré</span>
+          </div>
+        </section>
+        <aside class="panel card" id="card" aria-live="polite"></aside>
+      </div>
+      <section class="panel debate" id="debate"></section>
+      <section class="panel groups">
+        <h2>Positions par groupe</h2>
+        <p class="note" style="margin:0">Position majoritaire avec le nombre de votants du groupe rapporté à son effectif. Cliquez une ligne pour mettre le groupe en avant dans l'hémicycle.</p>
+        <div class="tbl"><table>
+          <thead><tr><th>Groupe</th><th>Position majoritaire</th><th style="text-align:right">Pour</th><th style="text-align:right">Contre</th><th style="text-align:right">Abst.</th><th style="text-align:right">Non-v.</th><th>Répartition</th></tr></thead>
+          <tbody id="gtb"></tbody>
+        </table></div>
       </section>
-      <aside class="panel card" id="card" aria-live="polite"></aside>
     </div>
 
-    <section class="panel debate" id="debate"></section>
-
-    <section class="panel groups">
-      <h2>Positions par groupe</h2>
-      <p class="note" style="margin:0">Position majoritaire avec le nombre de votants du groupe rapporté à son effectif. Cliquez une ligne pour filtrer l'hémicycle.</p>
-      <div class="tbl"><table>
-        <thead><tr><th>Groupe</th><th>Position majoritaire</th><th style="text-align:right">Pour</th><th style="text-align:right">Contre</th><th style="text-align:right">Abst.</th><th style="text-align:right">Non-v.</th><th>Répartition</th></tr></thead>
-        <tbody id="gtb"></tbody>
-      </table></div>
-    </section>
+    <!-- Vue historique (député ou groupe) -->
+    <div class="vue" id="vue-histo" hidden>
+      <section class="panel h-head" id="h-head"></section>
+      <section class="panel h-liste" id="h-liste"></section>
+    </div>
 
     <footer id="footer"></footer>
   </div>

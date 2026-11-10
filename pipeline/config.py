@@ -20,6 +20,7 @@ URL_ACTEURS = (
     "AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip"
 )
 URL_COMPTES_RENDUS = f"{BASE}/vp/syceronbrut/syseron.xml.zip"
+URL_DOSSIERS = f"{BASE}/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
 
 AN = "https://www.assemblee-nationale.fr"
 

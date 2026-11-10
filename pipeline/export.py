@@ -1,66 +1,99 @@
-"""Export des fichiers JSON statiques lus par le site."""
+"""Export des fichiers JSON statiques lus par le site.
+
+Fichiers produits (dans site/data/) :
+- meta.json              date de mise à jour, sources
+- index.json             liste compacte de tous les scrutins (barre latérale, historiques, filtres)
+- scrutins/<n>.json      détail des scrutins par paquets de 100 (97.json = n° 9700 à 9799)
+- deputes.json           députés (index stable)
+- votes_deputes/<n>.json historique de vote des députés, par paquets de 50 députés
+- groupes.json           groupes politiques
+- votes_groupes/<PO>.json historique de vote d'un groupe
+- places.json            carte de l'hémicycle
+Moins de fichiers = publication GitHub Pages plus rapide."""
 import copy
 import shutil
 from collections import defaultdict
 from datetime import datetime, timezone
 
 from . import config
-from .sources import charger_json, ecrire_json
+from .sources import ecrire_json
+
+CATS = ["ensemble", "motion", "censure", "declaration", "article", "amendement", "procedure", "autre"]
+POS = {"pour": 0, "contre": 1, "abst": 2, "nv": 3}
+POS_MAJ = {"pour": 0, "contre": 1, "abstention": 2}
+DEPUTES_PAR_PAQUET = 50
+
+
+def _delta(paires):
+    """[(num, a, b…), …] triés par num -> liste plate où num est codé en écart au précédent."""
+    plat, prec = [], 0
+    for p in sorted(paires):
+        plat.append(p[0] - prec)
+        plat.extend(p[1:])
+        prec = p[0]
+    return plat
 
 
 def exporter(scrutins, deputes, groupes, syntheses, retraits, sources_dates):
     out = config.SITE_DATA
     if out.exists():
         shutil.rmtree(out)
-    (out / "mois").mkdir(parents=True)
-    (out / "scrutins").mkdir(parents=True)
+    for d in ("scrutins", "votes_deputes", "votes_groupes"):
+        (out / d).mkdir(parents=True)
 
     # Députés : index stable (ordre des identifiants) pour compacter les votes.
     uids = sorted(deputes)
     index = {uid: i for i, uid in enumerate(uids)}
     ecrire_json(out / "deputes.json", [
-        {"id": uid, **{k: deputes[uid][k] for k in
-                       ("civ", "prenom", "nom", "dept", "num_dept", "circo", "place", "actif", "groupe")}}
+        {"id": uid, **{k: deputes[uid].get(k) for k in
+                       ("civ", "prenom", "nom", "dept", "num_dept", "circo", "place", "actif", "groupe", "debut", "fin")}}
         for uid in uids], compact=True)
     ecrire_json(out / "groupes.json", groupes, compact=True)
     shutil.copy(config.PLACES, out / "places.json")
 
-    par_mois = defaultdict(list)
-    # Détails regroupés par paquets de 100 scrutins (scrutins/97.json = n° 9700 à 9799) :
-    # une centaine de fichiers au lieu d'un par scrutin, pour une publication rapide.
+    themes = sorted({s["theme"] for s in scrutins.values() if s.get("theme")})
+    i_theme = {t: i for i, t in enumerate(themes)}
+    liste_index = []
     paquets = defaultdict(dict)
+    hist_dep = defaultdict(list)    # index député -> [(num, pos)]
+    hist_grp = defaultdict(list)    # PO -> [(num, pos_maj, pour, contre, abst, nv, membres)]
+
     for s in scrutins.values():
         syn = syntheses.get(s["uid"]) or {}
         statut = syn.get("statut")
         if s["uid"] in retraits:
             statut = "retiree"
-        resume = {k: s[k] for k in ("num", "date", "titre", "sort", "pour", "contre", "abst", "votants")}
-        resume["cat"] = s["categorie"]["cle"]
-        resume["niv"] = s["categorie"]["niveau"]
-        resume["syn"] = statut if s["categorie"]["cle"] in config.CATEGORIES_AVEC_SYNTHESE else None
-        par_mois[s["date"][:7]].append(resume)
+        avec_syn = s["categorie"]["cle"] in config.CATEGORIES_AVEC_SYNTHESE
+        liste_index.append([
+            s["num"], s["date"], CATS.index(s["categorie"]["cle"]) if s["categorie"]["cle"] in CATS else 7,
+            s["categorie"]["niveau"], 1 if s["sort"] == "adopté" else 0,
+            i_theme.get(s.get("theme"), -1), (statut or "") if avec_syn else "", s["titre"],
+        ])
 
-        detail = {k: s[k] for k in ("uid", "num", "date", "type", "type_libelle", "majorite", "sort",
-                                    "sort_libelle", "titre", "dossier", "dossier_libelle", "demandeur",
-                                    "votants", "exprimes", "requis", "pour", "contre", "abst", "nv")}
+        detail = {k: s.get(k) for k in ("uid", "num", "date", "type", "type_libelle", "majorite", "sort",
+                                        "sort_libelle", "titre", "dossier", "dossier_libelle", "demandeur",
+                                        "votants", "exprimes", "requis", "pour", "contre", "abst", "nv", "theme")}
         detail["categorie"] = s["categorie"]
         detail["groupes"] = []
-        inconnus = set()
         for g in s["groupes"]:
             votes = {}
             for pos, lst in g["votes"].items():
                 plat = []
                 for pa, place in lst:
                     if pa not in index:
-                        inconnus.add(pa)
                         continue
                     plat.extend([index[pa], place])
+                    hist_dep[index[pa]].append((s["num"], POS[pos]))
                 votes[pos] = plat
+            d = g["decompte"]
+            if g["po"]:
+                hist_grp[g["po"]].append((s["num"], POS_MAJ.get(g["position"], 3), d["pour"], d["contre"],
+                                          d["abst"], d["nv"], g["membres"]))
             detail["groupes"].append({"po": g["po"], "membres": g["membres"], "position": g["position"],
-                                      "decompte": g["decompte"], "votes": votes})
+                                      "decompte": d, "votes": votes})
         detail["mises_au_point"] = [[index[pa], pos] for pa, pos in s["mises_au_point"] if pa in index]
         detail["synthese"] = None
-        detail["synthese_statut"] = resume["syn"]
+        detail["synthese_statut"] = (statut or None) if avec_syn else None
         if statut == "publiee":
             detail["synthese"] = copy.deepcopy({k: syn.get(k) for k in (
                 "contexte", "pour", "contre", "genere_le", "modele", "seance_jour")})
@@ -72,15 +105,21 @@ def exporter(scrutins, deputes, groupes, syntheses, retraits, sources_dates):
     for p, contenu in paquets.items():
         ecrire_json(out / "scrutins" / f"{p}.json", contenu, compact=True)
 
-    mois = sorted(par_mois, reverse=True)
-    for m in mois:
-        par_mois[m].sort(key=lambda r: -r["num"])
-        ecrire_json(out / "mois" / f"{m}.json", par_mois[m], compact=True)
+    liste_index.sort(key=lambda r: -r[0])
+    ecrire_json(out / "index.json", {"cats": CATS, "themes": themes, "s": liste_index}, compact=True)
+
+    paquets_dep = defaultdict(dict)
+    for i, votes in hist_dep.items():
+        paquets_dep[i // DEPUTES_PAR_PAQUET][str(i)] = _delta(votes)
+    for p, contenu in paquets_dep.items():
+        ecrire_json(out / "votes_deputes" / f"{p}.json", contenu, compact=True)
+    for po, lignes in hist_grp.items():
+        ecrire_json(out / "votes_groupes" / f"{po}.json", _delta(lignes), compact=True)
 
     ecrire_json(out / "meta.json", {
-        "mois": mois,
         "nb_scrutins": len(scrutins),
         "dernier": max((s["num"] for s in scrutins.values()), default=0),
+        "deputes_par_paquet": DEPUTES_PAR_PAQUET,
         "maj_site": datetime.now(timezone.utc).isoformat(timespec="minutes"),
         "sources": sources_dates,
     })
