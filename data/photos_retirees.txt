@@ -1,2 +1,1 @@
 # Photos à ne pas afficher : un identifiant de député (PA…) par ligne, avec le motif après un #.
-PA720362  # 2026-11-10 issue #1
