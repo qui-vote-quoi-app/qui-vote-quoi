@@ -1,0 +1,69 @@
+<p class="eyebrow">Méthodologie</p>
+<h1>D'où viennent les données et comment elles sont traitées</h1>
+
+<h2>Sources</h2>
+<p>Toutes les données viennent de l'<a href="https://data.assemblee-nationale.fr" target="_blank" rel="noopener">open data de l'Assemblée nationale</a> (XVII<sup>e</sup> législature), réutilisé sous Licence Ouverte 2.0. Le site les télécharge automatiquement chaque matin.</p>
+<div class="tbl"><table>
+  <thead><tr><th>Données</th><th>Fichier</th><th>Mise à jour</th></tr></thead>
+  <tbody>
+    <tr><td>Scrutins publics</td><td><code>loi/scrutins/Scrutins.json.zip</code></td><td>quotidienne</td></tr>
+    <tr><td>Députés, groupes, places dans l'hémicycle</td><td><code>amo/…/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip</code></td><td>quotidienne</td></tr>
+    <tr><td>Dossiers législatifs (commission saisie au fond)</td><td><code>loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip</code></td><td>quotidienne</td></tr>
+    <tr><td>Comptes rendus de séance</td><td><code>vp/syceronbrut/syseron.xml.zip</code></td><td>quelques jours après la séance</td></tr>
+    <tr><td>Carte des sièges</td><td>page « Situez votre député dans l'hémicycle » du site de l'Assemblée</td><td>relevé ponctuel</td></tr>
+  </tbody>
+</table></div>
+<p>Seuls les <strong>scrutins publics</strong> indiquent le vote de chaque député. Les votes à main levée, qui concernent la plupart des amendements, ne disent pas qui a voté quoi : ils n'apparaissent pas ici.</p>
+
+<h2>Résultat et décomptes</h2>
+<p>Le résultat (« L'Assemblée a adopté / n'a pas adopté ») et tous les chiffres sont repris tels quels du scrutin officiel. Le site ne recalcule rien, car les règles de majorité varient selon le type de vote.</p>
+<p>Le groupe indiqué pour chaque vote est <strong>celui du député au moment du vote</strong>. Les mises au point (un député déclare après coup qu'il voulait voter autrement) sont signalées mais <strong>ne modifient pas</strong> le résultat officiel.</p>
+
+<h2>Catégories et « votes majeurs »</h2>
+<p>Le classement se fait uniquement sur l'intitulé officiel du scrutin, jamais sur son sujet :</p>
+<div class="tbl"><table>
+  <thead><tr><th>Catégorie</th><th>Exemple d'intitulé</th><th>Niveau</th></tr></thead>
+  <tbody>
+    <tr><td>Vote sur l'ensemble</td><td>« l'ensemble du projet de loi… », « la proposition de résolution… »</td><td>majeur</td></tr>
+    <tr><td>Motion de censure, déclaration du Gouvernement</td><td></td><td>majeur</td></tr>
+    <tr><td>Motion de procédure</td><td>« la motion de rejet préalable… »</td><td>majeur</td></tr>
+    <tr><td>Article</td><td>« l'article 3… »</td><td>intermédiaire</td></tr>
+    <tr><td>Amendement</td><td>« l'amendement n° … »</td><td>mineur</td></tr>
+    <tr><td>Procédure</td><td>« la proposition du Gouvernement de prolonger la séance… »</td><td>mineur</td></tr>
+  </tbody>
+</table></div>
+<p>Tout <strong>scrutin solennel</strong> est classé majeur.</p>
+
+<h2>Thèmes</h2>
+<p>L'open data ne contient aucun classement des textes par thème. Le site utilise à la place la <strong>commission saisie au fond</strong> (Finances, Affaires sociales, Lois…), qui est le regroupement officiel le plus proche :</p>
+<ol>
+  <li>si le scrutin indique son dossier législatif, la commission est lue dans ce dossier ;</li>
+  <li>sinon, le titre du texte cité dans l'intitulé du scrutin est recherché parmi les titres des dossiers et des textes déposés ;</li>
+  <li>sans correspondance, le scrutin n'a pas de thème. C'est normal pour les motions de censure, les déclarations du Gouvernement et les résolutions qui ne passent pas en commission.</li>
+</ol>
+
+<h2>Historiques</h2>
+<ul>
+  <li><strong>Député</strong> : sa position (pour, contre, abstention, non-votant) sur chaque scrutin public, telle qu'elle figure dans le scrutin officiel.</li>
+  <li><strong>Groupe</strong> : la position majoritaire du groupe telle que publiée dans le scrutin, avec le décompte de ses membres.</li>
+</ul>
+<p>Aucun taux de participation ni d'alignement n'est calculé (voir <a href="#a-propos">À propos</a>).</p>
+
+<h2>Synthèse « Le débat en bref »</h2>
+<p>Elle est réservée aux <strong>votes sur l'ensemble d'un texte</strong>. L'intelligence artificielle n'intervient qu'à une seule étape ; tout le reste est fait par un programme dont le code est public.</p>
+<ol>
+  <li><strong>Programme</strong> : le compte rendu de la séance est retrouvé, et l'annonce du résultat y est repérée en comparant les chiffres annoncés à ceux du scrutin.</li>
+  <li><strong>Programme</strong> : le passage retenu est celui des explications de vote. La présidence de séance, les interruptions et les didascalies sont retirées.</li>
+  <li><strong>IA (un seul appel)</strong> : le passage est envoyé <strong>sans le nom des orateurs</strong>. Le modèle renvoie un contexte et au plus quatre arguments par camp, chacun avec le numéro du passage d'origine et une citation exacte.</li>
+  <li><strong>Programme</strong> : vérification. La synthèse est bloquée si une citation ne figure pas mot pour mot dans le passage, si un résumé contient un nom ou désigne une personne, ou si le format est invalide.</li>
+  <li><strong>Programme</strong> : chaque citation est rattachée à son orateur d'après le compte rendu officiel. L'IA ne désigne jamais qui a dit quoi.</li>
+</ol>
+<p>Les synthèses sont publiées <strong>sans relecture humaine</strong>, ce qui est indiqué sur chacune d'elles. Elles peuvent être retirées à tout moment sur simple demande.</p>
+
+<h2>Limites connues</h2>
+<ul>
+  <li>Les résumés reformulés peuvent simplifier un argument : seules les citations font foi.</li>
+  <li>Le compte rendu utilisé est publié avant sa version au Journal officiel et peut être légèrement corrigé ensuite.</li>
+  <li>Le classement automatique des intitulés et des thèmes peut se tromper sur des formulations rares.</li>
+  <li>La position des sièges vient d'un relevé de la carte officielle. Pour un siège sans vote enregistré, aucun nom n'est affiché.</li>
+</ul>

@@ -14,6 +14,8 @@
   var NIVEAUX = [[1, "Majeurs"], [2, "+ articles"], [3, "Tous"]];
   var EXT = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M9 3h4v4M13 3L7 9M12 10v3H3V4h3"/></svg>';
   var PAGE = 150;
+  var PAGES = [["a-propos", "À propos"], ["methodologie", "Méthodologie"], ["faq", "Questions fréquentes"],
+    ["donnees-personnelles", "Données personnelles"], ["mentions-legales", "Mentions légales"], ["contact", "Contact"]];
 
   var $ = function (id) { return document.getElementById(id); };
   var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
@@ -81,7 +83,8 @@
   }
   function outilsLateraux() {
     var el = $("side-tools");
-    if (st.vue === "scrutins") {
+    if (st.vue === "infos") { el.innerHTML = ""; }
+    else if (st.vue === "scrutins") {
       el.innerHTML = '<label for="sq" class="sr">Rechercher un scrutin</label><input id="sq" type="search" placeholder="Rechercher un texte, un n°…" autocomplete="off" value="' + esc(st.f.q) + '">' +
         segNiveaux("slv", st.f.lv) + selectThemes("sth", st.f.theme);
       $("sq").oninput = function () { st.f.q = this.value; st.limite = PAGE; listeLaterale(); };
@@ -103,6 +106,12 @@
   }
   function listeLaterale() {
     var el = $("slist"), html = "";
+    if (st.vue === "infos") {
+      el.innerHTML = PAGES.map(function (p) {
+        return '<a class="pitem" href="#' + p[0] + '"' + (st.page === p[0] ? ' aria-current="page"' : "") + ">" + p[1] + "</a>";
+      }).join("");
+      return;
+    }
     if (st.vue === "scrutins") {
       var q = norm(st.f.q.trim()), n = 0, jour = "", total = 0;
       st.idx.s.forEach(function (r) {
@@ -371,12 +380,32 @@
   function definirVue(v) {
     if (st.vue !== v) {
       st.vue = v;
-      $("side-titre").textContent = { scrutins: "Scrutins", deputes: "Députés", groupes: "Groupes" }[v];
+      $("side-titre").textContent = { scrutins: "Scrutins", deputes: "Députés", groupes: "Groupes", infos: "Le site" }[v];
       outilsLateraux();
     }
     [].forEach.call(document.querySelectorAll(".tabs a"), function (a) { if (a.dataset.vue === v) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
     $("vue-scrutin").hidden = v !== "scrutins";
-    $("vue-histo").hidden = v === "scrutins";
+    $("vue-histo").hidden = v !== "deputes" && v !== "groupes";
+    $("vue-page").hidden = v !== "infos";
+  }
+  function ouvrirPage(id) {
+    st.page = id;
+    listeLaterale();
+    var titre = PAGES.filter(function (p) { return p[0] === id; })[0][1];
+    document.title = titre + " · Qui vote quoi ?";
+    var el = $("vue-page");
+    var p = cache["page:" + id] || (cache["page:" + id] = fetch("pages/" + id + ".html?v=" + encodeURIComponent(VERSION)).then(function (r) { if (!r.ok) throw new Error(id); return r.text(); }));
+    p.then(function (html) {
+      if (st.page !== id) return;
+      el.innerHTML = '<article class="panel prose">' + html + "</article>";
+      var b = $("copier-adresse");
+      if (b) b.onclick = function () {
+        var a = $("adresse").textContent;
+        var ok = function () { b.textContent = "Copié"; setTimeout(function () { b.textContent = "Copier"; }, 1500); };
+        try { navigator.clipboard.writeText(a).then(ok, function () { getSelection().selectAllChildren($("adresse")); }); }
+        catch (e) { getSelection().selectAllChildren($("adresse")); }
+      };
+    }).catch(function () { delete cache["page:" + id]; el.innerHTML = '<article class="panel prose"><p>Cette page n\'a pas pu être chargée. Réessayez dans quelques instants.</p></article>'; });
   }
   function route() {
     var h = location.hash, m;
@@ -386,6 +415,7 @@
     else if ((m = /^#g-(PO\d+)$/.exec(h))) { definirVue("groupes"); ouvrirHisto("g", m[1]); }
     else if (h === "#deputes") { definirVue("deputes"); accueilHisto("d"); listeLaterale(); }
     else if (h === "#groupes") { definirVue("groupes"); accueilHisto("g"); listeLaterale(); }
+    else if (PAGES.some(function (p) { return "#" + p[0] === h; })) { definirVue("infos"); ouvrirPage(h.slice(1)); }
     else { definirVue("scrutins"); ouvrirScrutin(st.num || premierMajeur()); }
     if (st.vue === "scrutins") centrerHemicycle();
     window.scrollTo(0, 0);
@@ -453,12 +483,13 @@
     dessinerSieges();
     $("dl").innerHTML = st.deps.filter(function (d) { return d.actif; }).map(function (d) { return '<option value="' + esc(d.prenom + " " + d.nom) + '">'; }).join("");
     var src = (st.meta.sources || {}).scrutins;
-    $("footer").innerHTML = "<span>Données : Assemblée nationale, data.assemblee-nationale.fr, Licence Ouverte 2.0" + (src ? " · mise à jour des données : " + esc(src) : "") + "</span>" +
-      "<span>Site indépendant, sans lien avec l'Assemblée nationale.</span>" +
-      '<span>Projet très largement inspiré du travail du compte Instagram <a href="' + INSPIRATION + '" target="_blank" rel="noopener">@votes_assemblee_nationale</a>.</span>' +
-      '<a href="' + REPO + '/blob/main/MENTIONS_LEGALES.md" target="_blank" rel="noopener">Mentions légales</a>' +
-      '<a href="' + REPO + '/blob/main/docs/METHODOLOGIE.md" target="_blank" rel="noopener">Méthodologie</a>' +
-      '<a href="' + REPO + '" target="_blank" rel="noopener">Code source</a>';
+    var maj = "";
+    if (src) { var dt = new Date(src); maj = isNaN(dt) ? esc(src) : dt.toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" }); }
+    $("footer").innerHTML =
+      '<nav class="foot-nav" aria-label="Informations sur le site">' + PAGES.map(function (p) { return '<a href="#' + p[0] + '">' + p[1] + "</a>"; }).join("") +
+      '<a href="' + REPO + '" target="_blank" rel="noopener">Code source ' + EXT + "</a></nav>" +
+      '<p class="foot-info">Site indépendant, sans lien avec l\'Assemblée nationale. Données : Assemblée nationale (data.assemblee-nationale.fr), Licence Ouverte 2.0' + (maj ? ", mises à jour le " + maj : "") + ".<br>" +
+      'Projet très largement inspiré du travail du compte Instagram <a href="' + INSPIRATION + '" target="_blank" rel="noopener">@votes_assemblee_nationale</a>.</p>';
     route();
   }).catch(function (e) {
     $("summary").innerHTML = '<p class="empty-deb">Les données n\'ont pas pu être chargées. Réessayez dans quelques minutes.</p>';

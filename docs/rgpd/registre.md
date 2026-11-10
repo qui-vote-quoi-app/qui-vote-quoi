@@ -15,5 +15,5 @@
 | Sous-traitants et transferts | Voir `sous-traitants.md`. |
 | Durée de conservation | Durée de la XVIIe législature, puis archivage tant que le service est en ligne, au titre de l'information sur un mandat achevé. Les synthèses retirées sont dépubliées immédiatement. |
 | Sécurité | Aucune donnée non publique n'est traitée. Clés d'API stockées dans les secrets chiffrés de GitHub. Aucun compte utilisateur, aucun cookie, aucune mesure d'audience. |
-| Information des personnes | Mentions légales publiques et courriel d'information aux députés (voir `courriel-deputes.md`), date d'envoi : à consigner ici. |
+| Information des personnes | Données obtenues indirectement (open data) : information par une notice publique dédiée sur le site, page « Données personnelles » (art. 14.5.b RGPD : information individuelle de 577 députés et anciens députés jugée disproportionnée au regard du caractère public des données et de leur usage limité à l'exercice du mandat). Courriel individuel facultatif (modèle : `courriel-deputes.md`), date d'envoi à consigner ici le cas échéant. |
 | Exercice des droits | qui-vote-quoi-app@proton.me, réponse sous un mois. |

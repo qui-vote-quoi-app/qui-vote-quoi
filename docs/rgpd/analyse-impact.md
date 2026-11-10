@@ -12,7 +12,7 @@ Le site republie, sous forme visuelle, des données que l'Assemblée nationale d
 - **Licéité du traitement des opinions politiques** : les positions de vote sont exprimées publiquement par les députés dans l'exercice de leur mandat. La CNIL, dans ses recommandations aux réutilisateurs de données publiées sur internet, cite l'exemple d'une analyse des votes d'élus et le considère licite pour ce motif.
 - **Minimisation** : seules les données liées au mandat sont conservées (voir le registre).
 - **Exactitude** : resynchronisation quotidienne avec la source officielle. Le résultat officiel n'est jamais recalculé.
-- **Information** : mentions légales publiques et courriel individuel aux députés lors du lancement.
+- **Information** : notice publique « Données personnelles » sur le site (art. 14.5.b RGPD) ; courriel individuel aux députés facultatif.
 
 ## 3. Risques pour les personnes concernées
 

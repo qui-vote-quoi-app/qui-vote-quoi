@@ -20,10 +20,11 @@ Chaque jour, un workflow GitHub Actions :
 
 | Horaire (Paris, hiver) | Ce qui tourne |
 |---|---|
-| 6 h | passage complet |
-| 14 h | uniquement les synthèses en attente de compte rendu |
+| 5 h 23 | passage complet |
+| 6 h 53 | passage de secours, seulement si celui de 5 h 23 n'a pas eu lieu |
+| 13 h 37 | uniquement les synthèses en attente de compte rendu |
 
-GitHub peut décaler les tâches planifiées de quelques minutes. En été, ajoutez une heure.
+Les heures évitent l'heure pile, où GitHub retarde ou saute parfois les tâches planifiées. En été, ajoutez une heure.
 
 ## Installation (une seule fois)
 
@@ -39,7 +40,7 @@ GitHub peut décaler les tâches planifiées de quelques minutes. En été, ajou
 
 ## Rattraper les synthèses d'une période passée
 
-*Actions → Mise à jour quotidienne → Run workflow*, puis indiquez un nombre de jours dans « Rattrapage » (par exemple 60). Les synthèses sont traitées par lots de 12 par passage pour rester dans le quota gratuit de l'IA ; le reste est traité automatiquement aux passages suivants (6 h et 14 h).
+*Actions → Mise à jour quotidienne → Run workflow*, puis indiquez un nombre de jours dans « Rattrapage » (par exemple 60). Les synthèses sont traitées par lots de 12 par passage pour rester dans le quota gratuit de l'IA ; le reste est traité automatiquement aux passages suivants (matin et début d'après-midi).
 
 ## Retirer une synthèse
 
@@ -69,8 +70,7 @@ tests/fixtures/  extraits réels des dumps open data pour les tests
 
 ## Documents
 
-- [Mentions légales](MENTIONS_LEGALES.md)
-- [Méthodologie](docs/METHODOLOGIE.md)
+- [À propos](https://qui-vote-quoi-app.github.io/qui-vote-quoi/#a-propos), [Méthodologie](https://qui-vote-quoi-app.github.io/qui-vote-quoi/#methodologie), [Questions fréquentes](https://qui-vote-quoi-app.github.io/qui-vote-quoi/#faq), [Données personnelles](https://qui-vote-quoi-app.github.io/qui-vote-quoi/#donnees-personnelles), [Mentions légales](https://qui-vote-quoi-app.github.io/qui-vote-quoi/#mentions-legales) — pages du site, sources dans `site/pages/`
 - [Dossier RGPD](docs/rgpd/)
 
 ## Licences
