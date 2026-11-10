@@ -1,0 +1,100 @@
+{
+ "uid": "VTANR5L17V8431",
+ "num": 8431,
+ "statut": "publiee",
+ "cree_le": "2026-11-10T19:42:12+00:00",
+ "tentatives": 2,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026E1N023",
+ "seance_jour": "mardi 21 juillet 2026",
+ "contexte": "Le Parlement examine la proposition de loi issue de la commission mixte paritaire visant à protéger les mineurs des risques liés aux réseaux sociaux. Le texte prévoit notamment d'interdire l'accès à ces plateformes aux moins de 15 ans et d'encadrer l'utilisation des téléphones portables.",
+ "pour": [
+  {
+   "resume": "Le texte offre une protection indispensable face aux effets néfastes des plateformes sur la santé mentale et le développement des jeunes.",
+   "citation": "Les chiffres qui attestent des dégâts provoqués sur la jeunesse par l'usage des réseaux sociaux commandent une réponse forte, à la hauteur de l'impact délétère de ces derniers sur les adolescents.",
+   "acteur": "PA870009",
+   "nom": "M. Lionel Duparay",
+   "qualite": "",
+   "syceron": [
+    "4167925",
+    "4167955"
+   ]
+  },
+  {
+   "resume": "Fixer un âge minimum permet d'établir une règle claire et de soutenir les parents ainsi que les enseignants dans leur rôle éducatif.",
+   "citation": "Grâce à cette loi, les parents, les enseignants, les éducateurs auront désormais la République à leurs côtés.",
+   "acteur": "PA605782",
+   "nom": "M. Laurent Marcangeli",
+   "qualite": "",
+   "syceron": [
+    "4167972"
+   ]
+  },
+  {
+   "resume": "La mesure constitue un contre-feu nécessaire face aux logiques marchandes et addictives des géants du numérique.",
+   "citation": "La proposition de loi tente de protéger les plus jeunes de cette prédation cognitive organisée et systématique.",
+   "acteur": "PA795362",
+   "nom": "Mme Lisa Belluco",
+   "qualite": "",
+   "syceron": [
+    "4167933",
+    "4167943"
+   ]
+  },
+  {
+   "resume": "L'interdiction des smartphones dans les établissements scolaires permet d'améliorer la concentration et les apprentissages des élèves.",
+   "citation": "Interdire les smartphones dans les collèges et les lycées n'est pas une mesure déconnectée de la réalité. Elle n'est pas prise contre les élèves, mais pour eux.",
+   "acteur": "PA870009",
+   "nom": "M. Lionel Duparay",
+   "qualite": "",
+   "syceron": [
+    "4167925",
+    "4167955"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "L'obligation de vérifier l'âge des utilisateurs porte atteinte à l'anonymat en ligne et aux libertés publiques.",
+   "citation": "L'obligation de vérifier l'âge a des implications directement liberticides, car elle s'imposera à tout le monde, signant ainsi la fin de l'anonymat en ligne, pilier natif d'internet, d'un numérique alternatif et émancipateur.",
+   "acteur": "PA841845",
+   "nom": "M. Arnaud Saint-Martin",
+   "qualite": "",
+   "syceron": [
+    "4167810",
+    "4167812",
+    "4167814",
+    "4167817",
+    "4167819",
+    "4167824",
+    "4167826",
+    "4167828"
+   ]
+  },
+  {
+   "resume": "L'interdiction pure et simple risque d'être inefficace et contournée par les adolescents, comme le montrent des exemples étrangers.",
+   "citation": "Nous naviguons à vue car nous ne savons pas si les effets des contournements, qui ne manqueront pas d'arriver - en Australie, deux tiers des mineurs concernés par l'interdiction continuent d'avoir un compte -, contrebalanceront les bénéfices attendus de l'interdiction.",
+   "acteur": "PA793394",
+   "nom": "M. Arthur Delaporte",
+   "qualite": "",
+   "syceron": [
+    "4167831",
+    "4167918"
+   ]
+  },
+  {
+   "resume": "Le texte manque de précision juridique et technique quant à son périmètre d'application et aux modalités de contrôle.",
+   "citation": "On peut aussi s'inquiéter du flou qui prédomine encore sur le périmètre d'application du texte et sur les acteurs qui y seront intégrés.",
+   "acteur": "PA793394",
+   "nom": "M. Arthur Delaporte",
+   "qualite": "",
+   "syceron": [
+    "4167831",
+    "4167918"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-10T19:45:44+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T19:45:44+00:00"
+}

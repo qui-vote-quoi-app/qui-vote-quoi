@@ -1,0 +1,99 @@
+{
+ "uid": "VTANR5L17V7980",
+ "num": 7980,
+ "statut": "publiee",
+ "cree_le": "2026-11-10T19:42:12+00:00",
+ "tentatives": 2,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026E1N005",
+ "seance_jour": "mardi 07 juillet 2026",
+ "contexte": "L'Assemblée nationale examine, en première lecture, l'ensemble du projet de loi sur la justice criminelle et le respect des victimes. Ce texte vise à répondre à l'engorgement des juridictions et à l'allongement des délais de jugement à travers diverses modifications de procédure pénale et des mesures d'accompagnement des victimes.",
+ "pour": [
+  {
+   "resume": "Le projet de loi apporte des améliorations utiles aux capacités d'investigation, à l'organisation des juridictions et aux droits des victimes pour réduire les délais de jugement.",
+   "citation": "il améliore les capacités d'investigation de la justice, facilite l'organisation des juridictions criminelles, renforce les droits des victimes et apporte plusieurs simplifications procédurales qui permettront, nous l'espérons, de réduire les délais de jugement.",
+   "acteur": "PA721816",
+   "nom": "M. Ian Boucard",
+   "qualite": "",
+   "syceron": [
+    "4149388",
+    "4149454"
+   ]
+  },
+  {
+   "resume": "Le texte modernise la justice criminelle pour la rendre plus rapide tout en maintenant les principes fondamentaux de l'État de droit.",
+   "citation": "moderniser la justice criminelle pour qu'elle soit plus rapide, sans renoncer aux principes qui fondent l'État de droit.",
+   "acteur": "PA721336",
+   "nom": "Mme Blandine Brocard",
+   "qualite": "",
+   "syceron": [
+    "4149433"
+   ]
+  },
+  {
+   "resume": "La généalogie génétique constitue une avancée majeure et un outil précieux pour élucider les enquêtes criminelles complexes et les crimes non résolus.",
+   "citation": "Cet outil sera un véritable atout pour nos enquêteurs : grâce au recours aux bases de données génétiques, il pourrait permettre d'identifier l'auteur d'un meurtre ou d'un viol non élucidé.",
+   "acteur": "PA267042",
+   "nom": "M. Yannick Favennec-Bécot",
+   "qualite": "",
+   "syceron": [
+    "4149209"
+   ]
+  },
+  {
+   "resume": "Une disposition d'urgence permet de rétablir un cadre légal pour la détention provisoire des mineurs afin de garantir la sécurité des citoyens.",
+   "citation": "Ce texte rétablit, dans l'urgence, un régime adapté. Nous le voterons, parce que la sécurité des Français compte seule à nos yeux et qu'il n'est pas envisageable de laisser une telle situation sans réponse.",
+   "acteur": "PA840657",
+   "nom": "Mme Sophie Ricourt Vaginay",
+   "qualite": "",
+   "syceron": [
+    "4149227"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le texte se limite à une gestion de la pénurie par des modifications de procédure et ne répond pas au manque chronique de moyens de la justice.",
+   "citation": "Beaucoup d'effets d'annonce, une communication permanente sur la fermeté, et, au bout du compte, des réformes procédurales censées masquer ce que vous refusez toujours d'affronter : le manque chronique de moyens de notre justice.",
+   "acteur": "PA721896",
+   "nom": "Mme Elsa Faucillon",
+   "qualite": "",
+   "syceron": [
+    "4149217"
+   ]
+  },
+  {
+   "resume": "La réforme affaiblit les garanties procédurales et alourdit la détention provisoire au lieu d'investir dans le service public de la justice.",
+   "citation": "Ce texte continue de prendre le problème à l'envers. Il affaiblit les garanties procédurales, il alourdit la détention provisoire, il élargit le fichage génétique.",
+   "acteur": "PA841351",
+   "nom": "M. Emmanuel Duplessy",
+   "qualite": "",
+   "syceron": [
+    "4149419"
+   ]
+  },
+  {
+   "resume": "La réforme et les débats ont provoqué une mobilisation historique de toute la chaîne judiciaire en raison de leur inadéquation avec la réalité des tribunaux.",
+   "citation": "votre réforme a provoqué une mobilisation historique de toute la chaîne judiciaire. Les audiences ont été reportées, les tribunaux ont fonctionné au ralenti et les retards se sont encore accumulés.",
+   "acteur": "PA841351",
+   "nom": "M. Emmanuel Duplessy",
+   "qualite": "",
+   "syceron": [
+    "4149419"
+   ]
+  },
+  {
+   "resume": "Le raccourcissement des délais pour soulever les nullités de procédure et l'affaiblissement de la liberté comme règle témoignent d'une logique expéditive.",
+   "citation": "le raccourcissement des délais laissés aux avocats pour soulever les nullités de procédure ; le maintien d'un dispositif qui affaiblit le principe selon lequel la liberté est la règle et la détention l'exception",
+   "acteur": "PA721896",
+   "nom": "Mme Elsa Faucillon",
+   "qualite": "",
+   "syceron": [
+    "4149217"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-10T19:53:23+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T19:53:23+00:00"
+}

@@ -1,0 +1,111 @@
+{
+ "uid": "VTANR5L17V7894",
+ "num": 7894,
+ "statut": "publiee",
+ "cree_le": "2026-11-10T19:42:12+00:00",
+ "tentatives": 2,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026O1N295",
+ "seance_jour": "mardi 30 juin 2026",
+ "contexte": "L'Assemblée nationale procède à la nouvelle lecture de la proposition de loi relative au droit à l'aide à mourir. Ce texte vise à encadrer les conditions dans lesquelles un patient atteint d'une affection grave et incurable peut demander une assistance pour abréger sa fin de vie.",
+ "pour": [
+  {
+   "resume": "L'aide à mourir constitue un nouveau droit fondamental et une liberté qui offre une réponse adaptée aux demandes des patients en fin de vie.",
+   "citation": "L'aide à mourir est avant tout un nouveau droit et une liberté qui n'enlève rien à personne et offre une possibilité et une réponse à la demande du patient.",
+   "acteur": "PA720154",
+   "nom": "Mme Nicole Dubré-Chirat",
+   "qualite": "",
+   "syceron": [
+    "4143874",
+    "4143880",
+    "4143888"
+   ]
+  },
+  {
+   "resume": "Ce texte instaure un cadre strict et des critères précis garantissant que la procédure repose sur le choix libre et éclairé du patient.",
+   "citation": "Seules pourront accéder à l'aide à mourir les personnes qui en auront fait la demande de manière libre et éclairée, qui seront atteintes d'une affection grave et incurable",
+   "acteur": "PA793736",
+   "nom": "M. Hadrien Clouet",
+   "qualite": "",
+   "syceron": [
+    "4143891",
+    "4143894",
+    "4143896",
+    "4143930",
+    "4143936",
+    "4143940"
+   ]
+  },
+  {
+   "resume": "La mesure répond aux situations de souffrance inapaisable et permet à chacun de choisir de partir dans la dignité.",
+   "citation": "une loi qui reconnaît la souffrance et qui entend que cette souffrance est parfois inapaisable ; une loi qui entend qu'on puisse vouloir partir en conscience",
+   "acteur": "PA795430",
+   "nom": "M. Stéphane Delautrette",
+   "qualite": "",
+   "syceron": [
+    "4143943"
+   ]
+  },
+  {
+   "resume": "Le dispositif consacre le libre choix de disposer de sa vie et de sa mort jusqu'aux derniers instants, dans le respect des convictions de chacun.",
+   "citation": "L'aide à mourir que nous allons voter signifie le libre choix de sa fin de vie - la reconnaissance du fait que chacune et chacun a le droit de disposer de son corps, de sa vie et de sa mort",
+   "acteur": "PA796018",
+   "nom": "Mme Danielle Simonnet",
+   "qualite": "",
+   "syceron": [
+    "4143968",
+    "4143975",
+    "4144124"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Cette proposition de loi traduit un échec des politiques d'accès aux soins et détourne l'attention de la nécessité de développer les soins palliatifs.",
+   "citation": "En réalité, ce texte acte l'échec des politiques d'accès aux soins. Alors, pourquoi ? Pourquoi maintenant ? Pourquoi abandonner les patients ? Pourquoi démissionner du soin ?",
+   "acteur": "PA794434",
+   "nom": "M. Christophe Bentz",
+   "qualite": "",
+   "syceron": [
+    "4143859",
+    "4143866"
+   ]
+  },
+  {
+   "resume": "Le texte contrevient au serment d'Hippocrate et demande aux professionnels de santé de renoncer à leur mission de soin.",
+   "citation": "\" Je ne provoquerai jamais la mort délibérément \" : c'est le serment d'Hippocrate. Fruit de notre civilisation humaine, il engage le corps médical. Alors, comment peut-on demander aux soignants de donner la mort",
+   "acteur": "PA794434",
+   "nom": "M. Christophe Bentz",
+   "qualite": "",
+   "syceron": [
+    "4143859",
+    "4143866"
+   ]
+  },
+  {
+   "resume": "Les garde-fous juridiques et les critères de consentement sont jugés insuffisants pour protéger durablement les personnes vulnérables.",
+   "citation": "À chaque fois que nous avons demandé davantage de garanties, davantage de prudence, il nous a été répondu qu'il fallait faire confiance. Pourtant, la confiance n'est pas une garantie juridique.",
+   "acteur": "PA794058",
+   "nom": "Mme Justine Gruet",
+   "qualite": "",
+   "syceron": [
+    "4143952",
+    "4143961"
+   ]
+  },
+  {
+   "resume": "Une fois l'acte accompli, aucune correction n'est possible, ce qui impose l'application stricte du principe de précaution face au caractère irréversible de la mort.",
+   "citation": "Car une fois la mort administrée, aucune commission d'évaluation ne permettra de revenir en arrière - aucune mission parlementaire, aucun amendement. L'irréversible ne se corrige pas.",
+   "acteur": "PA794058",
+   "nom": "Mme Justine Gruet",
+   "qualite": "",
+   "syceron": [
+    "4143952",
+    "4143961"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-10T19:57:09+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T19:57:09+00:00"
+}

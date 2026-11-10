@@ -2,7 +2,7 @@
  "etags": {
   "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip": "\"1ce412f-65fea5949758d\"",
   "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip": "\"d18a7e-65fe212c5bf9e\"",
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip": "\"ab8372-65fef3d78348b\""
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip": "\"aadc13-65fecba1a28ff\""
  },
  "dernier_num": 9793,
  "cr_index": {
@@ -662,8 +662,10 @@
   "xml/compteRendu/CRSANR5L17S2026E1N004.xml": "RUANR5L17S2026IDS30825",
   "xml/compteRendu/CRSANR5L17S2026O1N202.xml": "RUANR5L17S2026IDS30484",
   "xml/compteRendu/CRSANR5L17S2026O1N126.xml": "RUANR5L17S2026IDS30179",
-  "xml/compteRendu/CRSANR5L17S2025O1N040.xml": "RUANR5L17S2025IDS28629"
+  "xml/compteRendu/CRSANR5L17S2025O1N040.xml": "RUANR5L17S2025IDS28629",
+  "xml/compteRendu/CRSANR5L17S2027O1N057.xml": "RUANR5L17S2027IDS30988"
  },
- "derniere_execution": "2026-11-10T19:25:56+00:00",
- "dernier_quotidien": "2026-11-10T19:25:56+00:00"
+ "derniere_execution": "2026-11-10T20:07:07+00:00",
+ "dernier_quotidien": "2026-11-10T20:07:07+00:00",
+ "resumes_restants": 155
 }

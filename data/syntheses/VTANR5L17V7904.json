@@ -1,0 +1,12 @@
+{
+ "uid": "VTANR5L17V7904",
+ "num": 7904,
+ "statut": "abandonnee",
+ "cree_le": "2026-11-10T19:42:12+00:00",
+ "tentatives": 0,
+ "erreurs": [
+  "Aucune intervention de fond avant ce vote."
+ ],
+ "cr": "CRSANR5L17S2026E1N001",
+ "seance_jour": "mercredi 01 juillet 2026"
+}

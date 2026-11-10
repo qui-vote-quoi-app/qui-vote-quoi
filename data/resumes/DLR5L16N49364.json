@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L16N49364",
+ "texte": "PIONANR5L17B1557",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte définit et encadre la mode ultra-express en fixant des critères liés au volume de nouveautés et à la réparabilité. Il impose l'affichage de messages de sensibilisation environnementale sur les plates-formes de vente en ligne et interdit l'utilisation publicitaire du terme gratuit. Il interdit également la publicité et le parrainage par des influenceurs pour ces pratiques et ces marques. Enfin, il modifie le régime de responsabilité élargie des producteurs en introduisant des pénalités financières progressives et prévoit une sensibilisation dans les programmes scolaires.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T20:05+00:00"
+}

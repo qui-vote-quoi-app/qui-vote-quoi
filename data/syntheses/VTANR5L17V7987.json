@@ -1,0 +1,79 @@
+{
+ "uid": "VTANR5L17V7987",
+ "num": 7987,
+ "statut": "publiee",
+ "cree_le": "2026-11-10T19:42:12+00:00",
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026E1N005",
+ "seance_jour": "mardi 07 juillet 2026",
+ "contexte": "L'Assemblée nationale examine, en première lecture, une proposition de loi visant à instituer une présomption de légitime défense pour les forces de l'ordre dans l'exercice de leurs fonctions. Ce texte suscite de vives discussions sur l'équilibre entre la protection des agents et le contrôle de l'usage de la force par la justice.",
+ "pour": [],
+ "contre": [
+  {
+   "resume": "L'instauration d'une telle présomption équivaut à créer une impunité pour les forces de l'ordre et affaiblit le contrôle judiciaire des tirs mortels.",
+   "citation": "Je pense, comme la présidente de la Ligue des droits de l'homme, que votre texte, monsieur le ministre, est une fabrique d'impunité.",
+   "acteur": "PA721896",
+   "nom": "Mme Elsa Faucillon",
+   "qualite": "",
+   "syceron": [
+    "4150245",
+    "4150248",
+    "4150250",
+    "4150253",
+    "4150255",
+    "4150256",
+    "4150263"
+   ]
+  },
+  {
+   "resume": "Ce texte inverse la charge de la preuve, rendant presque impossible pour les familles de victimes de contester la légalité d'un tir en l'absence de l'enquête immédiate.",
+   "citation": "En instaurant une présomption de légitime défense au bénéfice des policiers et des gendarmes, vous inversez un principe fondamental de notre droit. Jusqu'à présent, celui qui a invoqué la légitime défense devait en démontrer les conditions.",
+   "acteur": "PA795136",
+   "nom": "M. Jean-François Coulomme",
+   "qualite": "",
+   "syceron": [
+    "4150267",
+    "4150536",
+    "4150538",
+    "4150540",
+    "4150543",
+    "4150545"
+   ]
+  },
+  {
+   "resume": "La mesure risque d'aggraver la défiance des citoyens envers les institutions et fragilise la confiance dans la police.",
+   "citation": "Le jour où le pays saura que tout tir est présumé légal, cette confiance s'effondrera, et vous aurez fragilisé la police en pensant la protéger.",
+   "acteur": "PA610968",
+   "nom": "M. Pouria Amirshahi",
+   "qualite": "",
+   "syceron": [
+    "4149952",
+    "4149954",
+    "4150228",
+    "4150235",
+    "4150238",
+    "4150240",
+    "4150243"
+   ]
+  },
+  {
+   "resume": "Le dispositif proposé contrevient à plusieurs textes fondamentaux garantissant le droit à la vie, la présomption d'innocence et le droit à un procès équitable.",
+   "citation": "Article 2 de la Convention européenne des droits de l'homme, articles 9 et 16 de la Déclaration des droits de l'homme et du citoyen, articles 48 et 49 de la Charte des droits fondamentaux de l'Union Européenne : la liste des textes que viole cette loi est longue",
+   "acteur": "PA795136",
+   "nom": "M. Jean-François Coulomme",
+   "qualite": "",
+   "syceron": [
+    "4150267",
+    "4150536",
+    "4150538",
+    "4150540",
+    "4150543",
+    "4150545"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-10T19:50:00+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T19:50:00+00:00"
+}

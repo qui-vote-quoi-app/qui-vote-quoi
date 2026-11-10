@@ -1,0 +1,129 @@
+{
+ "uid": "VTANR5L17V8280",
+ "num": 8280,
+ "statut": "publiee",
+ "cree_le": "2026-11-10T19:42:12+00:00",
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026E1N014",
+ "seance_jour": "mercredi 15 juillet 2026",
+ "contexte": "L'Assemblée nationale procède à la lecture définitive de la proposition de loi relative au droit à l'aide à mourir. Ce texte législatif vise à encadrer la possibilité pour un patient d'accéder à l'aide à mourir selon des critères stricts, venant compléter les dispositifs existants en matière de soins palliatifs.",
+ "pour": [
+  {
+   "resume": "La loi offre aux patients confrontés à une maladie insupportable et sans issue la liberté de choisir les conditions de leur fin de vie dans la dignité.",
+   "citation": "Mais lorsque la maladie n'est plus supportable, qu'il n'existe plus aucune perspective d'amélioration, qui sommes-nous pour priver quelqu'un de la liberté de choisir les conditions de sa fin de vie ?",
+   "acteur": "PA720154",
+   "nom": "Mme Nicole Dubré-Chirat",
+   "qualite": "",
+   "syceron": [
+    "4159821",
+    "4159827",
+    "4159830",
+    "4159832",
+    "4159836",
+    "4159369"
+   ]
+  },
+  {
+   "resume": "Le dispositif est strictement encadré par des critères cumulatifs précis qui protègent les personnes vulnérables et respectent la liberté de choix.",
+   "citation": "La demande doit être faite par une personne majeure, atteinte d'une affection grave et incurable, en phase avancée ou terminale, dont les souffrances sont réfractaires à tous les traitements et dont la volonté de bénéficier de l'aide à mourir est libre, éclairée et réitérée.",
+   "acteur": "PA795844",
+   "nom": "Mme Karen Erodi",
+   "qualite": "",
+   "syceron": [
+    "4159372",
+    "4159375",
+    "4159377",
+    "4159379",
+    "4159383"
+   ]
+  },
+  {
+   "resume": "Le texte met fin à des situations hypocrites où certains patients partent à l'étranger ou subissent des fins de vie clandestines et douloureuses.",
+   "citation": "Aujourd'hui, il y a des médecins qui débranchent des patients ou forcent un peu la dose à leur demande. Il y a des patients qui interrompent leurs soins et dont les douleurs explosent. Il y a des personnes qui partent en Belgique ou en Suisse.",
+   "acteur": "PA795076",
+   "nom": "Mme Sandrine Rousseau",
+   "qualite": "",
+   "syceron": [
+    "4159511",
+    "4159513"
+   ]
+  },
+  {
+   "resume": "Cette réforme s'inscrit dans la continuité des évolutions législatives précédentes et renforce l'autodétermination des personnes en fin de parcours de vie.",
+   "citation": "Ce texte ne constitue pas une rupture : il est l'aboutissement d'un long chemin, celui de quatre grandes lois auxquelles il donne une suite logique.",
+   "acteur": "PA795844",
+   "nom": "Mme Karen Erodi",
+   "qualite": "",
+   "syceron": [
+    "4159372",
+    "4159375",
+    "4159377",
+    "4159379",
+    "4159383"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le texte présente un cadre insuffisant et précipité qui ne garantit pas la vérification de l'absence de pressions familiales ou extérieures sur les patients.",
+   "citation": "Voilà un des vrais problèmes soulevés par ce texte, qui ne prévoit pas qu'un juge vérifie que des pressions indues ne s'exercent pas.",
+   "acteur": "PA794058",
+   "nom": "Mme Justine Gruet",
+   "qualite": "",
+   "syceron": [
+    "4159404",
+    "4159407",
+    "4159411",
+    "4159495",
+    "4159499",
+    "4159501",
+    "4159503",
+    "4159505",
+    "4159508",
+    "4159568"
+   ]
+  },
+  {
+   "resume": "L'accès à l'aide à mourir risque d'être proposé dans des contextes où l'offre de soins et d'accompagnement palliatif n'est pas pleinement garantie partout.",
+   "citation": "C'est toute la contradiction de ce texte. Nous nous apprêtons à reconnaître un droit à mourir sans garantie d'accéder partout au droit d'être soigné et accompagné.",
+   "acteur": "PA794058",
+   "nom": "Mme Justine Gruet",
+   "qualite": "",
+   "syceron": [
+    "4159404",
+    "4159407",
+    "4159411",
+    "4159495",
+    "4159499",
+    "4159501",
+    "4159503",
+    "4159505",
+    "4159508",
+    "4159568"
+   ]
+  },
+  {
+   "resume": "La procédure ne laisse pas assez de temps au patient pour la réflexion et enferme sa décision sans protection adéquate en cas de doute.",
+   "citation": "Les délais sont très courts : il faut faire vite, vite, vite ! Comme si vous aviez peur que le patient change d'avis.",
+   "acteur": "PA794058",
+   "nom": "Mme Justine Gruet",
+   "qualite": "",
+   "syceron": [
+    "4159404",
+    "4159407",
+    "4159411",
+    "4159495",
+    "4159499",
+    "4159501",
+    "4159503",
+    "4159505",
+    "4159508",
+    "4159568"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-10T19:48:15+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T19:48:15+00:00"
+}

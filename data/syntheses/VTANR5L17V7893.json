@@ -1,0 +1,88 @@
+{
+ "uid": "VTANR5L17V7893",
+ "num": 7893,
+ "statut": "publiee",
+ "cree_le": "2026-11-10T19:42:12+00:00",
+ "tentatives": 2,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026O1N293",
+ "seance_jour": "lundi 29 juin 2026",
+ "contexte": "Le Parlement examine en première lecture une proposition de loi visant à réformer l'organisation, la gestion et le financement du sport professionnel français. Ce texte aborde notamment la gouvernance des fédérations et des ligues, la transparence financière, la répartition des droits de retransmission et la lutte contre le piratage des compétitions.",
+ "pour": [
+  {
+   "resume": "Le texte permet un rééquilibrage des jeux de pouvoir entre les fédérations et les ligues sportives.",
+   "citation": "Ils sont d'une grande importance, puisqu'ils vont permettre un rééquilibrage des jeux de pouvoir entre les fédérations et les ligues.",
+   "acteur": "PA841295",
+   "nom": "M. Pierrick Courbon",
+   "qualite": "",
+   "syceron": [
+    "4143076"
+   ]
+  },
+  {
+   "resume": "La proposition de loi renforce l'honorabilité des dirigeants, protège les jeunes pratiquants et dote l'Arcom d'outils contre le piratage.",
+   "citation": "Ce texte renforce l'honorabilité des dirigeants de la fédération et des ligues, protège nos jeunes pratiquants et instaure une vraie transparence.",
+   "acteur": "PA608826",
+   "nom": "Mme Virginie Duby-Muller",
+   "qualite": "",
+   "syceron": [
+    "4143081"
+   ]
+  },
+  {
+   "resume": "Le dispositif apporte des réponses concrètes pour sécuriser le modèle économique du sport professionnel et soutenir le sport amateur.",
+   "citation": "cette proposition de loi apporte des réponses concrètes : elle renforce le contrôle des instances dirigeantes, améliore la transparence, lutte plus efficacement contre le piratage des retransmissions et sécurise le financement du sport professionnel.",
+   "acteur": "PA794702",
+   "nom": "Mme Delphine Lingemann",
+   "qualite": "",
+   "syceron": [
+    "4143086"
+   ]
+  },
+  {
+   "resume": "Le texte propose une démarche équilibrée pour répondre à la triple crise de gouvernance, de financement et de confiance du sport professionnel.",
+   "citation": "Ce texte apporte des réponses utiles, attendues et équilibrées.",
+   "acteur": "PA267780",
+   "nom": "Mme Agnès Firmin Le Bodo",
+   "qualite": "",
+   "syceron": [
+    "4143090"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "La suppression de certains alinéas de l'article 5 empêche un débat approfondi sur l'exposition et l'accès gratuit aux compétitions sportives féminines.",
+   "citation": "Nous regrettons que l'adoption de l'amendement no 356 ait supprimé d'un coup plusieurs alinéas de l'article 5, notamment l'alinéa 8, qui aurait permis de mieux exposer les compétitions féminines.",
+   "acteur": "PA841295",
+   "nom": "M. Pierrick Courbon",
+   "qualite": "",
+   "syceron": [
+    "4143076"
+   ]
+  },
+  {
+   "resume": "Le texte manque de garde-fous suffisants face aux dérives de la financiarisation excessive du sport.",
+   "citation": "Néanmoins, les dispositions adoptées manquent de garde-fous : c'est l'un de nos regrets.",
+   "acteur": "PA721202",
+   "nom": "M. Éric Coquerel",
+   "qualite": "",
+   "syceron": [
+    "4143635"
+   ]
+  },
+  {
+   "resume": "L'encadrement strict de la multipropriété des clubs risque d'imposer une logique unique inadaptée à la réalité de certains actionnaires.",
+   "citation": "les difficultés que rencontre un club ne doivent pas conduire à imposer à tous les clubs la même logique.",
+   "acteur": "PA759832",
+   "nom": "Mme Agnès Pannier-Runacher",
+   "qualite": "",
+   "syceron": [
+    "4143640"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-10T19:59:03+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T19:59:03+00:00"
+}

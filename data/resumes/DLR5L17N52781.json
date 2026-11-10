@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N52781",
+ "texte": "PIONANR5L17B1831",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte prévoit que tout mineur concerné par une mesure de protection judiciaire soit assisté d'un avocat, désigné d'office si nécessaire. Il garantit l'information du mineur sur ce droit et sur son droit d'appel. Enfin, il établit la prise en charge intégrale de cette assistance par l'État au titre de l'aide juridictionnelle, sans condition de ressources.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T20:03+00:00"
+}

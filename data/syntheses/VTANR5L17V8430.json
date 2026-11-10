@@ -1,0 +1,87 @@
+{
+ "uid": "VTANR5L17V8430",
+ "num": 8430,
+ "statut": "publiee",
+ "cree_le": "2026-11-10T19:42:12+00:00",
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026E1N023",
+ "seance_jour": "mardi 21 juillet 2026",
+ "contexte": "Ce vote porte sur l'ensemble du projet de loi relatif à la protection des enfants en première lecture. Le texte vise à renforcer les contrôles d'honorabilité des personnes encadrant des mineurs, à encadrer les durées de placement, à créer une ordonnance de sûreté pour écarter un parent dangereux et à alourdir certaines peines pour les crimes commis sur des enfants.",
+ "pour": [
+  {
+   "resume": "Le texte améliore significativement la sécurité des mineurs en étendant et renforçant le contrôle des antécédents judiciaires pour toutes les personnes encadrant des enfants.",
+   "citation": "Désormais, le contrôle des antécédents judiciaires des personnes en charge de mineurs devra s'étendre partout : le périscolaire, les plateformes, les stages, les transports scolaires, tous les établissements pour mineurs.",
+   "acteur": "PA841431",
+   "nom": "Mme Nathalie Colin-Oesterlé",
+   "qualite": "",
+   "syceron": [
+    "4166481",
+    "4166492"
+   ]
+  },
+  {
+   "resume": "La création d'une ordonnance de protection provisoire permet au procureur de la République d'agir en urgence pour écarter un parent dangereux.",
+   "citation": "Le procureur de la République pourra, en urgence, prendre une ordonnance de protection provisoire.",
+   "acteur": "PA718820",
+   "nom": "Mme Pauline Cestrières",
+   "qualite": "",
+   "syceron": [
+    "4167341",
+    "4167344"
+   ]
+  },
+  {
+   "resume": "Le projet intègre des avancées importantes pour l'aide sociale à l'enfance, notamment en favorisant le recours aux tiers dignes de confiance et en renforçant la formation des assistants familiaux.",
+   "citation": "Il serait pourtant injuste de nier les avancées que ce texte contient, comme la préférence donnée à l'accueil à dimension familiale plutôt qu'en établissement, moyennant le développement du recours aux tiers dignes de confiance et l'élargissement du recrutement des assistants familiaux",
+   "acteur": "PA841359",
+   "nom": "Mme Constance de Pélichy",
+   "qualite": "",
+   "syceron": [
+    "4166497",
+    "4167183",
+    "4167185"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le projet de loi est élaboré dans la précipitation et sous le coup de l'émotion, ce qui nuit à la qualité de la législation sur des sujets aussi complexes.",
+   "citation": "En voulant traiter ces deux sujets dans l'urgence, vous prenez le risque de légiférer à l'aveugle. On ne protège pas mieux les enfants sous le coup de l'émotion, sans avoir pris le temps nécessaire pour auditionner, pour évaluer et pour comprendre.",
+   "acteur": "PA841359",
+   "nom": "Mme Constance de Pélichy",
+   "qualite": "",
+   "syceron": [
+    "4166497",
+    "4167183",
+    "4167185"
+   ]
+  },
+  {
+   "resume": "Le texte pèche par une absence de moyens financiers et humains suffisants pour résoudre la crise profonde de l'aide sociale à l'enfance et permettre une application concrète des mesures.",
+   "citation": "Nous pouvons continuer à instituer de nouvelles procédures, à créer de nouvelles obligations ou à fixer de nouveaux délais ; si les moyens ne suivent pas, les meilleures intentions de la loi ne produiront pas les effets attendus.",
+   "acteur": "PA794886",
+   "nom": "Mme Sophie Blanc",
+   "qualite": "",
+   "syceron": [
+    "4167234",
+    "4167339"
+   ]
+  },
+  {
+   "resume": "L'empilement de réformes partielles et le manque de lisibilité générale créent une instabilité législative préjudiciable pour les professionnels de terrain.",
+   "citation": "L'illisibilité du projet de loi en est d'ailleurs la traduction concrète. Nous devons en effet nous prononcer sur un texte qui modifie six codes de notre corpus législatif, sans lignes directrices clairement identifiables.",
+   "acteur": "PA793174",
+   "nom": "M. Yannick Monnet",
+   "qualite": "",
+   "syceron": [
+    "4167192",
+    "4167201",
+    "4167203"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-10T19:47:14+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T19:47:14+00:00"
+}

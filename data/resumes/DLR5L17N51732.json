@@ -1,9 +1,10 @@
 {
  "dossier": "DLR5L17N51732",
  "texte": "PIONANR5L17B1560",
- "tentatives": 1,
- "statut": "en_attente",
- "erreurs": [
-  "résumé vide"
- ]
+ "tentatives": 2,
+ "statut": "publie",
+ "erreurs": [],
+ "resume": "Le texte modifie le code du sport en encadrant la gouvernance, les rémunérations et les règles disciplinaires des fédérations et ligues professionnelles. Il instaure des conditions d'inéligibilité liées à des condamnations pénales, fixe des plafonds de rémunération pour les dirigeants, et réglemente les modalités de subdélégation, de contrôle et de retrait des compétences confiées aux ligues professionnelles. Enfin, il précise les obligations de mise à disposition des sportifs pour les compétitions internationales ainsi que les conditions d'exercice de la profession d'agent sportif.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "genere_le": "2026-11-10T20:01+00:00"
 }

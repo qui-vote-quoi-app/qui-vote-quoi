@@ -1,0 +1,106 @@
+{
+ "uid": "VTANR5L17V8279",
+ "num": 8279,
+ "statut": "publiee",
+ "cree_le": "2026-11-10T19:42:12+00:00",
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026E1N014",
+ "seance_jour": "mercredi 15 juillet 2026",
+ "contexte": "L'Assemblée nationale examine en première lecture l'ensemble du projet de loi visant à offrir des réponses immédiates aux phénomènes troublant l'ordre public, la sécurité et la tranquillité de nos concitoyens. Ce texte aborde divers sujets liés à la sécurité, tels que l'encadrement des rassemblements festifs, le protoxyde d'azote, les rodéos urbains et les pouvoirs des forces de l'ordre.",
+ "pour": [
+  {
+   "resume": "Le texte répond aux attentes légitimes des citoyens face aux atteintes répétées à leur sécurité et à leur tranquillité quotidienne.",
+   "citation": "nos concitoyens attendent de la puissance publique qu'elle sache répondre avec efficacité aux atteintes répétées à leur sécurité et à leur tranquillité.",
+   "acteur": "PA795100",
+   "nom": "M. Éric Martineau",
+   "qualite": "",
+   "syceron": [
+    "4159302",
+    "4159313"
+   ]
+  },
+  {
+   "resume": "Les dispositions rétablies permettent de lutter efficacement contre les usages détournés des mortiers d'artifice et des produits pyrotechniques.",
+   "citation": "Nous saluons ainsi le rétablissement des dispositions pour lutter contre les usages détournés des mortiers d'artifice et des produits pyrotechniques.",
+   "acteur": "PA795100",
+   "nom": "M. Éric Martineau",
+   "qualite": "",
+   "syceron": [
+    "4159302",
+    "4159313"
+   ]
+  },
+  {
+   "resume": "Le projet renforce et modernise les moyens d'action des forces de sécurité face aux évolutions de la délinquance.",
+   "citation": "Le groupe Les Démocrates soutient également les dispositions pour moderniser les moyens d'action de nos forces de sécurité.",
+   "acteur": "PA795100",
+   "nom": "M. Éric Martineau",
+   "qualite": "",
+   "syceron": [
+    "4159302",
+    "4159313"
+   ]
+  },
+  {
+   "resume": "Le texte sanctionne plus fermement les rave-parties illégales tout en instaurant des outils de dialogue et de prévention pour les rassemblements autorisés.",
+   "citation": "la création d'une charte d'organisation et le maintien d'un dialogue avec les organisateurs constituent des avancées utiles.",
+   "acteur": "PA795100",
+   "nom": "M. Éric Martineau",
+   "qualite": "",
+   "syceron": [
+    "4159302",
+    "4159313"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Ce projet de loi relève d'une surenchère répressive inefficace qui affaiblit les garanties fondamentales de l'État de droit.",
+   "citation": "Sous couvert d'un prétendu choc d'efficacité, vous faites le choix de la surveillance généralisée, du durcissement et de la systématisation des sanctions.",
+   "acteur": "PA795998",
+   "nom": "Mme Émeline K/Bidi",
+   "qualite": "",
+   "syceron": [
+    "4159198",
+    "4159211"
+   ]
+  },
+  {
+   "resume": "Le texte multiplie les amendes forfaitaires délictuelles prononcées sans juge, portant atteinte au droit au recours et aux libertés.",
+   "citation": "L'AFD constitue une condamnation correctionnelle prononcée sans juge, sans avocat et sans débat contradictoire.",
+   "acteur": "PA795998",
+   "nom": "Mme Émeline K/Bidi",
+   "qualite": "",
+   "syceron": [
+    "4159198",
+    "4159211"
+   ]
+  },
+  {
+   "resume": "La pénalisation accrue ne constitue pas une réponse adaptée aux problèmes d'addiction et éloigne les personnes concernées des soins.",
+   "citation": "Les professionnels de santé et les associations spécialisées en addictologie rappellent depuis des années que la répression ne fait pas reculer les usages, mais éloigne les personnes concernées des soins.",
+   "acteur": "PA795998",
+   "nom": "Mme Émeline K/Bidi",
+   "qualite": "",
+   "syceron": [
+    "4159198",
+    "4159211"
+   ]
+  },
+  {
+   "resume": "L'extension des dispositifs technologiques de surveillance pose des questions éthiques et modifie durablement la nature de l'espace public.",
+   "citation": "Or, ces dispositifs posent des questions éthiques et juridiques nouvelles, qui nécessiteraient un véritable débat démocratique.",
+   "acteur": "PA795998",
+   "nom": "Mme Émeline K/Bidi",
+   "qualite": "",
+   "syceron": [
+    "4159198",
+    "4159211"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-10T19:49:09+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T19:49:09+00:00"
+}
