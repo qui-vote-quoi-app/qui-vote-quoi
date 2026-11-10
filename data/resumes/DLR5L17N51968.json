@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51968",
+ "texte": "PIONANR5L17B1332",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie les règles d'attribution et de fin de bail des logements sociaux réservés aux agents publics et aux salariés d'entreprises publiques. Il encadre la résiliation du bail en cas de changement d'emploi lié à un logement conditionné. Il augmente le plafond des droits de réservation pour les administrations cédant leur terrain avec décote et autorise la délégation de ce contingent. Il permet des dérogations aux règles d'urbanisme pour construire sur du foncier public et prévoit la remise d'un rapport gouvernemental.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T20:19+00:00"
+}

@@ -1,8 +1,53 @@
 {
  "uid": "VTANR5L17V7380",
  "num": 7380,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026O1N268",
+ "seance_jour": "jeudi 11 juin 2026",
+ "contexte": "L'Assemblée nationale procède à l'examen en deuxième lecture de la proposition de loi visant à la nationalisation d'ArcelorMittal France pour préserver la souveraineté industrielle. Les débats portent sur l'efficacité et pertinence de la nationalisation face aux défis de la concurrence internationale.",
+ "pour": [],
+ "contre": [
+  {
+   "resume": "La nationalisation est qualifiée de réponse brutale, coûteuse et mal préparée par rapport à d'autres solutions pour protéger les intérêts stratégiques.",
+   "citation": "La nationalisation est certes un outil, mais dans le cas présent, elle constitue une réponse brutale, coûteuse et insuffisamment préparée face à une situation qui exige méthode, stratégie et constance.",
+   "acteur": "PA841479",
+   "nom": "M. Frédéric Weber",
+   "qualite": "",
+   "syceron": [
+    "4119368",
+    "4119371",
+    "4119375"
+   ]
+  },
+  {
+   "resume": "La politique industrielle ne se résume pas au rachat d'une entreprise par l'État et nécessite plutôt de l'investissement, de l'innovation et une action européenne.",
+   "citation": "Pour certains, il suffirait que l'État rachète une industrie pour que les problèmes disparaissent. Nous ne le croyons pas. Une politique industrielle se construit avec de l'investissement, de l'innovation, de la compétitivité et une action déterminée au niveau européen.",
+   "acteur": "PA721852",
+   "nom": "Mme Marie Lebec",
+   "qualite": "",
+   "syceron": [
+    "4119381",
+    "4119387",
+    "4119512"
+   ]
+  },
+  {
+   "resume": "Le texte est perçu comme une démarche symbolique et illusoire plutôt que comme une véritable politique industrielle efficace pour l'acier et les emplois.",
+   "citation": "L'industrie française mérite mieux que des slogans ; les salariés méritent mieux que des illusions. Ils méritent une politique qui se bat pour la filière de l'acier, pour les emplois, pour l'innovation et pour la compétitivité.",
+   "acteur": "PA721852",
+   "nom": "Mme Marie Lebec",
+   "qualite": "",
+   "syceron": [
+    "4119381",
+    "4119387",
+    "4119512"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-10T20:16:35+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T20:16:35+00:00"
 }

@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N53284",
+ "texte": "PIONANR5L17B2180",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte prévoit la création d'une injonction d'examen psychiatrique pour les personnes présentant une menace grave liée au terrorisme et à des troubles mentaux, pouvant mener à une admission provisoire en soins psychiatriques. Il institue une rétention de sûreté terroriste en centre socio-médico-judiciaire pour les détenus condamnés à de longues peines présentant une dangerosité particulièrement élevée et une adhésion persistante à une idéologie terroriste. De plus, il modifie les règles relatives à l'information des autorités administratives concernant les sorties et les modifications de prises en charge de personnes en soins psychiatriques.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T20:20+00:00"
+}

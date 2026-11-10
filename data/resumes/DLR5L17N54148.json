@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N54148",
+ "texte": "PIONANR5L17B2678",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte interdit l'importation, la détention, la vente, la distribution et l'utilisation d'engrais inorganiques ou organo-minéraux phosphatés dont la teneur en cadmium dépasse certaines valeurs limites. Il fixe un seuil maximal de 40 milligrammes par kilogramme à compter du 1er janvier 2027, puis de 20 milligrammes par kilogramme à compter du 1er janvier 2030.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T20:28+00:00"
+}

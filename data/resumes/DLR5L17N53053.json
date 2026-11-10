@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N53053",
+ "texte": "PIONANR5L17B2023",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte crée un dispositif national de sentinelles agricoles pour détecter la détresse psychique et orienter les agriculteurs. Il institue un guichet unique départemental dans chaque département, doté d'une composante mobile pour aller au contact direct des exploitations. Enfin, il met en place une mission nationale chargée de définir la stratégie de prévention et de coordonner les politiques publiques en la matière.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T20:25+00:00"
+}

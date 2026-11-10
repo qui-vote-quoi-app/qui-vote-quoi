@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N52977",
+ "texte": "PIONANR5L17B1950",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte prévoit la nationalisation de la société ArcelorMittal France par le transfert de ses actions à l'État, dont la valeur est calculée selon la moyenne des cours boursiers sur une période donnée. Il garantit le maintien des contrats de travail et des instances représentatives des salariés, tout en instaurant une administration provisoire par un administrateur général et un nouveau conseil d'administration composé de représentants de l'État et des salariés. Enfin, il compense la charge financière pour l'État par la création d'une taxe sur les tabacs et le relèvement de l'impôt sur les sociétés.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T20:23+00:00"
+}

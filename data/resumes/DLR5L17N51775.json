@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51775",
+ "texte": "PIONANR5L17B1169",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code de l'environnement pour étendre explicitement l'interdiction de la vaisselle en plastique, en y incluant les gobelets, assiettes, récipients et couverts, dans la restauration collective accueillant du jeune public et liée à la petite enfance. Il prévoit également des mécanismes de compensation financière pour l'État, les collectivités territoriales et les organismes de sécurité sociale via une taxe sur les tabacs.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T20:27+00:00"
+}

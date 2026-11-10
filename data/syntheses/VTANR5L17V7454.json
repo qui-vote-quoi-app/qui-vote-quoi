@@ -1,8 +1,89 @@
 {
  "uid": "VTANR5L17V7454",
  "num": 7454,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 2,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026O1N280",
+ "seance_jour": "mardi 23 juin 2026",
+ "contexte": "L'Assemblée nationale examine, en première lecture, le projet de loi constitutionnelle prévoyant l'autonomie de la Corse au sein de la République. Ce texte fait suite à plusieurs années de concertation et à un vote de l'Assemblée de Corse, visant à doter l'île d'un statut spécifique tout en suscitant des débats sur ses implications juridiques et institutionnelles.",
+ "pour": [
+  {
+   "resume": "Ce texte constitue une opportunité historique issue d'un long dialogue constructif pour répondre aux aspirations des Corses et tourner la page de la violence.",
+   "citation": "Après cinquante ans de tâtonnements institutionnels et d'une histoire de la Corse qui s'est écrite au fil des heurts, de la méfiance, parfois de la violence voire de l'insurrection, une occasion historique s'offre à nous aujourd'hui.",
+   "acteur": "PA795864",
+   "nom": "M. Pierre Cazeneuve",
+   "qualite": "",
+   "syceron": [
+    "4128309"
+   ]
+  },
+  {
+   "resume": "L'adoption de ce projet démontre la capacité de la République à faire confiance à ses territoires et à reconnaître leur diversité sans affaiblir son unité.",
+   "citation": "Il est possible de reconnaître la singularité de la Corse sans affaiblir l'unité nationale.",
+   "acteur": "PA840793",
+   "nom": "M. Marc Pena",
+   "qualite": "",
+   "syceron": [
+    "4128330"
+   ]
+  },
+  {
+   "resume": "La transition de la lutte armée vers le dialogue démocratique oblige le Parlement à respecter la volonté du peuple corse exprimée par ses votes.",
+   "citation": "Ce vote, en rompant avec des décennies de violence et en faisant le choix de la démocratie, nous oblige. C'est d'ailleurs le sens de la promesse du président de la République et du gouvernement : respecter la volonté du peuple en menant à son terme la démarche d'autonomie.",
+   "acteur": "PA794778",
+   "nom": "Mme Sandra Regol",
+   "qualite": "",
+   "syceron": [
+    "4128349"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le texte se révèle insuffisant face aux difficultés concrètes de l'île et comporte des imprudences juridiques, notamment sur la non-régression sociale et environnementale.",
+   "citation": "Le texte soumis à notre vote ne permettra nullement à la Corse de répondre aux difficultés particulières qui sont les siennes.",
+   "acteur": "PA795966",
+   "nom": "M. Stéphane Rambaud",
+   "qualite": "",
+   "syceron": [
+    "4128284",
+    "4128286",
+    "4128289",
+    "4128292",
+    "4128295",
+    "4128298",
+    "4128300",
+    "4128302",
+    "4128304",
+    "4128307"
+   ]
+  },
+  {
+   "resume": "L'absence de programmation simultanée d'une loi organique laisse les citoyens et les élus dans l'incertitude quant au contenu réel de cette autonomie.",
+   "citation": "C'est un problème, d'abord pour les Corses, à qui le gouvernement demande en réalité de signer un chèque en blanc.",
+   "acteur": "PA721202",
+   "nom": "M. Éric Coquerel",
+   "qualite": "",
+   "syceron": [
+    "4128737",
+    "4128323"
+   ]
+  },
+  {
+   "resume": "Le texte actuel ne répond pas aux attentes de la population corse et risque d'accroître les inégalités en renforçant le pouvoir local existant.",
+   "citation": "Les Corses sont las des promesses de la majorité territoriale qui a ruiné son crédit en exerçant depuis dix ans les responsabilités avec des résultats calamiteux.",
+   "acteur": "PA841047",
+   "nom": "M. François-Xavier Ceccoli",
+   "qualite": "",
+   "syceron": [
+    "4128339",
+    "4128344"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-10T20:11:35+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T20:11:35+00:00"
 }

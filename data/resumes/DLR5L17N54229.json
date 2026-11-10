@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N54229",
+ "texte": "PIONANR5L17B2710",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte prévoit une revalorisation annuelle des bourses d'enseignement supérieur sur critères sociaux, indexée sur l'évolution de la moyenne annuelle des prix à la consommation hors tabac. Il institue également le versement de ces bourses sur une base annuelle en douze mensualités. Enfin, il prévoit une compensation financière pour l'État par la création d'une taxe additionnelle à l'accise sur les tabacs.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T20:21+00:00"
+}

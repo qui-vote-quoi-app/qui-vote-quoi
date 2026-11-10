@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51955",
+ "texte": "PIONANR5L17B1319",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code rural et de la pêche maritime ainsi que le code de la sécurité sociale pour étendre le complément de points de retraite complémentaire obligatoire aux femmes, conjoints collaborateurs et aides familiaux. Il exclut ces compléments de pension des prélèvements sociaux et modifie le calcul du seuil d'écrêtement des pensions en y retirant la bonification pour enfants. Enfin, il institue une taxe additionnelle sur les transactions financières afin d'assurer des ressources complémentaires au régime d'assurance vieillesse complémentaire des non-salariés agricoles.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T20:26+00:00"
+}

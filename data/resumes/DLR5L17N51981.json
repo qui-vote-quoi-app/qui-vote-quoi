@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51981",
+ "texte": "PIONANR5L17B1344",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte prévoit d'exclure le domicile principal du bénéficiaire de l'allocation de solidarité aux personnes âgées du champ d'application du recours sur succession. La perte de recettes résultant pour l'État de cette modification est compensée par la création d'une taxe additionnelle sur les tabacs.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T20:24+00:00"
+}

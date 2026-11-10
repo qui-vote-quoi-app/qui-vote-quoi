@@ -1,8 +1,39 @@
 {
  "uid": "VTANR5L17V7397",
  "num": 7397,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026O1N269",
+ "seance_jour": "jeudi 11 juin 2026",
+ "contexte": "L'Assemblée nationale examine en première lecture une proposition de loi visant à réformer les bourses sur critères sociaux et à lutter contre la précarité étudiante. Le texte suscite des débats sur sa portée, son coût budgétaire et la nécessité d'une réforme structurelle globale.",
+ "pour": [
+  {
+   "resume": "La proposition de loi est soutenue car elle constitue un premier pas bienvenu, même si son impact reste limité.",
+   "citation": "Nous voterons pour cette proposition de loi, car elle est un début, même si c'est un petit début.",
+   "acteur": "PA795156",
+   "nom": "Mme Fatiha Keloua Hachi",
+   "qualite": "",
+   "syceron": [
+    "4120987",
+    "4121085"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le texte ne propose pas de réponse structurelle aux dysfonctionnements du système tout en ayant un coût budgétaire important.",
+   "citation": "Les impacts budgétaires de ce texte ne sont pas négligeables - près d'un demi-milliard d'euros - alors qu'il ne répond pas de façon structurelle aux dysfonctionnements du système.",
+   "acteur": "PA794802",
+   "nom": "M. Charles Sitzenstuhl",
+   "qualite": "",
+   "syceron": [
+    "4120982"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-10T20:15:35+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T20:15:35+00:00"
 }

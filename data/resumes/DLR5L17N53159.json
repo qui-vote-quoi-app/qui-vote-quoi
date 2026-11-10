@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N53159",
+ "texte": "PIONANR5L17B2349",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code de procédure pénale et le code pénal pour renforcer la gestion, la saisie et la confiscation des avoirs criminels. Il permet la destruction de biens saisis de faible valeur, organise la vente anticipée de certains crypto-actifs et encadre l'exécution provisoire des décisions de restitution. De plus, il introduit une procédure de notification par voie électronique et de publication en ligne pour l'exécution de peines de confiscation visant des personnes introuvables, et crée une enquête post-sentencielle pour retrouver les biens des condamnés.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T20:29+00:00"
+}
