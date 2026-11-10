@@ -1,8 +1,8 @@
 {
  "dossier": "DLR5L17N54227",
  "texte": "PIONANR5L17B2708",
- "tentatives": 1,
- "statut": "en_attente",
+ "tentatives": 2,
+ "statut": "abandonne",
  "erreurs": [
   "résumé vide"
  ]

@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N53315",
+ "texte": "PIONANR5L17B2413",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte instaure une procédure simplifiée de recouvrement des créances commerciales incontestées entre professionnels, mise en œuvre par un commissaire de justice. Il prévoit l'envoi d'un commandement de payer d'un mois au débiteur, dont la contestation met fin à la procédure. En l'absence de paiement ou de contestation, le commissaire dresse un procès-verbal de non-contestation rendu exécutoire par le greffier du tribunal de commerce. Les frais de la procédure incombent au débiteur, et le texte actualise les dispositions relatives au statut des commissaires de justice et aux titres exécutoires.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T21:52+00:00"
+}

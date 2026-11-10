@@ -1,13 +1,80 @@
 {
  "uid": "VTANR5L17V8693",
  "num": 8693,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-09T22:41:10+00:00",
- "tentatives": 1,
- "erreurs": [
-  "IA indisponible : gemini-flash-lite-latest : erreur 503"
- ],
+ "tentatives": 2,
+ "erreurs": [],
  "cr": "CRSANR5L17S2027O1N018",
  "seance_jour": "lundi 12 octobre 2026",
- "derniere_tentative": "2026-11-10T20:53:27+00:00"
+ "derniere_tentative": "2026-11-10T21:16:26+00:00",
+ "contexte": "Ce vote porte sur l'ensemble de la proposition de loi visant à moderniser et rééquilibrer le fonctionnement du titre-restaurant en première lecture. Le texte aborde notamment la dématérialisation, la transparence des commissions, l'encadrement des tarifs et l'élargissement de l'utilisation des titres.",
+ "pour": [
+  {
+   "resume": "Le texte prévoit des mesures concrètes comme la dématérialisation et la fin des rétrocommissions pour stimuler la concurrence et réduire les coûts pesant sur les restaurateurs.",
+   "citation": "Premièrement, ce texte prévoit déjà des mesures visant à faire baisser les commissions pour nos restaurateurs et nos commerçants, à commencer par la dématérialisation.",
+   "acteur": "PA721486",
+   "nom": "M. Christophe Naegelen",
+   "qualite": "rapporteur",
+   "syceron": [
+    "4182517",
+    "4182523"
+   ]
+  },
+  {
+   "resume": "La réforme permettra de moderniser le dispositif tout en offrant un délai suffisant aux territoires d'outre-mer pour adapter leurs infrastructures et accompagner les commerçants.",
+   "citation": "Cette proposition de loi permet de pérenniser cette mesure, reconduite d'année en année depuis 2022.",
+   "acteur": "PA720960",
+   "nom": "M. Olivier Serva",
+   "qualite": "",
+   "syceron": [
+    "4182926"
+   ]
+  },
+  {
+   "resume": "Le dispositif législatif favorise la transparence et donne les moyens aux autorités de régulation d'enquêter et de corriger les dysfonctionnements du marché.",
+   "citation": "La fin des rétrocommissions, la dématérialisation et le renforcement de la transparence permettront de vérifier l'existence d'éventuels effets de rente",
+   "acteur": "PA873626",
+   "nom": "M. Serge Papin",
+   "qualite": "ministre",
+   "syceron": [
+    "4182532"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le texte n'impose pas un plafonnement obligatoire et immédiat des commissions, ce qui laisse les commerçants vulnérables face à des frais excessifs.",
+   "citation": "Il vise à instaurer un plafond obligatoire de 2,5 % sur les commissions, dont le taux serait déterminé chaque année par décret.",
+   "acteur": "PA793796",
+   "nom": "M. David Taupiac",
+   "qualite": "",
+   "syceron": [
+    "4182495"
+   ]
+  },
+  {
+   "resume": "L'absence de mesures contraignantes immédiates sur les commissions risque de provoquer de nombreuses faillites dans le secteur de la restauration et du commerce de proximité.",
+   "citation": "nous n'avons pas envie de laisser crever des restaurateurs. Bien sûr que nous prendrons cette mesure quand nous serons au pouvoir, mais on peut la prendre dès maintenant, on peut sauver des gens d'ici quelques semaines",
+   "acteur": "PA793736",
+   "nom": "M. Hadrien Clouet",
+   "qualite": "",
+   "syceron": [
+    "4182550",
+    "4182553"
+   ]
+  },
+  {
+   "resume": "Le marché des titres-restaurant est dominé par un oligopole et les mesures prévues ne suffisent pas à corriger le déséquilibre économique au détriment des restaurateurs.",
+   "citation": "Dans son avis de 2023, l'Autorité reconnaît que le marché est fortement dysfonctionnel à cause de la domination d'un oligopole, et que les commissions sur les restaurateurs ne cessent d'augmenter.",
+   "acteur": "PA841713",
+   "nom": "M. Boris Tavernier",
+   "qualite": "",
+   "syceron": [
+    "4182668"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-10T21:16:26+00:00",
+ "modele": "gemini:gemini-flash-lite-latest"
 }

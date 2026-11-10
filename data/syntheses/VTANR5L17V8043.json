@@ -1,10 +1,111 @@
 {
  "uid": "VTANR5L17V8043",
  "num": 8043,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
+ "tentatives": 1,
  "erreurs": [],
  "cr": "CRSANR5L17S2026E1N008",
- "seance_jour": "mercredi 08 juillet 2026"
+ "seance_jour": "mercredi 08 juillet 2026",
+ "contexte": "L'Assemblée nationale examine l'ensemble du projet de loi organique relatif au renforcement des juridictions criminelles, issu des travaux de la commission mixte paritaire. Ce texte vise à modifier les règles de procédure pénale et d'organisation des juridictions pour accélérer le traitement des affaires criminelles et répondre aux difficultés de fonctionnement de l'institution judiciaire.",
+ "pour": [
+  {
+   "resume": "Le compromis trouvé permet d'accélérer les procédures et de mieux encadrer la justice criminelle.",
+   "citation": "Le texte n'en sera pas moins utile, dans la mesure où il permettra d'accélérer les procédures et de mieux encadrer la justice criminelle.",
+   "acteur": "PA721816",
+   "nom": "M. Ian Boucard",
+   "qualite": "",
+   "syceron": [
+    "4151490",
+    "4151492"
+   ]
+  },
+  {
+   "resume": "Plusieurs articles majeurs replacent la victime au centre de la procédure, comme l'information préalable sur les autopsies ou l'accès facilité à l'aide juridictionnelle.",
+   "citation": "Ce texte comporte des avancées majeures qui remettent la victime au centre de la réalité légistique. L'article 4 impose d'informer les proches sur les autopsies avant le permis d'inhumer.",
+   "acteur": "PA795100",
+   "nom": "M. Éric Martineau",
+   "qualite": "",
+   "syceron": [
+    "4151509"
+   ]
+  },
+  {
+   "resume": "L'introduction de la généalogie génétique d'investigation constitue une innovation essentielle pour résoudre les crimes non élucidés.",
+   "citation": "le recours à la généalogie génétique d'investigation constituera une innovation essentielle pour les enquêteurs, en particulier en matière de crimes non résolus.",
+   "acteur": "PA719138",
+   "nom": "M. Michel Castellani",
+   "qualite": "",
+   "syceron": [
+    "4151952"
+   ]
+  },
+  {
+   "resume": "Le texte instaure des mesures utiles de bonne administration, telles que la formation obligatoire des magistrats aux violences intrafamiliales et la pérennisation des avocats honoraires.",
+   "citation": "Ces avancées sont des petits pas, de simples mesures de bonne administration de la justice qui, ajoutées les unes aux autres, facilitent le quotidien de nos juridictions criminelles et accélèrent le temps judiciaire",
+   "acteur": "PA267780",
+   "nom": "Mme Agnès Firmin Le Bodo",
+   "qualite": "",
+   "syceron": [
+    "4151519",
+    "4151946"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le projet de loi répond à la pénurie de moyens de la justice en réduisant les droits des justiciables et les garanties procédurales plutôt qu'en investissant massivement.",
+   "citation": "Quand la justice manque de moyens, vous ne lui en donnez pas davantage ; vous réduisez les droits. C'est ça, votre obsession : réduire nos droits. Les libertés fondamentales deviennent des variables d'ajustement de vos insuffisances budgétaires.",
+   "acteur": "PA793452",
+   "nom": "M. Hendrik Davi",
+   "qualite": "",
+   "syceron": [
+    "4151495",
+    "4151499",
+    "4151506"
+   ]
+  },
+  {
+   "resume": "La création d'un sas de détention provisoire porte une atteinte directe au principe constitutionnel selon lequel la liberté est la règle et la détention l'exception.",
+   "citation": "Il alerte aussi sur la création d'un \" \"sas de détention\" permettant le maintien temporaire en détention provisoire malgré l'expiration du mandat ou une irrégularité procédurale \". Ce dispositif est d'une extrême gravité.",
+   "acteur": "PA793452",
+   "nom": "M. Hendrik Davi",
+   "qualite": "",
+   "syceron": [
+    "4151495",
+    "4151499",
+    "4151506"
+   ]
+  },
+  {
+   "resume": "Le texte modifie les délais pour invoquer les nullités de procédure et fragilise les équilibres fondamentaux de l'instruction et de la défense.",
+   "citation": "Vous avez décidé d'abaisser le délai pendant lequel elles peuvent être invoquées devant les juridictions - ce n'est pas satisfaisant.",
+   "acteur": "PA722150",
+   "nom": "M. Sacha Houlié",
+   "qualite": "",
+   "syceron": [
+    "4151554",
+    "4151555",
+    "4151564"
+   ]
+  },
+  {
+   "resume": "La réforme évite la question centrale du manque chronique de magistrats, de greffiers et de moyens matériels face à l'engorgement des tribunaux.",
+   "citation": "Accélérer le traitement des affaires ne consiste pas à réduire les garanties des justiciables ou à rechercher des économies sur le fonctionnement de la justice , mais à recruter des magistrats, des greffiers, des enquêteurs",
+   "acteur": "PA721896",
+   "nom": "Mme Elsa Faucillon",
+   "qualite": "",
+   "syceron": [
+    "4151964",
+    "4151969",
+    "4151972",
+    "4151973",
+    "4151975",
+    "4151978"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-10T21:28:38+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T21:28:38+00:00"
 }

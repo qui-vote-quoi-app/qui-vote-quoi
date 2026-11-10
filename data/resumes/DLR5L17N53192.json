@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N53192",
+ "texte": "PIONANR5L17B2112",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code de la santé publique pour permettre aux ressortissants britanniques ou européens d'exercer la médecine en France avec un diplôme obtenu au Royaume-Uni. Cette mesure s'applique aux personnes ayant débuté leur formation médicale avant le 31 décembre 2020, sous réserve qu'elle respecte les obligations communautaires. De plus, les incidences financières pour la sécurité sociale sont compensées par une augmentation de l'accise sur les tabacs.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T21:48+00:00"
+}

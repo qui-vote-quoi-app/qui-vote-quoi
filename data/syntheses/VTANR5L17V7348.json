@@ -1,8 +1,47 @@
 {
  "uid": "VTANR5L17V7348",
  "num": 7348,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026O1N264",
+ "seance_jour": "jeudi 04 juin 2026",
+ "contexte": "L'Assemblée nationale examine, en première lecture, la proposition de loi visant à prévenir le mal-être et le risque suicidaire dans le monde agricole. Ce texte vise à renforcer la prévention, à améliorer l'accès aux soins psychologiques et à soutenir une profession particulièrement exposée aux difficultés économiques et à l'isolement.",
+ "pour": [
+  {
+   "resume": "La proposition de loi apporte des réponses concrètes en renforçant la prévention, l'accès à l'accompagnement psychologique, les cellules d'écoute et la formation des acteurs de terrain.",
+   "citation": "Cette proposition de loi apporte des réponses concrètes ; elle vise à renforcer la prévention, à améliorer l'accès aux dispositifs d'accompagnement psychologique, à développer les cellules d'écoute et de soutien et à mieux former les acteurs de terrain à la détection des situations de détresse.",
+   "acteur": "PA793696",
+   "nom": "M. Serge Muller",
+   "qualite": "",
+   "syceron": [
+    "4116904"
+   ]
+  },
+  {
+   "resume": "Le texte complète utilement les dispositifs existants en permettant d'aller vers des agriculteurs souvent peu ou tardivement demandeurs d'aide.",
+   "citation": "Mais l'important, c'est d'\" aller vers \", d'aller vers les agriculteurs qui sont souvent peu demandeurs, ou tardivement demandeurs. Cette proposition de loi s'impose donc aussi en complément de ce qui a déjà été fait.",
+   "acteur": "PA720154",
+   "nom": "Mme Nicole Dubré-Chirat",
+   "qualite": "",
+   "syceron": [
+    "4116908"
+   ]
+  },
+  {
+   "resume": "Le texte améliore les dispositifs existants pour protéger la santé mentale des agriculteurs et des agricultrices face à la détresse.",
+   "citation": "Nous le soutiendrons évidemment, car il améliore les dispositifs existants pour protéger la santé mentale des agriculteurs et des agricultrices.",
+   "acteur": "PA795482",
+   "nom": "Mme Manon Meunier",
+   "qualite": "",
+   "syceron": [
+    "4116912"
+   ]
+  }
+ ],
+ "contre": [],
+ "genere_le": "2026-11-10T21:42:33+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T21:42:33+00:00"
 }

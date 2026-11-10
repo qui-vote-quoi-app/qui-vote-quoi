@@ -1,10 +1,101 @@
 {
  "uid": "VTANR5L17V7905",
  "num": 7905,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
+ "tentatives": 1,
  "erreurs": [],
  "cr": "CRSANR5L17S2026E1N001",
- "seance_jour": "mercredi 01 juillet 2026"
+ "seance_jour": "mercredi 01 juillet 2026",
+ "contexte": "L'Assemblée nationale examine et vote sur l'ensemble du projet de loi actualisant la programmation militaire pour les années 2024 à 2030 et portant diverses dispositions intéressant la défense, issu de la commission mixte paritaire. Ce texte prévoit notamment une augmentation de 36 milliards d'euros des enveloppes dédiées à la défense afin de s'adapter aux évolutions du contexte géopolitique et aux conflits contemporains.",
+ "pour": [
+  {
+   "resume": "L'actualisation permet d'augmenter significativement le budget de la défense pour mieux répondre aux conflits contemporains et renforcer la souveraineté.",
+   "citation": "Cette actualisation vise à préserver notre souveraineté, certes, mais elle leur est également destinée. Comme le disait le président de la commission, quel beau symbole, à quelques jours de notre fête nationale !",
+   "acteur": "PA267042",
+   "nom": "M. Yannick Favennec-Bécot",
+   "qualite": "",
+   "syceron": [
+    "4146037"
+   ]
+  },
+  {
+   "resume": "Le texte accélère la trajectoire budgétaire pour donner plus de visibilité aux forces armées et à la base industrielle et technologique de défense.",
+   "citation": "La copie initiale du gouvernement ressort améliorée de nos débats, car nous avons accéléré la trajectoire pour atteindre près de 70 milliards d'euros dès 2028.",
+   "acteur": "PA267042",
+   "nom": "M. Yannick Favennec-Bécot",
+   "qualite": "",
+   "syceron": [
+    "4146037"
+   ]
+  },
+  {
+   "resume": "Des garanties fortes et des garde-fous budgétaires sont introduits pour immuniser le budget de la défense contre les aléas et les surcoûts des opérations.",
+   "citation": "Le budget défense sera immunisé contre les éventuels gels budgétaires et les surcoûts dus aux Opex ; une enveloppe additionnelle devra prendre en charge les coûts liés au remplacement d'équipements",
+   "acteur": "PA267042",
+   "nom": "M. Yannick Favennec-Bécot",
+   "qualite": "",
+   "syceron": [
+    "4146037"
+   ]
+  },
+  {
+   "resume": "Le texte apporte des réponses concrètes aux besoins capacitaires prioritaires, notamment en matière de stocks de munitions, de drones et de défense sol-air.",
+   "citation": "Nous répondons ainsi aux besoins capacitaires prioritaires de nos armées. S'agissant des drones, je pense à la reconnaissance de la notion de drones souverains et à la création d'un catalogue national pour accélérer les achats.",
+   "acteur": "PA719118",
+   "nom": "M. François Cormier-Bouligeon",
+   "qualite": "",
+   "syceron": [
+    "4146256",
+    "4146261",
+    "4146264",
+    "4146961"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le texte constitue une adaptation en réaction aux retards accumulés plutôt qu'une transformation profonde du format de l'armée face à la haute intensité.",
+   "citation": "Cette actualisation, en dépit de l'effort conséquent qu'elle contient, reste une adaptation plutôt qu'une véritable transformation du format de notre armée.",
+   "acteur": "PA267042",
+   "nom": "M. Yannick Favennec-Bécot",
+   "qualite": "",
+   "syceron": [
+    "4146037"
+   ]
+  },
+  {
+   "resume": "L'augmentation des crédits militaires s'accompagne d'une dépendance technologique et numérique accrue et d'un échec persistant des grands programmes de coopération européenne.",
+   "citation": "À force de sacrifices budgétaires, par-delà la BITD, notre dépendance militaire et numérique vis-à-vis des puissances étrangères se creuse et les plus grands projets de défense européens battent de l'aile, quand ils ne sont pas d'ores et déjà enterrés",
+   "acteur": "PA796106",
+   "nom": "M. Édouard Bénard",
+   "qualite": "",
+   "syceron": [
+    "4146047"
+   ]
+  },
+  {
+   "resume": "Le projet de loi élargit les techniques de renseignement et crée un état d'alerte de sécurité nationale affaiblissant le contrôle parlementaire et faisant vivre la société sous le régime de l'exception.",
+   "citation": "Sous couvert de préparation aux crises, ce texte élargit les techniques de renseignement, renforce le contrôle de la recherche, facilite les dérogations au droit du travail comme au droit de l'environnement et crée un nouvel état d'alerte de sécurité nationale",
+   "acteur": "PA796106",
+   "nom": "M. Édouard Bénard",
+   "qualite": "",
+   "syceron": [
+    "4146047"
+   ]
+  },
+  {
+   "resume": "La dégradation des finances publiques et le poids de la dette pèsent lourdement sur le financement de la défense, faisant reposer l'essentiel des crédits supplémentaires sur les années futures.",
+   "citation": "Résultat, près de 70 % des crédits supplémentaires seront donc supportés par vos successeurs, pendant que vous continuerez - pour peu de temps encore, heureusement - de creuser le gouffre financier de notre pays.",
+   "acteur": "PA840889",
+   "nom": "M. Matthieu Bloch",
+   "qualite": "",
+   "syceron": [
+    "4146056"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-10T21:31:40+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T21:31:40+00:00"
 }

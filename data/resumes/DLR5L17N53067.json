@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N53067",
+ "texte": "PIONANR5L17B2037",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte crée un plan national d’adaptation au changement climatique révisé tous les cinq ans et définit une trajectoire de référence jusqu’en 2100 pour l’aménagement du territoire. Il modifie les règles d'assurance en limitant la résiliation de contrat après une indemnisation pour catastrophe naturelle et permet le dépassement de la valeur de la chose assurée pour financer des travaux de reconstruction. Enfin, il autorise les entreprises d’assurance à fixer librement le taux de prime additionnelle pour les résidences secondaires et les grands biens professionnels situés en zones à risques.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T21:57+00:00"
+}

@@ -1,10 +1,103 @@
 {
  "uid": "VTANR5L17V8433",
  "num": 8433,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
+ "tentatives": 2,
  "erreurs": [],
  "cr": "CRSANR5L17S2026E1N024",
- "seance_jour": "mardi 21 juillet 2026"
+ "seance_jour": "mardi 21 juillet 2026",
+ "contexte": "L'Assemblée nationale examine, en lecture définitive après la commission mixte paritaire, le projet de loi visant à offrir des réponses immédiates aux phénomènes troublant l'ordre public, la sécurité et la tranquillité publique. Ce texte aborde notamment les rodéos urbains, le protoxyde d'azote, les mortiers d'artifice et les rave-parties.",
+ "pour": [
+  {
+   "resume": "Le texte apporte des réponses concrètes et attendues face aux atteintes répétées à la sécurité quotidienne.",
+   "citation": "nos concitoyens attendent de nous des réponses concrètes aux atteintes répétées à leur sécurité et à leur tranquillité.",
+   "acteur": "PA795100",
+   "nom": "M. Éric Martineau",
+   "qualite": "",
+   "syceron": [
+    "4168172",
+    "4168175",
+    "4168183",
+    "4168185"
+   ]
+  },
+  {
+   "resume": "Les dispositions renforcent efficacement la lutte contre l'usage détourné des mortiers d'artifice et des produits pyrotechniques.",
+   "citation": "Il était nécessaire de mieux encadrer leur acquisition et leur utilisation.",
+   "acteur": "PA795100",
+   "nom": "M. Éric Martineau",
+   "qualite": "",
+   "syceron": [
+    "4168172",
+    "4168175",
+    "4168183",
+    "4168185"
+   ]
+  },
+  {
+   "resume": "Le projet crée des infractions spécifiques pour lutter contre l'organisation et la participation aux rave-parties illégales.",
+   "citation": "l'article 2 crée deux infractions autonomes : d'une part l'organisation de rave-parties non déclarées ou en violation d'une interdiction préfectorale, d'autre part la participation à de telles rave-parties.",
+   "acteur": "PA720138",
+   "nom": "Mme Laetitia Saint-Paul",
+   "qualite": "",
+   "syceron": [
+    "4168189",
+    "4168191"
+   ]
+  },
+  {
+   "resume": "Le texte renforce la sanction des rodéos motorisés et des refus d'obtempérer pour responsabiliser leurs auteurs.",
+   "citation": "l'article 3 apporte des réponses attendues : extension de la procédure d'amende forfaitaire délictuelle aux rodéos motorisés et confiscation obligatoire du véhicule en cas de refus d'obtempérer.",
+   "acteur": "PA720138",
+   "nom": "Mme Laetitia Saint-Paul",
+   "qualite": "",
+   "syceron": [
+    "4168189",
+    "4168191"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le projet repose sur une doctrine strictement punitive qui augmente les peines sans investir dans la prévention.",
+   "citation": "Or votre texte vise uniquement à augmenter le quantum des peines, quitte à faire déborder des prisons qui sont déjà surpeuplées ; vous mettez en avant une doctrine sécuritaire strictement punitive.",
+   "acteur": "PA610968",
+   "nom": "M. Pouria Amirshahi",
+   "qualite": "",
+   "syceron": [
+    "4168122",
+    "4168125",
+    "4168149",
+    "4168163",
+    "4168206",
+    "4168166",
+    "4168208",
+    "4168170"
+   ]
+  },
+  {
+   "resume": "Plusieurs mesures liberticides renforcent la surveillance de masse et affaiblissent les garanties procédurales.",
+   "citation": "En définitive, ce texte incarne tout ce que nous refusons. Parce qu'il fragilise les libertés et les droits fondamentaux et parce qu'il repose sur une logique de répression généralisée et de surveillance automatisée de l'espace public, notre groupe votera une nouvelle fois contre ce texte.",
+   "acteur": "PA795998",
+   "nom": "Mme Émeline K/Bidi",
+   "qualite": "",
+   "syceron": [
+    "4167042"
+   ]
+  },
+  {
+   "resume": "L'amende forfaitaire délictuelle constitue une sanction prononcée sans juge ni débat contradictoire, portant atteinte aux droits de la défense.",
+   "citation": "Pourtant, cette amende est une condamnation correctionnelle sans juge, sans avocat, sans débat contradictoire : c'est une justice sans audience, prononcée sur la seule appréciation de l'agent verbalisateur.",
+   "acteur": "PA795998",
+   "nom": "Mme Émeline K/Bidi",
+   "qualite": "",
+   "syceron": [
+    "4167042"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-10T21:21:06+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T21:21:06+00:00"
 }

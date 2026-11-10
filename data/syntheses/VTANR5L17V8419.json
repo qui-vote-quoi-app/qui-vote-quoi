@@ -1,10 +1,57 @@
 {
  "uid": "VTANR5L17V8419",
  "num": 8419,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
+ "tentatives": 1,
  "erreurs": [],
  "cr": "CRSANR5L17S2026E1N021",
- "seance_jour": "lundi 20 juillet 2026"
+ "seance_jour": "lundi 20 juillet 2026",
+ "contexte": "L'Assemblée nationale examine, en lecture définitive après une commission mixte paritaire, la proposition de loi visant à doter la France d'une stratégie nationale de lutte contre les maladies cardio-neuro-vasculaires. Ce texte transpartisan vise à renforcer la prévention, à améliorer le dépistage précoce dès l'enfance et à mobiliser de nouveaux professionnels de santé face à la deuxième cause de mortalité dans le pays.",
+ "pour": [
+  {
+   "resume": "Le texte constitue une avancée nécessaire pour renforcer la prévention, améliorer le dépistage et lutter contre les inégalités d'accès aux soins.",
+   "citation": "La proposition de loi de notre collègue Yannick Neuder est bienvenue, car elle permettra indéniablement de renforcer les politiques préventives, notamment par un meilleur ciblage des rendez-vous de prévention",
+   "acteur": "PA841295",
+   "nom": "M. Pierrick Courbon",
+   "qualite": "",
+   "syceron": [
+    "4165063"
+   ]
+  },
+  {
+   "resume": "La mise en place d'une stratégie nationale pluriannuelle et le renforcement des rendez-vous de dépistage permettent de lutter efficacement contre l'hypertension et les facteurs de risque.",
+   "citation": "La commission mixte paritaire a donc permis de préserver l'essentiel et de trouver un équilibre. Les rendez-vous de dépistage sont maintenus. Le dépistage des enfants à 6 ans est maintenu.",
+   "acteur": "PA642847",
+   "nom": "M. Thibault Bazin",
+   "qualite": "",
+   "syceron": [
+    "4165077"
+   ]
+  },
+  {
+   "resume": "La prévention représente un investissement à long terme indispensable pour réduire les hospitalisations et soulager le système de santé.",
+   "citation": "La prévention n'est pas un luxe, mais un levier concret, efficace, et trop longtemps sous-estimé. C'est un investissement sur le long terme.",
+   "acteur": "PA793696",
+   "nom": "M. Serge Muller",
+   "qualite": "",
+   "syceron": [
+    "4165091"
+   ]
+  },
+  {
+   "resume": "L'élargissement du dépistage à de nouveaux professionnels de santé et la mise en place d'un rapport d'évaluation pluriannuel renforcent l'efficacité du dispositif.",
+   "citation": "Élargir la prise de la pression artérielle à de nouveaux professionnels de santé pour multiplier les occasions de détecter un risque avant qu'il ne devienne un drame",
+   "acteur": "PA719550",
+   "nom": "Mme Liliana Tanguy",
+   "qualite": "",
+   "syceron": [
+    "4164996"
+   ]
+  }
+ ],
+ "contre": [],
+ "genere_le": "2026-11-10T21:26:33+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T21:26:33+00:00"
 }

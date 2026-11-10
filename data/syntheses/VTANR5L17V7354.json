@@ -1,10 +1,68 @@
 {
  "uid": "VTANR5L17V7354",
  "num": 7354,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
+ "tentatives": 1,
  "erreurs": [],
  "cr": "CRSANR5L17S2026O1N267",
- "seance_jour": "jeudi 11 juin 2026"
+ "seance_jour": "jeudi 11 juin 2026",
+ "contexte": "L'Assemblée nationale examine, en première lecture, la proposition de loi visant à renforcer la solidarité envers les retraités pauvres. Le texte aborde notamment la question de la récupération sur succession de l'allocation de solidarité aux personnes âgées (Aspa) et les modifications apportées par un amendement du gouvernement instaurant un forfait logement.",
+ "pour": [
+  {
+   "resume": "La suppression de la récupération sur succession lève un frein psychologique majeur et combat le non-recours à l'Aspa.",
+   "citation": "la question du remboursement de l'Aspa semble d'autant plus importante aux yeux de notre groupe que de nombreuses personnes âgées renoncent à recourir à cette allocation. En effet, plus d'une personne éligible sur deux n'y aurait pas recours.",
+   "acteur": "PA841543",
+   "nom": "M. Jean Bodart",
+   "qualite": "",
+   "syceron": [
+    "4119522"
+   ]
+  },
+  {
+   "resume": "Il est injuste que l'aide accordée aux plus modestes se transforme en dette pour leurs descendants ou aboutisse à la perte de la maison familiale.",
+   "citation": "Au décès d'un allocataire possédant un bien d'une valeur supérieure à 100 000 euros dans l'Hexagone et à 150 000 euros dans les pays dits d'outre-mer, l'État récupère ce bien et la famille se retrouve dépossédée de la maison familiale.",
+   "acteur": "PA796010",
+   "nom": "M. Frédéric Maillot",
+   "qualite": "",
+   "syceron": [
+    "4119531"
+   ]
+  },
+  {
+   "resume": "Le compromis trouvé avec le gouvernement permet de financer la mesure tout en garantissant la suppression de la récupération sur succession.",
+   "citation": "L'équilibre trouvé par le ministre en lien avec la rapporteure est parfaitement cohérent avec l'ensemble de notre politique sociale. D'une part, il entraîne un véritable effet de simplification",
+   "acteur": "PA795864",
+   "nom": "M. Pierre Cazeneuve",
+   "qualite": "",
+   "syceron": [
+    "4119684"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "L'instauration d'un forfait logement revient à baisser le montant de l'allocation versée aux retraités propriétaires, ce qui pénalise les plus précaires.",
+   "citation": "Et que nous dit le gouvernement, si ce n'est que pour accepter la fin des récupérations abusives, on baissera le montant de la prestation aujourd'hui perçue par ces gens, dès lors qu'ils sont propriétaires ?",
+   "acteur": "PA793736",
+   "nom": "M. Hadrien Clouet",
+   "qualite": "",
+   "syceron": [
+    "4119693"
+   ]
+  },
+  {
+   "resume": "Le manque d'études d'impact précises et la précipitation dans l'examen de l'amendement du gouvernement ne permettent pas d'identifier clairement les perdants de la réforme.",
+   "citation": "Nous regrettons de devoir légiférer dans la précipitation : nous avons reçu l'amendement de compromis du gouvernement il y a seulement quelques heures. Il nous manque des simulations, une étude d'impact, afin de savoir qui seront les gagnants et les perdants",
+   "acteur": "PA793094",
+   "nom": "M. Nicolas Ray",
+   "qualite": "",
+   "syceron": [
+    "4119697"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-10T21:40:04+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T21:40:04+00:00"
 }

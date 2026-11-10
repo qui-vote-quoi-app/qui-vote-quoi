@@ -1,10 +1,57 @@
 {
  "uid": "VTANR5L17V7904",
  "num": 7904,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
+ "tentatives": 1,
  "erreurs": [],
  "cr": "CRSANR5L17S2026E1N001",
- "seance_jour": "mercredi 01 juillet 2026"
+ "seance_jour": "mercredi 01 juillet 2026",
+ "contexte": "L'Assemblée nationale examine en deuxième lecture la proposition de loi visant à assurer le droit de chaque enfant à être assisté d'un avocat dans le cadre d'une mesure d'assistance éducative et de protection de l'enfance. Le texte prévoit de systématiser cette représentation juridique pour tous les mineurs, sans condition de discernement ou d'âge, et reporte son entrée en vigueur à janvier 2027.",
+ "pour": [
+  {
+   "resume": "La généralisation de l'avocat permet de porter la parole des enfants vulnérables et de renforcer l'effectivité de leurs droits.",
+   "citation": "Avec la généralisation de l'accompagnement par un avocat, quel que soit l'âge ou l'état de discernement, les avocats pourront porter la parole des mineurs, les aider à s'exprimer ou rapporter leurs propos, préparer les audiences, expliquer les décisions du juge des enfants.",
+   "acteur": "PA840665",
+   "nom": "Mme Marie-José Allemand",
+   "qualite": "",
+   "syceron": [
+    "4145135"
+   ]
+  },
+  {
+   "resume": "L'avocat permanent constitue un repère stable et un gardien des droits de l'enfant face aux décisions cruciales des juges.",
+   "citation": "un avocat est nécessaire, car il est le garant des intérêts de l'enfant, et uniquement des siens, et est pour lui une source de stabilité, un fil rouge, une mémoire, une boussole absolument essentielle.",
+   "acteur": "PA720560",
+   "nom": "Mme Perrine Goulet",
+   "qualite": "",
+   "syceron": [
+    "4145707"
+   ]
+  },
+  {
+   "resume": "L'accompagnement systématique par un avocat garantit une meilleure représentation face aux juridictions et compense le manque de moyens des juges.",
+   "citation": "l'assistance systématique du mineur par un avocat, sans considération de sa capacité de discernement, la possibilité donnée au juge de désigner un administrateur lorsqu'il l'estime nécessaire et la prise en charge intégrale de cette assistance par l'État permettront une meilleure représentation des intérêts des enfants placés sous projection judiciaire.",
+   "acteur": "PA267780",
+   "nom": "Mme Agnès Firmin Le Bodo",
+   "qualite": "",
+   "syceron": [
+    "4145726"
+   ]
+  },
+  {
+   "resume": "L'avocat joue un rôle de continuité dans le suivi du dossier, contrairement aux intervenants institutionnels qui changent fréquemment.",
+   "citation": "Les avocats spécialisés en droit des enfants suivent parfois un mineur pendant des années, alors que les juges, les éducateurs et les travailleurs sociaux changent inévitablement. Ils sont parfois les seuls à conserver la mémoire du dossier de l'enfant",
+   "acteur": "PA267042",
+   "nom": "M. Yannick Favennec-Bécot",
+   "qualite": "",
+   "syceron": [
+    "4145736"
+   ]
+  }
+ ],
+ "contre": [],
+ "genere_le": "2026-11-10T21:32:34+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T21:32:34+00:00"
 }

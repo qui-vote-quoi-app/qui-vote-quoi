@@ -1,10 +1,92 @@
 {
  "uid": "VTANR5L17V8421",
  "num": 8421,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
+ "tentatives": 2,
  "erreurs": [],
  "cr": "CRSANR5L17S2026E1N021",
- "seance_jour": "lundi 20 juillet 2026"
+ "seance_jour": "lundi 20 juillet 2026",
+ "contexte": "L'Assemblée nationale examine l'ensemble de la proposition de loi pour une montagne vivante et souveraine, issu des travaux de la commission mixte paritaire. Ce texte vise à adapter les politiques publiques aux spécificités des territoires de montagne en matière d'urbanisme, de services publics, d'agriculture et de gestion de l'eau, quarante ans après la loi montagne de 1985.",
+ "pour": [
+  {
+   "resume": "Le texte consacre le principe de différenciation territoriale pour adapter les services publics et les règles aux réalités locales de la montagne.",
+   "citation": "L'égalité républicaine ne signifie pas en effet appliquer partout les mêmes règles, sans tenir compte de réalités locales. Elle suppose au contraire d'adapter les politiques publiques aux contraintes et aux besoins de chaque territoire.",
+   "acteur": "PA794830",
+   "nom": "M. Hubert Ott",
+   "qualite": "",
+   "syceron": [
+    "4165650",
+    "4165654"
+   ]
+  },
+  {
+   "resume": "De nouvelles garanties sont apportées pour encadrer la fermeture des classes en tenant compte des contraintes géographiques et des temps de trajet.",
+   "citation": "un directeur d'académie pouvait jusqu'à présent fermer une classe sans tenir compte du temps de trajet ou de l'isolement. Ce sera désormais impossible : l'État devra informer les collectivités et procéder à une concertation avec elles avant toute révision de la carte scolaire en montagne.",
+   "acteur": "PA721458",
+   "nom": "M. Xavier Roseren",
+   "qualite": "",
+   "syceron": [
+    "4165659",
+    "4165664"
+   ]
+  },
+  {
+   "resume": "L'accès aux soins d'urgence et à la médecine générale est renforcé pour répondre aux difficultés d'enclavement des zones de montagne.",
+   "citation": "le projet régional de santé devra désormais garantir un accès dans un délai raisonnable aux urgences, à la médecine générale et à la maternité, y compris par transport sanitaire aérien pour les zones les plus enclavées.",
+   "acteur": "PA721458",
+   "nom": "M. Xavier Roseren",
+   "qualite": "",
+   "syceron": [
+    "4165659",
+    "4165664"
+   ]
+  },
+  {
+   "resume": "La gestion de l'eau intègre explicitement le stockage pour répondre aux besoins de l'agriculture, du pastoralisme et des activités touristiques.",
+   "citation": "l'article 4 intègre explicitement la notion de stockage de l'eau pour l'accès à l'eau potable, mais aussi pour satisfaire les besoins de l'agriculture, du pastoralisme et des loisirs de neige.",
+   "acteur": "PA721458",
+   "nom": "M. Xavier Roseren",
+   "qualite": "",
+   "syceron": [
+    "4165659",
+    "4165664"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Les ambitions affichées manquent de financements et de moyens budgétaires concrets pour être pleinement mises en œuvre.",
+   "citation": "Or je ne peux que regretter que le texte propose si peu de moyens pour ces si belles et si nombreuses intentions. Car une ambition sans moyens n'est qu'une belle intention.",
+   "acteur": "PA793664",
+   "nom": "Mme Marie Pochon",
+   "qualite": "",
+   "syceron": [
+    "4165639"
+   ]
+  },
+  {
+   "resume": "Le texte fragilise les règles environnementales et encourage des modèles touristiques dépendants de l'enneigement artificiel au détriment de la sobriété.",
+   "citation": "Pourquoi pousser pour accompagner l'augmentation de la consommation d'eau et soutenir un modèle touristique dépendant de l'enneigement artificiel plutôt qu'organiser la sobriété et la hiérarchisation des usages",
+   "acteur": "PA793664",
+   "nom": "Mme Marie Pochon",
+   "qualite": "",
+   "syceron": [
+    "4165639"
+   ]
+  },
+  {
+   "resume": "Certaines dispositions en matière d'urbanisme risquent de favoriser la spéculation foncière et la multiplication des résidences secondaires.",
+   "citation": "Là où la montagne et le littoral se superposent, c'est la porte laissée ouverte à la spéculation foncière, et je tiens à marquer clairement mon désaccord sur ce point.",
+   "acteur": "PA719138",
+   "nom": "M. Michel Castellani",
+   "qualite": "",
+   "syceron": [
+    "4165678"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-10T21:25:03+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T21:25:03+00:00"
 }

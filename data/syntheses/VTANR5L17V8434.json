@@ -1,10 +1,13 @@
 {
  "uid": "VTANR5L17V8434",
  "num": 8434,
- "statut": "en_attente",
+ "statut": "refusee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
- "erreurs": [],
+ "tentatives": 2,
+ "erreurs": [
+  "Argument pour n°4 : citation de longueur anormale (411 caractères)."
+ ],
  "cr": "CRSANR5L17S2026E1N024",
- "seance_jour": "mardi 21 juillet 2026"
+ "seance_jour": "mardi 21 juillet 2026",
+ "derniere_tentative": "2026-11-10T21:19:27+00:00"
 }

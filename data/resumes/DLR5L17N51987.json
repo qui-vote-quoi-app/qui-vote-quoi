@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51987",
+ "texte": "PIONANR5L17B1673",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code du travail pour autoriser certains établissements à faire travailler leurs salariés le 1er mai. Sont concernés les commerces de produits alimentaires à emporter ou de détail, les vendeurs de fleurs naturelles pour le 1er mai ainsi que les structures culturelles. Le travail ce jour-là nécessite obligatoirement l'accord écrit de salariés volontaires et ouvre droit à une indemnité spécifique. Le refus de travailler ne peut entraîner ni discrimination ni licenciement.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T21:52+00:00"
+}

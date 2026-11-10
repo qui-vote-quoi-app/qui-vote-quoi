@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N53775",
+ "texte": "PIONANR5L17B2496",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte définit les regroupements pédagogiques intercommunaux dans le code de l’éducation et encadre leur création par convention ou par un établissement public de coopération intercommunale. Il précise le contenu obligatoire des conventions, fixe les règles d'évaluation de la capacité d'accueil et détaille la composition des conseils d'école ainsi que les conditions de dissolution et de retrait des communes. Enfin, il prévoit des compensations financières pour l’État et les collectivités territoriales.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T21:56+00:00"
+}

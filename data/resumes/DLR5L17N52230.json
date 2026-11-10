@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N52230",
+ "texte": "PIONANR5L17B2511",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code de procédure pénale pour étendre le droit de visite des parlementaires et des bâtonniers aux locaux des juridictions judiciaires où des personnes sont privées de liberté dans l'attente de leur présentation à un magistrat ou à une formation de jugement.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T21:49+00:00"
+}

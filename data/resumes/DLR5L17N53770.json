@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N53770",
+ "texte": "PIONANR5L17B2491",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte autorise les accords-cadres à inclure une clause de non-exclusivité et permet de recourir à des tiers en cas d'incapacité des titulaires. Il fixe le montant minimal de l'avance à 30 % pour les marchés attribués aux petites et moyennes entreprises ou à leurs sous-traitants. Enfin, il institue un label « achat public local et responsable » attribué selon des critères de transparence, de qualité et de contribution au développement économique local.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T21:53+00:00"
+}

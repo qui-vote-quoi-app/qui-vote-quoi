@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51711",
+ "texte": "PIONANR5L17B1133",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte punit de six mois d'emprisonnement et de 5 000 euros d'amende l'organisation de rassemblements festifs non déclarés ou interdits, en précisant les actes constitutifs de cette participation et en prévoyant la confiscation du matériel saisi. Il punit également les participants simples d'une amende contraventionnelle. Enfin, il prévoit des sanctions applicables aux personnes morales.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T21:54+00:00"
+}

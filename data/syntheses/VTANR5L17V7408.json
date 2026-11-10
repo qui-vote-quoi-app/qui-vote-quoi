@@ -1,10 +1,102 @@
 {
  "uid": "VTANR5L17V7408",
  "num": 7408,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
+ "tentatives": 1,
  "erreurs": [],
  "cr": "CRSANR5L17S2026O1N274",
- "seance_jour": "mercredi 17 juin 2026"
+ "seance_jour": "mercredi 17 juin 2026",
+ "contexte": "Le vote porte sur les conclusions de la commission mixte paritaire concernant la proposition de loi visant à améliorer l'accès au logement des travailleurs des services publics. Ce texte vise à remédier aux difficultés d'attractivité de la fonction publique en facilitant le logement des agents essentiels comme les soignants, enseignants ou policiers, notamment grâce à la modernisation de la clause de fonction et à la mobilisation du foncier public.",
+ "pour": [
+  {
+   "resume": "La modernisation du code de la construction et de l'habitation, avec la création d'une clause de fonction, permet de flécher les logements sociaux vers les agents publics en activité en zone tendue.",
+   "citation": "La modernisation du code de la construction et de l'habitation, avec la création d'une véritable clause de fonction, permettra de flécher les logements sociaux vers les agents en activité. La CMP l'a étendue à l'État, aux hôpitaux, aux collectivités, mais aussi aux délégataires de transports, comme la RATP ou Keolis, en zone tendue.",
+   "acteur": "PA793520",
+   "nom": "M. Mickaël Cosson",
+   "qualite": "",
+   "syceron": [
+    "4124218"
+   ]
+  },
+  {
+   "resume": "Le texte sanctuarise le retour d'une gestion en stock pour les métiers de la sécurité et de la continuité du service afin de répondre aux contraintes opérationnelles des agents.",
+   "citation": "Le texte sanctuarise le retour de la \" gestion en stock \" pour les métiers de la sécurité et de la continuité du service : la défense, la justice, l'intérieur, la santé, les douanes et nos transporteurs. C'est le bon sens opérationnel : pouvoir flécher un logement précis au plus près des besoins et de la sécurité des agents.",
+   "acteur": "PA793520",
+   "nom": "M. Mickaël Cosson",
+   "qualite": "",
+   "syceron": [
+    "4124218"
+   ]
+  },
+  {
+   "resume": "L'augmentation du contingent de réservation à 50 % constitue un outil incitatif pour pousser les administrations à libérer du foncier et loger leurs personnels.",
+   "citation": "Le dispositif prévoit de débloquer le foncier public en portant le contingent de réservation à 50 % même dans le cadre de baux emphytéotiques. C'est un outil pour inciter les administrations à libérer du terrain.",
+   "acteur": "PA793520",
+   "nom": "M. Mickaël Cosson",
+   "qualite": "",
+   "syceron": [
+    "4124218"
+   ]
+  },
+  {
+   "resume": "La clause de fonction est une mesure de bon sens qui conditionne la rotation indispensable au sein du parc de logements attribués en raison d'un emploi.",
+   "citation": "La clause de fonction prévue par l'article 1er constitue ainsi une mesure de bon sens, longtemps attendue : un logement attribué en raison d'un emploi doit être libéré lorsque cet emploi prend fin ! C'est la condition même de la rotation au sein du parc",
+   "acteur": "PA878242",
+   "nom": "M. Antoine Valentin",
+   "qualite": "",
+   "syceron": [
+    "4124348"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Lier trop étroitement le logement à l'emploi fragilise les agents en cas de changement professionnel et rigidifie le marché du travail public.",
+   "citation": "Le premier consiste à lier trop étroitement le logement à l'emploi : un agent qui perd son poste, change d'affectation, n'obtient pas sa mutation pourrait se retrouver fragilisé à la fois professionnellement et dans son logement.",
+   "acteur": "PA227089",
+   "nom": "Mme Valérie Létard",
+   "qualite": "",
+   "syceron": [
+    "4124248",
+    "4124335",
+    "4124337"
+   ]
+  },
+  {
+   "resume": "L'augmentation des droits de réservation pour les administrations risque d'engendrer des inégalités et de réduire l'accès au parc social pour les autres demandeurs fragilisés.",
+   "citation": "Des inégalités entre citoyens ensuite, car dans un contexte de pénurie de logements sociaux, en réserver une part aussi importante à une catégorie de demandeurs, même légitimes, peut réduire les possibilités d'accès d'autres ménages, tout aussi fragilisés par la crise du logement.",
+   "acteur": "PA227089",
+   "nom": "Mme Valérie Létard",
+   "qualite": "",
+   "syceron": [
+    "4124248",
+    "4124335",
+    "4124337"
+   ]
+  },
+  {
+   "resume": "Les dérogations aux plans locaux d'urbanisme permises pour construire sur le foncier public menacent l'autonomie et les décisions d'aménagement des collectivités territoriales.",
+   "citation": "L'article 4 autorisera, en vue de la construction sur foncier public, des dérogations aux règles du PLU. Où nous voyons une atteinte à l'autonomie communale, le rapporteur voit un outil de souplesse ! Le désaccord est réel ; nous ne voulons pas d'un État qui s'affranchit des documents d'urbanisme que les maires ont élaborés au nom de leurs administrés.",
+   "acteur": "PA878242",
+   "nom": "M. Antoine Valentin",
+   "qualite": "",
+   "syceron": [
+    "4124348"
+   ]
+  },
+  {
+   "resume": "Le texte ne résout pas la crise structurelle du logement et se contente de gérer la pénurie en opposant les publics entre eux au détriment des plus fragiles.",
+   "citation": "Nous avons donc besoin avant tout d'outils de relance de la construction ; or le texte, comme tant d'autres avant lui, ne prévoit que de gérer la pénurie, opposer les publics entre eux, remettre en cause le droit des titulaires de logements sociaux à leur maintien dans les lieux.",
+   "acteur": "PA721270",
+   "nom": "M. Stéphane Peu",
+   "qualite": "",
+   "syceron": [
+    "4124340"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-10T21:37:30+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T21:37:30+00:00"
 }

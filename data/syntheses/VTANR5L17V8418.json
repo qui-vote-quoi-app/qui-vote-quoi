@@ -1,10 +1,78 @@
 {
  "uid": "VTANR5L17V8418",
  "num": 8418,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
+ "tentatives": 1,
  "erreurs": [],
  "cr": "CRSANR5L17S2026E1N021",
- "seance_jour": "lundi 20 juillet 2026"
+ "seance_jour": "lundi 20 juillet 2026",
+ "contexte": "Cette proposition de loi, parvenue au terme de son parcours législatif après un accord en commission mixte paritaire, vise à rénover l'organisation, la gouvernance et le modèle économique du sport professionnel français. Le texte aborde notamment la régulation des droits audiovisuels, la lutte contre le piratage, le renforcement de la solidarité avec le sport amateur et le développement du sport professionnel féminin.",
+ "pour": [
+  {
+   "resume": "Le texte rénove le cadre de négociation des droits télévisuels et renforce les outils de lutte contre le piratage pour conforter le modèle économique du sport professionnel.",
+   "citation": "En renouvelant le cadre de négociation des droits télévisuels, devenus la principale source de revenu du sport professionnel, et en donnant un coup d'accélérateur à la lutte contre le piratage, responsable d'une indéniable perte de valeur et de ressources, le texte entend aussi conforter le modèle économique du sport professionnel",
+   "acteur": "PA841295",
+   "nom": "M. Pierrick Courbon",
+   "qualite": "",
+   "syceron": [
+    "4165127"
+   ]
+  },
+  {
+   "resume": "La proposition de loi instaure un écart maximal de un à trois pour la répartition des droits télévisuels entre les clubs afin d'assurer un meilleur partage des revenus.",
+   "citation": "l'inscription, dans le marbre de la loi, d'un écart maximal de un à trois pour la répartition des droits télévisuels, afin d'assurer un meilleur \" partage du gâteau \"",
+   "acteur": "PA841295",
+   "nom": "M. Pierrick Courbon",
+   "qualite": "",
+   "syceron": [
+    "4165127"
+   ]
+  },
+  {
+   "resume": "Les dispositions favorisent le développement du sport féminin en facilitant la création de ligues professionnelles dédiées et en renforçant la solidarité financière entre sports masculins et féminins.",
+   "citation": "Le texte issu de la CMP prévoit notamment de renforcer la solidarité financière entre sport professionnel masculin et féminin, de faciliter la création de ligues professionnelles féminines et d'améliorer la visibilité du sport féminin dans les médias.",
+   "acteur": "PA608826",
+   "nom": "Mme Virginie Duby-Muller",
+   "qualite": "",
+   "syceron": [
+    "4165223"
+   ]
+  },
+  {
+   "resume": "Le texte dote l'Arcom de nouveaux pouvoirs pour bloquer en temps réel les diffusions illicites d'événements sportifs lors des retransmissions en direct.",
+   "citation": "Le texte renforce les pouvoirs de l'Arcom en permettant la mise en place d'un système automatisé afin d'assurer le blocage de l'accès à des sources de diffusion illicites, en temps réel, pendant la diffusion en direct d'un événement sportif.",
+   "acteur": "PA608826",
+   "nom": "Mme Virginie Duby-Muller",
+   "qualite": "",
+   "syceron": [
+    "4165223"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le texte entérine une financiarisation excessive du sport professionnel tout en manquant l'occasion de plafonner les rémunérations des dirigeants.",
+   "citation": "Il n'en demeure pas moins que ce texte entérine, peut-être \" à l'insu de son plein gré \", la logique d'un sport professionnel chaque jour plus financiarisé, devenu ultra-dépendant des moyens et du bon vouloir des diffuseurs comme des paris sportifs.",
+   "acteur": "PA841295",
+   "nom": "M. Pierrick Courbon",
+   "qualite": "",
+   "syceron": [
+    "4165127"
+   ]
+  },
+  {
+   "resume": "La suppression de mesures visant à encadrer les dérives publicitaires des sites de paris sportifs est regrettée.",
+   "citation": "Autre décision arbitraire, alors que cette mesure faisait consensus pour lutter contre les dérives publicitaires des sites de paris sportifs : la suppression par la CMP du, défendu par mon collègue Emmanuel Duplessy.",
+   "acteur": "PA794154",
+   "nom": "M. Jean-Claude Raux",
+   "qualite": "",
+   "syceron": [
+    "4165238"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-10T21:27:39+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T21:27:39+00:00"
 }

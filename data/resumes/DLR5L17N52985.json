@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N52985",
+ "texte": "PRJLANR5L17B2115",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie les règles relatives à la lutte contre les fraudes sociales et fiscales en renforçant le partage d'informations et l'accès aux fichiers entre administrations. Il autorise la transmission de données entre agents des douanes, des services fiscaux, des organismes de sécurité sociale et d'autres services de l'État. Il précise les obligations de signalement et de dépôt de plainte en cas de fraude avérée, élargit l'accès à certains répertoires et fichiers pour les agents habilités, et encadre l'utilisation de ces données par la mise en place de mesures de traçabilité et de conservation.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T21:46+00:00"
+}
