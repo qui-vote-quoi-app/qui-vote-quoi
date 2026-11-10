@@ -2,8 +2,10 @@ name: Mise à jour quotidienne
 
 on:
   schedule:
-    - cron: "0 5 * * *"    # 6 h à Paris en hiver (7 h en été) : votes de la veille
-    - cron: "0 13 * * *"   # 14 h à Paris en hiver : synthèses en attente uniquement
+    # Heures décalées de l'heure pile : GitHub retarde, voire saute, les tâches programmées à :00.
+    - cron: "23 4 * * *"   # 5 h 23 à Paris en hiver (6 h 23 en été) : votes de la veille
+    - cron: "53 5 * * *"   # secours, 6 h 53 : ne fait rien si le passage précédent a réussi
+    - cron: "37 12 * * *"  # 13 h 37 : synthèses en attente uniquement
   workflow_dispatch:
     inputs:
       mode:
@@ -56,10 +58,14 @@ jobs:
           SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
         run: |
           MODE="${{ inputs.mode }}"
-          if [ -z "$MODE" ]; then
-            if [ "${{ github.event.schedule }}" = "0 13 * * *" ]; then MODE=syntheses; else MODE=quotidien; fi
-          fi
-          python -m pipeline.run --mode "$MODE" --rattrapage "${{ inputs.rattrapage || 0 }}"
+          OPTIONS=""
+          case "${{ github.event.schedule }}" in
+            "37 12 * * *") MODE=syntheses ;;
+            "53 5 * * *")  MODE=quotidien; OPTIONS="--secours" ;;
+            "")            ;;
+            *)             MODE=quotidien ;;
+          esac
+          python -m pipeline.run --mode "${MODE:-quotidien}" --rattrapage "${{ inputs.rattrapage || 0 }}" $OPTIONS
 
       - name: Enregistrer l'état et les synthèses dans le dépôt
         if: always()

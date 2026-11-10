@@ -327,9 +327,17 @@ def main(argv=None):
     p.add_argument("--fixtures")
     p.add_argument("--sans-ia", action="store_true")
     p.add_argument("--rattrapage", type=int, default=0, help="programme les synthèses des N derniers jours")
+    p.add_argument("--secours", action="store_true",
+                   help="passage de secours : ne fait rien si la mise à jour quotidienne a déjà réussi aujourd'hui")
     args = p.parse_args(argv)
 
     etat = charger_json(config.ETAT, {})
+    if args.secours and str(etat.get("dernier_quotidien", ""))[:10] == maintenant()[:10]:
+        print("Mise à jour quotidienne déjà faite aujourd'hui : passage de secours inutile.")
+        if os.environ.get("GITHUB_OUTPUT"):
+            with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+                f.write("deployer=false\n")
+        return 0
     syntheses = charger_syntheses()
     rapport = Rapport()
     deployer = False
@@ -353,6 +361,8 @@ def main(argv=None):
             traiter_syntheses(scrutins, syntheses, etat, args, rapport)
             export.exporter(scrutins, deputes, groupes, syntheses, charger_retraits(), dates)
             deployer = True
+            if args.mode == "quotidien" and not args.retrait:
+                etat["dernier_quotidien"] = maintenant()
     except Exception:
         rapport.erreurs.append(traceback.format_exc(limit=3))
         print(traceback.format_exc(), file=sys.stderr)
