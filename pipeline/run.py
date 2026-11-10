@@ -318,7 +318,8 @@ def notifier(rapport, scrutins, mode):
 
 
 def publier_canal(rapport, mode):
-    """Canal Telegram public : un message par vote majeur nouveau, et l'annonce des synthèses publiées.
+    """Canal Telegram public : uniquement les votes importants (un message par vote).
+    Les alertes de fonctionnement (erreurs, demandes, synthèses) partent dans la conversation privée de l'éditeur.
     Aucune donnée d'abonné ne transite par le site : Telegram gère seul la liste des membres du canal."""
     chat = telegram.canal()
     if not chat:
@@ -343,11 +344,7 @@ def publier_canal(rapport, mode):
             r = "adopté" if s["sort"] == "adopté" else "rejeté"
             lignes.append(f"• {E(maj(s['titre'])[:120])} — {r} : {lien(s)}")
         telegram.message("\n".join(lignes), chat=chat)
-    if rapport.publiees:
-        lignes = ["📝 <b>Le débat en bref est disponible</b> : les principaux arguments pour et contre, "
-                  "cités mot pour mot"]
-        lignes += [f"• {E(maj(s['titre'])[:160])} : {lien(s)}" for s in rapport.publiees[:10]]
-        telegram.message("\n".join(lignes), chat=chat)
+
 
 
 # ------------------------------------------------------------------ main

@@ -52,6 +52,7 @@
     <!-- Accueil -->
     <div class="vue accueil" id="vue-accueil" hidden>
       <section class="panel hero">
+        <div class="hero-main">
         <p class="eyebrow">Les votes de l'Assemblée nationale, député par député</p>
         <h2>Qui a voté quoi à l'Assemblée&nbsp;?</h2>
         <p class="hero-intro" id="hero-intro">Tous les scrutins publics de la XVII<sup>e</sup> législature, mis à jour chaque matin à partir des données officielles.</p>
@@ -64,6 +65,12 @@
           <p class="note" id="tq-aide">Par exemple : « Lyon », « 33000 » ou « Dupont ».</p>
         </form>
         <div id="tq-res" class="tq-res" aria-live="polite"></div>
+        </div>
+        <aside class="hero-alerte">
+          <h3>Être prévenu des votes</h3>
+          <p>Chaque vote important sur Telegram : le résultat, ce que prévoit le texte et l'hémicycle. Aucune inscription sur ce site, aucune donnée collectée.</p>
+          <a class="btn plein" href="#alertes">Recevoir les alertes →</a>
+        </aside>
       </section>
       <div class="acc-grille">
         <section class="panel acc-votes">
@@ -79,11 +86,6 @@
           <section class="panel">
             <div class="acc-titre"><h2>Les groupes politiques</h2><a href="#groupes">Voir tout →</a></div>
             <div class="acc-groupes" id="acc-groupes"></div>
-          </section>
-          <section class="panel acc-alerte">
-            <h2>Être prévenu des votes</h2>
-            <p>Recevez chaque vote important sur Telegram, avec le résultat et l'hémicycle. Aucune inscription sur ce site.</p>
-            <a class="btn plein" href="#alertes">Recevoir les alertes →</a>
           </section>
         </div>
       </div>

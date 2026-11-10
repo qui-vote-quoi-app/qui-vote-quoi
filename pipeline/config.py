@@ -29,9 +29,9 @@ PHOTOS = os.environ.get("QVQ_PHOTOS", "1").strip() != "0"
 
 # Synthèses
 CR_DELAI_MAX_JOURS = 7          # au-delà, on abandonne et on alerte
-SYNTHESES_MAX_PAR_PASSAGE = 12  # le reste attend le passage suivant (quota gratuit de l'IA)
+SYNTHESES_MAX_PAR_PASSAGE = 20  # le reste attend le passage suivant (quota gratuit de l'IA)
 PAUSE_ENTRE_SYNTHESES = 5       # secondes, pour ménager le quota par minute
-BUDGET_SYNTHESES_MINUTES = 15    # au-delà, on ne lance plus de nouvelle synthèse dans ce passage
+BUDGET_SYNTHESES_MINUTES = 25    # au-delà, on ne lance plus de nouvelle synthèse dans ce passage
 CATEGORIES_AVEC_SYNTHESE = {"ensemble"}  # synthèse réservée aux votes sur l'ensemble d'un texte
 SEGMENT_MAX_CARACTERES = 30000  # contexte maximal envoyé à l'IA
 ARGUMENTS_MAX_PAR_CAMP = 4

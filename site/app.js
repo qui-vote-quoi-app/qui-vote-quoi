@@ -520,7 +520,17 @@
     var p = cache["page:" + id] || (cache["page:" + id] = fetch("pages/" + id + ".html?v=" + encodeURIComponent(VERSION)).then(function (r) { if (!r.ok) throw new Error(id); return r.text(); }));
     p.then(function (html) {
       if (st.page !== id) return;
-      el.innerHTML = '<article class="panel prose">' + html + "</article>";
+      el.innerHTML = '<div class="panel doc"><article class="prose">' + html + '</article><aside class="doc-aside" aria-label="Sur cette page"></aside></div>';
+      var titres = el.querySelectorAll(".prose h2"), aside = el.querySelector(".doc-aside");
+      if (titres.length > 1) {
+        aside.innerHTML = '<p class="eyebrow">Sur cette page</p><ol>' + [].map.call(titres, function (h, i) {
+          return '<li><button type="button" data-sec="' + i + '">' + esc(h.textContent) + "</button></li>";
+        }).join("") + '</ol><p class="doc-aide">Une question, une erreur ? <a href="#contact">Contact</a></p>';
+        aside.onclick = function (e) {
+          var b = e.target.closest("button[data-sec]"); if (!b) return;
+          titres[+b.dataset.sec].scrollIntoView({ behavior: "smooth", block: "start" });
+        };
+      } else aside.remove();
       var canal = (st.meta.canal || "").replace(/^@/, "");
       [].forEach.call(el.querySelectorAll("[data-si-canal]"), function (x) { x.hidden = !canal; });
       [].forEach.call(el.querySelectorAll("[data-sans-canal]"), function (x) { x.hidden = !!canal; });
