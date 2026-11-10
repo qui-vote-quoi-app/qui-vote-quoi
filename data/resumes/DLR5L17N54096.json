@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N54096",
+ "texte": "PIONANR5L17B2922",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte instaure, à titre expérimental jusqu'en juin 2033, une gouvernance territoriale unifiée pour le centre de ressources, d'expertise et de performance sportive de Vichy. Il élargit ses missions pour le compte de l'État et d'une structure intercommunale, précise la répartition des charges financières et matérielles, et modifie la composition du conseil d'administration ainsi que les modalités de nomination du directeur. Enfin, il prévoit la mise en place d'un comité d'évaluation chargé de remettre un rapport au Parlement.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T19:09+00:00"
+}

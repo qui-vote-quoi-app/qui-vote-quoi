@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N53980",
+ "texte": "PRJLANR5L17B2850",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte renforce la régulation et le contrôle des produits explosifs et des articles pyrotechniques en permettant des fermetures administratives d'établissements et en instaurant une procédure de dessaisissement pour les détenteurs. Il aggrave les sanctions pénales liées à ces produits et à leur commercialisation. De plus, il encadre l'organisation des rassemblements festifs musicaux en renforçant les obligations des loueurs de matériel de sonorisation et en alourdissant les sanctions applicables aux organisateurs et aux participants de rassemblements non déclarés ou interdits.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T19:15+00:00"
+}

@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51670",
+ "texte": "PIONANR5L17B1100",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte crée un droit d'accès à l'aide à mourir, qui permet à une personne majeure, atteinte d'une affection grave, incurable et en phase avancée provoquant des souffrances réfractaires ou insupportables, de demander une substance létale. Il encadre strictement la procédure médicale, depuis la demande initiale et l'évaluation par une équipe pluriprofessionnelle jusqu'à l'administration du produit par le patient lui-même ou, s'il ne le peut physiquement, par un médecin ou un infirmier.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T19:23+00:00"
+}

@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51037",
+ "texte": "PIONANR5L17B0691",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte crée une présomption de légitime défense pour les policiers nationaux, municipaux et les gendarmes faisant usage de leur arme selon les conditions du code de la sécurité intérieure. Cette présomption peut toutefois être renversée par une enquête judiciaire établissant un usage des armes manifestement disproportionné ou contraire à la nécessité absolue.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T19:25+00:00"
+}

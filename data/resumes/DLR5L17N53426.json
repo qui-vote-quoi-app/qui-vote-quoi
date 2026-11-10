@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N53426",
+ "texte": "PIONANR5L17B2309",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte intègre obligatoirement le dépistage des maladies cardio-neuro-vasculaires et de leurs facteurs de risque aux actions nationales et locales de prévention en santé publique. Il impose aux employeurs d'organiser au moins une fois par an une action de sensibilisation et d'information sur ces risques cardiovasculaires au bénéfice des salariés, pouvant être réalisée en lien avec des associations agréées. Enfin, il prévoit des compensations financières pour l'État et la sécurité sociale par une majoration de la taxe sur les tabacs.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T19:21+00:00"
+}

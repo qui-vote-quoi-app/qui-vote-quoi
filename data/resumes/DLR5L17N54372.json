@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N54372",
+ "texte": "PRJLANR5L17B2841",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte encadre la durée des mesures de placement des mineurs et modifie les conditions de leur renouvellement par le juge des enfants. Il simplifie les procédures de déclaration de délaissement parental pour les enfants de moins de trois ans et permet d'adapter l'accueil de suppléance parentale en vue d'une adoption. Enfin, il harmonise l'indemnisation des tiers digne de confiance et réforme la réglementation applicable aux assistants familiaux pour faciliter leur recrutement.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T19:19+00:00"
+}

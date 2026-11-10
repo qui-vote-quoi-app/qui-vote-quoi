@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N54445",
+ "texte": "PIONANR5L17B2892",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte officialise la dématérialisation totale des titres-restaurant et encadre leur émission par les employeurs ou des entreprises spécialisées. Il interdit les rabais financiers lors de la vente des titres aux employeurs et impose aux émetteurs d'informer chaque année les commerçants sur les frais appliqués. De plus, il offre la possibilité aux salariés de faire don de leurs titres à des associations d'aide alimentaire et prolonge jusqu'en décembre 2027 le dispositif permettant d'acheter des produits alimentaires non cuisinés.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T19:12+00:00"
+}
