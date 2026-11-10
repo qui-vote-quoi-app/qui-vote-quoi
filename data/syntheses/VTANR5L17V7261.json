@@ -1,8 +1,62 @@
 {
  "uid": "VTANR5L17V7261",
  "num": 7261,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026O1N259",
+ "seance_jour": "mardi 02 juin 2026",
+ "contexte": "L'Assemblée nationale examine en deuxième lecture la proposition de loi visant à reconnaître la responsabilité de l'État et à indemniser les victimes du chlordécone en Martinique et en Guadeloupe. Ce pesticide, utilisé dans les bananeraies entre 1972 et 1993 malgré sa toxicité avérée, a contaminé durablement les sols, les eaux et l'organisme d'une large majorité de la population locale, générant de graves problèmes sanitaires et économiques.",
+ "pour": [
+  {
+   "resume": "Ce texte constitue une étape indispensable pour graver dans la loi la reconnaissance des fautes de l'État et ouvrir la voie à la justice pour les populations touchées.",
+   "citation": "Le vote d'aujourd'hui n'effacera ni les souffrances humaines, ni les terres empoisonnées, ni les eaux contaminées. Mais pour la première fois, il gravera dans la loi une évidence dont les peuples de Martinique et de Guadeloupe sont imprégnés depuis des décennies : l'État savait depuis longtemps",
+   "acteur": "PA610654",
+   "nom": "M. Jean-Philippe Nilor",
+   "qualite": "",
+   "syceron": [
+    "4113338",
+    "4113442",
+    "4113344",
+    "4113346"
+   ]
+  },
+  {
+   "resume": "La reconnaissance de la responsabilité publique et l'engagement de réparations répondent à un devoir fondamental d'égalité et de dignité envers les citoyens des territoires ultramarins.",
+   "citation": "Nous nous apprêtons à voter un texte visant à rétablir nos compatriotes martiniquais et guadeloupéens dans leurs droits et dans leur chair. Car les blessures de la chair ne se réparent pas à coups de mots, mais par des textes de droit qui ouvrent la voie de la réparation.",
+   "acteur": "PA720992",
+   "nom": "M. Jiovanny William",
+   "qualite": "",
+   "syceron": [
+    "4113348",
+    "4113353",
+    "4113356"
+   ]
+  },
+  {
+   "resume": "La version adoptée par le Sénat offre un cadre équilibré en précisant la notion de responsabilité sans affaiblir la portée des mesures de soutien et de recherche.",
+   "citation": "Le Sénat a souhaité préciser que l'État a \" sa part de responsabilité \", ce qui n'a pas pour effet d'amoindrir la portée de la reconnaissance, mais de préciser que des coresponsabilités peuvent être recherchées.",
+   "acteur": "PA720390",
+   "nom": "M. Jérôme End",
+   "qualite": "",
+   "syceron": [
+    "4113358"
+   ]
+  },
+  {
+   "resume": "Face à une pollution qui persiste depuis des décennies et affecte la santé de générations entières ainsi que la souveraineté alimentaire, la représentation nationale doit agir.",
+   "citation": "Nous débattons donc aujourd'hui non pas d'un scandale du passé, mais d'un scandale qui continue de produire ses effets. Voilà pourquoi le groupe Écologiste et social votera ce texte.",
+   "acteur": "PA842013",
+   "nom": "M. Steevy Gustave",
+   "qualite": "",
+   "syceron": [
+    "4113580"
+   ]
+  }
+ ],
+ "contre": [],
+ "genere_le": "2026-11-10T22:16:27+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T22:16:27+00:00"
 }

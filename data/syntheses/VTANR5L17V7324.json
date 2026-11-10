@@ -1,8 +1,29 @@
 {
  "uid": "VTANR5L17V7324",
  "num": 7324,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 2,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026O1N263",
+ "seance_jour": "jeudi 04 juin 2026",
+ "contexte": "L'Assemblée nationale examine en première lecture la proposition de loi portant plusieurs mesures de justice en faveur de la revalorisation des pensions de retraites agricoles. Les discussions portent notamment sur la situation financière particulièrement précaire des exploitants agricoles, y compris dans les départements d'outre-mer.",
+ "pour": [
+  {
+   "resume": "Le montant de la dépense publique demandée pour les retraités agricoles est mesuré au regard d'autres budgets de l'État.",
+   "citation": "nous demandons 1 milliard pour nos agriculteurs, nous considérons que leur travail est important, et certains groupes affirment que cela coûte trop cher !",
+   "acteur": "PA796010",
+   "nom": "M. Frédéric Maillot",
+   "qualite": "",
+   "syceron": [
+    "4117272",
+    "4117318",
+    "4117320"
+   ]
+  }
+ ],
+ "contre": [],
+ "genere_le": "2026-11-10T22:11:29+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T22:11:29+00:00"
 }

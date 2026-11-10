@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51346",
+ "texte": "PIONANR5L17B0841",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte crée un cadre d'emploi unique pour les professionnels de santé des services d'incendie et de secours, regroupant médecins, infirmiers, pharmaciens, psychologues et docteurs-vétérinaires au sein d'une sous-direction santé. Il définit leurs attributions spécifiques en matière de soins d'urgence, de prévention et d'expertise, et précise leurs conditions d'exercice, notamment en matière d'inscription ordinale et de délégation de tâches. Enfin, il prévoit des modalités d'intégration directe pour les personnels du service de santé des armées en fin d'engagement et étend ces dispositions à la brigade des sapeurs-pompiers de Paris et au bataillon des marins-pompiers de Marseille.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T22:42+00:00"
+}

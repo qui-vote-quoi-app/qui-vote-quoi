@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N53720",
+ "texte": "PIONANR5L17B2445",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte soumet les hautes rémunérations des agences et opérateurs de l'État à un contrôle annuel des commissions parlementaires. Il impose à ces organismes la conclusion de contrats d'objectifs, de performance et de moyens avec l'État, ainsi que la publication de rapports annuels d'exécution. Enfin, il garantit à l'État la majorité des droits de vote dans les conseils d'administration des organismes qu'il finance principalement.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T22:37+00:00"
+}

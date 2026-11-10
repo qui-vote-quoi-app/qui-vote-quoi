@@ -1,8 +1,47 @@
 {
  "uid": "VTANR5L17V6572",
  "num": 6572,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026O1N232",
+ "seance_jour": "mercredi 13 mai 2026",
+ "contexte": "L'Assemblée nationale examine en première lecture la proposition de loi visant à mettre en place un programme de soutien à l'innovation thérapeutique contre les cancers, les maladies rares et les maladies orphelines de l'enfant. Les discussions portent sur la nécessité d'encourager la recherche face à des pathologies souvent délaissées par les logiques de rentabilité de l'industrie pharmaceutique.",
+ "pour": [
+  {
+   "resume": "Ce texte aborde un enjeu crucial et attendu concernant les cancers pédiatriques et les maladies rares affectant les enfants.",
+   "citation": "Elle aborde un problème complexe, qui nous touche particulièrement : celui des cancers pédiatriques et des maladies rares affectant les enfants. Il importe d'obtenir des avancées en la matière.",
+   "acteur": "PA720022",
+   "nom": "M. Michel Lauzzana",
+   "qualite": "",
+   "syceron": [
+    "4086014"
+   ]
+  },
+  {
+   "resume": "La proposition de loi apporte des solutions cohérentes pour faire émerger la recherche et l'innovation thérapeutique hors des logiques de rentabilité financière.",
+   "citation": "Elle a tenté de trouver des solutions pour que la recherche et l'innovation thérapeutique contre les cancers pédiatriques et les maladies orphelines de l'enfant puissent émerger. Ces solutions me semblent cohérentes.",
+   "acteur": "PA840997",
+   "nom": "M. Benoît Biteau",
+   "qualite": "",
+   "syceron": [
+    "4086017"
+   ]
+  },
+  {
+   "resume": "L'adoption de ce texte doit permettre d'apporter des réponses concrètes aux familles confrontées à la maladie dès le début de la vie des enfants.",
+   "citation": "Le groupe Écologiste et social votera en faveur de ce texte, dont le contenu devrait aider à apporter des réponses aux familles qui vivent l'insupportable au début de la vie de leurs enfants.",
+   "acteur": "PA840997",
+   "nom": "M. Benoît Biteau",
+   "qualite": "",
+   "syceron": [
+    "4086017"
+   ]
+  }
+ ],
+ "contre": [],
+ "genere_le": "2026-11-10T22:31:20+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T22:31:20+00:00"
 }

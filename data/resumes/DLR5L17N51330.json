@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51330",
+ "texte": "PIONANR5L17B0824",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte interdit aux services de communication en ligne de restreindre l'affichage des publications de presse pendant et après les négociations sur les droits voisins. Il punit d'une amende le refus de transmettre les informations nécessaires aux négociations et prévoit la saisine de l'Autorité de la concurrence en cas de désaccord persistant pour fixer la rémunération.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T22:41+00:00"
+}

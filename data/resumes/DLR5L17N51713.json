@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51713",
+ "texte": "PIONANR5L17B1135",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code de l'urbanisme pour étendre le droit de préemption des communes. Il l'applique aux cessions de la majorité des parts de sociétés civiles immobilières dont le patrimoine est une unité économique commerciale.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T22:44+00:00"
+}

@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51672",
+ "texte": "PIONANR5L17B1102",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte redéfinit le cadre des soins palliatifs et d'accompagnement en garantissant un accès équitable sur l'ensemble du territoire et en créant des organisations territoriales dédiées. Il instaure une stratégie décennale et une loi de programmation pluriannuelle pour financer le développement de ces soins. Enfin, il intègre une formation obligatoire pour les professionnels de santé, crée des maisons d'accompagnement pour les personnes en fin de vie et met en place des recours juridiques en cas d'absence de prise en charge.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T22:43+00:00"
+}

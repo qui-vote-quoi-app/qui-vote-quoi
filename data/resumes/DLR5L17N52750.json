@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N52750",
+ "texte": "PIONANR5L17B1800",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte permet la création d'une collectivité territoriale unique exerçant les compétences des départements et de la région, par délibérations concordantes de leurs assemblées ou de la collectivité européenne d'Alsace. Il prévoit le transfert des biens, des droits, des obligations, des financements et du personnel concernés. Enfin, il modifie le code général des collectivités territoriales pour intégrer le statut particulier de la collectivité européenne d'Alsace.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T22:34+00:00"
+}

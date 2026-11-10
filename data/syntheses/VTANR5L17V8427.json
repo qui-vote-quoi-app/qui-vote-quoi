@@ -1,13 +1,14 @@
 {
  "uid": "VTANR5L17V8427",
  "num": 8427,
- "statut": "en_attente",
+ "statut": "refusee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 2,
+ "tentatives": 4,
  "erreurs": [
-  "IA indisponible : gemini-flash-lite-latest : erreur 503"
+  "Argument contre n°2 : la citation ne figure pas mot pour mot dans P10.",
+  "Argument contre n°3 : la citation ne figure pas mot pour mot dans P28."
  ],
  "cr": "CRSANR5L17S2026E1N022",
  "seance_jour": "lundi 20 juillet 2026",
- "derniere_tentative": "2026-11-10T21:23:20+00:00"
+ "derniere_tentative": "2026-11-10T22:08:12+00:00"
 }

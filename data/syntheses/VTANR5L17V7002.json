@@ -1,8 +1,60 @@
 {
  "uid": "VTANR5L17V7002",
  "num": 7002,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026O1N250",
+ "seance_jour": "jeudi 28 mai 2026",
+ "contexte": "L'Assemblée nationale examine en première lecture une proposition de loi visant à abroger le \" code noir \", texte historique régissant l'esclavage colonial. Le débat aborde la nécessité de solder cet héritage juridique, la question de la mémoire collective et d'éventuelles mesures de réparation pour les territoires et les populations concernés.",
+ "pour": [
+  {
+   "resume": "L'abrogation constitue un acte de cohérence républicaine indispensable pour réaffirmer l'égale dignité des personnes et l'universalité des principes fondamentaux.",
+   "citation": "L'abrogation du Code noir est un acte de cohérence républicaine. C'est réaffirmer avec force, solennité et émotion - notre collègue Steevy Gustave nous a fait partager la sienne tout à l'heure -, les principes fondamentaux de la République : la dignité - l'égale dignité de la personne humaine -, l'égalité et la liberté.",
+   "acteur": "PA266797",
+   "nom": "M. Philippe Gosselin",
+   "qualite": "",
+   "syceron": [
+    "4104034",
+    "4104036",
+    "4104038"
+   ]
+  },
+  {
+   "resume": "Ce vote permet de rejeter sans ambiguïté un texte qui a organisé une atteinte grave à la dignité humaine, tout en restant vigilant face à toute instrumentalisation mémorielle.",
+   "citation": "Ce vote permet de réaffirmer clairement qu'aucune ambiguïté ne saurait subsister à l'égard d'un texte qui a organisé l'une des plus graves atteintes à la dignité humaine. L'esclavage fut une abomination.",
+   "acteur": "PA793334",
+   "nom": "M. Cyril Tribuiani",
+   "qualite": "",
+   "syceron": [
+    "4104342",
+    "4104344"
+   ]
+  },
+  {
+   "resume": "La suppression de ce corpus juridique répond à une exigence de justice mémorielle et permet d'ouvrir le débat sur les conséquences socio-économiques actuelles de l'ordre colonial.",
+   "citation": "Alors oui, nous voterons pour ce texte, qui répond à une exigence de justice mémorielle, mais nous affirmons aussi qu'il n'est qu'un point de départ.",
+   "acteur": "PA795228",
+   "nom": "Mme Nadège Abomangoli",
+   "qualite": "",
+   "syceron": [
+    "4104346"
+   ]
+  },
+  {
+   "resume": "L'élimination de cette trace juridique de notre droit permet à la République de reconnaître pleinement son histoire et d'affirmer qu'aucun texte fondé sur la négation de la dignité ne peut y subsister.",
+   "citation": "Voter cette abrogation, ce n'est pas prétendre réparer à nous seuls des siècles de souffrance. Ce n'est pas réécrire l'histoire, c'est au contraire la reconnaître pleinement, en disant avec la force de la loi républicaine que jamais un texte fondé sur la négation de la dignité humaine ne pourra avoir sa place dans l'héritage juridique de la France",
+   "acteur": "PA720370",
+   "nom": "M. Ludovic Mendes",
+   "qualite": "",
+   "syceron": [
+    "4104056"
+   ]
+  }
+ ],
+ "contre": [],
+ "genere_le": "2026-11-10T22:26:47+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T22:26:47+00:00"
 }

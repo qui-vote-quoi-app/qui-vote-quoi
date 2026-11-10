@@ -1,8 +1,103 @@
 {
  "uid": "VTANR5L17V6736",
  "num": 6736,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026O1N236",
+ "seance_jour": "mardi 19 mai 2026",
+ "contexte": "L'Assemblée nationale examine, en première lecture, le projet de loi actualisant la programmation militaire pour les années 2024 à 2030. Ce texte ajuste la trajectoire budgétaire pour porter l'enveloppe dédiée aux armées de 400 à 436 milliards d'euros et intègre diverses dispositions relatives à la défense, aux équipements et à la condition militaire.",
+ "pour": [
+  {
+   "resume": "L'actualisation de la programmation militaire est jugée nécessaire face au durcissement du contexte géopolitique et à la réalité des conflits de haute intensité.",
+   "citation": "Le monde dans lequel nous vivons s'est profondément durci. Les conflits de haute intensité ne sont plus une hypothèse théorique, mais une réalité aux portes de l'Europe. Dans ce contexte, l'actualisation de notre programmation militaire était une nécessité.",
+   "acteur": "PA267042",
+   "nom": "M. Yannick Favennec-Bécot",
+   "qualite": "",
+   "syceron": [
+    "4090991"
+   ]
+  },
+  {
+   "resume": "L'augmentation de l'enveloppe budgétaire à 436 milliards d'euros constitue un signal fort et donne de la visibilité aux armées et à la base industrielle et technologique de défense.",
+   "citation": "ce texte permettra de porter l'enveloppe dédiée à nos armées de 400 milliards à 436 milliards d'euros d'ici 2030. Il s'agit d'un signal fort adressé à nos armées, à nos alliés, mais aussi à nos adversaires.",
+   "acteur": "PA267042",
+   "nom": "M. Yannick Favennec-Bécot",
+   "qualite": "",
+   "syceron": [
+    "4090991"
+   ]
+  },
+  {
+   "resume": "Le texte intègre les enseignements des conflits contemporains en renforçant les stocks de munitions, la dronisation, la défense sol-air et la préparation opérationnelle.",
+   "citation": "Notre groupe soutient en particulier les choix qui ont été faits en matière de stocks de munitions, de drones, de défense sol-air et de préparation opérationnelle. Les enseignements des conflits contemporains sont ainsi pleinement intégrés.",
+   "acteur": "PA267042",
+   "nom": "M. Yannick Favennec-Bécot",
+   "qualite": "",
+   "syceron": [
+    "4090991"
+   ]
+  },
+  {
+   "resume": "Ce texte apporte aux armées une partie des moyens indispensables et permet d'obtenir des avancées normatives et budgétaires pour les équipements et les infrastructures.",
+   "citation": "Malgré ses limites, ses faiblesses et son manque de vision, cette actualisation apporte tout de même à nos armées une partie des moyens dont elles avaient déjà besoin en 2023.",
+   "acteur": "PA796034",
+   "nom": "M. Frank Giletti",
+   "qualite": "",
+   "syceron": [
+    "4091044",
+    "4091053"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "L'augmentation des dépenses militaires s'accompagne de coupes budgétaires préjudiciables dans les services publics et les politiques sociales.",
+   "citation": "Pendant que l'on prévoit ces 36 milliards supplémentaires, l'austère valse des coupes budgétaires dans les services publics, dans la sécurité sociale, dans les politiques sociales continue. L'hôpital manque de lits ; l'école manque de professeurs",
+   "acteur": "PA796106",
+   "nom": "M. Édouard Bénard",
+   "qualite": "",
+   "syceron": [
+    "4091002",
+    "4091010"
+   ]
+  },
+  {
+   "resume": "Le texte instaure un régime d'exception et étend les techniques de renseignement au détriment des libertés publiques et du rôle du Parlement.",
+   "citation": "Ce texte étend les techniques de renseignement, renforce le contrôle de la recherche, facilite les dérogations au droit social et environnemental et crée un nouvel \" état d'alerte de sécurité nationale \" permettant au gouvernement de contourner le Parlement.",
+   "acteur": "PA796106",
+   "nom": "M. Édouard Bénard",
+   "qualite": "",
+   "syceron": [
+    "4091002",
+    "4091010"
+   ]
+  },
+  {
+   "resume": "Le projet comporte des dispositions visant à caporaliser la jeunesse et à transformer le service national en un outil d'intégration militaire.",
+   "citation": "Ne comptez pas sur nous non plus pour transformer la jeunesse en variable d'ajustement de cette stratégie militaire. La journée citoyenne deviendra demain une \" journée de mobilisation \". Le recensement évolue vers un suivi administratif permanent.",
+   "acteur": "PA796106",
+   "nom": "M. Édouard Bénard",
+   "qualite": "",
+   "syceron": [
+    "4091002",
+    "4091010"
+   ]
+  },
+  {
+   "resume": "Le développement et la modernisation de l'arsenal nucléaire constituent une faute politique et une forme de prolifération en contradiction avec l'objectif de désarmement.",
+   "citation": "En droit international, le développement performatif de la bombe atomique porte un nom : c'est de la prolifération ! Il convient de cesser de maquiller cette orientation stratégique et de l'assumer. Quant à nous, nous assumons qu'elle constitue une faute politique.",
+   "acteur": "PA796106",
+   "nom": "M. Édouard Bénard",
+   "qualite": "",
+   "syceron": [
+    "4091002",
+    "4091010"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-10T22:29:19+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T22:29:19+00:00"
 }

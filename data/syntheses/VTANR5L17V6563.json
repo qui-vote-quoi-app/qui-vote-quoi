@@ -1,8 +1,59 @@
 {
  "uid": "VTANR5L17V6563",
  "num": 6563,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026O1N231",
+ "seance_jour": "mardi 12 mai 2026",
+ "contexte": "L'Assemblée nationale examine en première lecture la proposition de loi visant à garantir l'information et la protection effective des victimes de violences sexistes et sexuelles lors de la libération de leur agresseur. Les débats portent sur la nécessité d'informer et de protéger les victimes, tout en soulevant des interrogations sur les moyens budgétaires alloués aux structures d'accompagnement et sur la portée jugée trop restreinte du texte.",
+ "pour": [
+  {
+   "resume": "La proposition de loi est soutenue car elle consacre le droit fondamental des victimes à être informées des décisions concernant leur agresseur, notamment sa libération.",
+   "citation": "nous soutenons le droit total des victimes à être informées des décisions qui les concernent, en particulier la libération de leurs agresseurs.",
+   "acteur": "PA795108",
+   "nom": "Mme Élise Leboucher",
+   "qualite": "",
+   "syceron": [
+    "4085915"
+   ]
+  },
+  {
+   "resume": "Le texte va dans le bon sens en prévoyant des mesures d'éloignement des auteurs de violences partout où ils constituent un danger.",
+   "citation": "Nous soutenons aussi l'idée qu'il faut protéger les victimes, et éloigner les auteurs de ces violences partout où ceux-ci peuvent constituer un danger.",
+   "acteur": "PA795108",
+   "nom": "Mme Élise Leboucher",
+   "qualite": "",
+   "syceron": [
+    "4085915"
+   ]
+  },
+  {
+   "resume": "La création d'un guichet unique de suivi des victimes est saluée pour veiller à la mise en œuvre des interdictions judiciaires et à l'orientation des victimes.",
+   "citation": "Bien que nous déplorions que ce guichet unique ait été déclassé au rang d'expérimentation, nous soutenons sa création.",
+   "acteur": "PA795108",
+   "nom": "Mme Élise Leboucher",
+   "qualite": "",
+   "syceron": [
+    "4085915"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "La proposition de loi aborde le problème des violences par le petit bout de la lorgnette au lieu de proposer une approche intégrale et globale.",
+   "citation": "Ce soir, nous avons abordé par un tout petit bout ce problème de fond, ce problème fondamental, ce problème qui plombe notre société : les violences faites aux femmes et aux enfants de manière systémique",
+   "acteur": "PA841893",
+   "nom": "Mme Céline Thiébault-Martinez",
+   "qualite": "",
+   "syceron": [
+    "4085923",
+    "4085925"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-10T22:32:54+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T22:32:54+00:00"
 }

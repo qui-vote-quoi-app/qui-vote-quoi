@@ -1,8 +1,73 @@
 {
  "uid": "VTANR5L17V6645",
  "num": 6645,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026O1N233",
+ "seance_jour": "mercredi 13 mai 2026",
+ "contexte": "L'Assemblée nationale examine, en première lecture, la proposition de loi pour une montagne vivante et souveraine. Les débats portent sur plusieurs aspects de l'aménagement des territoires de montagne, notamment la continuité du bâti, la protection des glaciers, la reconstruction des chalets d'alpage et la réglementation applicable aux abattoirs locaux.",
+ "pour": [
+  {
+   "resume": "Le texte vise à préciser le principe de continuité du bâti pour offrir une réponse adaptée aux besoins des élus locaux et permettre l'accueil de nouveaux foyers dans les communes de montagne.",
+   "citation": "Ce texte a pour ambition de préciser ce sur quoi repose ce principe de continuité et d'apporter ainsi une réponse rationnelle et homogène aux situations auxquelles sont régulièrement confrontés les élus de montagne",
+   "acteur": "PA330909",
+   "nom": "M. Vincent Descoeur",
+   "qualite": "",
+   "syceron": [
+    "4087537",
+    "4087540",
+    "4087542"
+   ]
+  },
+  {
+   "resume": "La possibilité de reconstruire des chalets d'alpage à l'état de ruines permet de préserver le patrimoine montagnard tout en encadrant strictement les interventions grâce à l'avis des conseils municipaux et des commissions compétentes.",
+   "citation": "Introduit dans le texte suite à l'adoption d'un amendement de mon collègue Vincent Rolland, cet article additionnel vise à conserver l'activité professionnelle saisonnière d'une part et à favoriser la mise en valeur du patrimoine d'autre part.",
+   "acteur": "PA607090",
+   "nom": "M. Jean-Pierre Vigier",
+   "qualite": "rapporteur",
+   "syceron": [
+    "4087927",
+    "4087930"
+   ]
+  },
+  {
+   "resume": "L'assouplissement des seuils pour certains petits abattoirs locaux est indispensable pour éviter leur fermeture et maintenir une organisation agricole de proximité en zone de montagne.",
+   "citation": "Sans cet assouplissement à la marge, certains abattoirs vont disparaître.",
+   "acteur": "PA607090",
+   "nom": "M. Jean-Pierre Vigier",
+   "qualite": "rapporteur",
+   "syceron": [
+    "4087322",
+    "4087324",
+    "4087327"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "La possibilité de reconstruire des bâtiments à partir de simples vestiges risque de favoriser la prolifération de résidences secondaires et d'accroître la pression touristique et l'urbanisation des milieux naturels.",
+   "citation": "Son objectif est de permettre la reconstruction d'estives ou de chalets d'alpage, même à l'état de ruines ou de simples vestiges. Les extensions limitées seraient désormais applicables à toutes les restaurations",
+   "acteur": "PA793664",
+   "nom": "Mme Marie Pochon",
+   "qualite": "",
+   "syceron": [
+    "4087914"
+   ]
+  },
+  {
+   "resume": "L'autorisation de réhabiliter des bâtiments d'estive pour y permettre l'habitat entraînera mécaniquement leur raccordement aux réseaux et favorisera une urbanisation non maîtrisée en dehors des hameaux.",
+   "citation": "Si vous les réhabilitez avec la fonction d'habitat, à titre principal, ou secondaire en dépit de ce qu'espère notre collègue Echaniz, vous autoriserez obligatoirement leur raccordement à une multiplicité de réseaux, ce qui débouchera sur une artificialisation et une urbanisation effrénées",
+   "acteur": "PA795136",
+   "nom": "M. Jean-François Coulomme",
+   "qualite": "",
+   "syceron": [
+    "4086525"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-10T22:30:20+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T22:30:20+00:00"
 }

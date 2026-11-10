@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N53672",
+ "texte": "PIONANR5L17B2385",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte prévoit la mise en place d'un enseignement à la défense nationale et à la sécurité globale dans les établissements du second degré. Cet enseignement est défini par arrêté conjoint des ministres chargés de l'éducation nationale et des armées, et peut associer des réservistes. Enfin, il est prévu une compensation financière pour l'État par la création d'une taxe additionnelle.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T22:38+00:00"
+}

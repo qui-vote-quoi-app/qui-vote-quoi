@@ -1,8 +1,85 @@
 {
  "uid": "VTANR5L17V7027",
  "num": 7027,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 2,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026O1N251",
+ "seance_jour": "jeudi 28 mai 2026",
+ "contexte": "Ce vote porte sur l'ensemble de la proposition de loi visant à mobiliser l'habitat existant pour répondre à la crise du logement, en première lecture. Le texte modifie notamment le statut du bailleur privé et aborde divers dispositifs d'investissement et de rénovation immobilière.",
+ "pour": [
+  {
+   "resume": "Le texte constitue une initiative utile pour faire face à la crise majeure du logement et sert de point de départ à de futures politiques territoriales adaptées.",
+   "citation": "Toute initiative en faveur du logement est bonne à prendre, et vous nous donnez justement l'occasion d'améliorer la situation du logement face à la crise majeure que nous vivons.",
+   "acteur": "PA719388",
+   "nom": "Mme Annaïg Le Meur",
+   "qualite": "",
+   "syceron": [
+    "4105600"
+   ]
+  },
+  {
+   "resume": "Malgré des insuffisances et des contraintes, le texte est soutenu afin de renforcer la production de logements et de soutenir l'investissement privé.",
+   "citation": "Malgré tous ces freins et insuffisances, nous voterons ce texte visant à améliorer le statut du bailleur privé.",
+   "acteur": "PA793246",
+   "nom": "M. Frédéric Falcon",
+   "qualite": "",
+   "syceron": [
+    "4105594"
+   ]
+  },
+  {
+   "resume": "La prise en compte des maisons individuelles dans les territoires ruraux est saluée pour relancer la réhabilitation en dehors des grandes zones urbaines.",
+   "citation": "Je me réjouis en revanche de la prise en compte des maisons individuelles dans les territoires ruraux : il ne faut pas se concentrer toujours sur les mêmes territoires et il est important de relancer la réhabilitation dans la ruralité.",
+   "acteur": "PA794854",
+   "nom": "M. Iñaki Echaniz",
+   "qualite": "",
+   "syceron": [
+    "4105641",
+    "4105653",
+    "4105681"
+   ]
+  },
+  {
+   "resume": "Le texte améliore le parc locatif privé et constitue un compromis équilibré indispensable pour mener une politique du logement complète.",
+   "citation": "L'article 1er améliore ce dispositif, qui concerne le parc locatif privé, soit 26 % du total des logements, le parc social n'en représentant que 15 %.",
+   "acteur": "PA942",
+   "nom": "M. Charles de Courson",
+   "qualite": "",
+   "syceron": [
+    "4106272",
+    "4106276"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "La proposition crée une niche fiscale coûteuse assimilée à de l'argent public détourné de la construction de logements publics.",
+   "citation": "Première raison de notre opposition : voilà un texte tendant à créer une niche fiscale, comme il y en a eu tant ces dernières décennies.",
+   "acteur": "PA793756",
+   "nom": "M. François Piquemal",
+   "qualite": "",
+   "syceron": [
+    "4105603",
+    "4105608",
+    "4105628"
+   ]
+  },
+  {
+   "resume": "Le texte manque d'ambition face à l'urgence climatique et ne prévoit pas un soutien massif suffisant pour la rénovation thermique des logements.",
+   "citation": "Deuxième raison : le moment que nous vivons est marqué par une alerte climatique - c'est le moins que l'on puisse dire. Or votre proposition de loi est moins-disante en la matière et n'est pas à la hauteur de l'ambition qui devrait être la nôtre.",
+   "acteur": "PA793756",
+   "nom": "M. François Piquemal",
+   "qualite": "",
+   "syceron": [
+    "4105603",
+    "4105608",
+    "4105628"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-10T22:24:25+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T22:24:25+00:00"
 }

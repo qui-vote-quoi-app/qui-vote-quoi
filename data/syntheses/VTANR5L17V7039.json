@@ -1,8 +1,51 @@
 {
  "uid": "VTANR5L17V7039",
  "num": 7039,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 2,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026O1N252",
+ "seance_jour": "jeudi 28 mai 2026",
+ "contexte": "L'Assemblée nationale examine, en première lecture, la proposition de loi portant pérennisation du contrat de professionnalisation expérimental. Ce texte vise à transformer un dispositif test d'acquisition de compétences professionnelles en mesure pérenne, ce qui suscrit de vives critiques de la part des opposants au projet.",
+ "pour": [],
+ "contre": [
+  {
+   "resume": "Ce dispositif expose des apprentis insuffisamment qualifiés à des risques pour leur sécurité et à des accidents du travail.",
+   "citation": "ce dispositif est dangereux, parce que les apprentis se retrouveront dans des situations professionnelles où ils seront insuffisamment qualifiés - ce qui peut mettre en péril leur santé et provoquer des accidents du travail.",
+   "acteur": "PA793452",
+   "nom": "M. Hendrik Davi",
+   "qualite": "",
+   "syceron": [
+    "4107169"
+   ]
+  },
+  {
+   "resume": "La mesure fragilise les certifications en niant la cohérence des blocs de compétences et précarise les salariés face à l'employeur, entraînant des baisses de rémunération.",
+   "citation": "vous niez la cohérence des blocs de compétences des certifications et, ce faisant, fragilisez l'ensemble du dispositif de certification. En outre, vous précarisez davantage encore les salariés vis-à-vis de leur employeur.",
+   "acteur": "PA793452",
+   "nom": "M. Hendrik Davi",
+   "qualite": "",
+   "syceron": [
+    "4107169"
+   ]
+  },
+  {
+   "resume": "Le texte soumet totalement le salarié à l'arbitraire patronal, créant une dépendance à l'opinion de l'employeur et favorisant le dumping social.",
+   "citation": "Ce que vous faites, c'est l'inverse : la soumission totale du salarié à l'arbitraire patronal. C'est le règne d'obscures réunions bilatérales, où l'employeur vous dit avoir besoin de vous pour telle tâche",
+   "acteur": "PA793736",
+   "nom": "M. Hadrien Clouet",
+   "qualite": "",
+   "syceron": [
+    "4107174",
+    "4107181",
+    "4107183",
+    "4107187",
+    "4107377"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-10T22:22:55+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T22:22:55+00:00"
 }

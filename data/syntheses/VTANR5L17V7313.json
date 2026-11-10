@@ -1,8 +1,58 @@
 {
  "uid": "VTANR5L17V7313",
  "num": 7313,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026O1N263",
+ "seance_jour": "jeudi 04 juin 2026",
+ "contexte": "L'Assemblée nationale examine, en première lecture, la proposition de loi visant à garantir l'interdiction de la vaisselle en plastique dans la restauration collective accueillant du jeune public et liée à la petite enfance. Le texte vise à clarifier et à renforcer l'application de cette interdiction pour protéger la santé des enfants et l'environnement.",
+ "pour": [
+  {
+   "resume": "Ce texte technique et transpartisan permet de clarifier juridiquement la définition des contenants alimentaires interdits dans la restauration collective.",
+   "citation": "Le texte définit correctement les contenants alimentaires dans les restaurations collectives. Je salue le travail que nous avons mené conjointement avec Graziella Melchior depuis de longs mois",
+   "acteur": "PA721426",
+   "nom": "Mme Véronique Riotton",
+   "qualite": "",
+   "syceron": [
+    "4115852"
+   ]
+  },
+  {
+   "resume": "Il est nécessaire de voter ce texte de manière conforme et rapide afin d'éviter les retards législatifs liés à la navette parlementaire et de rendre l'interdiction effective au plus vite.",
+   "citation": "Nous souhaitons donc un vote conforme pour ce texte afin que cette interdiction soit effective le plus vite possible.",
+   "acteur": "PA842195",
+   "nom": "M. Romain Eskenazi",
+   "qualite": "",
+   "syceron": [
+    "4115868"
+   ]
+  },
+  {
+   "resume": "La mesure apporte une clarification juridique bienvenue sur l'interdiction de la vaisselle en plastique entrée en vigueur en 2025.",
+   "citation": "Nous allons voter pour ce texte car il clarifie juridiquement l'interdiction de la vaisselle en plastique.",
+   "acteur": "PA794870",
+   "nom": "Mme Sylvie Ferrer",
+   "qualite": "",
+   "syceron": [
+    "4115863"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le texte méprise les efforts d'écoconception et les investissements des industriels pour respecter les normes environnementales et les plans de recyclage du plastique.",
+   "citation": "Vous êtes contre le plastique en général et peu vous importent les efforts des industriels pour écoconcevoir, pour se conformer aux normes environnementales et au plan Plastique du gouvernement",
+   "acteur": "PA841131",
+   "nom": "Mme Manon Bouquin",
+   "qualite": "",
+   "syceron": [
+    "4115860"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-10T22:12:17+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T22:12:17+00:00"
 }

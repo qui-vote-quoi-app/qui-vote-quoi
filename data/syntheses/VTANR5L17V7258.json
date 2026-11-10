@@ -1,8 +1,38 @@
 {
  "uid": "VTANR5L17V7258",
  "num": 7258,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026O1N258",
+ "seance_jour": "lundi 01 juin 2026",
+ "contexte": "L'Assemblée nationale examine, en première lecture, la proposition de loi visant à protéger les enfants et à lutter contre les violences en milieu scolaire. Les débats portent notamment sur le renforcement des contrôles des établissements scolaires, qu'ils soient publics ou privés, ainsi que sur diverses mesures disciplinaires et de prévention.",
+ "pour": [
+  {
+   "resume": "Le texte permet de renforcer la protection des élèves en améliorant le contrôle de l'honorabilité des personnels et le suivi des sanctions disciplinaires.",
+   "citation": "des dispositions vont dans le bon sens pour la protection des enfants : le renforcement du contrôle de l'honorabilité des personnels, l'amélioration de la formation des enseignants et le suivi des sanctions disciplinaires.",
+   "acteur": "PA330008",
+   "nom": "M. Xavier Breton",
+   "qualite": "",
+   "syceron": [
+    "4111953"
+   ]
+  },
+  {
+   "resume": "L'adoption de cette proposition de loi est nécessaire pour instaurer rapidement des mesures concrètes applicables dès la prochaine rentrée scolaire.",
+   "citation": "Je souhaite qu'il fasse en sorte que le Sénat inscrive le plus rapidement possible ce texte à son ordre du jour, afin qu'il entre en application dès la rentrée prochaine et puisse ainsi protéger les 12 millions d'élèves de notre pays.",
+   "acteur": "PA795596",
+   "nom": "M. Paul Vannier",
+   "qualite": "",
+   "syceron": [
+    "4111945",
+    "4111947"
+   ]
+  }
+ ],
+ "contre": [],
+ "genere_le": "2026-11-10T22:21:20+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T22:21:20+00:00"
 }

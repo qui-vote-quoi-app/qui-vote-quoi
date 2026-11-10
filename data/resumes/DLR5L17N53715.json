@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N53715",
+ "texte": "PIONANR5L17B2440",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code de l'urbanisme afin d'associer les organismes de défense et de gestion aux documents d'urbanisme dans les communes situées dans une aire d'appellation. Il modifie également le code rural et de la pêche maritime pour intégrer les conditions résultant de l'adaptation des horaires de travail liée au changement climatique.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T22:40+00:00"
+}

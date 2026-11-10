@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51175",
+ "texte": "PIONANR5L17B1041",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code de l'environnement et le code rural pour encadrer la gestion et la prévention des inondations par les collectivités. Il permet la labellisation de programmes d'actions par l'État, crée un référent technique et un guichet unique de bassin, et simplifie certaines procédures d'enquête publique pour les travaux liés aux cours d'eau. Il institue également une réserve d'ingénierie et un guichet unique départemental pour accompagner les communes sinistrées.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T22:39+00:00"
+}

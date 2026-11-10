@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N53690",
+ "texte": "PIONANR5L17B2515",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code électoral pour intégrer les frais d’expertise comptable dans le compte de campagne des candidats, les rendant ainsi éligibles au remboursement forfaitaire de l’État. Il autorise la Commission nationale des comptes de campagne et des financements politiques à réduire ces frais lorsqu'ils apparaissent manifestement excessifs au regard des prestations fournies et des justificatifs produits.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T22:36+00:00"
+}

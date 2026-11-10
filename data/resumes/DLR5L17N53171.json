@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N53171",
+ "texte": "PIONANR5L17B2091",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code de l'éducation et le code de la santé publique afin d'introduire l'éducation à l'alimentation dans les missions du service public d'enseignement et d'encadrer ses objectifs. Il prévoit sa dispense dans les établissements scolaires en lien avec la santé publique et les programmes alimentaires, assortie d'un état des lieux du gaspillage alimentaire. L'État met à disposition des ressources pédagogiques sur une plateforme dédiée recensant les organismes agréés.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T22:44+00:00"
+}

@@ -1,8 +1,58 @@
 {
  "uid": "VTANR5L17V7270",
  "num": 7270,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026O1N260",
+ "seance_jour": "mardi 02 juin 2026",
+ "contexte": "L'Assemblée nationale examine en deuxième lecture une proposition de loi visant à améliorer la protection et l'accompagnement des parents d'enfants atteints d'un cancer, d'une maladie grave ou d'un handicap. Le texte prévoit notamment des mesures concernant les congés rémunérés, l'accès simplifié à l'allocation journalière et le remboursement de certains soins. Les débats portent sur la nécessité d'apporter une aide rapide aux familles tout en discutant de la portée des mesures et des causes environnementales des pathologies.",
+ "pour": [
+  {
+   "resume": "Le texte apporte des mesures concrètes et attendues par les associations et les familles pour soulager leur charge financière et psychologique.",
+   "citation": "les enfants qui nous regardent, leurs familles et surtout les associations - je pense à Eva pour la vie, à Grandir sans cancer -, veulent des mesures concrètes, pas une troisième lecture.",
+   "acteur": "PA794038",
+   "nom": "M. Yannick Neuder",
+   "qualite": "",
+   "syceron": [
+    "4113494"
+   ]
+  },
+  {
+   "resume": "L'adoption conforme du texte permet d'éviter les délais d'une nouvelle lecture qui pénaliseraient les familles dans l'attente de droits.",
+   "citation": "modifier le texte aurait pu repousser son adoption pendant de longs mois. Or, pour les familles concernées, ce délai aurait eu des conséquences négatives très concrètes",
+   "acteur": "PA774962",
+   "nom": "Mme Karine Lebon",
+   "qualite": "",
+   "syceron": [
+    "4113613",
+    "4113616"
+   ]
+  },
+  {
+   "resume": "Le dispositif améliore l'accès aux soins grâce au remboursement des ergothérapeutes, diététiciens et psychomotriciens.",
+   "citation": "Les remboursements des soins délivrés par les ergothérapeutes, les diététiciens ou les psychomotriciens seront appréciés.",
+   "acteur": "PA794038",
+   "nom": "M. Yannick Neuder",
+   "qualite": "",
+   "syceron": [
+    "4113494"
+   ]
+  },
+  {
+   "resume": "Le congé rémunéré en cas d'annonce d'une pathologie est étendu et l'accès à l'allocation journalière est simplifié.",
+   "citation": "Le congé rémunéré en cas d'annonce de la survenue d'un handicap, d'une pathologie chronique nécessitant un apprentissage thérapeutique ou d'un cancer chez un enfant, qui passe de cinq à dix jours, tout comme l'accès simplifié à l'allocation journalière, sont des mesures de bon sens",
+   "acteur": "PA794038",
+   "nom": "M. Yannick Neuder",
+   "qualite": "",
+   "syceron": [
+    "4113494"
+   ]
+  }
+ ],
+ "contre": [],
+ "genere_le": "2026-11-10T22:15:39+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T22:15:39+00:00"
 }

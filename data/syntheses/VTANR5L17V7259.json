@@ -1,8 +1,89 @@
 {
  "uid": "VTANR5L17V7259",
  "num": 7259,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 2,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026O1N259",
+ "seance_jour": "mardi 02 juin 2026",
+ "contexte": "L'Assemblée nationale examine en première lecture l'ensemble du projet de loi d'urgence pour la protection et la souveraineté agricoles. Ce texte vise à répondre aux difficultés des exploitations, à encadrer la concurrence et à sécuriser l'accès aux ressources, tout en suscitant de vives divergences sur les modèles agricoles et environnementaux.",
+ "pour": [
+  {
+   "resume": "Le texte apporte des améliorations concrètes et des simplifications attendues par les exploitations agricoles en difficulté sur le terrain.",
+   "citation": "Sur le terrain, la moindre avancée compte pour des exploitations à bout de souffle.",
+   "acteur": "PA841973",
+   "nom": "M. Pierre-Henri Carbonnel",
+   "qualite": "",
+   "syceron": [
+    "4112446"
+   ]
+  },
+  {
+   "resume": "Le projet de loi intègre des mesures pour faciliter la création d'ouvrages de stockage et sécuriser l'accès à l'eau indispensable à la production.",
+   "citation": "des mesures destinées à faciliter la création d'ouvrages de stockage et à sécuriser l'accès à l'eau",
+   "acteur": "PA643104",
+   "nom": "Mme Christelle Minard",
+   "qualite": "",
+   "syceron": [
+    "4113075",
+    "4113079",
+    "4113093"
+   ]
+  },
+  {
+   "resume": "Le texte prévoit des dispositions pour renforcer la lutte contre la prédation du loup et mieux protéger les élevages.",
+   "citation": "du renforcement de la lutte contre la prédation du loup, du durcissement des sanctions contre les vols et les dégradations visant les exploitations",
+   "acteur": "PA643104",
+   "nom": "Mme Christelle Minard",
+   "qualite": "",
+   "syceron": [
+    "4113075",
+    "4113079",
+    "4113093"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le projet de loi ne s'attaque pas aux causes profondes de la crise agricole et refuse de remettre en cause le cadre européen et la concurrence déloyale.",
+   "citation": "ce texte ne répond pas aux causes profondes de l'effondrement agricole que subit notre pays, car le principal problème, celui d'une concurrence déloyale devenue insupportable, demeure intact.",
+   "acteur": "PA841973",
+   "nom": "M. Pierre-Henri Carbonnel",
+   "qualite": "",
+   "syceron": [
+    "4112446"
+   ]
+  },
+  {
+   "resume": "L'équilibre du texte a été rompu au détriment de l'urgence climatique, de la préservation de l'eau et de la protection de l'environnement.",
+   "citation": "Or, au fil de l'examen en séance, cet équilibre a été rompu. Nous avons vu disparaître des garanties de gouvernance locale sur l'eau au profit des pouvoirs dérogatoires des préfets",
+   "acteur": "PA793816",
+   "nom": "Mme Mélanie Thomin",
+   "qualite": "",
+   "syceron": [
+    "4113056",
+    "4113070"
+   ]
+  },
+  {
+   "resume": "Les mesures proposées s'inscrivent dans une logique agro-industrielle qui favorise la concentration au détriment des petites fermes et de l'agriculture familiale.",
+   "citation": "Derrière l'idée que de grosses unités agro-industrielles tenues par des firmes doivent remplacer des petites fermes jugées inefficaces se cache une réalité dramatique : la disparition de notre tissu local.",
+   "acteur": "PA794082",
+   "nom": "Mme Mathilde Hignet",
+   "qualite": "",
+   "syceron": [
+    "4113031",
+    "4113036",
+    "4113042",
+    "4113044",
+    "4113046",
+    "4113048",
+    "4113050"
+   ]
+  }
+ ],
+ "genere_le": "2026-11-10T22:20:29+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T22:20:29+00:00"
 }

@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51329",
+ "texte": "PIONANR5L17B0823",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte prévoit la remise d'un rapport gouvernemental sur la création d'une base de données des biens abandonnés. Il autorise l'administration à demander en justice la vente de biens en indivision ancienne lorsque certains indivisaires sont introuvables ou s'opposent à la vente. Il permet aux détenteurs de plus de la moitié des droits indivis de procéder à la vente ou au partage de biens pour les successions ouvertes depuis plus de dix ans. Enfin, il abroge des dispositions spécifiques à l'outre-mer et modifie les règles du partage judiciaire.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T22:40+00:00"
+}
