@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L16N46127",
+ "texte": "PIONANR5L17B1369",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte prévoit que la République française reconnaît sa responsabilité concernant l'application de dispositions pénales discriminatoires fondées sur l'orientation sexuelle entre le 8 février 1945 et l'abrogation de ces mesures. Il cite spécifiquement des alinéas du code pénal antérieurs à des lois modificatives de 1980 et 1982. Enfin, il reconnaît que ces dispositions ont engendré des souffrances et des traumatismes pour les personnes condamnées.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T23:13+00:00"
+}

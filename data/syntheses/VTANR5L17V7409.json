@@ -1,11 +1,103 @@
 {
  "uid": "VTANR5L17V7409",
  "num": 7409,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
+ "tentatives": 1,
  "erreurs": [],
  "cr": "CRSANR5L17S2026O1N274",
  "seance_jour": "mercredi 17 juin 2026",
- "derniere_tentative": "2026-11-10T21:35:45+00:00"
+ "derniere_tentative": "2026-11-10T22:52:37+00:00",
+ "contexte": "Le projet de loi vise à relancer les investissements dans le secteur de l'hydroélectricité et à clore le contentieux de longue date avec la Commission européenne concernant la mise en concurrence des concessions. Le texte instaure un passage du régime de concession au régime d'autorisation tout en maintenant la propriété publique des ouvrages, et prévoit une ouverture encadrée du marché via des capacités virtuelles de production.",
+ "pour": [
+  {
+   "resume": "L'hydroélectricité constitue une énergie renouvelable indispensable, décarbonée, pilotable et essentielle pour la sécurité d'approvisionnement et la transition énergétique.",
+   "citation": "À la fois décarbonée, pilotable et stockable, elle est d'un intérêt absolument central dans notre mix énergétique. Elle contribue à la stabilité de notre système électrique et à la sécurité d'approvisionnement de notre pays.",
+   "acteur": "PA794810",
+   "nom": "Mme Louise Morel",
+   "qualite": "",
+   "syceron": [
+    "4125151"
+   ]
+  },
+  {
+   "resume": "Le texte met fin à une impasse juridique durable qui bloquait les investissements nécessaires à la modernisation des infrastructures et au stockage de l'énergie.",
+   "citation": "Cette incertitude juridique a eu des conséquences concrètes : un report massif des investissements, alors même que la modernisation et le renforcement des installations sont essentiels pour atteindre nos objectifs énergétiques et climatiques.",
+   "acteur": "PA721458",
+   "nom": "M. Xavier Roseren",
+   "qualite": "",
+   "syceron": [
+    "4125166"
+   ]
+  },
+  {
+   "resume": "La réforme sécurise juridiquement les exploitants et protège les intérêts des collectivités territoriales tout en maintenant les barrages dans le patrimoine public de l'État.",
+   "citation": "Elle a préservé l'architecture adoptée par notre assemblée : le passage du régime de concession au régime d'autorisation, qui sécurise juridiquement les exploitants tout en maintenant les ouvrages dans le patrimoine de l'État.",
+   "acteur": "PA266808",
+   "nom": "M. Vincent Rolland",
+   "qualite": "",
+   "syceron": [
+    "4124694"
+   ]
+  },
+  {
+   "resume": "Le texte apporte des garanties financières pour compenser les pertes de recettes des communes et renforce la gouvernance locale associée aux ouvrages.",
+   "citation": "Je pense en particulier aux garanties financières apportées à nos collectivités, l'État s'engageant à compenser les pertes de recettes liées au changement de régime.",
+   "acteur": "PA721458",
+   "nom": "M. Xavier Roseren",
+   "qualite": "",
+   "syceron": [
+    "4125166"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le mécanisme de mise aux enchères de capacités virtuelles fait peser des risques sur la gestion multi-usage de l'eau et pourrait entrer en contradiction avec les périodes d'étiage ou d'irrigation.",
+   "citation": "Or le dispositif retenu pourrait conduire EDF à céder des volumes d'électricité à des périodes incompatibles avec une gestion optimale des débits.",
+   "acteur": "PA794146",
+   "nom": "Mme Julie Laernoes",
+   "qualite": "",
+   "syceron": [
+    "4125138",
+    "4125147"
+   ]
+  },
+  {
+   "resume": "Le partage de la production hydroélectrique avec des acteurs privés via des enchères revient à faire bénéficier des tiers d'une rente issue d'investissements publics sans qu'ils y aient contribué.",
+   "citation": "Nous continuons à considérer que cet Arenh hydro comporte des risques importants, puisqu'il organise le partage d'une rente issue d'investissements publics avec des acteurs privés qui n'ont pas contribué à ces infrastructures.",
+   "acteur": "PA794146",
+   "nom": "Mme Julie Laernoes",
+   "qualite": "",
+   "syceron": [
+    "4125138",
+    "4125147"
+   ]
+  },
+  {
+   "resume": "Le nouveau cadre juridique pourrait faciliter la cession par l'opérateur historique de certaines activités ou barrages jugés moins rentables pour soulager ses finances.",
+   "citation": "Nous y voyons toujours le risque que l'opérateur historique se sépare des barrages les moins rentables ou de ceux qui nécessitent les investissements les plus importants pour répondre à l'obsession nucléariste du gouvernement.",
+   "acteur": "PA794146",
+   "nom": "Mme Julie Laernoes",
+   "qualite": "",
+   "syceron": [
+    "4125138",
+    "4125147"
+   ]
+  },
+  {
+   "resume": "Le mécanisme de report des volumes non vendus d'une année sur l'autre comporte un risque industriel en minorant les impératifs de sûreté hydraulique et de gestion de l'eau.",
+   "citation": "le mécanisme de report crée, selon nous, un risque industriel majeur : il minore l'impératif de sûreté hydraulique, va à l'encontre de l'optimisation du système électrique et risque même de déstabiliser les priorités en matière de gestion des usages multiples de l'eau.",
+   "acteur": "PA794146",
+   "nom": "Mme Julie Laernoes",
+   "qualite": "",
+   "syceron": [
+    "4125138",
+    "4125147"
+   ]
+  }
+ ],
+ "ecartes": [],
+ "genere_le": "2026-11-10T22:52:37+00:00",
+ "modele": "gemini:gemini-flash-lite-latest"
 }

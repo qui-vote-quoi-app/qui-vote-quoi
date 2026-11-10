@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N53279",
+ "texte": "PIONANR5L17B2175",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code civil pour préciser que chacun doit respecter le consentement de l'autre au sein du couple. Il prévoit également qu'un divorce pour faute ne peut pas être fondé sur l'absence ou le refus de relations sexuelles.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T23:11+00:00"
+}

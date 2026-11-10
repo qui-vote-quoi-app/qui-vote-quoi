@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N53058",
+ "texte": "PIONANR5L17B2028",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie les règles relatives aux services postaux pour étendre l'obligation du service universel postal à l'ensemble du territoire français, quelle que soit la tranche de poids des envois. Il institue deux tarifs plafonds résidentiels pour les liaisons aériennes régulières desservant les territoires ultramarins afin de limiter les écarts tarifaires. Il plafonne les tarifs des services bancaires de base dans les collectivités d'outre-mer par rapport à la moyenne pratiquée dans l'Hexagone et prévoit des sanctions en cas de non-respect.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T23:15+00:00"
+}

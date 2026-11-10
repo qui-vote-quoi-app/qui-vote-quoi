@@ -1,11 +1,91 @@
 {
  "uid": "VTANR5L17V7494",
  "num": 7494,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
+ "tentatives": 1,
  "erreurs": [],
  "cr": "CRSANR5L17S2026O1N282",
  "seance_jour": "mercredi 24 juin 2026",
- "derniere_tentative": "2026-11-10T21:34:13+00:00"
+ "derniere_tentative": "2026-11-10T22:51:44+00:00",
+ "contexte": "Le Parlement examine la proposition de loi visant à réduire l'impact environnemental de l'industrie textile, issue de la commission mixte paritaire. Ce texte vise notamment à encadrer la mode ultra-express, à renforcer l'information des consommateurs, à instaurer des mécanismes de responsabilisation économique comme des malus et à interdire la publicité pour les acteurs concernés.",
+ "pour": [
+  {
+   "resume": "Le texte permet de lutter contre la surproduction et les pratiques de la mode ultra-express qui pèsent lourdement sur l'environnement et la santé.",
+   "citation": "Ce modèle repose sur une logique simple : produire toujours plus, toujours plus vite et toujours moins cher, sans respecter les normes que nous nous fixons et sans s'inquiéter des retombées environnementales, sociales ou sanitaires.",
+   "acteur": "PA719822",
+   "nom": "Mme Sabine Thillaye",
+   "qualite": "",
+   "syceron": [
+    "4130360"
+   ]
+  },
+  {
+   "resume": "L'obligation d'informer sur les lieux de fabrication et d'afficher clairement la provenance corrige une asymétrie préjudiciable aux consommateurs.",
+   "citation": "Ce texte y contribue aussi puisqu'il sera désormais obligatoire de renseigner la provenance des étapes de fabrication des vêtements. Certes, nous exigeons depuis longtemps que le consommateur sache d'où viennent sa viande, ses fruits ou ses légumes, mais pour un t-shirt, jusqu'ici rien, ou presque.",
+   "acteur": "PA841359",
+   "nom": "Mme Constance de Pélichy",
+   "qualite": "",
+   "syceron": [
+    "4130375"
+   ]
+  },
+  {
+   "resume": "Cette législation protège l'industrie textile nationale et européenne face à une concurrence déloyale liée à des importations non soumises aux mêmes exigences.",
+   "citation": "Il fallait donc encadrer ce modèle dévastateur pour nos entreprises françaises et pour l'environnement. Et c'est ce que fait ce texte, notamment en définissant la mode ultra-express de façon précise à partir de deux critères cumulatifs",
+   "acteur": "PA840773",
+   "nom": "M. Olivier Fayssat",
+   "qualite": "",
+   "syceron": [
+    "4130395"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le champ d'application du texte risque d'être trop restreint et de ne cibler que la mode ultra-express au lieu de l'ensemble de la mode jetable.",
+   "citation": "le texte vise tout d'abord à définir les contours de la mode jetable, mais ne cible en réalité que la mode ultra-express. Le texte renvoie en outre à un décret le soin de fixer des seuils sur la base de pratiques commerciales",
+   "acteur": "PA793174",
+   "nom": "M. Yannick Monnet",
+   "qualite": "",
+   "syceron": [
+    "4130386"
+   ]
+  },
+  {
+   "resume": "La modulation de l'écocontribution repose sur des critères commerciaux plutôt que sur la qualité intrinsèque et la durabilité réelle des vêtements.",
+   "citation": "La proposition prévoit ensuite de moduler l'écocontribution selon des critères de durabilité extrinsèques, c'est-à-dire fondés sur les pratiques commerciales - fréquence de renouvellement, incitation à l'achat massif - plutôt que sur la qualité intrinsèque du produit.",
+   "acteur": "PA793174",
+   "nom": "M. Yannick Monnet",
+   "qualite": "",
+   "syceron": [
+    "4130386"
+   ]
+  },
+  {
+   "resume": "Le dispositif de malus prévu est jugé trop incertain et insuffisamment dissuasif pour modifier durablement les pratiques du secteur.",
+   "citation": "Des pénalités limitées ont certes été introduites depuis pour sanctionner certains obstacles au recyclage, mais le malus retenu dans le texte nous apparaît, dans ce contexte, trop incertain et surtout trop peu dissuasif.",
+   "acteur": "PA793174",
+   "nom": "M. Yannick Monnet",
+   "qualite": "",
+   "syceron": [
+    "4130386"
+   ]
+  },
+  {
+   "resume": "L'absence de prise en compte des conditions sociales de production et du travail des enfants dans le texte constitue une lacune regrettable.",
+   "citation": "notre groupe regrette que la proposition d'intégrer une référence au devoir de vigilance sur les conditions sociales de production, notamment le travail des enfants, ait été rejetée.",
+   "acteur": "PA840773",
+   "nom": "M. Olivier Fayssat",
+   "qualite": "",
+   "syceron": [
+    "4130395"
+   ]
+  }
+ ],
+ "ecartes": [
+  "Argument pour n°2 : la citation ne figure pas mot pour mot dans P2."
+ ],
+ "genere_le": "2026-11-10T22:51:44+00:00",
+ "modele": "gemini:gemini-flash-lite-latest"
 }

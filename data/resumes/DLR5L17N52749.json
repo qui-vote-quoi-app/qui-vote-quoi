@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N52749",
+ "texte": "PIONANR5L17B1799",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte prévoit le renouvellement automatique par l'administration des cartes de séjour pluriannuelles et des cartes de résident.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T23:16+00:00"
+}

@@ -1,8 +1,50 @@
 {
  "uid": "VTANR5L17V6541",
  "num": 6541,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026O1N230",
+ "seance_jour": "mardi 12 mai 2026",
+ "contexte": "L'Assemblée nationale examine, en première lecture, la proposition de loi visant à accélérer le développement du transport maritime à propulsion vélique. Ce texte vise à encourager une alternative décarbonée face aux transports maritimes traditionnels utilisant des énergies fossiles.",
+ "pour": [
+  {
+   "resume": "La propulsion vélique constitue une réponse nécessaire pour réduire les émissions de gaz à effet de serre du secteur maritime.",
+   "citation": "la décarbonation est une nécessité : le transport maritime représente 3 % des émissions de gaz de serre, ce sera 20 % d'ici à 2050 si on ne fait rien.",
+   "acteur": "PA721202",
+   "nom": "M. Éric Coquerel",
+   "qualite": "",
+   "syceron": [
+    "4084801",
+    "4084811"
+   ]
+  },
+  {
+   "resume": "Le développement de cette filière représente un atout technologique et économique majeur pour la France, qui dispose d'une grande surface maritime et d'une expertise reconnue dans la voile.",
+   "citation": "Cet atout est un avantage d'autant plus grand que notre pays dispose de la deuxième plus grande surface maritime au monde.",
+   "acteur": "PA721202",
+   "nom": "M. Éric Coquerel",
+   "qualite": "",
+   "syceron": [
+    "4084801",
+    "4084811"
+   ]
+  },
+  {
+   "resume": "La proposition de loi apporte un soutien attendu et nécessaire pour structurer et développer la filière du transport maritime à propulsion vélique.",
+   "citation": "La filière a grand besoin de cette loi. Nous aurons ainsi une vraie source de décarbonation à explorer.",
+   "acteur": "PA720334",
+   "nom": "M. Jimmy Pahun",
+   "qualite": "",
+   "syceron": [
+    "4084815"
+   ]
+  }
+ ],
+ "contre": [],
+ "ecartes": [],
+ "genere_le": "2026-11-10T22:58:39+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T22:58:39+00:00"
 }

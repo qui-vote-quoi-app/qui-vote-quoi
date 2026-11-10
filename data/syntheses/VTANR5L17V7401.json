@@ -1,11 +1,69 @@
 {
  "uid": "VTANR5L17V7401",
  "num": 7401,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
+ "tentatives": 1,
  "erreurs": [],
  "cr": "CRSANR5L17S2026O1N270",
  "seance_jour": "lundi 15 juin 2026",
- "derniere_tentative": "2026-11-10T20:14:46+00:00"
+ "derniere_tentative": "2026-11-10T22:54:21+00:00",
+ "contexte": "Le projet de loi vise à habiliter l'assemblée de Martinique à fixer elle-même des règles applicables sur son territoire en matière d'énergie, d'eau et d'assainissement, en application de l'article 73 de la Constitution. Ce texte législatif cherche à répondre aux spécificités et aux difficultés locales de l'île.",
+ "pour": [
+  {
+   "resume": "Ce texte permet d'adapter les normes aux réalités géographiques et climatiques spécifiques des territoires ultramarins.",
+   "citation": "Ce projet de loi s'inscrit pleinement dans l'esprit et la lettre de l'article 73 de la Constitution, qui permet précisément aux collectivités d'outre-mer d'adapter les normes lorsque leurs caractéristiques particulières le justifient.",
+   "acteur": "PA721270",
+   "nom": "M. Stéphane Peu",
+   "qualite": "",
+   "syceron": [
+    "4121834"
+   ]
+  },
+  {
+   "resume": "L'habilitation permet de renouveler et d'élargir les compétences locales en matière de transition énergétique et de développement des énergies renouvelables.",
+   "citation": "L'article 1er du projet de loi y remédie en renouvelant et en élargissant cette habilitation, notamment à la mobilité durable - cette nouveauté est bienvenue.",
+   "acteur": "PA794206",
+   "nom": "M. Christophe Marion",
+   "qualite": "",
+   "syceron": [
+    "4121885"
+   ]
+  },
+  {
+   "resume": "La création d'une autorité unique pour l'eau et l'assainissement permettrait de lutter contre l'éclatement de la gestion actuelle et d'améliorer l'efficacité des services.",
+   "citation": "C'est pourquoi l'article 2 du présent texte habilite l'assemblée de Martinique à créer une autorité unique de l'eau et de l'assainissement - solution que tous les acteurs du territoire ont appelée de leurs vœux",
+   "acteur": "PA794206",
+   "nom": "M. Christophe Marion",
+   "qualite": "",
+   "syceron": [
+    "4121885"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le manque de précisions sur la future autorité unique de l'eau suscite des inquiétudes quant à sa gouvernance et à l'efficacité réelle du service rendu.",
+   "citation": "Quelle sera la composition de cette autorité ? Quelle y sera la place des communes et des intercommunalités ? Comment seront répartis les moyens financiers ? Et, surtout, comment cette nouvelle architecture améliorera-t-elle concrètement le service rendu aux usagers ?",
+   "acteur": "PA793832",
+   "nom": "M. Yoann Gillet",
+   "qualite": "",
+   "syceron": [
+    "4121877"
+   ]
+  },
+  {
+   "resume": "Il est reproché une insuffisance de concertation avec les élus locaux et les intercommunalités lors de l'élaboration de ce projet de réforme.",
+   "citation": "La concertation avec les établissements publics de coopération intercommunale semble avoir été insuffisante. En effet, il semblerait que les EPCI n'aient pas disposé du temps nécessaire pour consulter vraiment leurs élus et formuler une position éclairée.",
+   "acteur": "PA840955",
+   "nom": "M. Pierre Pribetich",
+   "qualite": "",
+   "syceron": [
+    "4121963"
+   ]
+  }
+ ],
+ "ecartes": [],
+ "genere_le": "2026-11-10T22:54:21+00:00",
+ "modele": "gemini:gemini-flash-lite-latest"
 }

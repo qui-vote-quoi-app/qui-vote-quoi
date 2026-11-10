@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N53069",
+ "texte": "PIONANR5L17B2039",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte pérennise l'encadrement des loyers en supprimant son caractère expérimental et en élargissant sa mise en œuvre aux communes tendues et limitrophes. Il encadre strictement les compléments de loyer, intègre certaines locations meublées et colocations, et double le montant des amendes pour les bailleurs contrevenants. Enfin, il renforce les obligations du propriétaire en matière de congé et suspend ce droit en cas de contestation du loyer par le locataire.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T23:17+00:00"
+}

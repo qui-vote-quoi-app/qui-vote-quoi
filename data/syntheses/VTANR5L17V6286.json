@@ -1,8 +1,50 @@
 {
  "uid": "VTANR5L17V6286",
  "num": 6286,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026O1N218",
+ "seance_jour": "lundi 04 mai 2026",
+ "contexte": "La proposition de loi vise à adapter au Brexit les modalités de reconnaissance en France des diplômes de médecine délivrés au Royaume-Uni. Elle crée une voie d'accès pour les ressortissants britanniques ou européens ayant commencé leurs études avant le 31 décembre 2020 afin de leur éviter les procédures applicables aux praticiens hors Union européenne.",
+ "pour": [
+  {
+   "resume": "Le texte répare une injustice en corrigeant la situation des étudiants ayant débuté leurs études médicales au Royaume-Uni avant le Brexit et qui se retrouvent pénalisés par un changement de cadre juridique indépendant de leur volonté.",
+   "citation": "Des étudiants, en grande majorité français, parfois britanniques, parfois issus d'autres pays européens, ont fait leurs études de médecine au Royaume-Uni à une époque où ce pays était membre de l'Union européenne.",
+   "acteur": "PA719032",
+   "nom": "M. Bertrand Bouyx",
+   "qualite": "",
+   "syceron": [
+    "4073328"
+   ]
+  },
+  {
+   "resume": "La mesure permet de mobiliser des médecins qualifiés pour faire face à la pénurie de professionnels de santé et améliorer l'accès aux soins dans les territoires touchés par la désertification médicale.",
+   "citation": "Comment, dans un tel contexte de désertification médicale, justifier le maintien à l'écart de praticiens francophones, qualifiés et prêts à exercer immédiatement sur notre territoire ?",
+   "acteur": "PA608416",
+   "nom": "M. Patrick Hetzel",
+   "qualite": "",
+   "syceron": [
+    "4073307"
+   ]
+  },
+  {
+   "resume": "Le dispositif ne remet pas en cause les exigences de qualification ni la sécurité des soins, mais rétablit un cadre de reconnaissance adapté à des compétences déjà acquises selon des standards élevés.",
+   "citation": "Il le fait non en ouvrant une brèche ni en abaissant les exigences de qualification - la qualité des soins doit rester notre boussole commune -, mais en rétablissant un cadre de reconnaissance adapté à la réalité de leurs compétences.",
+   "acteur": "PA759832",
+   "nom": "Mme Agnès Pannier-Runacher",
+   "qualite": "",
+   "syceron": [
+    "4073277"
+   ]
+  }
+ ],
+ "contre": [],
+ "ecartes": [
+  "Argument pour n°4 : la citation ne figure pas mot pour mot dans P8."
+ ],
+ "genere_le": "2026-11-10T23:04:09+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T23:04:09+00:00"
 }

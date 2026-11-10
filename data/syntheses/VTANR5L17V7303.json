@@ -1,11 +1,76 @@
 {
  "uid": "VTANR5L17V7303",
  "num": 7303,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
+ "tentatives": 1,
  "erreurs": [],
  "cr": "CRSANR5L17S2026O1N262",
  "seance_jour": "mercredi 03 juin 2026",
- "derniere_tentative": "2026-11-10T22:14:02+00:00"
+ "derniere_tentative": "2026-11-10T22:55:21+00:00",
+ "contexte": "L'Assemblée nationale examine, en première lecture, une proposition de loi transpartisane visant à réduire les risques sanitaires liés à la présence de cadmium dans l'alimentation. Le texte propose notamment de fixer des seuils plus stricts et progressifs de teneur en cadmium dans les engrais phosphatés afin de protéger la santé publique.",
+ "pour": [
+  {
+   "resume": "Le texte répond aux conclusions des études scientifiques et aux fortes attentes de la société civile en matière de protection de la santé.",
+   "citation": "ce travail fait écho aux conclusions des études scientifiques - ce soir, elles ont raison - et aux attentes de la société civile. Celle-ci attend que l'on se préoccupe des problèmes de santé publique",
+   "acteur": "PA643192",
+   "nom": "Mme Chantal Jourdan",
+   "qualite": "",
+   "syceron": [
+    "4116211",
+    "4116623",
+    "4116215"
+   ]
+  },
+  {
+   "resume": "Le dispositif prévoit une limitation progressive et rapprochée de la teneur en cadmium dans les engrais pour faire face à l'urgence sanitaire.",
+   "citation": "Ce texte est un bon compromis, qui prévoit une avancée forte : limiter dès 2030 la teneur en cadmium à 20 milligrammes par kilogramme d'engrais phosphaté, conformément à la recommandation sanitaire.",
+   "acteur": "PA588884",
+   "nom": "Mme Clémentine Autain",
+   "qualite": "",
+   "syceron": [
+    "4116218",
+    "4116220"
+   ]
+  },
+  {
+   "resume": "Le texte pose des balises importantes pour la santé tout en prévoyant de s'articuler avec les futures décisions européennes.",
+   "citation": "Nous avons cranté un message essentiel sur l'enjeu de santé publique. Nous attendons des réponses de l'Europe dans les semaines qui viennent. En attendant, nous voterons pour ce texte.",
+   "acteur": "PA795100",
+   "nom": "M. Éric Martineau",
+   "qualite": "",
+   "syceron": [
+    "4116226"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "La trajectoire imposée par le texte est jugée trop contraignante et ignore les difficultés d'approvisionnement et les coûts pour une agriculture fragilisée.",
+   "citation": "Or le texte qui nous est soumis ce soir impose une trajectoire particulièrement contraignante et étouffante. Cette trajectoire ne tient aucun compte des réalités auxquelles notre agriculture est quotidiennement confrontée.",
+   "acteur": "PA840075",
+   "nom": "M. Eddy Casterman",
+   "qualite": "",
+   "syceron": [
+    "4115418",
+    "4115422"
+   ]
+  },
+  {
+   "resume": "Affaiblir la production agricole nationale risque de renforcer les importations en provenance de pays aux normes environnementales moins exigeantes.",
+   "citation": "Nous pensons exactement l'inverse : affaiblir nos agriculteurs, c'est renforcer les importations et transférer notre production vers des pays qui appliquent souvent des normes moins exigeantes que les nôtres.",
+   "acteur": "PA840075",
+   "nom": "M. Eddy Casterman",
+   "qualite": "",
+   "syceron": [
+    "4115418",
+    "4115422"
+   ]
+  }
+ ],
+ "ecartes": [
+  "Argument pour n°1 : la citation ne figure pas mot pour mot dans P3."
+ ],
+ "genere_le": "2026-11-10T22:55:21+00:00",
+ "modele": "gemini:gemini-flash-lite-latest"
 }

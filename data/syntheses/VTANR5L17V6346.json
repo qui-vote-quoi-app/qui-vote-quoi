@@ -1,8 +1,91 @@
 {
  "uid": "VTANR5L17V6346",
  "num": 6346,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026O1N222",
+ "seance_jour": "mercredi 06 mai 2026",
+ "contexte": "Le projet de loi, examiné après la commission mixte paritaire, vise à mettre en place un cadre juridique général et pérenne pour la restitution de biens culturels ayant fait l'objet d'une appropriation illicite, notamment durant la période coloniale. Il simplifie les procédures en évitant le recours systématique à des lois d'espèce, tout en modifiant le code du patrimoine pour encadrer le déclassement de ces œuvres.",
+ "pour": [
+  {
+   "resume": "L'intégration de la notion de groupe humain permet d'inclure des communautés spirituelles ou culturelles dont les frontières ne se conforment pas aux structures étatiques coloniales.",
+   "citation": "L'une des victoires majeures, que nous avons fortement appelée de nos vœux, est l'intégration du terme \" groupe humain \". Jusqu'ici, le projet de loi reposait exclusivement sur une logique interétatique.",
+   "acteur": "PA794154",
+   "nom": "M. Jean-Claude Raux",
+   "qualite": "",
+   "syceron": [
+    "4077358"
+   ]
+  },
+  {
+   "resume": "Le texte met fin au recours aux lois d'espèce en instaurant un cadre stable, transparent et prévisible pour traiter les demandes de restitution.",
+   "citation": "ce texte est l'achèvement d'un triptyque législatif guidé par une seule et même logique : substituer aux lois d'espèce un cadre stable, transparent et prévisible.",
+   "acteur": "PA793398",
+   "nom": "M. Jérémie Patrier-Leitus",
+   "qualite": "",
+   "syceron": [
+    "4077420"
+   ]
+  },
+  {
+   "resume": "La loi constitue un acte de reconnaissance morale face aux spoliations du passé et contribue à restaurer la dignité des peuples concernés.",
+   "citation": "Dès lors, la question n'est plus seulement patrimoniale, elle est morale. Elle appelle une réponse claire : restituer ce qui a été pris. Le texte que nous examinons aujourd'hui s'inscrit dans cette démarche.",
+   "acteur": "PA795240",
+   "nom": "Mme Mereana Reid Arbelot",
+   "qualite": "",
+   "syceron": [
+    "4077434"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "L'absence d'obligation de motiver par écrit les refus de restitution ouvre la porte à l'arbitraire et à des blocages idéologiques.",
+   "citation": "Cependant, le texte issu de la CMP fait l'impasse sur des garanties de transparence essentielles. Nous défendions l'obligation de motivation en cas de refus.",
+   "acteur": "PA794154",
+   "nom": "M. Jean-Claude Raux",
+   "qualite": "",
+   "syceron": [
+    "4077358"
+   ]
+  },
+  {
+   "resume": "Le texte exclut les limites chronologiques du premier espace colonial, laissant de côté une part essentielle des spoliations historiques.",
+   "citation": "Toutefois, cette avancée demeure partielle. Le texte fixe des limites, notamment temporelles, qui excluent une partie de l'histoire coloniale, en particulier celle du premier espace colonial constitué dans les Amériques et dans les Caraïbes.",
+   "acteur": "PA795240",
+   "nom": "Mme Mereana Reid Arbelot",
+   "qualite": "",
+   "syceron": [
+    "4077434"
+   ]
+  },
+  {
+   "resume": "La suppression du contrôle effectif et du pouvoir de veto du Parlement dans le texte de la CMP constitue un manquement démocratique majeur.",
+   "citation": "Malheureusement, dans le texte issu de la commission mixte paritaire, ce mécanisme de veto a disparu et la voix du Parlement est réduite au silence.",
+   "acteur": "PA841395",
+   "nom": "M. Maxime Michelet",
+   "qualite": "",
+   "syceron": [
+    "4077392"
+   ]
+  },
+  {
+   "resume": "L'absence de garanties concernant la représentation de l'opposition au sein de la commission de restitution affaiblit le dispositif démocratique.",
+   "citation": "Les garanties de représentation de l'opposition parmi les parlementaires siégeant à la commission de restitution ont également été retoquées en CMP, alors que cette présence était une garantie démocratique notable",
+   "acteur": "PA841395",
+   "nom": "M. Maxime Michelet",
+   "qualite": "",
+   "syceron": [
+    "4077392"
+   ]
+  }
+ ],
+ "ecartes": [
+  "Argument pour n°3 : la citation ne figure pas mot pour mot dans P4."
+ ],
+ "genere_le": "2026-11-10T23:01:16+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T23:01:16+00:00"
 }

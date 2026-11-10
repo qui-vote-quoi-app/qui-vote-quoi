@@ -1,11 +1,91 @@
 {
  "uid": "VTANR5L17V7004",
  "num": 7004,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
+ "tentatives": 1,
  "erreurs": [],
  "cr": "CRSANR5L17S2026O1N251",
  "seance_jour": "jeudi 28 mai 2026",
- "derniere_tentative": "2026-11-10T22:25:59+00:00"
+ "derniere_tentative": "2026-11-10T22:57:03+00:00",
+ "contexte": "L'Assemblée nationale examine, en première lecture, la proposition de loi visant à étendre à toutes les communes la compensation financière pour l'exercice des compétences du service public de la petite enfance. Actuellement réservée aux communes de plus de 3 500 habitants, cette aide financière pourrait bénéficier à l'ensemble des communes ainsi qu'aux intercommunalités et syndicats mixtes.",
+ "pour": [
+  {
+   "resume": "Cette proposition de loi corrige une inégalité territoriale et une injustice en soutenant financièrement les communes rurales et les intercommunalités qui exercent les compétences de la petite enfance sans aide de l'État.",
+   "citation": "Cette rupture d'égalité doit être corrigée car, derrière elle, se cachent des réalités que nous ne pouvons ignorer.",
+   "acteur": "PA795258",
+   "nom": "M. Frantz Gumbs",
+   "qualite": "",
+   "syceron": [
+    "4103878"
+   ]
+  },
+  {
+   "resume": "L'extension de la compensation financière aux intercommunalités et syndicats mixtes est indispensable car la politique de petite enfance s'organise principalement à cet échelon dans les territoires ruraux.",
+   "citation": "En effet, dans les territoires ruraux, c'est bien à l'échelon intercommunal que se pense et s'organise concrètement la politique de petite enfance",
+   "acteur": "PA795258",
+   "nom": "M. Frantz Gumbs",
+   "qualite": "",
+   "syceron": [
+    "4103878"
+   ]
+  },
+  {
+   "resume": "Le coût de cette mesure est faible et représente un investissement dérisoire face à l'enjeu démographique et à la nécessité de garantir l'accès aux modes de garde dans les territoires ruraux.",
+   "citation": "Trente millions d'euros : voilà le coût annuel de la réparation d'une injustice qui touche presque 20 % des naissances françaises.",
+   "acteur": "PA841067",
+   "nom": "M. Alexandre Allegret-Pilot",
+   "qualite": "",
+   "syceron": [
+    "4103895"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le dispositif manque de recul puisque le service public de la petite enfance a été créé récemment, en 2025.",
+   "citation": "la vigilance s'impose toutefois car nous manquons de recul sur la montée en charge concrète de ce service, créé en 2025.",
+   "acteur": "PA795962",
+   "nom": "Mme Joséphine Missoffe",
+   "qualite": "",
+   "syceron": [
+    "4103886"
+   ]
+  },
+  {
+   "resume": "Des incertitudes subsistent concernant l'articulation financière entre les communes et les intercommunalités, en particulier lorsque les transferts de compétences sont partiels ou évolutifs.",
+   "citation": "des interrogations subsistent sur les modalités d'articulation financière entre communes et intercommunalités, notamment quand les transferts de compétences sont partiels ou évolutifs.",
+   "acteur": "PA795962",
+   "nom": "Mme Joséphine Missoffe",
+   "qualite": "",
+   "syceron": [
+    "4103886"
+   ]
+  },
+  {
+   "resume": "Le coût réel de la proposition de loi risque d'être sous-évalué en raison de l'élargissement du nombre de collectivités bénéficiaires et des contrôles nécessaires.",
+   "citation": "le coût réel du dispositif apparaît sous-évalué en raison de l'élargissement du nombre de collectivités éligibles et des mécanismes de contrôle nécessaires",
+   "acteur": "PA795962",
+   "nom": "Mme Joséphine Missoffe",
+   "qualite": "",
+   "syceron": [
+    "4103886"
+   ]
+  },
+  {
+   "resume": "Le texte demeure très largement insuffisant face aux difficultés structurelles du secteur, telles que la pénurie de personnel et la marchandisation de la petite enfance.",
+   "citation": "La proposition de loi vise à permettre la compensation financière des communes de moins de 3 500 habitants pour leur mission d'accueil de la petite enfance. C'est une étape nécessaire, mais très largement insuffisante",
+   "acteur": "PA796062",
+   "nom": "M. Thomas Portes",
+   "qualite": "",
+   "syceron": [
+    "4103999"
+   ]
+  }
+ ],
+ "ecartes": [
+  "Argument pour n°4 : la citation ne figure pas mot pour mot dans P10."
+ ],
+ "genere_le": "2026-11-10T22:57:03+00:00",
+ "modele": "gemini:gemini-flash-lite-latest"
 }

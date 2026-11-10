@@ -1,11 +1,92 @@
 {
  "uid": "VTANR5L17V6753",
  "num": 6753,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
+ "tentatives": 1,
  "erreurs": [],
  "cr": "CRSANR5L17S2026O1N238",
  "seance_jour": "mercredi 20 mai 2026",
- "derniere_tentative": "2026-11-10T22:28:19+00:00"
+ "derniere_tentative": "2026-11-10T22:57:52+00:00",
+ "contexte": "L'Assemblée nationale examine, en première lecture, la proposition de loi organique portant actualisation du corps électoral pour les élections au congrès et aux assemblées de province de la Nouvelle-Calédonie. Ce texte vise à intégrer les natifs et certains résidents non pris en compte dans le corps électoral actuel en vue des prochaines échéances provinciales.",
+ "pour": [
+  {
+   "resume": "L'intégration des natifs dans le corps électoral met fin à un déni de démocratie et constitue un ajustement mesuré qui respecte les équilibres locaux.",
+   "citation": "L'ouverture du corps électoral aux 10 569 natifs constitue un ajustement mesuré, qui n'est pas de nature à bouleverser les équilibres existants.",
+   "acteur": "PA331582",
+   "nom": "M. Philippe Vigier",
+   "qualite": "",
+   "syceron": [
+    "4092988"
+   ]
+  },
+  {
+   "resume": "Cette réforme est pleinement conforme à l'avis du Conseil d'État et aux engagements internationaux, tout en garantissant le suffrage universel.",
+   "citation": "ce texte est entièrement conforme à la trajectoire définie par le Conseil d'État dans son avis du 7 décembre 2023.",
+   "acteur": "PA267780",
+   "nom": "Mme Agnès Firmin Le Bodo",
+   "qualite": "",
+   "syceron": [
+    "4092993"
+   ]
+  },
+  {
+   "resume": "L'actualisation du corps électoral est indispensable pour assurer la représentativité et la justice des prochaines élections provinciales.",
+   "citation": "Il y a là un réel enjeu démocratique, une question qui engage directement la représentativité des institutions.",
+   "acteur": "PA793832",
+   "nom": "M. Yoann Gillet",
+   "qualite": "",
+   "syceron": [
+    "4093166"
+   ]
+  },
+  {
+   "resume": "Permettre aux jeunes natifs de voter dans leur territoire d'origine est une nécessité pour leur participation à une société pacifiée et démocratique.",
+   "citation": "l'intégration dans le corps électoral des natifs, des jeunes pour une grande partie d'entre eux, qui ne demandent qu'une chose, voter dans le territoire dans lequel ils sont nés, est nécessaire",
+   "acteur": "PA793394",
+   "nom": "M. Arthur Delaporte",
+   "qualite": "",
+   "syceron": [
+    "4093184"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le texte est adopté en l'absence d'un accord global et sans la recherche d'un consensus avec le peuple premier.",
+   "citation": "En effet, en l'absence d'un accord global, qui n'est toujours pas trouvé, et alors que le territoire a été bousculé il y a quelques mois par le gouvernement, je considère qu'il faut agir sans précipitation.",
+   "acteur": "PA720960",
+   "nom": "M. Olivier Serva",
+   "qualite": "",
+   "syceron": [
+    "4092997"
+   ]
+  },
+  {
+   "resume": "Modifier unilatéralement le corps électoral à quelques semaines d'un scrutin est perçu comme un passage en force qui attise les tensions.",
+   "citation": "Tenter maintenant de toucher au corps électoral, c'est encore attiser le feu. Il suffit de laisser se tenir les élections et de redonner ainsi, après tant de reports des élections provinciales, une légitimité démocratique",
+   "acteur": "PA795868",
+   "nom": "M. Jean-Victor Castor",
+   "qualite": "",
+   "syceron": [
+    "4093000",
+    "4093161"
+   ]
+  },
+  {
+   "resume": "Le changement du corps électoral sans l'accord des indépendantistes et du peuple premier va à l'encontre des exigences d'un processus de décolonisation pacifique.",
+   "citation": "Nous l'avons dit à plusieurs reprises, nous ne sommes pas opposés à un dégel partiel du corps électoral, mais pas à n'importe quelles conditions. Nous l'accepterions seulement s'il y avait un accord global politique",
+   "acteur": "PA795808",
+   "nom": "Mme Sabrina Sebaihi",
+   "qualite": "",
+   "syceron": [
+    "4093476"
+   ]
+  }
+ ],
+ "ecartes": [
+  "Argument contre n°3 : la citation ne figure pas mot pour mot dans P8."
+ ],
+ "genere_le": "2026-11-10T22:57:52+00:00",
+ "modele": "gemini:gemini-flash-lite-latest"
 }

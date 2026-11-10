@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51962",
+ "texte": "PIONANR5L17B1326",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte pérennise et encadre l'expérimentation des « territoires zéro chômeur de longue durée ». Il prévoit la création d'un fonds national chargé de financer et de piloter le dispositif, ainsi que la mise en place de comités locaux par les collectivités volontaires. Enfin, il permet l'embauche de personnes privées durablement d'emploi en contrat à durée indéterminée dans des entreprises conventionnées.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T23:11+00:00"
+}

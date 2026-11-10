@@ -1,11 +1,95 @@
 {
  "uid": "VTANR5L17V8434",
  "num": 8434,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
+ "tentatives": 1,
  "erreurs": [],
  "cr": "CRSANR5L17S2026E1N024",
  "seance_jour": "mardi 21 juillet 2026",
- "derniere_tentative": "2026-11-10T21:19:27+00:00"
+ "derniere_tentative": "2026-11-10T22:48:01+00:00",
+ "contexte": "Le Parlement examine les conclusions de la commission mixte paritaire sur la proposition de loi visant à moderniser la gestion du patrimoine immobilier de l'État. Le texte prévoit la transformation de l'Agence de gestion de l'immobilier de l'État en un établissement public industriel et commercial (Épic) faisant office de foncière unique pour professionnaliser l'entretien, la rénovation et la gestion des biens immobiliers.",
+ "pour": [
+  {
+   "resume": "La création d'une foncière publique permet de professionnaliser la gestion immobilière de l'État et de remédier au sous-investissement chronique.",
+   "citation": "La création d'une foncière de l'État sous la forme d'un établissement public à caractère industriel et commercial vise à professionnaliser la gestion immobilière de l'État en regroupant progressivement une partie de ses actifs au sein d'un opérateur spécialisé.",
+   "acteur": "PA332523",
+   "nom": "Mme Marie-Christine Dalloz",
+   "qualite": "",
+   "syceron": [
+    "4167314",
+    "4167323"
+   ]
+  },
+  {
+   "resume": "La distinction entre propriétaire et occupant permet d'identifier le coût réel de l'immobilier et de responsabiliser les administrations utilisatrices.",
+   "citation": "En distinguant le propriétaire de l'occupant, elle permet de mieux identifier le coût réel de l'immobilier public et de responsabiliser les administrations utilisatrices.",
+   "acteur": "PA332523",
+   "nom": "Mme Marie-Christine Dalloz",
+   "qualite": "",
+   "syceron": [
+    "4167314",
+    "4167323"
+   ]
+  },
+  {
+   "resume": "Le texte renforce le contrôle parlementaire et l'information du Parlement grâce à un rapport annuel et un contrat pluriannuel d'objectifs.",
+   "citation": "Le choix d'un contrat pluriannuel d'objectifs et de performance, complété par un rapport annuel, permettra au Parlement de disposer d'une information plus structurée sur les résultats obtenus.",
+   "acteur": "PA332523",
+   "nom": "Mme Marie-Christine Dalloz",
+   "qualite": "",
+   "syceron": [
+    "4167314",
+    "4167323"
+   ]
+  },
+  {
+   "resume": "L'État applique ainsi à ses propres bâtiments les exigences de performance énergétique et de rigueur qu'il impose aux propriétaires privés.",
+   "citation": "Si, depuis des années, la puissance publique impose aux propriétaires français privés une discipline stricte, si elle leur impose des diagnostics, si elle conditionne le droit de louer à des étiquettes énergétiques, si elle exige, si elle inspecte, si elle verbalise, dans le même temps elle s'exonère tranquillement des exigences qu'elle impose à d'autres",
+   "acteur": "PA841395",
+   "nom": "M. Maxime Michelet",
+   "qualite": "",
+   "syceron": [
+    "4167885",
+    "4167890",
+    "4167898"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "L'obligation pour les ministères de payer des loyers de marché risque d'augmenter artificiellement le coût du service public et de nuire aux conditions de travail.",
+   "citation": "en imposant aux ministères des loyers calés sur le prix du marché, nous allons renchérir artificiellement le coût du service public ! Ces charges, j'y insiste, deviennent ensuite un motif de réduction budgétaire.",
+   "acteur": "PA842271",
+   "nom": "M. Emmanuel Maurel",
+   "qualite": "",
+   "syceron": [
+    "4167866",
+    "4167868",
+    "4167870",
+    "4167873",
+    "4167876",
+    "4167947",
+    "4167950",
+    "4167881",
+    "4167953"
+   ]
+  },
+  {
+   "resume": "La continuité du service public est reléguée au rang de simple limite au moment de vendre, tandis que la valorisation financière devient la mission centrale.",
+   "citation": "Dans cette version du texte, la continuité du service public n'est plus ce qui fonde l'action de l'établissement : elle devient une limite que l'on rappelle au moment de vendre. Pendant ce temps, la valorisation, elle, reste bien une mission, désormais élargie aux \" biens et droits fonciers et immobiliers \".",
+   "acteur": "PA841885",
+   "nom": "M. Arnaud Bonnet",
+   "qualite": "",
+   "syceron": [
+    "4167726"
+   ]
+  }
+ ],
+ "ecartes": [
+  "Argument contre n°1 : la citation ne figure pas mot pour mot dans P2.",
+  "Argument contre n°3 : la citation ne figure pas mot pour mot dans P6."
+ ],
+ "genere_le": "2026-11-10T22:48:01+00:00",
+ "modele": "gemini:gemini-flash-lite-latest"
 }

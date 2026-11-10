@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N53427",
+ "texte": "PIONANR5L17B2310",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte crée un dispositif de protection et de réinsertion pour les personnes dont les actions ou propos menacent leur intégrité physique en raison de leur contribution contre la criminalité organisée. Il prévoit la possibilité d'utiliser une identité d'emprunt et institue une commission nationale chargée de définir, suivre et modifier ces mesures, saisie par le ministre de l'intérieur ou des agents habilités. Enfin, il compense la charge financière pour l'État par la création d'une taxe additionnelle.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T23:05+00:00"
+}

@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51845",
+ "texte": "PIONANR5L17B1233",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte crée une commission de reconnaissance pour contrôler l'application des recommandations concernant les enfants déplacés de La Réunion vers l'Hexagone entre 1962 et 1984. Il institue une journée nationale d'hommage annuelle fixée au 18 février et fonde un établissement public dans la Creuse pour l'accueil, les archives et la recherche. Enfin, il met en place une allocation spécifique de réparation financière exonérée d'impôts et de prélèvements sociaux pour les personnes concernées ou leurs descendants.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T23:10+00:00"
+}

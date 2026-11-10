@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N53276",
+ "texte": "PIONANR5L17B2172",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie les conditions de reconnaissance et d'indemnisation des victimes des essais nucléaires français. Il redéfinit les critères géographiques et temporels d'exposition, assouplit les modalités de transmission des demandes pour les ayants droit, instaure une présomption d'exposition et crée une commission dédiée au suivi et à l'évaluation des dépenses de santé pour les organismes d'assurance maladie.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T23:08+00:00"
+}

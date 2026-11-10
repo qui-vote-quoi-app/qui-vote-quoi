@@ -1,11 +1,92 @@
 {
  "uid": "VTANR5L17V7981",
  "num": 7981,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
+ "tentatives": 1,
  "erreurs": [],
  "cr": "CRSANR5L17S2026E1N005",
  "seance_jour": "mardi 07 juillet 2026",
- "derniere_tentative": "2026-11-10T19:51:48+00:00"
+ "derniere_tentative": "2026-11-10T22:50:42+00:00",
+ "contexte": "L'Assemblée nationale examine en première lecture l'ensemble du projet de loi organique relatif au renforcement des juridictions criminelles. Ce texte vise à répondre à l'engorgement de la justice criminelle et aux délais de jugement excessifs, tout en modifiant divers aspects de la procédure pénale et de l'accompagnement des victimes.",
+ "pour": [
+  {
+   "resume": "Le texte apporte des avancées utiles pour améliorer l'organisation et l'efficacité des juridictions criminelles ainsi que pour renforcer les droits des victimes.",
+   "citation": "il améliore les capacités d'investigation de la justice, facilite l'organisation des juridictions criminelles, renforce les droits des victimes et apporte plusieurs simplifications procédurales",
+   "acteur": "PA721816",
+   "nom": "M. Ian Boucard",
+   "qualite": "",
+   "syceron": [
+    "4149388",
+    "4149454"
+   ]
+  },
+  {
+   "resume": "La légalisation de la généalogie génétique d'investigation constitue un outil précieux pour élucider les crimes non résolus et identifier les auteurs.",
+   "citation": "Cet outil sera un véritable atout pour nos enquêteurs : grâce au recours aux bases de données génétiques, il pourrait permettre d'identifier l'auteur d'un meurtre ou d'un viol non élucidé.",
+   "acteur": "PA267042",
+   "nom": "M. Yannick Favennec-Bécot",
+   "qualite": "",
+   "syceron": [
+    "4149209"
+   ]
+  },
+  {
+   "resume": "La formation obligatoire des magistrats aux violences sexistes, sexuelles et intrafamiliales répond à une attente forte des associations et améliore la qualité de la justice.",
+   "citation": "la formation obligatoire des magistrats aux violences sexistes et sexuelles, ainsi qu'aux violences intrafamiliales. C'est une avancée très attendue par les associations de victimes",
+   "acteur": "PA267042",
+   "nom": "M. Yannick Favennec-Bécot",
+   "qualite": "",
+   "syceron": [
+    "4149209"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le texte ne résout pas le manque chronique de moyens de la justice et privilégie des modifications procédurales au détriment des investissements nécessaires.",
+   "citation": "des réformes procédurales censées masquer ce que vous refusez toujours d'affronter : le manque chronique de moyens de notre justice.",
+   "acteur": "PA721896",
+   "nom": "Mme Elsa Faucillon",
+   "qualite": "",
+   "syceron": [
+    "4149217"
+   ]
+  },
+  {
+   "resume": "Le raccourcissement des délais pour soulever les nullités de procédure et l'affaiblissement du principe de liberté affaiblissent les garanties fondamentales.",
+   "citation": "Il reste dans ce texte des dispositions qui incarnent toujours cette même logique de gestion de la pénurie : le raccourcissement des délais laissés aux avocats pour soulever les nullités de procédure ; le maintien d'un dispositif qui affaiblit le principe selon lequel la liberté est la règle et la détention l'exception",
+   "acteur": "PA721896",
+   "nom": "Mme Elsa Faucillon",
+   "qualite": "",
+   "syceron": [
+    "4149217"
+   ]
+  },
+  {
+   "resume": "Le projet initial a été vidé de ses ambitions principales au fil des compromis successifs et des reculs du gouvernement.",
+   "citation": "Ce projet de loi nous avait pourtant été présenté comme la grande réforme d'une justice criminelle à bout de souffle. Que reste-t-il, à l'heure du vote, de ce texte qui devait marquer le passage de M. Darmanin place Vendôme ? Un projet de loi considérablement amoindri.",
+   "acteur": "PA840657",
+   "nom": "Mme Sophie Ricourt Vaginay",
+   "qualite": "",
+   "syceron": [
+    "4149227"
+   ]
+  },
+  {
+   "resume": "Le texte prend le problème à l'envers en durcissant la détention provisoire et en élargissant le fichage au lieu de traiter les causes profondes de l'engorgement.",
+   "citation": "Ce texte continue de prendre le problème à l'envers. Il affaiblit les garanties procédurales, il alourdit la détention provisoire, il élargit le fichage génétique.",
+   "acteur": "PA841351",
+   "nom": "M. Emmanuel Duplessy",
+   "qualite": "",
+   "syceron": [
+    "4149419"
+   ]
+  }
+ ],
+ "ecartes": [
+  "Argument pour n°3 : la citation ne figure pas mot pour mot dans P7."
+ ],
+ "genere_le": "2026-11-10T22:50:42+00:00",
+ "modele": "gemini:gemini-flash-lite-latest"
 }

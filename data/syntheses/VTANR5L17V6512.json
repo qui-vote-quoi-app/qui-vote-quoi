@@ -1,8 +1,101 @@
 {
  "uid": "VTANR5L17V6512",
  "num": 6512,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026O1N227",
+ "seance_jour": "lundi 11 mai 2026",
+ "contexte": "L'Assemblée nationale examine en nouvelle lecture la proposition de loi visant à renforcer le parcours inclusif des enfants à besoins éducatifs particuliers. Les débats portent sur les moyens alloués à l'école inclusive, le statut des accompagnants et l'accessibilité des établissements.",
+ "pour": [
+  {
+   "resume": "La proposition de loi est soutenue car l'ensemble des groupes politiques partagent le principe fondamental de l'école inclusive.",
+   "citation": "tous les groupes politiques représentés dans l'hémicycle sont favorables au principe de l'école inclusive.",
+   "acteur": "PA719338",
+   "nom": "Mme Graziella Melchior",
+   "qualite": "",
+   "syceron": [
+    "4082952",
+    "4082955",
+    "4082958"
+   ]
+  },
+  {
+   "resume": "Le texte favorise l'évolution des mentalités et le développement de la bienveillance entre élèves.",
+   "citation": "le regard porté par leurs camarades de classe a profondément évolué et la bienveillance est désormais bien présente.",
+   "acteur": "PA719338",
+   "nom": "Mme Graziella Melchior",
+   "qualite": "",
+   "syceron": [
+    "4082952",
+    "4082955",
+    "4082958"
+   ]
+  },
+  {
+   "resume": "L'adoption du texte permet d'avancer sur la généralisation du livret de parcours inclusif et le renforcement de la formation des enseignants.",
+   "citation": "la généralisation du livret de parcours inclusif, la réponse fondamentale dont nous avons besoin pour avoir des données de suivi de la politique inclusive et le renforcement de la formation des enseignants.",
+   "acteur": "PA719338",
+   "nom": "Mme Graziella Melchior",
+   "qualite": "",
+   "syceron": [
+    "4082952",
+    "4082955",
+    "4082958"
+   ]
+  },
+  {
+   "resume": "L'inclusion est considérée comme un projet de société utile, chaque mesure venant conforter cet édifice.",
+   "citation": "l'inclusion est un projet de société et chaque pierre que nous apportons à l'édifice est utile.",
+   "acteur": "PA795156",
+   "nom": "Mme Fatiha Keloua Hachi",
+   "qualite": "",
+   "syceron": [
+    "4083244",
+    "4083248"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le texte est jugé insuffisant et ne traite pas des sujets essentiels tels que le temps de scolarisation ou le statut des personnels.",
+   "citation": "Nous n'avons pas parlé du temps de scolarisation. Nous n'avons pas mené à son terme le questionnement autour du statut des AESH, mais aussi des Atsem et des AED.",
+   "acteur": "PA841657",
+   "nom": "Mme Anaïs Belouassa-Cherifi",
+   "qualite": "",
+   "syceron": [
+    "4082941",
+    "4082946",
+    "4082948",
+    "4082950"
+   ]
+  },
+  {
+   "resume": "L'absence de financement identifié pour la mise en œuvre du texte est critiquée.",
+   "citation": "Nous regrettons également que le texte ne soit pas gagé : nous ne savons pas combien cela va coûter, ni comment nous allons faire face à ces dépenses.",
+   "acteur": "PA795156",
+   "nom": "Mme Fatiha Keloua Hachi",
+   "qualite": "",
+   "syceron": [
+    "4083244",
+    "4083248"
+   ]
+  },
+  {
+   "resume": "Le rejet de certains amendements, notamment sur la création d'un observatoire, est regretté.",
+   "citation": "Je pense notamment à celui qui visait à réintroduire la création d'un observatoire de la scolarisation et de l'insertion professionnelle des personnes en situation de handicap",
+   "acteur": "PA795156",
+   "nom": "Mme Fatiha Keloua Hachi",
+   "qualite": "",
+   "syceron": [
+    "4083244",
+    "4083248"
+   ]
+  }
+ ],
+ "ecartes": [],
+ "genere_le": "2026-11-10T22:59:33+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T22:59:33+00:00"
 }

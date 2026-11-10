@@ -1,8 +1,82 @@
 {
  "uid": "VTANR5L17V6318",
  "num": 6318,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026O1N220",
+ "seance_jour": "mardi 05 mai 2026",
+ "contexte": "Ce vote porte sur l'ensemble d'une proposition de loi visant à renforcer la sécurité, la rétention administrative et la prévention des risques d'attentat en première lecture. Le texte propose notamment de prolonger la durée de rétention administrative pour les étrangers condamnés pour terrorisme ou représentant une menace grave, de créer une injonction d'examen psychiatrique et de modifier les dispositions relatives au suivi des individus radicalisés.",
+ "pour": [
+  {
+   "resume": "L'allongement de la durée de rétention administrative pour les profils dangereux permet à l'administration d'exécuter effectivement les décisions d'éloignement.",
+   "citation": "L'allongement de la durée maximale de rétention administrative pour les étrangers condamnés pour terrorisme constitue une mesure pragmatique. Il ne s'agit pas de durcir le droit de manière symbolique, mais de permettre à l'administration d'exécuter effectivement des décisions d'éloignement",
+   "acteur": "PA795100",
+   "nom": "M. Éric Martineau",
+   "qualite": "",
+   "syceron": [
+    "4075737",
+    "4075742"
+   ]
+  },
+  {
+   "resume": "Le rétablissement de la base légale de la rétention administrative est une nécessité immédiate après la censure du Conseil constitutionnel.",
+   "citation": "s'agissant de la rétention administrative, l'article 7 rétablit la base légale qui avait disparu à la suite de la censure prononcée par le Conseil constitutionnel en août 2025. Cinq personnes dangereuses, condamnées pour terrorisme, ont d'ores et déjà dû être libérées faute de fondement juridique pour les retenir.",
+   "acteur": "PA841931",
+   "nom": "M. Laurent Mazaury",
+   "qualite": "",
+   "syceron": [
+    "4075753",
+    "4075755"
+   ]
+  },
+  {
+   "resume": "Ce texte constitue une avancée nécessaire pour mieux protéger les Français et combler les lacunes juridiques face à l'évolution de la menace terroriste.",
+   "citation": "Monsieur le rapporteur, cette proposition de loi témoigne d'une volonté de bien faire, mais le constat est sans appel. Ce texte vise à masquer votre échec complet en matière migratoire. En dix ans, vous avez battu tous les records d'immigration légale et illégale",
+   "acteur": "PA794502",
+   "nom": "M. Michaël Taverne",
+   "qualite": "",
+   "syceron": [
+    "4075872",
+    "4075874",
+    "4075876",
+    "4075878",
+    "4075880",
+    "4076584",
+    "4076522",
+    "4076527"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le texte légifère dans l'urgence en s'appuyant sur l'émotion suscitée par des drames, sans démontrer l'efficacité des mesures proposées.",
+   "citation": "ce texte ne lutte pas contre le terrorisme. Il n'apporte pas de réponse, mais obéit à un réflexe devenu habituel : légiférer dans l'urgence, souvent en instrumentalisant l'émotion légitime suscitée par des drames, sans jamais démontrer l'efficacité des mesures proposées.",
+   "acteur": "PA721896",
+   "nom": "Mme Elsa Faucillon",
+   "qualite": "",
+   "syceron": [
+    "4075856"
+   ]
+  },
+  {
+   "resume": "L'allongement de la rétention administrative jusqu'à 540 jours repose sur des critères flous et affaiblit les garanties associées à la justice pénale.",
+   "citation": "l'allongement de la rétention administrative jusqu'à 540 jours marque un basculement grave. Cette mesure repose sur des critères flous, laissés à l'appréciation de l'autorité administrative, et permet d'enfermer des personnes pour de longues durées",
+   "acteur": "PA721896",
+   "nom": "Mme Elsa Faucillon",
+   "qualite": "",
+   "syceron": [
+    "4075856"
+   ]
+  }
+ ],
+ "ecartes": [
+  "Argument pour n°2 : la citation ne figure pas mot pour mot dans P3.",
+  "Argument contre n°2 : la citation ne figure pas mot pour mot dans P4.",
+  "Argument contre n°4 : la citation ne figure pas mot pour mot dans P4."
+ ],
+ "genere_le": "2026-11-10T23:03:06+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T23:03:06+00:00"
 }

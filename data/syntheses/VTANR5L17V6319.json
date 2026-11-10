@@ -1,8 +1,96 @@
 {
  "uid": "VTANR5L17V6319",
  "num": 6319,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2026O1N220",
+ "seance_jour": "mardi 05 mai 2026",
+ "contexte": "L'Assemblée nationale examine les conclusions de la commission mixte paritaire sur le projet de loi relatif à la lutte contre les fraudes sociales et fiscales. Ce texte vise à renforcer les contrôles, à améliorer les échanges d'informations entre administrations et à accroître le recouvrement des sommes fraudées pour préserver les finances publiques et la solidarité nationale.",
+ "pour": [
+  {
+   "resume": "La lutte contre la fraude est indispensable pour préserver les finances publiques et garantir la pérennité du modèle de protection sociale.",
+   "citation": "Chaque euro de fraude sociale ou fiscale est un euro que l'État ou la sécurité sociale ne dépensera pas et qui ne servira pas à l'intérêt général. Chaque fraude mine un équilibre financier déjà précaire.",
+   "acteur": "PA642847",
+   "nom": "M. Thibault Bazin",
+   "qualite": "",
+   "syceron": [
+    "4076402",
+    "4076093",
+    "4076095"
+   ]
+  },
+  {
+   "resume": "L'État doit garantir l'équité entre les citoyens en veillant à ce que les aides publiques bénéficient aux personnes qui en ont réellement besoin.",
+   "citation": "Il doit veiller à ce que les aides bénéficient réellement à celles et ceux qui en ont le plus besoin et à ce que chacun participe à l'effort commun à hauteur de ses moyens.",
+   "acteur": "PA722374",
+   "nom": "M. Cyrille Isaac-Sibille",
+   "qualite": "",
+   "syceron": [
+    "4076111",
+    "4076116",
+    "4076118"
+   ]
+  },
+  {
+   "resume": "Le texte protège la solidarité nationale contre les comportements qui l'affaiblissent tout en préservant des équilibres validés par le Parlement.",
+   "citation": "L'Assemblée nationale et le Sénat sont parvenus à un équilibre qui protège la solidarité nationale contre ceux qui la détournent et s'organisent pour exploiter ses failles au détriment de ceux qui en bénéficient légitimement.",
+   "acteur": "PA722374",
+   "nom": "M. Cyrille Isaac-Sibille",
+   "qualite": "",
+   "syceron": [
+    "4076111",
+    "4076116",
+    "4076118"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Plusieurs dispositions portent atteinte aux libertés fondamentales en instaurant des sanctions sans que le caractère intentionnel de la fraude soit avéré.",
+   "citation": "En permettant l'accès aux données privées et l'application de sanctions sans que la fraude et son caractère intentionnel ne soient avérés, ce texte met fin à la présomption d'innocence et au droit à un procès équitable.",
+   "acteur": "PA841717",
+   "nom": "Mme Sandrine Runel",
+   "qualite": "",
+   "syceron": [
+    "4076385",
+    "4076387",
+    "4076389",
+    "4076391",
+    "4076400"
+   ]
+  },
+  {
+   "resume": "Le texte instaure un climat de suspicion généralisée qui risque d'aggraver le non-recours aux droits fondamentaux par les personnes précaires.",
+   "citation": "la peur du contrôle pousse aujourd'hui les plus précaires au non-recours à leurs droits les plus essentiels.",
+   "acteur": "PA793780",
+   "nom": "Mme Christine Arrighi",
+   "qualite": "",
+   "syceron": [
+    "4076099",
+    "4076102",
+    "4076109"
+   ]
+  },
+  {
+   "resume": "L'élargissement des contrôles et des accès aux fichiers bancaires et de santé constitue un recul pour le respect de la vie privée et des données personnelles.",
+   "citation": "L'article 10 permet aux CAF et aux CPAM d'obtenir auprès des banques, sans que l'allocataire en soit informé et sans motivation obligatoire, des relevés bancaires sur douze mois pour chacun des membres du foyer",
+   "acteur": "PA793780",
+   "nom": "Mme Christine Arrighi",
+   "qualite": "",
+   "syceron": [
+    "4076099",
+    "4076102",
+    "4076109"
+   ]
+  }
+ ],
+ "ecartes": [
+  "Argument pour n°2 : la citation ne figure pas mot pour mot dans P3.",
+  "Argument contre n°1 : la citation ne figure pas mot pour mot dans P2."
+ ],
+ "genere_le": "2026-11-10T23:02:17+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-10T23:02:17+00:00"
 }

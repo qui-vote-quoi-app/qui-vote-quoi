@@ -1,11 +1,96 @@
 {
  "uid": "VTANR5L17V7260",
  "num": 7260,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
+ "tentatives": 1,
  "erreurs": [],
  "cr": "CRSANR5L17S2026O1N259",
  "seance_jour": "mardi 02 juin 2026",
- "derniere_tentative": "2026-11-10T22:18:15+00:00"
+ "derniere_tentative": "2026-11-10T22:56:12+00:00",
+ "contexte": "Le projet de loi en deuxième lecture porte sur la transposition de l'avenant du 25 février 2026 au protocole d'accord relatif à l'assurance chômage. Il vise principalement à modifier les conditions d'indemnisation en cas de rupture conventionnelle pour réduire les dépenses de l'Unedic et encourager le retour à l'emploi.",
+ "pour": [
+  {
+   "resume": "La réforme permet de corriger les dérives des ruptures conventionnelles qui pèsent lourdement sur les comptes de l'Unedic.",
+   "citation": "En 2024, plus de 500 000 personnes ont été indemnisées à ce titre, soit 26 % des dépenses totales du régime d'assurance chômage et près de 9 milliards d'euros. Ces chiffres sont en constante augmentation",
+   "acteur": "PA841431",
+   "nom": "Mme Nathalie Colin-Oesterlé",
+   "qualite": "",
+   "syceron": [
+    "4113315"
+   ]
+  },
+  {
+   "resume": "Les mesures d'économies et la modulation de l'indemnisation favorisent la soutenabilité financière du régime et le retour à l'emploi.",
+   "citation": "Nous partageons pleinement l'ambition de ce texte d'assurer la soutenabilité financière du régime d'assurance chômage, l'équité entre les assurés et l'efficacité en matière de retour à l'emploi.",
+   "acteur": "PA841431",
+   "nom": "Mme Nathalie Colin-Oesterlé",
+   "qualite": "",
+   "syceron": [
+    "4113315"
+   ]
+  },
+  {
+   "resume": "Le dispositif prévoit des aménagements pour protéger les demandeurs d'emploi les plus vulnérables, notamment les seniors.",
+   "citation": "les seniors de 55 ans et plus pourront demander une prolongation de leurs droits pour rejoindre le régime commun sous réserve de démarches effectives de retour à l'emploi ; les résidents des territoires d'outre-mer bénéficieront, quant à eux, de durées d'indemnisation spécifiques et plus longues.",
+   "acteur": "PA841431",
+   "nom": "Mme Nathalie Colin-Oesterlé",
+   "qualite": "",
+   "syceron": [
+    "4113315"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le projet réduit fortement les droits des salariés, en particulier pour les seniors en fin de carrière.",
+   "citation": "Les moins de 55 ans perdront trois mois d'indemnisation, mais on atteint un summum avec les salariés en fin de carrière : les plus de 55 ans s'apprêtent à perdre six mois et demi de droits, soit un quart du montant total de leurs allocations !",
+   "acteur": "PA736201",
+   "nom": "Mme Sophie Taillé-Polian",
+   "qualite": "",
+   "syceron": [
+    "4113291",
+    "4113299"
+   ]
+  },
+  {
+   "resume": "Le dialogue social entourant cet accord est qualifié de vicié en raison des pressions et menaces de coupes budgétaires de l'exécutif.",
+   "citation": "ce dialogue social est complètement vicié : l'accord de février 2026 est le produit d'un chantage de l'exécutif - c'est une habitude chez vous. L'accord a été négocié sous la menace de 4 milliards d'euros de coupes budgétaires",
+   "acteur": "PA736201",
+   "nom": "Mme Sophie Taillé-Polian",
+   "qualite": "",
+   "syceron": [
+    "4113291",
+    "4113299"
+   ]
+  },
+  {
+   "resume": "La réforme cible à tort les salariés tout en ignorant la responsabilité des employeurs et les causes réelles de la précarité.",
+   "citation": "En modulant l'indemnisation selon le motif de la rupture, vous rompez l'égal accès de tous à l'assurance chômage et vous pénalisez uniquement les salariés, jamais les employeurs",
+   "acteur": "PA736201",
+   "nom": "Mme Sophie Taillé-Polian",
+   "qualite": "",
+   "syceron": [
+    "4113291",
+    "4113299"
+   ]
+  },
+  {
+   "resume": "Les difficultés financières de l'Unedic résultent d'abord des prélèvements de l'État et non des choix des demandeurs d'emploi.",
+   "citation": "quand celui-ci dénonce, chiffres à l'appui, les mises à contribution forcées de l'État, sans lesquelles son solde serait excédentaire de 2 milliards en 2026.",
+   "acteur": "PA793174",
+   "nom": "M. Yannick Monnet",
+   "qualite": "",
+   "syceron": [
+    "4113544",
+    "4113547",
+    "4113553"
+   ]
+  }
+ ],
+ "ecartes": [
+  "Argument pour n°1 : la citation ne figure pas mot pour mot dans P2."
+ ],
+ "genere_le": "2026-11-10T22:56:12+00:00",
+ "modele": "gemini:gemini-flash-lite-latest"
 }

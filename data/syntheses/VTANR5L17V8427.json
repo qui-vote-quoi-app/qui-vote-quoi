@@ -1,11 +1,120 @@
 {
  "uid": "VTANR5L17V8427",
  "num": 8427,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
+ "tentatives": 1,
  "erreurs": [],
  "cr": "CRSANR5L17S2026E1N022",
  "seance_jour": "lundi 20 juillet 2026",
- "derniere_tentative": "2026-11-10T22:08:12+00:00"
+ "derniere_tentative": "2026-11-10T22:49:04+00:00",
+ "contexte": "L'Assemblée nationale examine, en nouvelle lecture, le projet de loi d'urgence pour la protection et la souveraineté agricoles dans sa version issue de la commission mixte paritaire. Ce texte aborde des sujets sensibles tels que la gestion de la ressource en eau, la protection contre la prédation animale et l'encadrement dérogatoire de certaines molécules phytosanitaires.",
+ "pour": [
+  {
+   "resume": "Le texte apporte des réponses concrètes et attendues pour soutenir les agriculteurs face aux contraintes et aux difficultés climatiques.",
+   "citation": "autant de constats alarmants qui nous renvoient à notre obligation d'agir sans délai et d'apporter enfin à nos agriculteurs des réponses concrètes.",
+   "acteur": "PA330909",
+   "nom": "M. Vincent Descoeur",
+   "qualite": "",
+   "syceron": [
+    "4165434",
+    "4165693",
+    "4165695",
+    "4165701",
+    "4165703"
+   ]
+  },
+  {
+   "resume": "Les mesures sur l'eau facilitent les procédures de stockage pour garantir l'irrigation des cultures face au dérèglement climatique.",
+   "citation": "le texte facilite les procédures de stockage et renforce les objectifs de développement des capacités de stockage, en se fixant l'objectif de les doubler d'ici à 2035.",
+   "acteur": "PA330909",
+   "nom": "M. Vincent Descoeur",
+   "qualite": "",
+   "syceron": [
+    "4165434",
+    "4165693",
+    "4165695",
+    "4165701",
+    "4165703"
+   ]
+  },
+  {
+   "resume": "Le dispositif sur la prédation par le loup protège mieux les éleveurs et leurs troupeaux grâce à des assouplissements réglementaires.",
+   "citation": "Les mesures proposées permettront de mieux protéger les éleveurs et leurs troupeaux, notamment grâce à l'assouplissement des conditions de recours aux tirs de défense",
+   "acteur": "PA330909",
+   "nom": "M. Vincent Descoeur",
+   "qualite": "",
+   "syceron": [
+    "4165434",
+    "4165693",
+    "4165695",
+    "4165701",
+    "4165703"
+   ]
+  },
+  {
+   "resume": "L'encadrement des dérogations phytosanitaires repose désormais sur une expertise scientifique indépendante de l'Anses.",
+   "citation": "des dérogations subordonnées au strict respect de conditions cumulatives exigeantes et qui, surtout, reposent désormais sur l'expertise scientifique de l'Anses - elle décidera ou non de la dérogation.",
+   "acteur": "PA330909",
+   "nom": "M. Vincent Descoeur",
+   "qualite": "",
+   "syceron": [
+    "4165434",
+    "4165693",
+    "4165695",
+    "4165701",
+    "4165703"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le recours au vote bloqué et le filtrage des amendements constituent un déni de démocratie et empêchent le débat parlementaire sur les pesticides.",
+   "citation": "après avoir déclaré cette disposition irrecevable, vous voulez maintenant organiser un vote bloqué pour l'introduire de force dans le texte et faire passer l'ensemble en refusant les amendements",
+   "acteur": "PA335999",
+   "nom": "Mme Delphine Batho",
+   "qualite": "",
+   "syceron": [
+    "4165966",
+    "4165968",
+    "4165972"
+   ]
+  },
+  {
+   "resume": "La réintroduction potentielle de substances phytosanitaires controversées présente des risques graves pour la santé publique et l'environnement.",
+   "citation": "le Conseil d'État a souligné que le flupyradifurone se dégradait en PFAS, c'est-à-dire en polluant éternel, et qu'il était à l'origine d'une préoccupation majeure s'agissant du risque d'infiltration dans les eaux souterraines.",
+   "acteur": "PA335999",
+   "nom": "Mme Delphine Batho",
+   "qualite": "",
+   "syceron": [
+    "4166168",
+    "4166170"
+   ]
+  },
+  {
+   "resume": "L'article conditionnant la baisse des prélèvements d'eau à la création d'ouvrages de stockage porte atteinte aux exigences constitutionnelles de protection de l'environnement.",
+   "citation": "Le gouvernement considère que cette dérogation porte manifestement atteinte aux exigences de protection de la ressource en eau. De ce fait, elle serait vraisemblablement contraire à la Charte de l'environnement",
+   "acteur": "PA795386",
+   "nom": "M. Mathieu Lefèvre",
+   "qualite": "ministre délégué",
+   "syceron": [
+    "4166110",
+    "4166112",
+    "4166150"
+   ]
+  },
+  {
+   "resume": "Le projet de loi revient globalement sur le principe de non-régression environnementale et contredit les objectifs de préservation de la ressource en eau.",
+   "citation": "c'est l'ensemble de ce projet de loi qui revient sur le principe de non-régression environnementale, l'un des principes fondamentaux de notre Constitution, que nous devrions respecter.",
+   "acteur": "PA795482",
+   "nom": "Mme Manon Meunier",
+   "qualite": "",
+   "syceron": [
+    "4166178"
+   ]
+  }
+ ],
+ "ecartes": [],
+ "genere_le": "2026-11-10T22:49:04+00:00",
+ "modele": "gemini:gemini-flash-lite-latest"
 }

@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N52744",
+ "texte": "PIONANR5L17B1794",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte institue la gratuité du stationnement dans les hôpitaux publics pour les patients durant leur prise en charge, les visiteurs à raison de deux heures par jour, et les personnels pendant leur service. Il prévoit un encadrement des tarifs au-delà de cette franchise pour les visiteurs et instaure un financement complémentaire pour les établissements respectant ces règles. Enfin, il impose des rapports annuels de suivi et prévoit des modalités d'adaptation pour les contrats de délégation de service public en cours.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T23:09+00:00"
+}

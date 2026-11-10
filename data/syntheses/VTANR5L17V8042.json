@@ -1,11 +1,103 @@
 {
  "uid": "VTANR5L17V8042",
  "num": 8042,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
+ "tentatives": 1,
  "erreurs": [],
  "cr": "CRSANR5L17S2026E1N008",
  "seance_jour": "mercredi 08 juillet 2026",
- "derniere_tentative": "2026-11-10T22:10:01+00:00"
+ "derniere_tentative": "2026-11-10T22:49:54+00:00",
+ "contexte": "L'Assemblée nationale examine l'ensemble du projet de loi sur la justice criminelle et le respect des victimes, issu des travaux de la commission mixte paritaire. Ce texte vise à modifier les procédures pénales, à encadrer la justice criminelle et à répondre aux enjeux de délais de jugement, suscitant des débats nourris sur les moyens alloués à l'institution judiciaire et sur les droits fondamentaux.",
+ "pour": [
+  {
+   "resume": "Plusieurs dispositions majeures renforcent la protection et la prise en compte des victimes et de leurs proches.",
+   "citation": "Ce texte comporte des avancées majeures qui remettent la victime au centre de la réalité légistique. L'article 4 impose d'informer les proches sur les autopsies avant le permis d'inhumer. C'est une exigence d'humanité.",
+   "acteur": "PA795100",
+   "nom": "M. Éric Martineau",
+   "qualite": "",
+   "syceron": [
+    "4151509"
+   ]
+  },
+  {
+   "resume": "La réforme modernise les enquêtes grâce à la généalogie génétique d'investigation, outil précieux pour la vérité.",
+   "citation": "L'article 3 modernise les enquêtes par la généalogie génétique d'investigation. C'est la mobilisation de la science au service de la vérité due aux familles.",
+   "acteur": "PA795100",
+   "nom": "M. Éric Martineau",
+   "qualite": "",
+   "syceron": [
+    "4151509"
+   ]
+  },
+  {
+   "resume": "Le projet apporte des améliorations concrètes comme l'aide juridictionnelle accordée dès le dépôt de plainte pour les victimes de violences intrafamiliales.",
+   "citation": "ces projets de loi renforcent le respect dû aux victimes de violences intrafamiliales - violences si spécifiques que la société et l'État doivent les combattre de toutes leurs forces -, en leur octroyant l'aide juridictionnelle dès le dépôt de plainte.",
+   "acteur": "PA267780",
+   "nom": "Mme Agnès Firmin Le Bodo",
+   "qualite": "",
+   "syceron": [
+    "4151519",
+    "4151946"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le projet de loi répond au manque de moyens de la justice en réduisant les droits des justiciables plutôt qu'en investissant.",
+   "citation": "Quand la justice manque de moyens, vous ne lui en donnez pas davantage ; vous réduisez les droits. C'est ça, votre obsession : réduire nos droits. Les libertés fondamentales deviennent des variables d'ajustement de vos insuffisances budgétaires.",
+   "acteur": "PA793452",
+   "nom": "M. Hendrik Davi",
+   "qualite": "",
+   "syceron": [
+    "4151495",
+    "4151499",
+    "4151506"
+   ]
+  },
+  {
+   "resume": "Le texte crée un sas de détention provisoire contesté qui porte atteinte au principe selon lequel la liberté est la règle.",
+   "citation": "Il alerte aussi sur la création d'un \" \"sas de détention\" permettant le maintien temporaire en détention provisoire malgré l'expiration du mandat ou une irrégularité procédurale \". Ce dispositif est d'une extrême gravité.",
+   "acteur": "PA793452",
+   "nom": "M. Hendrik Davi",
+   "qualite": "",
+   "syceron": [
+    "4151495",
+    "4151499",
+    "4151506"
+   ]
+  },
+  {
+   "resume": "La réforme ne résout pas la crise profonde de la justice, caractérisée par une pénurie chronique de magistrats et de greffiers.",
+   "citation": "Accélérer le traitement des affaires ne consiste pas à réduire les garanties des justiciables ou à rechercher des économies sur le fonctionnement de la justice , mais à recruter des magistrats, des greffiers, des enquêteurs et enquêtrices",
+   "acteur": "PA721896",
+   "nom": "Mme Elsa Faucillon",
+   "qualite": "",
+   "syceron": [
+    "4151964",
+    "4151969",
+    "4151972",
+    "4151973",
+    "4151975",
+    "4151978"
+   ]
+  },
+  {
+   "resume": "Les délais restreints pour invoquer les nullités de procédure affaiblissent les droits de la défense.",
+   "citation": "Monsieur le ministre, ce n'est pas en affaiblissant les droits de la défense que vous accélérerez les procédures ou permettrez une meilleure justice pour les justiciables.",
+   "acteur": "PA722150",
+   "nom": "M. Sacha Houlié",
+   "qualite": "",
+   "syceron": [
+    "4151554",
+    "4151555",
+    "4151564"
+   ]
+  }
+ ],
+ "ecartes": [
+  "Argument pour n°1 : la citation ne figure pas mot pour mot dans P2."
+ ],
+ "genere_le": "2026-11-10T22:49:54+00:00",
+ "modele": "gemini:gemini-flash-lite-latest"
 }

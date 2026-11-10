@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51655",
+ "texte": "PIONANR5L17B1085",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte renforce les contrôles des établissements de protection de l'enfance et précise les compétences judiciaires concernant les visites et l'hébergement des enfants. Il modifie les pouvoirs du procureur de la République en matière de protection des mineurs et adapte les droits des enfants confiés à des tiers. Enfin, il accorde aux mineurs concernés une protection complémentaire en matière de santé et facilite l'accès des anciens bénéficiaires de l'Aide Sociale à l'Enfance aux prestations du réseau des œuvres universitaires.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T23:07+00:00"
+}

@@ -1,11 +1,94 @@
 {
  "uid": "VTANR5L17V7405",
  "num": 7405,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 0,
+ "tentatives": 1,
  "erreurs": [],
  "cr": "CRSANR5L17S2026O1N272",
  "seance_jour": "mardi 16 juin 2026",
- "derniere_tentative": "2026-11-10T21:39:15+00:00"
+ "derniere_tentative": "2026-11-10T22:53:28+00:00",
+ "contexte": "L'Assemblée nationale examine, en lecture définitive après l'échec de la commission mixte paritaire, la proposition de loi visant à renforcer la sécurité, la rétention administrative et la prévention des risques d'attentat. Ce texte, élaboré après plusieurs censures constitutionnelles et marqué par divers drames récents, vise notamment à encadrer l'éloignement des étrangers dangereux et à créer de nouveaux outils de prévention.",
+ "pour": [
+  {
+   "resume": "Le texte apporte des réponses concrètes et adaptées à l'évolution de la menace terroriste tout en sécurisant les dispositifs pour éviter la censure constitutionnelle.",
+   "citation": "Ce texte exigeant répond à une menace grave. Je salue d'abord le travail du rapporteur, Charles Rodwell, qui défend cette proposition de loi avec constance et détermination depuis de nombreux mois.",
+   "acteur": "PA805166",
+   "nom": "Mme Anne Bergantz",
+   "qualite": "",
+   "syceron": [
+    "4123844"
+   ]
+  },
+  {
+   "resume": "L'instauration d'une injonction d'examen psychiatrique permet d'agir de manière préventive face à des individus radicalisés présentant des troubles mentaux.",
+   "citation": "Premièrement, il crée l'injonction d'examen psychiatrique : un dispositif de minuit moins cinq, encadré, contrôlé par le juge, pour agir avant le drame. Enfin !",
+   "acteur": "PA841931",
+   "nom": "M. Laurent Mazaury",
+   "qualite": "",
+   "syceron": [
+    "4123959"
+   ]
+  },
+  {
+   "resume": "Le texte rétablit une base légale indispensable pour la rétention administrative afin d'éviter la libération d'individus dangereux faute de fondement juridique.",
+   "citation": "Troisièmement, il rétablit une base légale pour la rétention administrative, disparue après la censure d'août 2025. Cinq terroristes condamnés ont déjà été libérés faute de fondement juridique. C'est donc une urgence absolue.",
+   "acteur": "PA841931",
+   "nom": "M. Laurent Mazaury",
+   "qualite": "",
+   "syceron": [
+    "4123959"
+   ]
+  },
+  {
+   "resume": "Chaque disposition a été rigoureusement examinée et validée par le Conseil d'État pour concilier la protection des Français et le respect des principes fondamentaux.",
+   "citation": "chaque disposition du texte a fait l'objet non pas d'un, mais de deux avis du Conseil d'État ; chaque recommandation du Conseil d'État a été suivie.",
+   "acteur": "PA795528",
+   "nom": "M. Charles Rodwell",
+   "qualite": "rapporteur",
+   "syceron": [
+    "4124121",
+    "4124125",
+    "4124194",
+    "4124196"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le texte poursuit une orientation purement répressive qui fragilise l'équilibre entre la protection des citoyens et le respect des libertés fondamentales.",
+   "citation": "la CMP a choisi de confirmer une orientation toujours plus répressive qui fragilise l'équilibre entre la nécessaire protection de nos concitoyennes et concitoyens ainsi que le respect des libertés fondamentales.",
+   "acteur": "PA795820",
+   "nom": "M. Marcellin Nadeau",
+   "qualite": "",
+   "syceron": [
+    "4123976",
+    "4123979"
+   ]
+  },
+  {
+   "resume": "L'allongement de la durée maximale de la rétention administrative transforme une mesure d'éloignement en un enfermement de longue durée aux limites contestées.",
+   "citation": "S'agissant de personnes qui ne sont pas condamnées à une peine de prison, mais privées de liberté dans le cadre d'une procédure administrative d'éloignement, cette évolution transforme progressivement la rétention administrative en un enfermement de longue durée",
+   "acteur": "PA795820",
+   "nom": "M. Marcellin Nadeau",
+   "qualite": "",
+   "syceron": [
+    "4123976",
+    "4123979"
+   ]
+  },
+  {
+   "resume": "Les mesures prévues dans ce texte auraient été inefficaces lors d'attentats passés commis par des ressortissants français.",
+   "citation": "Lors des attentats du Bataclan, les terroristes étaient Français ; par conséquent, les mesures que vous prévoyez dans ce texte auraient été inefficaces. C'est précisément la raison pour laquelle nous le combattons.",
+   "acteur": "PA795746",
+   "nom": "M. Antoine Léaument",
+   "qualite": "",
+   "syceron": [
+    "4122598"
+   ]
+  }
+ ],
+ "ecartes": [],
+ "genere_le": "2026-11-10T22:53:28+00:00",
+ "modele": "gemini:gemini-flash-lite-latest"
 }
