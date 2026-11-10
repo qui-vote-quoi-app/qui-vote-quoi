@@ -391,7 +391,7 @@ footer{border-top:1px solid var(--rule);margin-top:8px;padding:14px 2px 0;font-s
   .theme-btn{padding:6px 8px}
   #theme-libelle{position:absolute;left:-9999px}
   .tabs{margin:0 -16px;padding:0 8px}
-  .tabs a{font-size:15px;padding:8px 9px 10px}
+  .tabs a{font-size:14.5px;letter-spacing:.03em;padding:8px 7px 10px}
   .chip,.seg button,.fpos{min-height:40px}
   .sitem{padding:12px}
   .acc-gl a{padding:10px 2px}

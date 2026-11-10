@@ -390,7 +390,7 @@
   function rendreAccueil() {
     var nbMaj = 0;
     st.idx.s.forEach(function (r) { if (r[3] === 1) nbMaj++; });
-    $("hero-intro").innerHTML = "Les " + st.idx.s.length.toLocaleString("fr-FR") + " scrutins publics de la XVII<sup>e</sup> législature, dont " + nbMaj + " votes importants, avec la position de chaque député. Mis à jour chaque matin à partir des données officielles de l'Assemblée nationale.";
+    $("hero-intro").innerHTML = "Les " + st.idx.s.length.toLocaleString("fr-FR") + " scrutins publics de la XVII<sup>e</sup> législature, dont " + nbMaj + (nbMaj > 1 ? " votes importants" : " vote important") + ", avec la position de chaque député. Mis à jour chaque matin à partir des données officielles de l'Assemblée nationale.";
     $("acc-votes").innerHTML = st.idx.s.filter(function (r) { return r[3] === 1; }).slice(0, 6).map(function (r) {
       var cat = st.idx.cats[r[2]];
       return '<li><a href="#s' + r[0] + '"><span class="acc-res ' + (r[4] ? "ok" : "ko") + '">' + (r[4] ? "Adopté" : "Rejeté") + '</span>' +
@@ -549,9 +549,10 @@
     else if (h === "#groupes") { definirVue("groupes"); accueilHisto("g"); listeLaterale(); }
     else if (PAGES.some(function (p) { return "#" + p[0] === h; })) { definirVue("infos"); ouvrirPage(h.slice(1)); }
     else if ((m = /^#theme-(\d+)$/.exec(h)) && st.idx.themes[+m[1]]) {
-      st.f.theme = m[1]; st.f.lv = 1; st.limite = PAGE; st.vue = null; definirVue("scrutins");
-      var r = st.idx.s.filter(function (x) { return String(x[5]) === m[1] && x[3] === 1; })[0] || st.idx.s.filter(function (x) { return String(x[5]) === m[1]; })[0];
-      if (r) ouvrirScrutin(r[0]); listeLaterale(); if (mq.matches) ouvrirMobile();
+      var maj1 = st.idx.s.filter(function (x) { return String(x[5]) === m[1] && x[3] === 1; })[0];
+      var r = maj1 || st.idx.s.filter(function (x) { return String(x[5]) === m[1]; })[0];
+      st.f.theme = m[1]; st.f.lv = maj1 ? 1 : 3; st.limite = PAGE; st.vue = null; definirVue("scrutins");
+      if (r) ouvrirScrutin(r[0]); listeLaterale();
     }
     else if (h === "#scrutins") { definirVue("scrutins"); ouvrirScrutin(st.num || premierMajeur()); }
     else { definirVue("accueil"); rendreAccueil(); listeLaterale(); document.title = "Qui vote quoi ? · Les votes de l'Assemblée nationale"; }

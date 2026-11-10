@@ -38,6 +38,14 @@ Les heures évitent l'heure pile, où GitHub retarde ou saute parfois les tâche
 3. **Actions** : *Settings → Actions → General → Workflow permissions : Read and write*.
 4. Premier lancement : *Actions → Mise à jour quotidienne → Run workflow*. Le premier passage charge toute la législature et ne prépare des synthèses que pour les votes sur l'ensemble des 7 derniers jours.
 
+## Canal Telegram public
+
+1. Dans Telegram : *Nouveau canal* → public, avec un nom (par exemple `@quivotequoi`).
+2. Ajoutez votre bot comme **administrateur** du canal (droit « Publier des messages »).
+3. GitHub : *Settings → Secrets and variables → Actions → Variables → New repository variable* : `TELEGRAM_CANAL` = `@quivotequoi`.
+
+Au passage suivant, chaque nouveau vote important y est publié (résultat, « en bref », hémicycle, lien), ainsi que les synthèses du débat. La page « Recevoir les alertes » du site affiche alors le bouton pour rejoindre le canal. Aucune donnée d'abonné ne transite par le site.
+
 ## Rattraper les synthèses d'une période passée
 
 *Actions → Mise à jour quotidienne → Run workflow*, puis indiquez un nombre de jours dans « Rattrapage » (par exemple 60). Les synthèses sont traitées par lots de 12 par passage pour rester dans le quota gratuit de l'IA ; le reste est traité automatiquement aux passages suivants (matin et début d'après-midi).
