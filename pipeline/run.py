@@ -393,7 +393,7 @@ def main(argv=None):
                 rattrapage(scrutins, syntheses, args.rattrapage, rapport)
             if args.mode != "publier":  # « publier » : simple republication après un retrait, sans IA
                 traiter_syntheses(scrutins, syntheses, etat, args, rapport)
-                resume.traiter(scrutins, textes, deputes, rapport, args, budget_s=10 * 60)
+                resume.traiter(scrutins, textes, deputes, rapport, args, budget_s=20 * 60)
             if args.mode == "quotidien" and not args.fixtures:
                 communes.assurer()
             avec_photo = photos.preparer(deputes, telecharger=args.mode == "quotidien" and not args.fixtures)
