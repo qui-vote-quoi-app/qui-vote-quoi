@@ -1,12 +1,10 @@
 {
  "uid": "VTANR5L17V8693",
  "num": 8693,
- "statut": "abandonnee",
+ "statut": "en_attente",
  "cree_le": "2026-11-09T22:41:10+00:00",
  "tentatives": 0,
- "erreurs": [
-  "Aucune intervention de fond avant ce vote."
- ],
+ "erreurs": [],
  "cr": "CRSANR5L17S2027O1N018",
  "seance_jour": "lundi 12 octobre 2026"
 }

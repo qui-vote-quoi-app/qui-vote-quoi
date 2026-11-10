@@ -111,7 +111,8 @@ def segment(noeuds, i_resultat):
         return []
     debut, fin = i_point, i_resultat
     if re.match(r"^(Vote|Scrutin)", _titre_point(noeuds[i_point])):
-        i_expl = next((k for k in range(i_point - 1, -1, -1)
+        borne = debut_texte(noeuds, i_resultat)
+        i_expl = next((k for k in range(i_point - 1, borne - 1, -1)
                        if _tag(noeuds[k]) == "point" and "Explications de vote" in _titre_point(noeuds[k])),
                       None)
         if i_expl is not None:
@@ -119,14 +120,20 @@ def segment(noeuds, i_resultat):
     return [n for n in noeuds[debut + 1:fin] if _tag(n) == "paragraphe"]
 
 
+def debut_texte(noeuds, i_resultat):
+    """Indice du titre du texte en discussion (point « TITRE_TEXTE_DISCUSSION ») qui précède le vote ;
+    à défaut, le début du compte rendu."""
+    for k in range(i_resultat, -1, -1):
+        if _tag(noeuds[k]) == "point" and (noeuds[k].get("code_grammaire") or "").startswith("TITRE_TEXTE_DISCUSSION"):
+            return k
+    return 0
+
+
 def segment_texte(noeuds, i_resultat):
     """Repli : tout le débat sur le texte (présentation, discussion générale, explications de vote)
-    depuis le début du point de l'ordre du jour qui contient le vote. Utile quand il n'y a pas
-    d'explications de vote, par exemple pour un texte issu d'une commission mixte paritaire."""
-    r = noeuds[i_resultat].get("_racine")
-    if not r:
-        return []
-    return [n for n in noeuds[int(r) + 1:i_resultat] if _tag(n) == "paragraphe"]
+    depuis son titre jusqu'au vote. Utile quand il n'y a pas d'explications de vote,
+    par exemple pour un texte issu d'une commission mixte paritaire."""
+    return [n for n in noeuds[debut_texte(noeuds, i_resultat) + 1:i_resultat] if _tag(n) == "paragraphe"]
 
 
 def passages(paragraphes):
