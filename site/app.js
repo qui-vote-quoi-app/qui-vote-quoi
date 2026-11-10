@@ -489,7 +489,7 @@
       '<nav class="foot-nav" aria-label="Informations sur le site">' + PAGES.map(function (p) { return '<a href="#' + p[0] + '">' + p[1] + "</a>"; }).join("") +
       '<a href="' + REPO + '" target="_blank" rel="noopener">Code source ' + EXT + "</a></nav>" +
       '<p class="foot-info">Site indépendant, sans lien avec l\'Assemblée nationale. Données : Assemblée nationale (data.assemblee-nationale.fr), Licence Ouverte 2.0' + (maj ? ", mises à jour le " + maj : "") + ".<br>" +
-      'Projet très largement inspiré du travail du compte Instagram <a href="' + INSPIRATION + '" target="_blank" rel="noopener">@votes_assemblee_nationale</a>.</p>';
+      'Inspiré du travail de <a href="https://datan.fr" target="_blank" rel="noopener">Datan</a>, de <a href="' + INSPIRATION + '" target="_blank" rel="noopener">@votes_assemblee_nationale</a> et de <a href="https://www.nosdeputes.fr" target="_blank" rel="noopener">NosDéputés.fr</a>, qu\'il complète sans remplacer leur travail d\'analyse (<a href="#a-propos">à propos</a>).</p>';
     route();
   }).catch(function (e) {
     $("summary").innerHTML = '<p class="empty-deb">Les données n\'ont pas pu être chargées. Réessayez dans quelques minutes.</p>';

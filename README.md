@@ -5,7 +5,7 @@ Site : https://qui-vote-quoi-app.github.io/qui-vote-quoi
 Les scrutins publics de l'Assemblée nationale, député par député, dans un hémicycle interactif. Mise à jour automatique chaque matin à partir de l'open data officiel, avec une synthèse des débats pour les votes sur l'ensemble d'un texte.
 
 > Site indépendant et non officiel, sans lien avec l'Assemblée nationale.
-> Projet très largement inspiré du travail du compte Instagram [@votes_assemblee_nationale](https://www.instagram.com/votes_assemblee_nationale/).
+> Inspiré du travail de [Datan](https://datan.fr), du compte Instagram [@votes_assemblee_nationale](https://www.instagram.com/votes_assemblee_nationale/) et de [NosDéputés.fr](https://www.nosdeputes.fr). Il a vocation à les compléter en couvrant tous les scrutins publics, sans bénéficier de leur travail rigoureux d'analyse.
 
 ## Fonctionnement
 
