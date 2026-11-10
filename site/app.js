@@ -33,6 +33,12 @@
   var ord = function (n) { return n === 1 ? "1re" : n + "e"; };
   var norm = function (t) { return (t || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, ""); };
   var initiales = function (d) { return (d.prenom || "?")[0] + (d.nom || "?")[0]; };
+  /* Vignette d'un député : photo officielle si disponible, sinon initiales ; liseré à la couleur du groupe. */
+  var avatar = function (d, cls, couleur) {
+    var c = esc(couleur || "#777");
+    if (d.photo) return '<span class="av ph' + (cls ? " " + cls : "") + '" style="border-color:' + c + '" aria-hidden="true"><img src="data/photos/' + esc(d.id) + '.webp" alt="" loading="lazy" decoding="async"></span>';
+    return '<span class="av' + (cls ? " " + cls : "") + '" style="background:' + c + '" aria-hidden="true">' + esc(initiales(d)) + "</span>";
+  };
 
   var st = {
     vue: null, meta: null, idx: null, parNum: {}, groupes: {}, deps: [], depParId: {}, places: {},
@@ -138,7 +144,7 @@
       }).sort(function (a, b) { return a[0].nom.localeCompare(b[0].nom, "fr") || a[0].prenom.localeCompare(b[0].prenom, "fr"); });
       html = liste.map(function (x) {
         var d = x[0], g = st.groupes[d.groupe] || {};
-        return '<a class="sitem ditem" href="#d-' + d.id + '" aria-current="' + (st.h && st.h.type === "d" && st.h.id === d.id) + '"><span class="av sm" style="background:' + esc(g.couleur || "#777") + '" aria-hidden="true">' + esc(initiales(d)) + '</span><span style="min-width:0"><span class="t">' + esc(d.prenom + " " + d.nom) + '</span><span class="m"><span class="num">' + esc(g.sigle || "—") + "</span><span>" + esc(d.dept || "") + (d.circo ? " (" + ord(d.circo) + ")" : "") + "</span>" + (d.actif ? "" : "<span>· mandat terminé</span>") + "</span></span></a>";
+        return '<a class="sitem ditem" href="#d-' + d.id + '" aria-current="' + (st.h && st.h.type === "d" && st.h.id === d.id) + '">' + avatar(d, "sm", g.couleur) + '<span style="min-width:0"><span class="t">' + esc(d.prenom + " " + d.nom) + '</span><span class="m"><span class="num">' + esc(g.sigle || "—") + "</span><span>" + esc(d.dept || "") + (d.circo ? " (" + ord(d.circo) + ")" : "") + "</span>" + (d.actif ? "" : "<span>· mandat terminé</span>") + "</span></span></a>";
       }).join("") || '<p class="sempty">Aucun député ne correspond.</p>';
       html = '<p class="sompte">' + liste.length + " député" + (liste.length > 1 ? "s" : "") + "</p>" + html;
     } else {
@@ -254,7 +260,7 @@
     var maj = groupeVote ? { pour: "pour", contre: "contre", abstention: "abst" }[groupeVote.position] : null;
     var texte = !pos ? "Aucun vote enregistré pour ce député sur ce scrutin." : pos === "nv" ? "Non-votant sur ce scrutin." : (pos === maj ? "A voté comme la majorité de son groupe." : "A voté différemment de la majorité de son groupe.");
     el.innerHTML = '<button class="close" type="button" id="xclose" aria-label="Fermer la fiche">Fermer</button>' +
-      '<div class="idt"><span class="av lg" style="background:' + esc(gAct.couleur || "#777") + '" aria-hidden="true">' + esc(initiales(d)) + '</span><div style="min-width:0"><div class="eyebrow">Député' + (d.actif ? "" : " · mandat terminé") + "</div><h3>" + esc(d.prenom + " " + d.nom) + '</h3><span class="grp"><i class="sq" style="background:' + esc(gAct.couleur) + ';margin:0"></i>' + esc(gAct.libelle || "Sans groupe") + "</span></div></div>" +
+      '<div class="idt">' + avatar(d, "lg", gAct.couleur) + '<div style="min-width:0"><div class="eyebrow">Député' + (d.actif ? "" : " · mandat terminé") + "</div><h3>" + esc(d.prenom + " " + d.nom) + '</h3><span class="grp"><i class="sq" style="background:' + esc(gAct.couleur) + ';margin:0"></i>' + esc(gAct.libelle || "Sans groupe") + "</span>" + (d.photo ? '<div class="credit">Photo : Assemblée nationale</div>' : "") + "</div></div>" +
       '<div><div class="eyebrow" style="margin-bottom:6px">Ce scrutin</div>' + (pos ? '<span class="pill ' + pos + '">' + LABEL[pos] + "</span>" : "") + '<div class="note" style="margin-top:4px">' + texte + (gVote && info.po !== d.groupe ? " Groupe au moment du vote : " + esc(gVote.sigle) + "." : "") + "</div></div>" +
       "<dl><dt>Circonscription</dt><dd>" + esc(d.dept || "—") + (d.circo ? " (" + ord(d.circo) + ")" : "") + '</dd><dt>Place</dt><dd class="num">n° ' + esc(place || d.place || "—") + "</dd></dl>" +
       '<div class="card-actions"><a class="btn plein" href="#d-' + esc(d.id) + '">Historique de ses votes →</a><a class="btn" href="' + AN + "/dyn/deputes/" + esc(d.id) + '" target="_blank" rel="noopener">Fiche officielle ' + EXT + "</a></div>";
@@ -263,7 +269,7 @@
   function montrerTip(place) {
     var info = st.seatInfo[place]; if (!info) return;
     var d = st.deps[info.dep], g = st.groupes[info.po] || {};
-    tip.innerHTML = '<span class="av" style="background:' + esc(g.couleur || "#777") + '" aria-hidden="true">' + esc(initiales(d)) + '</span><div><div class="who">' + esc(d.prenom + " " + d.nom) + '</div><div class="sub"><i class="sq" style="background:' + esc(g.couleur) + '"></i>' + esc(g.sigle || "") + " · " + esc(d.dept || "") + '</div><span class="pill ' + info.pos + '" style="margin-top:3px">' + LABEL[info.pos] + "</span></div>";
+    tip.innerHTML = '' + avatar(d, "", g.couleur) + '<div><div class="who">' + esc(d.prenom + " " + d.nom) + '</div><div class="sub"><i class="sq" style="background:' + esc(g.couleur) + '"></i>' + esc(g.sigle || "") + " · " + esc(d.dept || "") + '</div><span class="pill ' + info.pos + '" style="margin-top:3px">' + LABEL[info.pos] + "</span></div>";
     var r = circles[place].getBoundingClientRect(), h = hemi.getBoundingClientRect();
     var x = Math.max(130, Math.min(h.width - 130, r.left + r.width / 2 - h.left + hemi.scrollLeft)), y = r.top - h.top;
     tip.style.left = x + "px"; tip.style.top = y + "px"; tip.style.transform = y < 70 ? "translate(-50%," + (r.height + 14) + "px)" : ""; tip.hidden = false;
@@ -309,11 +315,11 @@
     var h = st.h, el = $("h-head");
     if (h.type === "d") {
       var d = st.deps[st.depParId[h.id]], g = st.groupes[d.groupe] || {};
-      el.innerHTML = '<span class="av xl" style="background:' + esc(g.couleur || "#777") + '" aria-hidden="true">' + esc(initiales(d)) + '</span>' +
+      el.innerHTML = '' + avatar(d, "xl", g.couleur) + '' +
         '<div class="h-id"><div class="eyebrow">Député' + (d.actif ? "" : " · mandat terminé") + "</div><h2>" + esc(d.prenom + " " + d.nom) + "</h2>" +
         '<div class="h-meta">' + (d.groupe ? '<a class="grp" href="#g-' + d.groupe + '"><i class="sq" style="background:' + esc(g.couleur) + ';margin:0"></i>' + esc(g.libelle || d.groupe) + "</a>" : "<span>Sans groupe</span>") +
         "<span>" + esc(d.dept || "—") + (d.circo ? " (" + ord(d.circo) + " circonscription)" : "") + "</span>" +
-        (d.debut ? "<span>Mandat depuis le " + dateFr(d.debut) + (d.fin ? ", terminé le " + dateFr(d.fin) : "") + "</span>" : "") + "</div></div>" +
+        (d.debut ? "<span>Mandat depuis le " + dateFr(d.debut) + (d.fin ? ", terminé le " + dateFr(d.fin) : "") + "</span>" : "") + "</div>" + (d.photo ? '<div class="credit" style="margin-top:6px">Photo : Assemblée nationale</div>' : "") + "</div>" +
         '<a class="btn" href="' + AN + "/dyn/deputes/" + esc(d.id) + '" target="_blank" rel="noopener">Fiche officielle ' + EXT + "</a>";
       document.title = d.prenom + " " + d.nom + " · Qui vote quoi ?";
     } else {

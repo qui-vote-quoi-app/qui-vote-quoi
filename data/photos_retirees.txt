@@ -1,0 +1,1 @@
+# Photos à ne pas afficher : un identifiant de député (PA…) par ligne, avec le motif après un #.

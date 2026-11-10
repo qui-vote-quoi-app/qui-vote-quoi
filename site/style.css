@@ -62,7 +62,7 @@ input[type=search],input[type=text]{width:100%;padding:7px 9px;border:1px solid 
 .day{font-family:var(--display);font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600;padding:12px 12px 4px;border-bottom:1px solid var(--hair)}
 .sitem{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--hair);padding:9px 12px;cursor:pointer;color:var(--ink);text-decoration:none}
 .ditem,.gitem{align-items:center}
-.av.sm{width:30px;height:36px;font-size:13px;border-bottom-width:3px}
+.av.sm{width:40px;height:48px;font-size:15px;border-bottom-width:3px}
 .sq.lg{width:16px;height:30px;margin:0}
 .sompte{font-family:var(--display);font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0;padding:10px 12px 6px}
 select{width:100%;padding:7px 9px;border:1px solid var(--rule);border-radius:0;background:var(--sheet);color:var(--ink);font:inherit;font-size:14px}
@@ -162,11 +162,17 @@ select{width:100%;padding:7px 9px;border:1px solid var(--rule);border-radius:0;b
 .tip .who{font-weight:700;font-size:14px;line-height:1.25}
 .tip .sub{font-size:12.5px;color:var(--muted)}
 .av{flex:none;width:40px;height:48px;display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:17px;color:#fff;border-bottom:4px solid rgba(0,0,0,.25)}
-.av.lg{width:76px;height:92px;font-size:28px}
+.av.lg{width:100px;height:120px;font-size:34px}
+.av.ph{background:var(--tint);overflow:hidden;border-bottom-style:solid}
+.av.ph img{width:100%;height:100%;object-fit:cover;object-position:50% 18%;display:block}
+.tip .av{width:52px;height:62px}
+.credit{font-size:11px;color:var(--muted);letter-spacing:.02em}
 .pill{display:inline-block;font-family:var(--display);font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:0 7px;color:#fff;line-height:1.6}
 .pill.pour{background:var(--pour)} .pill.contre{background:var(--contre)} .pill.abst{background:var(--abst);color:#141513} .pill.nv{background:var(--nv);color:var(--ink)}
 .card{display:flex;flex-direction:column;gap:14px;position:sticky;top:12px}
 .card .idt{display:flex;gap:14px;align-items:flex-end;border-bottom:1px solid var(--rule);padding-bottom:14px}
+.card .idt:has(.av.ph){flex-direction:column;align-items:flex-start;gap:10px}
+.card .idt .av.ph.lg{width:110px;height:132px}
 .card h3{font-size:26px;line-height:1.05;text-transform:uppercase;letter-spacing:.02em}
 .grp{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;font-weight:600}
 dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:13.5px}
@@ -256,8 +262,8 @@ footer{border-top:1px solid var(--rule);margin-top:8px;padding:14px 2px 0;font-s
 .h-meta{display:flex;flex-wrap:wrap;gap:4px 18px;margin-top:8px;font-size:14px;color:var(--muted)}
 .h-meta a.grp{color:var(--ink);text-decoration:none;font-weight:600}
 .h-meta a.grp:hover{text-decoration:underline}
-.av.xl{width:84px;height:100px;font-size:32px}
-.gbloc{flex:none;min-width:84px;height:100px;padding:0 12px;display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:26px;letter-spacing:.04em;color:#fff;border-bottom:5px solid rgba(0,0,0,.25)}
+.av.xl{width:128px;height:154px;font-size:40px;border-bottom-width:6px}
+.gbloc{flex:none;min-width:128px;height:154px;padding:0 12px;display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:26px;letter-spacing:.04em;color:#fff;border-bottom:5px solid rgba(0,0,0,.25)}
 .h-filtres{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 .h-filtres .seg{flex:0 0 auto}
 .h-filtres select{flex:0 1 260px;width:auto}
@@ -283,7 +289,8 @@ footer{border-top:1px solid var(--rule);margin-top:8px;padding:14px 2px 0;font-s
 .h-liste .more{margin:12px 0;width:100%}
 @media (max-width:640px){
   .h-id h2{font-size:28px}
-  .av.xl,.gbloc{height:72px;min-width:60px;width:60px;font-size:22px}
+  .av.xl{height:120px;width:100px;font-size:30px}
+  .gbloc{height:96px;min-width:96px;font-size:22px}
   .hitem{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"date res" "t t" "pos pos";gap:6px 10px}
   .hdate{grid-area:date;flex-direction:row;gap:10px;align-items:baseline;white-space:nowrap}
   .hres{grid-area:res;justify-self:end}

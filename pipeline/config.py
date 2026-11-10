@@ -24,6 +24,9 @@ URL_DOSSIERS = f"{BASE}/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip"
 
 AN = "https://www.assemblee-nationale.fr"
 
+# Photos officielles des députés : QVQ_PHOTOS=0 (variable du dépôt) les retire toutes au passage suivant.
+PHOTOS = os.environ.get("QVQ_PHOTOS", "1").strip() != "0"
+
 # Synthèses
 CR_DELAI_MAX_JOURS = 7          # au-delà, on abandonne et on alerte
 SYNTHESES_MAX_PAR_PASSAGE = 12  # le reste attend le passage suivant (quota gratuit de l'IA)

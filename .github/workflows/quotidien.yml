@@ -56,6 +56,7 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+          QVQ_PHOTOS: ${{ vars.QVQ_PHOTOS }}   # mettre 0 dans Settings → Variables pour retirer toutes les photos
         run: |
           MODE="${{ inputs.mode }}"
           OPTIONS=""

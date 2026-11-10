@@ -13,7 +13,7 @@ import traceback
 from datetime import date, datetime, timezone
 from pathlib import Path
 
-from . import config, debats, donnees, export, image, synthese, telegram, verification
+from . import config, debats, donnees, export, image, synthese, telegram, verification, photos
 from .sources import ZipDistant, charger_json, ecrire_json, entete, telecharger
 
 SITE_URL = os.environ.get("SITE_URL", "https://qui-vote-quoi-app.github.io/qui-vote-quoi").rstrip("/")
@@ -359,7 +359,9 @@ def main(argv=None):
             if args.rattrapage:
                 rattrapage(scrutins, syntheses, args.rattrapage, rapport)
             traiter_syntheses(scrutins, syntheses, etat, args, rapport)
-            export.exporter(scrutins, deputes, groupes, syntheses, charger_retraits(), dates)
+            avec_photo = photos.preparer(deputes, telecharger=args.mode == "quotidien" and not args.fixtures)
+            export.exporter(scrutins, deputes, groupes, syntheses, charger_retraits(), dates, avec_photo)
+            photos.ecrire(avec_photo)
             deployer = True
             if args.mode == "quotidien" and not args.retrait:
                 etat["dernier_quotidien"] = maintenant()

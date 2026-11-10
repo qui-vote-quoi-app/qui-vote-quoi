@@ -9,6 +9,7 @@ Fichiers produits (dans site/data/) :
 - groupes.json           groupes politiques
 - votes_groupes/<PO>.json historique de vote d'un groupe
 - places.json            carte de l'hémicycle
+- photos/<PA>.webp       vignettes des photos officielles (voir photos.py)
 Moins de fichiers = publication GitHub Pages plus rapide."""
 import copy
 import shutil
@@ -34,7 +35,7 @@ def _delta(paires):
     return plat
 
 
-def exporter(scrutins, deputes, groupes, syntheses, retraits, sources_dates):
+def exporter(scrutins, deputes, groupes, syntheses, retraits, sources_dates, avec_photo=()):
     out = config.SITE_DATA
     if out.exists():
         shutil.rmtree(out)
@@ -46,7 +47,8 @@ def exporter(scrutins, deputes, groupes, syntheses, retraits, sources_dates):
     index = {uid: i for i, uid in enumerate(uids)}
     ecrire_json(out / "deputes.json", [
         {"id": uid, **{k: deputes[uid].get(k) for k in
-                       ("civ", "prenom", "nom", "dept", "num_dept", "circo", "place", "actif", "groupe", "debut", "fin")}}
+                       ("civ", "prenom", "nom", "dept", "num_dept", "circo", "place", "actif", "groupe", "debut", "fin")},
+         **({"photo": 1} if uid in avec_photo else {})}
         for uid in uids], compact=True)
     ecrire_json(out / "groupes.json", groupes, compact=True)
     shutil.copy(config.PLACES, out / "places.json")
