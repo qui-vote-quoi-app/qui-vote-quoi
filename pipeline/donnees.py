@@ -243,8 +243,9 @@ TYPES_TEXTES = ("Projet de loi", "Proposition de loi", "Proposition de résoluti
 
 
 def lire_dossiers(chemin_zip):
-    """Retourne (commission au fond par dossier, titres connus pour retrouver un dossier par intitulé)."""
-    commissions, titres = {}, {}
+    """Retourne (commission au fond par dossier, titres connus pour retrouver un dossier par intitulé,
+    texte déposé à l'Assemblée par dossier — le premier, pour le résumé « Ce que prévoit le texte »)."""
+    commissions, titres, deposes = {}, {}, {}
     with zipfile.ZipFile(chemin_zip) as z:
         for nom in z.namelist():
             if "/dossierParlementaire/" in nom:
@@ -259,12 +260,17 @@ def lire_dossiers(chemin_zip):
                 doc = json.loads(z.read(nom))["document"]
                 if not str(doc.get("denominationStructurelle") or "").startswith(TYPES_TEXTES):
                     continue
+                m = re.fullmatch(r"(?:PION|PRJL)ANR5L\d+B(\d+)", str(doc.get("uid") or ""))
+                if m and doc.get("dossierRef"):
+                    prec = deposes.get(doc["dossierRef"])
+                    if prec is None or int(m.group(1)) < prec[0]:
+                        deposes[doc["dossierRef"]] = (int(m.group(1)), doc["uid"])
                 t = normaliser_titre((doc.get("titres") or {}).get("titrePrincipal"))
                 if doc.get("dossierRef") and len(t) >= 25:
                     titres.setdefault(t, doc["dossierRef"])
     # Seuls les titres de dossiers dont on connaît la commission servent à quelque chose.
     utiles = sorted(((t, ref) for t, ref in titres.items() if ref in commissions), key=lambda x: -len(x[0]))
-    return commissions, utiles
+    return commissions, utiles, {ref: uid for ref, (_n, uid) in deposes.items()}
 
 
 def attribuer_themes(scrutins, commissions, titres, organes):

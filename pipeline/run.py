@@ -13,7 +13,7 @@ import traceback
 from datetime import date, datetime, timezone
 from pathlib import Path
 
-from . import config, debats, donnees, export, image, synthese, telegram, verification, photos, communes, presentation
+from . import config, debats, donnees, export, image, synthese, telegram, verification, photos, communes, presentation, resume
 from .sources import ZipDistant, charger_json, ecrire_json, entete, telecharger
 
 SITE_URL = os.environ.get("SITE_URL", "https://qui-vote-quoi-app.github.io/qui-vote-quoi").rstrip("/")
@@ -324,11 +324,14 @@ def publier_canal(rapport, mode):
     if not chat:
         return
     E = telegram.esc
+    resumes = resume.pour_export()
     majeurs = sorted((s for s in rapport.nouveaux if s["categorie"]["niveau"] == 1), key=lambda s: s["num"])
     detail, reste = majeurs[:6], majeurs[6:]
     for s in detail:
         res = "✅ <b>L'Assemblée a adopté</b>" if s["sort"] == "adopté" else "❌ <b>L'Assemblée n'a pas adopté</b>"
-        legende = (f"{res}\n{E(maj(s['titre']))[:420]}\n\n<i>{E(presentation.en_bref(s))[:380]}</i>\n\n"
+        txt = resumes.get(s.get("dossier"), {}).get("resume")
+        explication = f"📄 {E(txt[:460])} <i>(résumé par IA)</i>" if txt else f"<i>{E(presentation.en_bref(s)[:380])}</i>"
+        legende = (f"{res}\n{E(maj(s['titre'])[:220])}\n\n{explication}\n\n"
                    f"🔵 {s['pour']} pour · 🔴 {s['contre']} contre · ⚪ {s['abst']} abstention(s)\n"
                    f"👉 Qui a voté quoi : {lien(s)}")
         chemin = image.dessiner(s, config.CACHE / f"canal_{s['num']}.png")
@@ -351,7 +354,7 @@ def publier_canal(rapport, mode):
 
 def main(argv=None):
     p = argparse.ArgumentParser()
-    p.add_argument("--mode", default="quotidien", choices=["quotidien", "syntheses"])
+    p.add_argument("--mode", default="quotidien", choices=["quotidien", "syntheses", "publier"])
     p.add_argument("--retrait", type=int)
     p.add_argument("--raison", default="")
     p.add_argument("--fixtures")
@@ -379,7 +382,7 @@ def main(argv=None):
             chemins, dates = charger_sources(args, etat)
             scrutins = donnees.lire_scrutins(chemins["scrutins"])
             deputes, groupes = donnees.lire_acteurs(chemins["acteurs"])
-            commissions, titres = donnees.lire_dossiers(chemins["dossiers"])
+            commissions, titres, textes = donnees.lire_dossiers(chemins["dossiers"])
             stats = donnees.attribuer_themes(scrutins, commissions, titres, donnees.lire_organes(chemins["acteurs"]))
             print(f"Thèmes : {stats}")
             if args.retrait:
@@ -388,7 +391,9 @@ def main(argv=None):
                 detecter_nouveaux(scrutins, etat, syntheses, rapport)
             if args.rattrapage:
                 rattrapage(scrutins, syntheses, args.rattrapage, rapport)
-            traiter_syntheses(scrutins, syntheses, etat, args, rapport)
+            if args.mode != "publier":  # « publier » : simple republication après un retrait, sans IA
+                traiter_syntheses(scrutins, syntheses, etat, args, rapport)
+                resume.traiter(scrutins, textes, deputes, rapport, args, budget_s=10 * 60)
             if args.mode == "quotidien" and not args.fixtures:
                 communes.assurer()
             avec_photo = photos.preparer(deputes, telecharger=args.mode == "quotidien" and not args.fixtures)

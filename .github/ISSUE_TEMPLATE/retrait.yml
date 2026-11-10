@@ -1,0 +1,34 @@
+name: Demander un retrait
+description: Faire retirer une synthèse du débat, un résumé de texte ou une photo. Traitement automatique, en quelques minutes.
+labels: [retrait]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Ce formulaire est public.** Les contenus rédigés par IA et les photos sont retirés automatiquement, sans discussion, dès la demande.
+        Pour une demande confidentielle, écrivez à l'adresse indiquée sur la page Contact du site.
+  - type: dropdown
+    id: quoi
+    attributes:
+      label: Que faut-il retirer ?
+      options:
+        - Synthèse du débat
+        - Résumé du texte
+        - Photo d'un député
+    validations:
+      required: true
+  - type: input
+    id: scrutin
+    attributes:
+      label: Numéro du scrutin
+      description: Pour une synthèse ou un résumé. Il figure en haut de la page du vote (ex. 9759).
+      placeholder: "9759"
+  - type: input
+    id: depute
+    attributes:
+      label: Député concerné
+      description: Pour une photo : prénom et nom, ou lien vers sa page sur le site.
+  - type: textarea
+    id: motif
+    attributes:
+      label: Motif (facultatif)

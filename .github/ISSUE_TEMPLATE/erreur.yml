@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Merci de votre signalement. **Ce formulaire est public.**
+        Merci de votre signalement. **Ce formulaire est public.** Une synthèse ou un résumé signalé est retiré automatiquement par précaution.
         Pour une demande confidentielle (droit de réponse, données personnelles), écrivez plutôt à l'adresse indiquée dans les mentions légales.
   - type: dropdown
     id: type
@@ -13,7 +13,9 @@ body:
       label: Type d'erreur
       options:
         - Synthèse du débat (argument, citation, attribution)
+        - Résumé du texte (« Ce que prévoit le texte »)
         - Résultat ou position de vote
+        - Photo d'un député
         - Fiche d'un député
         - Autre
     validations:

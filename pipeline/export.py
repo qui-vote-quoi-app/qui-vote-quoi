@@ -19,7 +19,7 @@ from datetime import datetime, timezone
 
 import os
 
-from . import config, image, presentation
+from . import config, image, presentation, resume
 from .sources import ecrire_json
 
 CATS = ["ensemble", "motion", "censure", "declaration", "article", "amendement", "procedure", "autre"]
@@ -59,6 +59,7 @@ def exporter(scrutins, deputes, groupes, syntheses, retraits, sources_dates, ave
     if communes.exists():
         shutil.copy(communes, out / "communes.json")
 
+    resumes = resume.pour_export()
     themes = sorted({s["theme"] for s in scrutins.values() if s.get("theme")})
     i_theme = {t: i for i, t in enumerate(themes)}
     liste_index = []
@@ -83,6 +84,7 @@ def exporter(scrutins, deputes, groupes, syntheses, retraits, sources_dates, ave
                                         "votants", "exprimes", "requis", "pour", "contre", "abst", "nv", "theme")}
         detail["categorie"] = s["categorie"]
         detail["bref"] = presentation.en_bref(s)
+        detail["resume"] = resumes.get(s.get("dossier"))
         detail["groupes"] = []
         for g in s["groupes"]:
             votes = {}
