@@ -1,13 +1,10 @@
 {
  "uid": "VTANR5L17V8427",
  "num": 8427,
- "statut": "refusee",
+ "statut": "en_attente",
  "cree_le": "2026-11-10T19:42:12+00:00",
- "tentatives": 4,
- "erreurs": [
-  "Argument contre n°2 : la citation ne figure pas mot pour mot dans P10.",
-  "Argument contre n°3 : la citation ne figure pas mot pour mot dans P28."
- ],
+ "tentatives": 0,
+ "erreurs": [],
  "cr": "CRSANR5L17S2026E1N022",
  "seance_jour": "lundi 20 juillet 2026",
  "derniere_tentative": "2026-11-10T22:08:12+00:00"

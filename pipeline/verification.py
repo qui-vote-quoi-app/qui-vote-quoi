@@ -1,6 +1,10 @@
 """Garde-fous automatiques avant publication d'une synthèse.
 
-Principe : la publication échoue « fermée ». Une seule anomalie bloque tout."""
+Principe : rien de non vérifié n'est publié.
+- Un argument dont la citation n'est pas retrouvée mot pour mot (ou dont le résumé désigne quelqu'un)
+  est écarté : il n'est jamais publié.
+- La synthèse entière est bloquée si le contexte est fautif, si la réponse est mal formée, ou si un camp
+  perd TOUS ses arguments (sinon le site afficherait à tort qu'aucun orateur n'a défendu cette position)."""
 import re
 import unicodedata
 
@@ -16,8 +20,9 @@ def normaliser(s: str) -> str:
 
 
 def verifier(reponse, passages_):
-    """Retourne (synthese_publiable | None, erreurs)."""
-    erreurs = []
+    """Retourne (synthese_publiable | None, erreurs). Les arguments écartés sont listés dans
+    sortie["ecartes"] sans bloquer la publication."""
+    erreurs, ecartes = [], []
     par_id = {p["id"]: p for p in passages_}
     if not isinstance(reponse, dict):
         return None, ["La réponse n'est pas un objet JSON."]
@@ -37,14 +42,14 @@ def verifier(reponse, passages_):
                 noms.add(normaliser(mot))
     civilite = re.compile(r"\b(M\.|Mme|Monsieur|Madame)\s+[A-ZÉ]")
 
-    def controle_redaction(t, ou):
+    def controle_redaction(t, ou, liste):
         if civilite.search(t):
-            erreurs.append(f"{ou} : contient une formule désignant une personne.")
+            liste.append(f"{ou} : contient une formule désignant une personne.")
         for n in noms:
             if re.search(rf"\b{re.escape(n)}\b", t):
-                erreurs.append(f"{ou} : contient le nom « {n} ».")
+                liste.append(f"{ou} : contient le nom « {n} ».")
 
-    controle_redaction(contexte, "Contexte")
+    controle_redaction(contexte, "Contexte", erreurs)
 
     sortie = {"contexte": contexte, "pour": [], "contre": []}
     for camp in ("pour", "contre"):
@@ -52,29 +57,29 @@ def verifier(reponse, passages_):
         if not isinstance(args, list):
             erreurs.append(f"« {camp} » n'est pas une liste.")
             continue
-        if len(args) > config.ARGUMENTS_MAX_PAR_CAMP:
-            erreurs.append(f"Trop d'arguments « {camp} » ({len(args)}).")
+        args = args[:config.ARGUMENTS_MAX_PAR_CAMP]
         for k, a in enumerate(args, 1):
             ou = f"Argument {camp} n°{k}"
             if not isinstance(a, dict):
-                erreurs.append(f"{ou} : format invalide.")
+                ecartes.append(f"{ou} : format invalide.")
                 continue
             resume = normaliser(a.get("resume", ""))
-            citation_brute = a.get("citation", "") or ""
-            citation = normaliser(citation_brute)
+            citation = normaliser(a.get("citation", "") or "")
             pid = (a.get("passage") or "").strip()
+            probleme = []
             if not resume or len(resume) > 300:
-                erreurs.append(f"{ou} : résumé vide ou trop long.")
-            controle_redaction(resume, ou)
+                probleme.append(f"{ou} : résumé vide ou trop long.")
+            controle_redaction(resume, ou, probleme)
             if pid not in par_id:
-                erreurs.append(f"{ou} : passage « {pid} » inexistant.")
+                probleme.append(f"{ou} : passage « {pid} » inexistant.")
+            elif not (30 <= len(citation) <= 400):
+                probleme.append(f"{ou} : citation de longueur anormale ({len(citation)} caractères).")
+            elif citation not in normaliser(par_id[pid]["texte"]):
+                probleme.append(f"{ou} : la citation ne figure pas mot pour mot dans {pid}.")
+            if probleme:
+                ecartes.extend(probleme)
                 continue
-            if not (30 <= len(citation) <= 400):
-                erreurs.append(f"{ou} : citation de longueur anormale ({len(citation)} caractères).")
             p = par_id[pid]
-            if citation not in normaliser(p["texte"]):
-                erreurs.append(f"{ou} : la citation ne figure pas mot pour mot dans {pid}.")
-                continue
             # L'orateur est déterminé par le script, jamais par l'IA.
             sortie[camp].append({
                 "resume": resume,
@@ -84,6 +89,11 @@ def verifier(reponse, passages_):
                 "qualite": p["qualite"],
                 "syceron": p["syceron"],
             })
+        if args and not sortie[camp]:
+            erreurs.append(f"Aucun argument « {camp} » vérifiable sur {len(args)} proposé(s).")
     if not sortie["pour"] and not sortie["contre"] and not erreurs:
         erreurs.append("Aucun argument retenu.")
-    return (None if erreurs else sortie), erreurs
+    if erreurs:
+        return None, erreurs + ecartes
+    sortie["ecartes"] = ecartes
+    return sortie, []
