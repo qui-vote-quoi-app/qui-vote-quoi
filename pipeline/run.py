@@ -376,8 +376,8 @@ def main(argv=None):
     deployer = False
     try:
         if args.mode == "syntheses" and not args.retrait and not args.rattrapage and \
-                not any(s["statut"] == "en_attente" for s in syntheses.values()):
-            print("Aucune synthèse en attente.")
+                not any(s["statut"] == "en_attente" for s in syntheses.values()) and not etat.get("resumes_restants"):
+            print("Aucune synthèse ni aucun résumé en attente.")
         else:
             chemins, dates = charger_sources(args, etat)
             scrutins = donnees.lire_scrutins(chemins["scrutins"])
@@ -393,7 +393,7 @@ def main(argv=None):
                 rattrapage(scrutins, syntheses, args.rattrapage, rapport)
             if args.mode != "publier":  # « publier » : simple republication après un retrait, sans IA
                 traiter_syntheses(scrutins, syntheses, etat, args, rapport)
-                resume.traiter(scrutins, textes, deputes, rapport, args, budget_s=20 * 60)
+                etat["resumes_restants"] = resume.traiter(scrutins, textes, deputes, rapport, args, budget_s=20 * 60) or 0
             if args.mode == "quotidien" and not args.fixtures:
                 communes.assurer()
             avec_photo = photos.preparer(deputes, telecharger=args.mode == "quotidien" and not args.fixtures)

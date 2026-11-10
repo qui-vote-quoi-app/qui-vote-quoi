@@ -107,7 +107,7 @@ def traiter(scrutins, textes, deputes, rapport, args, budget_s):
     if not a_faire or args.sans_ia or args.fixtures:
         if a_faire:
             rapport.infos.append(f"[sans IA] {len(a_faire)} résumé(s) de texte à rédiger.")
-        return
+        return len(a_faire)
     noms = {d["nom"] for d in deputes.values() if d.get("nom")}
     session = requests.Session()
     session.headers["User-Agent"] = config.USER_AGENT
@@ -155,9 +155,11 @@ def traiter(scrutins, textes, deputes, rapport, args, budget_s):
         print(f"Résumé {ref} ({uid}, {len(disp)} car.) : {r['statut']} {erreurs or ''} en {time.monotonic() - t0:.0f} s")
         time.sleep(config.PAUSE_ENTRE_SYNTHESES)
     print(f"Résumés de textes : {faits} publiés, {bloques} bloqués, {len(a_faire)} à faire au départ.")
+    restants = max(0, len(a_faire) - faits - bloques)
     if faits or bloques:
         rapport.infos.append(f"Résumés de textes : {faits} publié(s), {bloques} bloqué(s) par la vérification, "
-                             f"{max(0, len(a_faire) - faits - bloques)} restant(s).")
+                             f"{restants} restant(s).")
+    return restants
 
 
 def pour_export():
