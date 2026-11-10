@@ -37,6 +37,21 @@ def _insee(dep, com):
     return dep.zfill(2) + com.zfill(3)
 
 
+# Noms de départements alignés sur ceux de l'open data de l'Assemblée.
+RENOMMER = {"Saint-Martin/Saint-Barthélemy": "Saint-Barthélemy et Saint-Martin"}
+
+
+def _arrondissement(code):
+    """Paris, Lyon et Marseille : les codes postaux sont rattachés aux arrondissements."""
+    if code.startswith("751") and len(code) == 5:
+        return "75056"
+    if code.startswith("6938"):
+        return "69123"
+    if "13201" <= code <= "13216":
+        return "13055"
+    return code
+
+
 def construire(xlsx_bytes, cp_bytes):
     from openpyxl import load_workbook
     ws = load_workbook(io.BytesIO(xlsx_bytes), read_only=True).worksheets[0]
@@ -54,9 +69,17 @@ def construire(xlsx_bytes, cp_bytes):
         texte = cp_bytes.decode("utf-8")
     except UnicodeDecodeError:
         texte = cp_bytes.decode("latin-1")
+    # Collectivités absentes de la table du ministère.
+    communes.setdefault("97502", ["Saint-Pierre", "Saint-Pierre-et-Miquelon", {1}, set()])
+    communes.setdefault("97501", ["Miquelon-Langlade", "Saint-Pierre-et-Miquelon", {1}, set()])
+    for c in communes.values():
+        c[1] = RENOMMER.get(c[1], c[1])
     for row in csv.reader(io.StringIO(texte), delimiter=";"):
-        if len(row) >= 3 and row[0] in communes and row[2].strip():
-            communes[row[0]][3].add(row[2].strip())
+        if len(row) < 3 or not row[2].strip():
+            continue
+        code = _arrondissement(row[0].strip())
+        if code in communes:
+            communes[code][3].add(row[2].strip())
     sortie = [[n, d, sorted(c), sorted(p)] for n, d, c, p in communes.values() if c]
     sortie.sort(key=lambda x: (x[0].lower(), x[1]))
     return sortie
