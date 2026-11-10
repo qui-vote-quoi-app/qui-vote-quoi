@@ -26,6 +26,8 @@ jobs:
       deployer: ${{ steps.pipeline.outputs.deployer }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # dernière version au démarrage (un passage précédent a pu pousser entre-temps)
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -48,7 +50,7 @@ jobs:
           git config user.email "qui-vote-quoi@users.noreply.github.com"
           git add data/
           git diff --cached --quiet || git commit -m "Retrait automatique (demande #${{ github.event.issue.number }})"
-          git pull --rebase --autostash origin main
+          git pull --rebase --autostash -X theirs origin main
           git push
 
       - name: Réutiliser les fichiers déjà téléchargés
