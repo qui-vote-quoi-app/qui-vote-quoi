@@ -24,7 +24,7 @@ DISPOSITIF_MAX = 14000
 MOTS_MAX = 110
 JUGEMENTS = ["injuste", "dangereu", "scandal", "excellent", "inacceptable", "indispensable", "salutaire", "néfaste",
              "absurde", "inutile", "courageu", "historique", "honteu", "remarquable", "regrettable", "bienvenu",
-             "malheureusement", "heureusement", "enfin", "audacieu", "ambitieu", "laxiste", "liberticide"]
+             "malheureusement", "heureusement", "audacieu", "ambitieu", "laxiste", "liberticide"]
 
 CONSIGNES = """Tu aides un site d'information citoyenne, neutre et non partisan.
 On te donne le titre d'un texte examiné par l'Assemblée nationale et ses ARTICLES (le dispositif).
@@ -116,12 +116,14 @@ def traiter(scrutins, textes, deputes, rapport, args, budget_s):
         if time.monotonic() - debut > budget_s:
             break
         uid = textes[ref]
+        t0 = time.monotonic()
         r = resumes.get(ref) or {"dossier": ref, "texte": uid, "tentatives": 0}
         try:
             page = session.get(URL_TEXTE.format(uid=uid), timeout=60)
             page.raise_for_status()
             disp = dispositif(texte_brut(page.text))
         except requests.RequestException as e:
+            print(f"Résumé {ref} : texte inaccessible ({e.__class__.__name__})")
             rapport.infos.append(f"Résumé {ref} : texte inaccessible ({e.__class__.__name__}).")
             continue
         if len(disp) < 80:
@@ -134,7 +136,8 @@ def traiter(scrutins, textes, deputes, rapport, args, budget_s):
         try:
             reponse, modele = synthese.appeler_ia(prompt)
             resume = (synthese.lire_reponse(reponse).get("resume") or "").strip()
-        except synthese.IAIndisponible:
+        except synthese.IAIndisponible as e:
+            print(f"Résumé {ref} : IA indisponible ({e})")
             rapport.infos.append("IA indisponible pour les résumés de textes : nouvel essai au prochain passage.")
             break
         except (ValueError, AttributeError):
@@ -149,7 +152,9 @@ def traiter(scrutins, textes, deputes, rapport, args, budget_s):
             r.update({"statut": "publie", "resume": resume, "modele": modele, "erreurs": [],
                       "genere_le": datetime.now(timezone.utc).isoformat(timespec="minutes")})
         _sauver(ref, r)
+        print(f"Résumé {ref} ({uid}, {len(disp)} car.) : {r['statut']} {erreurs or ''} en {time.monotonic() - t0:.0f} s")
         time.sleep(config.PAUSE_ENTRE_SYNTHESES)
+    print(f"Résumés de textes : {faits} publiés, {bloques} bloqués, {len(a_faire)} à faire au départ.")
     if faits or bloques:
         rapport.infos.append(f"Résumés de textes : {faits} publié(s), {bloques} bloqué(s) par la vérification, "
                              f"{max(0, len(a_faire) - faits - bloques)} restant(s).")
