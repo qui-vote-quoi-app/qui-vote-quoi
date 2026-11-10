@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N52208",
+ "texte": "PIONANR5L17B1502",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte définit le navire à propulsion vélique et le navire à propulsion principale vélique dans le code des transports. Il modifie le code général des impôts pour permettre une déduction fiscale liée aux investissements dans les équipements de propulsion vélique, avec des taux majorés selon la taille de l'entreprise ou le type de propulsion. Il intègre le transport maritime vélique au dispositif des certificats d'économies d'énergie et mentionne le fonds pour la décarbonation du transport maritime. Enfin, il prévoit des dispositions spécifiques sur l'acheminement et la fiscalité de certains rhums transportés par des navires à propulsion vélique.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T21:04+00:00"
+}

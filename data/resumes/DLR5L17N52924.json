@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N52924",
+ "texte": "PIONANR5L17B1909",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte institue une contribution financière versée par les entreprises exploitant certaines spécialités pharmaceutiques remboursables ou agréées pour les collectivités. Cette contribution, assise sur le chiffre d'affaires hors taxes avec un taux fixé à 0,15 %, est destinée à financer un programme de soutien à l'innovation thérapeutique contre les cancers et les maladies rares de l'enfant. Enfin, il prévoit la remise d'un rapport annuel au Parlement sur l'affectation et l'utilisation de ces fonds.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T21:02+00:00"
+}

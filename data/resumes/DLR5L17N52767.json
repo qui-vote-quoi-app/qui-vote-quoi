@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N52767",
+ "texte": "PIONANR5L17B1817",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte abroge le Code noir de 1685 ainsi que l'ensemble des dispositions qui en découlent, le prolongent ou en assurent l'application. Il prévoit également que le Gouvernement remet au Parlement un rapport dressant la liste des dispositions issues du droit colonial de 1685 à 1946. Ce document doit préciser celles qui restent en vigueur dans les territoires d'Outre-mer et analyser leurs conséquences contemporaines sur la structuration et le développement de ces territoires.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T21:00+00:00"
+}

@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N52743",
+ "texte": "PIONANR5L17B1793",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte prévoit d'informer systématiquement les victimes de violences sexuelles de toute remise en liberté, provisoire ou définitive, de leur agresseur mis en examen ou condamné, ainsi que des interdictions ou obligations prononcées. Il impose l'assortiment automatique de mesures d'éloignement et d'interdiction de contact lors de la libération, sauf décision contraire motivée, et permet aux victimes de formuler des observations écrites. Enfin, il institue un guichet unique national de suivi des victimes chargé de veiller à ces mesures d'information et d'éloignement et d'orienter les victimes vers les structures adaptées.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T21:03+00:00"
+}

@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51791",
+ "texte": "PIONANR5L17B1674",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte pérennise le contrat de professionnalisation expérimental en modifiant le code du travail. Il permet l'acquisition d'un ou plusieurs blocs de compétences de certification professionnelle dans le cadre de ce contrat. Enfin, il prévoit une compensation financière pour l'État via une taxe additionnelle sur les tabacs.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T20:58+00:00"
+}

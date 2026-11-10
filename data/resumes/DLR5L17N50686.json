@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N50686",
+ "texte": "PIONANR5L17B0439",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte crée un livret de parcours inclusif numérique pour chaque élève en situation de handicap afin de suivre sa scolarité et de partager les informations entre professionnels. Il institue également un observatoire national chargé de collecter les données sur la scolarisation et l'insertion professionnelle, de suivre les politiques publiques et de diffuser des études. Enfin, il permet aux enseignants de demander à bénéficier d'une formation dédiée à l'accompagnement des élèves en situation de handicap.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T21:04+00:00"
+}

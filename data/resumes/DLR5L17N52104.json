@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N52104",
+ "texte": "PIONANR5L17B2804",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie les conditions d'accès au corps électoral pour les élections au congrès et aux assemblées de province de la Nouvelle-Calédonie. Il intègre les personnes nées en Nouvelle-Calédonie et inscrites sur la liste électorale générale à la date du scrutin. Il prévoit également l'entrée en vigueur de ses dispositions le lendemain de sa publication au Journal officiel de la République française.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T21:01+00:00"
+}

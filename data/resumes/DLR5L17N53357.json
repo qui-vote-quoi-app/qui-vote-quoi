@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N53357",
+ "texte": "PIONANR5L17B2637",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie les dispositions relatives à la compensation financière de la petite enfance en l'étendant aux établissements publics de coopération intercommunale et aux syndicats mixtes. Il supprime la condition du caractère obligatoire des compétences concernées. L'entrée en vigueur de ces dispositions est fixée au 1er janvier 2027. Enfin, la compensation des charges pour l'État est assurée par la création d'une taxe additionnelle sur les tabacs.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T20:59+00:00"
+}

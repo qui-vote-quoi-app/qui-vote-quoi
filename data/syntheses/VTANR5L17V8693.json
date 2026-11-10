@@ -3,8 +3,11 @@
  "num": 8693,
  "statut": "en_attente",
  "cree_le": "2026-11-09T22:41:10+00:00",
- "tentatives": 0,
- "erreurs": [],
+ "tentatives": 1,
+ "erreurs": [
+  "IA indisponible : gemini-flash-lite-latest : erreur 503"
+ ],
  "cr": "CRSANR5L17S2027O1N018",
- "seance_jour": "lundi 12 octobre 2026"
+ "seance_jour": "lundi 12 octobre 2026",
+ "derniere_tentative": "2026-11-10T20:53:27+00:00"
 }

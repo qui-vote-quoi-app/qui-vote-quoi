@@ -1,0 +1,9 @@
+{
+ "dossier": "DLR5L17N50444",
+ "texte": "PIONANR5L17B0277",
+ "tentatives": 1,
+ "statut": "en_attente",
+ "erreurs": [
+  "trop long"
+ ]
+}

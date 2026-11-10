@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L16N49263",
+ "texte": "PIONANR5L17B1578",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte reconnaît la responsabilité de l'État dans les préjudices liés au chlordécone en Guadeloupe et en Martinique. Il fixe des objectifs de dépollution, de recherche, de protection sanitaire, d'accompagnement professionnel et d'indemnisation des victimes. Il prévoit des rapports d'évaluation sur l'élargissement du fonds d'indemnisation et sur la présence de résidus dans les sols. Enfin, il instaure une stratégie pluriannuelle et crée une taxe additionnelle sur les tabacs pour compenser la charge financière.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T20:55+00:00"
+}

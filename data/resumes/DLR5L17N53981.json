@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N53981",
+ "texte": "PRJLANR5L17B2619",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code du travail afin de compléter les conditions d'application concernant l'assurance chômage. Il ajoute une référence spécifique relative aux personnes qui relèvent du 2° du I de l'article L. 5422-1.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T20:56+00:00"
+}

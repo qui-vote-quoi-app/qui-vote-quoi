@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N54144",
+ "texte": "PIONANR5L17B2674",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie les conditions d'un dispositif fiscal pour la rénovation immobilière. Il instaure une expérimentation de deux ans encadrant la responsabilité solidaire des entreprises en cotraitance pour des travaux limités. Il élargit les options de garanties financières pour les prêts accordés aux copropriétés. Enfin, il prévoit une compensation des pertes financières pour l'État et la sécurité sociale par une fiscalité sur les tabacs.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T20:59+00:00"
+}
