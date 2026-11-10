@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N54777",
+ "texte": "PIONANR5L17B3107",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte institue des fonctions spécialisées de juge, procureur de la République et procureur général chargés des violences sexuelles et intrafamiliales. Il impose à ces magistrats ainsi qu'à ceux siégeant dans les juridictions dédiées une formation initiale et continue obligatoire dispensée par l'École nationale de la magistrature. Enfin, il intègre ces nouvelles fonctions dans les dispositions statutaires relatives à l'exercice et à l'avancement des magistrats et prévoit un mécanisme de compensation financière.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T18:58+00:00"
+}

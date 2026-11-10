@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N54776",
+ "texte": "PIONANR5L17B3106",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte définit les infractions constitutives de violences intrafamiliales et de violences sexuelles et sexistes dans le code pénal. Il crée une Autorité indépendante de lutte contre ces violences, ainsi que des observatoires territoriaux et des enquêtes de victimation régulières. Il impose l'utilisation de services spécialisés par la police et la justice, ainsi qu'une formation obligatoire pour les forces de l'ordre. Enfin, il institue un socle minimal d'actes d'enquête obligatoires et crée des juridictions spécialisées dédiées au jugement de ces infractions.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-10T19:00+00:00"
+}

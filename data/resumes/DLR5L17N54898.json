@@ -1,9 +1,10 @@
 {
  "dossier": "DLR5L17N54898",
  "texte": "PIONANR5L17B3168",
- "tentatives": 0,
- "statut": "en_attente",
- "erreurs": [
-  "mot de jugement : enfin"
- ]
+ "tentatives": 1,
+ "statut": "publie",
+ "erreurs": [],
+ "resume": "Le texte crée un parcours de soins intégralement pris en charge par la sécurité sociale pour les victimes de violences sexuelles, sans avance de frais et sans limitation d'âge. Il intègre des enseignements sur la prévention des violences sexistes et sexuelles dans la formation des professionnels de santé et du secteur médico-social. Enfin, il instaure un entretien individuel annuel obligatoire pour chaque enfant dans les établissements d'enseignement afin de prévenir et dépister les violences.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "genere_le": "2026-11-10T18:54+00:00"
 }
