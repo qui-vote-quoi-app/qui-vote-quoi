@@ -59,20 +59,24 @@ def metadonnees(racine):
 
 
 def aplatir(racine):
-    """Liste des <point> et <paragraphe> dans l'ordre du document."""
+    """Liste des <point> et <paragraphe> dans l'ordre du document.
+    Chaque élément reçoit l'attribut interne _racine : l'indice du point de premier niveau
+    (le point de l'ordre du jour, c'est-à-dire le texte examiné) qui le contient."""
     contenu = _enfant(racine, "contenu")
     out = []
 
-    def parcourir(e):
+    def parcourir(e, racine_idx):
         for c in e:
             t = _tag(c)
             if t in ("point", "paragraphe"):
+                idx = len(out) if racine_idx is None and t == "point" else racine_idx
+                c.set("_racine", "" if idx is None else str(idx))
                 out.append(c)
-            if t == "point":
-                parcourir(c)
+                if t == "point":
+                    parcourir(c, idx)
 
     if contenu is not None:
-        parcourir(contenu)
+        parcourir(contenu, None)
     return out
 
 
@@ -113,6 +117,16 @@ def segment(noeuds, i_resultat):
         if i_expl is not None:
             debut, fin = i_expl, i_point
     return [n for n in noeuds[debut + 1:fin] if _tag(n) == "paragraphe"]
+
+
+def segment_texte(noeuds, i_resultat):
+    """Repli : tout le débat sur le texte (présentation, discussion générale, explications de vote)
+    depuis le début du point de l'ordre du jour qui contient le vote. Utile quand il n'y a pas
+    d'explications de vote, par exemple pour un texte issu d'une commission mixte paritaire."""
+    r = noeuds[i_resultat].get("_racine")
+    if not r:
+        return []
+    return [n for n in noeuds[int(r) + 1:i_resultat] if _tag(n) == "paragraphe"]
 
 
 def passages(paragraphes):
@@ -157,7 +171,10 @@ def extraire(xml_bytes, scrutin):
     i = trouver_resultat(noeuds, scrutin)
     if i is None:
         return metadonnees(racine), None
-    return metadonnees(racine), passages(segment(noeuds, i))
+    p = passages(segment(noeuds, i))
+    if not p:
+        p = passages(segment_texte(noeuds, i))
+    return metadonnees(racine), p
 
 
 def seance_du_fichier(debut_xml: bytes):
