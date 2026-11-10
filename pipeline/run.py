@@ -167,7 +167,7 @@ def traiter_syntheses(scrutins, syntheses, etat, args, rapport):
     a_traiter, reportees = attente[:config.SYNTHESES_MAX_PAR_PASSAGE], attente[config.SYNTHESES_MAX_PAR_PASSAGE:]
     if reportees:
         rapport.infos.append(f"{len(reportees)} synthèse(s) reportée(s) au prochain passage (plafond par passage).")
-    appels, debut, ia_hs = 0, time.monotonic(), False
+    appels, debut, ia_hs, pannes = 0, time.monotonic(), False, 0
     for syn in a_traiter:
         if time.monotonic() - debut > config.BUDGET_SYNTHESES_MINUTES * 60:
             rapport.infos.append("Temps alloué aux synthèses écoulé : la suite est reportée au prochain passage.")
@@ -207,7 +207,7 @@ def traiter_syntheses(scrutins, syntheses, etat, args, rapport):
             rapport.en_attente.append(s)
             continue
 
-        if ia_hs:  # IA en panne : inutile d'insister pour les synthèses suivantes de ce passage
+        if ia_hs:  # IA en panne (trois échecs d'affilée) : inutile d'insister pendant ce passage
             rapport.ia_indisponible.append(s)
             continue
         if appels and not args.fixtures:
@@ -220,8 +220,10 @@ def traiter_syntheses(scrutins, syntheses, etat, args, rapport):
                 brut, modele = synthese.appeler_ia(synthese.construire_prompt(s, passages, erreurs))
             except synthese.IAIndisponible as e:
                 panne = str(e)  # service saturé ou quota : on réessaiera au prochain passage
-                ia_hs = True
+                pannes += 1
+                ia_hs = pannes >= 3  # trois pannes d'affilée : inutile d'insister pendant ce passage
                 break
+            pannes = 0
             try:
                 publiable, erreurs = verification.verifier(synthese.lire_reponse(brut), passages)
             except ValueError as e:
