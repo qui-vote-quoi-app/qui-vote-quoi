@@ -1,10 +1,11 @@
 {
  "dossier": "DLR5L16N49868",
  "texte": "PRJLANR5L17B0481",
- "tentatives": 1,
+ "tentatives": 0,
  "statut": "publie",
  "erreurs": [],
  "resume": "Le texte simplifie les démarches administratives des entreprises et modifie diverses dispositions législatives relatives à la recherche, aux transports, à la fonction publique et aux procédures fiscales. Il encadre l'utilisation de plateformes de dématérialisation pour la commande publique et prévoit la remise d'un rapport gouvernemental sur les conseils consultatifs. Enfin, il ajuste les règles applicables aux décisions administratives et aux obligations déclaratives des sociétés.",
  "modele": "gemini:gemini-flash-lite-latest",
- "genere_le": "2026-11-11T16:45+00:00"
+ "genere_le": "2026-11-11T16:45+00:00",
+ "a_refaire": true
 }

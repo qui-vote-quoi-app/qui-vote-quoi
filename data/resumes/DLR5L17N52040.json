@@ -1,10 +1,11 @@
 {
  "dossier": "DLR5L17N52040",
  "texte": "PRJLANR5L17B1526",
- "tentatives": 1,
+ "tentatives": 0,
  "statut": "publie",
  "resume": "Le texte modifie les règles relatives à l'emploi des salariés expérimentés en rendant obligatoires des négociations de branche et d'entreprise sur ce sujet. Il encadre la visite médicale de mi-carrière et l'entretien professionnel pour adapter les postes et prévenir l'usure professionnelle. Il crée à titre expérimental un contrat de valorisation de l'expérience pour les demandeurs d'emploi seniors et facilite les aménagements de fin de carrière, notamment par le passage à temps partiel et l'affectation de l'indemnité de départ à la retraite.",
  "modele": "gemini:gemini-flash-lite-latest",
  "erreurs": [],
- "genere_le": "2026-11-11T14:22+00:00"
+ "genere_le": "2026-11-11T14:22+00:00",
+ "a_refaire": true
 }

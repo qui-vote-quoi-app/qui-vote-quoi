@@ -1,10 +1,11 @@
 {
  "dossier": "DLR5L17N53940",
  "texte": "PRJLANR5L17B2681",
- "tentatives": 1,
+ "tentatives": 0,
  "statut": "publie",
  "resume": "Le texte modifie le code de procédure pénale pour créer une procédure de jugement des crimes reconnus. Il permet à l'auteur présumé d'un crime, sous certaines conditions et avec l'accord du ministère public, d'accepter sa culpabilité et de se voir proposer des peines plafonnées lors d'un entretien préalable. Cette procédure alternative s'effectue devant une formation allégée de la cour d'assises sans jury populaire, avec un droit d'opposition pour la partie civile et l'obligation d'informer cette dernière de ses droits à l'assistance juridique.",
  "modele": "gemini:gemini-flash-lite-latest",
  "erreurs": [],
- "genere_le": "2026-11-10T19:24+00:00"
+ "genere_le": "2026-11-10T19:24+00:00",
+ "a_refaire": true
 }

@@ -1,10 +1,11 @@
 {
  "dossier": "DLR5L17N50588",
  "texte": "PRJLANR5L17B0325",
- "tentatives": 1,
+ "tentatives": 0,
  "statut": "publie",
  "erreurs": [],
  "resume": "Le texte rectifie les prévisions de recettes, de dépenses, les soldes des régimes obligatoires de base de sécurité sociale ainsi que l'objectif national de dépenses d'assurance maladie pour l'année 2024. Il modifie les règles de calcul et de recouvrement des cotisations sociales, notamment pour les exploitants agricoles, et ajuste divers dispositifs d'exonération de cotisations patronales applicables au secteur agricole.",
  "modele": "gemini:gemini-flash-lite-latest",
- "genere_le": "2026-11-11T16:47+00:00"
+ "genere_le": "2026-11-11T16:47+00:00",
+ "a_refaire": true
 }

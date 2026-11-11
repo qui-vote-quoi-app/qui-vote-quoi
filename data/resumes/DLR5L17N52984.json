@@ -1,10 +1,11 @@
 {
  "dossier": "DLR5L17N52984",
  "texte": "PRJLANR5L17B2529",
- "tentatives": 1,
+ "tentatives": 0,
  "statut": "publie",
  "resume": "Le texte prévoit une consultation des populations de la Nouvelle-Calédonie au plus tard le 26 juillet 2026 sur les accords de Bougival et Élysée–Oudinot. Il modifie la Constitution pour créer l'État de la Nouvelle-Calédonie, définir ses compétences, son organisation institutionnelle et le corps électoral de sa future assemblée. Enfin, il instaure une nationalité calédonienne accessible selon des critères précis de résidence, de naissance ou d'alliance.",
  "modele": "gemini:gemini-flash-lite-latest",
  "erreurs": [],
- "genere_le": "2026-11-10T22:35+00:00"
+ "genere_le": "2026-11-10T22:35+00:00",
+ "a_refaire": true
 }

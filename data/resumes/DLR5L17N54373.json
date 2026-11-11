@@ -1,10 +1,11 @@
 {
  "dossier": "DLR5L17N54373",
  "texte": "PRJLANR5L17B2843",
- "tentatives": 1,
+ "tentatives": 0,
  "statut": "publie",
  "resume": "Le texte approuve les comptes de la sécurité sociale pour l'exercice 2025. Il fixe les recettes, les dépenses et le solde des administrations de sécurité sociale ainsi que les tableaux d'équilibre par branche et pour les organismes de financement. Il valide en outre les dépenses de l'objectif national de dépenses d'assurance maladie, le montant de la dette amortie et le rapport retraçant la situation patrimoniale de la sécurité sociale.",
  "modele": "gemini:gemini-flash-lite-latest",
  "erreurs": [],
- "genere_le": "2026-11-10T20:24+00:00"
+ "genere_le": "2026-11-10T20:24+00:00",
+ "a_refaire": true
 }

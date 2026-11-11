@@ -21,6 +21,7 @@ RETIRES = config.DATA / "resumes_retires.txt"
 URL_TEXTE = config.AN + "/dyn/docs/{uid}.raw"
 MAX_PAR_PASSAGE = 40   # limité en pratique par le temps alloué
 DISPOSITIF_MAX = 14000
+APERCU_MAX = 24000   # aperçu d'un texte long : début de chaque article
 MOTS_MAX = 110
 JUGEMENTS = ["injuste", "dangereu", "scandal", "excellent", "inacceptable", "indispensable", "salutaire", "néfaste",
              "absurde", "inutile", "courageu", "historique", "honteu", "remarquable", "regrettable", "bienvenu",
@@ -75,6 +76,25 @@ def dispositif(texte):
     return reste[debut:].strip() if titre else ""
 
 
+def condenser(disp):
+    """Texte court : les articles en entier. Texte long (budget, loi de programmation…) : un aperçu de TOUT
+    le texte, c'est-à-dire chaque titre de partie et le début de chaque article, plutôt que ses seules
+    premières pages (sinon le résumé ne décrirait que le début, par exemple la rectification de l'année passée)."""
+    if len(disp) <= DISPOSITIF_MAX:
+        return disp
+    lignes, budget = [], APERCU_MAX
+    blocs = re.split(r"\n\s*(?=(?:Article\s+[\dlLpu]|PREMI[ÈE]RE PARTIE|DEUXI[ÈE]ME PARTIE|TROISI[ÈE]ME PARTIE|"
+                     r"QUATRI[ÈE]ME PARTIE|TITRE\s+[IVX]+|Titre\s+[IVX]+))", disp)
+    par_bloc = max(90, min(400, budget // max(1, len(blocs))))
+    for b in blocs:
+        b = re.sub(r"\s+", " ", b).strip()
+        if b:
+            lignes.append(b[:par_bloc])
+    texte = "\n".join(lignes)
+    return texte[:APERCU_MAX] + "\n\n[Texte très long : aperçu de chaque partie et de chaque article. " \
+        "Résume les grandes lignes de l'ensemble du texte, pas seulement son début.]"
+
+
 def verifier(resume, noms):
     erreurs = []
     if not resume:
@@ -103,7 +123,8 @@ def traiter(scrutins, textes, deputes, rapport, args, budget_s):
         if ref and s["categorie"]["niveau"] == 1 and ref in textes:
             recents[ref] = max(recents.get(ref, 0), s["num"])
     a_faire = [ref for ref in sorted(recents, key=lambda r: -recents[r])
-               if ref not in exclus and (ref not in resumes or resumes[ref].get("statut") == "en_attente")]
+               if ref not in exclus and (ref not in resumes or resumes[ref].get("statut") == "en_attente"
+                                         or resumes[ref].get("a_refaire"))]
     if not a_faire or args.sans_ia or args.fixtures:
         if a_faire:
             rapport.infos.append(f"[sans IA] {len(a_faire)} résumé(s) de texte à rédiger.")
@@ -138,8 +159,7 @@ def traiter(scrutins, textes, deputes, rapport, args, budget_s):
             _sauver(ref, r)
             continue
         titre = next((s.get("dossier_libelle") or s["titre"] for s in scrutins.values() if s.get("dossier") == ref), "")
-        prompt = (f"TITRE : {titre}\n\nARTICLES :\n{disp[:DISPOSITIF_MAX]}"
-                  + ("\n\n[Texte tronqué : résume ses grandes lignes.]" if len(disp) > DISPOSITIF_MAX else ""))
+        prompt = f"TITRE : {titre}\n\nARTICLES :\n{condenser(disp)}"
         panne, resume, modele, erreurs = False, "", "", ["résumé vide"]
         for essai in range(2):  # une relance en signalant le problème (trop long, mot de jugement…)
             consigne = prompt if essai == 0 else (prompt + "\n\nTa réponse précédente a été refusée : "
@@ -160,10 +180,16 @@ def traiter(scrutins, textes, deputes, rapport, args, budget_s):
             rapport.infos.append("IA indisponible pour les résumés de textes : nouvel essai au prochain passage.")
             break
         r["tentatives"] = r.get("tentatives", 0) + 1
-        if erreurs:
+        r["longueur"] = len(disp)
+        if erreurs and r.get("a_refaire") and r.get("statut") == "publie":
+            # Nouvelle rédaction refusée : l'ancien résumé reste en ligne.
+            bloques += 1
+            r.pop("a_refaire", None)
+        elif erreurs:
             bloques += 1
             r.update({"statut": "abandonne" if r["tentatives"] >= 2 else "en_attente", "erreurs": erreurs})
         else:
+            r.pop("a_refaire", None)
             faits += 1
             r.update({"statut": "publie", "resume": resume, "modele": modele, "erreurs": [],
                       "genere_le": datetime.now(timezone.utc).isoformat(timespec="minutes")})
