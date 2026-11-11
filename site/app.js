@@ -356,16 +356,19 @@
       $("hq").oninput = function () { h.q = this.value; h.limite = PAGE; rendreHistoListe(false); };
     }
     $("hpos").innerHTML = '<span class="eyebrow">' + (h.type === "d" ? "Son vote" : "Position du groupe") + "</span>" +
-      [["", "Tous", base.length]].concat(POS.map(function (p) { return [p, LABEL[p], comptes[p]]; })).map(function (x) {
+      [["", "Tous", base.length]].concat(POS.map(function (p) { return [p, p === "nv" && h.type === "d" ? ((st.deps[st.depParId[h.id]] || {}).civ === "Mme" ? "Non-votante" : "Non-votant") : LABEL[p], comptes[p]]; })).map(function (x) {
         return '<button type="button" class="fpos' + (x[0] ? " f-" + x[0] : "") + '" data-pos="' + x[0] + '" aria-pressed="' + (h.pos === x[0]) + '">' + x[1] + ' <span class="num">' + x[2] + "</span></button>";
       }).join("");
     $("hpos").onclick = function (e) { var b = e.target.closest("button"); if (!b) return; h.pos = b.dataset.pos; h.limite = PAGE; rendreHistoListe(false); };
+    var fem = h.type === "d" && (st.deps[st.depParId[h.id]] || {}).civ === "Mme";
+    var libLigne = h.type === "d" ? "Son vote" : "Le groupe";
     var lignes = vis.slice(0, h.limite).map(function (l) {
       var r = st.parNum[l.num], cat = st.idx.cats[r[2]];
-      var detail = h.type === "g" ? '<span class="note num">' + l.d.pour + " pour · " + l.d.contre + " contre · " + l.d.abst + " abst. / " + l.membres + "</span>" : "";
+      var detail = h.type === "g" ? '<span class="note num">' + l.d.pour + " pour · " + l.d.contre + " contre · " + l.d.abst + " abst. sur " + l.membres + "</span>" : "";
       return '<a class="hitem" href="#s' + r[0] + '"><span class="hdate">' + dateCourte(r[1]) + '<span class="num">n° ' + r[0] + "</span></span>" +
         '<span class="ht"><span class="hmeta"><span class="cat c-' + cat + '">' + CAT_LIB[cat] + "</span>" + (r[5] >= 0 ? "<span>" + esc(st.idx.themes[r[5]]) + "</span>" : "") + "</span>" + esc(majuscule(r[7])) + "</span>" +
-        '<span class="hres">' + resultat(r[4]) + '</span><span class="hpos">' + (l.pos ? '<span class="pill ' + l.pos + '">' + LABEL[l.pos] + "</span>" : '<span class="note">—</span>') + detail + "</span></a>";
+        '<span class="hpos"><span class="hlab">' + libLigne + "</span>" + (l.pos ? '<span class="pill ' + l.pos + '">' + (l.pos === "nv" && fem ? "Non-votante" : l.pos === "nv" && h.type === "d" ? "Non-votant" : LABEL[l.pos]) + "</span>" : '<span class="note">—</span>') + detail + "</span>" +
+        '<span class="hres"><span class="hlab">Résultat</span><span class="verdict ' + (r[4] ? "v-ok" : "v-ko") + '">' + (r[4] ? "✓ Adopté" : "✗ Rejeté") + "</span></span></a>";
     }).join("");
     $("hrows").innerHTML = '<p class="sompte">' + vis.length + " scrutin" + (vis.length > 1 ? "s" : "") + "</p>" +
       (lignes ? '<div class="hlist">' + lignes + "</div>" : '<p class="empty-deb">Aucun scrutin ne correspond à ces critères.</p>') +
