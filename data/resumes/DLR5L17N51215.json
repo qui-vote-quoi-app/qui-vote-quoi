@@ -1,9 +1,10 @@
 {
  "dossier": "DLR5L17N51215",
  "texte": "PIONANR5L17B0768",
- "tentatives": 1,
- "statut": "en_attente",
- "erreurs": [
-  "résumé vide"
- ]
+ "tentatives": 2,
+ "statut": "publie",
+ "erreurs": [],
+ "resume": "Le texte institue un impôt plancher sur la fortune de 2 % applicable aux patrimoines supérieurs à 100 millions d'euros. Il définit l'assiette taxable, incluant les biens en France et à l'étranger pour les résidents fiscaux, ainsi que les règles d'évaluation des actifs, des assurances et des démembrements. Enfin, il fixe les obligations déclaratives, les modalités de recouvrement et prévoit une entrée en vigueur au 1er janvier 2026.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "genere_le": "2026-11-11T15:38+00:00"
 }

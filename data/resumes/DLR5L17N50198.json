@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N50198",
+ "texte": "PRJLANR5L17B0324",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte fixe les prévisions de solde structurel, de solde effectif, de dépenses, de prélèvements obligatoires et d'endettement pour l'ensemble des administrations publiques pour l'année 2025. Il intègre également les données d'exécution de l'année 2023 ainsi que les prévisions d'exécution pour l'année 2024. Enfin, il autorise la perception des ressources et des impôts existants de l'État.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:48+00:00"
+}

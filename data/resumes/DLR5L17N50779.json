@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N50779",
+ "texte": "PIONANR5L17B0522",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code de commerce pour encadrer les prix dans les outre-mer. Il prévoit que les accords sur les prix garantissent des tarifs équivalents à ceux pratiqués en hexagone pour les produits de première nécessité. Il renforce les sanctions sous forme d'astreinte financière en cas de défaut de dépôt des comptes sociaux. Enfin, il abaisse à 300 mètres carrés le seuil de surface de vente déclenchant l'obligation d'une autorisation d'exploitation commerciale dans ces territoires.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:39+00:00"
+}

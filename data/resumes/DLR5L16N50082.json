@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L16N50082",
+ "texte": "PIONANR5L17B0465",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code de procédure pénale afin de préciser les conditions dans lesquelles les exceptions de nullité de la procédure peuvent être soulevées par les parties. Il introduit des exceptions liées à l'impossibilité pour les parties de connaître ces nullités antérieurement, et précise l'application de ces dispositions en Nouvelle-Calédonie, en Polynésie française et dans les îles Wallis et Futuna.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:45+00:00"
+}

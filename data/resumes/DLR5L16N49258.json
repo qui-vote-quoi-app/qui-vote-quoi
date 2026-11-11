@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L16N49258",
+ "texte": "PIONANR5L17B0158",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte interdit aux établissements bancaires de facturer la clôture des comptes et des produits d'épargne d'une personne décédée dans trois cas spécifiques : lorsque les héritiers justifient de leur qualité sans complexité particulière, lorsque le montant total des avoirs est inférieur à un seuil réglementaire, ou lorsque le détenteur est mineur au décès. Dans les autres situations, ces frais de clôture sont autorisés mais encadrés par un plafond réglementaire. Enfin, le Gouvernement doit remettre un rapport au Parlement pour évaluer l'impact de ces mesures.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:42+00:00"
+}

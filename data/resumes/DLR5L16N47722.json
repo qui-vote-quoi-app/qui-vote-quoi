@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L16N47722",
+ "texte": "PIONANR5L16B1176",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte soumet la location des meublés de tourisme au respect de critères de performance énergétique et permet aux maires d'exiger un diagnostic et d'instaurer un régime d'autorisation préalable assorti d'amendes. Il élargit le champ géographique des restrictions de changement d'usage des logements et modifie les abattements fiscaux applicables aux revenus tirés de la location de meublés de tourisme selon leur classement et leur localisation.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:49+00:00"
+}

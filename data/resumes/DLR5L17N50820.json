@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N50820",
+ "texte": "PIONANR5L17B0532",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie l'article 6 de la loi du 16 août 2022 portant mesures d'urgence pour la protection du pouvoir d'achat. Il prolonge d'une année supplémentaire, en remplaçant la date du 31 décembre 2024 par celle du 31 décembre 2025, la dérogation permettant l'usage des titres-restaurant pour l'achat de tout produit alimentaire.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:44+00:00"
+}

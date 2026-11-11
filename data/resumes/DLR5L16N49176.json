@@ -1,9 +1,10 @@
 {
  "dossier": "DLR5L16N49176",
  "texte": "PIONANR5L17B0134",
- "tentatives": 1,
- "statut": "en_attente",
- "erreurs": [
-  "mot de jugement : dangereu"
- ]
+ "tentatives": 2,
+ "statut": "publie",
+ "erreurs": [],
+ "resume": "Le texte modifie les règles applicables à la sûreté dans les transports. Il élargit les prérogatives des agents de sécurité de la SNCF et de la RATP en matière d'inspection visuelle, de fouille des bagages et de palpations de sécurité, et encadre l'utilisation de caméras individuelles par ces agents ainsi que par certains conducteurs. Le texte permet également l'intervention temporaire de ces agents sur la voie publique dans des situations spécifiques, facilite l'accès des polices municipales aux espaces de transport et prévoit la mise en place d'un numéro téléphonique national unique pour les signalements de voyageurs.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "genere_le": "2026-11-11T15:37+00:00"
 }

@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N50370",
+ "texte": "PIONANR5L17B0203",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte prévoit la prise en charge intégrale des fauteuils roulants, des options, des réparations et des consultations pluridisciplinaires associées par l'Assurance maladie. Il instaure une révision régulière de la liste des produits remboursables en concertation avec les acteurs concernés et crée un observatoire du marché et des prix des aides techniques sous l'égide de la Caisse nationale de solidarité pour l'autonomie.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:42+00:00"
+}

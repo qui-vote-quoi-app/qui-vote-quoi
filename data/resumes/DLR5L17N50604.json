@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N50604",
+ "texte": "PIONANR5L17B0341",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte prévoit que chaque région comprenne au moins un centre hospitalier universitaire. Il fixe son entrée en vigueur au 1er janvier 2030 et prévoit qu'un décret détermine les modalités d'application, incluant le calendrier de mise en place d'un centre hospitalier régional puis universitaire dans la Collectivité de Corse. Enfin, il compense les charges financières pour l'État et les organismes de sécurité sociale par la création et la majoration de taxes sur les tabacs.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:43+00:00"
+}

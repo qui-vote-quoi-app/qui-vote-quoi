@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N50453",
+ "texte": "PIONANR5L17B0284",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte abaisse l'âge légal de départ à la retraite de soixante-quatre à soixante-deux ans et modifie le nombre d'annuités requises pour divers régimes. Il supprime plusieurs dispositions issues des réformes récentes relatives à l'âge et aux durées de cotisation. Enfin, il prévoit des compensations financières pour les organismes de sécurité sociale.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:50+00:00"
+}
