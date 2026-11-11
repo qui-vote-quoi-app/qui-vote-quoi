@@ -98,11 +98,11 @@ select{width:100%;padding:7px 9px;border:1px solid var(--rule);border-radius:0;b
 .theme-btn{display:inline-flex;align-items:center;gap:7px;font-family:var(--display);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:3px 10px 3px 7px;border:1px solid currentColor;background:transparent;color:inherit;cursor:pointer}
 .theme-btn svg{width:16px;height:16px}
 .theme-btn:hover,.tabs a:hover{background:rgba(255,255,255,.1)}
-.tabs{display:flex;gap:4px;margin:0 -8px;overflow-x:auto}
-.tabs a{font-family:var(--display);font-size:18px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--on-velours);text-decoration:none;opacity:.72;padding:6px 12px 9px;border-bottom:4px solid transparent;white-space:nowrap}
-.tabs a[aria-current="page"]{opacity:1;border-bottom-color:var(--on-velours)}
+.tabs{display:flex;gap:6px;margin:0 -20px;padding:8px 14px;background:rgba(0,0,0,.24);border-top:1px solid rgba(255,255,255,.14);overflow-x:auto}
+.tabs a{font-family:var(--display);font-size:19px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--on-velours);text-decoration:none;padding:8px 16px;border:1px solid rgba(255,255,255,.28);white-space:nowrap}
+.tabs a[aria-current="page"]{background:var(--on-velours);color:var(--velours);border-color:var(--on-velours)}
 .tabs a:focus-visible,.theme-btn:focus-visible{outline-color:var(--on-velours)}
-@media (max-width:640px){.brand h1{font-size:32px}.top{padding:14px 16px 0}.tabs a{font-size:16px;padding:6px 10px 8px}}
+@media (max-width:640px){.brand h1{font-size:32px}.top{padding:14px 16px 0}.tabs{margin:0 -16px;padding:8px 12px}.tabs a{font-size:16px;padding:7px 11px}}
 .top .eyebrow{color:var(--on-velours);opacity:.8}
 .brand h1{font-size:40px;line-height:1;text-transform:uppercase;letter-spacing:.02em;margin-top:4px}
 .tag{font-family:var(--display);font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border:1px solid currentColor}
@@ -410,8 +410,8 @@ footer{border-top:1px solid var(--rule);margin-top:8px;padding:14px 2px 0;font-s
   .brand h1{font-size:28px;margin:0}
   .theme-btn{padding:6px 8px}
   #theme-libelle{position:absolute;left:-9999px}
-  .tabs{margin:0 -16px;padding:0 8px}
-  .tabs a{font-size:14.5px;letter-spacing:.03em;padding:8px 7px 10px}
+  .tabs{margin:0 -16px;padding:8px 8px;gap:4px}
+  .tabs a{flex:1 1 0;min-width:0;text-align:center;font-size:13.5px;letter-spacing:.01em;padding:8px 2px}
   .chip,.seg button,.fpos{min-height:40px}
   .sitem{padding:12px}
   .acc-gl a{padding:10px 2px}
