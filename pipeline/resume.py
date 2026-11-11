@@ -19,7 +19,7 @@ from . import config, synthese
 DOSSIER = config.DATA / "resumes"
 RETIRES = config.DATA / "resumes_retires.txt"
 URL_TEXTE = config.AN + "/dyn/docs/{uid}.raw"
-MAX_PAR_PASSAGE = 15
+MAX_PAR_PASSAGE = 40   # limité en pratique par le temps alloué
 DISPOSITIF_MAX = 14000
 MOTS_MAX = 110
 JUGEMENTS = ["injuste", "dangereu", "scandal", "excellent", "inacceptable", "indispensable", "salutaire", "néfaste",
