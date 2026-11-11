@@ -738,7 +738,7 @@
       if (ap) { if (A) ap.src = "data/apercu.png?v=" + encodeURIComponent(VERSION); else ap.closest("figure").hidden = true; }
       var cap = el.querySelector("[data-apercu-texte]");
       if (cap && A) cap.innerHTML = (A.adopte ? "✅ " : "❌ ") + "<b>" + esc(majuscule(A.titre)) + "</b> · " + (A.adopte ? "adopté" : "rejeté") + '<blockquote class="tg-cit">' + esc(A.bref) + "</blockquote>" +
-        A.pour + " pour · " + A.contre + " contre · " + A.abst + " abst.<br>" + '<span class="tg-boutons"><a href="#s' + A.num + '">🔎 Qui a voté quoi</a></span>';
+        A.pour + " pour · " + A.contre + " contre · " + A.abst + " abst.<br>" + '<span class="tg-boutons"><a href="#s' + A.num + '">🔎 Voir le détail du vote</a></span>';
       var b = $("copier-adresse");
       if (b) b.onclick = function () {
         var a = $("adresse").textContent;

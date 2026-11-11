@@ -124,7 +124,7 @@ def bloc_recap(s, groupes):
     if c:
         lignes.append(f"<i>{E(c)}</i>")
     lignes += positions(s, groupes)
-    lignes.append(f'<a href="{lien(s)}">Voir qui a voté quoi →</a>')
+    lignes.append(f'<a href="{lien(s)}">Voir le détail du vote →</a>')
     return "\n".join(lignes)
 
 
@@ -146,7 +146,7 @@ def legende_detail(s, groupes, txt):
 
 
 def boutons_detail(s, debat=False):
-    ligne = [("🔎 Qui a voté quoi", lien(s))]
+    ligne = [("🔎 Voir le détail du vote", lien(s))]
     if s.get("dossier"):
         ligne.append(("📜 Texte officiel", f"{config.AN}/dyn/17/dossiers/{s['dossier']}"))
     return [ligne] + ([[("💬 Le débat en bref", lien(s))]] if debat else [])
