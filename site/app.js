@@ -673,6 +673,7 @@
     }
     [].forEach.call(document.querySelectorAll(".tabs a"), function (a) { if (a.dataset.vue === v) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
     $("vue-scrutin").hidden = v !== "scrutins";
+    $("vue-sliste").hidden = true;
     $("vue-histo").hidden = v !== "deputes" && v !== "groupes";
     $("vue-page").hidden = v !== "infos";
     $("vue-accueil").hidden = v !== "accueil";
@@ -741,10 +742,32 @@
       st.f.theme = m[1]; st.f.lv = maj1 ? 1 : 3; st.limite = PAGE; st.vue = null; definirVue("scrutins");
       if (r) ouvrirScrutin(r[0]); listeLaterale();
     }
-    else if (h === "#scrutins") { definirVue("scrutins"); ouvrirScrutin(st.num || premierMajeur()); ouvrirListe(); }
+    else if (h === "#scrutins") { definirVue("scrutins"); accueilScrutins(); ouvrirListe(); }
     else { definirVue("accueil"); rendreAccueil(); listeLaterale(); document.title = "Qui vote quoi ? · Les votes de l'Assemblée nationale"; }
     if (st.vue === "scrutins") centrerHemicycle();
     window.scrollTo(0, 0);
+  }
+  function miniHemi(sieges) {
+    var c = { "0": "pour", "1": "contre", "2": "abst", "3": "nv" }, out = "";
+    Object.keys(st.places).forEach(function (num) {
+      var p = st.places[num], k = sieges.charAt(+num);
+      out += '<circle cx="' + p[0].toFixed(1) + '" cy="' + p[1].toFixed(1) + '" r="1.75" class="' + (c[k] || "vide") + '"/>';
+    });
+    return '<svg class="mhemi" viewBox="4 3 229 127" aria-hidden="true">' + out + "</svg>";
+  }
+  function accueilScrutins() {
+    $("vue-scrutin").hidden = true; $("vue-sliste").hidden = false; st.num = null;
+    document.title = "Scrutins · Qui vote quoi ?"; listeLaterale();
+    getCache("derniers.json").then(function (L) {
+      $("scartes").innerHTML = (L || []).map(function (r) {
+        var cat = st.idx.cats[r[2]];
+        return '<a class="scarte" href="#s' + r[0] + '">' + miniHemi(r[9]) +
+          '<span class="sc-res ' + (r[3] ? "ok" : "ko") + '">' + (r[3] ? "✓ Adopté" : "✗ Rejeté") + '</span>' +
+          '<span class="sc-meta">' + "<span>" + esc(dateCourte(r[1])) + '</span><span class="cat c-' + cat + '">' + CAT_LIB[cat] + "</span>" + (r[8] ? "<span>" + esc(r[8]) + "</span>" : "") + "</span>" +
+          '<b class="sc-titre">' + esc(r[7]) + "</b>" +
+          '<span class="sc-chiffres num">' + r[4] + " pour · " + r[5] + " contre" + (r[6] ? " · " + r[6] + " abst." : "") + "</span></a>";
+      }).join("") || '<p class="note">Aucun vote important pour le moment.</p>';
+    }, function () { $("scartes").innerHTML = '<p class="note">La liste n\'a pas pu être chargée.</p>'; });
   }
   function premierMajeur() {
     var r = st.idx.s.filter(function (x) { return x[3] === 1; })[0] || st.idx.s[0];

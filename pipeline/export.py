@@ -119,6 +119,22 @@ def exporter(scrutins, deputes, groupes, syntheses, retraits, sources_dates, ave
     for p, contenu in paquets.items():
         ecrire_json(out / "scrutins" / f"{p}.json", contenu, compact=True)
 
+    # « Derniers scrutins » : les votes importants récents, avec la position de chaque siège pour un mini hémicycle.
+    from . import canal as _canal
+    recents = sorted((s for s in scrutins.values() if s["categorie"]["niveau"] == 1), key=lambda s: -s["num"])[:24]
+    derniers = []
+    for s in recents:
+        sieges = {}
+        for g in s["groupes"]:
+            for pos, lst in g["votes"].items():
+                for _pa, place in lst:
+                    sieges[int(place)] = str(POS[pos])
+        n = max(sieges, default=0) + 1
+        derniers.append([s["num"], s["date"], CATS.index(s["categorie"]["cle"]) if s["categorie"]["cle"] in CATS else 7,
+                         1 if s["sort"] == "adopté" else 0, s["pour"], s["contre"], s["abst"],
+                         _canal.titre_court(s), s.get("theme") or "", "".join(sieges.get(i, "-") for i in range(n))])
+    ecrire_json(out / "derniers.json", derniers, compact=True)
+
     liste_index.sort(key=lambda r: -r[0])
     ecrire_json(out / "index.json", {"cats": CATS, "themes": themes, "s": liste_index}, compact=True)
 
