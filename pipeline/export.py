@@ -171,7 +171,20 @@ def exporter(scrutins, deputes, groupes, syntheses, retraits, sources_dates, ave
         for jour in sorted(par_date, reverse=True)[:10]:
             vs = sorted(par_date[jour], key=lambda v: v["num"])
             html = "\n\n".join(canal.bloc_recap(v, groupes) for v in vs).replace(canal._site() + "/", "")
-            fil.append({"date": jour, "n": len(vs), "html": html})
+            details = []
+            for v in [v for v in vs if canal.marquant(v)][:8]:
+                txt = (resumes.get(v.get("dossier")) or {}).get("resume")
+                sieges = {}
+                for g in v["groupes"]:
+                    for pos, lst in g["votes"].items():
+                        for _pa, place in lst:
+                            sieges[int(place)] = str(POS[pos])
+                n = max(sieges, default=0) + 1
+                details.append({"num": v["num"], "titre": canal.titre_court(v), "adopte": v["sort"] == "adopté",
+                                "legende": canal.legende_detail(v, groupes, txt).replace(canal._site() + "/", ""),
+                                "boutons": [[t, u.replace(canal._site() + "/", "")] for ligne in canal.boutons_detail(v) for t, u in ligne],
+                                "sieges": "".join(sieges.get(i, "-") for i in range(n))})
+            fil.append({"date": jour, "n": len(vs), "html": html, "details": details})
     except Exception as e:  # noqa: BLE001 — accessoire
         print(f"Fil des messages non généré : {e}")
     ecrire_json(out / "fil.json", fil, compact=True)
