@@ -622,6 +622,16 @@
       [].forEach.call(el.querySelectorAll("[data-sans-canal]"), function (x) { x.hidden = !!canal; });
       [].forEach.call(el.querySelectorAll("a[data-canal]"), function (x) { x.href = (x.dataset.canal === "web" ? "https://t.me/s/" : "https://t.me/") + canal; });
       [].forEach.call(el.querySelectorAll("[data-canal-nom]"), function (x) { x.textContent = "@" + canal; });
+      [].forEach.call(el.querySelectorAll("a[data-vers]"), function (x) {
+        x.onclick = function (e) { e.preventDefault(); var c = document.getElementById(x.dataset.vers); if (c) c.scrollIntoView({ behavior: "smooth", block: "start" }); };
+      });
+      var fil = el.querySelector("[data-fil]");
+      if (fil) getCache("fil.json").then(function (F) {
+        fil.innerHTML = (F || []).length ? F.map(function (j) {
+          var d = new Date(j.date + "T12:00:00");
+          return '<article class="tg-bulle tg-msg"><p><b>🏛 À L\'ASSEMBLÉE · ' + esc(d.toLocaleDateString("fr-FR", { day: "numeric", month: "long" }).toUpperCase()) + "</b><br>" + j.n + " vote" + (j.n > 1 ? "s importants" : " important") + "</p>" + j.html.split("\n\n").map(function (b) { return "<p>" + b.replace(/\n/g, "<br>") + "</p>"; }).join("") + "</article>";
+        }).join("") : '<p class="note">Aucun message pour le moment.</p>';
+      }, function () { fil.innerHTML = '<p class="note">Les messages n\'ont pas pu être chargés.</p>'; });
       var ap = el.querySelector("img[data-apercu]");
       var A = st.meta.apercu;
       if (ap) { if (A) ap.src = "data/apercu.png?v=" + encodeURIComponent(VERSION); else ap.closest("figure").hidden = true; }

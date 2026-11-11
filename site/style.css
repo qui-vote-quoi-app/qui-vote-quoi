@@ -433,3 +433,8 @@ footer{border-top:1px solid var(--rule);margin-top:8px;padding:14px 2px 0;font-s
 .tq-trouve{border-left:4px solid var(--velours);padding-left:14px}
 .tq-trouve .eyebrow{margin:0 0 4px}
 .lien-btn{background:none;border:0;padding:8px 0 0;font:inherit;font-size:14px;color:var(--ink);text-decoration:underline;cursor:pointer}
+.fil-tg{display:flex;flex-direction:column;gap:12px;margin:8px 0 24px}
+.tg-msg{padding:12px 14px;font-family:var(--body);font-size:14.5px;line-height:1.45}
+.tg-msg p{margin:0 0 10px}.tg-msg p:last-child{margin:0}
+.tg-msg a{color:var(--lien,#206ba7)}
+.prose h2{scroll-margin-top:80px}

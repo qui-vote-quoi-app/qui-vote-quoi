@@ -142,6 +142,20 @@ def exporter(scrutins, deputes, groupes, syntheses, retraits, sources_dates, ave
                       "contre": v["contre"], "abst": v["abst"], "bref": presentation.en_bref(v)}
         except Exception as e:  # noqa: BLE001 — l'aperçu est accessoire
             print(f"Aperçu non généré : {e}")
+    # « Derniers messages » : les récapitulatifs du canal, reproduits sur le site (lisibles sans Telegram).
+    fil = []
+    try:
+        from . import canal
+        par_date = {}
+        for v in majeurs:
+            par_date.setdefault(v["date"], []).append(v)
+        for jour in sorted(par_date, reverse=True)[:10]:
+            vs = sorted(par_date[jour], key=lambda v: v["num"])
+            html = "\n\n".join(canal.bloc_recap(v, groupes) for v in vs).replace(canal._site() + "/", "")
+            fil.append({"date": jour, "n": len(vs), "html": html})
+    except Exception as e:  # noqa: BLE001 — accessoire
+        print(f"Fil des messages non généré : {e}")
+    ecrire_json(out / "fil.json", fil, compact=True)
     ecrire_json(out / "meta.json", {
         "nb_scrutins": len(scrutins),
         "dernier": max((s["num"] for s in scrutins.values()), default=0),
