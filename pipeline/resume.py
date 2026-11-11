@@ -123,8 +123,15 @@ def traiter(scrutins, textes, deputes, rapport, args, budget_s):
             page.raise_for_status()
             disp = dispositif(texte_brut(page.text))
         except requests.RequestException as e:
-            print(f"Résumé {ref} : texte inaccessible ({e.__class__.__name__})")
-            rapport.infos.append(f"Résumé {ref} : texte inaccessible ({e.__class__.__name__}).")
+            code = getattr(getattr(e, "response", None), "status_code", None)
+            print(f"Résumé {ref} : texte inaccessible ({e.__class__.__name__} {code or ''})")
+            r["acces_echecs"] = r.get("acces_echecs", 0) + 1
+            if code == 404 or r["acces_echecs"] >= 3:
+                # Texte absent du site de l'Assemblée : inutile de réessayer à chaque passage.
+                r.update({"statut": "abandonne", "erreurs": [f"texte {uid} inaccessible ({code or e.__class__.__name__})"]})
+            else:
+                r["statut"] = "en_attente"
+            _sauver(ref, r)
             continue
         if len(disp) < 80:
             r.update({"statut": "abandonne", "erreurs": ["articles introuvables dans le texte"]})
