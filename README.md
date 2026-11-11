@@ -41,10 +41,10 @@ Les heures évitent l'heure pile, où GitHub retarde ou saute parfois les tâche
 ## Canal Telegram public
 
 1. Dans Telegram : *Nouveau canal* → public, avec un nom (par exemple `@quivotequoi`).
-2. Ajoutez votre bot comme **administrateur** du canal (droit « Publier des messages »).
+2. Ajoutez votre bot comme **administrateur** du canal, avec les droits « Publier des messages », « Modifier les messages des autres » et « Épingler des messages ».
 3. GitHub : *Settings → Secrets and variables → Actions → Variables → New repository variable* : `TELEGRAM_CANAL` = `@quivotequoi`.
 
-Au passage suivant, chaque nouveau vote important y est publié (résultat, « en bref », hémicycle, lien), ainsi que les synthèses du débat. La page « Recevoir les alertes » du site affiche alors le bouton pour rejoindre le canal. Aucune donnée d'abonné ne transite par le site.
+Au passage suivant, un message d'accueil est publié et épinglé. Ensuite, chaque matin : un récapitulatif des votes importants de la veille (avec notification), et pour les votes marquants une carte détaillée sans notification, complétée plus tard par un bouton « Le débat en bref ». La page « Recevoir les alertes » du site affiche alors le bouton pour rejoindre le canal. Aucune donnée d'abonné ne transite par le site.
 
 ## Rattraper les synthèses d'une période passée
 

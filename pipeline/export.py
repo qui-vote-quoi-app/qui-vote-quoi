@@ -136,7 +136,8 @@ def exporter(scrutins, deputes, groupes, syntheses, retraits, sources_dates, ave
     if majeurs:
         v = max(majeurs, key=lambda s: s["num"])
         try:
-            image.dessiner(v, out / "apercu.png")
+            from . import canal
+            image.dessiner(v, out / "apercu.png", titre=canal.titre_court(v))
             apercu = {"num": v["num"], "titre": v["titre"], "adopte": v["sort"] == "adopté", "pour": v["pour"],
                       "contre": v["contre"], "abst": v["abst"], "bref": presentation.en_bref(v)}
         except Exception as e:  # noqa: BLE001 — l'aperçu est accessoire

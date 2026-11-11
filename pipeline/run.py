@@ -13,7 +13,7 @@ import traceback
 from datetime import date, datetime, timezone
 from pathlib import Path
 
-from . import config, debats, donnees, export, image, synthese, telegram, verification, photos, communes, circos, presentation, resume
+from . import config, debats, donnees, export, image, synthese, telegram, verification, photos, communes, circos, presentation, resume, canal
 from .sources import ZipDistant, charger_json, ecrire_json, entete, telecharger
 
 SITE_URL = os.environ.get("SITE_URL", "https://qui-vote-quoi-app.github.io/qui-vote-quoi").rstrip("/")
@@ -319,36 +319,6 @@ def notifier(rapport, scrutins, mode):
     telegram.message(entete_ + "\n\n" + "\n".join(lignes))
 
 
-def publier_canal(rapport, mode):
-    """Canal Telegram public : uniquement les votes importants (un message par vote).
-    Les alertes de fonctionnement (erreurs, demandes, synthèses) partent dans la conversation privée de l'éditeur.
-    Aucune donnée d'abonné ne transite par le site : Telegram gère seul la liste des membres du canal."""
-    chat = telegram.canal()
-    if not chat:
-        return
-    E = telegram.esc
-    resumes = resume.pour_export()
-    majeurs = sorted((s for s in rapport.nouveaux if s["categorie"]["niveau"] == 1), key=lambda s: s["num"])
-    detail, reste = majeurs[:6], majeurs[6:]
-    for s in detail:
-        res = "✅ <b>L'Assemblée a adopté</b>" if s["sort"] == "adopté" else "❌ <b>L'Assemblée n'a pas adopté</b>"
-        txt = resumes.get(s.get("dossier"), {}).get("resume")
-        explication = f"📄 {E(txt[:460])} <i>(résumé par IA)</i>" if txt else f"<i>{E(presentation.en_bref(s)[:380])}</i>"
-        legende = (f"{res}\n{E(maj(s['titre'])[:220])}\n\n{explication}\n\n"
-                   f"🔵 {s['pour']} pour · 🔴 {s['contre']} contre · ⚪ {s['abst']} abstention(s)\n"
-                   f"👉 Qui a voté quoi : {lien(s)}")
-        chemin = image.dessiner(s, config.CACHE / f"canal_{s['num']}.png")
-        telegram.photo(chemin, legende, chat=chat)
-        time.sleep(1)
-    if reste:
-        lignes = [f"🗳 <b>Et aussi, {len(reste)} autre(s) vote(s) majeur(s)</b>"]
-        for s in reste:
-            r = "adopté" if s["sort"] == "adopté" else "rejeté"
-            lignes.append(f"• {E(maj(s['titre'])[:120])} — {r} : {lien(s)}")
-        telegram.message("\n".join(lignes), chat=chat)
-
-
-
 # ------------------------------------------------------------------ main
 
 def main(argv=None):
@@ -414,7 +384,8 @@ def main(argv=None):
     except Exception:
         print(traceback.format_exc(), file=sys.stderr)
     try:
-        publier_canal(rapport, args.mode)
+        canal.publier(rapport, locals().get("groupes") or {}, etat)
+        ecrire_json(config.ETAT, etat)
     except Exception:
         print(traceback.format_exc(), file=sys.stderr)
     if os.environ.get("GITHUB_OUTPUT"):
