@@ -547,7 +547,17 @@
           var adr = (j.features || []).filter(function (f) { return f.geometry && f.properties && f.properties.context && f.properties.type !== "municipality"; })
             .map(function (f) { return { type: TYPES_ADRESSE[f.properties.type] || "Lieu", lib: f.properties.label, ctx: f.properties.context, geo: f }; });
           choix = adr.concat(choix).slice(0, 8); actif = -1; afficherListe();
-        }).catch(function () {});
+        }).catch(function () {
+          // Service d'adresses indisponible : on propose au moins la commune citée dans l'adresse.
+          if (mon !== jeton || choix.length) return;
+          var mots = cleDep(brut.replace(/\d+/g, " ")).split(" "), trouve = [];
+          for (var k = 1; k <= Math.min(4, mots.length) && !trouve.length; k++) {
+            var fin = mots.slice(-k).join(" ");
+            communes.forEach(function (c) { if (cleDep(c[0]) === fin) trouve.push(c); });
+          }
+          choix = trouve.slice(0, 5).map(function (c) { return { type: "Commune", lib: c[0], ctx: c[1] + " · adresse précise indisponible pour le moment", commune: c }; });
+          actif = -1; afficherListe();
+        });
       }, 250);
     });
   }
