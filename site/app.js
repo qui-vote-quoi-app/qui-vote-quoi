@@ -728,15 +728,16 @@
       }).join("") || "<li>Aucun logo affiché pour le moment.</li>";
       var fil = el.querySelector("[data-fil]");
       if (fil) getCache("fil.json").then(function (F) {
-        fil.innerHTML = (F || []).length ? F.map(function (j) {
-          var d = new Date(j.date + "T12:00:00");
-          var det = (j.details || []).map(function (x) {
-            return '<article class="tg-bulle tg-msg tg-detail"><div class="tg-carte"><b>' + esc(x.titre) + "</b>" + miniHemi(x.sieges) + '<span class="sc-res ' + (x.adopte ? "ok" : "ko") + '">' + (x.adopte ? "Adopté" : "Rejeté") + "</span></div>" +
-              x.legende.split("\n\n").map(function (b) { return "<p>" + b.replace(/<blockquote expandable>/g, '<blockquote class="tg-cit">').replace(/\n/g, "<br>") + "</p>"; }).join("") +
-              '<span class="tg-boutons">' + x.boutons.map(function (b) { return '<a href="' + esc(b[1]) + '"' + (/^https?:/.test(b[1]) ? ' target="_blank" rel="noopener"' : "") + ">" + esc(b[0]) + "</a>"; }).join("") + "</span></article>";
-          }).join("");
-          return det + '<article class="tg-bulle tg-msg"><p><b>🏛 À L\'ASSEMBLÉE · ' + esc(d.toLocaleDateString("fr-FR", { day: "numeric", month: "long" }).toUpperCase()) + "</b><br>" + j.n + " vote" + (j.n > 1 ? "s importants" : " important") + "</p>" + j.html.split("\n\n").map(function (b) { return "<p>" + b.replace(/\n/g, "<br>") + "</p>"; }).join("") + "</article>";
-        }).join("") : '<p class="note">Aucun message pour le moment.</p>';
+        // Un exemple de chaque : le dernier message détaillé et le dernier récapitulatif.
+        var j = (F || [])[0], x = null;
+        (F || []).some(function (k) { return (x = (k.details || [])[0]); });
+        if (!j) { fil.innerHTML = '<p class="note">Aucun message pour le moment.</p>'; return; }
+        var d = new Date(j.date + "T12:00:00");
+        var det = x ? '<p class="tg-type">1. Le détail des votes les plus marquants, avec l\'hémicycle (sans notification)</p><article class="tg-bulle tg-msg tg-detail"><div class="tg-carte"><b>' + esc(x.titre) + "</b>" + miniHemi(x.sieges) + '<span class="sc-res ' + (x.adopte ? "ok" : "ko") + '">' + (x.adopte ? "Adopté" : "Rejeté") + "</span></div>" +
+          x.legende.split("\n\n").map(function (b) { return "<p>" + b.replace(/<blockquote expandable>/g, '<blockquote class="tg-cit">').replace(/\n/g, "<br>") + "</p>"; }).join("") +
+          '<span class="tg-boutons">' + x.boutons.map(function (b) { return '<a href="' + esc(b[1]) + '"' + (/^https?:/.test(b[1]) ? ' target="_blank" rel="noopener"' : "") + ">" + esc(b[0]) + "</a>"; }).join("") + "</span></article>" : "";
+        fil.innerHTML = det + '<p class="tg-type">' + (x ? "2. " : "") + "Le récapitulatif de la journée (avec notification)</p>" +
+          '<article class="tg-bulle tg-msg"><p><b>🏛 À L\'ASSEMBLÉE · ' + esc(d.toLocaleDateString("fr-FR", { day: "numeric", month: "long" }).toUpperCase()) + "</b><br>" + j.n + " vote" + (j.n > 1 ? "s importants" : " important") + "</p>" + j.html.split("\n\n").map(function (b) { return "<p>" + b.replace(/\n/g, "<br>") + "</p>"; }).join("") + "</article>";
       }, function () { fil.innerHTML = '<p class="note">Les messages n\'ont pas pu être chargés.</p>'; });
       var ap = el.querySelector("img[data-apercu]");
       var A = st.meta.apercu;
