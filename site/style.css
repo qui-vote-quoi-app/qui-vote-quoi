@@ -508,3 +508,9 @@ footer{border-top:1px solid var(--rule);margin-top:8px;padding:14px 2px 0;font-s
 .tg-detail .tg-boutons{display:flex;flex-direction:column;gap:6px}
 .tg-detail p .tg-cit{margin:6px 0}
 .tg-type{font-family:var(--display);font-weight:700;font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:8px 0 -4px}
+:where(.fil-tg){}
+.fil-tg[data-fil]{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}
+.tg-col{display:flex;flex-direction:column;gap:10px;min-width:0}
+.tg-col .tg-type{margin:0;min-height:2.6em}
+.tg-col .tg-bulle{max-width:none}
+@media (max-width:760px){.fil-tg[data-fil]{grid-template-columns:minmax(0,1fr)}.tg-col .tg-type{min-height:0}}
