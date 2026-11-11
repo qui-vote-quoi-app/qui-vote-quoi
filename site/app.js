@@ -404,7 +404,7 @@
         '<p class="note" style="margin:6px 0 0;font-size:14px">' + f + " femmes et " + (actifs.length - f) + " hommes, pour 577 sièges (certains sièges sont momentanément vacants). Choisissez un.e député.e pour voir tous ses votes lors des scrutins publics (les votes à main levée ne sont pas nominatifs).</p>" +
         '<p style="margin:12px 0 0"><a class="btn plein" href="#accueil" id="h-trouver">Trouver mon ou ma député.e avec mon adresse →</a></p></div>';
       var deps = {}; actifs.forEach(function (d) { if (d.dept) deps[d.dept] = d.num_dept || ""; });
-      var cleTri = function (c) { return c === "099" ? "zzz" : c === "2A" ? "20a" : c === "2B" ? "20b" : (c.length < 3 ? "0" : "") + c; };
+      var cleTri = function (c) { return c === "099" ? "zzz" : c === "2A" ? "020a" : c === "2B" ? "020b" : (c.length < 3 ? "0" : "") + c; };
       var noms = Object.keys(deps).sort(function (a, b) { return cleTri(deps[a]) < cleTri(deps[b]) ? -1 : 1; });
       var recents = st.deps.map(function (d, i) { return [d, i]; }).filter(function (x) { return (x[0].debut || "") > "2024-08-01" || (x[0].fin && x[0].fin > "2024-08-01"); })
         .map(function (x) { var d = x[0], arr = !d.fin || d.debut > d.fin; return { i: x[1], date: arr ? d.debut : d.fin, arr: arr }; })
