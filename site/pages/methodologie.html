@@ -7,17 +7,17 @@
   <thead><tr><th>Données</th><th>Fichier</th><th>Mise à jour</th></tr></thead>
   <tbody>
     <tr><td>Scrutins publics</td><td><code>loi/scrutins/Scrutins.json.zip</code></td><td>quotidienne</td></tr>
-    <tr><td>Députés, groupes, places dans l'hémicycle</td><td><code>amo/…/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip</code></td><td>quotidienne</td></tr>
+    <tr><td>Député.e.s, groupes, places dans l'hémicycle</td><td><code>amo/…/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip</code></td><td>quotidienne</td></tr>
     <tr><td>Dossiers législatifs (commission saisie au fond)</td><td><code>loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip</code></td><td>quotidienne</td></tr>
     <tr><td>Comptes rendus de séance</td><td><code>vp/syceronbrut/syseron.xml.zip</code></td><td>quelques jours après la séance</td></tr>
     <tr><td>Carte des sièges</td><td>page « Situez votre député dans l'hémicycle » du site de l'Assemblée</td><td>relevé ponctuel</td></tr>
   </tbody>
 </table></div>
-<p>Seuls les <strong>scrutins publics</strong> indiquent le vote de chaque député. Les votes à main levée, qui concernent la plupart des amendements, ne disent pas qui a voté quoi : ils n'apparaissent pas ici.</p>
+<p>Seuls les <strong>scrutins publics</strong> indiquent le vote de chaque député.e. Les votes à main levée, qui concernent la plupart des amendements, ne disent pas qui a voté quoi : ils n'apparaissent pas ici.</p>
 
 <h2>Résultat et décomptes</h2>
 <p>Le résultat (« L'Assemblée a adopté / n'a pas adopté ») et tous les chiffres sont repris tels quels du scrutin officiel. Le site ne recalcule rien, car les règles de majorité varient selon le type de vote.</p>
-<p>Le groupe indiqué pour chaque vote est <strong>celui du député au moment du vote</strong>. Les mises au point (un député déclare après coup qu'il voulait voter autrement) sont signalées mais <strong>ne modifient pas</strong> le résultat officiel.</p>
+<p>Le groupe indiqué pour chaque vote est <strong>celui du ou de la député.e au moment du vote</strong>. Les mises au point (un.e député.e déclare après coup vouloir voter autrement) sont signalées mais <strong>ne modifient pas</strong> le résultat officiel.</p>
 
 <h2>Catégories et « votes majeurs »</h2>
 <p>Le classement se fait uniquement sur l'intitulé officiel du scrutin, jamais sur son sujet :</p>
@@ -38,15 +38,19 @@
 <ol>
   <li><strong>Programme</strong> : pour chaque texte ayant fait l'objet d'un vote important, il récupère sur le site de l'Assemblée le texte déposé et n'en garde que les <strong>articles</strong>. L'exposé des motifs, qui présente les arguments des auteurs, est écarté.</li>
   <li><strong>IA (un seul appel par texte)</strong> : 2 à 4 phrases, 90 mots au maximum, décrivant ce que prévoient les articles, sans jugement ni motivation. Pour un texte très long (budget), seules ses premières parties sont lues.</li>
-  <li><strong>Programme</strong> : vérification. Le résumé est bloqué s'il est trop long, contient le nom d'un député, désigne une personne ou emploie un terme d'appréciation.</li>
+  <li><strong>Programme</strong> : vérification. Le résumé est bloqué s'il est trop long, contient le nom d'un.e député.e, désigne une personne ou emploie un terme d'appréciation.</li>
 </ol>
 <p>Le même résumé s'affiche pour tous les votes du texte (vote final, motions, articles). Il porte sur le texte <strong>déposé</strong>, qui a pu être modifié ensuite. Il est publié sans relecture humaine et peut être retiré à tout moment.</p>
 
 <h2>« Ce que signifie ce vote »</h2>
 <p>Sous chaque scrutin, une phrase explique en langage courant ce que signifie le vote : vote final sur un texte, motion de rejet, article, amendement, motion de censure… Elle est <strong>écrite par le programme</strong>, sans intelligence artificielle, à partir de l'intitulé officiel : type de vote, étape de la procédure (première lecture, commission mixte paritaire, lecture définitive…) et conséquence prévue par le règlement. Elle ne résume pas le contenu du texte : le lien « Texte discuté » mène au dossier officiel.</p>
 
-<h2>Trouver mon député</h2>
-<p>La recherche par commune ou code postal s'appuie sur la table de correspondance entre communes et circonscriptions du ministère de l'Intérieur (découpage en vigueur depuis 2012, inchangé en 2024) et sur la base officielle des codes postaux de La Poste, publiées sur data.gouv.fr. Quand une commune est partagée entre plusieurs circonscriptions, tous les députés concernés sont proposés. Les communes nouvelles créées par fusion depuis 2017 peuvent ne pas être trouvées sous leur nouveau nom : recherchez alors l'ancienne commune ou parcourez la liste des députés.</p>
+<h2>Trouver mon ou ma député.e</h2>
+<ul>
+  <li><strong>Par adresse</strong> : l'adresse tapée est géolocalisée par le service public de l'IGN (Géoplateforme), puis le point obtenu est situé, dans votre navigateur, à l'intérieur des contours des circonscriptions publiés sur data.gouv.fr (construits à partir des bureaux de vote du ministère de l'Intérieur). C'est la méthode la plus précise, notamment dans les grandes villes partagées entre plusieurs circonscriptions.</li>
+  <li><strong>Par commune ou code postal</strong>, en secours : table de correspondance entre communes et circonscriptions du ministère de l'Intérieur et base des codes postaux de La Poste. Quand une commune est partagée, tous les député.e.s concerné.e.s sont proposé.e.s.</li>
+</ul>
+<p>Les contours des circonscriptions peuvent différer légèrement de la réalité en limite de circonscription : en cas de doute, l'adresse officielle de rattachement figure sur votre carte électorale.</p>
 
 <h2>Thèmes</h2>
 <p>L'open data ne contient aucun classement des textes par thème. Le site utilise à la place la <strong>commission saisie au fond</strong> (Finances, Affaires sociales, Lois…), qui est le regroupement officiel le plus proche :</p>
@@ -58,7 +62,7 @@
 
 <h2>Historiques</h2>
 <ul>
-  <li><strong>Député</strong> : sa position (pour, contre, abstention, non-votant) sur chaque scrutin public, telle qu'elle figure dans le scrutin officiel.</li>
+  <li><strong>Député.e</strong> : sa position (pour, contre, abstention, non-votant) sur chaque scrutin public, telle qu'elle figure dans le scrutin officiel.</li>
   <li><strong>Groupe</strong> : la position majoritaire du groupe telle que publiée dans le scrutin, avec le décompte de ses membres.</li>
 </ul>
 <p>Aucun taux de participation ni d'alignement n'est calculé (voir <a href="#a-propos">À propos</a>).</p>

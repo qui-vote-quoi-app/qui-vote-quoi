@@ -4,10 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Qui vote quoi ?</title>
-<meta name="description" content="Les scrutins publics de l'Assemblée nationale, député par député, mis à jour chaque jour à partir de l'open data officiel. Site indépendant, non officiel.">
+<meta name="description" content="Les scrutins publics de l'Assemblée nationale, député.e par député.e, mis à jour chaque jour à partir de l'open data officiel. Site indépendant, non officiel.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<meta name="qvq-version" content="dev">
 <link rel="stylesheet" href="style.css">
 <script>try{var t=localStorage.getItem("qvq-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
@@ -44,7 +45,7 @@
       <nav class="tabs" aria-label="Vues">
         <a href="#accueil" data-vue="accueil">Accueil</a>
         <a href="#scrutins" data-vue="scrutins">Scrutins</a>
-        <a href="#deputes" data-vue="deputes">Députés</a>
+        <a href="#deputes" data-vue="deputes">Député.e.s</a>
         <a href="#groupes" data-vue="groupes">Groupes</a>
       </nav>
     </header>
@@ -53,23 +54,25 @@
     <div class="vue accueil" id="vue-accueil" hidden>
       <section class="panel hero">
         <div class="hero-main">
-        <p class="eyebrow">Les votes de l'Assemblée nationale, député par député</p>
-        <h2>Qui a voté quoi à l'Assemblée&nbsp;?</h2>
-        <p class="hero-intro" id="hero-intro">Tous les scrutins publics de la XVII<sup>e</sup> législature, mis à jour chaque matin à partir des données officielles.</p>
+        <p class="eyebrow">Mis à jour chaque matin · données officielles</p>
+        <h2>Comment votent vos député.e.s&nbsp;?</h2>
+        <p class="hero-intro">Chaque semaine, les député.e.s votent des textes qui changent notre quotidien. Retrouvez ici chacun de ces votes, expliqué simplement&nbsp;: ce que prévoit le texte, qui a voté pour ou contre, et avec quels arguments.</p>
+        <p class="hero-chiffres" id="hero-chiffres"></p>
         <form class="trouver" id="trouver" role="search" autocomplete="off">
-          <label for="tq">Trouver mon député</label>
+          <label for="tq">Trouver mon ou ma député.e</label>
           <div class="trouver-champ">
-            <input id="tq" type="search" placeholder="Commune, code postal ou nom" aria-describedby="tq-aide" enterkeyhint="search">
+            <input id="tq" type="search" placeholder="Votre adresse, votre commune ou un nom" aria-describedby="tq-aide" enterkeyhint="search" autocomplete="street-address">
             <button class="btn plein" type="submit">Chercher</button>
           </div>
-          <p class="note" id="tq-aide">Par exemple : « Lyon », « 33000 » ou « Dupont ».</p>
+          <p class="note" id="tq-aide">Par exemple : « 12 rue de la République, Lyon », « 33000 » ou « Dupont ». L'adresse sert uniquement à situer votre circonscription : elle n'est pas conservée.</p>
         </form>
         <div id="tq-res" class="tq-res" aria-live="polite"></div>
         </div>
         <aside class="hero-alerte">
-          <h3>Être prévenu des votes</h3>
-          <p>Chaque vote important sur Telegram : le résultat, ce que prévoit le texte et l'hémicycle. Aucune inscription sur ce site, aucune donnée collectée.</p>
-          <a class="btn plein" href="#alertes">Recevoir les alertes →</a>
+          <h3>Suivre les votes sur Telegram</h3>
+          <p>Un message à chaque vote important : le résultat, ce que prévoit le texte et l'hémicycle. Gratuit, sans inscription sur ce site.</p>
+          <a class="btn plein" id="hero-canal" href="#alertes">Rejoindre le canal →</a>
+          <a class="hero-lien" href="#alertes">Comment ça marche ?</a>
         </aside>
       </section>
       <div class="acc-grille">
@@ -93,10 +96,10 @@
         <h2>Comment lire un vote</h2>
         <ol>
           <li><b>Le résultat</b> : adopté ou rejeté, avec le nombre de voix pour, contre et d'abstentions.</li>
-          <li><b>L'hémicycle</b> : chaque point est un député, à sa place réelle, coloré selon son vote. Survolez ou touchez un point pour voir qui c'est.</li>
+          <li><b>L'hémicycle</b> : chaque point est un.e député.e, à sa place réelle, coloré selon son vote. Survolez ou touchez un point pour voir qui c'est.</li>
           <li><b>Le débat en bref</b> : pour les votes sur l'ensemble d'un texte, les principaux arguments pour et contre, cités mot pour mot.</li>
         </ol>
-        <p class="note" style="margin:0">Seuls les scrutins publics indiquent le vote de chaque député : les votes à main levée n'apparaissent pas. <a href="#faq">Questions fréquentes</a> · <a href="#methodologie">Méthodologie</a></p>
+        <p class="note" style="margin:0">Seuls les scrutins publics indiquent le vote de chaque député.e.e : les votes à main levée n'apparaissent pas. <a href="#faq">Questions fréquentes</a> · <a href="#methodologie">Méthodologie</a></p>
       </section>
     </div>
 
@@ -108,13 +111,13 @@
           <div class="controls">
             <div class="chips" id="chips" aria-label="Mettre en avant un groupe"></div>
             <div class="search">
-              <label for="q" class="sr">Rechercher un député dans l'hémicycle</label>
-              <input id="q" type="text" list="dl" placeholder="Trouver un député…" autocomplete="off">
+              <label for="q" class="sr">Rechercher un.e député.e dans l'hémicycle</label>
+              <input id="q" type="text" list="dl" placeholder="Trouver un.e député.e…" autocomplete="off">
               <datalist id="dl"></datalist>
             </div>
           </div>
           <div class="hemi" id="hemi">
-            <svg id="svg" viewBox="0 0 1000 570" role="img" aria-label="Hémicycle : position de vote de chaque député"></svg>
+            <svg id="svg" viewBox="0 0 1000 570" role="img" aria-label="Hémicycle : position de vote de chaque député.e"></svg>
             <div class="tip" id="tip" role="tooltip" hidden></div>
           </div>
           <p class="hemi-aide">Faites glisser l'hémicycle sur le côté pour le parcourir en entier.</p>
@@ -122,7 +125,7 @@
             <span><i class="sq" style="background:var(--pour)"></i>Pour</span>
             <span><i class="sq" style="background:var(--contre)"></i>Contre</span>
             <span><i class="sq" style="background:var(--abst)"></i>Abstention</span>
-            <span><i class="sq" style="background:var(--nv)"></i><button type="button" class="terme" data-def="nv">Non-votant</button></span>
+            <span><i class="sq" style="background:var(--nv)"></i><button type="button" class="terme" data-def="nv">Non-votant.e</button></span>
             <span><i class="sq" style="background:var(--vide);outline:1px solid var(--hair)"></i>Pas de vote enregistré</span>
           </div>
         </section>

@@ -320,7 +320,7 @@ footer{border-top:1px solid var(--rule);margin-top:8px;padding:14px 2px 0;font-s
 .hero-alerte p{margin:0;font-size:15px;line-height:1.5}
 @media (max-width:1100px){.hero{grid-template-columns:minmax(0,1fr)}.hero-alerte{margin-top:0}}
 .hero h2{font-size:44px;line-height:1;text-transform:uppercase;letter-spacing:.01em}
-.hero-intro{margin:0;font-family:var(--serif);font-size:18px;line-height:1.55;max-width:62ch}
+.hero-intro{margin:0;font-family:var(--serif);font-size:18px;line-height:1.55;max-width:72ch}
 .trouver{display:flex;flex-direction:column;gap:6px;margin-top:8px}
 .trouver label{font-family:var(--display);font-weight:700;font-size:20px;text-transform:uppercase;letter-spacing:.04em}
 .trouver-champ{display:flex;gap:8px}
@@ -418,3 +418,18 @@ footer{border-top:1px solid var(--rule);margin-top:8px;padding:14px 2px 0;font-s
 .tag-ia{font-family:var(--display);font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border:1px solid currentColor;padding:1px 6px;color:var(--muted)}
 .resume p{margin:0;font-family:var(--serif);font-size:16.5px;line-height:1.55}
 .resume p.note{font-family:var(--body);font-size:12.5px;margin-top:6px}
+
+/* Accueil : pas de barre latérale, la page se suffit à elle-même */
+.app.accueil{grid-template-columns:minmax(0,1fr)}
+.app.accueil .side{display:none}
+.hero-chiffres{margin:0;font-size:14px;color:var(--muted)}
+.hero-chiffres b{color:var(--ink);font-family:var(--display);font-size:16px;letter-spacing:.02em}
+.hero-lien{font-size:14px;color:var(--ink)}
+.tq-sugg{list-style:none;margin:0;padding:0;border-top:1px solid var(--hair)}
+.tq-sugg button{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--hair);padding:11px 6px;font:inherit;font-size:16px;color:var(--ink);cursor:pointer}
+.tq-sugg button:hover,.tq-sugg button:focus-visible{background:var(--tint)}
+.tq-sugg .note{font-size:12.5px}
+.tq-type{font-family:var(--display);font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);min-width:64px}
+.tq-trouve{border-left:4px solid var(--velours);padding-left:14px}
+.tq-trouve .eyebrow{margin:0 0 4px}
+.lien-btn{background:none;border:0;padding:8px 0 0;font:inherit;font-size:14px;color:var(--ink);text-decoration:underline;cursor:pointer}

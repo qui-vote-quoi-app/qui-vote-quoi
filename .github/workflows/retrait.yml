@@ -51,7 +51,8 @@ jobs:
       - if: steps.pipeline.outputs.deployer == 'true'
         run: |
           V=$(git rev-parse --short HEAD)
-          sed -i "s#href=\"style.css\"#href=\"style.css?v=$V\"#; s#src=\"app.js\"#src=\"app.js?v=$V\"#" site/index.html
+          sed -i "s#href=\"style.css\"#href=\"style.css?v=$V\"#; s#src=\"app.js\"#src=\"app.js?v=$V\"#; s#content=\"dev\"#content=\"$V\"#" site/index.html
+          echo "$V" > site/version.txt
       - if: steps.pipeline.outputs.deployer == 'true'
         uses: actions/upload-pages-artifact@v3
         with:

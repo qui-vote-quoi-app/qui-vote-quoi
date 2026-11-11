@@ -6,7 +6,7 @@
   var AN = "https://www.assemblee-nationale.fr";
   var INSPIRATION = "https://www.instagram.com/votes_assemblee_nationale/";
   var K = 4.22, CX = 118.3 * K, CY = 132 * K, R = 8;
-  var LABEL = { pour: "Pour", contre: "Contre", abst: "Abstention", nv: "Non-votant" };
+  var LABEL = { pour: "Pour", contre: "Contre", abst: "Abstention", nv: "Non-votant.e" };
   var POS = ["pour", "contre", "abst", "nv"];
   var MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"];
   var CAT_LIB = { ensemble: "Vote sur l'ensemble", motion: "Motion de procédure", censure: "Motion de censure", declaration: "Déclaration du Gouvernement",
@@ -32,6 +32,7 @@
   var dateCourte = function (d) { var p = d.split("-"); return p[2] + "/" + p[1] + "/" + p[0]; };
   var ord = function (n) { return n === 1 ? "1re" : n + "e"; };
   var norm = function (t) { return (t || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, ""); };
+  var genre = function (d) { return d.civ === "Mme" ? "Députée" : "Député"; };
   var initiales = function (d) { return (d.prenom || "?")[0] + (d.nom || "?")[0]; };
   /* Vignette d'un député : photo officielle si disponible, sinon initiales ; liseré à la couleur du groupe. */
   var avatar = function (d, cls, couleur) {
@@ -98,10 +99,10 @@
       $("sth").onchange = function () { st.f.theme = this.value; st.limite = PAGE; listeLaterale(); };
     } else if (st.vue === "deputes") {
       var gps = Object.keys(st.groupes).filter(function (po) { return !st.groupes[po].fin; }).sort(function (a, b) { return st.groupes[a].ordre - st.groupes[b].ordre; });
-      el.innerHTML = '<label for="dq" class="sr">Rechercher un député</label><input id="dq" type="search" placeholder="Nom ou département…" autocomplete="off" value="' + esc(st.dq) + '">' +
+      el.innerHTML = '<label for="dq" class="sr">Rechercher un.e député.e</label><input id="dq" type="search" placeholder="Nom ou département…" autocomplete="off" value="' + esc(st.dq) + '">' +
         '<label class="sr" for="dgrp">Groupe</label><select id="dgrp"><option value="">Tous les groupes</option>' +
         gps.map(function (po) { return '<option value="' + po + '"' + (st.dgrp === po ? " selected" : "") + ">" + esc(st.groupes[po].sigle + " · " + st.groupes[po].libelle) + "</option>"; }).join("") + "</select>" +
-        '<label class="chk"><input type="checkbox" id="danc"' + (st.danciens ? " checked" : "") + "> Inclure les anciens députés</label>";
+        '<label class="chk"><input type="checkbox" id="danc"' + (st.danciens ? " checked" : "") + "> Inclure les ancien.ne.s député.e.s</label>";
       $("dq").oninput = function () { st.dq = this.value; listeLaterale(); };
       $("dgrp").onchange = function () { st.dgrp = this.value; listeLaterale(); };
       $("danc").onchange = function () { st.danciens = this.checked; listeLaterale(); };
@@ -145,8 +146,8 @@
       html = liste.map(function (x) {
         var d = x[0], g = st.groupes[d.groupe] || {};
         return '<a class="sitem ditem" href="#d-' + d.id + '" aria-current="' + (st.h && st.h.type === "d" && st.h.id === d.id) + '">' + avatar(d, "sm", g.couleur) + '<span style="min-width:0"><span class="t">' + esc(d.prenom + " " + d.nom) + '</span><span class="m"><span class="num">' + esc(g.sigle || "—") + "</span><span>" + esc(d.dept || "") + (d.circo ? " (" + ord(d.circo) + ")" : "") + "</span>" + (d.actif ? "" : "<span>· mandat terminé</span>") + "</span></span></a>";
-      }).join("") || '<p class="sempty">Aucun député ne correspond.</p>';
-      html = '<p class="sompte">' + liste.length + " député" + (liste.length > 1 ? "s" : "") + "</p>" + html;
+      }).join("") || '<p class="sempty">Aucun.e député.e ne correspond.</p>';
+      html = '<p class="sompte">' + liste.length + (liste.length > 1 ? " député.e.s" : " député.e") + "</p>" + html;
     } else {
       var effectifs = {};
       st.deps.forEach(function (d) { if (d.actif && d.groupe) effectifs[d.groupe] = (effectifs[d.groupe] || 0) + 1; });
@@ -250,7 +251,7 @@
   function rendreFiche() {
     var el = $("card");
     if (st.sel == null) {
-      el.innerHTML = '<div class="eyebrow">Fiche député</div><p style="margin:0;color:var(--muted);font-size:14px">Cliquez sur un siège, sur un orateur du débat, ou cherchez un nom pour afficher sa fiche.</p>';
+      el.innerHTML = '<div class="eyebrow">Fiche député.e</div><p style="margin:0;color:var(--muted);font-size:14px">Cliquez sur un siège, sur un orateur du débat, ou cherchez un nom pour afficher sa fiche.</p>';
       return;
     }
     var d = st.deps[st.sel], info = null, place = null;
@@ -259,9 +260,9 @@
     var pos = info ? info.pos : null;
     var groupeVote = info ? st.s.groupes.filter(function (g) { return g.po === info.po; })[0] : null;
     var maj = groupeVote ? { pour: "pour", contre: "contre", abstention: "abst" }[groupeVote.position] : null;
-    var texte = !pos ? "Aucun vote enregistré pour ce député sur ce scrutin." : pos === "nv" ? "Non-votant sur ce scrutin." : (pos === maj ? "A voté comme la majorité de son groupe." : "A voté différemment de la majorité de son groupe.");
+    var texte = !pos ? "Aucun vote enregistré pour " + (d.civ === "Mme" ? "cette députée" : "ce député") + " sur ce scrutin." : pos === "nv" ? (d.civ === "Mme" ? "Non-votante" : "Non-votant") + " sur ce scrutin." : (pos === maj ? "A voté comme la majorité de son groupe." : "A voté différemment de la majorité de son groupe.");
     el.innerHTML = '<button class="close" type="button" id="xclose" aria-label="Fermer la fiche">Fermer</button>' +
-      '<div class="idt">' + avatar(d, "lg", gAct.couleur) + '<div style="min-width:0"><div class="eyebrow">Député' + (d.actif ? "" : " · mandat terminé") + "</div><h3>" + esc(d.prenom + " " + d.nom) + '</h3><span class="grp"><i class="sq" style="background:' + esc(gAct.couleur) + ';margin:0"></i>' + esc(gAct.libelle || "Sans groupe") + "</span>" + (d.photo ? '<div class="credit">Photo : Assemblée nationale</div>' : "") + "</div></div>" +
+      '<div class="idt">' + avatar(d, "lg", gAct.couleur) + '<div style="min-width:0"><div class="eyebrow">' + genre(d) + (d.actif ? "" : " · mandat terminé") + "</div><h3>" + esc(d.prenom + " " + d.nom) + '</h3><span class="grp"><i class="sq" style="background:' + esc(gAct.couleur) + ';margin:0"></i>' + esc(gAct.libelle || "Sans groupe") + "</span>" + (d.photo ? '<div class="credit">Photo : Assemblée nationale</div>' : "") + "</div></div>" +
       '<div><div class="eyebrow" style="margin-bottom:6px">Ce scrutin</div>' + (pos ? '<span class="pill ' + pos + '">' + LABEL[pos] + "</span>" : "") + '<div class="note" style="margin-top:4px">' + texte + (gVote && info.po !== d.groupe ? " Groupe au moment du vote : " + esc(gVote.sigle) + "." : "") + "</div></div>" +
       "<dl><dt>Circonscription</dt><dd>" + esc(d.dept || "—") + (d.circo ? " (" + ord(d.circo) + ")" : "") + '</dd><dt>Place</dt><dd class="num">n° ' + esc(place || d.place || "—") + "</dd></dl>" +
       '<div class="card-actions"><a class="btn plein" href="#d-' + esc(d.id) + '">Historique de ses votes →</a><a class="btn" href="' + AN + "/dyn/deputes/" + esc(d.id) + '" target="_blank" rel="noopener">Fiche officielle ' + EXT + "</a></div>";
@@ -317,7 +318,7 @@
     if (h.type === "d") {
       var d = st.deps[st.depParId[h.id]], g = st.groupes[d.groupe] || {};
       el.innerHTML = '' + avatar(d, "xl", g.couleur) + '' +
-        '<div class="h-id"><div class="eyebrow">Député' + (d.actif ? "" : " · mandat terminé") + "</div><h2>" + esc(d.prenom + " " + d.nom) + "</h2>" +
+        '<div class="h-id"><div class="eyebrow">' + genre(d) + (d.actif ? "" : " · mandat terminé") + "</div><h2>" + esc(d.prenom + " " + d.nom) + "</h2>" +
         '<div class="h-meta">' + (d.groupe ? '<a class="grp" href="#g-' + d.groupe + '"><i class="sq" style="background:' + esc(g.couleur) + ';margin:0"></i>' + esc(g.libelle || d.groupe) + "</a>" : "<span>Sans groupe</span>") +
         "<span>" + esc(d.dept || "—") + (d.circo ? " (" + ord(d.circo) + " circonscription)" : "") + "</span>" +
         (d.debut ? "<span>Mandat depuis le " + dateFr(d.debut) + (d.fin ? ", terminé le " + dateFr(d.fin) : "") + "</span>" : "") + "</div>" + (d.photo ? '<div class="credit" style="margin-top:6px">Photo : Assemblée nationale</div>' : "") + "</div>" +
@@ -328,7 +329,7 @@
       st.deps.forEach(function (x) { if (x.actif && x.groupe === h.id) n++; });
       el.innerHTML = '<span class="gbloc" style="background:' + esc(gr.couleur || "#777") + '" aria-hidden="true">' + esc(gr.sigle) + "</span>" +
         '<div class="h-id"><div class="eyebrow">Groupe politique' + (gr.fin ? " · dissous le " + dateFr(gr.fin) : "") + "</div><h2>" + esc(gr.libelle) + "</h2>" +
-        '<div class="h-meta">' + (n ? "<span>" + n + " députés aujourd'hui</span>" : "") + (gr.debut ? "<span>Créé le " + dateFr(gr.debut) + "</span>" : "") +
+        '<div class="h-meta">' + (n ? "<span>" + n + " député.e.s aujourd'hui</span>" : "") + (gr.debut ? "<span>Créé le " + dateFr(gr.debut) + "</span>" : "") +
         "<span>Pour chaque scrutin : la position exprimée par la majorité des votants du groupe.</span></div></div>";
       document.title = gr.libelle + " · Qui vote quoi ?";
     }
@@ -373,12 +374,12 @@
   }
   function accueilHisto(type) {
     st.h = null;
-    $("h-head").innerHTML = '<div class="h-id"><div class="eyebrow">' + (type === "d" ? "Historique par député" : "Historique par groupe") + "</div><h2>" +
-      (type === "d" ? "Choisissez un député" : "Choisissez un groupe") + '</h2><p class="note" style="margin:6px 0 0;font-size:14px">' +
-      (type === "d" ? "Retrouvez tous les votes d'un député lors des scrutins publics, filtrables par thème et par type de vote. Les votes à main levée ne sont pas nominatifs et n'apparaissent pas." :
+    $("h-head").innerHTML = '<div class="h-id"><div class="eyebrow">' + (type === "d" ? "Historique par député.e" : "Historique par groupe") + "</div><h2>" +
+      (type === "d" ? "Choisissez un.e député.e" : "Choisissez un groupe") + '</h2><p class="note" style="margin:6px 0 0;font-size:14px">' +
+      (type === "d" ? "Retrouvez tous les votes d'un.e député.e lors des scrutins publics, filtrables par thème et par type de vote. Les votes à main levée ne sont pas nominatifs et n'apparaissent pas." :
         "Retrouvez la position majoritaire d'un groupe sur chaque scrutin public, filtrable par thème et par type de vote.") + "</p></div>";
     $("h-liste").hidden = true;
-    document.title = (type === "d" ? "Députés" : "Groupes") + " · Qui vote quoi ?";
+    document.title = (type === "d" ? "Député.e.s" : "Groupes") + " · Qui vote quoi ?";
     if (mq.matches) ouvrirMobile();
   }
 
@@ -391,7 +392,10 @@
   function rendreAccueil() {
     var nbMaj = 0;
     st.idx.s.forEach(function (r) { if (r[3] === 1) nbMaj++; });
-    $("hero-intro").innerHTML = "Les " + st.idx.s.length.toLocaleString("fr-FR") + " scrutins publics de la XVII<sup>e</sup> législature, dont " + nbMaj + (nbMaj > 1 ? " votes importants" : " vote important") + ", avec la position de chaque député. Mis à jour chaque matin à partir des données officielles de l'Assemblée nationale.";
+    var nbSyn = st.idx.s.filter(function (r) { return r[6] === "publiee"; }).length;
+    $("hero-chiffres").innerHTML = "<b>" + st.idx.s.length.toLocaleString("fr-FR") + "</b> scrutins publics depuis juillet 2024 · <b>" + nbMaj + "</b> votes importants · <b>" + nbSyn + "</b> débats résumés";
+    var canal = (st.meta.canal || "").replace(/^@/, "");
+    if (canal) { $("hero-canal").href = "https://t.me/" + canal; $("hero-canal").target = "_blank"; $("hero-canal").rel = "noopener"; }
     $("acc-votes").innerHTML = st.idx.s.filter(function (r) { return r[3] === 1; }).slice(0, 6).map(function (r) {
       var cat = st.idx.cats[r[2]];
       return '<li><a href="#s' + r[0] + '"><span class="acc-res ' + (r[4] ? "ok" : "ko") + '">' + (r[4] ? "Adopté" : "Rejeté") + '</span>' +
@@ -428,49 +432,117 @@
     st.deps.forEach(function (d, i) { if (d.actif && cleDep(d.dept) === k && (!circos || circos.indexOf(d.circo) >= 0)) res.push(i); });
     return res.sort(function (a, b) { return st.deps[a].circo - st.deps[b].circo; });
   }
-  function chercher(q) {
+  /* Communes (repli hors ligne ou si le service d'adresses ne répond pas). */
+  function chercherCommunes(brut, nq, parNom) {
+    return chargerCommunes().then(function (communes) {
+      var cp = /^\d{5}$/.test(brut.replace(/\s/g, "")) ? brut.replace(/\s/g, "") : null, coms = [];
+      communes.forEach(function (c) { if (cp ? c[3].indexOf(cp) >= 0 : cleDep(c[0]).indexOf(nq) === 0) coms.push(c); });
+      coms.sort(function (a, b) { return (cleDep(a[0]) === nq ? 0 : 1) - (cleDep(b[0]) === nq ? 0 : 1) || a[0].length - b[0].length; });
+      var html = "";
+      coms.slice(0, 4).forEach(function (c) { html += blocCommune(c[0], c[1], c[2], c[3]); });
+      if (coms.length > 4) html += '<p class="note">' + (coms.length - 4) + " autres communes correspondent : précisez la recherche.</p>";
+      return html;
+    });
+  }
+  function blocCommune(nom, dept, circos, cps) {
+    var ids = deputesDe(dept, circos);
+    return '<div class="tq-bloc"><h3>' + esc(nom) + ' <span class="note">' + esc(dept) + (cps && cps.length ? " · " + esc(cps.slice(0, 3).join(", ")) + (cps.length > 3 ? "…" : "") : "") + "</span></h3>" +
+      (circos.length > 1 ? '<p class="note">Cette commune est partagée entre ' + circos.length + " circonscriptions : indiquez votre adresse (numéro et rue) pour trouver la vôtre.</p>" : "") +
+      (ids.length ? '<div class="dcartes">' + ids.map(carteDepute).join("") + "</div>" : '<p class="note">Aucun.e député.e en exercice trouvé.e pour cette circonscription.</p>') + "</div>";
+  }
+
+  /* Adresses : service public de géocodage de l'IGN (Géoplateforme). L'adresse tapée lui est envoyée,
+     le site ne la conserve pas. Le point obtenu est situé dans les contours des circonscriptions. */
+  var GEOCODAGE = "https://data.geopf.fr/geocodage/search";
+  var suggestions = [];
+  function chargerCircos(dep) {
+    var k = "circos:" + dep;
+    return cache[k] || (cache[k] = fetch("data/circos/" + dep + ".json").then(function (r) { if (!r.ok) throw new Error(dep); return r.json(); }).catch(function () { delete cache[k]; return null; }));
+  }
+  function dansAnneau(x, y, anneau) {
+    var dedans = false;
+    for (var i = 0, j = anneau.length - 1; i < anneau.length; j = i++) {
+      var xi = anneau[i][0], yi = anneau[i][1], xj = anneau[j][0], yj = anneau[j][1];
+      if ((yi > y) !== (yj > y) && x < (xj - xi) * (y - yi) / (yj - yi) + xi) dedans = !dedans;
+    }
+    return dedans;
+  }
+  function circoDe(circos, x, y) {
+    for (var c = 0; c < circos.length; c++) {
+      for (var p = 0; p < circos[c][1].length; p++) {
+        var anneaux = circos[c][1][p], dedans = false;
+        anneaux.forEach(function (a) { if (dansAnneau(x, y, a)) dedans = !dedans; });
+        if (dedans) return circos[c][0];
+      }
+    }
+    return null;
+  }
+  function localiser(f) {
+    var el = $("tq-res"), p = f.properties, x = f.geometry.coordinates[0], y = f.geometry.coordinates[1];
+    var dep = String(p.context || "").split(",")[0].trim();
+    el.innerHTML = '<p class="note">Recherche de la circonscription…</p>';
+    var retour = '<button type="button" class="lien-btn" id="tq-retour">← Autre adresse</button>';
+    chargerCircos(dep).then(function (circos) {
+      var num = circos && circoDe(circos, x, y);
+      var ids = num ? st.deps.map(function (d, i) { return d.actif && d.num_dept === dep && d.circo === num ? i : -1; }).filter(function (i) { return i >= 0; }) : [];
+      if (ids.length) {
+        var d = st.deps[ids[0]];
+        el.innerHTML = '<div class="tq-bloc tq-trouve"><p class="eyebrow">' + esc(p.label) + "</p><h3>" + (ids.length > 1 ? "Vos député.e.s" : d.civ === "Mme" ? "Votre députée" : "Votre député") + ' <span class="note">' + esc(d.dept) + ", " + ord(num) + " circonscription</span></h3>" +
+          '<div class="dcartes">' + ids.map(carteDepute).join("") + "</div>" + retour + "</div>";
+      } else {
+        el.innerHTML = '<div class="tq-bloc"><p class="note">Circonscription introuvable pour « ' + esc(p.label) + " ». Essayez une adresse complète, ou parcourez <a href=\"#deputes\">la liste des député.e.s</a>.</p>" + retour + "</div>";
+      }
+      var b = $("tq-retour"); if (b) b.onclick = function () { $("tq").focus(); $("tq").select(); chercher($("tq").value); };
+    });
+  }
+  var TYPES_ADRESSE = { housenumber: "Adresse", street: "Rue", locality: "Lieu-dit", municipality: "Commune" };
+  function chercher(q, auto) {
     var el = $("tq-res"), brut = q.trim(), nq = cleDep(brut);
     if (nq.length < 2) { el.innerHTML = ""; return; }
     var parNom = [];
     st.deps.forEach(function (d, i) { if (d.actif && cleDep(d.prenom + " " + d.nom).indexOf(nq) >= 0) parNom.push(i); });
-    chargerCommunes().then(function (communes) {
+    var nomHtml = parNom.length ? '<div class="tq-bloc"><h3>Député.e.s</h3><div class="dcartes">' + parNom.slice(0, 6).map(carteDepute).join("") + "</div></div>" : "";
+    var geo = brut.length < 3 ? Promise.resolve(null) :
+      fetch(GEOCODAGE + "?limit=5&autocomplete=1&q=" + encodeURIComponent(brut)).then(function (r) { if (!r.ok) throw new Error("geo"); return r.json(); });
+    geo.then(function (j) {
       if (cleDep($("tq").value) !== nq) return;
-      var cp = /^\d{5}$/.test(brut.replace(/\s/g, "")) ? brut.replace(/\s/g, "") : null, coms = [];
-      communes.forEach(function (c) {
-        if (cp ? c[3].indexOf(cp) >= 0 : cleDep(c[0]).indexOf(nq) === 0) coms.push(c);
+      suggestions = (j && j.features || []).filter(function (f) { return f.geometry && f.properties && f.properties.context; });
+      if (auto && suggestions.length && !parNom.length) { localiser(suggestions[0]); return; }
+      var html = suggestions.length ? '<div class="tq-bloc"><h3>Adresses et communes</h3><ul class="tq-sugg">' + suggestions.map(function (f, i) {
+        var p = f.properties;
+        return '<li><button type="button" data-sugg="' + i + '"><span class="tq-type">' + (TYPES_ADRESSE[p.type] || "Lieu") + "</span>" + esc(p.label) + '<span class="note">' + esc(p.context) + "</span></button></li>";
+      }).join("") + "</ul></div>" : "";
+      if (!html && !nomHtml) html = '<p class="note">Aucun résultat. Vérifiez l\'orthographe, ou parcourez <a href="#deputes">la liste des député.e.s</a> par département, y compris les député.e.s des Français de l\'étranger.</p>';
+      el.innerHTML = html + nomHtml;
+    }).catch(function () {
+      chercherCommunes(brut, nq, parNom).then(function (html) {
+        if (cleDep($("tq").value) !== nq) return;
+        el.innerHTML = (html || "") + nomHtml || '<p class="note">Aucun résultat.</p>';
       });
-      coms.sort(function (a, b) { return (cleDep(a[0]) === nq ? 0 : 1) - (cleDep(b[0]) === nq ? 0 : 1) || a[0].length - b[0].length; });
-      var html = "";
-      coms.slice(0, 4).forEach(function (c) {
-        var ids = deputesDe(c[1], c[2]);
-        html += '<div class="tq-bloc"><h3>' + esc(c[0]) + ' <span class="note">' + esc(c[1]) + (c[3].length ? " · " + esc(c[3].slice(0, 3).join(", ")) + (c[3].length > 3 ? "…" : "") : "") + "</span></h3>" +
-          (c[2].length > 1 ? '<p class="note">Cette commune est partagée entre ' + c[2].length + " circonscriptions : votre député dépend de votre adresse.</p>" : "") +
-          (ids.length ? '<div class="dcartes">' + ids.map(carteDepute).join("") + "</div>" : '<p class="note">Aucun député en exercice trouvé pour cette circonscription.</p>') + "</div>";
-      });
-      if (coms.length > 4) html += '<p class="note">' + (coms.length - 4) + " autres communes correspondent : précisez la recherche.</p>";
-      if (parNom.length) html += '<div class="tq-bloc"><h3>Députés</h3><div class="dcartes">' + parNom.slice(0, 8).map(carteDepute).join("") + "</div></div>";
-      if (!html) html = '<p class="note">Aucun résultat. Essayez le nom de votre commune sans abréviation, votre code postal, ou parcourez <a href="#deputes">la liste des députés</a> par département. Députés des Français de l\'étranger : <a href="#deputes">liste des députés</a>.</p>';
-      el.innerHTML = html;
     });
   }
-  $("trouver").addEventListener("submit", function (e) { e.preventDefault(); chercher($("tq").value); });
+  $("tq-res").addEventListener("click", function (e) {
+    var b = e.target.closest("button[data-sugg]");
+    if (b) localiser(suggestions[+b.dataset.sugg]);
+  });
+  $("trouver").addEventListener("submit", function (e) { e.preventDefault(); chercher($("tq").value, true); });
   var tqMinuteur;
-  $("tq").addEventListener("input", function () { clearTimeout(tqMinuteur); var v = this.value; tqMinuteur = setTimeout(function () { chercher(v); }, 220); });
+  $("tq").addEventListener("input", function () { clearTimeout(tqMinuteur); var v = this.value; tqMinuteur = setTimeout(function () { chercher(v); }, 300); });
 
   /* Définitions du vocabulaire parlementaire (bulle au survol, au toucher ou au clavier). */
   var DEFS = {
-    votants: "Députés ayant participé au vote : pour, contre ou abstention.",
+    votants: "Député.e.s ayant participé au vote : pour, contre ou abstention.",
     exprimes: "Votes pour et votes contre. Les abstentions ne sont pas comptées : elles ne pèsent ni pour ni contre.",
     requis: "Nombre de voix pour nécessaire à l'adoption. Pour la plupart des votes, c'est plus de la moitié des suffrages exprimés.",
-    abst: "Le député participe au vote sans se prononcer pour ou contre.",
-    nv: "Député enregistré comme ne prenant pas part au vote, par exemple la présidence de séance.",
-    SPS: "Vote annoncé à l'avance, à une heure fixée, pour les textes les plus importants, afin que tous les députés puissent y participer.",
-    SPO: "Vote nominatif demandé pendant la séance, par un président de groupe ou le Gouvernement. Seuls les députés présents, ou ayant délégué leur vote, y participent.",
+    abst: "Le ou la député.e participe au vote sans se prononcer pour ou contre.",
+    nv: "Député.e enregistré.e comme ne prenant pas part au vote, par exemple la présidence de séance.",
+    SPS: "Vote annoncé à l'avance, à une heure fixée, pour les textes les plus importants, afin que tous les député.e.s puissent y participer.",
+    SPO: "Vote nominatif demandé pendant la séance, par un président de groupe ou le Gouvernement. Seul.e.s les député.e.s présent.e.s, ou ayant délégué leur vote, y participent.",
     motion: "Vote sur la suite de l'examen d'un texte (le rejeter d'emblée, le renvoyer en commission…), pas sur son contenu article par article.",
     ensemble: "Vote final sur le texte entier, après l'examen de tous ses articles.",
     article: "Vote sur un seul article du texte.",
     amendement: "Vote sur une modification proposée au texte.",
-    censure: "Vote pour renverser le Gouvernement. Il faut la majorité absolue des députés.",
+    censure: "Vote pour renverser le Gouvernement. Il faut la majorité absolue des député.e.s.",
     declaration: "Vote sur une déclaration présentée par le Gouvernement.",
     procedure: "Vote sur l'organisation des débats."
   };
@@ -497,12 +569,26 @@
 
   /* ================= Navigation ================= */
   var app = $("app"), mq = window.matchMedia("(max-width:900px)");
+  /* Page gardée en cache par le navigateur après une mise en ligne : on recharge une fois la dernière version. */
+  (function () {
+    var m = document.querySelector('meta[name="qvq-version"]'), local = m && m.content;
+    if (!local || local === "dev") return;
+    fetch("version.txt", { cache: "no-store" }).then(function (r) { return r.ok ? r.text() : ""; }).then(function (v) {
+      v = v.trim();
+      var cle = "qvq-recharge-" + v;
+      if (v && v !== local) {
+        try { if (sessionStorage.getItem(cle)) return; sessionStorage.setItem(cle, "1"); } catch (e) { return; }
+        location.reload();
+      }
+    }).catch(function () {});
+  })();
   function modeLateral() { return st.vue === "accueil" ? "scrutins" : st.vue; }
   function definirVue(v) {
     if (st.vue !== v) {
       var avant = st.vue && modeLateral();
       st.vue = v;
-      $("side-titre").textContent = { scrutins: "Scrutins", accueil: "Scrutins", deputes: "Députés", groupes: "Groupes", infos: "Le site" }[v];
+      app.classList.toggle("accueil", v === "accueil");
+      $("side-titre").textContent = { scrutins: "Scrutins", accueil: "Scrutins", deputes: "Député.e.s", groupes: "Groupes", infos: "Le site" }[v];
       if (avant !== modeLateral()) outilsLateraux();
     }
     [].forEach.call(document.querySelectorAll(".tabs a"), function (a) { if (a.dataset.vue === v) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });

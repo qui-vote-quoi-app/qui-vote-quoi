@@ -9,7 +9,8 @@ Fichiers produits (dans site/data/) :
 - groupes.json           groupes politiques
 - votes_groupes/<PO>.json historique de vote d'un groupe
 - places.json            carte de l'hémicycle
-- communes.json          commune -> circonscriptions (recherche « Trouver mon député »)
+- communes.json          commune -> circonscriptions (recherche « Trouver mon député.e »)
+- circos/<dép>.json      contours des circonscriptions (recherche par adresse)
 - photos/<PA>.webp       vignettes des photos officielles (voir photos.py)
 Moins de fichiers = publication GitHub Pages plus rapide."""
 import copy
@@ -58,6 +59,8 @@ def exporter(scrutins, deputes, groupes, syntheses, retraits, sources_dates, ave
     communes = config.DATA / "communes.json"
     if communes.exists():
         shutil.copy(communes, out / "communes.json")
+    if (config.DATA / "circos").exists():
+        shutil.copytree(config.DATA / "circos", out / "circos")
 
     resumes = resume.pour_export()
     themes = sorted({s["theme"] for s in scrutins.values() if s.get("theme")})
