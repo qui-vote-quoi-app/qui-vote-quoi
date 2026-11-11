@@ -241,7 +241,7 @@
       return '<div class="arg"><p>' + esc(a.resume) + "</p><blockquote>« " + esc(a.citation) + " »</blockquote>" +
         '<div class="by">— ' + (d ? '<button type="button" data-dep="' + a.dep + '">' + esc(a.nom) + "</button>" + (gi.sigle ? " (" + esc(gi.sigle) + ")" : "") : esc(a.nom) + (a.qualite ? ", " + esc(a.qualite) : "")) + "</div></div>";
     };
-    var videCamp = '<p class="vide">Aucun orateur n\'a défendu cette position lors des explications de vote.</p>';
+    var videCamp = '<p class="vide">Aucun.e orateur.rice n\'a défendu cette position lors des explications de vote.</p>';
     el.innerHTML = h + '<div class="deb-intro"><p class="context">' + esc(syn.contexte) + "</p>" +
       '<div class="ia"><b>Généré par IA</b><span>Cette synthèse est produite automatiquement par une intelligence artificielle à partir du compte rendu officiel, <strong>sans relecture humaine</strong>. Les citations sont vérifiées mot pour mot ; les résumés en gras ne sont attribués à personne. En cas d\'erreur, <a href="' + REPO + "/issues/new?template=erreur.yml&title=" + encodeURIComponent("Synthèse du scrutin n° " + s.num) + '" target="_blank" rel="noopener">signalez-la</a>.</span></div></div>' +
       '<div class="cols"><div class="col pour"><h3>Arguments pour le texte</h3>' + (syn.pour.length ? syn.pour.map(arg).join("") : videCamp) + "</div>" +
@@ -251,7 +251,7 @@
   function rendreFiche() {
     var el = $("card");
     if (st.sel == null) {
-      el.innerHTML = '<div class="eyebrow">Fiche député.e</div><p style="margin:0;color:var(--muted);font-size:14px">Cliquez sur un siège, sur un orateur du débat, ou cherchez un nom pour afficher sa fiche.</p>';
+      el.innerHTML = '<div class="eyebrow">Fiche député.e</div><p style="margin:0;color:var(--muted);font-size:14px">Cliquez sur un siège, sur un.e orateur.rice du débat, ou cherchez un nom pour afficher sa fiche.</p>';
       return;
     }
     var d = st.deps[st.sel], info = null, place = null;

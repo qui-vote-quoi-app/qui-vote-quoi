@@ -9,7 +9,7 @@ import re
 ETAPES = [
     (r"\(lecture définitive\)", "en lecture définitive : après désaccord persistant avec le Sénat, "
                                 "l'Assemblée nationale a le dernier mot"),
-    (r"commission mixte paritaire", "sur la version de compromis élaborée par sept députés et sept sénateurs "
+    (r"commission mixte paritaire", "sur la version de compromis élaborée par sept député.e.s et sept sénateur.rice.s "
                                     "(commission mixte paritaire)"),
     (r"\(nouvelle lecture\)", "en nouvelle lecture, après l'échec d'un compromis avec le Sénat"),
     (r"\(deuxième lecture\)", "en deuxième lecture"),
@@ -43,15 +43,15 @@ def en_bref(s):
     t = (s.get("titre") or "").lower().replace("’", "'")
     cle = s["categorie"]["cle"]
     etape = _etape(t)
-    sol = " C'est un scrutin solennel, annoncé à l'avance pour permettre à tous les députés d'y participer." \
+    sol = " C'est un scrutin solennel, annoncé à l'avance pour permettre à toutes et tous les député.e.s d'y participer." \
         if s.get("type") == "SPS" else ""
 
     if cle == "censure":
-        return ("Les députés signataires demandent le renversement du Gouvernement. Seuls les votes pour sont comptés : "
-                "si la motion réunit la majorité absolue des députés (289 voix quand l'Assemblée est au complet), "
+        return ("Les député.e.s signataires demandent le renversement du Gouvernement. Seuls les votes pour sont comptés : "
+                "si la motion réunit la majorité absolue des député.e.s (289 voix quand l'Assemblée est au complet), "
                 "le Gouvernement doit démissionner.")
     if cle == "declaration":
-        return "Vote des députés sur une déclaration présentée par le Gouvernement." + sol
+        return "Vote des député.e.s sur une déclaration présentée par le Gouvernement." + sol
     if cle == "motion":
         if "rejet préalable" in t:
             return ("Motion de rejet préalable : si elle est adoptée, le texte est rejeté avant même l'examen de ses "

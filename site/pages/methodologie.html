@@ -36,7 +36,7 @@
 
 <h2>« Ce que prévoit le texte » : résumé par IA</h2>
 <ol>
-  <li><strong>Programme</strong> : pour chaque texte ayant fait l'objet d'un vote important, il récupère sur le site de l'Assemblée le texte déposé et n'en garde que les <strong>articles</strong>. L'exposé des motifs, qui présente les arguments des auteurs, est écarté.</li>
+  <li><strong>Programme</strong> : pour chaque texte ayant fait l'objet d'un vote important, il récupère sur le site de l'Assemblée le texte déposé et n'en garde que les <strong>articles</strong>. L'exposé des motifs, qui présente les arguments des auteur.rice.s, est écarté.</li>
   <li><strong>IA (un seul appel par texte)</strong> : 2 à 4 phrases, 90 mots au maximum, décrivant ce que prévoient les articles, sans jugement ni motivation. Pour un texte très long (budget), seules ses premières parties sont lues.</li>
   <li><strong>Programme</strong> : vérification. Le résumé est bloqué s'il est trop long, contient le nom d'un.e député.e, désigne une personne ou emploie un terme d'appréciation.</li>
 </ol>
@@ -72,7 +72,7 @@
 <ol>
   <li><strong>Programme</strong> : le compte rendu de la séance est retrouvé, et l'annonce du résultat y est repérée en comparant les chiffres annoncés à ceux du scrutin.</li>
   <li><strong>Programme</strong> : le passage retenu est celui des explications de vote. La présidence de séance, les interruptions et les didascalies sont retirées.</li>
-  <li><strong>IA (un seul appel)</strong> : le passage est envoyé <strong>sans le nom des orateurs</strong>. Le modèle renvoie un contexte et au plus quatre arguments par camp, chacun avec le numéro du passage d'origine et une citation exacte.</li>
+  <li><strong>IA (un seul appel)</strong> : le passage est envoyé <strong>sans le nom des orateur.rice.s</strong>. Le modèle renvoie un contexte et au plus quatre arguments par camp, chacun avec le numéro du passage d'origine et une citation exacte.</li>
   <li><strong>Programme</strong> : vérification. La synthèse est bloquée si une citation ne figure pas mot pour mot dans le passage, si un résumé contient un nom ou désigne une personne, ou si le format est invalide.</li>
   <li><strong>Programme</strong> : chaque citation est rattachée à son orateur d'après le compte rendu officiel. L'IA ne désigne jamais qui a dit quoi.</li>
 </ol>
