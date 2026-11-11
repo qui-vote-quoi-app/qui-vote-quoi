@@ -1,7 +1,10 @@
 {
  "dossier": "DLR5L17N53187",
  "texte": "PIONANR5L17B2107",
- "tentatives": 0,
- "statut": "en_attente",
- "erreurs": []
+ "tentatives": 1,
+ "statut": "publie",
+ "erreurs": [],
+ "resume": "Le texte prévoit l'interdiction de l'inscription des mineurs de quinze ans sur les réseaux sociaux et la suspension de leurs comptes, via un système de vérification d'âge certifié. Il impose la désactivation automatique de ces comptes entre 22 heures et 8 heures, et instaure des sanctions financières pour les plateformes en cas de manquement. De plus, il intègre une information sanitaire sur les publicités de réseaux sociaux, un message de prévention sur les emballages d'équipements connectés, modifie les peines pénales en matière de numérique, complète les programmes de sensibilisation scolaire, étend l'interdiction des téléphones portables aux lycées et sanctionne la négligence parentale liée à un usage excessif des écrans.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "genere_le": "2026-11-11T16:34+00:00"
 }

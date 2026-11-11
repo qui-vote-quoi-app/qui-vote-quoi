@@ -1,7 +1,10 @@
 {
  "dossier": "DLR5L17N53530",
  "texte": "PIONANR5L17B2334",
- "tentatives": 0,
- "statut": "en_attente",
- "erreurs": []
+ "tentatives": 1,
+ "statut": "publie",
+ "erreurs": [],
+ "resume": "Le texte prévoit la résiliation des contrats de concession d'énergie hydraulique d'une puissance supérieure à 4 500 kilowatts. Il attribue aux exploitants concernés un droit réel et un droit d'occupation sur les ouvrages pour une durée de soixante-dix ans, moyennant une indemnisation et une contrepartie financière évaluées par des experts indépendants. En cas de refus de la convention par le concessionnaire, l'État organise une nouvelle procédure de sélection pour attribuer ces droits à un tiers.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "genere_le": "2026-11-11T16:38+00:00"
 }

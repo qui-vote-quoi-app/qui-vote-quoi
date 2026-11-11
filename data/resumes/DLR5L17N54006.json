@@ -1,7 +1,10 @@
 {
  "dossier": "DLR5L17N54006",
  "texte": "PIONANR5L17B2595",
- "tentatives": 0,
- "statut": "en_attente",
- "erreurs": []
+ "tentatives": 1,
+ "statut": "publie",
+ "erreurs": [],
+ "resume": "Le texte modifie les règles relatives aux territoires de montagne en matière d'éducation, de santé, d'urbanisme, d'environnement et d'agriculture. Il prévoit notamment une concertation sur les effectifs scolaires et l'adaptation des seuils d'ouverture de classes, intègre des représentants montagnards dans certaines instances de santé et encadre l'accès aux soins d'urgence. Il crée en outre une commission dédiée à la montagne dans certaines intercommunalités, favorise le stockage et l'usage partagé de l'eau, et institue un fonds de solidarité financière pour la gestion des milieux aquatiques et la prévention des inondations.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "genere_le": "2026-11-11T16:37+00:00"
 }

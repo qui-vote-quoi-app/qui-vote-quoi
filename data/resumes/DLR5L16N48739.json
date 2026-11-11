@@ -1,7 +1,10 @@
 {
  "dossier": "DLR5L16N48739",
  "texte": "PIONANR5L17B0157",
- "tentatives": 0,
- "statut": "en_attente",
- "erreurs": []
+ "tentatives": 1,
+ "statut": "publie",
+ "erreurs": [],
+ "resume": "Le texte modifie le code pénal pour créer les infractions spécifiques d'homicide routier et de blessures routières applicables aux conducteurs de véhicules terrestres à moteur. Il définit les peines encourues en fonction des circonstances aggravantes, telles que l'état d'ivresse, l'usage de stupéfiants, l'absence de permis valide, l'excès de vitesse ou le délit de fuite. Enfin, il précise les peines complémentaires applicables aux auteurs de ces infractions.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "genere_le": "2026-11-11T16:46+00:00"
 }

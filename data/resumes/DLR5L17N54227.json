@@ -1,7 +1,10 @@
 {
  "dossier": "DLR5L17N54227",
  "texte": "PIONANR5L17B2708",
- "tentatives": 0,
- "statut": "en_attente",
- "erreurs": []
+ "tentatives": 1,
+ "statut": "publie",
+ "erreurs": [],
+ "resume": "Le texte institue un fonds national d'indemnisation et d'accompagnement des victimes de violences en milieu scolaire. Il interdit les violences et les traitements humiliants envers les élèves et impose des obligations de formation pour le personnel des établissements privés. Enfin, il renforce les contrôles d'antécédents judiciaires et d'incapacité pour l'ensemble des personnels et intervenants au contact des élèves.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "genere_le": "2026-11-11T16:44+00:00"
 }

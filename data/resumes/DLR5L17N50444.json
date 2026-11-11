@@ -1,7 +1,10 @@
 {
  "dossier": "DLR5L17N50444",
  "texte": "PIONANR5L17B0277",
- "tentatives": 0,
- "statut": "en_attente",
- "erreurs": []
+ "tentatives": 1,
+ "statut": "publie",
+ "erreurs": [],
+ "resume": "Le texte intègre l'état de santé d'un enfant à charge atteint d'une affection grave aux critères du droit au logement et exonère de taxe foncière les foyers concernés. Il permet la suspension des crédits en cas d'obtention de l'allocation journalière de présence parentale et instaure la gratuité du stationnement dans certains parkings hospitaliers ainsi que le reste à charge zéro pour les soins liés au parcours de l'enfant. Enfin, il simplifie les règles d'attribution de l'allocation journalière, autorise un accord tacite pour l'hébergement temporaire non médicalisé et crée une expérimentation pour l'attribution de l'allocation d'éducation de l'enfant handicapé.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "genere_le": "2026-11-11T16:43+00:00"
 }
