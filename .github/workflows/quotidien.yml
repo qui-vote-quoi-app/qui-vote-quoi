@@ -5,6 +5,8 @@ on:
     # Heures décalées de l'heure pile : GitHub retarde, voire saute, les tâches programmées à :00.
     - cron: "23 4 * * *"   # 5 h 23 à Paris en hiver (6 h 23 en été) : votes de la veille
     - cron: "53 5 * * *"   # secours, 6 h 53 : ne fait rien si le passage précédent a réussi
+    - cron: "17 7 * * *"   # secours, 8 h 17 (GitHub retarde parfois les tâches de plusieurs heures)
+    - cron: "41 8 * * *"   # secours, 9 h 41
     - cron: "37 12 * * *"  # 13 h 37 : synthèses en attente uniquement
   workflow_dispatch:
     inputs:
@@ -65,7 +67,7 @@ jobs:
           OPTIONS=""
           case "${{ github.event.schedule }}" in
             "37 12 * * *") MODE=syntheses ;;
-            "53 5 * * *")  MODE=quotidien; OPTIONS="--secours" ;;
+            "53 5 * * *"|"17 7 * * *"|"41 8 * * *")  MODE=quotidien; OPTIONS="--secours" ;;
             "")            ;;
             *)             MODE=quotidien ;;
           esac
