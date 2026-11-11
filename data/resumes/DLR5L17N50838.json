@@ -1,9 +1,10 @@
 {
  "dossier": "DLR5L17N50838",
  "texte": "PRJLANR5L17B0538",
- "tentatives": 1,
- "statut": "en_attente",
- "erreurs": [
-  "résumé vide"
- ]
+ "tentatives": 2,
+ "statut": "publie",
+ "erreurs": [],
+ "resume": "Le texte fixe les prévisions de solde structurel et effectif des administrations publiques pour 2024. Il modifie l'affectation de ressources à des tiers, notamment les plafonds de taxes pour l'Agence de financement des infrastructures de transport de France et Voies navigables de France. Il rectifie la fraction de taxe sur la valeur ajoutée affectée au compte de concours financiers « Avances à l'audiovisuel public ». Enfin, il actualise l'équilibre général du budget et les ressources de trésorerie de l'État pour l'année 2024.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "genere_le": "2026-11-11T16:06+00:00"
 }
