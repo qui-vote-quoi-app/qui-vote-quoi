@@ -384,13 +384,46 @@
   }
   function accueilHisto(type) {
     st.h = null;
-    $("h-head").innerHTML = '<div class="h-id"><div class="eyebrow">' + (type === "d" ? "Historique par député.e" : "Historique par groupe") + "</div><h2>" +
-      (type === "d" ? "Choisissez un.e député.e" : "Choisissez un groupe") + '</h2><p class="note" style="margin:6px 0 0;font-size:14px">' +
-      (type === "d" ? "Retrouvez tous les votes d'un.e député.e lors des scrutins publics, filtrables par thème et par type de vote. Les votes à main levée ne sont pas nominatifs et n'apparaissent pas." :
-        "Retrouvez la position majoritaire d'un groupe sur chaque scrutin public, filtrable par thème et par type de vote.") + "</p></div>";
-    $("h-liste").hidden = true;
+    var eff = effectifs(), actifs = st.deps.filter(function (d) { return d.actif; });
+    if (type === "g") {
+      $("h-head").innerHTML = '<div class="h-id"><div class="eyebrow">Groupes politiques</div><h2>Les groupes de l\'Assemblée</h2><p class="note" style="margin:6px 0 0;font-size:14px">' +
+        "Les député.e.s se rassemblent en groupes selon leurs affinités politiques. Choisissez un groupe pour voir sa position sur chaque scrutin public.</p></div>";
+      var gps = Object.keys(st.groupes).filter(function (po) { return !st.groupes[po].fin && eff[po]; }).sort(function (a, b) { return st.groupes[a].ordre - st.groupes[b].ordre; });
+      $("h-liste").innerHTML = '<div class="gcartes">' + gps.map(function (po) {
+        var g = st.groupes[po], membres = actifs.filter(function (d) { return d.groupe === po; });
+        var visages = membres.filter(function (d) { return d.photo; }).slice(0, 5);
+        return '<a class="gcarte" href="#g-' + po + '"><span class="gc-bloc" style="background:' + esc(g.couleur) + '">' + esc(g.sigle) + "</span>" +
+          '<span class="gc-corps"><b>' + esc(g.libelle) + '</b><span class="note">' + eff[po] + " député.e" + (eff[po] > 1 ? ".s" : "") + " · " + Math.round(eff[po] / 5.77) + " % des sièges</span>" +
+          '<span class="gc-barre"><i style="width:' + (100 * eff[po] / 577).toFixed(1) + "%;background:" + esc(g.couleur) + '"></i></span>' +
+          (visages.length ? '<span class="gc-visages">' + visages.map(function (d) { return avatar(d, "sm", g.couleur); }).join("") + "</span>" : "") +
+          '<span class="gc-lien">Voir ses votes →</span></span></a>';
+      }).join("") + "</div>";
+    } else {
+      var f = actifs.filter(function (d) { return d.civ === "Mme"; }).length;
+      $("h-head").innerHTML = '<div class="h-id"><div class="eyebrow">Les député.e.s</div><h2>' + actifs.length + " député.e.s en exercice</h2>" +
+        '<p class="note" style="margin:6px 0 0;font-size:14px">' + f + " femmes et " + (actifs.length - f) + " hommes, élu.e.s dans 577 circonscriptions. Choisissez un.e député.e pour voir tous ses votes lors des scrutins publics (les votes à main levée ne sont pas nominatifs).</p>" +
+        '<p style="margin:12px 0 0"><a class="btn plein" href="#accueil" id="h-trouver">Trouver mon ou ma député.e avec mon adresse →</a></p></div>';
+      var deps = {}; actifs.forEach(function (d) { if (d.dept) deps[d.dept] = (deps[d.dept] || 0) + 1; });
+      var noms = Object.keys(deps).sort(function (a, b) { return a.localeCompare(b, "fr"); });
+      var recents = st.deps.map(function (d, i) { return [d, i]; }).filter(function (x) { return (x[0].debut || "") > "2024-08-01" || (x[0].fin && x[0].fin > "2024-08-01"); })
+        .map(function (x) { var d = x[0], arr = !d.fin || d.debut > d.fin; return { i: x[1], date: arr ? d.debut : d.fin, arr: arr }; })
+        .sort(function (a, b) { return b.date < a.date ? -1 : 1; }).slice(0, 6);
+      $("h-liste").innerHTML = '<h3 class="h-sous">Par département</h3><label class="sr" for="h-dept">Département</label><select id="h-dept" class="h-dept"><option value="">Choisir un département…</option>' +
+        noms.map(function (n) { return '<option value="' + esc(n) + '">' + esc(n) + " (" + deps[n] + ")</option>"; }).join("") + '</select><div id="h-dept-res" class="dcartes"></div>' +
+        (recents.length ? '<h3 class="h-sous">Arrivées et départs récents</h3><div class="dcartes">' + recents.map(function (r) {
+          var d = st.deps[r.i], fem = d.civ === "Mme";
+          return carteDepute(r.i).replace('<span class="m">', '<span class="m h-mouv ' + (r.arr ? "arr" : "dep") + '">' + (r.arr ? (fem ? "Arrivée" : "Arrivé") : "Fin de mandat") + " le " + dateCourte(r.date) + '</span><span class="m">');
+        }).join("") + "</div>" : "");
+      $("h-dept").onchange = function () {
+        var v = this.value, ids = [];
+        st.deps.forEach(function (d, i) { if (d.actif && d.dept === v) ids.push(i); });
+        ids.sort(function (a, b) { return st.deps[a].circo - st.deps[b].circo; });
+        $("h-dept-res").innerHTML = ids.map(carteDepute).join("");
+      };
+      $("h-trouver").onclick = function () { setTimeout(function () { var t = $("tq"); if (t) { t.focus(); t.scrollIntoView({ block: "center" }); } }, 50); };
+    }
+    $("h-liste").hidden = false;
     document.title = (type === "d" ? "Député.e.s" : "Groupes") + " · Qui vote quoi ?";
-    if (mq.matches) ouvrirMobile();
   }
 
   /* ================= Accueil ================= */
@@ -708,7 +741,7 @@
       st.f.theme = m[1]; st.f.lv = maj1 ? 1 : 3; st.limite = PAGE; st.vue = null; definirVue("scrutins");
       if (r) ouvrirScrutin(r[0]); listeLaterale();
     }
-    else if (h === "#scrutins") { definirVue("scrutins"); ouvrirScrutin(st.num || premierMajeur()); }
+    else if (h === "#scrutins") { definirVue("scrutins"); ouvrirScrutin(st.num || premierMajeur()); ouvrirListe(); }
     else { definirVue("accueil"); rendreAccueil(); listeLaterale(); document.title = "Qui vote quoi ? · Les votes de l'Assemblée nationale"; }
     if (st.vue === "scrutins") centrerHemicycle();
     window.scrollTo(0, 0);
@@ -721,6 +754,10 @@
     var ouvert = mq.matches ? app.classList.contains("mopen") : !app.classList.contains("collapsed");
     $("toggle").setAttribute("aria-expanded", ouvert);
     $("toggle").setAttribute("aria-label", ouvert ? "Replier la liste" : "Déplier la liste");
+  }
+  function ouvrirListe() {
+    if (mq.matches) setTimeout(ouvrirMobile, 0);
+    else if (app.classList.contains("collapsed")) { app.classList.remove("collapsed"); majBouton(); }
   }
   function ouvrirMobile() { app.classList.add("mopen"); majBouton(); }
   function fermerMobile() { if (app.classList.contains("mopen")) { app.classList.remove("mopen"); majBouton(); } }
