@@ -11,7 +11,7 @@ on:
       mode:
         description: "quotidien (tout) ou syntheses (synthèses en attente)"
         type: choice
-        options: [quotidien, syntheses]
+        options: [quotidien, syntheses, publier]
         default: quotidien
       rattrapage:
         description: "Rattrapage : générer les synthèses des N derniers jours (0 = non)"
