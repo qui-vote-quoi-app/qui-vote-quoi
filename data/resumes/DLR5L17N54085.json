@@ -1,11 +1,11 @@
 {
  "dossier": "DLR5L17N54085",
  "texte": "PRJLANR5L17B2632",
- "tentatives": 0,
+ "tentatives": 1,
  "statut": "publie",
- "resume": "Le texte prévoit des mesures pour la souveraineté agricole en créant des comités régionaux pour reconnaître des projets d'avenir agricole bénéficiant d'un accompagnement prioritaire. Il permet au gouvernement de suspendre l'importation de denrées alimentaires contenant des résidus de substances phytopharmaceutiques interdites dans l'Union européenne pour des motifs de santé ou d'environnement. Il habilite le gouvernement à légiférer par ordonnance pour renforcer les contrôles sanitaires. Il modifie les obligations d'approvisionnement en produits durables et d'origine européenne pour la restauration collective. Enfin, il facilite les projets de stockage d'eau pour l'irrigation et adapte la gestion quantitative de la ressource en eau.",
+ "resume": "Le texte renforce la protection des agriculteurs face aux concurrences déloyales et encadre la sécurité sanitaire. Il simplifie les normes agricoles en facilitant le stockage de l'eau, l'aménagement foncier, la gestion des zones humides et la protection contre le loup. Il habilite le Gouvernement à légiférer par ordonnance sur les contrôles sanitaires, les élevages et la lutte contre les ravageurs. Enfin, il renforce la place des agriculteurs dans la chaîne économique pour préserver leurs revenus et encadre les recours contentieux en matière environnementale.",
  "modele": "gemini:gemini-flash-lite-latest",
  "erreurs": [],
- "genere_le": "2026-11-10T19:19+00:00",
- "a_refaire": true
+ "genere_le": "2026-11-11T17:17+00:00",
+ "longueur": 52986
 }

@@ -1,11 +1,11 @@
 {
  "dossier": "DLR5L17N51984",
  "texte": "PRJLANR5L17B1471",
- "tentatives": 0,
+ "tentatives": 1,
  "statut": "publie",
- "resume": "Le texte modifie le code général des collectivités territoriales, le code électoral, le statut de la magistrature et les règles relatives à l'élection présidentielle afin d'intégrer le nouveau statut de Département-Région de Mayotte. Il précise les règles d'inéligibilité et de cumul des mandats applicables aux membres de l'assemblée de Mayotte. Enfin, il fixe l'entrée en vigueur de ces dispositions au plus tard le 1er janvier 2026.",
+ "resume": "Le texte modifie le code général des collectivités territoriales, le code électoral et diverses dispositions organiques afin d'intégrer le Département-Région de Mayotte dans le cadre institutionnel applicable aux collectivités d'outre-mer dotées d'une assemblée unique. Il adapte les règles relatives aux incompatibilités électorales, au statut de la magistrature et à l'élection présidentielle pour inclure les conseillers à l'assemblée de Mayotte. Enfin, il fixe l'entrée en vigueur de ces dispositions au plus tard le 1er janvier 2026.",
  "modele": "gemini:gemini-flash-lite-latest",
  "erreurs": [],
- "genere_le": "2026-11-11T14:23+00:00",
- "a_refaire": true
+ "genere_le": "2026-11-11T17:33+00:00",
+ "longueur": 5888
 }

@@ -1,11 +1,11 @@
 {
  "dossier": "DLR5L17N54218",
  "texte": "PRJLANR5L17B2697",
- "tentatives": 0,
+ "tentatives": 1,
  "statut": "publie",
- "resume": "Le texte modifie la Constitution pour doter la Corse d'un statut d'autonomie au sein de la République. Il permet l'adaptation des lois et règlements et habilite la collectivité à fixer des normes dans ses domaines de compétence, selon des conditions fixées par une loi organique. Il organise aussi le contrôle des normes par le Conseil d'État et le Conseil constitutionnel, autorise le Gouvernement à adapter des dispositions législatives par ordonnances, et prévoit la consultation des électeurs corses.",
+ "resume": "Le texte modifie la Constitution pour créer un statut d'autonomie pour la Corse au sein de la République. Il permet à la Collectivité de Corse d'adapter les lois et règlements ou de fixer des normes dans ses domaines de compétences, selon des conditions fixées par une loi organique. Enfin, il autorise le Gouvernement à adapter par ordonnances des dispositions législatives et prévoit la consultation des électeurs corses sur ce projet de statut.",
  "modele": "gemini:gemini-flash-lite-latest",
  "erreurs": [],
- "genere_le": "2026-11-10T20:17+00:00",
- "a_refaire": true
+ "genere_le": "2026-11-11T17:20+00:00",
+ "longueur": 2193
 }

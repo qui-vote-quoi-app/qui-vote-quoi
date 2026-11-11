@@ -2,10 +2,11 @@
  "dossier": "DLR5L17N51919",
  "texte": "PRJLANR5L17B1285",
  "tentatives": 0,
- "statut": "publie",
+ "statut": "en_attente",
  "resume": "Le texte fixe les grands agrégats financiers et les comptes des administrations publiques pour 2024, en comparant les résultats constatés avec les prévisions initiales et pluriannuelles. Il arrête le résultat budgétaire définitif de l'État à - 155,9 milliards d'euros, en détaillant le montant exact des recettes et des dépenses. Enfin, il arrête le tableau de financement de l'année 2024 en présentant l'ensemble des ressources et des charges de trésorerie ayant contribué à l'équilibre financier.",
  "modele": "gemini:gemini-flash-lite-latest",
  "erreurs": [],
  "genere_le": "2026-11-11T14:55+00:00",
- "a_refaire": true
+ "a_refaire": true,
+ "acces_echecs": 1
 }

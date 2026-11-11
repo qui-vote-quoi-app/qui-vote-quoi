@@ -1,11 +1,11 @@
 {
  "dossier": "DLR5L17N54629",
  "texte": "PRJLANR5L17B3210",
- "tentatives": 0,
+ "tentatives": 1,
  "statut": "publie",
  "erreurs": [],
- "resume": "Le texte fixe les prévisions financières et les objectifs de solde des administrations publiques pour 2027, en présentant l'évolution des dépenses, des prélèvements obligatoires et de la dette. Il autorise la perception des impôts et des ressources de l'État pour l'année 2027. Enfin, il modifie le code général des impôts afin de revaloriser le barème de l'impôt sur le revenu et d'ajuster le régime fiscal de certains revenus et indemnités.",
+ "resume": "Le texte fixe les prévisions financières des administrations publiques pour 2027 et autorise la perception des impôts et ressources de l'État. Il détermine l'équilibre général du budget, les plafonds des charges et des emplois, et crée ou modifie des impositions sur les biens et services. Il intègre enfin des dispositions permanentes, notamment en autorisant l'octroi de la garantie de l'État aux emprunts de l'organisme gestionnaire de l'assurance chômage.",
  "modele": "gemini:gemini-flash-lite-latest",
- "genere_le": "2026-11-10T18:50+00:00",
- "a_refaire": true
+ "genere_le": "2026-11-11T17:12+00:00",
+ "longueur": 993690
 }

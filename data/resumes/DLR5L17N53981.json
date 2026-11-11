@@ -1,11 +1,11 @@
 {
  "dossier": "DLR5L17N53981",
  "texte": "PRJLANR5L17B2619",
- "tentatives": 0,
+ "tentatives": 1,
  "statut": "publie",
- "resume": "Le texte modifie le code du travail afin de compléter les conditions d'application concernant l'assurance chômage. Il ajoute une référence spécifique relative aux personnes qui relèvent du 2° du I de l'article L. 5422-1.",
+ "resume": "Le texte modifie l'article L. 5422-2 du code du travail en y ajoutant une mention relative aux personnes qui relèvent du 2° du I de l'article L. 5422-1. Cette modification s'inscrit dans le cadre de la transposition de l'avenant du 25 février 2026 au protocole d'accord relatif à l'assurance chômage.",
  "modele": "gemini:gemini-flash-lite-latest",
  "erreurs": [],
- "genere_le": "2026-11-10T20:56+00:00",
- "a_refaire": true
+ "genere_le": "2026-11-11T17:22+00:00",
+ "longueur": 281
 }

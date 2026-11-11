@@ -1,11 +1,11 @@
 {
  "dossier": "DLR5L17N53940",
  "texte": "PRJLANR5L17B2681",
- "tentatives": 0,
+ "tentatives": 1,
  "statut": "publie",
- "resume": "Le texte modifie le code de procédure pénale pour créer une procédure de jugement des crimes reconnus. Il permet à l'auteur présumé d'un crime, sous certaines conditions et avec l'accord du ministère public, d'accepter sa culpabilité et de se voir proposer des peines plafonnées lors d'un entretien préalable. Cette procédure alternative s'effectue devant une formation allégée de la cour d'assises sans jury populaire, avec un droit d'opposition pour la partie civile et l'obligation d'informer cette dernière de ses droits à l'assistance juridique.",
+ "resume": "Le texte modifie le code de procédure pénale, le code civil et le code de l'organisation judiciaire pour encadrer le dépôt de plainte, modifier les règles de la détention provisoire et adapter les conditions d'examen génétique. Il crée des fonctions de psychologues de police judiciaire, modifie les délais procéduraux applicables aux enquêtes et aux audiences, et adapte l'organisation judiciaire dans les territoires ultramarins.",
  "modele": "gemini:gemini-flash-lite-latest",
  "erreurs": [],
- "genere_le": "2026-11-10T19:24+00:00",
- "a_refaire": true
+ "genere_le": "2026-11-11T17:19+00:00",
+ "longueur": 69443
 }

@@ -1,11 +1,11 @@
 {
  "dossier": "DLR5L17N51985",
  "texte": "PRJLANR5L17B1470",
- "tentatives": 0,
+ "tentatives": 1,
  "statut": "publie",
- "resume": "Le texte renforce l'autorité du représentant de l'État à Mayotte et durcit les conditions d'accès au séjour ainsi que les règles relatives au regroupement familial. Il renforce la lutte contre les reconnaissances frauduleuses de paternité ou de maternité et accroît les sanctions pénales associées. Le texte facilite l'éloignement des étrangers en situation irrégulière, permet le retrait de documents de séjour en cas de manquement parental lié à la délinquance des mineurs, encadre les transferts de fonds en espèces et met en place des procédures spécifiques d'évacuation et de démolition de l'habitat informel.",
+ "resume": "Le texte modifie les règles applicables à Mayotte en matière d'immigration, de sécurité, de droit civil, de fiscalité et de services publics. Il renforce les sanctions contre l'immigration clandestine, durcit les conditions d'accès au séjour et à la nationalité, et adapte les procédures d'expropriation et de lutte contre l'habitat informel. Il modifie également l'organisation institutionnelle de la collectivité en créant un département-région, adapte le régime de retraite complémentaire et met en place des mesures spécifiques concernant l'éducation, la jeunesse et la fonction publique.",
  "modele": "gemini:gemini-flash-lite-latest",
  "erreurs": [],
- "genere_le": "2026-11-11T14:24+00:00",
- "a_refaire": true
+ "genere_le": "2026-11-11T17:34+00:00",
+ "longueur": 211446
 }

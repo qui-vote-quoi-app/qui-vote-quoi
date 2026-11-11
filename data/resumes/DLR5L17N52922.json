@@ -1,11 +1,11 @@
 {
  "dossier": "DLR5L17N52922",
  "texte": "PRJLANR5L17B1907",
- "tentatives": 0,
+ "tentatives": 1,
  "statut": "publie",
- "resume": "Le texte modifie l'organisation de la sécurité sociale des artistes-auteurs en redéfinissant les missions d'une association agréée par l'État, recentrée sur les orientations de l'action sanitaire et sociale et la médiation. Il transfère les compétences d'affiliation et de contrôle à un organisme désigné par l'Agence centrale des organismes de sécurité sociale, et prévoit le transfert des contrats de travail des personnels concernés. Enfin, il précise les modalités d'application et les dates d'entrée en vigueur de ces dispositions.",
+ "resume": "Le texte fixe les orientations financières, les prévisions de recettes et les objectifs de dépenses des régimes obligatoires de sécurité sociale pour les exercices 2025 et 2026. Il rectifie les données budgétaires de l'année précédente, approuve le tableau d'équilibre des différentes branches et détermine l'objectif national de dépenses d'assurance maladie pour 2026. En outre, il modifie diverses dispositions relatives aux cotisations, aux contributions, au recouvrement, à la gestion de la trésorerie et à l'organisation des prestations de santé et de protection sociale.",
  "modele": "gemini:gemini-flash-lite-latest",
  "erreurs": [],
- "genere_le": "2026-11-10T23:14+00:00",
- "a_refaire": true
+ "genere_le": "2026-11-11T17:31+00:00",
+ "longueur": 335641
 }

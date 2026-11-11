@@ -1,11 +1,11 @@
 {
  "dossier": "DLR5L17N53135",
  "texte": "PRJLANR5L17B2068",
- "tentatives": 0,
+ "tentatives": 1,
  "statut": "publie",
- "resume": "Le texte modifie les équilibres financiers pour 2025 en fixant les prévisions de solde et de dépenses des administrations publiques. Il actualise le produit de TVA affecté à l'audiovisuel public et ajuste le rendement et le plafond de plusieurs taxes affectées. Il redéfinit la répartition entre les régions du financement destiné aux instituts de formation en soins infirmiers. Enfin, il rectifie les ressources, les charges et le solde général du budget de l'État pour l'année 2025.",
+ "resume": "Le texte modifie les prévisions de solde des administrations publiques pour l'année 2025. Il rectifie le montant de la fraction de taxe sur la valeur ajoutée affectée à l'audiovisuel public et ajuste l'équilibre général du budget de l'État, incluant les ressources, la trésorerie et le plafond d'autorisation des emplois. Enfin, il procède à des ouvertures et à des annulations de crédits pour le budget général.",
  "modele": "gemini:gemini-flash-lite-latest",
  "erreurs": [],
- "genere_le": "2026-11-11T14:12+00:00",
- "a_refaire": true
+ "genere_le": "2026-11-11T17:32+00:00",
+ "longueur": 292322
 }

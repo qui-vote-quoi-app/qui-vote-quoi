@@ -1,11 +1,11 @@
 {
  "dossier": "DLR5L17N53235",
  "texte": "PRJLANR5L17B2414",
- "tentatives": 0,
+ "tentatives": 1,
  "statut": "publie",
- "resume": "Le texte autorise l'approbation d'un accord conclu entre le Gouvernement français et la Communauté des Caraïbes. Cet accord concerne l'adhésion au protocole relatif aux privilèges et immunités de cette organisation, signé à Bridgetown le 20 février 2025.",
+ "resume": "Le texte autorise l'approbation de l'accord entre le Gouvernement français et la Communauté des Caraïbes. Cet accord concerne l'adhésion au protocole sur les privilèges et immunités de cette communauté, signé le 20 février 2025.",
  "modele": "gemini:gemini-flash-lite-latest",
  "erreurs": [],
- "genere_le": "2026-11-10T21:50+00:00",
- "a_refaire": true
+ "genere_le": "2026-11-11T17:26+00:00",
+ "longueur": 461
 }

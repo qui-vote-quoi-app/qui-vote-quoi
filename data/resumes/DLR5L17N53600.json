@@ -1,11 +1,11 @@
 {
  "dossier": "DLR5L17N53600",
  "texte": "PRJLANR5L17B2609",
- "tentatives": 0,
+ "tentatives": 1,
  "statut": "publie",
- "resume": "Le texte habilite l'assemblée de Martinique à fixer elle-même des règles spécifiques sur son territoire en matière d'énergie, incluant la maîtrise de la demande, la réglementation thermique, les énergies renouvelables et la mobilité durable. Il l'habilite également à créer et mettre en œuvre une autorité unique compétente en matière d'eau et d'assainissement. Ces habilitations s'appliquent jusqu'au prochain renouvellement général de l'assemblée.",
+ "resume": "Le texte habilite l'assemblée de Martinique à adopter des dispositions spécifiques en matière d'énergie, incluant la maîtrise de la demande, la réglementation thermique, les énergies renouvelables et la mobilité durable. Il l'habilite également à créer une autorité unique compétente en matière d'eau potable et d'assainissement.",
  "modele": "gemini:gemini-flash-lite-latest",
  "erreurs": [],
- "genere_le": "2026-11-10T20:21+00:00",
- "a_refaire": true
+ "genere_le": "2026-11-11T17:21+00:00",
+ "longueur": 2203
 }

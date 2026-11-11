@@ -1,11 +1,11 @@
 {
  "dossier": "DLR5L17N54372",
  "texte": "PRJLANR5L17B2841",
- "tentatives": 0,
+ "tentatives": 1,
  "statut": "publie",
- "resume": "Le texte encadre la durée des mesures de placement des mineurs et modifie les conditions de leur renouvellement par le juge des enfants. Il simplifie les procédures de déclaration de délaissement parental pour les enfants de moins de trois ans et permet d'adapter l'accueil de suppléance parentale en vue d'une adoption. Enfin, il harmonise l'indemnisation des tiers digne de confiance et réforme la réglementation applicable aux assistants familiaux pour faciliter leur recrutement.",
+ "resume": "Le texte modifie les règles relatives à la protection des enfants en encadrant la durée de certaines mesures d'assistance éducative et les délais applicables au statut des mineurs. Il favorise l'accueil à dimension familiale en modifiant l'instruction des demandes d'agrément des assistants familiaux et en renforçant le contrôle des antécédents judiciaires des personnes accueillant un enfant. Enfin, il assouplit les modalités de prise en charge et d'accompagnement éducatif ainsi que les conditions de mise en œuvre de certains actes médicaux.",
  "modele": "gemini:gemini-flash-lite-latest",
  "erreurs": [],
- "genere_le": "2026-11-10T19:19+00:00",
- "a_refaire": true
+ "genere_le": "2026-11-11T17:16+00:00",
+ "longueur": 91806
 }

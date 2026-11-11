@@ -1,11 +1,11 @@
 {
  "dossier": "DLR5L17N53942",
  "texte": "PRJLANR5L17B2682",
- "tentatives": 0,
+ "tentatives": 1,
  "statut": "publie",
- "resume": "Le texte modifie le statut de la magistrature pour encadrer l'exercice de fonctions d'assesseur dans les cours criminelles départementales par des avocats honoraires et des citoyens assesseurs. Il fixe leurs conditions de nomination, d'exercice, d'incompatibilité professionnelle, de discipline et de formation. De plus, il rend obligatoires des formations spécifiques en matière de violences intrafamiliales et de violences sexuelles et sexistes pour les magistrats et les assesseurs concernés.",
+ "resume": "Le texte modifie le statut de la magistrature pour encadrer l'exercice de fonctions d'assesseur au sein des cours criminelles départementales par des avocats honoraires et des citoyens assesseurs. Il fixe les conditions de leur nomination, leur durée de mandat, leurs incompatibilités professionnelles ainsi que les règles disciplinaires applicables. Enfin, il institue des obligations de formation spécifique pour les magistrats et les assesseurs concernant les violences intrafamiliales et les violences sexuelles et sexistes.",
  "modele": "gemini:gemini-flash-lite-latest",
  "erreurs": [],
- "genere_le": "2026-11-10T19:24+00:00",
- "a_refaire": true
+ "genere_le": "2026-11-11T17:18+00:00",
+ "longueur": 12673
 }

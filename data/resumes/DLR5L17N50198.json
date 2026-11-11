@@ -1,11 +1,11 @@
 {
  "dossier": "DLR5L17N50198",
  "texte": "PRJLANR5L17B0324",
- "tentatives": 0,
+ "tentatives": 1,
  "statut": "publie",
- "resume": "Le texte fixe les prévisions de solde structurel, de solde effectif, de dépenses, de prélèvements obligatoires et d'endettement pour l'ensemble des administrations publiques pour l'année 2025. Il intègre également les données d'exécution de l'année 2023 ainsi que les prévisions d'exécution pour l'année 2024. Enfin, il autorise la perception des ressources et des impôts existants de l'État.",
+ "resume": "Le texte fixe les conditions générales de l'équilibre financier et les prévisions de solde des administrations publiques pour l'année 2025. Il autorise la perception des impôts existants, détermine l'affectation de diverses ressources aux organismes publics et agences de l'État, et arrête les plafonds des charges et des emplois. Enfin, il autorise l'octroi de la garantie de l'État aux emprunts contractés par l'organisme gestionnaire de l'assurance chômage au cours de cette même année.",
  "modele": "gemini:gemini-flash-lite-latest",
  "erreurs": [],
- "genere_le": "2026-11-11T15:48+00:00",
- "a_refaire": true
+ "genere_le": "2026-11-11T17:42+00:00",
+ "longueur": 887680
 }

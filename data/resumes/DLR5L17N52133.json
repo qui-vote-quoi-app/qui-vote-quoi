@@ -1,11 +1,11 @@
 {
  "dossier": "DLR5L17N52133",
  "texte": "PRJLANR5L17B1456",
- "tentatives": 0,
+ "tentatives": 1,
  "statut": "publie",
  "erreurs": [],
- "resume": "Le texte approuve les comptes de la sécurité sociale pour l'exercice 2024, en fixant les recettes, les dépenses et le solde des administrations. Il valide les tableaux d'équilibre par branche des régimes obligatoires de base et des organismes de financement. Il entérine également les dépenses d'assurance maladie, le montant de la dette amortie et la situation patrimoniale de la sécurité sociale.",
+ "resume": "Le texte approuve les comptes de la sécurité sociale pour l'année 2024. Il arrête les recettes, les dépenses et le solde des administrations de sécurité sociale, les tableaux d'équilibre par branche des régimes obligatoires de base et des organismes de financement, ainsi que les dépenses de l'objectif national de dépenses d'assurance maladie et le montant de la dette amortie. Enfin, il approuve la situation patrimoniale et les mesures d'affectation des excédents et de couverture des déficits constatés pour cet exercice.",
  "modele": "gemini:gemini-flash-lite-latest",
- "genere_le": "2026-11-11T14:54+00:00",
- "a_refaire": true
+ "genere_le": "2026-11-11T17:36+00:00",
+ "longueur": 12116
 }

@@ -1,11 +1,11 @@
 {
  "dossier": "DLR5L17N51079",
  "texte": "PRJLANR5L17B0711",
- "tentatives": 0,
+ "tentatives": 1,
  "statut": "publie",
- "resume": "Le texte autorise la perception des impôts et des ressources existantes jusqu'à l'entrée en vigueur de la loi de finances pour 2025. Il permet également au ministre chargé des finances de contracter des emprunts et d'effectuer des opérations de gestion de la dette et de la trésorerie de l'État. Enfin, il habilite certains organismes de sécurité sociale à recourir à des ressources non permanentes pour couvrir leurs besoins de trésorerie.",
+ "resume": "Le texte autorise la perception des impôts et impositions existants ainsi que le recours à l'emprunt par l'État pour couvrir ses charges de trésorerie jusqu'à l'entrée en vigueur de la loi de finances pour 2025. Il habilite également plusieurs organismes de sécurité sociale à recourir à des ressources non permanentes pour couvrir leurs besoins de trésorerie jusqu'à l'entrée en vigueur de la loi de financement de la sécurité sociale pour 2025.",
  "modele": "gemini:gemini-flash-lite-latest",
  "erreurs": [],
- "genere_le": "2026-11-10T23:12+00:00",
- "a_refaire": true
+ "genere_le": "2026-11-11T17:29+00:00",
+ "longueur": 3879
 }

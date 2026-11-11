@@ -1,11 +1,11 @@
 {
  "dossier": "DLR5L17N54083",
  "texte": "PRJLANR5L17B2630",
- "tentatives": 0,
+ "tentatives": 1,
  "statut": "publie",
- "resume": "Le texte actualise la programmation militaire pour la période 2024-2030 en augmentant les ressources budgétaires allouées à la défense, en fixant des objectifs d'équipement et en faisant évoluer les effectifs des armées. Il complète les dispositions relatives à la sécurité nationale et au réarmement en encadrant les pratiques économiques des industriels de la défense, en instaurant des obligations de constitution de stocks stratégiques pour certains opérateurs et en renforçant le contrôle administratif des marchés publics liés à la défense.",
+ "resume": "Le texte actualise la programmation militaire pour la période 2024 à 2030 en ajustant les crédits budgétaires et les objectifs d'effectifs des armées. Il renforce les pouvoirs économiques liés à la défense, modifie les règles de contrôle des marchés et de la commande publique, et adapte les dispositifs de sécurité nationale, de renseignement et de résilience face aux crises. Enfin, il réforme la journée de mobilisation, actualise des dispositions relatives à la condition militaire et ratifie plusieurs ordonnances.",
  "modele": "gemini:gemini-flash-lite-latest",
  "erreurs": [],
- "genere_le": "2026-11-10T20:02+00:00",
- "a_refaire": true
+ "genere_le": "2026-11-11T17:19+00:00",
+ "longueur": 142063
 }

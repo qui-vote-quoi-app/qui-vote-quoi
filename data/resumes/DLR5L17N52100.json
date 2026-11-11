@@ -1,11 +1,11 @@
 {
  "dossier": "DLR5L17N52100",
  "texte": "PRJLANR5L17B1641",
- "tentatives": 0,
+ "tentatives": 1,
  "statut": "publie",
- "resume": "Le texte prévoit la reconnaissance officielle des comités organisateurs des jeux Olympiques et Paralympiques de 2030 et adapte le code du sport. Il introduit des dérogations temporaires aux règles en matière de publicité et d'affichage pour les besoins de l'événement et de ses partenaires. Il autorise le recours à des clauses compromissoires dans certains contrats et encadre l'éthique ainsi que la transparence financière. Enfin, il confie à la Cour des comptes et à l'Agence française anticorruption des missions spécifiques de contrôle et de rapport.",
+ "resume": "Le texte fixe le cadre juridique, organisationnel, sécuritaire et environnemental de l'organisation des jeux Olympiques et Paralympiques de 2030. Il prévoit des dérogations en matière d'urbanisme, de commande publique, de transport et de droit du travail pour faciliter la préparation et le déroulement de la manifestation. Il instaure également des dispositifs de contrôle de gestion, de lutte contre le dopage, et adapte les règles relatives à la sécurité et à l'exercice de certaines professions.",
  "modele": "gemini:gemini-flash-lite-latest",
  "erreurs": [],
- "genere_le": "2026-11-10T23:06+00:00",
- "a_refaire": true
+ "genere_le": "2026-11-11T17:28+00:00",
+ "longueur": 68161
 }

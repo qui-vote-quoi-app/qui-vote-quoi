@@ -1,11 +1,11 @@
 {
  "dossier": "DLR5L17N52635",
  "texte": "PRJLANR5L17B2408",
- "tentatives": 0,
+ "tentatives": 1,
  "statut": "publie",
- "resume": "Le texte modifie le code du patrimoine pour encadrer la restitution de biens culturels à des États étrangers qui en ont été privés par une appropriation illicite entre 1815 et 1972. Il instaure une procédure dérogatoire permettant la sortie du domaine public de ces biens par décret en Conseil d'État, après l'examen d'un comité scientifique et l'avis motivé d'une commission nationale dédiée. Enfin, il prévoit une information du Parlement et la remise d'un rapport annuel sur les demandes et les restitutions effectuées.",
+ "resume": "Le texte modifie le code du patrimoine pour encadrer la restitution de biens culturels à des États étrangers qui en ont été illicitement privés entre 1815 et 1972. Il crée une commission nationale des restitutions chargée d'émettre des avis sur ces demandes après l'examen d'un comité scientifique. Il prévoit également que la sortie du domaine public de ces biens s'effectue par décret en Conseil d'État.",
  "modele": "gemini:gemini-flash-lite-latest",
  "erreurs": [],
- "genere_le": "2026-11-10T21:45+00:00",
- "a_refaire": true
+ "genere_le": "2026-11-11T17:24+00:00",
+ "longueur": 9337
 }

@@ -1,11 +1,11 @@
 {
  "dossier": "DLR5L17N54951",
  "texte": "PRJLANR5L17B3211",
- "tentatives": 0,
+ "tentatives": 1,
  "statut": "publie",
- "resume": "Le texte rectifie les prévisions financières, les objectifs de dépenses et les tableaux d'équilibre des régimes obligatoires de base de sécurité sociale ainsi que l'objectif national de dépenses d'assurance maladie (ONDAM) pour l'année 2026. Il ajuste également les contributions des régimes de sécurité sociale à certains fonds d'investissement en santé. Enfin, il met en place des mesures de suspension de paiement des cotisations, des exonérations de charges et des aides financières pour les employeurs, travailleurs indépendants et non-salariés touchés par des incendies et des intempéries dans certaines zones géographiques.",
+ "resume": "Le texte fixe les orientations financières et les tableaux d'équilibre des régimes obligatoires de sécurité sociale pour l'exercice 2027. Il rectifie les comptes de l'année précédente, détermine les objectifs de dépenses par branche ainsi que l'objectif national de dépenses d'assurance maladie (ONDAM). De plus, il modifie les règles relatives aux recettes, aux exonérations de cotisations, à la fiscalité de certains produits et aux prestations familiales, tout en ajustant les dispositifs de financement et d'organisation des secteurs de la santé, du médicament et de la prise en charge de la dépendance.",
  "modele": "gemini:gemini-flash-lite-latest",
  "erreurs": [],
- "genere_le": "2026-11-10T18:57+00:00",
- "a_refaire": true
+ "genere_le": "2026-11-11T17:14+00:00",
+ "longueur": 288541
 }

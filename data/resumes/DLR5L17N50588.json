@@ -1,11 +1,11 @@
 {
  "dossier": "DLR5L17N50588",
  "texte": "PRJLANR5L17B0325",
- "tentatives": 0,
+ "tentatives": 1,
  "statut": "publie",
  "erreurs": [],
- "resume": "Le texte rectifie les prévisions de recettes, de dépenses, les soldes des régimes obligatoires de base de sécurité sociale ainsi que l'objectif national de dépenses d'assurance maladie pour l'année 2024. Il modifie les règles de calcul et de recouvrement des cotisations sociales, notamment pour les exploitants agricoles, et ajuste divers dispositifs d'exonération de cotisations patronales applicables au secteur agricole.",
+ "resume": "Le texte fixe les orientations financières de la sécurité sociale pour l'année 2025 en approuvant les tableaux d'équilibre, les prévisions de recettes et les objectifs de dépenses pour chaque branche ainsi que pour l'ensemble des régimes obligatoires. Il rectifie également les comptes de l'exercice précédent. Enfin, il modifie diverses dispositions relatives aux cotisations sociales, aux exonérations, à la gestion des produits de santé, aux transports sanitaires et aux règles applicables à certaines professions agricoles.",
  "modele": "gemini:gemini-flash-lite-latest",
- "genere_le": "2026-11-11T16:47+00:00",
- "a_refaire": true
+ "genere_le": "2026-11-11T17:43+00:00",
+ "longueur": 169456
 }

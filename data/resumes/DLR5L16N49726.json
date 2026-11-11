@@ -1,11 +1,11 @@
 {
  "dossier": "DLR5L16N49726",
  "texte": "PRJLANR5L17B0990",
- "tentatives": 0,
+ "tentatives": 1,
  "statut": "publie",
- "resume": "Le texte modifie le code rural et de la pêche maritime afin d'inscrire la souveraineté alimentaire comme un objectif prioritaire et un intérêt fondamental de la Nation. Il définit de nombreuses finalités pour les politiques publiques, incluant le renouvellement des générations d'actifs, la juste rémunération des agriculteurs, l'attractivité de la profession, la compétitivité et la sécurité sanitaire. Il prévoit l'organisation de conférences de la souveraineté alimentaire, fixe des objectifs chiffrés pour certaines productions et encadre l'application des normes réglementaires et environnementales.",
+ "resume": "Le texte inscrit la souveraineté alimentaire et l'agriculture parmi les intérêts fondamentaux de la Nation et fixe des objectifs pour l'orientation, la formation et la recherche agricoles. Il modifie les dispositifs d'installation et de transmission des exploitations, crée des outils d'accompagnement pour les agriculteurs et adapte les règles relatives aux activités agricoles, à l'urbanisme et à l'environnement. Enfin, il habilite le Gouvernement à légiférer par ordonnance pour l'outre-mer et pour assurer la cohérence législative.",
  "modele": "gemini:gemini-flash-lite-latest",
  "erreurs": [],
- "genere_le": "2026-11-11T15:17+00:00",
- "a_refaire": true
+ "genere_le": "2026-11-11T17:39+00:00",
+ "longueur": 141778
 }
