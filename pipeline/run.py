@@ -13,6 +13,7 @@ import traceback
 from datetime import date, datetime, timezone
 from pathlib import Path
 
+from . import logos
 from . import config, debats, donnees, export, image, synthese, telegram, verification, photos, communes, circos, presentation, resume, canal
 from .sources import ZipDistant, charger_json, ecrire_json, entete, telecharger
 
@@ -367,6 +368,8 @@ def main(argv=None):
             if args.mode == "quotidien" and not args.fixtures:
                 communes.assurer()
                 circos.assurer()
+            if not args.fixtures:
+                logos.assurer()
             avec_photo = photos.preparer(deputes, telecharger=args.mode == "quotidien" and not args.fixtures)
             export.exporter(scrutins, deputes, groupes, syntheses, charger_retraits(), dates, avec_photo)
             photos.ecrire(avec_photo)

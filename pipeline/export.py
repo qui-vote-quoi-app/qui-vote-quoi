@@ -54,6 +54,9 @@ def exporter(scrutins, deputes, groupes, syntheses, retraits, sources_dates, ave
                        ("civ", "prenom", "nom", "dept", "num_dept", "circo", "place", "actif", "groupe", "debut", "fin")},
          **({"photo": 1} if uid in avec_photo else {})}
         for uid in uids], compact=True)
+    from . import logos
+    groupes = {po: dict(g) for po, g in groupes.items()}
+    logos.exporter(groupes, out)
     ecrire_json(out / "groupes.json", groupes, compact=True)
     shutil.copy(config.PLACES, out / "places.json")
     communes = config.DATA / "communes.json"

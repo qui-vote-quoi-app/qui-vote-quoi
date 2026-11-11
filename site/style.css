@@ -481,3 +481,6 @@ footer{border-top:1px solid var(--rule);margin-top:8px;padding:14px 2px 0;font-s
 .verdict.v-ok,.sc-res.ok{color:var(--pour);background:color-mix(in srgb,var(--pour) 12%,transparent)}
 .verdict.v-ko,.sc-res.ko{color:var(--contre);background:color-mix(in srgb,var(--contre) 12%,transparent)}
 .center-big.ok{fill:var(--pour)}.center-big.ko{fill:var(--contre)}
+.gc-bloc.gc-logo{background:#fff;border-right-width:6px;border-right-style:solid;padding:10px}
+.gc-logo img,.glogo img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+.gbloc.glogo{background:#fff;border-bottom-width:6px;border-bottom-style:solid;padding:12px;width:154px}

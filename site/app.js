@@ -206,7 +206,7 @@
     if (st.grp) {
       var g = s.groupes.filter(function (x) { return x.po === st.grp; })[0], gi = st.groupes[st.grp] || {}, d = g.decompte;
       focus = '<div class="focusline"><span><i class="sq" style="background:' + esc(gi.couleur) + '"></i><b>' + esc(gi.libelle || st.grp) + "</b> : position majoritaire <b>" + esc(g.position || "—") +
-        "</b> · " + d.pour + " pour, " + d.contre + " contre, " + d.abst + " abst., " + d.nv + " non-votants · " + g.membres + ' membres</span><a href="#g-' + st.grp + '">Historique du groupe →</a></div>';
+        "</b> · " + d.pour + " pour, " + d.contre + " contre, " + d.abst + " abst., " + d.nv + " non-votant.e.s · " + g.membres + ' membres</span><a href="#g-' + st.grp + '">Historique du groupe →</a></div>';
     }
     var liens = "";
     if (s.dossier) liens += '<a href="' + AN + "/dyn/17/dossiers/" + esc(s.dossier) + '" target="_blank" rel="noopener">' + EXT + "Texte discuté" + (s.dossier_libelle ? " : " + esc(s.dossier_libelle) : "") + "</a>";
@@ -334,7 +334,8 @@
     } else {
       var gr = st.groupes[h.id] || { libelle: h.id, sigle: "" }, n = 0;
       st.deps.forEach(function (x) { if (x.actif && x.groupe === h.id) n++; });
-      el.innerHTML = '<span class="gbloc" style="background:' + esc(gr.couleur || "#777") + '" aria-hidden="true">' + esc(gr.sigle) + "</span>" +
+      el.innerHTML = (gr.logo ? '<span class="gbloc glogo" style="border-bottom-color:' + esc(gr.couleur || "#777") + '"><img src="data/' + esc(gr.logo) + '" alt="Logo du groupe ' + esc(gr.sigle) + '"></span>' :
+        '<span class="gbloc" style="background:' + esc(gr.couleur || "#777") + '" aria-hidden="true">' + esc(gr.sigle) + "</span>") +
         '<div class="h-id"><div class="eyebrow">Groupe politique' + (gr.fin ? " · dissous le " + dateFr(gr.fin) : "") + "</div><h2>" + esc(gr.libelle) + "</h2>" +
         '<div class="h-meta">' + (n ? "<span>" + n + " député.e.s aujourd'hui</span>" : "") + (gr.debut ? "<span>Créé le " + dateFr(gr.debut) + "</span>" : "") +
         "<span>Pour chaque scrutin : la position exprimée par la majorité des votants du groupe.</span></div></div>";
@@ -390,12 +391,11 @@
         "Les député.e.s se rassemblent en groupes selon leurs affinités politiques. Choisissez un groupe pour voir sa position sur chaque scrutin public.</p></div>";
       var gps = Object.keys(st.groupes).filter(function (po) { return !st.groupes[po].fin && eff[po]; }).sort(function (a, b) { return st.groupes[a].ordre - st.groupes[b].ordre; });
       $("h-liste").innerHTML = '<div class="gcartes">' + gps.map(function (po) {
-        var g = st.groupes[po], membres = actifs.filter(function (d) { return d.groupe === po; });
-        var visages = membres.filter(function (d) { return d.photo; }).slice(0, 5);
-        return '<a class="gcarte" href="#g-' + po + '"><span class="gc-bloc" style="background:' + esc(g.couleur) + '">' + esc(g.sigle) + "</span>" +
+        var g = st.groupes[po];
+        return '<a class="gcarte" href="#g-' + po + '">' + (g.logo ? '<span class="gc-bloc gc-logo" style="border-right-color:' + esc(g.couleur) + '"><img src="data/' + esc(g.logo) + '" alt="Logo du groupe ' + esc(g.sigle) + '" loading="lazy"></span>' :
+          '<span class="gc-bloc" style="background:' + esc(g.couleur) + '">' + esc(g.sigle) + "</span>") +
           '<span class="gc-corps"><b>' + esc(g.libelle) + '</b><span class="note">' + eff[po] + " député.e" + (eff[po] > 1 ? ".s" : "") + " · " + Math.round(eff[po] / 5.77) + " % des sièges</span>" +
           '<span class="gc-barre"><i style="width:' + (100 * eff[po] / 577).toFixed(1) + "%;background:" + esc(g.couleur) + '"></i></span>' +
-          (visages.length ? '<span class="gc-visages">' + visages.map(function (d) { return avatar(d, "sm", g.couleur); }).join("") + "</span>" : "") +
           '<span class="gc-lien">Voir ses votes →</span></span></a>';
       }).join("") + "</div>";
     } else {
@@ -707,6 +707,10 @@
       [].forEach.call(el.querySelectorAll("a[data-vers]"), function (x) {
         x.onclick = function (e) { e.preventDefault(); var c = document.getElementById(x.dataset.vers); if (c) c.scrollIntoView({ behavior: "smooth", block: "start" }); };
       });
+      var cl = el.querySelector("[data-credits-logos]");
+      if (cl) cl.innerHTML = Object.keys(st.groupes).filter(function (po) { return st.groupes[po].logo; }).map(function (po) {
+        var g = st.groupes[po]; return "<li><b>" + esc(g.sigle) + "</b> : " + esc(g.logo_credit) + "</li>";
+      }).join("") || "<li>Aucun logo affiché pour le moment.</li>";
       var fil = el.querySelector("[data-fil]");
       if (fil) getCache("fil.json").then(function (F) {
         fil.innerHTML = (F || []).length ? F.map(function (j) {
