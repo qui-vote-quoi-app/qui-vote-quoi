@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51078",
+ "texte": "PIONANR5L17B0908",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie l'ordonnance portant loi organique relative au statut de la magistrature. Il étend au procureur de la République national anti-criminalité organisée les dispositions applicables concernant le lieu d'exercice ou la spécialisation des magistrats déjà en vigueur pour d'autres juridictions.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:50+00:00"
+}

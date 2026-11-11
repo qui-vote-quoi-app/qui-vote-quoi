@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51516",
+ "texte": "PIONANR5L17B0966",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte soumet l'installation des médecins en ville à l'autorisation préalable de l'agence régionale de santé, sauf dans les zones manquant d'offre de soins. Il complète les motifs de recours à une consultation spécifique pour les patients sans médecin traitant. Il prévoit l'implantation d'enseignements de santé de première année dans chaque département et la présence d'au moins un centre hospitalier universitaire par région. Enfin, il modifie les dispositions relatives à la participation de l'État et prévoit un mécanisme de compensation financière.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:47+00:00"
+}

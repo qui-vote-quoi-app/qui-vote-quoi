@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51973",
+ "texte": "PIONANR5L17B1337",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte prévoit une compensation financière pour l'État en cas de perte de recettes, assurée par la création d'une taxe additionnelle à l'accise sur les tabacs.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:41+00:00"
+}

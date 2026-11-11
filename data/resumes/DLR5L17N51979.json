@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51979",
+ "texte": "PIONANR5L17B1342",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code de la sécurité sociale afin d'élargir le versement des allocations familiales dès le premier enfant, alors qu'elles étaient auparavant attribuées à partir du deuxième. Il prévoit également de compenser le coût de cette mesure pour les organismes de sécurité sociale par une majoration de l'accise sur les tabacs.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:35+00:00"
+}

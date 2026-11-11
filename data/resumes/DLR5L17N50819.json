@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N50819",
+ "texte": "PIONANR5L17B0856",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie les règles relatives à l'exercice du métier d'agriculteur en encadrant les activités liées aux produits phytopharmaceutiques et en créant un conseil stratégique global. Il adapte les conditions d'exercice du conseil sur ces produits et précise ses modalités de mise en œuvre. Enfin, il encadre l'utilisation de la pulvérisation aérienne de produits phytopharmaceutiques en fixant les interdictions, les dérogations possibles et les conditions d'expérimentation pour certains aéronefs sans personne à bord.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:26+00:00"
+}

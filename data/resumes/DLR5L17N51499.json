@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51499",
+ "texte": "PIONANR5L17B0949",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte exprime la reconnaissance de la Nation envers les rapatriés d’Indochine et reconnaît sa responsabilité quant à leurs conditions d'accueil indignes. Il institue une journée nationale d’hommage le 14 août et des lieux de mémoire. Il prévoit une indemnisation financière forfaitaire pour les personnes concernées et leurs enfants ayant séjourné dans des structures d'accueil entre 1954 et 2014. Enfin, il intègre ces dispositions dans la commission nationale indépendante existante et exonère la somme forfaitaire d’impôt sur le revenu et de contributions sociales.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:38+00:00"
+}

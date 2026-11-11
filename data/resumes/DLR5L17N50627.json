@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N50627",
+ "texte": "PIONANR5L17B0369",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code pénal pour étendre les infractions relatives à la corruption de mineurs et aux atteintes sexuelles. Il intègre explicitement les cas où la victime est une personne se présentant comme un mineur. Ces modifications s'appliquent aux articles du code pénal régissant ces délits.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:44+00:00"
+}

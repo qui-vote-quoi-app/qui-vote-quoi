@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N50413",
+ "texte": "PIONANR5L17B0255",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte crée une croix de la valeur destinée aux sapeurs-pompiers volontaires et professionnels afin de récompenser leur bravoure et leur engagement opérationnel exceptionnel en intervention. Il prévoit que les règles d'attribution, de promotion et de statut de cette distinction soient fixées par arrêté du ministre de l'intérieur. Enfin, il compense la charge financière pour l'État par la création d'une taxe additionnelle sur les tabacs.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:44+00:00"
+}

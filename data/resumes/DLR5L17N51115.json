@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51115",
+ "texte": "PIONANR5L17B1034",
+ "tentatives": 1,
+ "statut": "en_attente",
+ "erreurs": [
+  "nom de député : Martin",
+  "nom de député : Saint-Martin"
+ ]
+}

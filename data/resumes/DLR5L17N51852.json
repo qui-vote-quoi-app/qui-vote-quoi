@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51852",
+ "texte": "PIONANR5L17B1240",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie les règles d'urbanisme et de construction en adaptant des seuils numériques relatifs aux parcs de stationnement et aux zones d'aménagement. Il autorise, sous conditions, des dérogations aux plans locaux d'urbanisme pour la création de logements dans les zones d'activités et les territoires industriels. Il permet l'extension de périmètres d'établissements publics fonciers, encadre les permis d'aménager pour des unités foncières non contiguës et modifie les sanctions ainsi que les délais de recours en matière d'urbanisme.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:21+00:00"
+}

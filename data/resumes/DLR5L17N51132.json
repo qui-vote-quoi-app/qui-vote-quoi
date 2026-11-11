@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51132",
+ "texte": "PIONANR5L17B0732",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte permet à chaque salarié du secteur privé et public de s'absenter de son travail pour participer à un don du sang, de plaquettes ou de plasma. Il prévoit que la rémunération du salarié peut être maintenue par l'employeur pour la durée strictement nécessaire au déplacement, aux examens médicaux, au prélèvement et au repos jugé nécessaire. Enfin, le texte autorise l'employeur à demander au salarié un justificatif de son don ou de son déplacement dans un centre de prélèvement.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:36+00:00"
+}

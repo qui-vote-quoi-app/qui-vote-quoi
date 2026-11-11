@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N50689",
+ "texte": "PIONANR5L17B0446",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte intègre explicitement le projet parental parmi les critères de discrimination prohibés. Il modifie à cet effet la loi du 27 mai 2008 portant diverses dispositions d'adaptation au droit communautaire dans le domaine de la lutte contre les discriminations ainsi que le code du travail.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:49+00:00"
+}

@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N52655",
+ "texte": "PIONANR5L17B1969",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte reporte au plus tard au 28 juin 2026 les prochaines élections des membres du congrès et des assemblées de province de la Nouvelle-Calédonie. Il prévoit la mise à jour de la liste électorale spéciale dix jours avant le scrutin, prolonge les mandats en cours ainsi que les fonctions des membres des organes du congrès jusqu'à la première réunion des nouvelles assemblées, et fixe l'entrée en vigueur de la loi au lendemain de sa publication.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:17+00:00"
+}

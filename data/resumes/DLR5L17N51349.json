@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51349",
+ "texte": "PIONANR5L17B0842",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie la définition pénale du viol et des agressions sexuelles dans le code pénal en intégrant la notion de consentement. Il précise que le consentement doit être libre, spécifique, apprécié selon les circonstances et qu'il peut être retiré à tout moment. Il indique également que le silence ou l'absence de résistance ne vaut pas consentement, et que l'absence de consentement peut être déduite de la vulnérabilité de la personne ou de l'usage de violences, contraintes, menaces ou surprises.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:19+00:00"
+}

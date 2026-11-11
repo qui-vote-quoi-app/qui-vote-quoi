@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51986",
+ "texte": "PRJLANR5L17B1440",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte autorise le Gouvernement à légiférer par ordonnance pour définir les modalités d'intégration des personnels enseignants du premier degré des îles Wallis et Futuna dans la fonction publique de l'État, à l'issue de la convention de concession de 2020-2025. Il prévoit également la possibilité pour ces enseignants d'opter pour le maintien de leur régime de retraite local ou d'être affiliés au régime spécial de leur corps d'intégration. Enfin, il fixe l'obligation de déposer un projet de loi de ratification devant le Parlement dans les six mois suivant la publication de l'ordonnance.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:43+00:00"
+}

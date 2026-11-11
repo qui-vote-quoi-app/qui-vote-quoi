@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N50724",
+ "texte": "PIONANR5L17B1009",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code de l'éducation afin d'instaurer des formations obligatoires sur la lutte contre l'antisémitisme, le racisme et les discriminations dans l'enseignement supérieur. Il prévoit la création d'une mission « Égalité et diversité » et d'un dispositif de signalement anonymisé au sein des établissements. Enfin, il renforce les procédures disciplinaires applicables aux étudiants et aux personnels en cas de manquements.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:28+00:00"
+}

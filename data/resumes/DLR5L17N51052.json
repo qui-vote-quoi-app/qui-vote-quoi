@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51052",
+ "texte": "PIONANR5L17B1163",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code électoral concernant les conditions du vote, notamment en étendant certaines dispositions aux descendants et en ajustant les règles applicables lors d'un scrutin à circonscription unique ou référendaire. Il précise également l'application de ces dispositions pour le prochain renouvellement général des conseils municipaux et prévoit un mécanisme de compensation financière par une taxe additionnelle sur les tabacs.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:37+00:00"
+}

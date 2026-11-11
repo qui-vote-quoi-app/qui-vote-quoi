@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N50692",
+ "texte": "PIONANR5L17B0451",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte prévoit que la loi entre en vigueur lors du prochain renouvellement général des conseils municipaux. Il dispose également que le Gouvernement remet au Parlement, dans un délai de six mois à compter de sa promulgation, un rapport évaluant les transferts possibles de compétences de la mairie centrale vers les mairies d'arrondissement à Paris, Lyon et Marseille.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:27+00:00"
+}

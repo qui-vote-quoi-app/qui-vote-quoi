@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51716",
+ "texte": "PIONANR5L17B1138",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code de procédure pénale pour encadrer la transmission aux victimes des informations relatives aux suites données à leur plainte. Il supprime la condition d'une demande préalable pour l'avis de poursuites ou de classement et permet à la victime de choisir son mode de réception. La décision doit être rédigée en termes simples et accessibles. Enfin, le texte prévoit une compensation financière pour l'État.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:48+00:00"
+}

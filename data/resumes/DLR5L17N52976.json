@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N52976",
+ "texte": "PIONANR5L17B1962",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code des postes et des communications électroniques pour étendre le tarif unique des envois de correspondance à l'unité à l'ensemble des collectivités d'outre-mer, sans distinction de poids, en s'appuyant sur la péréquation nationale des tarifs. Il prévoit également que cette charge financière pour l'État est compensée par la création d'une taxe additionnelle à l'accise sur les tabacs.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:10+00:00"
+}

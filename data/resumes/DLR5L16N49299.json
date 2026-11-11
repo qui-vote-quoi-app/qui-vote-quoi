@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L16N49299",
+ "texte": "PIONANR5L17B1423",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte renforce la protection pénale des professionnels de santé et des personnels des structures sanitaires et médico-sociales en alourdissant les peines encourues en cas de violences, d'outrages ou de vols commis à leur encontre. Il permet également aux employeurs et aux ordres professionnels de déposer plainte sous certaines conditions, et étend les règles de protection fonctionnelle.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:30+00:00"
+}

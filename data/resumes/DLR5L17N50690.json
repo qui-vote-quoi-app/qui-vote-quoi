@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N50690",
+ "texte": "PIONANR5L17B0448",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code pénal pour alourdir les sanctions en cas de soustraction des parents à leurs obligations et introduit le travail d'intérêt général. Il oblige les parents à répondre aux convocations du juge des enfants sous peine d'amende civile et réaffirme leur responsabilité civile solidaire de plein droit. Enfin, il modifie le code de la justice pénale des mineurs en créant une procédure de comparution immédiate pour certains mineurs de plus de seize ans et en supprimant l'excuse de minorité en cas de récidive légale pour certains crimes et délits.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:47+00:00"
+}

@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51702",
+ "texte": "PIONANR5L17B1435",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte valide les arrêtés préfectoraux de mars 2023 concernant les autorisations environnementales pour la liaison autoroutière entre Castres et Toulouse ainsi que pour la mise à deux fois deux voies de l'A680. Cette validation s'applique sous réserve des décisions de justice définitives et reconnaît explicitement la raison impérative d'intérêt public majeur pour le projet.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:42+00:00"
+}

@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N52787",
+ "texte": "PIONANR5L17B1837",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code de la consommation pour rendre obligatoire l'indication du pays d'origine de tout produit agricole, alimentaire ou de la mer, qu'il soit brut ou transformé, ainsi que l'origine des ingrédients principaux ou représentant au moins 10 % de la composition. Il impose des règles spécifiques pour l'étiquetage des miels mélangés et précise les conditions d'utilisation des symboles valorisant la fabrication française. Enfin, il crée une sanction pénale d'un an d'emprisonnement et de 150 000 euros d'amende en cas de non-respect de ces obligations d'information.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:13+00:00"
+}

@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51002",
+ "texte": "PIONANR5L17B0654",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code de la santé publique concernant la profession d'infirmier. Il redéfinit son rôle propre, ses missions, ses conditions d'exercice et ses compétences en matière de prescription et de consultations. Il élargit également les modes d'exercice possibles pour les infirmiers en pratique avancée au sein de structures médico-sociales et de santé scolaire, et adapte les conditions d'obtention des diplômes correspondants. Enfin, il prévoit une compensation financière pour les organismes de sécurité sociale.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:32+00:00"
+}

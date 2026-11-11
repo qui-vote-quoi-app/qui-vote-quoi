@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51429",
+ "texte": "PIONANR5L17B1148",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie les règles relatives au maintien en rétention des étrangers. Il élargit les motifs permettant de saisir un juge pour prolonger la rétention aux personnes faisant l'objet d'une interdiction du territoire, d'une décision d'éloignement pour des crimes ou délits punis d'au moins cinq ans d'emprisonnement, ou dont le comportement constitue une menace grave pour l'ordre public. Il prolonge la durée maximale de rétention, allonge certains délais de procédure de quatre à quatre-vingt-seize heures, et précise les informations consignées dans les registres.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:25+00:00"
+}

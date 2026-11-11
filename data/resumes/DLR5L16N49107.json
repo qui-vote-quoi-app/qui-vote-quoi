@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L16N49107",
+ "texte": "PIONANR5L16B2003",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte prévoit d'autoriser la transformation de bureaux en logements malgré les interdictions des plans locaux d'urbanisme, après avis municipal. Il intègre ces opérations et certaines transformations de locaux commerciaux dans le champ de la taxe d'aménagement. Il permet aux demandes de permis de porter sur des constructions à destinations successives. Il étend l'accès à certains marchés publics aux centres régionaux des œuvres universitaires et scolaires. Enfin, il encadre les règles de copropriété pour faciliter les changements d'usage vers l'habitation et adapter la répartition des charges.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:40+00:00"
+}
