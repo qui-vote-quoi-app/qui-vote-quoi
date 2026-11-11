@@ -14,7 +14,7 @@ COMMONS = "https://commons.wikimedia.org/wiki/Special:FilePath/{}?width=320"
 LOGOS = {
     "RN": ("Groupe RN 2024.png", "CC BY-SA 4.0", "Rassemblement National"),
     "EPR": ("Groupe EPR.png", "CC BY 4.0", "Ensemble pour la République"),
-    "LFI-NFP": ("Groupe La France insoumise Logo.jpg", "CC0", "auteur inconnu"),
+    "LFI-NFP": ("LOGO-LFI-2026.png", "domaine public", "La France insoumise"),
     "SOC": ("Le Parti socialiste wordmark.svg", "domaine public", "Parti socialiste"),
     "DR": ("La Droite Républicaine logo 2024.png", "CC BY-SA 4.0", "La Droite Républicaine"),
     "ECOS": ("Ecologiste 2024.png", "CC BY 4.0", "Groupe écologiste et social"),
