@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51173",
+ "texte": "PIONANR5L17B1432",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie les modalités d'intervention des communes et des groupements intercommunaux en Polynésie française dans plusieurs domaines de compétences. Il supprime des conditions initiales et prévoit que le conseil municipal ou l'organe délibérant détermine par délibération les actions menées, dans le respect de la réglementation locale et après un délai minimal de six mois. Cette délibération est transmise aux autorités compétentes, permettant à la collectivité d'engager ses actions et de préciser éventuellement les interventions par convention.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T12:16+00:00"
+}

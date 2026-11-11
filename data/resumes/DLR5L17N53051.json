@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N53051",
+ "texte": "PIONANR5L17B2021",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte prévoit la suspension des effets des décisions de refus de minorité en cas de contestation, garantissant le maintien de l'accueil provisoire d'urgence jusqu'à une décision judiciaire définitive. Il crée également un Observatoire national du sans-abrisme chargé de collecter, analyser et suivre les données relatives aux personnes sans domicile et mineures privées de protection, et de remettre un rapport annuel public. Enfin, il établit des mécanismes de compensation financière pour l'État et les collectivités territoriales.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T12:05+00:00"
+}

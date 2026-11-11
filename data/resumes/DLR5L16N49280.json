@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L16N49280",
+ "texte": "PIONANR5L17B0136",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code général des collectivités territoriales en ajustant les taux des indemnités de fonction des élus locaux, notamment pour les maires, les adjoints, les présidents et les membres des exécutifs des différentes collectivités ainsi que des groupements de communes. Il permet également aux assemblées délibérantes de fixer, par délibération et à la demande des concernés, des indemnités inférieures aux barèmes maximaux prévus.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T12:22+00:00"
+}

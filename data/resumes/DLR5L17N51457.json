@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51457",
+ "texte": "PIONANR5L17B1670",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie les règles relatives à la protection sociale complémentaire des agents publics territoriaux. Il rend obligatoire la souscription des agents à certaines garanties minimales de prévoyance dans le cadre de contrats collectifs, tout en prévoyant des cas de dispense et des possibilités d'amélioration par accord collectif. Il encadre la participation financière des employeurs publics, interdit le refus de prise en charge d'états pathologiques antérieurs et adapte l'obligation d'adhésion pour les agents en congé de santé.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T12:11+00:00"
+}
