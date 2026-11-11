@@ -4,6 +4,7 @@ Sources : Wikimedia Commons (licences libres) ou Wikipédia en français (logos 
 reproduits uniquement pour identifier le groupe). Chaque logo est téléchargé une fois, posé sur un
 carré blanc de 400 px et enregistré dans data/logos/<SIGLE>.png. Les non-inscrits, qui n'ont pas de
 logo, reçoivent un carré « NI » dessiné ici. Les crédits sont affichés dans les mentions légales."""
+import hashlib
 import shutil
 import urllib.parse
 from pathlib import Path
@@ -103,7 +104,7 @@ def exporter(groupes, out):
         if not src.exists() or (sigle not in LOGOS and sigle != "NI"):
             continue
         shutil.copy(src, out / "logos" / src.name)
-        g["logo"] = f"logos/{src.name}"
+        g["logo"] = f"logos/{src.name}?v={hashlib.sha1(src.read_bytes()).hexdigest()[:8]}"  # contre le cache
         if sigle in LOGOS:
             modele, fichier, licence, auteur = LOGOS[sigle]
             lieu = "Wikimedia Commons" if modele == COMMONS else "Wikipédia"
