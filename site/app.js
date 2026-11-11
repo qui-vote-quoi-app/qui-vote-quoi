@@ -403,13 +403,14 @@
       $("h-head").innerHTML = '<div class="h-id"><div class="eyebrow">Les député.e.s</div><h2>' + actifs.length + " député.e.s en exercice</h2>" +
         '<p class="note" style="margin:6px 0 0;font-size:14px">' + f + " femmes et " + (actifs.length - f) + " hommes, pour 577 sièges (certains sièges sont momentanément vacants). Choisissez un.e député.e pour voir tous ses votes lors des scrutins publics (les votes à main levée ne sont pas nominatifs).</p>" +
         '<p style="margin:12px 0 0"><a class="btn plein" href="#accueil" id="h-trouver">Trouver mon ou ma député.e avec mon adresse →</a></p></div>';
-      var deps = {}; actifs.forEach(function (d) { if (d.dept) deps[d.dept] = (deps[d.dept] || 0) + 1; });
-      var noms = Object.keys(deps).sort(function (a, b) { return a.localeCompare(b, "fr"); });
+      var deps = {}; actifs.forEach(function (d) { if (d.dept) deps[d.dept] = d.num_dept || ""; });
+      var cleTri = function (c) { return c === "099" ? "zzz" : c === "2A" ? "20a" : c === "2B" ? "20b" : (c.length < 3 ? "0" : "") + c; };
+      var noms = Object.keys(deps).sort(function (a, b) { return cleTri(deps[a]) < cleTri(deps[b]) ? -1 : 1; });
       var recents = st.deps.map(function (d, i) { return [d, i]; }).filter(function (x) { return (x[0].debut || "") > "2024-08-01" || (x[0].fin && x[0].fin > "2024-08-01"); })
         .map(function (x) { var d = x[0], arr = !d.fin || d.debut > d.fin; return { i: x[1], date: arr ? d.debut : d.fin, arr: arr }; })
         .sort(function (a, b) { return b.date < a.date ? -1 : 1; }).slice(0, 6);
       $("h-liste").innerHTML = '<h3 class="h-sous">Par département</h3><label class="sr" for="h-dept">Département</label><select id="h-dept" class="h-dept"><option value="">Choisir un département…</option>' +
-        noms.map(function (n) { return '<option value="' + esc(n) + '">' + esc(n) + " (" + deps[n] + ")</option>"; }).join("") + '</select><div id="h-dept-res" class="dcartes"></div>' +
+        noms.map(function (n) { return '<option value="' + esc(n) + '">' + esc(deps[n] && deps[n] !== "099" ? deps[n] + " - " + n : n) + "</option>"; }).join("") + '</select><div id="h-dept-res" class="dcartes"></div>' +
         (recents.length ? '<h3 class="h-sous">Arrivées et départs récents</h3><div class="dcartes">' + recents.map(function (r) {
           var d = st.deps[r.i], fem = d.civ === "Mme";
           return carteDepute(r.i).replace('<span class="m">', '<span class="m h-mouv ' + (r.arr ? "arr" : "dep") + '">' + (r.arr ? (fem ? "Arrivée" : "Arrivé") : "Fin de mandat") + " le " + dateCourte(r.date) + '</span><span class="m">');
