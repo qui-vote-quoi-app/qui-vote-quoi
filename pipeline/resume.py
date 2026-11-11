@@ -138,18 +138,27 @@ def traiter(scrutins, textes, deputes, rapport, args, budget_s):
             _sauver(ref, r)
             continue
         titre = next((s.get("dossier_libelle") or s["titre"] for s in scrutins.values() if s.get("dossier") == ref), "")
-        prompt = (CONSIGNES + f"\n\nTITRE : {titre}\n\nARTICLES :\n{disp[:DISPOSITIF_MAX]}"
+        prompt = (f"TITRE : {titre}\n\nARTICLES :\n{disp[:DISPOSITIF_MAX]}"
                   + ("\n\n[Texte tronqué : résume ses grandes lignes.]" if len(disp) > DISPOSITIF_MAX else ""))
-        try:
-            reponse, modele = synthese.appeler_ia(prompt)
-            resume = (synthese.lire_reponse(reponse).get("resume") or "").strip()
-        except synthese.IAIndisponible as e:
-            print(f"Résumé {ref} : IA indisponible ({e})")
+        panne, resume, modele, erreurs = False, "", "", ["résumé vide"]
+        for essai in range(2):  # une relance en signalant le problème (trop long, mot de jugement…)
+            consigne = prompt if essai == 0 else (prompt + "\n\nTa réponse précédente a été refusée : "
+                                                  + "; ".join(erreurs) + ". Corrige-la (75 mots au maximum).")
+            try:
+                reponse, modele = synthese.appeler_ia(consigne, systeme=CONSIGNES)
+                resume = (synthese.lire_reponse(reponse).get("resume") or "").strip()
+            except synthese.IAIndisponible as e:
+                print(f"Résumé {ref} : IA indisponible ({e})")
+                panne = True
+                break
+            except (ValueError, AttributeError):
+                resume = ""
+            erreurs = verifier(resume, noms)
+            if not erreurs:
+                break
+        if panne:
             rapport.infos.append("IA indisponible pour les résumés de textes : nouvel essai au prochain passage.")
             break
-        except (ValueError, AttributeError):
-            resume, modele = "", ""
-        erreurs = verifier(resume, noms)
         r["tentatives"] = r.get("tentatives", 0) + 1
         if erreurs:
             bloques += 1

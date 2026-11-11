@@ -65,7 +65,8 @@ def _modele():
     return config.IA_MODELE or config.MODELES_PAR_DEFAUT[config.IA_FOURNISSEUR]
 
 
-def _requete(modele, prompt):
+def _requete(modele, prompt, systeme=None):
+    systeme = systeme or CONSIGNES
     fournisseur = config.IA_FOURNISSEUR
     if fournisseur == "gemini":
         # Raisonnement interne désactivé : c'est une tâche d'extraction, et c'est bien plus rapide.
@@ -76,7 +77,7 @@ def _requete(modele, prompt):
             f"https://generativelanguage.googleapis.com/v1beta/models/{modele}:generateContent",
             headers={"x-goog-api-key": os.environ["GEMINI_API_KEY"]},
             json={
-                "systemInstruction": {"parts": [{"text": CONSIGNES}]},
+                "systemInstruction": {"parts": [{"text": systeme}]},
                 "contents": [{"role": "user", "parts": [{"text": prompt}]}],
                 "generationConfig": generation,
             },
@@ -84,7 +85,7 @@ def _requete(modele, prompt):
         )
         if r.status_code == 400 and "thinkingConfig" in generation:
             _REFLEXION_NON_DESACTIVABLE.add(modele)
-            return _requete(modele, prompt)
+            return _requete(modele, prompt, systeme)
         r.raise_for_status()
         parts = r.json()["candidates"][0]["content"]["parts"]
         return "".join(p.get("text", "") for p in parts if not p.get("thought"))
@@ -93,7 +94,7 @@ def _requete(modele, prompt):
             "https://api.mistral.ai/v1/chat/completions",
             headers={"Authorization": f"Bearer {os.environ['MISTRAL_API_KEY']}"},
             json={"model": modele, "temperature": 0.2, "response_format": {"type": "json_object"},
-                  "messages": [{"role": "system", "content": CONSIGNES},
+                  "messages": [{"role": "system", "content": systeme},
                                {"role": "user", "content": prompt}]},
             timeout=90,
         )
@@ -103,7 +104,7 @@ def _requete(modele, prompt):
         r = requests.post(
             "https://api.anthropic.com/v1/messages",
             headers={"x-api-key": os.environ["ANTHROPIC_API_KEY"], "anthropic-version": "2023-06-01"},
-            json={"model": modele, "max_tokens": 2000, "temperature": 0.2, "system": CONSIGNES,
+            json={"model": modele, "max_tokens": 2000, "temperature": 0.2, "system": systeme,
                   "messages": [{"role": "user", "content": prompt}]},
             timeout=90,
         )
@@ -112,14 +113,14 @@ def _requete(modele, prompt):
     raise ValueError(f"Fournisseur d'IA inconnu : {fournisseur}")
 
 
-def appeler_ia(prompt: str):
-    """Renvoie (texte, "fournisseur:modèle"). Réessaie sur les erreurs temporaires,
+def appeler_ia(prompt: str, systeme: str = None):
+    """`systeme` : consignes système (par défaut celles des synthèses de débat). Renvoie (texte, "fournisseur:modèle"). Réessaie sur les erreurs temporaires,
     puis bascule sur le modèle de secours ; lève IAIndisponible si tout échoue."""
     derniere = None
     for modele in [_modele()] + SECOURS.get(config.IA_FOURNISSEUR, []):
         for attente in ATTENTES + [None]:
             try:
-                return _requete(modele, prompt), f"{config.IA_FOURNISSEUR}:{modele}"
+                return _requete(modele, prompt, systeme), f"{config.IA_FOURNISSEUR}:{modele}"
             except requests.HTTPError as e:
                 code = e.response.status_code if e.response is not None else 0
                 derniere = f"{modele} : erreur {code}"
