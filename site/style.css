@@ -488,3 +488,18 @@ footer{border-top:1px solid var(--rule);margin-top:8px;padding:14px 2px 0;font-s
 .tg-cit{margin:8px 0;padding:4px 10px;border-left:3px solid var(--pour);background:var(--tint);font-size:14px}
 .tg-boutons{display:block;margin-top:8px}.tg-boutons a{display:block;text-align:center;padding:7px;background:var(--tint);border-radius:8px;text-decoration:none;color:var(--ink);font-weight:600}
 @media (max-width:640px){.gbloc.glogo{width:96px;height:96px;min-width:96px}}
+.h-id-large{width:100%;min-width:0}
+.h-id-large .hero-recherche{border-top:0;padding-top:0}
+.h-id-large .trouver label{display:none}
+.trombi-filtres{display:flex;flex-direction:column;gap:10px;margin-bottom:6px}
+.trombi-grp{display:flex;flex-wrap:wrap;gap:6px}
+.trombi-grp button{display:inline-flex;align-items:center;gap:6px;font-family:var(--display);font-weight:700;font-size:14px;letter-spacing:.04em;padding:6px 10px;border:1px solid var(--rule);background:var(--sheet);color:var(--ink);cursor:pointer}
+.trombi-grp button[aria-pressed="true"]{background:var(--ink);color:var(--sheet)}
+.trombi{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.tcarte{display:flex;flex-direction:column;align-items:center;text-align:center;gap:4px;padding:12px 8px;border:1px solid var(--hair);background:var(--sheet);color:var(--ink);text-decoration:none}
+.tcarte:hover{background:var(--tint)}
+.tcarte .av{margin-bottom:4px}
+.tcarte b{font-size:14.5px;line-height:1.25}
+.tcarte .m{font-size:12.5px;color:var(--muted);display:inline-flex;align-items:center;gap:5px}
+.trombi .more{grid-column:1/-1}
+@media (max-width:640px){.trombi{grid-template-columns:repeat(2,minmax(0,1fr))}}

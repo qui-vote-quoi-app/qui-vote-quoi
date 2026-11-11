@@ -399,29 +399,39 @@
           '<span class="gc-lien">Voir ses votes →</span></span></a>';
       }).join("") + "</div>";
     } else {
-      var f = actifs.filter(function (d) { return d.civ === "Mme"; }).length;
-      $("h-head").innerHTML = '<div class="h-id"><div class="eyebrow">Les député.e.s</div><h2>' + actifs.length + " député.e.s en exercice</h2>" +
-        '<p class="note" style="margin:6px 0 0;font-size:14px">' + f + " femmes et " + (actifs.length - f) + " hommes, pour 577 sièges (certains sièges sont momentanément vacants). Choisissez un.e député.e pour voir tous ses votes lors des scrutins publics (les votes à main levée ne sont pas nominatifs).</p>" +
-        '<p style="margin:12px 0 0"><a class="btn plein" href="#accueil" id="h-trouver">Trouver mon ou ma député.e avec mon adresse →</a></p></div>';
+      // Recherche « Trouver mon ou ma député.e » : le même formulaire que l'accueil, déplacé ici.
+      $("h-head").innerHTML = '<div class="h-id h-id-large"><div class="eyebrow">Les député.e.s</div><h2>Qui est votre député.e&nbsp;?</h2>' +
+        '<p class="note" style="margin:6px 0 12px;font-size:14px">Tapez votre adresse ou votre commune : on vous montre votre député.e et tous ses votes.</p><div id="h-recherche"></div></div>';
+      var rech = document.querySelector(".hero-recherche");
+      if (rech) $("h-recherche").appendChild(rech);
       var deps = {}; actifs.forEach(function (d) { if (d.dept) deps[d.dept] = d.num_dept || ""; });
       var cleTri = function (c) { return c === "099" ? "zzz" : c === "2A" ? "020a" : c === "2B" ? "020b" : (c.length < 3 ? "0" : "") + c; };
       var noms = Object.keys(deps).sort(function (a, b) { return cleTri(deps[a]) < cleTri(deps[b]) ? -1 : 1; });
-      var recents = st.deps.map(function (d, i) { return [d, i]; }).filter(function (x) { return (x[0].debut || "") > "2024-08-01" || (x[0].fin && x[0].fin > "2024-08-01"); })
-        .map(function (x) { var d = x[0], arr = !d.fin || d.debut > d.fin; return { i: x[1], date: arr ? d.debut : d.fin, arr: arr }; })
-        .sort(function (a, b) { return b.date < a.date ? -1 : 1; }).slice(0, 6);
-      $("h-liste").innerHTML = '<h3 class="h-sous">Par département</h3><label class="sr" for="h-dept">Département</label><select id="h-dept" class="h-dept"><option value="">Choisir un département…</option>' +
-        noms.map(function (n) { return '<option value="' + esc(n) + '">' + esc(deps[n] && deps[n] !== "099" ? deps[n] + " - " + n : n) + "</option>"; }).join("") + '</select><div id="h-dept-res" class="dcartes"></div>' +
-        (recents.length ? '<h3 class="h-sous">Arrivées et départs récents</h3><div class="dcartes">' + recents.map(function (r) {
-          var d = st.deps[r.i], fem = d.civ === "Mme";
-          return carteDepute(r.i).replace('<span class="m">', '<span class="m h-mouv ' + (r.arr ? "arr" : "dep") + '">' + (r.arr ? (fem ? "Arrivée" : "Arrivé") : "Fin de mandat") + " le " + dateCourte(r.date) + '</span><span class="m">');
-        }).join("") + "</div>" : "");
-      $("h-dept").onchange = function () {
-        var v = this.value, ids = [];
-        st.deps.forEach(function (d, i) { if (d.actif && d.dept === v) ids.push(i); });
-        ids.sort(function (a, b) { return st.deps[a].circo - st.deps[b].circo; });
-        $("h-dept-res").innerHTML = ids.map(carteDepute).join("");
+      var gps = Object.keys(st.groupes).filter(function (po) { return !st.groupes[po].fin && eff[po]; }).sort(function (a, b) { return st.groupes[a].ordre - st.groupes[b].ordre; });
+      var f = st.dfiltre || (st.dfiltre = { dept: "", grp: "", lim: 48 });
+      $("h-liste").innerHTML = '<h3 class="h-sous">Parcourir les ' + actifs.length + " député.e.s</h3>" +
+        '<div class="trombi-filtres"><label class="sr" for="h-dept">Département</label><select id="h-dept" class="h-dept"><option value="">Tous les départements</option>' +
+        noms.map(function (n) { return '<option value="' + esc(n) + '"' + (f.dept === n ? " selected" : "") + ">" + esc(deps[n] && deps[n] !== "099" ? deps[n] + " - " + n : n) + "</option>"; }).join("") + "</select>" +
+        '<div class="trombi-grp" id="h-grp" role="group" aria-label="Groupe"><button type="button" data-po="" aria-pressed="' + !f.grp + '">Tous</button>' +
+        gps.map(function (po) { var g = st.groupes[po]; return '<button type="button" data-po="' + po + '" aria-pressed="' + (f.grp === po) + '"><i class="sq" style="background:' + esc(g.couleur) + '"></i>' + esc(g.sigle) + "</button>"; }).join("") + "</div></div>" +
+        '<p class="sompte" id="h-compte"></p><div class="trombi" id="h-trombi"></div>';
+      var rendre = function () {
+        var ids = [];
+        st.deps.forEach(function (d, i) { if (d.actif && (!f.dept || d.dept === f.dept) && (!f.grp || d.groupe === f.grp)) ids.push(i); });
+        ids.sort(function (x, y) { var a = st.deps[x], b = st.deps[y]; return f.dept ? a.circo - b.circo : a.nom.localeCompare(b.nom, "fr") || a.prenom.localeCompare(b.prenom, "fr"); });
+        $("h-compte").textContent = ids.length + (ids.length > 1 ? " député.e.s" : " député.e");
+        $("h-trombi").innerHTML = ids.slice(0, f.lim).map(function (i) {
+          var d = st.deps[i], g = st.groupes[d.groupe] || {};
+          return '<a class="tcarte" href="#d-' + d.id + '">' + avatar(d, "lg", g.couleur) + '<b>' + esc(d.prenom + " " + d.nom) + '</b><span class="m"><i class="sq" style="background:' + esc(g.couleur) + '"></i>' + esc(g.sigle || "—") + '</span><span class="m">' + esc(d.dept || "") + (d.circo ? " · " + ord(d.circo) + " circ." : "") + "</span></a>";
+        }).join("") + (ids.length > f.lim ? '<button type="button" class="more" id="h-plus">Afficher plus (' + (ids.length - f.lim) + " restant" + (ids.length - f.lim > 1 ? "s" : "") + ")</button>" : "");
+        var plus = $("h-plus"); if (plus) plus.onclick = function () { f.lim += 96; rendre(); };
       };
-      $("h-trouver").onclick = function () { setTimeout(function () { var t = $("tq"); if (t) { t.focus(); t.scrollIntoView({ block: "center" }); } }, 50); };
+      $("h-dept").onchange = function () { f.dept = this.value; f.lim = 48; rendre(); };
+      $("h-grp").onclick = function (e) {
+        var b = e.target.closest("button"); if (!b) return; f.grp = b.dataset.po; f.lim = 48;
+        [].forEach.call(this.querySelectorAll("button"), function (x) { x.setAttribute("aria-pressed", x === b); }); rendre();
+      };
+      rendre();
     }
     $("h-liste").hidden = false;
     document.title = (type === "d" ? "Député.e.s" : "Groupes") + " · Qui vote quoi ?";
@@ -432,6 +442,10 @@
     var n = {};
     st.deps.forEach(function (d) { if (d.actif && d.groupe) n[d.groupe] = (n[d.groupe] || 0) + 1; });
     return n;
+  }
+  function rangerRecherche() {
+    var rech = document.querySelector(".hero-recherche"), hero = document.querySelector(".hero");
+    if (rech && hero && rech.parentNode !== hero) hero.appendChild(rech);
   }
   function rendreAccueil() {
     var nbMaj = 0;
@@ -665,6 +679,7 @@
   })();
   function modeLateral() { return st.vue === "accueil" ? "scrutins" : st.vue; }
   function definirVue(v) {
+    rangerRecherche();
     if (st.vue !== v) {
       var avant = st.vue && modeLateral();
       st.vue = v;
