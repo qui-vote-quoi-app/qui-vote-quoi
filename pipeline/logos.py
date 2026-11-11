@@ -14,7 +14,7 @@ from PIL import Image, ImageDraw, ImageFont
 from . import config
 from .sources import telecharger
 
-VERSION = "3"   # à incrémenter pour forcer un nouveau téléchargement
+VERSION = "4"   # à incrémenter pour forcer un nouveau téléchargement
 COMMONS = "https://commons.wikimedia.org/wiki/Special:FilePath/{}?width=600"
 FRWIKI = "https://fr.wikipedia.org/wiki/Special:FilePath/{}?width=600"
 # sigle -> (adresse modèle, fichier, licence, auteur ou titulaire)
@@ -33,7 +33,7 @@ LOGOS = {
 }
 DOSSIER = config.DATA / "logos"
 BRUT = config.CACHE / "logos"
-COTE, MARGE = 400, 36
+COTE, MARGE = 400, 16
 POLICE = Path(__file__).parent / "polices" / "BarlowCondensed-Bold.ttf"
 
 

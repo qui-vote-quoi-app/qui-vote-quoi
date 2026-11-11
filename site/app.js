@@ -392,7 +392,7 @@
       var gps = Object.keys(st.groupes).filter(function (po) { return !st.groupes[po].fin && eff[po]; }).sort(function (a, b) { return st.groupes[a].ordre - st.groupes[b].ordre; });
       $("h-liste").innerHTML = '<div class="gcartes">' + gps.map(function (po) {
         var g = st.groupes[po];
-        return '<a class="gcarte" href="#g-' + po + '">' + (g.logo ? '<span class="gc-bloc gc-logo" style="border-right-color:' + esc(g.couleur) + '"><img src="data/' + esc(g.logo) + '" alt="Logo du groupe ' + esc(g.sigle) + '" loading="lazy"></span>' :
+        return '<a class="gcarte" href="#g-' + po + '" style="border-left-color:' + esc(g.couleur) + '">' + (g.logo ? '<span class="gc-bloc gc-logo"><img src="data/' + esc(g.logo) + '" alt="Logo du groupe ' + esc(g.sigle) + '" loading="lazy"></span>' :
           '<span class="gc-bloc" style="background:' + esc(g.couleur) + '">' + esc(g.sigle) + "</span>") +
           '<span class="gc-corps"><b>' + esc(g.libelle) + '</b><span class="note">' + eff[po] + " député.e" + (eff[po] > 1 ? ".s" : "") + " · " + Math.round(eff[po] / 5.77) + " % des sièges</span>" +
           '<span class="gc-barre"><i style="width:' + (100 * eff[po] / 577).toFixed(1) + "%;background:" + esc(g.couleur) + '"></i></span>' +
