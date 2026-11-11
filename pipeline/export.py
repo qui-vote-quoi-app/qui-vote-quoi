@@ -157,7 +157,7 @@ def exporter(scrutins, deputes, groupes, syntheses, retraits, sources_dates, ave
         try:
             from . import canal
             image.dessiner(v, out / "apercu.png", titre=canal.titre_court(v))
-            apercu = {"num": v["num"], "titre": v["titre"], "adopte": v["sort"] == "adopté", "pour": v["pour"],
+            apercu = {"num": v["num"], "titre": canal.titre_court(v), "adopte": v["sort"] == "adopté", "pour": v["pour"],
                       "contre": v["contre"], "abst": v["abst"], "bref": presentation.en_bref(v)}
         except Exception as e:  # noqa: BLE001 — l'aperçu est accessoire
             print(f"Aperçu non généré : {e}")

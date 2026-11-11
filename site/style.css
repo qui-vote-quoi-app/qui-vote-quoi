@@ -484,3 +484,6 @@ footer{border-top:1px solid var(--rule);margin-top:8px;padding:14px 2px 0;font-s
 .gc-bloc.gc-logo{background:#fff;border-right-width:6px;border-right-style:solid;padding:10px}
 .gc-logo img,.glogo img{max-width:100%;max-height:100%;object-fit:contain;display:block}
 .gbloc.glogo{background:#fff;border-bottom-width:6px;border-bottom-style:solid;padding:12px;width:154px}
+.tg-cit{margin:8px 0;padding:4px 10px;border-left:3px solid var(--pour);background:var(--tint);font-size:14px}
+.tg-boutons{display:block;margin-top:8px}.tg-boutons a{display:block;text-align:center;padding:7px;background:var(--tint);border-radius:8px;text-decoration:none;color:var(--ink);font-weight:600}
+.gc-bloc.gc-logo{width:128px}
