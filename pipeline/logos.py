@@ -13,7 +13,7 @@ from PIL import Image, ImageDraw, ImageFont
 from . import config
 from .sources import telecharger
 
-VERSION = "2"   # à incrémenter pour forcer un nouveau téléchargement
+VERSION = "3"   # à incrémenter pour forcer un nouveau téléchargement
 COMMONS = "https://commons.wikimedia.org/wiki/Special:FilePath/{}?width=600"
 FRWIKI = "https://fr.wikipedia.org/wiki/Special:FilePath/{}?width=600"
 # sigle -> (adresse modèle, fichier, licence, auteur ou titulaire)
@@ -46,7 +46,8 @@ def _carre(source: Path, dest: Path):
     boite = masque.getbbox()
     if boite:
         plat = plat.crop(boite)
-    plat.thumbnail((COTE - 2 * MARGE, COTE - 2 * MARGE), Image.LANCZOS)
+    k = min((COTE - 2 * MARGE) / plat.width, (COTE - 2 * MARGE) / plat.height)
+    plat = plat.resize((max(1, round(plat.width * k)), max(1, round(plat.height * k))), Image.LANCZOS)
     carre = Image.new("RGB", (COTE, COTE), (255, 255, 255))
     carre.paste(plat, ((COTE - plat.width) // 2, (COTE - plat.height) // 2))
     dest.parent.mkdir(parents=True, exist_ok=True)
