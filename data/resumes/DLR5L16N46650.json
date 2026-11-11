@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L16N46650",
+ "texte": "PIONANR5L17B0104",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte prévoit d'établir un ratio minimal de soignants par lit ouvert ou par nombre de passages pour les activités ambulatoires dans chaque spécialité de soin hospitalier. Il confie cette fixation à un décret pris après l'avis de la Haute Autorité de santé. Il impose aux établissements publics de soumettre leur organisation des soins liée à ces ratios à l'approbation des commissions médicales et des commissions chargées des soins infirmiers, de rééducation et médico-techniques. Enfin, il oblige le chef d'établissement à informer le directeur général de l'agence régionale de santé en cas de non-respect prolongé des ratios.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:33+00:00"
+}

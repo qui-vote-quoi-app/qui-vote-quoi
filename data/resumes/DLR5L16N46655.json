@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L16N46655",
+ "texte": "PIONANR5L16B0464",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte prévoit l'interdiction de la fabrication, de la vente, de la distribution ou de l'offre gratuite des dispositifs électroniques de vapotage à usage unique. Il précise que les modalités d'application et les caractéristiques techniques de ces interdictions seront fixées par décret ministériel. Enfin, il compense la perte de recettes pour l'État par la création d'une taxe additionnelle sur les tabacs.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:24+00:00"
+}

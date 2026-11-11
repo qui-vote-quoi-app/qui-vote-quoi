@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51453",
+ "texte": "PIONANR5L17B0904",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte autorise l'ouverture d'un nouvel établissement de quatrième catégorie par simple déclaration auprès du maire, par dérogation au droit commun. Cette mesure s'applique exclusivement dans les communes de moins de 3 500 habitants qui ne disposent d'aucun débit de boissons de cette catégorie.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:12+00:00"
+}

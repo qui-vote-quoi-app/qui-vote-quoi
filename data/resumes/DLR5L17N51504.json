@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51504",
+ "texte": "PIONANR5L17B0954",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le champ d'application de dispositions relatives aux produits de grande consommation pour y substituer les denrées alimentaires et les produits pour animaux de compagnie. Il prolonge l'application de ces mesures jusqu'au 15 avril 2028 et fixe l'entrée en vigueur de ces modifications au 1er juillet 2025.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:59+00:00"
+}

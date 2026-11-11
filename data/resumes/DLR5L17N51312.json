@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51312",
+ "texte": "PIONANR5L17B0805",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code rural et de la pêche maritime concernant les sociétés d'aménagement foncier et d'établissement rural. Il permet de distinguer les terrains agricoles des bâtiments d'habitation lors de certaines cessions, encadre les conditions de préemption selon l'affectation du bien et les règles d'urbanisme, élargit le champ géographique d'application de certaines dispositions aux communes limitrophes et à celles concernées par la taxe sur les logements vacants, et autorise la visite des biens par la SAFER.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:11+00:00"
+}

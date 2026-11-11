@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51328",
+ "texte": "PIONANR5L17B0822",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code rural et de la pêche maritime afin d'instaurer une sanction spécifique pour les propriétaires de parcelles plantées en vignes. Il prévoit de punir d'une contravention de cinquième classe le non-respect des obligations de lutte contre les organismes nuisibles aux végétaux sur ces parcelles.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:13+00:00"
+}

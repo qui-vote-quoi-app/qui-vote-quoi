@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N50915",
+ "texte": "PIONANR5L17B0584",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie les règles relatives à la démocratie agricole dans le code rural et de la pêche maritime. Il autorise certains cumul de mandats au sein des Chambres d'agriculture France sous condition d'abstention lors de délibérations sur les produits phytopharmaceutiques. Il adapte le découpage des circonscriptions électorales pour la métropole de Lyon et précise les conditions de cotisations pour l'éligibilité aux instances de la mutualité sociale agricole. Enfin, il permet de modifier par arrêté la date de fin des mandats en cours pour la mutualité sociale agricole jusqu'au 31 décembre 2025.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:19+00:00"
+}

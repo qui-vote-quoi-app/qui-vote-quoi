@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N50579",
+ "texte": "PIONANR5L17B1106",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code électoral afin d'harmoniser le mode de scrutin applicable aux élections municipales. Il adapte les dispositions relatives au cumul des mandats et supprime certaines restrictions spécifiques liées à la taille des communes. Ces nouvelles dispositions s'appliquent dès le prochain renouvellement général des conseils municipaux suivant la promulgation de la loi.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:02+00:00"
+}

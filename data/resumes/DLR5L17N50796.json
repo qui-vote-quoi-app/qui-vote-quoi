@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N50796",
+ "texte": "PRJLANR5L17B0529",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code monétaire et financier pour interdire aux entreprises d'investissement de percevoir un paiement pour flux d'ordres et encadre la perception de redevances ou commissions par les prestataires de services d'investissement. Il adapte les règles relatives à l'Autorité des marchés financiers, notamment concernant sa désignation comme autorité compétente pour les obligations vertes européennes et ses pouvoirs de sanction. Enfin, il précise les règles applicables aux opérations sur titres financiers utilisant la technologie des registres distribués et encadre le nantissement d'actifs numériques.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:08+00:00"
+}

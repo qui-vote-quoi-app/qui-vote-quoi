@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N50715",
+ "texte": "PIONANR5L17B0447",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte prévoit des mesures pour lutter contre les fraudes aux aides publiques et dans le secteur de la rénovation énergétique. Il permet la suspension ou le rejet d'aides publiques en cas de fraude et organise l'échange d'informations entre administrations. Il interdit la prospection commerciale non sollicitée pour la rénovation énergétique, encadre le recours à la sous-traitance et crée des sanctions en cas de manquement. Enfin, il renforce les contrôles et les sanctions applicables aux certificats d'économies d'énergie.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:29+00:00"
+}

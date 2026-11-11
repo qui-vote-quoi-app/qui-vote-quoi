@@ -1,9 +1,10 @@
 {
  "dossier": "DLR5L16N47697",
  "texte": "PIONANR5L17B0118",
- "tentatives": 1,
- "statut": "en_attente",
- "erreurs": [
-  "résumé vide"
- ]
+ "tentatives": 2,
+ "statut": "publie",
+ "erreurs": [],
+ "resume": "Le texte crée la société France Médias pour coordonner les orientations stratégiques, les programmes et les ressources de France Télévisions, Radio France, France Médias Monde et de l'Institut national de l’audiovisuel. Il définit les missions de l'Institut national de l'audiovisuel en matière de conservation du patrimoine, de dépôt légal et d'exploitation des archives. Il précise également les missions de TV5 Monde. Enfin, il fixe les règles relatives à la composition des conseils d'administration et aux modalités de nomination des dirigeants de ces sociétés publiques.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "genere_le": "2026-11-11T14:53+00:00"
 }

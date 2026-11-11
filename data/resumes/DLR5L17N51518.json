@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51518",
+ "texte": "PIONANR5L17B0948",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte prévoit de fixer par année civile la durée des activités de la réserve de sécurité civile. Il réduit à vingt-quatre heures le délai d'alerte en cas de danger grave et imminent. Il permet la validation des compétences acquises dans la réserve au titre de la formation scolaire. Enfin, il intègre cet engagement dans les dispositions relatives aux cursus éducatifs et prévoit un mécanisme de compensation financière pour l'État et les collectivités territoriales.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:07+00:00"
+}

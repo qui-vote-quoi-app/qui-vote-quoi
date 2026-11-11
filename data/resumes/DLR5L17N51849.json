@@ -1,9 +1,10 @@
 {
  "dossier": "DLR5L17N51849",
  "texte": "PIONANR5L17B1237",
- "tentatives": 1,
- "statut": "en_attente",
- "erreurs": [
-  "trop long"
- ]
+ "tentatives": 2,
+ "statut": "publie",
+ "erreurs": [],
+ "resume": "Le texte intègre de nouvelles données relatives aux certificats de santé et à l'état civil dans les missions de la plateforme de données de santé pour constituer un registre national des naissances. Il suspend pendant trois ans le retrait ou la remise en cause des autorisations des activités d'obstétrique, sauf urgence sécuritaire, et impose aux agences régionales de santé d'établir un état des lieux des maternités réalisant moins de trois cents accouchements par an, suivi d'un rapport gouvernemental. Enfin, il rend obligatoire une formation continue aux gestes d'urgence obstétrique pour les personnels des unités de gynécologie obstétrique et prévoit des compensations financières.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "genere_le": "2026-11-11T14:58+00:00"
 }

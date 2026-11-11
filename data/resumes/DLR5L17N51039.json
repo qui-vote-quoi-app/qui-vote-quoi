@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51039",
+ "texte": "PIONANR5L17B0693",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie les conditions d'accès à la nationalité française à Mayotte. Il exige que les deux parents résident sur le territoire, contre un seul auparavant, et prolonge la durée minimale de cette résidence de trois mois à un an.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:00+00:00"
+}

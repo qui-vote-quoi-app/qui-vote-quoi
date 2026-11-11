@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L16N49455",
+ "texte": "PIONANR5L17B0161",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte interdit la fabrication, l'importation et la commercialisation de certains produits contenant des substances perfluoroalkylées et polyfluoroalkylées, notamment les cosmétiques et le fart dès 2026, puis l'ensemble des textiles d'habillement en 2030, avec des exceptions. Il intègre ces substances dans le contrôle sanitaire des eaux potables et prévoit la publication d'une carte des sites émetteurs. Enfin, il instaure une trajectoire de réduction des rejets industriels aquatiques, un plan d'action interministériel pour le financement de la dépollution et une redevance sur les rejets polluants.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:16+00:00"
+}

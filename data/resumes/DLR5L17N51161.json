@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51161",
+ "texte": "PIONANR5L17B0763",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte prolonge de plusieurs années le dispositif d'expérimentation destiné à favoriser l'égalité des chances pour l'accès à certaines écoles de service public. Il décale ainsi la date limite de mise en œuvre de cette expérimentation ainsi que la date de remise de son rapport d'évaluation au Parlement. Enfin, il prévoit des compensations financières pour l'État, les collectivités territoriales et les organismes de sécurité sociale.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:18+00:00"
+}

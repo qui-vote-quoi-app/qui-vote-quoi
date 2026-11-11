@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N50775",
+ "texte": "PIONANR5L17B0517",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte interdit aux fonds d'investissement d'acquérir, de gérer ou de commercialiser des titres d'entreprises gérant des établissements d'accueil de jeunes enfants lucratifs, sous peine de sanctions financières et professionnelles. Il modifie le taux minimal des pénalités financières applicables en cas de manquement dans ces structures et en relève le montant maximal. Enfin, il interdit aux professionnels de ces crèches d'accomplir leur obligation de formation par l'intermédiaire d'établissements privés d'enseignement à distance.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:31+00:00"
+}

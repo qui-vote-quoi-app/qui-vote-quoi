@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N50911",
+ "texte": "PIONANR5L17B0580",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie les règles de vente du protoxyde d'azote en la réservant aux seuls professionnels de la santé et de la restauration, dans tous les lieux publics, commerces et en ligne. Il confie à la mission interministérielle de lutte contre les drogues et les conduites addictives et aux agences régionales de santé une veille sanitaire et le pilotage d'actions de prévention, menées notamment dans les établissements scolaires. Enfin, il prévoit la remise d'un rapport d'évaluation au Parlement par le Gouvernement dans un délai d'un an.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:25+00:00"
+}

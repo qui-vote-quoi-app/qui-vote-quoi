@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N50636",
+ "texte": "PIONANR5L17B0380",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte interdit de principe la pulvérisation aérienne de produits phytopharmaceutiques. Il prévoit des dérogations temporaires en cas de danger sanitaire grave, ainsi que pour certains produits spécifiques et sous conditions sur des parcelles en forte pente, dans les bananeraies et les vignes mères de porte-greffes. Il autorise également des programmes d'essais pour évaluer l'utilisation d'aéronefs sans personne à bord sur d'autres cultures et permet d'étendre les dérogations si les avantages pour la santé ou l'environnement sont démontrés.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:30+00:00"
+}

@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51563",
+ "texte": "PIONANR5L17B0561",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte interdit le démarchage téléphonique commercial sans le consentement préalable du consommateur, sauf dans le cadre d'un contrat en cours. Il renforce les sanctions pénales en cas d'abus de faiblesse et encadre plus strictement les horaires, la fréquence et les conditions des appels. Enfin, il lève certains secrets professionnels pour faciliter le partage d'informations entre autorités de contrôle et opérateurs.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:14+00:00"
+}

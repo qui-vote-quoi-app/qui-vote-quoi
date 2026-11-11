@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51017",
+ "texte": "PIONANR5L17B0669",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code civil pour rendre imprescriptible l'action en responsabilité civile liée à des violences sexuelles. Il supprime les références à l'âge mineur des victimes dans plusieurs articles du code de procédure pénale. Enfin, il complète le code pénal pour définir explicitement les violences psychologiques comme des manœuvres délibérées et répétées de déstabilisation générant un état de vulnérabilité ou de sujétion.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:28+00:00"
+}

@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L16N49801",
+ "texte": "PIONANR5L17B0528",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte prévoit la prise en charge intégrale par l'assurance maladie des soins et dispositifs spécifiques liés au traitement du cancer du sein ou à ses suites, incluant la dermopigmentation et les prothèses. Il institue un forfait pour financer certains soins et dispositifs non remboursables sur prescription médicale. Il prévoit la remise d'un rapport gouvernemental sur l'encadrement du tatouage tridimensionnel et permet le plafonnement des dépassements d'honoraires pour la reconstruction mammaire.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:27+00:00"
+}

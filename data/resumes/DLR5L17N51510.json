@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51510",
+ "texte": "PIONANR5L17B0960",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte accorde aux présidents des assemblées parlementaires et des commissions permanentes un intérêt pour agir en justice par un recours pour excès de pouvoir contre certains actes gouvernementaux pris en période d'affaires courantes. Il impose au Gouvernement d'informer le Parlement et de lui transmettre sans délai divers actes réglementaires, décisions, décrets et nominations adoptés durant cette période. Enfin, le texte oblige le nouveau Gouvernement à remettre au Parlement un rapport dressant le bilan de cette période dans les deux mois suivant sa nomination.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:08+00:00"
+}

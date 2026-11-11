@@ -1,10 +1,10 @@
 {
  "dossier": "DLR5L17N51115",
  "texte": "PIONANR5L17B1034",
- "tentatives": 1,
- "statut": "en_attente",
- "erreurs": [
-  "nom de député : Martin",
-  "nom de député : Saint-Martin"
- ]
+ "tentatives": 2,
+ "statut": "publie",
+ "erreurs": [],
+ "resume": "Le texte instaure, à titre expérimental pour cinq ans, un dispositif d'encadrement des loyers dans les collectivités régies par l'article 73 de la Constitution, tout en interdisant l'application d'un complément de loyer pour les logements non décents. Il prévoit également la remise d'un rapport d'évaluation au Parlement par le Gouvernement avant le terme de l'expérimentation. Enfin, il précise les modalités d'application d'une exemption concernant les règles de commercialisation des produits de construction et crée des comités référentiels de construction dans ces mêmes territoires.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "genere_le": "2026-11-11T14:56+00:00"
 }

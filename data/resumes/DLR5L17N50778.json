@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N50778",
+ "texte": "PIONANR5L17B0519",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte prévoit d'imposer aux centres régionaux des œuvres universitaires de proposer au moins une offre de restauration à un tarif maximal d'un euro dans l'ensemble de leurs sites. Il établit également une compensation financière pour l'État par la création d'une taxe additionnelle sur les tabacs.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:32+00:00"
+}

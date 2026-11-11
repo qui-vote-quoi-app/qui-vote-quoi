@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51222",
+ "texte": "PRJLANR5L17B0772",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte habilite le Gouvernement à légiférer par ordonnance pour faciliter la reconstruction de Mayotte après le cyclone de décembre 2024, en matière d'aménagement foncier, d'urbanisme, d'expropriation et de commande publique. Il permet à l'État de prendre en charge la rénovation des écoles publiques et exempte temporairement certaines constructions d'urgence des règles d'urbanisme de droit commun. Il simplifie également les procédures d'autorisation et d'instruction des demandes liées aux travaux de reconstruction.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:19+00:00"
+}

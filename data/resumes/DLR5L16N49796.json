@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L16N49796",
+ "texte": "PIONANR5L17B0456",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie le code de l'action sociale et des familles pour améliorer la prise en charge des personnes atteintes de pathologies d'évolution rapide et de handicaps sévères. Il prévoit que les maisons départementales des personnes handicapées identifient ces demandes dès leur dépôt et organisent leur traitement en lien avec des centres de référence pour maladies rares. Il permet l'attribution rapide de droits et de prestations adaptés sur proposition de l'équipe pluridisciplinaire et l'évaluation de ces centres ou sur prescription médicale ou d'ergothérapeute. Enfin, il ouvre le bénéfice de la prestation de compensation du handicap aux personnes de plus de soixante ans atteintes de telles pathologies.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:22+00:00"
+}

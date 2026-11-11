@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N50631",
+ "texte": "PIONANR5L17B0374",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie les conditions d'aménagement des peines d'emprisonnement ferme inférieures ou égales à deux ans. Il permet aux juridictions de décider de telles mesures pour ces peines, sous conditions liées notamment à l'activité professionnelle, à la vie familiale, à un traitement médical ou à des efforts de réinsertion. Enfin, il abroge certaines dispositions relatives aux modalités d'exécution de ces peines dans le code de procédure pénale.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:05+00:00"
+}

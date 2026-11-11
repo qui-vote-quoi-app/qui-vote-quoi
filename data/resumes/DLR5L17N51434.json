@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51434",
+ "texte": "PIONANR5L17B0884",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte crée un fichier national géré par la Banque de France pour recenser les comptes bancaires estimés frauduleux ou suspects par les prestataires de services de paiement. Il précise les modalités d'alimentation et de consultation de ce fichier, les responsabilités des établissements ainsi que les droits d'accès des personnes concernées. Enfin, il modifie les dispositions relatives aux informations que la Banque de France détient et transmet concernant les chèques irréguliers, falsifiés ou contrefaits.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:09+00:00"
+}

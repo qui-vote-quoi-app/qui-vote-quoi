@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51014",
+ "texte": "PIONANR5L17B0666",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte fixe de manière pluriannuelle le nombre d'étudiants admis en études d'orthophonie de 2025 à 2030. Il autorise les étudiants à effectuer des stages auprès de maîtres de stage agréés et crée un contrat d'engagement de service public prévoyant une allocation mensuelle en échange d'une obligation d'exercice professionnel. Enfin, il prévoit la remise d'un rapport gouvernemental au Parlement en 2030.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:04+00:00"
+}

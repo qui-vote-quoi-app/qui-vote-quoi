@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N51485",
+ "texte": "PIONANR5L17B1173",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte qualifie les centrales à charbon, tourbe ou schiste converties pour émettre moins de 550 grammes de dioxyde de carbone par kilowattheure de nouvelles installations, en modifiant la date de début de production commerciale. Il prévoit que la désignation de ces installations lauréates de procédures concurrentielles emporte l'attribution de l'autorisation de production d'électricité. Enfin, il impose aux entreprises détenues à plus de 50 % par l'État et exploitant des centrales à charbon de présenter un plan de conversion au plus tard le 31 décembre 2026.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:01+00:00"
+}

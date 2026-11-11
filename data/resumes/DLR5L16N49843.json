@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L16N49843",
+ "texte": "PIONANR5L17B0457",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte modifie les règles encadrant l'élection du maire dans les communes nouvelles. Il reporte l'obligation d'avoir un conseil municipal complet du moment de sa première réunion au premier renouvellement général suivant sa création. De plus, cette disposition s'applique rétroactivement aux communes nouvelles dont le conseil n'a pas encore été renouvelé, sous réserve des décisions de justice définitives.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T15:21+00:00"
+}

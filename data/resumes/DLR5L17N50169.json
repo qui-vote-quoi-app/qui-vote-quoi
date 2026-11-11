@@ -1,0 +1,10 @@
+{
+ "dossier": "DLR5L17N50169",
+ "texte": "PIONANR5L17B0907",
+ "tentatives": 1,
+ "statut": "publie",
+ "resume": "Le texte institue un service chef de file réglementaire pour coordonner la lutte contre la criminalité organisée et encadre les demandes d'autorisation de techniques de renseignement soumises au Premier ministre. Il modifie le code de procédure pénale en créant un procureur de la République national anti-criminalité organisée disposant d'une compétence nationale concurrente et prioritaire pour les affaires complexes. Enfin, il définit les règles de dessaisissement, de compétence territoriale et de spécialisation des juridictions d'instruction, de jugement et d'application des peines.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-11T14:58+00:00"
+}
