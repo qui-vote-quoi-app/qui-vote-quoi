@@ -220,7 +220,7 @@
       '<div class="counts"><div><b>' + s.votants + '</b><span class="k">' + terme("votants", "votants") + '</span></div><div><b>' + s.exprimes + '</b><span class="k">' + terme("exprimes", "suffrages exprimés") + '</span></div><div><b>' + s.requis + '</b><span class="k">' + terme("requis", "majorité requise") + '</span></div>' +
       '<div><b style="color:var(--pour)">' + s.pour + '</b><span class="k">pour</span></div><div><b style="color:var(--contre)">' + s.contre + '</b><span class="k">contre</span></div><div><b style="color:var(--abst)">' + s.abst + '</b><span class="k">' + terme("abst", "abstentions") + '</span></div></div>' +
       barre({ pour: s.pour, contre: s.contre, abst: s.abst, nv: s.nv }) + focus;
-    $("cbig").textContent = ok ? "Adopté" : "Rejeté";
+    $("cbig").textContent = ok ? "Adopté" : "Rejeté"; $("cbig").setAttribute("class", "center-big " + (ok ? "ok" : "ko"));
     $("cbig").style.fill = ok ? "var(--pour)" : "var(--contre)";
     $("csub").textContent = s.pour + " pour · " + s.contre + " contre · " + s.abst + " abst.";
   }

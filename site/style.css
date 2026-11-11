@@ -471,9 +471,13 @@ footer{border-top:1px solid var(--rule);margin-top:8px;padding:14px 2px 0;font-s
 .mhemi{width:100%;height:auto;display:block;margin-bottom:4px}
 .mhemi .pour{fill:var(--pour)}.mhemi .contre{fill:var(--contre)}.mhemi .abst{fill:var(--abst)}.mhemi .nv{fill:var(--nv)}.mhemi .vide{fill:var(--vide)}
 .sc-res{align-self:flex-start;font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:0 7px;line-height:1.7;border:2px solid currentColor}
-.sc-res.ko{color:var(--muted)}
+
 .sc-meta{font-size:12.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center}
 .sc-titre{font-size:15.5px;line-height:1.3}
 .sc-chiffres{font-size:12.5px;color:var(--muted);margin-top:auto}
 .leg-pt{display:inline-block;width:9px;height:9px;border-radius:50%;vertical-align:baseline}
 .leg-pt.pour{background:var(--pour)}.leg-pt.contre{background:var(--contre)}.leg-pt.abst{background:var(--abst)}
+/* Verdict (adopté / rejeté) : contour et fond teintés, distincts des étiquettes pleines de position */
+.verdict.v-ok,.sc-res.ok{color:var(--pour);background:color-mix(in srgb,var(--pour) 12%,transparent)}
+.verdict.v-ko,.sc-res.ko{color:var(--contre);background:color-mix(in srgb,var(--contre) 12%,transparent)}
+.center-big.ok{fill:var(--pour)}.center-big.ko{fill:var(--contre)}
