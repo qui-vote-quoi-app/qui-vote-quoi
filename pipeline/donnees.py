@@ -67,6 +67,19 @@ def categorie(titre, code_type):
 
 # ---------------------------------------------------------------- Scrutins
 
+def position_majoritaire(decompte, officielle=None):
+    """Position de la majorité des votant.e.s du groupe, recalculée à partir du décompte.
+    Le champ « positionMajoritaire » de l'Assemblée est parfois incohérent avec le décompte
+    (ex. scrutin n° 9759 : GDR 15 contre, 2 abstentions, indiqué « abstention »).
+    En cas d'égalité, on garde la position officielle si elle fait partie des ex æquo."""
+    voix = {"pour": decompte["pour"], "contre": decompte["contre"], "abstention": decompte["abst"]}
+    haut = max(voix.values())
+    if not haut:
+        return officielle
+    ex_aequo = [k for k, v in voix.items() if v == haut]
+    return officielle if officielle in ex_aequo else ex_aequo[0]
+
+
 def lire_scrutin(brut: dict) -> dict:
     s = brut["scrutin"]
     sv = s.get("syntheseVote") or {}
@@ -85,13 +98,18 @@ def lire_scrutin(brut: dict) -> dict:
                 for v in liste(bloc.get("votant")):
                     if isinstance(v, dict) and v.get("acteurRef"):
                         votes[pos].append([v["acteurRef"], entier(v.get("numPlace"))])
+        decompte = {"pour": entier(dv.get("pour")), "contre": entier(dv.get("contre")),
+                    "abst": entier(dv.get("abstentions")),
+                    "nv": entier(dv.get("nonVotants")) + entier(dv.get("nonVotantsVolontaires"))}
+        # Le décompte nominatif fait foi : le total « non-votants » du décompte en voix compte parfois
+        # deux fois les abstentions (ex. n° 12 : 14 abstentions, 14 « non-votants », aucun nominatif).
+        if any(votes.values()):
+            decompte["nv"] = len(votes["nv"])
         groupes.append({
             "po": g.get("organeRef"),
             "membres": entier(g.get("nombreMembresGroupe")),
-            "position": vote.get("positionMajoritaire"),
-            "decompte": {"pour": entier(dv.get("pour")), "contre": entier(dv.get("contre")),
-                         "abst": entier(dv.get("abstentions")),
-                         "nv": entier(dv.get("nonVotants")) + entier(dv.get("nonVotantsVolontaires"))},
+            "position": position_majoritaire(decompte, vote.get("positionMajoritaire")),
+            "decompte": decompte,
             "votes": votes,
         })
     mises_au_point = []
