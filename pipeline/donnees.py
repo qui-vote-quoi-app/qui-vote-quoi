@@ -278,7 +278,7 @@ def lire_dossiers(chemin_zip):
                 doc = json.loads(z.read(nom))["document"]
                 if not str(doc.get("denominationStructurelle") or "").startswith(TYPES_TEXTES):
                     continue
-                m = re.fullmatch(r"(?:PION|PRJL)ANR5L\d+B(\d+)", str(doc.get("uid") or ""))
+                m = re.fullmatch(r"[A-Z]{4}ANR5L\d+B(\d+)", str(doc.get("uid") or ""))  # PION, PRJL, PNRE (résolutions)…
                 if m and doc.get("dossierRef"):
                     prec = deposes.get(doc["dossierRef"])
                     if prec is None or int(m.group(1)) < prec[0]:

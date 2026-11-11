@@ -217,7 +217,7 @@
         (s.bref ? '<p class="bref"><b>Ce que signifie ce vote.</b> ' + esc(s.bref) + "</p>" : "") + "</div>" +
       '<span class="stamp ' + (ok ? "ok" : "ko") + '">' + esc(s.sort_libelle || (ok ? "Adopté" : "Rejeté")) + "</span></div>" +
       '<div class="links">' + liens + "</div>" +
-      '<div class="counts"><div><b>' + s.votants + '</b><span class="k">' + terme("votants", "votants") + '</span></div><div><b>' + s.exprimes + '</b><span class="k">' + terme("exprimes", "suffrages exprimés") + '</span></div><div><b>' + s.requis + '</b><span class="k">' + terme("requis", "majorité requise") + '</span></div>' +
+      '<div class="counts"><div><b>' + s.votants + '</b><span class="k">' + terme("votants", "votant.e.s") + '</span></div><div><b>' + s.exprimes + '</b><span class="k">' + terme("exprimes", "suffrages exprimés") + '</span></div><div><b>' + s.requis + '</b><span class="k">' + terme("requis", "majorité requise") + '</span></div>' +
       '<div><b style="color:var(--pour)">' + s.pour + '</b><span class="k">pour</span></div><div><b style="color:var(--contre)">' + s.contre + '</b><span class="k">contre</span></div><div><b style="color:var(--abst)">' + s.abst + '</b><span class="k">' + terme("abst", "abstentions") + '</span></div></div>' +
       barre({ pour: s.pour, contre: s.contre, abst: s.abst, nv: s.nv }) + focus;
     $("cbig").textContent = ok ? "Adopté" : "Rejeté"; $("cbig").setAttribute("class", "center-big " + (ok ? "ok" : "ko"));
@@ -338,7 +338,7 @@
         '<span class="gbloc" style="background:' + esc(gr.couleur || "#777") + '" aria-hidden="true">' + esc(gr.sigle) + "</span>") +
         '<div class="h-id"><div class="eyebrow">Groupe politique' + (gr.fin ? " · dissous le " + dateFr(gr.fin) : "") + "</div><h2>" + esc(gr.libelle) + "</h2>" +
         '<div class="h-meta">' + (n ? "<span>" + n + " député.e.s aujourd'hui</span>" : "") + (gr.debut ? "<span>Créé le " + dateFr(gr.debut) + "</span>" : "") +
-        "<span>Pour chaque scrutin : la position exprimée par la majorité des votants du groupe.</span></div></div>";
+        "<span>Pour chaque scrutin : la position exprimée par la majorité des votant.e.s du groupe.</span></div></div>";
       document.title = gr.libelle + " · Qui vote quoi ?";
     }
   }
@@ -585,7 +585,7 @@
       coms.sort(function (a, b) { return (cleDep(a[0]) === nq ? 0 : 1) - (cleDep(b[0]) === nq ? 0 : 1) || a[0].length - b[0].length; });
       var deps = [];
       st.deps.forEach(function (d, i) { if (d.actif && cleDep(d.prenom + " " + d.nom).indexOf(nq) >= 0) deps.push(i); });
-      choix = coms.slice(0, 5).map(function (c) { return { type: "Commune", lib: c[0], ctx: c[1] + (c[3][0] ? " · " + c[3][0] : ""), commune: c }; })
+      choix = coms.slice(0, 5).map(function (c) { return { type: "Commune", lib: c[0], ctx: c[1] + ((cp || c[3][0]) ? " · " + (cp || c[3][0]) : ""), commune: c }; })
         .concat(deps.slice(0, 4).map(function (i) { var d = st.deps[i]; return { type: genre(d), lib: d.prenom + " " + d.nom, ctx: d.dept + (d.circo ? ", " + ord(d.circo) + " circ." : ""), dep: i }; }));
       actif = -1; afficherListe();
       // Adresse précise (chiffre ou plus de 2 mots) : on interroge le géocodeur.
@@ -806,8 +806,9 @@
     $("toggle").setAttribute("aria-label", ouvert ? "Replier la liste" : "Déplier la liste");
   }
   function ouvrirListe() {
-    if (mq.matches) setTimeout(ouvrirMobile, 0);
-    else if (app.classList.contains("collapsed")) { app.classList.remove("collapsed"); majBouton(); }
+    // Sur téléphone, la page des scrutins montre déjà la liste en cartes : on ne déplie pas le panneau.
+    if (mq.matches) return;
+    if (app.classList.contains("collapsed")) { app.classList.remove("collapsed"); majBouton(); }
   }
   function ouvrirMobile() { app.classList.add("mopen"); majBouton(); }
   function fermerMobile() { if (app.classList.contains("mopen")) { app.classList.remove("mopen"); majBouton(); } }
