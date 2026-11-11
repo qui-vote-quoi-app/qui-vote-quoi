@@ -401,7 +401,7 @@
     } else {
       var f = actifs.filter(function (d) { return d.civ === "Mme"; }).length;
       $("h-head").innerHTML = '<div class="h-id"><div class="eyebrow">Les député.e.s</div><h2>' + actifs.length + " député.e.s en exercice</h2>" +
-        '<p class="note" style="margin:6px 0 0;font-size:14px">' + f + " femmes et " + (actifs.length - f) + " hommes, élu.e.s dans 577 circonscriptions. Choisissez un.e député.e pour voir tous ses votes lors des scrutins publics (les votes à main levée ne sont pas nominatifs).</p>" +
+        '<p class="note" style="margin:6px 0 0;font-size:14px">' + f + " femmes et " + (actifs.length - f) + " hommes, pour 577 sièges (les sièges vacants attendent une élection partielle). Choisissez un.e député.e pour voir tous ses votes lors des scrutins publics (les votes à main levée ne sont pas nominatifs).</p>" +
         '<p style="margin:12px 0 0"><a class="btn plein" href="#accueil" id="h-trouver">Trouver mon ou ma député.e avec mon adresse →</a></p></div>';
       var deps = {}; actifs.forEach(function (d) { if (d.dept) deps[d.dept] = (deps[d.dept] || 0) + 1; });
       var noms = Object.keys(deps).sort(function (a, b) { return a.localeCompare(b, "fr"); });
