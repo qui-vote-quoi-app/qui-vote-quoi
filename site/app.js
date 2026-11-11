@@ -99,7 +99,7 @@
       $("sth").onchange = function () { st.f.theme = this.value; st.limite = PAGE; listeLaterale(); };
     } else if (st.vue === "deputes") {
       var gps = Object.keys(st.groupes).filter(function (po) { return !st.groupes[po].fin; }).sort(function (a, b) { return st.groupes[a].ordre - st.groupes[b].ordre; });
-      el.innerHTML = '<label for="dq" class="sr">Rechercher un.e député.e</label><input id="dq" type="search" placeholder="Nom ou département…" autocomplete="off" value="' + esc(st.dq) + '">' +
+      el.innerHTML = '<label for="dq" class="sr">Rechercher un.e député.e</label><input id="dq" type="search" placeholder="Nom, département ou commune…" autocomplete="off" value="' + esc(st.dq) + '">' +
         '<label class="sr" for="dgrp">Groupe</label><select id="dgrp"><option value="">Tous les groupes</option>' +
         gps.map(function (po) { return '<option value="' + po + '"' + (st.dgrp === po ? " selected" : "") + ">" + esc(st.groupes[po].sigle + " · " + st.groupes[po].libelle) + "</option>"; }).join("") + "</select>" +
         '<label class="chk"><input type="checkbox" id="danc"' + (st.danciens ? " checked" : "") + "> Inclure les ancien.ne.s député.e.s</label>";
@@ -137,17 +137,24 @@
       if (!total) html = '<p class="sempty">Aucun scrutin ne correspond à ces critères.</p>';
       else if (total > n) html += '<button class="more" id="more" type="button">Afficher plus (' + (total - n) + " restants)</button>";
     } else if (st.vue === "deputes") {
+      var viaCommune = {}, coms = [];
+      if (cleDep(st.dq).length >= 2) {
+        if (!cache.communesListe) chargerCommunes().then(function (c) { cache.communesListe = c; if (st.vue === "deputes" && st.dq) listeLaterale(); });
+        var nq = cleDep(st.dq), cp = /^\d{5}$/.test(st.dq.trim()) ? st.dq.trim() : null;
+        (cache.communesListe || []).forEach(function (c) { if (cp ? c[3].indexOf(cp) >= 0 : cleDep(c[0]) === nq) { coms.push(c); c[2].forEach(function (n) { viaCommune[cleDep(c[1]) + "|" + n] = 1; }); } });
+      }
       var dq = norm(st.dq.trim()), liste = st.deps.map(function (d, i) { return [d, i]; }).filter(function (x) {
         var d = x[0];
         if (!st.danciens && !d.actif) return false;
         if (st.dgrp && d.groupe !== st.dgrp) return false;
-        return !dq || norm(d.prenom + " " + d.nom + " " + (d.dept || "")).indexOf(dq) >= 0;
+        return !dq || norm(d.prenom + " " + d.nom + " " + (d.dept || "")).indexOf(dq) >= 0 || viaCommune[cleDep(d.dept || "") + "|" + d.circo];
       }).sort(function (a, b) { return a[0].nom.localeCompare(b[0].nom, "fr") || a[0].prenom.localeCompare(b[0].prenom, "fr"); });
       html = liste.map(function (x) {
         var d = x[0], g = st.groupes[d.groupe] || {};
         return '<a class="sitem ditem" href="#d-' + d.id + '" aria-current="' + (st.h && st.h.type === "d" && st.h.id === d.id) + '">' + avatar(d, "sm", g.couleur) + '<span style="min-width:0"><span class="t">' + esc(d.prenom + " " + d.nom) + '</span><span class="m"><span class="num">' + esc(g.sigle || "—") + "</span><span>" + esc(d.dept || "") + (d.circo ? " (" + ord(d.circo) + ")" : "") + "</span>" + (d.actif ? "" : "<span>· mandat terminé</span>") + "</span></span></a>";
       }).join("") || '<p class="sempty">Aucun.e député.e ne correspond.</p>';
-      html = '<p class="sompte">' + liste.length + (liste.length > 1 ? " député.e.s" : " député.e") + "</p>" + html;
+      html = '<p class="sompte">' + liste.length + (liste.length > 1 ? " député.e.s" : " député.e") + "</p>" +
+        (coms.length ? '<p class="note" style="margin:0 12px 8px">Commune' + (coms.length > 1 ? "s" : "") + " : " + esc(coms.slice(0, 3).map(function (c) { return c[0] + " (" + c[1] + ")"; }).join(", ")) + (coms.some(function (c) { return c[2].length > 1; }) ? ". Commune partagée entre plusieurs circonscriptions : cherchez votre adresse sur l'accueil pour trouver la vôtre." : "") + "</p>" : "") + html;
     } else {
       var effectifs = {};
       st.deps.forEach(function (d) { if (d.actif && d.groupe) effectifs[d.groupe] = (effectifs[d.groupe] || 0) + 1; });
@@ -495,42 +502,69 @@
       } else {
         el.innerHTML = '<div class="tq-bloc"><p class="note">Circonscription introuvable pour « ' + esc(p.label) + " ». Essayez une adresse complète, ou parcourez <a href=\"#deputes\">la liste des député.e.s</a>.</p>" + retour + "</div>";
       }
-      var b = $("tq-retour"); if (b) b.onclick = function () { $("tq").focus(); $("tq").select(); chercher($("tq").value); };
+      var b = $("tq-retour"); if (b) b.onclick = function () { $("tq-res").innerHTML = ""; $("tq").focus(); $("tq").select(); };
     });
   }
   var TYPES_ADRESSE = { housenumber: "Adresse", street: "Rue", locality: "Lieu-dit", municipality: "Commune" };
-  function chercher(q, auto) {
-    var el = $("tq-res"), brut = q.trim(), nq = cleDep(brut);
-    if (nq.length < 2) { el.innerHTML = ""; return; }
-    var parNom = [];
-    st.deps.forEach(function (d, i) { if (d.actif && cleDep(d.prenom + " " + d.nom).indexOf(nq) >= 0) parNom.push(i); });
-    var nomHtml = parNom.length ? '<div class="tq-bloc"><h3>Député.e.s</h3><div class="dcartes">' + parNom.slice(0, 6).map(carteDepute).join("") + "</div></div>" : "";
-    var geo = brut.length < 3 ? Promise.resolve(null) :
-      fetch(GEOCODAGE + "?limit=5&autocomplete=1&q=" + encodeURIComponent(brut)).then(function (r) { if (!r.ok) throw new Error("geo"); return r.json(); });
-    geo.then(function (j) {
-      if (cleDep($("tq").value) !== nq) return;
-      suggestions = (j && j.features || []).filter(function (f) { return f.geometry && f.properties && f.properties.context; });
-      if (auto && suggestions.length && !parNom.length) { localiser(suggestions[0]); return; }
-      var html = suggestions.length ? '<div class="tq-bloc"><h3>Adresses et communes</h3><ul class="tq-sugg">' + suggestions.map(function (f, i) {
-        var p = f.properties;
-        return '<li><button type="button" data-sugg="' + i + '"><span class="tq-type">' + (TYPES_ADRESSE[p.type] || "Lieu") + "</span>" + esc(p.label) + '<span class="note">' + esc(p.context) + "</span></button></li>";
-      }).join("") + "</ul></div>" : "";
-      if (!html && !nomHtml) html = '<p class="note">Aucun résultat. Vérifiez l\'orthographe, ou parcourez <a href="#deputes">la liste des député.e.s</a> par département, y compris les député.e.s des Français de l\'étranger.</p>';
-      el.innerHTML = html + nomHtml;
-    }).catch(function () {
-      chercherCommunes(brut, nq, parNom).then(function (html) {
-        if (cleDep($("tq").value) !== nq) return;
-        el.innerHTML = (html || "") + nomHtml || '<p class="note">Aucun résultat.</p>';
-      });
+  /* Suggestions au fil de la frappe : communes et député.e.s tout de suite (données du site),
+     adresses précises dès que le service de l'IGN répond. */
+  var choix = [], actif = -1, geoMinuteur, jeton = 0;
+  function liste() { return $("tq-liste"); }
+  function fermerListe() { liste().hidden = true; liste().innerHTML = ""; actif = -1; $("tq").setAttribute("aria-expanded", "false"); }
+  function afficherListe() {
+    var l = liste();
+    if (!choix.length) { fermerListe(); return; }
+    l.innerHTML = choix.map(function (c, i) {
+      return '<li role="option" id="tq-o' + i + '" aria-selected="' + (i === actif) + '" data-i="' + i + '"><span class="tq-type">' + c.type + '</span><span class="tq-lib">' + esc(c.lib) + '</span><span class="note">' + esc(c.ctx || "") + "</span></li>";
+    }).join("");
+    l.hidden = false; $("tq").setAttribute("aria-expanded", "true");
+    $("tq").setAttribute("aria-activedescendant", actif >= 0 ? "tq-o" + actif : "");
+  }
+  function choisir(c) {
+    fermerListe(); var el = $("tq-res");
+    if (c.dep != null) { location.hash = "#d-" + st.deps[c.dep].id; return; }
+    if (c.commune) { el.innerHTML = blocCommune(c.commune[0], c.commune[1], c.commune[2], c.commune[3]); return; }
+    if (c.geo) localiser(c.geo);
+  }
+  function suggerer(q) {
+    var brut = q.trim(), nq = cleDep(brut), mon = ++jeton;
+    clearTimeout(geoMinuteur);
+    if (nq.length < 2) { choix = []; fermerListe(); return; }
+    chargerCommunes().then(function (communes) {
+      if (mon !== jeton) return;
+      var cp = /^\d{5}$/.test(brut.replace(/\s/g, "")) ? brut.replace(/\s/g, "") : null, coms = [];
+      communes.forEach(function (c) { if (cp ? c[3].indexOf(cp) >= 0 : cleDep(c[0]).indexOf(nq) === 0) coms.push(c); });
+      coms.sort(function (a, b) { return (cleDep(a[0]) === nq ? 0 : 1) - (cleDep(b[0]) === nq ? 0 : 1) || a[0].length - b[0].length; });
+      var deps = [];
+      st.deps.forEach(function (d, i) { if (d.actif && cleDep(d.prenom + " " + d.nom).indexOf(nq) >= 0) deps.push(i); });
+      choix = coms.slice(0, 5).map(function (c) { return { type: "Commune", lib: c[0], ctx: c[1] + (c[3][0] ? " · " + c[3][0] : ""), commune: c }; })
+        .concat(deps.slice(0, 4).map(function (i) { var d = st.deps[i]; return { type: genre(d), lib: d.prenom + " " + d.nom, ctx: d.dept + (d.circo ? ", " + ord(d.circo) + " circ." : ""), dep: i }; }));
+      actif = -1; afficherListe();
+      // Adresse précise (chiffre ou plus de 2 mots) : on interroge le géocodeur.
+      if (brut.length >= 4 && (/\d/.test(brut) && !cp || brut.split(/\s+/).length > 2)) geoMinuteur = setTimeout(function () {
+        fetch(GEOCODAGE + "?limit=5&autocomplete=1&index=address&q=" + encodeURIComponent(brut)).then(function (r) { if (!r.ok) throw new Error("geo"); return r.json(); }).then(function (j) {
+          if (mon !== jeton) return;
+          var adr = (j.features || []).filter(function (f) { return f.geometry && f.properties && f.properties.context && f.properties.type !== "municipality"; })
+            .map(function (f) { return { type: TYPES_ADRESSE[f.properties.type] || "Lieu", lib: f.properties.label, ctx: f.properties.context, geo: f }; });
+          choix = adr.concat(choix).slice(0, 8); actif = -1; afficherListe();
+        }).catch(function () {});
+      }, 250);
     });
   }
-  $("tq-res").addEventListener("click", function (e) {
-    var b = e.target.closest("button[data-sugg]");
-    if (b) localiser(suggestions[+b.dataset.sugg]);
+  liste().addEventListener("mousedown", function (e) { var li = e.target.closest("li[data-i]"); if (li) { e.preventDefault(); choisir(choix[+li.dataset.i]); } });
+  $("tq").addEventListener("input", function () { $("tq-res").innerHTML = ""; suggerer(this.value); });
+  $("tq").addEventListener("keydown", function (e) {
+    if (liste().hidden) return;
+    if (e.key === "ArrowDown") { e.preventDefault(); actif = (actif + 1) % choix.length; afficherListe(); }
+    else if (e.key === "ArrowUp") { e.preventDefault(); actif = (actif - 1 + choix.length) % choix.length; afficherListe(); }
+    else if (e.key === "Escape") fermerListe();
   });
-  $("trouver").addEventListener("submit", function (e) { e.preventDefault(); chercher($("tq").value, true); });
-  var tqMinuteur;
-  $("tq").addEventListener("input", function () { clearTimeout(tqMinuteur); var v = this.value; tqMinuteur = setTimeout(function () { chercher(v); }, 300); });
+  $("tq").addEventListener("blur", function () { setTimeout(fermerListe, 150); });
+  $("trouver").addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (choix.length) { choisir(choix[actif >= 0 ? actif : 0]); return; }
+    $("tq-res").innerHTML = '<p class="note">Aucun résultat. Vérifiez l\'orthographe, ou parcourez <a href="#deputes">la liste des député.e.s</a> par département, y compris les député.e.s des Français de l\'étranger.</p>';
+  });
 
   /* Définitions du vocabulaire parlementaire (bulle au survol, au toucher ou au clavier). */
   var DEFS = {

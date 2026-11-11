@@ -58,15 +58,6 @@
         <h2>Comment votent vos député.e.s&nbsp;?</h2>
         <p class="hero-intro">Chaque semaine, les député.e.s votent des textes qui changent notre quotidien. Retrouvez ici chacun de ces votes, expliqué simplement&nbsp;: ce que prévoit le texte, qui a voté pour ou contre, et avec quels arguments.</p>
         <p class="hero-chiffres" id="hero-chiffres"></p>
-        <form class="trouver" id="trouver" role="search" autocomplete="off">
-          <label for="tq">Trouver mon ou ma député.e</label>
-          <div class="trouver-champ">
-            <input id="tq" type="search" placeholder="Votre adresse, votre commune ou un nom" aria-describedby="tq-aide" enterkeyhint="search" autocomplete="street-address">
-            <button class="btn plein" type="submit">Chercher</button>
-          </div>
-          <p class="note" id="tq-aide">Par exemple : « 12 rue de la République, Lyon », « 33000 » ou « Dupont ». L'adresse sert uniquement à situer votre circonscription : elle n'est pas conservée.</p>
-        </form>
-        <div id="tq-res" class="tq-res" aria-live="polite"></div>
         </div>
         <aside class="hero-alerte">
           <h3>Suivre les votes sur Telegram</h3>
@@ -74,6 +65,20 @@
           <a class="btn plein" id="hero-canal" href="#alertes">Rejoindre le canal →</a>
           <a class="hero-lien" href="#alertes">Comment ça marche ?</a>
         </aside>
+        <div class="hero-recherche">
+        <form class="trouver" id="trouver" role="search" autocomplete="off">
+          <label for="tq">Trouver mon ou ma député.e</label>
+          <div class="trouver-champ">
+            <div class="tq-combo">
+              <input id="tq" type="search" placeholder="Votre adresse, votre commune ou un nom" aria-describedby="tq-aide" enterkeyhint="search" autocomplete="off" role="combobox" aria-autocomplete="list" aria-controls="tq-liste" aria-expanded="false">
+              <ul id="tq-liste" class="tq-liste" role="listbox" hidden></ul>
+            </div>
+            <button class="btn plein" type="submit">Chercher</button>
+          </div>
+          <p class="note" id="tq-aide">Par exemple : « 12 rue de la République, Lyon », « 33000 » ou « Dupont ». L'adresse sert uniquement à situer votre circonscription : elle n'est pas conservée.</p>
+        </form>
+        <div id="tq-res" class="tq-res" aria-live="polite"></div>
+        </div>
       </section>
       <div class="acc-grille">
         <section class="panel acc-votes">
