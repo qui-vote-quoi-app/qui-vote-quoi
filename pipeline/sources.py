@@ -36,14 +36,27 @@ def entete(url):
     }
 
 
-def telecharger(url, destination: Path):
+def telecharger(url, destination: Path, essais=5):
+    """Télécharge en entier, avec reprise complète si la connexion est coupée en cours de route
+    (le serveur de l'Assemblée interrompt parfois les gros transferts) et contrôle de la taille."""
     destination.parent.mkdir(parents=True, exist_ok=True)
     tmp = destination.with_suffix(".part")
-    with _get(url, stream=True) as r, open(tmp, "wb") as f:
-        for bloc in r.iter_content(1 << 20):
-            f.write(bloc)
-    tmp.replace(destination)
-    return destination
+    for essai in range(essais):
+        try:
+            with _get(url, stream=True) as r, open(tmp, "wb") as f:
+                attendu = int(r.headers.get("Content-Length") or 0)
+                for bloc in r.iter_content(1 << 20):
+                    f.write(bloc)
+            recu = tmp.stat().st_size
+            if attendu and recu != attendu:
+                raise requests.exceptions.ChunkedEncodingError(f"{recu} octets reçus sur {attendu}")
+            tmp.replace(destination)
+            return destination
+        except (requests.RequestException, OSError) as e:
+            print(f"Téléchargement interrompu ({url.rsplit('/', 1)[-1]}, essai {essai + 1}/{essais}) : {e}")
+            if essai == essais - 1:
+                raise
+            time.sleep(15 * (essai + 1))
 
 
 class ZipDistant:
