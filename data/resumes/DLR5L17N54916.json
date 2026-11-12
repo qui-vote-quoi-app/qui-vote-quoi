@@ -1,0 +1,11 @@
+{
+ "dossier": "DLR5L17N54916",
+ "texte": "PNREANR5L17B3183",
+ "tentatives": 1,
+ "longueur": 1640,
+ "statut": "publie",
+ "resume": "Le texte invite le Gouvernement à transmettre au Président de la République le souhait de l'Assemblée nationale d'engager les démarches nécessaires en vue de l'entrée au Panthéon d'Olympe de Gouges, de l'abbé Charles-Michel de l'Épée et de Zéna M’Déré. Il affirme son attachement à la reconnaissance dans la mémoire nationale de ces personnalités, salue leur mémoire et rappelle les engagements pour lesquels elles sont honorées.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-12T13:05+00:00"
+}

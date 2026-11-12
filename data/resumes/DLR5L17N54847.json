@@ -1,0 +1,11 @@
+{
+ "dossier": "DLR5L17N54847",
+ "texte": "PNREANR5L17B3119",
+ "tentatives": 1,
+ "longueur": 8101,
+ "statut": "publie",
+ "resume": "Le texte invite le Gouvernement à soutenir, au sein du Conseil de l'Union européenne, une révision du code frontières Schengen afin d'instaurer une double frontière associant une frontière extérieure européenne renforcée et une frontière nationale relevant de chaque État membre. Il préconise que cette révision conduise à soumettre les ressortissants de pays tiers à des vérifications lors du franchissement des frontières intérieures, notamment par une déclaration d'entrée.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-12T13:09+00:00"
+}

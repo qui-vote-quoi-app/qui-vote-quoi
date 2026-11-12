@@ -1,0 +1,11 @@
+{
+ "dossier": "DLR5L17N54844",
+ "texte": "PNREANR5L17B3116",
+ "tentatives": 1,
+ "longueur": 1510,
+ "statut": "publie",
+ "resume": "Le texte invite le Gouvernement à mobiliser sans délai les moyens de l'État pour remédier aux difficultés d'accès à l'eau potable dans les départements et collectivités d'outre-mer. Il prévoit une intervention exceptionnelle et temporaire pour suppléer les défaillances locales et garantir un accès effectif à l'eau potable pour chaque usager.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-12T13:17+00:00"
+}

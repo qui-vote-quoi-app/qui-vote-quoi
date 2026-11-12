@@ -1,0 +1,11 @@
+{
+ "dossier": "DLR5L17N53005",
+ "texte": "PNREANR5L17B1977",
+ "tentatives": 1,
+ "longueur": 1917,
+ "statut": "publie",
+ "resume": "Le texte prévoit la création d'une commission d'enquête parlementaire de quinze membres. Cette commission est chargée d'évaluer le traitement judiciaire des violences sexuelles incestueuses parentales commises contre les enfants et d'examiner la situation des parents protecteurs. Elle doit notamment analyser les pratiques judiciaires, étudier les poursuites et les décisions de placement, puis formuler des recommandations.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-12T13:20+00:00"
+}

@@ -1,10 +1,10 @@
 {
  "etags": {
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip": "\"1cea3b5-660038379dcb6\"",
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip": "\"d18df7-65ff63041550f\"",
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip": "\"ab95b3-660035bf28020\""
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip": "\"1cece42-66012989df7bc\"",
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip": "\"d18dda-6600a5193c60b\"",
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip": "\"ab95c0-6600f1824d524\""
  },
- "dernier_num": 9806,
+ "dernier_num": 9811,
  "cr_index": {
   "xml/compteRendu/CRSANR5L17S2025O1N037.xml": "RUANR5L17S2025IDS28624",
   "xml/compteRendu/CRSANR5L17S2025O1N079.xml": "RUANR5L17S2025IDS28912",
@@ -663,12 +663,20 @@
   "xml/compteRendu/CRSANR5L17S2026O1N202.xml": "RUANR5L17S2026IDS30484",
   "xml/compteRendu/CRSANR5L17S2026O1N126.xml": "RUANR5L17S2026IDS30179",
   "xml/compteRendu/CRSANR5L17S2025O1N040.xml": "RUANR5L17S2025IDS28629",
-  "xml/compteRendu/CRSANR5L17S2027O1N057.xml": "RUANR5L17S2027IDS30988"
+  "xml/compteRendu/CRSANR5L17S2027O1N057.xml": "RUANR5L17S2027IDS30988",
+  "xml/compteRendu/CRSANR5L17S2027O1N058.xml": "RUANR5L17S2027IDS30989",
+  "xml/compteRendu/CRSANR5L17S2027O1N059.xml": "RUANR5L17S2027IDS30990"
  },
- "derniere_execution": "2026-11-11T20:15:39+00:00",
- "dernier_quotidien": "2026-11-11T16:55:11+00:00",
- "resumes_restants": 0,
+ "derniere_execution": "2026-11-12T13:20:17+00:00",
+ "dernier_quotidien": "2026-11-12T13:20:17+00:00",
+ "resumes_restants": 4,
  "canal_accueil": 3,
- "canal_messages": {},
- "canal_maj": "2026-11-11"
+ "canal_messages": {
+  "9807": {
+   "id": 5,
+   "legende": "✅ <b>Renforcer l’effectivité des droits voisins de la presse : texte de compromis avec le Sénat</b> · adopté\n\n<b>📄 Ce que prévoit le texte</b>\n<blockquote expandable>Le texte interdit aux services de communication en ligne de restreindre l'affichage des publications de presse pendant et après les négociations sur les droits voisins. Il punit d'une amende le refus de transmettre les informations nécessaires aux négociations et prévoit la saisine de l'Autorité de la concurrence en cas de désaccord persistant pour fixer la rémunération.</blockquote><i>Résumé rédigé par IA à partir du texte officiel.</i>\n\n<b>Le vote des groupes</b>\n🟦 RN · EPR · LFI-NFP · SOC · DR · ECOS · DEM · HOR · LIOT · GDR · UDR · NI\n\n#AffairesCulturellesEducation",
+   "dossier": "DLR5L17N51330"
+  }
+ },
+ "canal_maj": "2026-11-12"
 }

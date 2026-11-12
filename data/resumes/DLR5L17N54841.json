@@ -1,0 +1,11 @@
+{
+ "dossier": "DLR5L17N54841",
+ "texte": "PNREANR5L17B3115",
+ "tentatives": 1,
+ "longueur": 6474,
+ "statut": "publie",
+ "resume": "Le texte affirme que la commande publique constitue un levier stratégique pour la souveraineté économique, le progrès écologique et l'efficacité de la dépense publique. Il appelle à mobiliser la commande publique en autorisant les acheteurs publics à accorder une priorité aux offres dont tout ou partie des moyens d'exécution sont localisés en France, notamment en matière d'emploi, de production et d'innovation.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-12T13:13+00:00"
+}
