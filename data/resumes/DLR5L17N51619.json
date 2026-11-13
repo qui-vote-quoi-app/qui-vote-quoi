@@ -1,0 +1,11 @@
+{
+ "dossier": "DLR5L17N51619",
+ "texte": "PNREANR5L17B1050",
+ "tentatives": 1,
+ "longueur": 1178,
+ "statut": "publie",
+ "resume": "Le texte prévoit la création d'une commission d'enquête parlementaire composée de trente membres. Cette commission est chargée d'étudier les dysfonctionnements qui entravent l'accès à une justice adaptée aux besoins des justiciables ultramarins et qui affectent la confiance envers les institutions judiciaires.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-13T12:29+00:00"
+}

@@ -1,0 +1,11 @@
+{
+ "dossier": "DLR5L17N51467",
+ "texte": "PNREANR5L17B0916",
+ "tentatives": 1,
+ "longueur": 12571,
+ "statut": "publie",
+ "resume": "Le texte formule une résolution européenne appelant au renforcement du soutien politique, militaire, financier et humanitaire à l'Ukraine face à la Russie. Il condamne l'agression militaire, les annexions territoriales et les violations du droit international. Enfin, il encourage l'adhésion de l'Ukraine à l'Union européenne, le maintien des sanctions contre la Russie, l'utilisation des avoirs russes immobilisés pour la reconstruction et la mise en place de garanties de sécurité durables.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-13T12:38+00:00"
+}

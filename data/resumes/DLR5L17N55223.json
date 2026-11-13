@@ -1,0 +1,11 @@
+{
+ "dossier": "DLR5L17N55223",
+ "texte": "PRJLANR5L17B3434",
+ "tentatives": 1,
+ "longueur": 318839,
+ "statut": "publie",
+ "resume": "Le texte actualise les prévisions de soldes des administrations publiques et ajuste les ressources ainsi que l'équilibre général du budget de l'État pour l'année 2026. Il modifie les affectations de ressources à des tiers et actualise le plafond d'autorisation des emplois. Enfin, il autorise l'ouverture et l'annulation de crédits budgétaires supplémentaires et ratifie des décrets d'avance pris au cours de l'année.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-13T12:28+00:00"
+}

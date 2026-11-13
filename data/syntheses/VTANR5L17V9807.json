@@ -1,8 +1,40 @@
 {
  "uid": "VTANR5L17V9807",
  "num": 9807,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-12T12:57:51+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2027O1N060",
+ "seance_jour": "jeudi 12 novembre 2026",
+ "contexte": "Le projet de loi soumis au vote vise à renforcer l'effectivité des droits voisins des éditeurs et des agences de presse, issus d'un texte de la commission mixte paritaire. Il entend corriger les déséquilibres et l'asymétrie d'information entre les plateformes numériques et les entreprises de presse en renforçant les missions de l'Arcom.",
+ "pour": [
+  {
+   "resume": "Le texte offre une réponse concrète pour lutter contre le transfert de valeur et l'asymétrie d'information au profit des plateformes numériques.",
+   "citation": "Le texte issu de la commission mixte paritaire s'attaque précisément à ces deux défaillances. Contre l'asymétrie d'information, il tend à obliger les plateformes à transmettre les éléments demandés par les éditeurs, sous le contrôle de l'Arcom.",
+   "acteur": "PA719138",
+   "nom": "M. Michel Castellani",
+   "qualite": "",
+   "syceron": [
+    "4225791"
+   ]
+  },
+  {
+   "resume": "L'Arcom est dotée de pouvoirs renforcés d'injonction et de sanction pour contraindre les plateformes à la transparence et fixer les rémunérations.",
+   "citation": "Il confie à l'Arcom deux nouvelles missions complémentaires. D'abord, une mission de contrôle de la transparence : lorsqu'une plateforme ne communique pas dans le délai de trente jours les informations nécessaires à l'évaluation de la rémunération, l'Arcom pourra être saisie",
+   "acteur": "PA608826",
+   "nom": "Mme Virginie Duby-Muller",
+   "qualite": "",
+   "syceron": [
+    "4225820"
+   ]
+  }
+ ],
+ "contre": [],
+ "ecartes": [
+  "Argument pour n°3 : la citation ne figure pas mot pour mot dans P2."
+ ],
+ "genere_le": "2026-11-13T12:25:50+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-13T12:25:50+00:00"
 }

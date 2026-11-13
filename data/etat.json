@@ -1,10 +1,10 @@
 {
  "etags": {
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip": "\"1d0e308-66017a1602e7b\"",
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip": "\"d18dda-6600a5193c60b\"",
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip": "\"abbd5a-66014f6120848\""
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip": "\"1d1ac8c-66021aeeb80af\"",
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip": "\"d190b8-6601e6e8b8c8b\"",
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip": "\"abc4e7-660268f8c4262\""
  },
- "dernier_num": 9811,
+ "dernier_num": 9895,
  "cr_index": {
   "xml/compteRendu/CRSANR5L17S2025O1N037.xml": "RUANR5L17S2025IDS28624",
   "xml/compteRendu/CRSANR5L17S2025O1N079.xml": "RUANR5L17S2025IDS28912",
@@ -665,18 +665,26 @@
   "xml/compteRendu/CRSANR5L17S2025O1N040.xml": "RUANR5L17S2025IDS28629",
   "xml/compteRendu/CRSANR5L17S2027O1N057.xml": "RUANR5L17S2027IDS30988",
   "xml/compteRendu/CRSANR5L17S2027O1N058.xml": "RUANR5L17S2027IDS30989",
-  "xml/compteRendu/CRSANR5L17S2027O1N059.xml": "RUANR5L17S2027IDS30990"
+  "xml/compteRendu/CRSANR5L17S2027O1N059.xml": "RUANR5L17S2027IDS30990",
+  "xml/compteRendu/CRSANR5L17S2027O1N060.xml": "RUANR5L17S2027IDS30992",
+  "xml/compteRendu/CRSANR5L17S2027O1N061.xml": "RUANR5L17S2027IDS30993"
  },
- "derniere_execution": "2026-11-12T20:26:31+00:00",
- "dernier_quotidien": "2026-11-12T13:20:17+00:00",
- "resumes_restants": 4,
+ "derniere_execution": "2026-11-13T12:39:22+00:00",
+ "dernier_quotidien": "2026-11-13T12:39:22+00:00",
+ "resumes_restants": 0,
  "canal_accueil": 3,
  "canal_messages": {
   "9807": {
    "id": 5,
    "legende": "✅ <b>Renforcer l’effectivité des droits voisins de la presse : texte de compromis avec le Sénat</b> · adopté\n\n<b>📄 Ce que prévoit le texte</b>\n<blockquote expandable>Le texte interdit aux services de communication en ligne de restreindre l'affichage des publications de presse pendant et après les négociations sur les droits voisins. Il punit d'une amende le refus de transmettre les informations nécessaires aux négociations et prévoit la saisine de l'Autorité de la concurrence en cas de désaccord persistant pour fixer la rémunération.</blockquote><i>Résumé rédigé par IA à partir du texte officiel.</i>\n\n<b>Le vote des groupes</b>\n🟦 RN · EPR · LFI-NFP · SOC · DR · ECOS · DEM · HOR · LIOT · GDR · UDR · NI\n\n#AffairesCulturellesEducation",
-   "dossier": "DLR5L17N51330"
+   "dossier": "DLR5L17N51330",
+   "debat": true
+  },
+  "9895": {
+   "id": 7,
+   "legende": "❌ <b>Projet de loi de finances de fin de gestion pour 2026</b> · rejeté\n\n<b>📄 Ce que prévoit le texte</b>\n<blockquote expandable>Le texte actualise les prévisions de soldes des administrations publiques et ajuste les ressources ainsi que l'équilibre général du budget de l'État pour l'année 2026. Il modifie les affectations de ressources à des tiers et actualise le plafond d'autorisation des emplois. Enfin, il autorise l'ouverture et l'annulation de crédits budgétaires supplémentaires et ratifie des décrets d'avance pris au cours de l'année.</blockquote><i>Résumé rédigé par IA à partir du texte officiel.</i>\n\n<b>Le vote des groupes</b>\n🟦 EPR · DR · DEM · HOR\n🟥 LFI-NFP · ECOS · GDR · NI\n⬜ RN · SOC · LIOT · UDR\n\n#Finances",
+   "dossier": "DLR5L17N55223"
   }
  },
- "canal_maj": "2026-11-12"
+ "canal_maj": "2026-11-13"
 }

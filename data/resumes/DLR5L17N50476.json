@@ -1,0 +1,11 @@
+{
+ "dossier": "DLR5L17N50476",
+ "texte": "PNREANR5L17B0287",
+ "tentatives": 1,
+ "longueur": 14908,
+ "statut": "publie",
+ "resume": "Le texte invite les institutions européennes à imposer des normes de production équivalentes en matière de santé, d'environnement, de biodiversité et de bien-être animal pour les produits importés dans l'Union européenne. Il demande également à la Commission européenne de renforcer les contrôles aux frontières et de garantir la réciprocité des exigences sanitaires et environnementales pour l'ensemble des denrées alimentaires et produits agricoles entrant sur le marché européen.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-13T12:39+00:00"
+}

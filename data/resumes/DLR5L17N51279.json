@@ -1,0 +1,11 @@
+{
+ "dossier": "DLR5L17N51279",
+ "texte": "PNREANR5L17B0783",
+ "tentatives": 1,
+ "longueur": 1608,
+ "statut": "publie",
+ "resume": "Le texte prévoit la création d'une commission d'enquête parlementaire de trente membres. Cette commission est chargée d'étudier les dispositifs de captation de l'attention de la plateforme TikTok et leurs effets psychologiques sur les mineurs. Elle doit également examiner les risques liés à l'exposition des jeunes utilisateurs aux contenus et à l'addiction numérique, puis formuler des propositions de mesures pour protéger les mineurs en matière de régulation et de sécurité.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-13T12:34+00:00"
+}
