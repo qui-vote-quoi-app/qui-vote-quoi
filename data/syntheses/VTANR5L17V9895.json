@@ -1,8 +1,85 @@
 {
  "uid": "VTANR5L17V9895",
  "num": 9895,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-13T12:23:36+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2027O1N061",
+ "seance_jour": "jeudi 12 novembre 2026",
+ "contexte": "L'Assemblée nationale examine, en première lecture, l'ensemble du projet de loi de finances de fin de gestion pour 2026. Ce texte technique vise à ajuster les crédits de fin d'année et à honorer des dépenses indispensables, tout en suscitant des débats sur la gestion budgétaire et le niveau de la dette.",
+ "pour": [
+  {
+   "resume": "Ce texte constitue un outil technique indispensable pour solder l'exercice budgétaire en cours et honorer les engagements pris envers les agriculteurs, les armées et les services essentiels.",
+   "citation": "Il ne s'agit pas d'un nouveau budget, mais seulement d'ajustements indispensables à la bonne exécution du budget de 2026 : pour nos agriculteurs touchés par les sécheresses et par les incendies, pour nos armées, pour les enseignants remplaçants, pour nos concitoyens touchés par la crise énergétique",
+   "acteur": "PA794114",
+   "nom": "M. Emmanuel Mandon",
+   "qualite": "",
+   "syceron": [
+    "4227394",
+    "4227398",
+    "4227400",
+    "4227404"
+   ]
+  },
+  {
+   "resume": "Le projet de loi permet de répondre aux urgences concrètes et de maintenir des financements importants, malgré les critiques adressées sur sa gestion d'ensemble.",
+   "citation": "Mais il nous faut une loi de finances de fin de gestion ; par conséquent, nous voterons pour.",
+   "acteur": "PA687214",
+   "nom": "M. Sylvain Berrios",
+   "qualite": "",
+   "syceron": [
+    "4227492"
+   ]
+  },
+  {
+   "resume": "Le rejet du texte ne réglerait pas la situation financière et priverait l'État des ouvertures de crédits nécessaires à son fonctionnement.",
+   "citation": "Nous déplorons la rédaction actuelle de ce texte, mais nous savons que son rejet ne réglerait rien. La charge de la dette resterait due et l'État perdrait à la fois les ouvertures de crédits et les annulations qui les financent.",
+   "acteur": "PA720146",
+   "nom": "M. Denis Masséglia",
+   "qualite": "",
+   "syceron": [
+    "4227520"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le projet de loi consacre une gestion budgétaire catastrophique marquée par l'absence de réponses aux inquiétudes de la jeunesse et une politique inadaptée.",
+   "citation": "Le projet de loi de fin de gestion porte bien son nom : c'est le projet de loi de fin de votre gestion. Il n'est que la transcription de votre gestion catastrophique, assortie, à la fin, d'une politique de gribouille pour répondre, au coup par coup",
+   "acteur": "PA793780",
+   "nom": "Mme Christine Arrighi",
+   "qualite": "",
+   "syceron": [
+    "4227391"
+   ]
+  },
+  {
+   "resume": "Le texte valide des coupes budgétaires préjudiciables pour l'enseignement supérieur, la recherche et d'autres missions fondamentales.",
+   "citation": "ce texte supprime 200 millions d'euros pour l'enseignement supérieur et la recherche, que le gouvernement a donné un avis défavorable à la suppression de ces coupes et que vous, là-bas, à droite, avez voté ensemble l'essentiel des annulations de crédits.",
+   "acteur": "PA842029",
+   "nom": "Mme Claire Lejeune",
+   "qualite": "",
+   "syceron": [
+    "4227525",
+    "4227531",
+    "4227534",
+    "4227536"
+   ]
+  },
+  {
+   "resume": "Le recours à ce type de texte, au lieu d'un projet de loi de finances rectificative, ne permet pas un contrôle parlementaire suffisant face à l'ampleur des rectifications budgétaires.",
+   "citation": "Il s'agit d'une rectification du budget au cours de l'année, d'une ampleur telle qu'il apparaît anormal que le Parlement ne puisse pas se prononcer au moyen d'un projet de loi de finances rectificative, au moment où les décisions sont prises.",
+   "acteur": "PA721202",
+   "nom": "M. Éric Coquerel",
+   "qualite": "président de la commission des finances",
+   "syceron": [
+    "4227550"
+   ]
+  }
+ ],
+ "ecartes": [],
+ "genere_le": "2026-11-14T11:40:49+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-14T11:40:49+00:00"
 }
