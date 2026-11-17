@@ -1,10 +1,10 @@
 {
  "etags": {
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip": "\"1d1ac8c-660630df9e6c6\"",
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip": "\"d19ca6-6605ac881d154\"",
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip": "\"abcce7-66062e9b08f1a\""
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip": "\"1d279b6-6607225561df6\"",
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip": "\"d19d67-6606ee6e39322\"",
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip": "\"abe638-66077089be556\""
  },
- "dernier_num": 9895,
+ "dernier_num": 9915,
  "cr_index": {
   "xml/compteRendu/CRSANR5L17S2025O1N037.xml": "RUANR5L17S2025IDS28624",
   "xml/compteRendu/CRSANR5L17S2025O1N079.xml": "RUANR5L17S2025IDS28912",
@@ -667,10 +667,11 @@
   "xml/compteRendu/CRSANR5L17S2027O1N058.xml": "RUANR5L17S2027IDS30989",
   "xml/compteRendu/CRSANR5L17S2027O1N059.xml": "RUANR5L17S2027IDS30990",
   "xml/compteRendu/CRSANR5L17S2027O1N060.xml": "RUANR5L17S2027IDS30992",
-  "xml/compteRendu/CRSANR5L17S2027O1N061.xml": "RUANR5L17S2027IDS30993"
+  "xml/compteRendu/CRSANR5L17S2027O1N061.xml": "RUANR5L17S2027IDS30993",
+  "xml/compteRendu/CRSANR5L17S2027O1N062.xml": "RUANR5L17S2027IDS31002"
  },
- "derniere_execution": "2026-11-16T22:29:51+00:00",
- "dernier_quotidien": "2026-11-16T12:56:29+00:00",
+ "derniere_execution": "2026-11-17T13:39:52+00:00",
+ "dernier_quotidien": "2026-11-17T13:39:52+00:00",
  "resumes_restants": 0,
  "canal_accueil": 3,
  "canal_messages": {
@@ -685,7 +686,12 @@
    "legende": "❌ <b>Projet de loi de finances de fin de gestion pour 2026</b> · rejeté\n\n<b>📄 Ce que prévoit le texte</b>\n<blockquote expandable>Le texte actualise les prévisions de soldes des administrations publiques et ajuste les ressources ainsi que l'équilibre général du budget de l'État pour l'année 2026. Il modifie les affectations de ressources à des tiers et actualise le plafond d'autorisation des emplois. Enfin, il autorise l'ouverture et l'annulation de crédits budgétaires supplémentaires et ratifie des décrets d'avance pris au cours de l'année.</blockquote><i>Résumé rédigé par IA à partir du texte officiel.</i>\n\n<b>Le vote des groupes</b>\n🟦 EPR · DR · DEM · HOR\n🟥 LFI-NFP · ECOS · GDR · NI\n⬜ RN · SOC · LIOT · UDR\n\n#Finances",
    "dossier": "DLR5L17N55223",
    "debat": true
+  },
+  "9905": {
+   "id": 9,
+   "legende": "✅ <b>Proposition de loi visant au renforcement de l'attractivité de l'épargne salariale et à la mise en oeuvre d'une procédure de déblocage exceptionnelle</b> · adopté\n\n<b>📄 Ce que prévoit le texte</b>\n<blockquote expandable>Le texte autorise le déblocage exceptionnel et anticipé des droits liés à la participation et à l'intéressement affectés à un plan d'épargne salariale avant 2026, dans la limite d'un plafond de 5 000 euros et sous réserve d'un accord collectif ou d'une décision de l'employeur. Il assouplit les conditions de rachat ou de souscription d'actions pour les salariés et étend les motifs de déblocage anticipé aux cas de naissance ou d'adoption. Enfin, il encadre l'échange de données entre les gestionnaires de dispositifs d</blockquote><i>Résumé rédigé par IA à partir du texte officiel.</i>\n\n<b>Le vote des groupes</b>\n🟦 RN · EPR · DR · DEM · HOR · LIOT · UDR · NI\n🟥 LFI-NFP · SOC · ECOS · GDR\n\n#AffairesSociales",
+   "dossier": "DLR5L17N53699"
   }
  },
- "canal_maj": "2026-11-16"
+ "canal_maj": "2026-11-17"
 }

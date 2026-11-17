@@ -1,0 +1,11 @@
+{
+ "dossier": "DLR5L17N53699",
+ "texte": "PIONANR5L17B2625",
+ "tentatives": 1,
+ "longueur": 8195,
+ "statut": "publie",
+ "resume": "Le texte autorise le déblocage exceptionnel et anticipé des droits liés à la participation et à l'intéressement affectés à un plan d'épargne salariale avant 2026, dans la limite d'un plafond de 5 000 euros et sous réserve d'un accord collectif ou d'une décision de l'employeur. Il assouplit les conditions de rachat ou de souscription d'actions pour les salariés et étend les motifs de déblocage anticipé aux cas de naissance ou d'adoption. Enfin, il encadre l'échange de données entre les gestionnaires de dispositifs d'épargne et l'administration.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-17T13:39+00:00"
+}
