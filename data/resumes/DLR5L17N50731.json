@@ -1,0 +1,11 @@
+{
+ "dossier": "DLR5L17N50731",
+ "texte": "PRJLANR5L17B1112",
+ "tentatives": 1,
+ "longueur": 133946,
+ "statut": "publie",
+ "resume": "Le texte renforce la sécurité des réseaux et des systèmes d'information pour les activités d'importance vitale et les infrastructures critiques. Il définit des obligations de cybersécurité, de notification des incidents et de résilience pour les entités essentielles et importantes. Enfin, il adapte le cadre législatif national et financier pour intégrer les règlements européens relatifs à la cybersécurité et à la résilience opérationnelle numérique.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-18T13:18+00:00"
+}

@@ -1,10 +1,10 @@
 {
  "etags": {
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip": "\"1d279b6-660772f724c7f\"",
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip": "\"d19d67-6606ee6e39322\"",
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip": "\"ac0ca6-6607c0e9cf4ba\""
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip": "\"1d54bfe-660864384c710\"",
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip": "\"d1a2db-66083049ef183\"",
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip": "\"ac3905-6608b25479347\""
  },
- "dernier_num": 9915,
+ "dernier_num": 9969,
  "cr_index": {
   "xml/compteRendu/CRSANR5L17S2025O1N037.xml": "RUANR5L17S2025IDS28624",
   "xml/compteRendu/CRSANR5L17S2025O1N079.xml": "RUANR5L17S2025IDS28912",
@@ -668,10 +668,12 @@
   "xml/compteRendu/CRSANR5L17S2027O1N059.xml": "RUANR5L17S2027IDS30990",
   "xml/compteRendu/CRSANR5L17S2027O1N060.xml": "RUANR5L17S2027IDS30992",
   "xml/compteRendu/CRSANR5L17S2027O1N061.xml": "RUANR5L17S2027IDS30993",
-  "xml/compteRendu/CRSANR5L17S2027O1N062.xml": "RUANR5L17S2027IDS31002"
+  "xml/compteRendu/CRSANR5L17S2027O1N062.xml": "RUANR5L17S2027IDS31002",
+  "xml/compteRendu/CRSANR5L17S2027O1N063.xml": "RUANR5L17S2027IDS31003",
+  "xml/compteRendu/CRSANR5L17S2027O1N064.xml": "RUANR5L17S2027IDS31004"
  },
- "derniere_execution": "2026-11-17T21:20:14+00:00",
- "dernier_quotidien": "2026-11-17T13:39:52+00:00",
+ "derniere_execution": "2026-11-18T13:18:58+00:00",
+ "dernier_quotidien": "2026-11-18T13:18:58+00:00",
  "resumes_restants": 0,
  "canal_accueil": 3,
  "canal_messages": {
@@ -690,8 +692,14 @@
   "9905": {
    "id": 9,
    "legende": "✅ <b>Proposition de loi visant au renforcement de l'attractivité de l'épargne salariale et à la mise en oeuvre d'une procédure de déblocage exceptionnelle</b> · adopté\n\n<b>📄 Ce que prévoit le texte</b>\n<blockquote expandable>Le texte autorise le déblocage exceptionnel et anticipé des droits liés à la participation et à l'intéressement affectés à un plan d'épargne salariale avant 2026, dans la limite d'un plafond de 5 000 euros et sous réserve d'un accord collectif ou d'une décision de l'employeur. Il assouplit les conditions de rachat ou de souscription d'actions pour les salariés et étend les motifs de déblocage anticipé aux cas de naissance ou d'adoption. Enfin, il encadre l'échange de données entre les gestionnaires de dispositifs d</blockquote><i>Résumé rédigé par IA à partir du texte officiel.</i>\n\n<b>Le vote des groupes</b>\n🟦 RN · EPR · DR · DEM · HOR · LIOT · UDR · NI\n🟥 LFI-NFP · SOC · ECOS · GDR\n\n#AffairesSociales",
-   "dossier": "DLR5L17N53699"
+   "dossier": "DLR5L17N53699",
+   "debat": true
+  },
+  "9916": {
+   "id": 11,
+   "legende": "✅ <b>Projet de loi relatif à la résilience des infrastructures critiques et au renforcement de la cybersécurité</b> · adopté\n\n<b>📄 Ce que prévoit le texte</b>\n<blockquote expandable>Le texte renforce la sécurité des réseaux et des systèmes d'information pour les activités d'importance vitale et les infrastructures critiques. Il définit des obligations de cybersécurité, de notification des incidents et de résilience pour les entités essentielles et importantes. Enfin, il adapte le cadre législatif national et financier pour intégrer les règlements européens relatifs à la cybersécurité et à la résilience opérationnelle numérique.</blockquote><i>Résumé rédigé par IA à partir du texte officiel.</i>\n\n<b>Le vote des groupes</b>\n🟦 RN · EPR · SOC · DR · ECOS · DEM · HOR · LIOT · UDR · NI\n🟥 LFI-NFP\n⬜ GDR\n\n#CommissionSpeciale",
+   "dossier": "DLR5L17N50731"
   }
  },
- "canal_maj": "2026-11-17"
+ "canal_maj": "2026-11-18"
 }

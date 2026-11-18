@@ -1,8 +1,115 @@
 {
  "uid": "VTANR5L17V9905",
  "num": 9905,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-17T13:38:40+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2027O1N062",
+ "seance_jour": "lundi 16 novembre 2026",
+ "contexte": "L'Assemblée nationale examine, en première lecture, la proposition de loi visant au renforcement de l'attractivité de l'épargne salariale et à la mise en œuvre d'une procédure de déblocage exceptionnelle. Le texte prévoit notamment la possibilité pour les salariés de retirer des sommes placées sur un plan d'épargne entreprise pour faire face à des dépenses de pouvoir d'achat.",
+ "pour": [
+  {
+   "resume": "Le texte constitue une mesure équilibrée et encadrée de soutien au pouvoir d'achat en permettant de répondre aux besoins immédiats des salariés.",
+   "citation": "Dans l'ensemble, le texte reste équilibré - composé de mesures ponctuelles et encadrées de soutien au pouvoir d'achat -, donc nous le soutiendrons.",
+   "acteur": "PA794810",
+   "nom": "Mme Louise Morel",
+   "qualite": "",
+   "syceron": [
+    "4227995",
+    "4227997"
+   ]
+  },
+  {
+   "resume": "La réintroduction de la disposition permettant de retirer jusqu'à 5 000 euros aide les Français face aux difficultés de pouvoir d'achat.",
+   "citation": "Cela permettra aux Français, qui souffrent aujourd'hui d'un manque de pouvoir d'achat, de retirer cet argent pour acheter un véhicule, pour partir en vacances ou pour acheter des choses de la vie quotidienne.",
+   "acteur": "PA840135",
+   "nom": "M. Alexandre Dufosset",
+   "qualite": "",
+   "syceron": [
+    "4228021"
+   ]
+  },
+  {
+   "resume": "Cette proposition de loi permet de soulager certains salariés en leur donnant accès à une épargne qui leur était jusqu'alors inaccessible.",
+   "citation": "Grâce à cette proposition de loi, nous allons pouvoir soulager certains salariés : ils pourront accéder à une épargne qui leur était inaccessible jusqu'à présent.",
+   "acteur": "PA842147",
+   "nom": "M. Christophe Mongardien",
+   "qualite": "",
+   "syceron": [
+    "4228024"
+   ]
+  },
+  {
+   "resume": "Stimuler la création de richesse est indispensable pour enrichir les salariés, par opposition aux politiques d'économie dirigée.",
+   "citation": "Donc oui, nous assumons de dire qu'il faut créer de la richesse - stimuler la création de richesse - pour enrichir les salariés.",
+   "acteur": "PA840809",
+   "nom": "M. Gérault Verny",
+   "qualite": "",
+   "syceron": [
+    "4228015",
+    "4228017",
+    "4228019"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le texte est perçu comme une mesure de diversion qui évite de débattre d'une véritable augmentation générale des salaires et du smic.",
+   "citation": "Nous voterons bien sûr contre ce texte, qui n'est qu'un leurre de plus dans la boîte à outils macroniste pour ne pas augmenter les salaires.",
+   "acteur": "PA610002",
+   "nom": "Mme Eva Sas",
+   "qualite": "",
+   "syceron": [
+    "4227992"
+   ]
+  },
+  {
+   "resume": "L'utilisation de l'épargne salariale pour des dépenses courantes ne résout pas la crise du pouvoir d'achat et compromet les projets à long terme.",
+   "citation": "Je ne vois pas en quoi prendre de l'argent que les Françaises et les Français ont mis de côté pour des projets à moyen et à long terme et leur dire de l'utiliser pour faire leurs courses et faire face à leurs dépenses courantes, répondrait à l'enjeu du pouvoir d'achat.",
+   "acteur": "PA842195",
+   "nom": "M. Romain Eskenazi",
+   "qualite": "",
+   "syceron": [
+    "4228041",
+    "4228044"
+   ]
+  },
+  {
+   "resume": "Ce dispositif ne bénéficie qu'à une infime minorité de salariés disposant déjà de milliers d'euros d'épargne, constituant ainsi un texte de classe.",
+   "citation": "Deuxièmement, il s'agit d'un texte de classe. Eh oui ! Qui aura les milliers d'euros, disponibles sur un compte, à retirer ? Ceux dont les salaires sont à l'avenant, bien sûr.",
+   "acteur": "PA793736",
+   "nom": "M. Hadrien Clouet",
+   "qualite": "",
+   "syceron": [
+    "4228026",
+    "4228144",
+    "4228030",
+    "4228033",
+    "4228034",
+    "4228037",
+    "4228039"
+   ]
+  },
+  {
+   "resume": "L'épargne salariale est un dispositif conjoncturel et réversible dont les variations soumettent les revenus des salariés aux aléas économiques.",
+   "citation": "Troisièmement, l'épargne salariale est un dispositif réversible. Vous pouvez toucher une somme donnée une année et moins l'année suivante. Cela veut dire que votre vie devient un aléa - elle est soumise au hasard !",
+   "acteur": "PA793736",
+   "nom": "M. Hadrien Clouet",
+   "qualite": "",
+   "syceron": [
+    "4228026",
+    "4228144",
+    "4228030",
+    "4228033",
+    "4228034",
+    "4228037",
+    "4228039"
+   ]
+  }
+ ],
+ "ecartes": [],
+ "genere_le": "2026-11-18T13:17:28+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-18T13:17:28+00:00"
 }
