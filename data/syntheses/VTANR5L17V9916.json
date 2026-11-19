@@ -1,8 +1,87 @@
 {
  "uid": "VTANR5L17V9916",
  "num": 9916,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-18T13:13:42+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2027O1N064",
+ "seance_jour": "mardi 17 novembre 2026",
+ "contexte": "L'Assemblée nationale examine, en première lecture, le projet de loi relatif à la résilience des infrastructures critiques et au renforcement de la cybersécurité. Ce texte vise à transposer en droit français plusieurs directives européennes, notamment NIS 2 et REC, afin d'adapter le dispositif national face à l'augmentation des cyberattaques et des menaces hybrides pesant sur les services publics, les entreprises et les administrations.",
+ "pour": [
+  {
+   "resume": "Le projet de loi permet d'élargir considérablement le nombre d'entités publiques et privées soumises à des règles de cybersécurité strictes.",
+   "citation": "En transposant la directive NIS 2, nous passerons d'environ 300 opérateurs soumis aux règles de l'Anssi à près de 15 000 entités. Il en résultera un vaste mouvement de mise en conformité sur toute la chaîne d'approvisionnement.",
+   "acteur": "PA721632",
+   "nom": "Mme Patricia Lemoine",
+   "qualite": "",
+   "syceron": [
+    "4229359"
+   ]
+  },
+  {
+   "resume": "Le texte redéfinit l'architecture de sécurité en privilégiant une approche axée sur la continuité des activités vitales et la résilience globale.",
+   "citation": "Il ne s'agit plus seulement de protéger des sites, mais de garantir la continuité des activités vitales en cas de crise, en articulant sécurité physique et cybersécurité.",
+   "acteur": "PA721632",
+   "nom": "Mme Patricia Lemoine",
+   "qualite": "",
+   "syceron": [
+    "4229359"
+   ]
+  },
+  {
+   "resume": "Les nouvelles dispositions renforcent la transparence en imposant des délais stricts de signalement des incidents de sécurité.",
+   "citation": "Second apport : la transparence. Les incidents devront être signalés dans les vingt-quatre premières heures, puis détaillés dans les soixante-douze heures, et non plus, comme actuellement, dans un délai de deux mois.",
+   "acteur": "PA719914",
+   "nom": "Mme Geneviève Darrieussecq",
+   "qualite": "",
+   "syceron": [
+    "4229625"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "La suppression de la disposition interdisant les portes dérobées dans les messageries chiffrées fragilise la sécurité des communications privées de millions de citoyens.",
+   "citation": "Cependant, en supprimant l'article 16, vous vous réservez le droit d'ordonner à Signal ou à WhatsApp d'installer une clé maîtresse pour lire ce que s'écrivent des millions de gens.",
+   "acteur": "PA817211",
+   "nom": "M. René Pilato",
+   "qualite": "",
+   "syceron": [
+    "4229366",
+    "4229369",
+    "4229371"
+   ]
+  },
+  {
+   "resume": "Le texte présente des failles en déterminant le niveau de protection selon la taille des structures plutôt que selon la criticité réelle de leur fonction.",
+   "citation": "Ce texte a d'ailleurs d'autres faiblesses. Il protège selon la taille et non selon l'importance : il compte les salariés et le chiffre d'affaires, comme si une PME de trente personnes qui pilote un réseau d'eau potable comptait moins qu'un groupe de trois cents salariés sans rôle stratégique.",
+   "acteur": "PA817211",
+   "nom": "M. René Pilato",
+   "qualite": "",
+   "syceron": [
+    "4229366",
+    "4229369",
+    "4229371"
+   ]
+  },
+  {
+   "resume": "Le projet de loi n'empêche pas la dépendance aux infrastructures de stockage de données hébergées par des acteurs étrangers soumis à des législations extraterritoriales.",
+   "citation": "Avec le Cloud Act, Washington peut exiger nos données où qu'elles soient. Microsoft France a reconnu devant le Sénat ne pas pouvoir garantir le contraire.",
+   "acteur": "PA817211",
+   "nom": "M. René Pilato",
+   "qualite": "",
+   "syceron": [
+    "4229366",
+    "4229369",
+    "4229371"
+   ]
+  }
+ ],
+ "ecartes": [
+  "Argument pour n°3 : la citation ne figure pas mot pour mot dans P5."
+ ],
+ "genere_le": "2026-11-19T13:34:53+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-19T13:34:53+00:00"
 }

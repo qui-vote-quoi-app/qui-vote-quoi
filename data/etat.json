@@ -1,10 +1,10 @@
 {
  "etags": {
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip": "\"1d54bfe-6608b4c9fb51f\"",
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip": "\"d1a2db-66083049ef183\"",
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip": "\"ac695a-660902c7fc7ab\""
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip": "\"1d8d9a2-6609f68aa696d\"",
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip": "\"d1a789-6609722ac65ec\"",
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip": "\"ac8d18-6609f436a98e4\""
  },
- "dernier_num": 9969,
+ "dernier_num": 10040,
  "cr_index": {
   "xml/compteRendu/CRSANR5L17S2025O1N037.xml": "RUANR5L17S2025IDS28624",
   "xml/compteRendu/CRSANR5L17S2025O1N079.xml": "RUANR5L17S2025IDS28912",
@@ -670,10 +670,12 @@
   "xml/compteRendu/CRSANR5L17S2027O1N061.xml": "RUANR5L17S2027IDS30993",
   "xml/compteRendu/CRSANR5L17S2027O1N062.xml": "RUANR5L17S2027IDS31002",
   "xml/compteRendu/CRSANR5L17S2027O1N063.xml": "RUANR5L17S2027IDS31003",
-  "xml/compteRendu/CRSANR5L17S2027O1N064.xml": "RUANR5L17S2027IDS31004"
+  "xml/compteRendu/CRSANR5L17S2027O1N064.xml": "RUANR5L17S2027IDS31004",
+  "xml/compteRendu/CRSANR5L17S2027O1N065.xml": "RUANR5L17S2027IDS31050",
+  "xml/compteRendu/CRSANR5L17S2027O1N066.xml": "RUANR5L17S2027IDS31051"
  },
- "derniere_execution": "2026-11-18T20:53:14+00:00",
- "dernier_quotidien": "2026-11-18T13:18:58+00:00",
+ "derniere_execution": "2026-11-19T13:35:02+00:00",
+ "dernier_quotidien": "2026-11-19T13:35:02+00:00",
  "resumes_restants": 0,
  "canal_accueil": 3,
  "canal_messages": {
@@ -698,8 +700,14 @@
   "9916": {
    "id": 11,
    "legende": "✅ <b>Projet de loi relatif à la résilience des infrastructures critiques et au renforcement de la cybersécurité</b> · adopté\n\n<b>📄 Ce que prévoit le texte</b>\n<blockquote expandable>Le texte renforce la sécurité des réseaux et des systèmes d'information pour les activités d'importance vitale et les infrastructures critiques. Il définit des obligations de cybersécurité, de notification des incidents et de résilience pour les entités essentielles et importantes. Enfin, il adapte le cadre législatif national et financier pour intégrer les règlements européens relatifs à la cybersécurité et à la résilience opérationnelle numérique.</blockquote><i>Résumé rédigé par IA à partir du texte officiel.</i>\n\n<b>Le vote des groupes</b>\n🟦 RN · EPR · SOC · DR · ECOS · DEM · HOR · LIOT · UDR · NI\n🟥 LFI-NFP\n⬜ GDR\n\n#CommissionSpeciale",
-   "dossier": "DLR5L17N50731"
+   "dossier": "DLR5L17N50731",
+   "debat": true
+  },
+  "10033": {
+   "id": 13,
+   "legende": "✅ <b>Exercer l’accès à l’emploi, pérenniser et étendre progressivement l’expérimentation Territoires zéro chômeur longue durée comme solution de retour à l</b> · adopté\n\n<b>📄 Ce que prévoit le texte</b>\n<blockquote expandable>Le texte pérennise et encadre l'expérimentation des « territoires zéro chômeur de longue durée ». Il prévoit la création d'un fonds national chargé de financer et de piloter le dispositif, ainsi que la mise en place de comités locaux par les collectivités volontaires. Enfin, il permet l'embauche de personnes privées durablement d'emploi en contrat à durée indéterminée dans des entreprises conventionnées.</blockquote><i>Résumé rédigé par IA à partir du texte officiel.</i>\n\n<b>Le vote des groupes</b>\n🟦 RN · EPR · LFI-NFP · SOC · DR · ECOS · DEM · HOR · LIOT · GDR · UDR · NI\n\n#AffairesSociales",
+   "dossier": "DLR5L17N51962"
   }
  },
- "canal_maj": "2026-11-18"
+ "canal_maj": "2026-11-19"
 }
