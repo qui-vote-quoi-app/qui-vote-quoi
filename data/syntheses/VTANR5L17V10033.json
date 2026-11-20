@@ -1,8 +1,101 @@
 {
  "uid": "VTANR5L17V10033",
  "num": 10033,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-19T13:31:24+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2027O1N068",
+ "seance_jour": "jeudi 19 novembre 2026",
+ "contexte": "Le vote porte sur la proposition de loi visant à pérenniser et étendre progressivement l'expérimentation \" territoires zéro chômeur de longue durée \" (TZCLD). Ce dispositif permet aux entreprises à but d'emploi de recruter des personnes privées durablement d'emploi sous forme de contrats à durée indéterminée à temps choisi.",
+ "pour": [
+  {
+   "resume": "Le dispositif offre une réponse humaine et concrète pour permettre aux personnes durablement éloignées de l'emploi de retrouver de la dignité et une stabilité professionnelle.",
+   "citation": "Voilà ce que permet Territoires zéro chômeur de longue durée : retrouver, par le travail, la dignité.",
+   "acteur": "PA721410",
+   "nom": "Mme Émilie Bonnivard",
+   "qualite": "",
+   "syceron": [
+    "4233413",
+    "4233419"
+   ]
+  },
+  {
+   "resume": "L'expérimentation a prouvé son efficacité sur le terrain depuis plusieurs années et il est indispensable de lui garantir un cadre juridique et financier stable.",
+   "citation": "Depuis 2016, l'expérimentation a permis à des milliers de personnes de retrouver une activité dans le cadre de contrats à durée indéterminée, à temps choisi et, surtout, au plus près de leur lieu de vie.",
+   "acteur": "PA842073",
+   "nom": "M. Gaëtan Dussausaye",
+   "qualite": "",
+   "syceron": [
+    "4233147"
+   ]
+  },
+  {
+   "resume": "Le calendrier impose un vote conforme rapide afin d'éviter que l'expérimentation ne s'arrête en fin d'année et ne mette en péril les structures existantes.",
+   "citation": "afin de ne pas mettre en péril cette expérimentation, qui a fait ses preuves dans nos territoires et qui arrive à son terme, il faut voter ce texte tel quel, parce que le calendrier ne laisse aucune marge de manœuvre.",
+   "acteur": "PA842147",
+   "nom": "M. Christophe Mongardien",
+   "qualite": "",
+   "syceron": [
+    "4233292"
+   ]
+  },
+  {
+   "resume": "Le dispositif constitue un levier précieux d'insertion et de justice sociale, particulièrement dans les territoires d'outre-mer frappés par une forte précarité.",
+   "citation": "le dispositif Territoires zéro chômeur, implanté dans une ville pionnière, Le Port, que je salue, constitue un véritable levier d'espoir et de justice sociale.",
+   "acteur": "PA796010",
+   "nom": "M. Frédéric Maillot",
+   "qualite": "",
+   "syceron": [
+    "4233437"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le texte prévoit des dispositions restrictives et un gel des nouvelles habilitations qui risquent de freiner le développement de l'expérimentation dans les territoires.",
+   "citation": "Le gel des nouvelles habilitations jusqu'au 1er janvier 2029 freinera son développement et privera de nouveaux territoires de la possibilité de s'engager.",
+   "acteur": "PA721062",
+   "nom": "M. Jean-Hugues Ratenon",
+   "qualite": "",
+   "syceron": [
+    "4233300"
+   ]
+  },
+  {
+   "resume": "La suppression de la participation financière obligatoire des départements fragilise la continuité des projets et menace directement des milliers d'emplois.",
+   "citation": "Ce qu'a fait la majorité sénatoriale de droite en supprimant tout bonnement la participation financière obligatoire des départements est scandaleux.",
+   "acteur": "PA793664",
+   "nom": "Mme Marie Pochon",
+   "qualite": "",
+   "syceron": [
+    "4233432",
+    "4233434"
+   ]
+  },
+  {
+   "resume": "Les incertitudes sur le cofinancement et la multiplication des procédures de contrôle menacent d'alourdir inutilement le fonctionnement administratif du dispositif.",
+   "citation": "La multiplication des conventions, des cofinancements et des procédures de contrôle peut alourdir le fonctionnement du dispositif, rendre les responsabilités moins lisibles et accroître les coûts administratifs.",
+   "acteur": "PA840773",
+   "nom": "M. Olivier Fayssat",
+   "qualite": "",
+   "syceron": [
+    "4233139"
+   ]
+  },
+  {
+   "resume": "Le dispositif ne doit pas se substituer aux réformes structurelles nécessaires du marché du travail ni devenir un système généralisé d'emplois subventionnés.",
+   "citation": "Il ne doit pas devenir, pour être clair, un dispositif généraliste d'emploi subventionné, au risque de diluer ses moyens et de perdre son sens.",
+   "acteur": "PA842073",
+   "nom": "M. Gaëtan Dussausaye",
+   "qualite": "",
+   "syceron": [
+    "4233147"
+   ]
+  }
+ ],
+ "ecartes": [],
+ "genere_le": "2026-11-20T13:15:24+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-20T13:15:24+00:00"
 }
