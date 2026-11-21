@@ -1,8 +1,63 @@
 {
  "uid": "VTANR5L17V10080",
  "num": 10080,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-20T13:12:48+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2027O1N070",
+ "seance_jour": "jeudi 19 novembre 2026",
+ "contexte": "L'Assemblée nationale examine, en première lecture, la proposition de loi visant à lutter contre la vie chère en renforçant le droit de la concurrence et de la régulation économique outre-mer. Les débats portent sur l'insuffisance perçue des mesures proposées face à l'ampleur de la cherté de la vie dans les territoires ultramarins.",
+ "pour": [
+  {
+   "resume": "Le texte constitue une première étape modeste mais nécessaire pour améliorer la transparence et le contrôle de la concurrence.",
+   "citation": "La proposition de loi qui nous est soumise présente des avancées intéressantes : le renforcement de la transparence comptable, l'encadrement de certains avantages commerciaux et l'amélioration du contrôle des concentrations.",
+   "acteur": "PA795820",
+   "nom": "M. Marcellin Nadeau",
+   "qualite": "",
+   "syceron": [
+    "4236197"
+   ]
+  },
+  {
+   "resume": "Malgré ses limites et son caractère insuffisant pour régler l'ensemble des difficultés, le texte est voté au nom de l'attente urgente d'actes pour les populations.",
+   "citation": "D'ici là, nous voterons en faveur de ce texte, sans illusion et sans complaisance, au nom des Ultramarins, qui attendent des actes.",
+   "acteur": "PA842227",
+   "nom": "M. Joseph Rivière",
+   "qualite": "",
+   "syceron": [
+    "4235848",
+    "4235852",
+    "4235855",
+    "4235858"
+   ]
+  },
+  {
+   "resume": "Le texte est perçu comme un premier pas utile face à un système économique hérité du passé et pénalisant pour les peuples ultramarins.",
+   "citation": "Je considère cette loi comme un premier pas contre un système hérité de l'époque coloniale, lorsque l'économie de plantation a muté sous l'impulsion de ceux qui détenaient le capital, transformant la terre en monnaie.",
+   "acteur": "PA720976",
+   "nom": "M. Max Mathiasin",
+   "qualite": "",
+   "syceron": [
+    "4236210",
+    "4236217"
+   ]
+  },
+  {
+   "resume": "Le projet apporte quelques améliorations bienvenues en attendant des politiques plus ambitieuses pour le pouvoir d'achat.",
+   "citation": "Nous voterons malgré tout en faveur de l'adoption de ce texte, en attendant les jours heureux avec Jean-Luc Mélenchon.",
+   "acteur": "PA721062",
+   "nom": "M. Jean-Hugues Ratenon",
+   "qualite": "",
+   "syceron": [
+    "4236206",
+    "4236208"
+   ]
+  }
+ ],
+ "contre": [],
+ "ecartes": [],
+ "genere_le": "2026-11-21T12:53:32+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-21T12:53:32+00:00"
 }

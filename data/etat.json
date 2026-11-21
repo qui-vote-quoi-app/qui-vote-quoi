@@ -1,10 +1,10 @@
 {
  "etags": {
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip": "\"1dbcdb7-660b38802a656\"",
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip": "\"d1adf5-660ab4002a6ab\"",
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip": "\"acc51f-660b5e4c9e2d7\""
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip": "\"1dbe7bb-660c29c9ade39\"",
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip": "\"d1b50a-660bf5cf51ba8\"",
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip": "\"acdffb-660c77ed34871\""
  },
- "dernier_num": 10080,
+ "dernier_num": 10101,
  "cr_index": {
   "xml/compteRendu/CRSANR5L17S2025O1N037.xml": "RUANR5L17S2025IDS28624",
   "xml/compteRendu/CRSANR5L17S2025O1N079.xml": "RUANR5L17S2025IDS28912",
@@ -675,10 +675,12 @@
   "xml/compteRendu/CRSANR5L17S2027O1N066.xml": "RUANR5L17S2027IDS31051",
   "xml/compteRendu/CRSANR5L17S2027O1N067.xml": "RUANR5L17S2027IDS31052",
   "xml/compteRendu/CRSANR5L17S2027O1N068.xml": "RUANR5L17S2027IDS31054",
-  "xml/compteRendu/CRSANR5L17S2027O1N069.xml": "RUANR5L17S2027IDS31055"
+  "xml/compteRendu/CRSANR5L17S2027O1N069.xml": "RUANR5L17S2027IDS31055",
+  "xml/compteRendu/CRSANR5L17S2027O1N070.xml": "RUANR5L17S2027IDS31056",
+  "xml/compteRendu/CRSANR5L17S2027O1N071.xml": "RUANR5L17S2027IDS31057"
  },
- "derniere_execution": "2026-11-20T20:42:57+00:00",
- "dernier_quotidien": "2026-11-20T13:15:31+00:00",
+ "derniere_execution": "2026-11-21T12:57:50+00:00",
+ "dernier_quotidien": "2026-11-21T12:57:50+00:00",
  "resumes_restants": 0,
  "canal_accueil": 3,
  "canal_messages": {
@@ -715,13 +717,15 @@
   "10062": {
    "id": 15,
    "legende": "✅ <b>Retrouver la confiance et l’équilibre dans les rapports locatifs</b> · adopté\n\n<b>📄 Ce que prévoit le texte</b>\n<blockquote expandable>Le texte pérennise l'encadrement des loyers en supprimant son caractère expérimental et en élargissant sa mise en œuvre aux communes tendues et limitrophes. Il encadre strictement les compléments de loyer, intègre certaines locations meublées et colocations, et double le montant des amendes pour les bailleurs contrevenants. Enfin, il renforce les obligations du propriétaire en matière de congé et suspend ce droit en cas de contestation du loyer par le locataire.</blockquote><i>Résumé rédigé par IA à partir du texte officiel.</i>\n\n<b>Le vote des groupes</b>\n🟦 LFI-NFP · SOC · ECOS · DEM · LIOT · GDR · NI\n🟥 RN · EPR · DR · UDR\n⬜ HOR\n\n#AffairesEconomiques",
-   "dossier": "DLR5L17N53069"
+   "dossier": "DLR5L17N53069",
+   "debat": true
   },
   "10080": {
    "id": 16,
    "legende": "✅ <b>Exercer l’accès à l’emploi, pérenniser et étendre progressivement l’expérimentation Territoires zéro chômeur longue durée comme solution de retour à l</b> · adopté\n\n<b>📄 Ce que prévoit le texte</b>\n<blockquote expandable>Le texte pérennise et encadre l'expérimentation des « territoires zéro chômeur de longue durée ». Il prévoit la création d'un fonds national chargé de financer et de piloter le dispositif, ainsi que la mise en place de comités locaux par les collectivités volontaires. Enfin, il permet l'embauche de personnes privées durablement d'emploi en contrat à durée indéterminée dans des entreprises conventionnées.</blockquote><i>Résumé rédigé par IA à partir du texte officiel.</i>\n\n<b>Le vote des groupes</b>\n🟦 RN · EPR · LFI-NFP · SOC · ECOS · DEM · HOR · LIOT · GDR · UDR · NI\n⬜ DR\n\n#AffairesSociales",
-   "dossier": "DLR5L17N51962"
+   "dossier": "DLR5L17N51962",
+   "debat": true
   }
  },
- "canal_maj": "2026-11-20"
+ "canal_maj": "2026-11-21"
 }

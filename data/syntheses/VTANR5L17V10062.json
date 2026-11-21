@@ -1,8 +1,122 @@
 {
  "uid": "VTANR5L17V10062",
  "num": 10062,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-20T13:12:48+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2027O1N069",
+ "seance_jour": "jeudi 19 novembre 2026",
+ "contexte": "L'Assemblée nationale examine, en deuxième lecture, la proposition de loi visant à retrouver la confiance et l'équilibre dans les rapports locatifs. Ce texte aborde notamment la prolongation de l'expérimentation de l'encadrement des loyers. Les discussions opposent les partisans d'une régulation pour protéger le pouvoir d'achat des locataires à ceux qui privilégient la relance de l'offre et la fin des contraintes pesant sur les propriétaires.",
+ "pour": [
+  {
+   "resume": "L'encadrement des loyers permet de préserver le pouvoir d'achat des populations fragiles et des ménages dans les zones tendues.",
+   "citation": "l'encadrement des loyers est loin d'être satisfaisant en l'état, mais il a le mérite d'exister. Et oui, vous l'avez rappelé, monsieur Falcon, pour faire baisser les loyers, il faut un choc de l'offre. Je le défends depuis des années : nous ne vous avons pas attendu.",
+   "acteur": "PA227089",
+   "nom": "Mme Valérie Létard",
+   "qualite": "",
+   "syceron": [
+    "4234254",
+    "4234257",
+    "4234259"
+   ]
+  },
+  {
+   "resume": "Le dispositif constitue une mesure intermédiaire indispensable pour éviter l'endettement et l'expulsion des ménages en attendant une détente du marché.",
+   "citation": "nous avons besoin d'une disposition intermédiaire, d'une solution pour éviter que de trop nombreux ménages se retrouvent en situation d'endettement, voire d'expulsion, faute d'un contrôle des loyers.",
+   "acteur": "PA227089",
+   "nom": "Mme Valérie Létard",
+   "qualite": "",
+   "syceron": [
+    "4234254",
+    "4234257",
+    "4234259"
+   ]
+  },
+  {
+   "resume": "Prolonger l'expérimentation de deux ans offre de la souplesse en laissant aux communes la liberté de quitter le dispositif avant son terme.",
+   "citation": "Nous souhaitons prolonger le dispositif de deux ans. Celui-ci, contrairement à ce qui a été dit, est d'une grande souplesse : il laisse aux communes la liberté d'en sortir avant son échéance.",
+   "acteur": "PA794810",
+   "nom": "Mme Louise Morel",
+   "qualite": "",
+   "syceron": [
+    "4234237",
+    "4234243",
+    "4234245"
+   ]
+  },
+  {
+   "resume": "Ce texte constitue un compromis d'apaisement pour protéger les locataires tout en restaurant la confiance des bailleurs afin de maintenir l'offre.",
+   "citation": "Il s'agit aussi d'un texte d'apaisement entre les locataires et les propriétaires, dont les relations ne doivent pas être un terrain d'affrontement. Il permet de protéger les locataires tout en redonnant confiance aux bailleurs",
+   "acteur": "PA794810",
+   "nom": "Mme Louise Morel",
+   "qualite": "",
+   "syceron": [
+    "4234237",
+    "4234243",
+    "4234245"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "L'encadrement des loyers ne résout pas la crise du logement et risque d'aggraver la pénurie en décourageant l'investissement locatif.",
+   "citation": "plutôt que de construire davantage et d'encourager l'investissement locatif, on choisit de plafonner les loyers.",
+   "acteur": "PA841377",
+   "nom": "Mme Emeline Rey-Rinchet",
+   "qualite": "",
+   "syceron": [
+    "4234231"
+   ]
+  },
+  {
+   "resume": "Le dispositif engendre des coûts importants pour les finances publiques tout en nécessitant le recrutement d'agents pour un contrôle complexe.",
+   "citation": "Le coût de l'encadrement des loyers représente 180 millions d'euros de baisses de recettes fiscales et il y a des coûts induits pour les collectivités : le dispositif occasionne des dépenses publiques supplémentaires",
+   "acteur": "PA719372",
+   "nom": "M. Guillaume Kasbarian",
+   "qualite": "",
+   "syceron": [
+    "4234598",
+    "4234601",
+    "4234605",
+    "4234607",
+    "4234610",
+    "4234613"
+   ]
+  },
+  {
+   "resume": "La mesure crée une fausse promesse pour les candidats à la location en augmentant les exigences de sélection au lieu de créer des logements supplémentaires.",
+   "citation": "L'encadrement des loyers est une fausse promesse faite aux locataires : vous leur dites qu'ils bénéficieront d'un loyer très faible, mais en réalité, cela ne créera pas un seul logement supplémentaire, cela allongera juste la file d'attente.",
+   "acteur": "PA719372",
+   "nom": "M. Guillaume Kasbarian",
+   "qualite": "",
+   "syceron": [
+    "4234598",
+    "4234601",
+    "4234605",
+    "4234607",
+    "4234610",
+    "4234613"
+   ]
+  },
+  {
+   "resume": "La multiplication des normes, des taxes et des contraintes administratives détourne les investisseurs potentiels du marché de l'immobilier locatif.",
+   "citation": "Voici tout ce qui dissuade l'investissement : l'impôt sur la fortune immobilière, créé à la place de l'impôt de solidarité sur la fortune (ISF), et qui a complètement isolé l'immobilier ; la taxe sur les logements vacants ; les normes énergétiques ; l'encadrement des loyers.",
+   "acteur": "PA840773",
+   "nom": "M. Olivier Fayssat",
+   "qualite": "",
+   "syceron": [
+    "4234292",
+    "4234574",
+    "4234295",
+    "4234298",
+    "4234300",
+    "4234577"
+   ]
+  }
+ ],
+ "ecartes": [],
+ "genere_le": "2026-11-21T12:57:40+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-21T12:57:40+00:00"
 }
