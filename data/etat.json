@@ -679,7 +679,7 @@
   "xml/compteRendu/CRSANR5L17S2027O1N070.xml": "RUANR5L17S2027IDS31056",
   "xml/compteRendu/CRSANR5L17S2027O1N071.xml": "RUANR5L17S2027IDS31057"
  },
- "derniere_execution": "2026-11-23T14:58:10+00:00",
+ "derniere_execution": "2026-11-24T00:20:10+00:00",
  "dernier_quotidien": "2026-11-23T14:58:10+00:00",
  "resumes_restants": 0,
  "canal_accueil": 3,
@@ -727,5 +727,5 @@
    "debat": true
   }
  },
- "canal_maj": "2026-11-23"
+ "canal_maj": "2026-11-24"
 }
