@@ -1,0 +1,11 @@
+{
+ "dossier": "DLR5L17N54608",
+ "texte": "PRJLANR5L17B3058",
+ "tentatives": 1,
+ "longueur": 70126,
+ "statut": "publie",
+ "resume": "Le texte met en place un troisième programme national de renouvellement urbain et adapte les règles d'urbanisme pour accompagner les projets d'intérêt national et les évolutions démographiques. Il habilite le Gouvernement à simplifier par ordonnance diverses procédures d'urbanisme et d'expropriation, tout en modifiant la fiscalité immobilière dans certaines zones. Il introduit des mesures visant à accélérer les rénovations de bâtiments, notamment en copropriété, et renforce la décentralisation des compétences de l'habitat ainsi que les prérogatives locales dans l'attribution des logements sociaux.",
+ "modele": "gemini:gemini-flash-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-25T21:59+00:00"
+}
