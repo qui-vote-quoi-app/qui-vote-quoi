@@ -1,10 +1,10 @@
 {
  "etags": {
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip": "\"1dbe7a1-661040034eed9\"",
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip": "\"d1b92b-660fbb7ab9891\"",
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip": "\"ad33bc-66103d81868d4\""
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip": "\"1dc4d7f-661181b7a4f0d\"",
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip": "\"d1c66e-6610fd54408aa\"",
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip": "\"ae3207-66117f5f8d681\""
  },
- "dernier_num": 10101,
+ "dernier_num": 10106,
  "cr_index": {
   "xml/compteRendu/CRSANR5L17S2025O1N037.xml": "RUANR5L17S2025IDS28624",
   "xml/compteRendu/CRSANR5L17S2025O1N079.xml": "RUANR5L17S2025IDS28912",
@@ -677,11 +677,13 @@
   "xml/compteRendu/CRSANR5L17S2027O1N068.xml": "RUANR5L17S2027IDS31054",
   "xml/compteRendu/CRSANR5L17S2027O1N069.xml": "RUANR5L17S2027IDS31055",
   "xml/compteRendu/CRSANR5L17S2027O1N070.xml": "RUANR5L17S2027IDS31056",
-  "xml/compteRendu/CRSANR5L17S2027O1N071.xml": "RUANR5L17S2027IDS31057"
+  "xml/compteRendu/CRSANR5L17S2027O1N071.xml": "RUANR5L17S2027IDS31057",
+  "xml/compteRendu/CRSANR5L17S2027O1N072.xml": "RUANR5L17S2027IDS31063",
+  "xml/compteRendu/CRSANR5L17S2027O1N073.xml": "RUANR5L17S2027IDS31064"
  },
- "derniere_execution": "2026-11-24T22:44:53+00:00",
- "dernier_quotidien": "2026-11-24T14:59:41+00:00",
- "resumes_restants": 0,
+ "derniere_execution": "2026-11-25T14:41:53+00:00",
+ "dernier_quotidien": "2026-11-25T14:41:53+00:00",
+ "resumes_restants": 1,
  "canal_accueil": 3,
  "canal_messages": {
   "9807": {
@@ -725,7 +727,17 @@
    "legende": "✅ <b>Exercer l’accès à l’emploi, pérenniser et étendre progressivement l’expérimentation Territoires zéro chômeur longue durée comme solution de retour à l</b> · adopté\n\n<b>📄 Ce que prévoit le texte</b>\n<blockquote expandable>Le texte pérennise et encadre l'expérimentation des « territoires zéro chômeur de longue durée ». Il prévoit la création d'un fonds national chargé de financer et de piloter le dispositif, ainsi que la mise en place de comités locaux par les collectivités volontaires. Enfin, il permet l'embauche de personnes privées durablement d'emploi en contrat à durée indéterminée dans des entreprises conventionnées.</blockquote><i>Résumé rédigé par IA à partir du texte officiel.</i>\n\n<b>Le vote des groupes</b>\n🟦 RN · EPR · LFI-NFP · SOC · ECOS · DEM · HOR · LIOT · GDR · UDR · NI\n⬜ DR\n\n#AffairesSociales",
    "dossier": "DLR5L17N51962",
    "debat": true
+  },
+  "10102": {
+   "id": 18,
+   "legende": "✅ <b>La relance et la décentralisation du logement</b> · adopté\n\n<blockquote>Vote final de l'Assemblée sur l'ensemble de le projet de loi (texte déposé par le Gouvernement), en première lecture, après l'examen de tous ses articles. C'est un scrutin solennel, annoncé à l'avance pour permettre à toutes et tous les député.e.s d'y participer.</blockquote>\n\n<b>Le vote des groupes</b>\n🟦 RN · EPR · DR · DEM · HOR · LIOT · UDR · NI\n🟥 LFI-NFP · ECOS · GDR\n⬜ SOC\n\n#AffairesEconomiques",
+   "dossier": "DLR5L17N54608"
+  },
+  "10106": {
+   "id": 19,
+   "legende": "✅ <b>Projet de loi de finances de fin de gestion pour 2026 : texte de compromis avec le Sénat</b> · adopté\n\n<b>📄 Ce que prévoit le texte</b>\n<blockquote expandable>Le texte actualise les prévisions de soldes des administrations publiques et ajuste les ressources ainsi que l'équilibre général du budget de l'État pour l'année 2026. Il modifie les affectations de ressources à des tiers et actualise le plafond d'autorisation des emplois. Enfin, il autorise l'ouverture et l'annulation de crédits budgétaires supplémentaires et ratifie des décrets d'avance pris au cours de l'année.</blockquote><i>Résumé rédigé par IA à partir du texte officiel.</i>\n\n<b>Le vote des groupes</b>\n🟦 EPR · DR · DEM · HOR · LIOT\n🟥 LFI-NFP · ECOS · GDR\n⬜ RN · SOC · UDR · NI\n\n#Finances",
+   "dossier": "DLR5L17N55223"
   }
  },
- "canal_maj": "2026-11-24"
+ "canal_maj": "2026-11-25"
 }
