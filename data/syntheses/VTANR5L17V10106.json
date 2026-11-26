@@ -1,8 +1,94 @@
 {
  "uid": "VTANR5L17V10106",
  "num": 10106,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-25T14:39:22+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2027O1N073",
+ "seance_jour": "mardi 24 novembre 2026",
+ "contexte": "Les députés examinent en lecture définitive le projet de loi de finances de fin de gestion pour 2026, suite à un accord trouvé en commission mixte paritaire. Ce texte technique vise à ajuster les crédits budgétaires de fin d'année et à entériner les dépenses d'urgence face aux crises traversées.",
+ "pour": [
+  {
+   "resume": "Le texte est indispensable pour terminer l'année budgétaire et financer des aides d'urgence pour l'éducation, l'agriculture et les transports.",
+   "citation": "Derrière sa technicité, ce texte est indispensable pour tenir les engagements pris. Il l'est d'abord pour le système éducatif, car il permet le recrutement de contractuels chargés d'assurer les remplacements.",
+   "acteur": "PA794114",
+   "nom": "M. Emmanuel Mandon",
+   "qualite": "",
+   "syceron": [
+    "4237614",
+    "4237621"
+   ]
+  },
+  {
+   "resume": "L'accord trouvé en commission mixte paritaire protège le monde agricole et les secteurs frappés par les intempéries et la hausse des prix.",
+   "citation": "Nos agriculteurs, nos viticulteurs et nos forestiers ont affronté la sécheresse, les canicules et les incendies. Ils obtiennent un soutien renforcé pour le gazole non routier comme pour la gestion des forêts sinistrées et l'arrachage des vignes.",
+   "acteur": "PA722070",
+   "nom": "M. Pierre Henriet",
+   "qualite": "",
+   "syceron": [
+    "4237625"
+   ]
+  },
+  {
+   "resume": "Le compromis permet de maintenir des ressources essentielles pour les collectivités territoriales et les chambres consulaires.",
+   "citation": "Le travail parlementaire a porté ses fruits pour les territoires : les deux chambres ont refusé d'amputer de 25 millions d'euros les ressources des chambres de commerce et d'industrie.",
+   "acteur": "PA719138",
+   "nom": "M. Michel Castellani",
+   "qualite": "",
+   "syceron": [
+    "4237633"
+   ]
+  },
+  {
+   "resume": "Les dépenses de l'État se stabilisent en fin d'année malgré les crises traversées, tout en préservant les financements pour les plus fragiles.",
+   "citation": "Les dépenses de l'État se stabilisent à 501,9 milliards d'euros, soit 1 milliard de moins que le niveau voté en loi de finances initiale.",
+   "acteur": "PA720146",
+   "nom": "M. Denis Masséglia",
+   "qualite": "",
+   "syceron": [
+    "4238700",
+    "4238703"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "La prévision de déficit public à 5,4 % du PIB est peu crédible au vu des hypothèses économiques optimistes et de la hausse de la charge de la dette.",
+   "citation": "La prévision de déficit public est maintenue à 5,4 % du PIB, mais nous restons sceptiques quant à cette cible. Le Haut Conseil des finances publiques l'a souligné : la prévision de croissance de 0,5 % paraît difficile à atteindre",
+   "acteur": "PA794114",
+   "nom": "M. Emmanuel Mandon",
+   "qualite": "",
+   "syceron": [
+    "4237614",
+    "4237621"
+   ]
+  },
+  {
+   "resume": "Le redressement budgétaire a reposé de manière excessive sur l'impôt plutôt que sur une véritable maîtrise de la dépense publique.",
+   "citation": "Pourquoi ? Parce que le redressement de 2026 a reposé sur l'impôt plus que sur la maîtrise de la dépense. Or un redressement par l'impôt dépend entièrement de la croissance.",
+   "acteur": "PA722070",
+   "nom": "M. Pierre Henriet",
+   "qualite": "",
+   "syceron": [
+    "4237625"
+   ]
+  },
+  {
+   "resume": "Le texte confirme des décrets d'avance qui annulent des milliards d'euros de crédits destinés à la recherche, à l'investissement et à la transition écologique.",
+   "citation": "Pire, par ce PLFG, vous confirmez deux décrets d'avance qui suppriment, sans vote du Parlement, des centaines de millions d'euros destinés à la recherche, à l'investissement, aux collectivités territoriales ou aux énergies renouvelables.",
+   "acteur": "PA605745",
+   "nom": "M. Nicolas Sansu",
+   "qualite": "",
+   "syceron": [
+    "4238674",
+    "4238678",
+    "4238743"
+   ]
+  }
+ ],
+ "ecartes": [],
+ "genere_le": "2026-11-26T14:05:12+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-26T14:05:12+00:00"
 }

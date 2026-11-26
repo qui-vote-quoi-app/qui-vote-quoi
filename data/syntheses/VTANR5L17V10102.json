@@ -1,8 +1,95 @@
 {
  "uid": "VTANR5L17V10102",
  "num": 10102,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-25T14:39:22+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2027O1N073",
+ "seance_jour": "mardi 24 novembre 2026",
+ "contexte": "Ce vote de première lecture porte sur l'ensemble du projet de loi visant la relance et la décentralisation du logement. Le texte aborde notamment la construction, la décentralisation des compétences aux collectivités, le rôle des maires dans l'attribution des logements sociaux et la rénovation énergétique.",
+ "pour": [
+  {
+   "resume": "Le projet de loi introduit des souplesse bienvenues et des mesures concrètes pour relancer la construction et l'investissement locatif privé dans les territoires tendus.",
+   "citation": "Elles permettent de relancer la construction, notamment grâce au rétablissement de la version initiale des opérations d'intérêt local. Ce dispositif donnera un nouvel élan à la construction dans les territoires où les besoins en logements sont critiques",
+   "acteur": "PA721852",
+   "nom": "Mme Marie Lebec",
+   "qualite": "",
+   "syceron": [
+    "4238380",
+    "4238384",
+    "4238386",
+    "4238388"
+   ]
+  },
+  {
+   "resume": "L'Assemblée a amélioré le texte en levant certains obstacles réglementaires et en supprimant des interdictions de mise en location rigides.",
+   "citation": "Ce texte ne constitue donc pas la grande réforme dont la France a besoin, mais les débats l'ont amélioré en y introduisant une liberté que le gouvernement n'avait pas osé accorder. Parce que l'Assemblée a fait progresser le texte et non parce que ses insuffisances auraient disparu, le groupe UDR le votera.",
+   "acteur": "PA840773",
+   "nom": "M. Olivier Fayssat",
+   "qualite": "",
+   "syceron": [
+    "4238365"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Le bilan de la décennie écoulée est jugé calamiteux, marqué par l'affaiblissement des organismes HLM, la baisse des APL, la hausse des expulsions et une grave crise du logement.",
+   "citation": "En matière de logement, le bilan de dix ans de macronisme est calamiteux. Vous avez affaibli les organismes HLM, renoncé à maîtriser les prix et laissé s'effondrer la construction. L'histoire se souviendra que vous avez plongé le pays dans la plus grave crise du logement",
+   "acteur": "PA721270",
+   "nom": "M. Stéphane Peu",
+   "qualite": "",
+   "syceron": [
+    "4238231",
+    "4238236"
+   ]
+  },
+  {
+   "resume": "Le projet de loi favorise les investisseurs privés et les avantages fiscaux au détriment de la construction et de la rénovation de logements abordables.",
+   "citation": "Vous préférez consacrer des milliards d'euros à la mise en place de nouveaux avantages fiscaux pour les investisseurs privés, plutôt que d'orienter les moyens vers la construction et la rénovation de logements à prix abordable ou l'aide à l'accession à la propriété.",
+   "acteur": "PA721270",
+   "nom": "M. Stéphane Peu",
+   "qualite": "",
+   "syceron": [
+    "4238231",
+    "4238236"
+   ]
+  },
+  {
+   "resume": "Le droit de veto accordé aux maires sur l'attribution des logements sociaux risque d'ouvrir la porte au clientélisme et au tri social et racial.",
+   "citation": "Pire encore, le droit de veto donné aux maires sur l'attribution des logements sociaux ouvre la porte au clientélisme et au tri social et racial. La droite extrême et l'extrême droite en rêvaient, votre texte le réalise.",
+   "acteur": "PA841191",
+   "nom": "Mme Sandrine Nosbé",
+   "qualite": "",
+   "syceron": [
+    "4238557",
+    "4238658",
+    "4238562",
+    "4238565",
+    "4238567"
+   ]
+  },
+  {
+   "resume": "Le texte sacrifie la rénovation énergétique en supprimant les interdictions de louer liées au DPE, maintenant des millions de personnes dans des passoires thermiques.",
+   "citation": "Votre texte sacrifie la rénovation, avec un report de trois à cinq ans de l'obligation de rénover les passoires thermiques, alors que 12 millions de personnes subissent la précarité énergétique. Pour elles, aucun sursis - ni sur le froid, ni sur les factures, ni sur le loyer.",
+   "acteur": "PA841191",
+   "nom": "Mme Sandrine Nosbé",
+   "qualite": "",
+   "syceron": [
+    "4238557",
+    "4238658",
+    "4238562",
+    "4238565",
+    "4238567"
+   ]
+  }
+ ],
+ "ecartes": [
+  "Argument pour n°1 : la citation ne figure pas mot pour mot dans P1.",
+  "Argument pour n°2 : la citation ne figure pas mot pour mot dans P1."
+ ],
+ "genere_le": "2026-11-26T14:08:52+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-26T14:08:52+00:00"
 }

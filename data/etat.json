@@ -1,10 +1,10 @@
 {
  "etags": {
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip": "\"1dc5566-6611d272caa0f\"",
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip": "\"d1c66e-6610fd54408aa\"",
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip": "\"ae7d9d-6611eaae142f0\""
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip": "\"1dc9968-6612731a4d2b0\"",
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip": "\"d1d53a-66123f3aef58f\"",
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip": "\"aea06b-6612c15055681\""
  },
- "dernier_num": 10106,
+ "dernier_num": 10116,
  "cr_index": {
   "xml/compteRendu/CRSANR5L17S2025O1N037.xml": "RUANR5L17S2025IDS28624",
   "xml/compteRendu/CRSANR5L17S2025O1N079.xml": "RUANR5L17S2025IDS28912",
@@ -679,10 +679,12 @@
   "xml/compteRendu/CRSANR5L17S2027O1N070.xml": "RUANR5L17S2027IDS31056",
   "xml/compteRendu/CRSANR5L17S2027O1N071.xml": "RUANR5L17S2027IDS31057",
   "xml/compteRendu/CRSANR5L17S2027O1N072.xml": "RUANR5L17S2027IDS31063",
-  "xml/compteRendu/CRSANR5L17S2027O1N073.xml": "RUANR5L17S2027IDS31064"
+  "xml/compteRendu/CRSANR5L17S2027O1N073.xml": "RUANR5L17S2027IDS31064",
+  "xml/compteRendu/CRSANR5L17S2027O1N075.xml": "RUANR5L17S2027IDS31066",
+  "xml/compteRendu/CRSANR5L17S2027O1N074.xml": "RUANR5L17S2027IDS31065"
  },
- "derniere_execution": "2026-11-25T21:59:56+00:00",
- "dernier_quotidien": "2026-11-25T14:41:53+00:00",
+ "derniere_execution": "2026-11-26T14:09:02+00:00",
+ "dernier_quotidien": "2026-11-26T14:09:02+00:00",
  "resumes_restants": 0,
  "canal_accueil": 3,
  "canal_messages": {
@@ -731,13 +733,15 @@
   "10102": {
    "id": 18,
    "legende": "✅ <b>La relance et la décentralisation du logement</b> · adopté\n\n<blockquote>Vote final de l'Assemblée sur l'ensemble de le projet de loi (texte déposé par le Gouvernement), en première lecture, après l'examen de tous ses articles. C'est un scrutin solennel, annoncé à l'avance pour permettre à toutes et tous les député.e.s d'y participer.</blockquote>\n\n<b>Le vote des groupes</b>\n🟦 RN · EPR · DR · DEM · HOR · LIOT · UDR · NI\n🟥 LFI-NFP · ECOS · GDR\n⬜ SOC\n\n#AffairesEconomiques",
-   "dossier": "DLR5L17N54608"
+   "dossier": "DLR5L17N54608",
+   "debat": true
   },
   "10106": {
    "id": 19,
    "legende": "✅ <b>Projet de loi de finances de fin de gestion pour 2026 : texte de compromis avec le Sénat</b> · adopté\n\n<b>📄 Ce que prévoit le texte</b>\n<blockquote expandable>Le texte actualise les prévisions de soldes des administrations publiques et ajuste les ressources ainsi que l'équilibre général du budget de l'État pour l'année 2026. Il modifie les affectations de ressources à des tiers et actualise le plafond d'autorisation des emplois. Enfin, il autorise l'ouverture et l'annulation de crédits budgétaires supplémentaires et ratifie des décrets d'avance pris au cours de l'année.</blockquote><i>Résumé rédigé par IA à partir du texte officiel.</i>\n\n<b>Le vote des groupes</b>\n🟦 EPR · DR · DEM · HOR · LIOT\n🟥 LFI-NFP · ECOS · GDR\n⬜ RN · SOC · UDR · NI\n\n#Finances",
-   "dossier": "DLR5L17N55223"
+   "dossier": "DLR5L17N55223",
+   "debat": true
   }
  },
- "canal_maj": "2026-11-25"
+ "canal_maj": "2026-11-26"
 }
