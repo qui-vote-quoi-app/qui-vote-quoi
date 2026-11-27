@@ -1,0 +1,11 @@
+{
+ "dossier": "DLR5L17N55033",
+ "texte": "PNREANR5L17B3289",
+ "tentatives": 1,
+ "longueur": 3089,
+ "statut": "publie",
+ "resume": "Le texte affirme que l'égalité entre les territoires et l'égalité des chances doivent être des objectifs transversaux des politiques publiques. Il invite le Gouvernement à intégrer ces impératifs dans ses décisions, à évaluer les effets territoriaux des dépenses et des réglementations, et à adapter la répartition des investissements. Enfin, il préconise de renforcer l'accessibilité aux services publics, aux soins et à l'éducation, et de rendre publics les résultats obtenus.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-27T14:06+00:00"
+}

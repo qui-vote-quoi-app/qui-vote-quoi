@@ -1,10 +1,10 @@
 {
  "etags": {
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip": "\"1dc9968-6612731a4d2b0\"",
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip": "\"d1d53a-66123f3aef58f\"",
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip": "\"aea06b-6612c15055681\""
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip": "\"1df62c1-66140529798b3\"",
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip": "\"d1dd7a-661380fe6e3f3\"",
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip": "\"aeba48-6613e83c19128\""
  },
- "dernier_num": 10116,
+ "dernier_num": 10175,
  "cr_index": {
   "xml/compteRendu/CRSANR5L17S2025O1N037.xml": "RUANR5L17S2025IDS28624",
   "xml/compteRendu/CRSANR5L17S2025O1N079.xml": "RUANR5L17S2025IDS28912",
@@ -681,10 +681,13 @@
   "xml/compteRendu/CRSANR5L17S2027O1N072.xml": "RUANR5L17S2027IDS31063",
   "xml/compteRendu/CRSANR5L17S2027O1N073.xml": "RUANR5L17S2027IDS31064",
   "xml/compteRendu/CRSANR5L17S2027O1N075.xml": "RUANR5L17S2027IDS31066",
-  "xml/compteRendu/CRSANR5L17S2027O1N074.xml": "RUANR5L17S2027IDS31065"
+  "xml/compteRendu/CRSANR5L17S2027O1N074.xml": "RUANR5L17S2027IDS31065",
+  "xml/compteRendu/CRSANR5L17S2027O1N078.xml": "RUANR5L17S2027IDS31069",
+  "xml/compteRendu/CRSANR5L17S2027O1N076.xml": "RUANR5L17S2027IDS31067",
+  "xml/compteRendu/CRSANR5L17S2027O1N077.xml": "RUANR5L17S2027IDS31068"
  },
- "derniere_execution": "2026-11-26T21:55:02+00:00",
- "dernier_quotidien": "2026-11-26T14:09:02+00:00",
+ "derniere_execution": "2026-11-27T14:06:27+00:00",
+ "dernier_quotidien": "2026-11-27T14:06:27+00:00",
  "resumes_restants": 0,
  "canal_accueil": 3,
  "canal_messages": {
@@ -741,7 +744,18 @@
    "legende": "✅ <b>Projet de loi de finances de fin de gestion pour 2026 : texte de compromis avec le Sénat</b> · adopté\n\n<b>📄 Ce que prévoit le texte</b>\n<blockquote expandable>Le texte actualise les prévisions de soldes des administrations publiques et ajuste les ressources ainsi que l'équilibre général du budget de l'État pour l'année 2026. Il modifie les affectations de ressources à des tiers et actualise le plafond d'autorisation des emplois. Enfin, il autorise l'ouverture et l'annulation de crédits budgétaires supplémentaires et ratifie des décrets d'avance pris au cours de l'année.</blockquote><i>Résumé rédigé par IA à partir du texte officiel.</i>\n\n<b>Le vote des groupes</b>\n🟦 EPR · DR · DEM · HOR · LIOT\n🟥 LFI-NFP · ECOS · GDR\n⬜ RN · SOC · UDR · NI\n\n#Finances",
    "dossier": "DLR5L17N55223",
    "debat": true
+  },
+  "10117": {
+   "id": 21,
+   "legende": "✅ <b>Faire de l’égalité entre les territoires une priorité de l’ensemble des politiques publiques</b> · adopté\n\n<b>📄 Ce que prévoit le texte</b>\n<blockquote expandable>Le texte affirme que l'égalité entre les territoires et l'égalité des chances doivent être des objectifs transversaux des politiques publiques. Il invite le Gouvernement à intégrer ces impératifs dans ses décisions, à évaluer les effets territoriaux des dépenses et des réglementations, et à adapter la répartition des investissements. Enfin, il préconise de renforcer l'accessibilité aux services publics, aux soins et à l'éducation, et de rendre publics les résultats obtenus.</blockquote><i>Résumé rédigé par IA à partir du texte officiel.</i>\n\n<b>Le vote des groupes</b>\n🟦 RN · EPR · SOC · DR · DEM · HOR · LIOT · UDR · NI\n🟥 LFI-NFP\n⬜ ECOS · GDR",
+   "dossier": "DLR5L17N55033",
+   "debat": true
+  },
+  "10168": {
+   "id": 22,
+   "legende": "✅ <b>Maintenir les pharmacies existantes dans les communes rurales</b> · adopté\n\n<b>📄 Ce que prévoit le texte</b>\n<blockquote expandable>Le texte modifie le code de la santé publique pour encadrer l'ouverture d'une officine de pharmacie dans les communes de moins de la moitié du seuil démographique habituel qui se trouvent privées de leur dernière pharmacie. Il autorise cette création ou ce transfert par dérogation sous certaines conditions de population desservie ou de présence d'une structure médicale. Il impose en outre aux pharmaciens de ces communes un délai d'information préalable en cas de cessation d'activité ou de cession.</blockquote><i>Résumé rédigé par IA à partir du texte officiel.</i>\n\n<b>Le vote des groupes</b>\n🟦 RN · EPR · LFI-NFP · SOC · DR · ECOS · DEM · HOR · LIOT · GDR · UDR · NI\n\n#AffairesSociales",
+   "dossier": "DLR5L17N55074"
   }
  },
- "canal_maj": "2026-11-26"
+ "canal_maj": "2026-11-27"
 }

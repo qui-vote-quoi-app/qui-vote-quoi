@@ -1,0 +1,11 @@
+{
+ "dossier": "DLR5L17N55074",
+ "texte": "PIONANR5L17B3309",
+ "tentatives": 1,
+ "longueur": 4998,
+ "statut": "publie",
+ "resume": "Le texte modifie le code de la santé publique pour encadrer l'ouverture d'une officine de pharmacie dans les communes de moins de la moitié du seuil démographique habituel qui se trouvent privées de leur dernière pharmacie. Il autorise cette création ou ce transfert par dérogation sous certaines conditions de population desservie ou de présence d'une structure médicale. Il impose en outre aux pharmaciens de ces communes un délai d'information préalable en cas de cessation d'activité ou de cession.",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "erreurs": [],
+ "genere_le": "2026-11-27T14:05+00:00"
+}

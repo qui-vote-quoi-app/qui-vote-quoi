@@ -1,0 +1,122 @@
+{
+ "uid": "VTANR5L17V10117",
+ "num": 10117,
+ "statut": "publiee",
+ "cree_le": "2026-11-27T14:00:51+00:00",
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2027O1N077",
+ "seance_jour": "jeudi 26 novembre 2026",
+ "contexte": "L'Assemblée nationale débat d'une proposition de résolution visant à faire de l'égalité entre les territoires une priorité de l'ensemble des politiques publiques, conformément à l'article 34-1 de la Constitution. Ce texte aborde l'accès aux services publics, aux soins et aux transports, ainsi que la prise en compte des spécificités rurales, urbaines, ultramarines et de montagne.",
+ "pour": [
+  {
+   "resume": "L'égalité territoriale est un principe républicain fondamental qui garantit à chaque citoyen l'accès aux mêmes droits et services publics, indépendamment de son lieu de résidence.",
+   "citation": "L'égalité entre les territoires est une exigence républicaine fondamentale qui repose sur un principe simple : chaque Français sans distinction de genre, d'âge ou de lieu de vie doit pouvoir accéder aux mêmes droits et aux mêmes services publics.",
+   "acteur": "PA720446",
+   "nom": "Mme Brigitte Liso",
+   "qualite": "",
+   "syceron": [
+    "4240371",
+    "4240374",
+    "4240376"
+   ]
+  },
+  {
+   "resume": "La transition écologique doit être menée sans opposer les territoires en tenant compte de la nécessité de l'usage de la voiture en zone rurale.",
+   "citation": "Si celle-ci doit être accessible à tous, nous devons veiller à ne pas opposer les territoires. L'évocation, dans l'exposé des motifs, d'une France rurale \" mise au ban \" en raison de son usage de la voiture appelle à la nuance.",
+   "acteur": "PA720446",
+   "nom": "Mme Brigitte Liso",
+   "qualite": "",
+   "syceron": [
+    "4240371",
+    "4240374",
+    "4240376"
+   ]
+  },
+  {
+   "resume": "L'aménagement du territoire doit être une ambition nationale concrétisée par une meilleure répartition des investissements et un accès garanti aux services de base.",
+   "citation": "Nous approuvons plusieurs des orientations de cette proposition de résolution : mieux mesurer les conséquences territoriales des décisions publiques ; répartir plus justement les investissements ; garantir l'accès aux services publics, aux soins, à l'éducation, à la formation, avec un accueil humain.",
+   "acteur": "PA841665",
+   "nom": "M. Denis Fégné",
+   "qualite": "",
+   "syceron": [
+    "4240417",
+    "4240422",
+    "4240424"
+   ]
+  }
+ ],
+ "contre": [
+  {
+   "resume": "Cette proposition de résolution relève de la communication politique et ne se traduit par aucun acte concret pour améliorer la vie des habitants.",
+   "citation": "Une proposition de résolution, c'est un texte qui \" considère \", qui \" invite \", qui \" souhaite \" et qui permet de dire : \" J'ai fait quelque chose \". C'est de la communication !",
+   "acteur": "PA793772",
+   "nom": "M. Christophe Bex",
+   "qualite": "",
+   "syceron": [
+    "4240380",
+    "4240382",
+    "4240385",
+    "4240387",
+    "4240389",
+    "4240391",
+    "4240393",
+    "4240396",
+    "4240402",
+    "4240404",
+    "4240406",
+    "4240408",
+    "4240410",
+    "4240412"
+   ]
+  },
+  {
+   "resume": "La fracture territoriale ne se résume pas à une opposition entre villes et campagnes, car les inégalités sociales traversent l'ensemble des territoires.",
+   "citation": "Nous reconnaissons ces réalités sans opposer systématiquement une France des métropoles à une France des territoires, rurale et périphérique. Profondément réductrice, une telle vision entretient l'idée que les difficultés des uns seraient la conséquence des avantages accordés aux autres.",
+   "acteur": "PA840947",
+   "nom": "Mme Catherine Hervieu",
+   "qualite": "",
+   "syceron": [
+    "4240426",
+    "4240431"
+   ]
+  },
+  {
+   "resume": "Le texte se contente d'affichages de principe sans remettre en cause les politiques d'austérité et les coupes budgétaires préjudiciables aux services publics de proximité.",
+   "citation": "Ce fut en vérité assez rapide car, au-delà du titre, votre texte ne propose pas grand-chose. C'est la proposition de résolution la plus courte de l'histoire",
+   "acteur": "PA795466",
+   "nom": "Mme Ersilia Soudais",
+   "qualite": "",
+   "syceron": [
+    "4240898",
+    "4240901",
+    "4241058",
+    "4240904",
+    "4240906",
+    "4240908",
+    "4240910",
+    "4240912",
+    "4240915",
+    "4240918",
+    "4240920",
+    "4240922",
+    "4240924",
+    "4240927",
+    "4240929",
+    "4240931",
+    "4240933",
+    "4240936",
+    "4240938",
+    "4240940",
+    "4240944",
+    "4240952"
+   ]
+  }
+ ],
+ "ecartes": [
+  "Argument contre n°2 : la citation ne figure pas mot pour mot dans P3."
+ ],
+ "genere_le": "2026-11-27T14:04:10+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-27T14:04:10+00:00"
+}
