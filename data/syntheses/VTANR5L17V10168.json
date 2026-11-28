@@ -1,8 +1,54 @@
 {
  "uid": "VTANR5L17V10168",
  "num": 10168,
- "statut": "en_attente",
+ "statut": "publiee",
  "cree_le": "2026-11-27T14:00:51+00:00",
- "tentatives": 0,
- "erreurs": []
+ "tentatives": 1,
+ "erreurs": [],
+ "cr": "CRSANR5L17S2027O1N078",
+ "seance_jour": "jeudi 26 novembre 2026",
+ "contexte": "L'Assemblée nationale examine en première lecture une proposition de loi visant à maintenir les pharmacies existantes dans les communes rurales, alors que les territoires font face à une augmentation des fermetures d'officines. Les différents groupes politiques soulignent l'urgence de lutter contre la désertification sanitaire, tout en débattant de la portée réelle du texte et de la nécessité de mesures structurelles plus larges.",
+ "pour": [
+  {
+   "resume": "La proposition de loi permet de lutter contre le recul des services de proximité et l'augmentation des difficultés d'accès aux soins dans les territoires ruraux.",
+   "citation": "Une pharmacie qui ferme, c'est de la vie sociale et de la vie économique qui s'en va, c'est l'accroissement des problèmes d'accès aux soins et, plus grave, cela contribue au renoncement croissant aux soins faute de proximité",
+   "acteur": "PA794434",
+   "nom": "M. Christophe Bentz",
+   "qualite": "",
+   "syceron": [
+    "4241502"
+   ]
+  },
+  {
+   "resume": "Le texte prévoit des dispositifs bienvenus pour faciliter la réouverture d'officines et renforcer les agences régionales de santé.",
+   "citation": "Cette proposition de loi apporte quelques réponses utiles, en facilitant la réouverture d'officines et en renforçant les possibilités d'intervention des agences régionales de santé.",
+   "acteur": "PA841091",
+   "nom": "M. Arnaud Simion",
+   "qualite": "",
+   "syceron": [
+    "4241529",
+    "4241535",
+    "4241537"
+   ]
+  },
+  {
+   "resume": "Malgré son caractère partiel, le texte constitue une avancée modeste qu'il ne faut pas négliger pour soutenir les pharmacies.",
+   "citation": "Nous voterons en faveur de cette proposition de loi parce que nous ne négligeons aucune avancée, même modeste.",
+   "acteur": "PA841091",
+   "nom": "M. Arnaud Simion",
+   "qualite": "",
+   "syceron": [
+    "4241529",
+    "4241535",
+    "4241537"
+   ]
+  }
+ ],
+ "contre": [],
+ "ecartes": [
+  "Argument pour n°1 : la citation ne figure pas mot pour mot dans P2."
+ ],
+ "genere_le": "2026-11-28T13:19:01+00:00",
+ "modele": "gemini:gemini-flash-lite-latest",
+ "derniere_tentative": "2026-11-28T13:19:01+00:00"
 }

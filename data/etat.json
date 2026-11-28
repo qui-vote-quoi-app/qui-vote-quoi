@@ -1,8 +1,8 @@
 {
  "etags": {
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip": "\"1df62c1-661455a05c5de\"",
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip": "\"d1dd7a-661380fe6e3f3\"",
-  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip": "\"aed160-66146e57ff62a\""
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip": "\"1df62c1-6614f6a766b36\"",
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip": "\"d1de79-6614c2c44dcd4\"",
+  "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip": "\"aed190-66152a1a60d7d\""
  },
  "dernier_num": 10175,
  "cr_index": {
@@ -684,10 +684,11 @@
   "xml/compteRendu/CRSANR5L17S2027O1N074.xml": "RUANR5L17S2027IDS31065",
   "xml/compteRendu/CRSANR5L17S2027O1N078.xml": "RUANR5L17S2027IDS31069",
   "xml/compteRendu/CRSANR5L17S2027O1N076.xml": "RUANR5L17S2027IDS31067",
-  "xml/compteRendu/CRSANR5L17S2027O1N077.xml": "RUANR5L17S2027IDS31068"
+  "xml/compteRendu/CRSANR5L17S2027O1N077.xml": "RUANR5L17S2027IDS31068",
+  "xml/compteRendu/CRSANR5L17S2027O1N079.xml": "RUANR5L17S2027IDS31070"
  },
- "derniere_execution": "2026-11-27T21:37:48+00:00",
- "dernier_quotidien": "2026-11-27T14:06:27+00:00",
+ "derniere_execution": "2026-11-28T13:19:09+00:00",
+ "dernier_quotidien": "2026-11-28T13:19:09+00:00",
  "resumes_restants": 0,
  "canal_accueil": 3,
  "canal_messages": {
@@ -754,8 +755,9 @@
   "10168": {
    "id": 22,
    "legende": "✅ <b>Maintenir les pharmacies existantes dans les communes rurales</b> · adopté\n\n<b>📄 Ce que prévoit le texte</b>\n<blockquote expandable>Le texte modifie le code de la santé publique pour encadrer l'ouverture d'une officine de pharmacie dans les communes de moins de la moitié du seuil démographique habituel qui se trouvent privées de leur dernière pharmacie. Il autorise cette création ou ce transfert par dérogation sous certaines conditions de population desservie ou de présence d'une structure médicale. Il impose en outre aux pharmaciens de ces communes un délai d'information préalable en cas de cessation d'activité ou de cession.</blockquote><i>Résumé rédigé par IA à partir du texte officiel.</i>\n\n<b>Le vote des groupes</b>\n🟦 RN · EPR · LFI-NFP · SOC · DR · ECOS · DEM · HOR · LIOT · GDR · UDR · NI\n\n#AffairesSociales",
-   "dossier": "DLR5L17N55074"
+   "dossier": "DLR5L17N55074",
+   "debat": true
   }
  },
- "canal_maj": "2026-11-27"
+ "canal_maj": "2026-11-28"
 }
